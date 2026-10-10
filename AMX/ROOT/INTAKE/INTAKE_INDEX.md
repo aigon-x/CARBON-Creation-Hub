@@ -1903,3 +1903,26 @@ No tracker row was written; `TRACKER_WRITE_BLOCKED` persists and Q1 remains UNKN
 - [ ] **Safety/preservation:** no schedule change without explicit authorization, no duplicate worker/scheduler/tracker, no unauthorized target testing, no unsupported submission, no inferred award/payment.
 - [ ] **Item disposition:** OCC-04 control = APPLIED / runtime uptake OPEN; LayerZero = Q3 PARKED; XOXNO generic sub-claim = NOT REPRODUCED; tracker = BLOCKED pending authorized route; Q1 = UNKNOWN; Commercial Manager = PERMANENT / reporting governance pending.
 - [ ] **Remaining work:** authorized prompt-update route; fresh behavioral acceptance; authenticated access if Owner authorizes it; tracker reconciliation; Root retrospective adjudication and any required amendments/readback.
+
+
+---
+
+## 2026-10-10 — Bounty Reaper sBTC nonce-response prior-art disposition
+
+**Receipt:** `AMX/ROOT/INTAKE/BOUNTY_REAPER_SBTC_NONCE_RESPONSE_PRIOR_ART_DEDUPE_RECEIPT_20261010.md`  
+**Commit:** `0adf0c39e25da97c61b930cedd2c97fdf2619051`  
+**Readback blob:** `8768c8b1bdc50c1cf3d55f95b7a23691f10c8b72`  
+**Existing Reaper source lineage:** `RUN-20261002-1837`; `stacks-sbtc/sbtc@3e16c056fd7bc595522fb904dd4d3fcd4cb7795a`.
+
+Fresh direct GitHub reads confirm that the exact source commit is public merged PR #2135 and closes public issue #2133, both already describing nonce-response caching and verification behavior. The current sBTC Immunefi scope was updated 2026-10-07, includes the signer implementation, requires functional PoC, and excludes publicly described issues/PRs. Thus the generalized claim that the behavior from PR #2135 is a new undisclosed vulnerability is **KILLED / DO NOT SUBMIT**. This item-specific dedupe does not claim the full signer implementation is safe and does not exclude a separate novel counterexample.
+
+### Category B Directive 23 — itemized acceptance / next work
+- [x] **Outcome:** exact known behavior reconciled with public prior art; do not submit it as a new finding.
+- [x] **Owner:** existing Bounty Reaper owns any further crypto investigation; ROOT/T-GOV owns retrospective governance; Commercial Manager coordinates portfolio priority and continuity.
+- [x] **Action:** retire the known-behavior-as-new-claim hypothesis and continue a distinct eligible parcel.
+- [x] **Dependency/blocker:** PR/issue prior art and current program eligibility rules directly verified.
+- [x] **Acceptance evidence:** exact source commit, issue #2133, merged PR #2135 and current Immunefi scope are cited in the receipt.
+- [ ] **Persistence/readback:** current receipt is read back; index pointer is to be verified below; Tracker row remains unwritten.
+- [x] **Safety/preservation:** no live target, exploit, transaction or public disclosure; no inference that neighboring code is safe.
+- [x] **Item disposition:** general nonce-response caching/verification behavior = PUBLIC PRIOR ART / DO NOT SUBMIT; any distinct adjacent defect = UNKNOWN until new reproducible evidence; Live Tracker = TRACKER_WRITE_BLOCKED; Q1 = UNKNOWN.
+- [ ] **Remaining work:** update/read back Index; pursue a different eligible Reaper parcel; recover authorized tracker queue evidence; retain OCC-04 runtime behavioral acceptance and Root retrospective review as open.
