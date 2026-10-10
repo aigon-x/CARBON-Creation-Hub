@@ -1870,3 +1870,36 @@ No tracker row was written; `TRACKER_WRITE_BLOCKED` persists and Q1 remains UNKN
 - [ ] **Safety:** no live-mainnet/public-testnet testing, unauthorized transactions, public disclosure, fabricated vulnerability, or false submission/payment state.
 - [ ] **Item disposition:** LayerZero = Q3 PARKED / NOT SUBMISSION-READY; receive-prevention sub-claim = KILLED; remaining retained-funds idea = UNPROVEN; tracker = TRACKER_WRITE_BLOCKED; Q1 = UNKNOWN.
 - [ ] **Remaining work:** independent Reaper parcel progression, tracker access/queue recovery, Root retrospective review.
+
+
+---
+
+## OWNER-ESCALATED P0 EXECUTION DELTA — OCC-04 / Bounty Reaper — 2026-10-10
+
+**Do not park behind lower-value queue items.** The Owner explicitly authorized immediate application of the Reaper final-mile fix and requested retrospective Root/Governance adjudication. Continue the established P0 clearance set; keep this material Reaper completion blocker visible and work its executable actions alongside queue draining rather than sending it back to narrative-only governance backlog.
+
+**Fix report:** `AMX/ROOT/INTAKE/OCC04_REAPER_FINAL_MILE_FIX_REPORT_20261010.md`  
+**Latest fix-report commit:** `63dfa03b1a2429af70f4d731e003bf68942b3193`  
+**Latest report readback blob:** `ea7b0f3f333b326269cdbb9680bdf21ff555bea5`  
+**Blue State OCC-04 control commit:** `ada4770fd49f0ba1954ea7d7491ed6f319747f8a`  
+**Permanent appointment and remit:** [issue #32](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/32).
+
+### Updated exact deployment/access blockers
+
+- **Canonical control content:** persisted in current Blue State; mandate payload markers/hash unchanged; registry readback retains v1.2 root `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f` and Reaper digest `754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3`.
+- **Saved prompt / runtime uptake:** current automation prompt does not contain direct OCC-04 text; prior prompt-only update failed with `automation_schedule_not_available` because the existing cadence is hourly and unsupported by the current plan. Schedule was not altered. A run was requested, but latest readback still has last-run `2026-10-10T18:09:59.997348+00:00`; no post-commit consumer readback is proven.
+- **Live Tracker route:** native Google Drive connector is `DISABLED_BY_ADMIN / NOT_AVAILABLE`. TinyFish was inspected as a possible route to the same existing sheet, but all three browser profiles have `signed_in_sites=[]`. No authenticated browser run is authorized until the Owner confirms an existing signed-in profile or authorizes the setup step. No shadow tracker is permitted.
+- **Current Reaper work:** LayerZero `BR-20261010-LZ-SCOPE-002` narrows the current Q3 and kills the receive-prevention sub-claim; retained-funds hypothesis remains parked without exact eligible target/impact/PoC/full audit dedupe. XOXNO generic stale-position claim remains not reproduced. Reaper must continue to a different independent lawful parcel while those blockers remain.
+- **Truth boundary:** control document deployed to canonical main; actual worker consumption, new run completion, tracker write/readback, bounty submission, award and payment remain unproven.
+
+### Category B Directive 23 — live resolution checklist
+
+- [ ] **Expected outcome:** current Reaper runtime consumes the OCC-04 control and makes a material attributable change; the appointment remains permanent by Owner instruction with Governance role registration/reporting pending.
+- [ ] **Owner:** Reaper executes its crypto queue; Commercial Manager coordinates priority/capability trial/recovery; ROOT/T-GOV retrospectively audits OCC-04 and finalizes reporting; connector admin / Owner handles required authenticated access authorization.
+- [ ] **Action:** obtain compatible saved-prompt deployment without cadence reduction; or verify runtime consumption through an equivalent current read. Continue independent bounty parcels while route blockers are resolved.
+- [ ] **Dependencies:** current automation plan cannot update its existing hourly schedule; Google Drive connector is disabled; TinyFish requires a signed-in/authorized profile; LayerZero evidence gates remain exact.
+- [ ] **Acceptance evidence:** post-commit Reaper run receipt and source of next-state readback; canonical tracker row readback if written, otherwise explicit Intake fallback; Root retrospective decision.
+- [ ] **Persistence/readback:** fix report, Blue State, scope-gate receipt and index pointers are durable/read back; scheduler completion and Runs row are not claimed.
+- [ ] **Safety/preservation:** no schedule change without explicit authorization, no duplicate worker/scheduler/tracker, no unauthorized target testing, no unsupported submission, no inferred award/payment.
+- [ ] **Item disposition:** OCC-04 control = APPLIED / runtime uptake OPEN; LayerZero = Q3 PARKED; XOXNO generic sub-claim = NOT REPRODUCED; tracker = BLOCKED pending authorized route; Q1 = UNKNOWN; Commercial Manager = PERMANENT / reporting governance pending.
+- [ ] **Remaining work:** authorized prompt-update route; fresh behavioral acceptance; authenticated access if Owner authorizes it; tracker reconciliation; Root retrospective adjudication and any required amendments/readback.
