@@ -1792,3 +1792,56 @@ The registered mandate and current worker prompt already carry substantial final
 - [ ] **Remaining work:** ROOT/T-GOV decision on role placement and formal mandate binding; OCC-04 disposition; restore or authorize existing tracker route; reconcile Q1 state from current artifacts; advance a lawful Reaper parcel; prove final-mile behavior or record exact blocker and recovery owner.
 
 **Truth boundary:** this record does not claim that OCC-04 is accepted, the acting role registered, the Live Tracker updated, or any bounty submitted/accepted/awarded/paid.
+
+
+---
+
+## OWNER SUPERSESSION — PERMANENT COMMERCIAL MANAGER + OCC-04 EXECUTION CONTROL — 2026-10-10
+
+**Canonical case:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/32  
+**Control update commit:** `ada4770fd49f0ba1954ea7d7491ed6f319747f8a`  
+**Status:** PERMANENT APPOINTMENT BY OWNER DIRECTION; GOVERNANCE REPORTING/REGISTRATION PENDING. OWNER-AUTHORIZED OCC-04 CONTROL ADDED; BEHAVIORAL ACCEPTANCE AND RETROSPECTIVE GOVERNANCE REVIEW OPEN.
+
+### Appointment supersession
+
+This section supersedes earlier statements in this index/issue describing the Commercial Manager appointment as temporary. The Owner has confirmed the position as a **PERMANENT EMPLOYEE / APPOINTMENT EFFECTIVE NOW**. Governance still must settle the reporting line, role placement, mandate identity/version/digest, reserved decision rights, succession and any elevation. Until formally changed, the Owner-directed route is direct to ROOT / Route Intake. No role key or registry hash is self-issued here.
+
+### Added responsibility — continuous improvement through controlled capability trials
+
+The Commercial Manager must identify evidenced capability gaps across the commercial chain; assess fit-for-purpose tools, plugins, skills, providers and worker capabilities; and prefer verified, already-authorized routes. Where a gap remains, the Manager may design/use the smallest safe temporary trial within existing permissions/cost/security/data boundaries, with explicit baseline, scope, owner, acceptance test, evidence sink, review/expiry, and retain/modify/retire criteria. Retention as a permanent role/capability is recommended for governance registration after demonstrated measurable benefit. Failed trials are retired with provenance and without orphaned automations, credentials, costs or external commitments. No duplicated writer, shadow ledger, parallel pipeline or unauthorized infrastructure is created.
+
+**Banker is a critical proven capability and remains in scope.** The trial authority is not direction to remove, merge or supersede Banker, iSCOPE, PRI or Bounty Reaper. Their current operating mandates stay intact.
+
+### OCC-04 implementation update
+
+The Owner authorized implementation now with retrospective Root/Governance verification. An additive control has been appended to the existing Blue State file:
+
+`AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md`
+
+Section: **OWNER-AUTHORIZED OCC-04 REAPER FINAL-MILE EXECUTION CONTROL — 2026-10-10**. Commit: `ada4770fd49f0ba1954ea7d7491ed6f319747f8a`.
+
+It prescribes the Owner's final-mile chain — **analysis → validated fix → package/finalize → authorized submission/handoff → external receipt → terminal result** — with exact state distinctions, Q1 UNKNOWN handling when tracker access is unavailable, lawful Q2/Q3 continuation, official scope/dedupe/PoC gates, external receipt preservation, no duplicate submission, settlement truth, fallback persistence, independent readback and retrospective Root review.
+
+The addition is outside the canonical Reaper mandate's begin/end hash markers. No registered mandate payload/digest, registry entry/root, Reaper worker or schedule was modified by this document change. Formal OCC-04 disposition remains pending Root; behavioral acceptance is not yet proven by a fresh attributable Reaper outcome.
+
+### Current item states — do not overstate completion
+
+- **Appointment:** permanent by Owner direction; formal mandate registration and final reporting placement pending Governance.
+- **Capability trial authority:** accepted as a Manager responsibility within current access/security/spend/legal/mandate limits; permanent promotion or retirement must be evidenced and appropriately governed.
+- **OCC-04:** owner-authorized additive operational control persisted; Root retrospective verification and formal classification pending.
+- **Reaper worker:** existing automation remains the single owner. An immediate run was requested without changing its saved schedule; this confirms only that the run was requested, not that it completed.
+- **LayerZero:** Q3 narrowed, exact deployment/scope, impact, retry/refund and audit-dedupe gates remain open; no submission-ready status.
+- **XOXNO:** generic stale/non-returned-position sub-claim was not reproduced; do not submit absent a concrete counterexample.
+- **Live Tracker:** `TRACKER_WRITE_BLOCKED`; no Runs row claimed; Q1 remains **UNKNOWN, not zero**, until recovered from authorized current evidence.
+
+### Category B Directive 23 — itemized outcomes and acceptance
+
+- [ ] **Expected outcomes:** permanent appointment represented accurately; Governance finalizes reporting/role binding; OCC-04 control is consumed in existing Reaper flow; Reaper produces attributable material progression or a precise governed blocker.
+- [ ] **Owner:** ROOT/T-GOV owns formal role/mandate/reporting and OCC-04 disposition; existing Bounty Reaper owns crypto-bounty execution; Commercial Manager coordinates priorities, continuity and capability trials; Banker/iSCOPE/PRI retain their separate mandates.
+- [ ] **Required action:** verify control readback, trigger/observe a fresh Reaper run, recover current queue where authorized, and take the next lawful parcel action; do not stop at the written control.
+- [ ] **Dependencies/blockers:** tracker connector/write/readback; exact LayerZero deployment/scope, impact, retry/refund and audit dedupe gates; any human-only program step.
+- [ ] **Acceptance evidence:** fresh attributable Reaper receipt/state transition or official submission receipt plus external next/terminal state; for a capability trial, baseline, measurable change and independent artifact readback.
+- [ ] **Persistence/readback:** independently read back Blue State control and this index entry; use the canonical tracker plus row readback if available, otherwise explicit existing Intake fallback. No false tracker-success claim.
+- [ ] **Safety/preservation:** mandate-before-execution, single-owner/single-writer boundaries, official program scope, privacy, KYC/human gates, no unauthorized exploitation, no duplicate workers/trackers, no invented award/payment, no silent schedule change.
+- [ ] **Item dispositions:** permanent appointment = OWNER-CONFIRMED / GOVERNANCE BINDING PENDING; capability-trial remit = OWNER-AUTHORIZED WITHIN EXISTING LIMITS; Banker = RETAINED; OCC-04 = OPERATIONAL CONTROL APPLIED / ROOT REVIEW PENDING; LayerZero = Q3 NARROWED/HOLD AT NAMED GATES; XOXNO broad sub-claim = NOT REPRODUCED; tracker = TRACKER_WRITE_BLOCKED; Q1 = UNKNOWN.
+- [ ] **Remaining work:** check in the fresh Blue State/index state; solve the existing automation prompt-update route without silently changing hourly cadence; obtain an attributable Reaper behavioral result; route retrospective assessment and final reporting placement to Governance; recover tracker read/write/readback; continue independent lawful bounty work while blocked items remain open.
