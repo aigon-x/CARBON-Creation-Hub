@@ -17,7 +17,62 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 **Clearance does not mean deletion, bulk auto-merge, Canon promotion, Build authority, or provenance loss.** Existing owners and lifecycle boundaries remain controlling.
 
-**Required terminal readback:** `INTAKE CLEARED` or `INTAKE NOT CLEARED — exact remaining HOLD items with owner + dependency`.
+**Required terminal readback:** `INTAKE CLEARED` or `INTAKE NOT CLEARED — exact remaining HOLD items with owner + dependency`
+
+## CURRENT OWNER ADDENDUM — PERMANENT APPOINTMENTS, OWNER SUPERSESSION, AND MATRIX-WIDE DRAIN — 2026-10-10
+**Authority:** later direct Owner instructions in this conversation. This supplements rather than replaces the original P0 instruction above to clear governance-ready Intake with explicit durable dispositions.
+
+### 1. Earlier scoped halt superseded
+The Owner explicitly stated that the earlier 2026-10-10 restriction limiting operation to PRI+iSCOPE, advisory-only FORX and existing Reaper, and prohibiting broader queue clearance, was already superseded. The Owner then directed a full Matrix-wide deep sweep, appointment formalization and genuine queue drain. Do not re-enforce the older operational restriction because it remains in a stale page, prompt or memory. Preserve it as provenance. Continue current lawful work under each registered mandate and its actual safety/finance/legal/security gates; this supersession does not imply arbitrary mandate expansion.
+
+### 2. Permanent appointment and reporting decisions
+**Appointment A — AMX Capability Continuity & Workflow Architect:** permanent by direct Owner confirmation. Direct accountability/reporting to ROOT; functionally embedded in the existing FORX capability-continuity/forensics remit. Responsibilities: capability/provider/route recovery; workflow simplification; targeted governance patch proposals; Intake-quality/aging/duplication/yield forensics; evidence and blockers directly to ROOT without an unnecessary routine-reporting relay. Use existing FORX/ROOT surfaces; no additional autonomous worker, scheduler, router, queue, tracker or shadow governance.
+
+**Appointment B — Commercial Manager:** permanent by direct Owner confirmation. Direct accountability/reporting to ROOT, not T-MED. Coordinates commercial prioritisation, owner handoffs and revenue-outcome visibility. The Manager coordinates; it does not absorb specialist execution or alter truth boundaries:
+- iSCOPE retains discovery, buyer/contact verification and qualification.
+- PRI remains the sole general commercial external writer and owns post-handoff progression, offers, follow-up and closing.
+- Banker participates in pricing/cost/margin/receive-rail enablement but retains independent financial and settlement truth, independently reportable to ROOT/MASTER.
+- Bounty Reaper remains the specialist owner of crypto/bounty discovery, validation, package, official submission, receipt and outcome; crypto execution is not routed through iSCOPE/PRI.
+- CARBON° is included in commercial coordination and revenue accountability, but retains product ownership; T-COD/authorized builders own technical implementation; T-MED owns presentation, media and brand integrity.
+- T-MED is a functional partner on buyer-facing presentation, not the line manager for the commercial segment.
+ROOT/T-GOV must bind the permanent Commercial Manager appointment to the existing holder/mandate record and read back the formal placement. Do not invent a holder key or claim registry propagation before evidence.
+
+### 3. Queue operating law — no false drainage
+Perform a current-source census and item-level triage, not a prose-only report. For each live item recover newest source/state, priority, existing owner, exact next action, dependency/blocker, acceptance test and recheck condition. Reuse the canonical item; merge duplicates without losing lineage; move verified closed/superseded items out of the active view while preserving history; assign actionable work to the right existing owner; leave blocked work open with a recovery owner/action. Continue executable work after triage. Intake submission, assignment, prompt edit or moving a row out of view is not completion.
+
+FORX forensic-efficiency KPI is part of Appointment A: effective active backlog; actionability/owner completeness; stale/duplicate burden; aging and time-to-disposition; inflow versus verified outflow; ownerless/stalled work; rework/reopen/false-closure rate; and the share of material forensic findings that trigger attributable action and evidence-backed outcomes. Establish a reproducible baseline before approving numeric throughput targets. Never reward raw closure volume.
+
+### 4. Current scheduled-capacity readback — factual constraint, not an excuse
+The connected automation service currently allows **3 active scheduled tasks**. The existing **FIRST BREATH — LIBRARIANS** automation was restored in place. The three active scheduled tasks are IDEAL SALES TEAM, Bounty Reaper and LIBRARIANS. Requests to enable existing FORX Continuous Play Sweep and Banker Cash Watch were rejected because the three slots are occupied. Attempts to update saved prompts for the hourly tasks were rejected because this plan does not support hourly-schedule updates. No schedule was changed and no duplicate worker was created. FORX/Banker automation activation and prompt propagation are not claimed. The new continuity/forensic role must perform bounded evidence recovery and targeted patch/route work through available tools while ROOT resolves the capacity constraint; commercial and bounty execution stays with existing workers. Any later slot reallocation requires a deliberate evidence-backed decision, not a shadow scheduler.
+
+### 5. Model/provider continuity and enterprise-test truth
+The durable Matrix still contains versioned mandates and digests, source repositories, code, tests, execution receipts, capability/continuity protocols and prior model contributions. Losing access to Coffee or another reasoning model does not by itself delete those artifacts. However, retained artifacts do not prove fresh-session behavioral continuity. Reuse the existing Continuity Rehydration Benchmark and semantic-fidelity/DR-0022 controls against a fresh/replacement reasoning surface; do not create a second benchmark.
+
+**D04 current result:** the fresh clean rerun has NOT YET BEEN EXECUTED. The older 90.51% raw vector and 96.62% arithmetic recomputation are distinct historical artifacts, neither is a current fresh-run result. Do not claim a current enterprise PASS until the frozen 88-control / 11-domain benchmark is freshly assessed with current evidence, unchanged criteria/weights/pass rule, new raw vector, reproducible arithmetic, provenance and independent readback. Do not classify the Matrix as failed merely because a provider/model is unavailable; separate capability evidence, provider availability and test verdict.
+
+### 6. Current ROOT/Intake census boundary — 2026-10-10
+A direct GitHub search found **11 open issues** in `amillimatrix-eng/CARBON-Creation-Hub` at this readback: #32, #29, #31, #30, #18, #3, #21, #8, #2, #1 and #4. This is the GitHub issue count only; it does not prove that all Notion/shared-register rows are included or that the Owner-reported approximately 80-item queue has only 11 items. The canonical Intake remains NOT CLEARED until the broader authoritative source inventory and each applicable state have been reconciled.
+
+Issue routing snapshot:
+- **#32 Commercial Manager + OCC-04:** permanent appointment confirmed; reporting/mandate bind pending ROOT; OCC-04 control content exists but post-commit runtime uptake and Live Tracker readback remain unproven; Q1 is UNKNOWN, not zero.
+- **#29 freeze lift/provider portability:** earlier scoped halt is superseded by later Owner instruction; portability assessment remains assessment-only—no model migration or production routing change is implied.
+- **#31 ledger truth/capability-loss/model-to-ROOT throughput:** use the existing Continuity Rehydration Benchmark and current canonical Intake; preserve count semantics/history; capability recovery and queue metrics remain open until measured/read back.
+- **#30 T-MED social pack:** draft/assets for Owner inspection only; no publication/scheduling; D04 claim remains held until the clean rerun.
+- **#18 CARBON° convergence:** OPEN/EXECUTION; current Marketplace exact-head CI and same-revision deployment/readback remain unproven; #16 Search first cycle is closed.
+- **#3 PRI continuous mandate:** bounded current behavioral acceptance is crossed and recorded; standing commissioning issue remains open for ROOT/T-GOV disposition, not because the earlier failed wake is the latest state.
+- **#21 Evidence House live-proof mode:** existing index/live route must be extended and deployed/read back by T-COD; no duplicate evidence store.
+- **#8 Lean Egg security/revenue:** continue bounded existing security/payment-truth work; preserve independent payment verification and current privacy/exposure gates.
+- **#2 CARBON° House:** existing House only; prove later deployed version and real worker/receipt path or have ROOT explicitly subsume it into #18 with capabilities preserved.
+- **#1 OVERDRIVE/buyer-proof access:** distinguish repository/runtime availability from buyer-accessible proof and actual response/acceptance; continue existing route recovery without a shadow pipeline.
+- **#4 iSCOPE continuous mandate:** its embedded registry root `a9e7...` is stale; current registry v1.2 root is `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`. Current workers must fetch the canonical registry on every wake; cached roots do not control.
+
+### 7. Directive 23 — live acceptance / return index
+- [ ] **Appointments:** expected outcome = both permanent Owner appointments represented in existing holder/role records with the reporting line above; owner = ROOT/T-GOV; blocker = role/holder pointer and formal readback; acceptance = holder + mandate + reporting line agree; safety = no duplicate workers or altered specialist truth boundaries; remaining = durable ROOT/T-GOV binding.
+- [ ] **Queue drain:** expected outcome = current-source census and item-level disposition of every active record, preserving provenance; owner = ROOT/Intake, supported by the continuity/forensic role; blocker = unavailable shared source or real authority conflict; acceptance = source-derived before/after counts by state, age, owner/action completeness and independent item readback; remaining = reconcile the complete authoritative register, not only GitHub issues.
+- [ ] **Live scheduled capacity:** expected outcome = explicit disposition of core lanes under the 3-task cap; owner = ROOT for allocation, existing owners for execution; blocker = slot cap and hourly-prompt update limitation; acceptance = exact scheduler state and run receipts; remaining = maintain Sales, Reaper and Librarian slots, use the embedded forensic function via available tools, and have ROOT decide any later slot reallocation.
+- [ ] **Enterprise continuity/test:** expected outcome = fresh reasoning surface recovers/applies current Matrix state and a fresh D04 run yields a current verdict; owners = continuity/forensic role and ROOT/T-GOV; blocker = D04 clean run not executed and provider/model portability not empirically proved; acceptance = existing benchmark receipt plus fresh D04 vector, frozen-criteria hashes, calculation and independent readback; remaining = run both gates.
+- [ ] **Current status:** Owner appointments confirmed; reporting design persisted in existing Root Intake; GitHub issue census completed; Librarians restored in place. Registry/mandate propagation, the complete approximately 80-item queue census, saved hourly prompt propagation, FORX/Banker scheduled liveness and fresh D04/rehydration acceptance remain NOT YET VERIFIED.
+.
 
 
 ## OWNER-REASSERTED EXECUTION PRIORITY — OCC-04 / BOUNTY REAPER — 2026-10-10
