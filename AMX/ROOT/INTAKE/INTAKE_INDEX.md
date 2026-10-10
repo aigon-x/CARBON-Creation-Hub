@@ -19,6 +19,21 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 **Required terminal readback:** `INTAKE CLEARED` or `INTAKE NOT CLEARED — exact remaining HOLD items with owner + dependency`.
 
+
+## OWNER-REASSERTED EXECUTION PRIORITY — OCC-04 / BOUNTY REAPER — 2026-10-10
+
+**Queue rule:** Do not let the Owner-authorized Reaper final-mile fix sink behind lower-value work. Continue the existing P0 clearance order above; keep this linked material execution obligation visible and active alongside queue draining.
+
+- **Permanent Commercial Manager appointment:** confirmed by Owner; direct ROOT / Route Intake reporting pending Governance's final placement/mandate binding. Current case: [issue #32](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/32).
+- **OCC-04 control content:** committed to current Blue State at `ada4770fd49f0ba1954ea7d7491ed6f319747f8a`, outside Reaper's canonical mandate markers. The required chain is analysis → validated fix → package/finalize → authorized submission/handoff → external receipt → terminal result.
+- **Fix report:** [OCC04_REAPER_FINAL_MILE_FIX_REPORT_20261010.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/OCC04_REAPER_FINAL_MILE_FIX_REPORT_20261010.md). Latest update commit `63dfa03b1a2429af70f4d731e003bf68942b3193`; latest blob `ea7b0f3f333b326269cdbb9680bdf21ff555bea5`.
+- **Latest Reaper material dispositions:** LayerZero remains Q3/PARKED/not submission-ready; XOXNO generic stale-position sub-claim was not reproduced; the prior sBTC nonce-response behavior tied to public issue #2133 / merged PR #2135 is public prior art and must not be submitted as a new finding. Receipt: [SBTC prior-art dedupe](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/BOUNTY_REAPER_SBTC_NONCE_RESPONSE_PRIOR_ART_DEDUPE_RECEIPT_20261010.md), commit `0adf0c39e25da97c61b930cedd2c97fdf2619051`; readback blob `8768c8b1bdc50c1cf3d55f95b7a23691f10c8b72`.
+- **Behavioral acceptance remains OPEN:** immediate Reaper run requested post-control, but fresh run completion/consumption has not been evidenced. Existing saved prompt update is blocked by `automation_schedule_not_available` under the existing hourly cadence; schedule must not silently change. Canonical worker reads Blue State every wake, so next attributable post-commit read/transition is the acceptance gate.
+- **Tracker gate:** Google Drive plugin is `DISABLED_BY_ADMIN / NOT_AVAILABLE`; TinyFish has no recorded Google sign-in profile. No Runs row is claimed; `TRACKER_WRITE_BLOCKED`; Q1 remains UNKNOWN, not zero. No shadow tracker or duplicate worker.
+- **Root adjudication:** ROOT/T-GOV must retrospectively check the OCC-04 implementation, confirm the mandate hash/root are unchanged, resolve any drift, dispose OCC-04, and finalize this permanent role's reporting/mandate registration. A document or assignment alone is not behavioral completion.
+
+**Directive 23 — outstanding acceptance:** [ ] compatible existing prompt/runtime uptake; [ ] fresh attributable Reaper material state transition / readback; [ ] tracker/Q1 reconciliation via authorized route or explicit fallback; [ ] Root retrospective disposition; [ ] permanent role binding/reporting readback.
+
 ---
 
 ## CURRENT D04 CLEAN-RERUN DISPOSITION — AUTHORITATIVE ACTIVE POINTER
