@@ -76,3 +76,23 @@ Until exact scope, prior-art and attacker/victim impact are proved, do not build
 - Acceptance / award: **NONE evidenced**.
 - Payment: **NONE verified**.
 - Live Tracker row: **NOT WRITTEN**; Root Intake fallback receipt only.
+
+
+---
+
+## RETROSPECTIVE CORRECTION — 2026-10-10 21:32 SAST
+
+The earlier statement that no recovery path was found in the Executor's relevant functions was incomplete because it did not inspect the inherited `WorkerUpgradeable` contract.
+
+At the same immutable source pin `LayerZero-Labs/LayerZero-v2@9c741e7f9790639537b1710a203bcdfd73b0b9ac`:
+- `Executor.sol` Git blob: `7e64f06b4fca2cc7052b764014a919a639abe82e`.
+- `upgradeable/WorkerUpgradeable.sol` Git blob: `e261c667376028ac97a606419422ef738bfe318d`.
+- `Executor` inherits `WorkerUpgradeable`.
+- `WorkerUpgradeable.withdrawToken(address _token, address _to, uint256 _amount)` is restricted by `onlyRole(ADMIN_ROLE)` and calls `Transfer.nativeOrToken`; the source comment states that `address(0)` transfers native currency.
+- `nativeDrop` and `nativeDropAndExecute302` are also `onlyRole(ADMIN_ROLE)`. `_nativeDrop` records low-level call success, counts the nominal amount as spent, and emits `NativeDropApplied`.
+
+**Corrected disposition:** the native amount remaining after a failed drop is not shown to be permanently locked; an authorized admin can recover native balance through the inherited withdrawal path. The previously unresolved “permanent lock / no recovery path” sub-claim is **KILLED**. The remaining fact that a user-selected recipient may reject a native drop does not establish attacker-controlled third-party loss. The current LayerZero program excludes OApp impacts arising from their own misconfiguration (including executors), and critical/high Primacy of Impact cannot be invoked without an actually established qualifying impact.
+
+This correction does not establish that the exact deployed Executor address/chain is a named in-scope asset, and it does not complete audit dedupe. Audit PDFs remain unread in this runtime; absence of indexed search hits is not proof of novelty. The broader `BR-20261003-024` parcel remains **Q3 PARKED** only for a distinct, evidenced attacker-controlled path that satisfies current scope/impact, exact deployment, PoC and dedupe requirements. No live testing, submission, award or payment is claimed.
+
+**Provenance:** preserve the earlier incomplete statement above as historical evidence; this section supersedes its technical conclusion without deleting the prior record.
