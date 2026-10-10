@@ -92,3 +92,19 @@ Root may ACCEPT / MODIFY / REJECT / ALREADY-SUBSUMED / HOLD the formal OCC-04 di
 - [ ] **Remaining work:** Root retrospective review; compatible prompt-update resolution; fresh Reaper behavioral proof; tracker access/Q1 reconciliation; continue executable lawful parcels; amend/read back any drift.
 
 **Truth boundary:** control content is persisted and read back. No completed post-commit Reaper run, tracker write, bounty submission, acceptance, award or payment is claimed.
+
+
+---
+
+## 9. Tracker capability route-around check — TinyFish browser profile gate
+
+After the native Google Drive connector was discovered to be disabled by admin, I inspected the existing TinyFish browser profiles as a possible authorized route to the *same existing* Google Sheet (not a substitute tracker).
+
+Current tool readback:
+- Profiles found: `prof_dd8059838d194865` (“Default”), `prof_038698ac484842d1` (“amillimatrix@gmail.com”), and `prof_402222b1fb364031` (“BullRulez”).
+- Each profile reports `signed_in_sites: []`; no profile has Google Drive/Sheets sign-in recorded.
+- TinyFish's own instructions require a profile with a recorded Google sign-in for an authenticated run, or explicit user confirmation before opening a sign-in setup session. Therefore no Google Drive browser session was launched and no tracker access was claimed.
+
+**Classification:** POTENTIAL EXISTING ROUTE / HUMAN AUTHORIZATION GATE NOT YET SATISFIED. This is more specific than a generic tool absence. Next action: Owner confirms whether one listed existing profile is already signed into the intended Google account, or explicitly authorizes the setup flow for the chosen profile; never request or collect a password in chat. After authorized setup, use TinyFish to read the existing tracker, then test the narrow required Runs-row write/readback only if the browser/session is genuinely authenticated and the sheet allows it. Preserve the existing spreadsheet ID and schema.
+
+This trial currently has outcome **NOT YET TESTABLE**, not PASS or FAIL: profile availability is verified; Google authenticated access and tracker write/readback are unproven.
