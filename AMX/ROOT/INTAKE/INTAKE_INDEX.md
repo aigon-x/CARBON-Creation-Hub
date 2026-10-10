@@ -1845,3 +1845,28 @@ The addition is outside the canonical Reaper mandate's begin/end hash markers. N
 - [ ] **Safety/preservation:** mandate-before-execution, single-owner/single-writer boundaries, official program scope, privacy, KYC/human gates, no unauthorized exploitation, no duplicate workers/trackers, no invented award/payment, no silent schedule change.
 - [ ] **Item dispositions:** permanent appointment = OWNER-CONFIRMED / GOVERNANCE BINDING PENDING; capability-trial remit = OWNER-AUTHORIZED WITHIN EXISTING LIMITS; Banker = RETAINED; OCC-04 = OPERATIONAL CONTROL APPLIED / ROOT REVIEW PENDING; LayerZero = Q3 NARROWED/HOLD AT NAMED GATES; XOXNO broad sub-claim = NOT REPRODUCED; tracker = TRACKER_WRITE_BLOCKED; Q1 = UNKNOWN.
 - [ ] **Remaining work:** check in the fresh Blue State/index state; solve the existing automation prompt-update route without silently changing hourly cadence; obtain an attributable Reaper behavioral result; route retrospective assessment and final reporting placement to Governance; recover tracker read/write/readback; continue independent lawful bounty work while blocked items remain open.
+
+
+---
+
+## 2026-10-10 — Reaper LayerZero official scope/impact gate continuation
+
+**Receipt:** `AMX/ROOT/INTAKE/BOUNTY_REAPER_LAYERZERO_SCOPE_IMPACT_GATE_20261010.md`  
+**Commit:** `9ad2bd9d10c47dbf72bde42ba00eca5d89f6c3f4`  
+**Readback blob:** `de317dccad3bd19affae06cd263d1476932316fa`  
+**Existing parcel:** `BR-20261003-024`; receipt `BR-20261010-LZ-SCOPE-002`.
+
+Official LayerZero Immunefi scope, information and resources pages were freshly checked. The scope gate is **not passed**: exact deployed Executor target/chain binding, qualifying impact, runnable PoC and complete audit/prior-knowledge dedupe remain unproven. The official program requires PoC for every severity; its Primacy of Impact route is for critical/high smart-contract impacts, while other impacts remain bound to listed asset/scope rules. The source-level sub-claim that failed native-drop alone prevents `lzReceive` remains KILLED. Residual retained-funds concern stays Q3 / PARKED, not a report candidate. Reopen only on a concrete, authorized, in-scope impact and full evidence gate; meanwhile proceed to an independent lawful Reaper parcel.
+
+No tracker row was written; `TRACKER_WRITE_BLOCKED` persists and Q1 remains UNKNOWN, not zero. No submission/award/payment is claimed. This is new Item-level evidence for ROOT's retrospective OCC-04 audit and preserves the original LayerZero receipt unchanged.
+
+### Category B Directive 23 — continuation checklist
+- [ ] **Outcome:** scope/impact gate evidence is durable and the unsupported receive-prevention sub-claim is killed.
+- [ ] **Owner:** existing Bounty Reaper for next lawful parcel; ROOT/T-GOV for OCC-04 retrospective review; tracker route owner for authorized tracker access.
+- [ ] **Action:** do not submit LayerZero on current evidence; move to a different executable parcel; recover tracker/Q1 state where authorized.
+- [ ] **Dependency/blocker:** exact current deployment/scope, impact/PoC and complete audit dedupe for any LayerZero reopening; tracker read/write/readback access for queue truth.
+- [ ] **Acceptance evidence:** concrete current-target binding, qualifying impact and runnable local/fork PoC, full dedupe, official receipt if any submission later occurs.
+- [ ] **Persistence/readback:** receipt created and read back; index pointer must be read back; tracker status remains explicit.
+- [ ] **Safety:** no live-mainnet/public-testnet testing, unauthorized transactions, public disclosure, fabricated vulnerability, or false submission/payment state.
+- [ ] **Item disposition:** LayerZero = Q3 PARKED / NOT SUBMISSION-READY; receive-prevention sub-claim = KILLED; remaining retained-funds idea = UNPROVEN; tracker = TRACKER_WRITE_BLOCKED; Q1 = UNKNOWN.
+- [ ] **Remaining work:** independent Reaper parcel progression, tracker access/queue recovery, Root retrospective review.
