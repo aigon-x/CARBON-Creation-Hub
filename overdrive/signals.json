@@ -1,6 +1,18 @@
 {
   "PRI": [
     {
+      "due_at": "2026-10-10T17:00:00Z",
+      "due_now": true,
+      "next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
+      "opportunity_key": "callforceoutsourcing.com|marketing-lead|south-africa",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a103d43041d248b for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "state": "SUBMITTED",
+      "status": "READY",
+      "thread_id": "1a103d43041d248b"
+    },
+    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
@@ -155,18 +167,6 @@
       "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a11b54b561ebb5c"
-    },
-    {
-      "due_at": "2026-10-10T17:00:00Z",
-      "due_now": false,
-      "next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
-      "opportunity_key": "callforceoutsourcing.com|marketing-lead|south-africa",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
-      "state": "SUBMITTED",
-      "status": "WAITING",
-      "thread_id": "1a103d43041d248b"
     },
     {
       "due_at": null,
@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-10T10:58:19.562035+00:00",
+  "generated_at": "2026-10-10T18:57:59.931781+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1003,14 +1003,14 @@
     },
     "callforceoutsourcing.com|marketing-lead|south-africa": {
       "due_at": "2026-10-10T17:00:00Z",
-      "due_now": false,
+      "due_now": true,
       "next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
       "opportunity_key": "callforceoutsourcing.com|marketing-lead|south-africa",
-      "priority": 8,
-      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
-      "smallest_next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
+      "priority": 2,
+      "routing_reason": null,
+      "smallest_next_action": "Read existing thread 1a103d43041d248b for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
       "state": "SUBMITTED",
-      "status": "WAITING",
+      "status": "READY",
       "thread_id": "1a103d43041d248b"
     },
     "cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
