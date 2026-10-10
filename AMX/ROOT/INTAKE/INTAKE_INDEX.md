@@ -26,7 +26,7 @@ This directive itself is P0 and takes precedence over lower-priority administrat
 
 - **Permanent Commercial Manager appointment:** confirmed by Owner; direct ROOT / Route Intake reporting pending Governance's final placement/mandate binding. Current case: [issue #32](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/32).
 - **OCC-04 control content:** committed to current Blue State at `ada4770fd49f0ba1954ea7d7491ed6f319747f8a`, outside Reaper's canonical mandate markers. The required chain is analysis → validated fix → package/finalize → authorized submission/handoff → external receipt → terminal result.
-- **Fix report:** [OCC04_REAPER_FINAL_MILE_FIX_REPORT_20261010.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/OCC04_REAPER_FINAL_MILE_FIX_REPORT_20261010.md). Latest update commit `63dfa03b1a2429af70f4d731e003bf68942b3193`; latest blob `ea7b0f3f333b326269cdbb9680bdf21ff555bea5`.
+- **Fix report:** [OCC04_REAPER_FINAL_MILE_FIX_REPORT_20261010.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/OCC04_REAPER_FINAL_MILE_FIX_REPORT_20261010.md). Latest update commit `c8b3598c8f4c46cb52ac7bd1b89eb9334b5766ef`; latest blob `2d578e57ba441235988fcd983d62e6f92520a264`.
 - **Latest Reaper material dispositions:** LayerZero remains Q3/PARKED/not submission-ready; XOXNO generic stale-position sub-claim was not reproduced; the prior sBTC nonce-response behavior tied to public issue #2133 / merged PR #2135 is public prior art and must not be submitted as a new finding. Receipt: [SBTC prior-art dedupe](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/BOUNTY_REAPER_SBTC_NONCE_RESPONSE_PRIOR_ART_DEDUPE_RECEIPT_20261010.md), commit `0adf0c39e25da97c61b930cedd2c97fdf2619051`; readback blob `8768c8b1bdc50c1cf3d55f95b7a23691f10c8b72`.
 - **Behavioral acceptance remains OPEN:** immediate Reaper run requested post-control, but fresh run completion/consumption has not been evidenced. Existing saved prompt update is blocked by `automation_schedule_not_available` under the existing hourly cadence; schedule must not silently change. Canonical worker reads Blue State every wake, so next attributable post-commit read/transition is the acceptance gate.
 - **Tracker gate:** Google Drive plugin is `DISABLED_BY_ADMIN / NOT_AVAILABLE`; TinyFish has no recorded Google sign-in profile. No Runs row is claimed; `TRACKER_WRITE_BLOCKED`; Q1 remains UNKNOWN, not zero. No shadow tracker or duplicate worker.
@@ -1894,8 +1894,8 @@ No tracker row was written; `TRACKER_WRITE_BLOCKED` persists and Q1 remains UNKN
 **Do not park behind lower-value queue items.** The Owner explicitly authorized immediate application of the Reaper final-mile fix and requested retrospective Root/Governance adjudication. Continue the established P0 clearance set; keep this material Reaper completion blocker visible and work its executable actions alongside queue draining rather than sending it back to narrative-only governance backlog.
 
 **Fix report:** `AMX/ROOT/INTAKE/OCC04_REAPER_FINAL_MILE_FIX_REPORT_20261010.md`  
-**Latest fix-report commit:** `63dfa03b1a2429af70f4d731e003bf68942b3193`  
-**Latest report readback blob:** `ea7b0f3f333b326269cdbb9680bdf21ff555bea5`  
+**Latest fix-report commit:** `c8b3598c8f4c46cb52ac7bd1b89eb9334b5766ef`  
+**Latest report readback blob:** `2d578e57ba441235988fcd983d62e6f92520a264`  
 **Blue State OCC-04 control commit:** `ada4770fd49f0ba1954ea7d7491ed6f319747f8a`  
 **Permanent appointment and remit:** [issue #32](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/32).
 
