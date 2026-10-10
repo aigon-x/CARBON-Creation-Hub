@@ -108,3 +108,32 @@ Current tool readback:
 **Classification:** POTENTIAL EXISTING ROUTE / HUMAN AUTHORIZATION GATE NOT YET SATISFIED. This is more specific than a generic tool absence. Next action: Owner confirms whether one listed existing profile is already signed into the intended Google account, or explicitly authorizes the setup flow for the chosen profile; never request or collect a password in chat. After authorized setup, use TinyFish to read the existing tracker, then test the narrow required Runs-row write/readback only if the browser/session is genuinely authenticated and the sheet allows it. Preserve the existing spreadsheet ID and schema.
 
 This trial currently has outcome **NOT YET TESTABLE**, not PASS or FAIL: profile availability is verified; Google authenticated access and tracker write/readback are unproven.
+
+
+---
+
+## 10. Additional Reaper continuation — sBTC public prior-art kill
+
+While the Tracker and prompt-update routes remain blocked, source-grounded public-history work continued. The prior Matrix truth record identifies the previous Reaper material run `RUN-20261002-1837` as pinning `stacks-sbtc/sbtc@3e16c056fd7bc595522fb904dd4d3fcd4cb7795a`.
+
+Fresh direct readback found:
+- commit `3e16c056fd7bc595522fb904dd4d3fcd4cb7795a` titled “feat: cache nonce responses and use them”;
+- public issue #2133 already describing the nonce-response cache/verification behavior;
+- public merged PR #2135 explicitly closes issue #2133 and implements that behavior;
+- current sBTC Immunefi scope page last updated 2026-10-07 includes the signer implementation at the program level but excludes publicly described issues/PRs and requires a functional PoC.
+
+Receipt: `AMX/ROOT/INTAKE/BOUNTY_REAPER_SBTC_NONCE_RESPONSE_PRIOR_ART_DEDUPE_RECEIPT_20261010.md`, commit `0adf0c39e25da97c61b930cedd2c97fdf2619051`, readback blob `8768c8b1bdc50c1cf3d55f95b7a23691f10c8b72`. Index receipt pointer is current on main.
+
+**Material consequence:** the generalized claim that this public nonce-response cache/verification behavior is a new undisclosed finding is **KILLED / DO NOT SUBMIT**. This is only an item-specific prior-art kill; it does not claim that every adjacent sBTC signer path is safe. A distinct path remains UNKNOWN until new reproducible local/regtest evidence, current eligible impact, and full dedupe prove otherwise. The correct continuation is another distinct lawful parcel, not a reworded submission of the known public behavior.
+
+### Directive 23 continuation checklist
+
+- [x] **Outcome:** public sBTC behavior/PR was deduplicated; the general behavior is not carried forward as novel.
+- [x] **Owner:** existing Bounty Reaper owns any new crypto parcel; ROOT/T-GOV owns OCC-04 retrospective review; Commercial Manager coordinates portfolio continuity.
+- [x] **Action:** stop pursuit of the known-behavior claim and continue distinct lawful work.
+- [x] **Dependencies:** direct GitHub source/issue/PR plus current official sBTC program scope.
+- [x] **Acceptance evidence:** immutable commit, issue #2133, merged PR #2135 and official scope cited in the receipt.
+- [x] **Persistence/readback:** receipt and Intake index pointer independently read back.
+- [x] **Safety:** no live target/testnet, transaction, exploit, public disclosure, submission or payment claim.
+- [x] **Item disposition:** nonce-response cache behavior = PUBLIC PRIOR ART / DO NOT SUBMIT; broader signer safety = UNKNOWN; current Q1 = UNKNOWN because tracker remains inaccessible.
+- [ ] **Remaining work:** fresh Reaper runtime consumption/behavioral acceptance of OCC-04, independent eligible parcel progression, Tracker/Q1 recovery via authorized route, and Root retrospective disposition.
