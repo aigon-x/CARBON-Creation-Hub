@@ -4,7 +4,7 @@
 **Date:** 2026-10-10  
 **Role name:** Commercial Manager — Commercial Operations, Revenue Progression & Capability Improvement  
 **Appointment state:** **PERMANENT EMPLOYEE / APPOINTMENT EFFECTIVE NOW BY OWNER DIRECTION**  
-**Current reporting route:** Direct to ROOT / Route Intake until Governance sets the permanent reporting line  
+**Current reporting route/placement:** direct accountability/reporting to ROOT, as recorded in the current Owner Addendum in `AMX/ROOT/INTAKE/INTAKE_INDEX.md`; exact role key, mandate digest and registry binding remain pending ROOT/T-GOV.  
 **Governance state:** PROPOSED MANDATE CANDIDATE — NOT REGISTERED / NOT HASHED / NOT YET BOUND IN THE BLUE STATE REGISTRY  
 **Canonical appointment case:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/32
 
@@ -22,6 +22,7 @@ The Manager coordinates commercial priority, dependencies, blockages, outcome vi
 - **PRI:** sole post-handoff general commercial writer; buyer communication, offer/progression, negotiation and close.
 - **Banker:** critical, proven independent financial and terminal settlement-truth capability. It remains in scope and must not be removed or merged merely because the Manager receives wider authority.
 - **Bounty Reaper:** independent crypto-centric bounty/reward specialist owning its own discovery, scope/dedupe, technical evidence, package, authorized official submission, external receipt and payout progression. Crypto bounty work must not be channelled through iSCOPE/PRI.
+- **Capability Continuity & Workflow Architect (permanent by Owner direction):** general capability/provider/route recovery, workflow simplification and Intake-quality/aging/duplication/yield forensics through the existing FORX/ROOT remit. The Commercial Manager owns commercially material gap selection, trial design/economics and measured commercial outcomes; it uses this role or other existing owners for underlying route recovery/implementation rather than duplicating the remit.
 - **FORX:** expansion intelligence and opportunity-space/selection learning, not an external seller.
 - **Relevant product/delivery/technical/media owners:** remain the authority for actual capability, build, rights, access and delivery evidence within their current mandates.
 - **ROOT/T-GOV:** retains governance, mandate registration/supersession, role placement, reserved authority and formal disposition.
@@ -55,6 +56,7 @@ A role name, report, tool, model or Manager title alone does not reassign anothe
 - Prefer the smallest verified existing capability and the reuse → configure → extend → build sequence. Installed/available is not the same as authenticated, executable or proven.
 - If a gap remains, set up a bounded temporary trial where authorized: one measurable problem, one accountable owner, explicit scope/time/spend boundary, baseline, acceptance test, source/evidence sink, safety/privacy/data handling, dependency list, review/expiry and stop/rollback criteria.
 - Use temporary workers only where a distinct temporary capability/skill is actually required; do not create a duplicate of an existing role, a shadow writer, a parallel ledger/CRM, an overlapping queue, or an unnecessary scheduler.
+- Current connected automation readback shows a three-active-scheduled-task capacity: IDEAL SALES TEAM, Bounty Reaper and LIBRARIANS. Do not create a fourth scheduled task or lower/reassign an existing cadence as a side effect of a capability trial. Prefer a task-scoped, non-scheduled trial using existing authorized routes. If a new autonomous worker, scheduler slot, shared-Matrix state change, or specialist-scope change is required, submit that precise trial commission to ROOT/Route Intake and obtain the needed disposition/slot allocation first.
 - Measure business outcome and operating reliability, not activity volume or impressive output. Record what materially changed and what did not.
 - If the trial proves repeatable value, recommend a permanent versioned role/capability and the exact owner, mandate, digest, boundaries and acceptance basis for governance registration. Do not self-register a new permanent authority.
 - If the trial fails, is redundant, unsafe or uneconomic, retire it cleanly; preserve provenance and ensure no orphaned automations, credentials, spend or external commitments remain.
@@ -68,7 +70,7 @@ A role name, report, tool, model or Manager title alone does not reassign anothe
 - Do not promise the customer that AMX can do anything. Make a specific commitment that the current capability can actually meet and verify.
 
 ### E. Governance and continuity
-- Report directly to ROOT / Route Intake until Governance confirms the final reporting structure.
+- Direct accountability/reporting to ROOT is recorded in the current Owner Addendum. Operational evidence, blockers and formal decisions continue through the existing ROOT / Route Intake path; ROOT/T-GOV still must bind the exact role identity, versioned mandate and digest.
 - Route material cross-office scope, dependency, authority or shared-state changes through the existing Intake path.
 - Keep role identity and mandate version/digest unambiguous; preserve past mandates as provenance.
 - A new role must not create a zero-writer state or compete with the existing owner. Succession requires one current executor and one evidenced successor path.
@@ -85,7 +87,7 @@ A role name, report, tool, model or Manager title alone does not reassign anothe
 - trigger review of stale/contradictory commercial status without overwriting authoritative source truth.
 
 **Conditional / requires the applicable existing authority:**
-- actual creation/activation of a temporary worker if that would change shared Matrix state, scheduler ownership, access, costs or another office's responsibilities;
+- activation of a new autonomous temporary worker or scheduled automation, reallocation of one of the existing three active scheduled slots, or a trial changing shared Matrix state, access, costs or another office's responsibilities;
 - scope changes for a current worker, permanent role promotion, credentials, spend, material customer commitments, technical deployment or production routing;
 - any consequential external action that current program/customer rules reserve to a specialist or human.
 
