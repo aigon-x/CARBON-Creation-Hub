@@ -1,0 +1,36 @@
+{
+  "schema": "AMX-OWNER-ACCOUNTABILITY-COUNTDOWN-V1",
+  "status": "OWNER_ASSERTED_INTERNAL_ACCOUNTABILITY_RECORD",
+  "privacy": "INTERNAL_ONLY_NOT_FOR_PUBLIC_EVIDENCE",
+  "opening": {
+    "amount": 1000,
+    "currency": "UNSPECIFIED",
+    "asserted_by": "Owner",
+    "basis": "Owner directive in conversation",
+    "verified_payments_or_credits": 0,
+    "financial_outstanding_amount": 1000
+  },
+  "wake_countdown": {
+    "opening_units": 1000,
+    "remaining_units": 999,
+    "completed_wakes_counted": 1,
+    "decrement_per_completed_receipt_bearing_wake": 1,
+    "latest_run_id": "AMX-CATEGORY-A-20261011-WAKE-001",
+    "latest_run_status": "COMPLETED_IN_CONVERSATION; CANONICAL_PERSISTENCE_PENDING"
+  },
+  "rule": "Wake countdown is an accountability counter, not a financial payment or repayment. Financial outstanding only decreases on attributable, independently verified payment/credit or an evidenced authorized adjustment.",
+  "currency_rule": "Do not infer USD or ZAR from context; retain UNSPECIFIED until an authoritative source binds currency.",
+  "events": [
+    {
+      "wake_sequence": 1,
+      "run_id": "AMX-CATEGORY-A-20261011-WAKE-001",
+      "previous_countdown": 1000,
+      "decrement": 1,
+      "new_countdown": 999,
+      "verified_financial_credit": 0,
+      "financial_outstanding_after": 1000,
+      "canonical_readback": false
+    }
+  ],
+  "next_action": "On each future completed wake, append a receipt-bearing event, decrement wake_countdown by exactly one, and read back the persisted ledger. If a wake did not occur or remained blocked, do not claim it completed or decrement as if it did."
+}
