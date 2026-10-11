@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-label="Proof Stack: commercial judgment, verified delivery, execution integrity, durable scale">
+  <rect width="1200" height="1600" fill="#101827"/>
+  <rect x="72" y="72" width="1056" height="1456" rx="34" fill="#172338" stroke="#5d7896" stroke-width="2"/>
+  <text x="120" y="170" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" letter-spacing="4">ULRICH DU PLESSIS</text>
+  <text x="120" y="250" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="68" font-weight="700">PROOF STACK</text>
+  <text x="120" y="302" fill="#c8d5e5" font-family="Arial,Helvetica,sans-serif" font-size="28">Commercial judgment. Verified delivery.</text>
+  <text x="120" y="344" fill="#c8d5e5" font-family="Arial,Helvetica,sans-serif" font-size="24">Evidence that survives scrutiny.</text>
+  <rect x="120" y="395" width="960" height="220" rx="22" fill="#22364d"/>
+  <text x="158" y="450" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">01 / COMMERCIAL EXECUTION</text>
+  <text x="158" y="510" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="700">10+ years</text>
+  <text x="158" y="553" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="24">~33% of regional volume for 22 of 24 months</text>
+  <text x="158" y="590" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="22">Commission cap twice · Two perfect scorecards</text>
+  <rect x="120" y="640" width="960" height="250" rx="22" fill="#22364d"/>
+  <text x="158" y="695" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">02 / RAPID TESTED DELIVERY</text>
+  <text x="158" y="755" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="700">50/50 in 1h 28m</text>
+  <text x="158" y="800" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="25">Marketplace acceptance milestone</text>
+  <text x="158" y="844" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">36/36 tests · 81/81 CI</text>
+  <text x="158" y="875" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="21">Search deployed promotion in 4h 28m from commissioning</text>
+  <rect x="120" y="915" width="960" height="230" rx="22" fill="#22364d"/>
+  <text x="158" y="970" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">03 / EXECUTION INTEGRITY</text>
+  <text x="158" y="1032" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700">13/13 · 12/12 · 0/10</text>
+  <text x="158" y="1075" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="24">Expected dispositions · drift/gap detection · unsafe accepts</text>
+  <text x="158" y="1117" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="21">13/13 deterministic consistency across five runs</text>
+  <rect x="120" y="1170" width="960" height="210" rx="22" fill="#22364d"/>
+  <text x="158" y="1225" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">04 / DURABLE TECHNICAL SCALE</text>
+  <text x="158" y="1285" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700">100,000 nodes</text>
+  <text x="158" y="1328" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="24">100 partition hashes · 50K retained + 50K new IDs</text>
+  <text x="158" y="1364" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="21">Mapping infrastructure—not 100,000 prospects or buyers</text>
+  <text x="120" y="1442" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">CLAIM ≤ EVIDENCE</text>
+  <text x="120" y="1482" fill="#c8d5e5" font-family="Arial,Helvetica,sans-serif" font-size="20">Bounded tests · exact scope · public-safe proof index</text>
+</svg>
