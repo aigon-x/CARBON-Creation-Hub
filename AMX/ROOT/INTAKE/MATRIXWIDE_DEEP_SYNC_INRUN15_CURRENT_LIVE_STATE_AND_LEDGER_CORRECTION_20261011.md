@@ -87,3 +87,21 @@ A fresh Automations peek returned 25 task records. Before correction, only two t
 - **Safety/preservation:** existing role isolation, hourly schedules unchanged, no new worker/queue/tracker/provider lane, no public D04 claim, no false closure.
 - **Disposition:** DEEP SWEEP PARTIAL; INTAKE NOT CLEARED; runtime remains open while lawful executable scope remains.
 - **Remaining work:** continue the existing Intake sequence and record each consequential current-state change with source pointer and independent readback.
+
+
+## Post-readback source recovery — Reaper sequence 5
+
+After the initial INRUN-15 readback, a source search recovered the later existing receipt:
+- Path: `AMX/ROOT/INTAKE/BOUNTY_REAPER_EXECUTION_RECEIPT_20261011_210731_SAST.md`
+- Receipt Git blob: `5a688fa9c383d1423251252654ddb8b3412c1ceb`
+- Existing run ID: `BR-20261011-190845-SAST-02`; sequence 5; observed 2026-10-11 21:07:31 SAST.
+- Marker-bounded payload SHA-256: `d5ecdad160c213dfaa7d100a6a0c495902a292363969d7700ac61d464f93d5d9`.
+- Preflight: Registry v1.2 root and current Reaper mandate digest PASS.
+- Result: static review of pinned LayerZero Executor/WorkerUpgradeable source killed the specific claim that failed native-drop alone prevents receive and creates permanent unrecoverable loss, because the source contains an admin-only recovery path. It found no theft or permanent end-user fund loss; no runnable PoC was executed.
+- Prior art is acknowledged; exact eligible deployed Executor remains unbound; the parent parcel `BR-20261003-024` remains C/Q3 parked. This narrow subclaim kill does not establish Q1 empty.
+- Tracker status: `TRACKER_WRITE_BLOCKED`; Q1 remains UNKNOWN, NOT ZERO; no submission, external report ID, award or payment.
+- Next action in Reaper receipt: continue another executable parcel and recover the existing authorized Tracker route through governance.
+
+**Time-bound attribution:** this receipt at 21:07:31 SAST predates the latest scheduler `last_run_time=2026-10-11T20:02:51.506384Z` (22:02:51 SAST). It is the latest recovered substantive receipt in this search, but it does **not** prove the outcome of that later scheduler wake or the immediate run request made after enablement was restored. No post-request Reaper output has been found in this readback.
+
+This recovery changes the bounty evidence baseline, not the final-mile acceptance. Reaper remains enabled / read back; immediate run requested; scheduler-result attribution and Tracker continuity remain OPEN.
