@@ -2204,3 +2204,11 @@ This addendum supersedes prior embedded count/scheduler snapshots where they con
 - Sequence 5 (21:07:31 SAST) kills the narrow LayerZero failed-native-drop/permanent-recovery-loss subclaim. No runnable PoC, distinct eligible finding, submission, award or payment is established. Parent parcel remains Q3 parked; Tracker blocked and Q1 UNKNOWN, not zero.
 - This receipt predates the latest scheduler last_run_time (20:02:51Z / 22:02:51 SAST) and does not attribute a result to that wake or to the later immediate run request. Reaper remains enabled/read back; post-request output remains not found.
 - Readback: appended to the existing INRUN-15 correction artifact and routed to the existing issue #32. Acceptance remains open until a post-request result and independent receipt readback, plus authorized Tracker read/write/readback.
+
+
+### PROVISIONAL DRIFT CLASSIFICATION — TRANSCRIPT CAPTURE — 2026-10-12
+- Artifact: [TRANSCRIPT_DRIFT_CLASSIFICATION_20261012.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/TRANSCRIPT_DRIFT_CLASSIFICATION_20261012.md).
+- Proposed classification for ROOT review: **GOVERNANCE / AUTHORITY-BOUNDARY DRIFT**, primarily recommendation/directive boundary collapse; secondary subtypes are self-authorization/mandate-binding drift, canonical-state/runtime-state conflation, and evidence-to-claim inflation/false closure.
+- Source-integrity limitation: prior messages are partly available only as contextual summaries and linked records; this is not claimed to be a verbatim export of the entire historical thread. No missing dialogue was reconstructed as direct quotation.
+- Existing lineage: ROOT Intake #31 (recommendation misread as directive / data-integrity and throughput recovery) and #32 (appointment/mandate binding and final-mile runtime acceptance). No new role, worker, scheduler, queue, or authority is proposed.
+- **Disposition:** submitted for ROOT/T-GOV classification; not yet classified or accepted by ROOT. Full transcript fidelity remains limited until the exact original transcript is available.
