@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627" role="img" aria-label="CARBON Search first-cycle evidence draft">
+<title>CARBON Search first-cycle evidence draft</title>
+<rect width="1200" height="627" fill="#0A0D12"/><rect width="1200" height="10" fill="#00C4FF"/>
+<text x="56" y="66" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#00C4FF">CARBON SEARCH / INTELLAGENT</text>
+<text x="56" y="145" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#F7F8FA">What 36/36 actually means.</text>
+<rect x="56" y="230" width="500" height="96" rx="10" fill="#111923" stroke="#263444"/><text x="80" y="285" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#00C4FF">36/36</text><text x="245" y="280" font-family="Arial,sans-serif" font-size="20" fill="#F7F8FA">Search-specific tests</text>
+<rect x="56" y="346" width="500" height="96" rx="10" fill="#111923" stroke="#263444"/><text x="80" y="401" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#00C4FF">81/81</text><text x="245" y="396" font-family="Arial,sans-serif" font-size="20" fill="#F7F8FA">Full-repository CI</text>
+<rect x="610" y="230" width="534" height="212" rx="14" fill="#111923" stroke="#00C4FF" stroke-width="2"/>
+<text x="648" y="274" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#00C4FF">EVIDENCE BOUNDARY</text>
+<text x="648" y="318" font-family="Arial,sans-serif" font-size="18" fill="#F7F8FA">Evidenced first-cycle build only.</text>
+<text x="648" y="352" font-family="Arial,sans-serif" font-size="18" fill="#F7F8FA">Later convergence is a separate gate.</text>
+<text x="648" y="386" font-family="Arial,sans-serif" font-size="18" fill="#F7F8FA">Tests do not prove buyer payment.</text>
+<text x="610" y="482" font-family="Arial,sans-serif" font-size="13" fill="#A7B0BC">Issue #16 | CI 37939788569 | commit 69834610dfb0945490b5d6f8047c8d99a0f83477</text>
+<line x1="48" y1="575" x2="1152" y2="575" stroke="#263444" stroke-width="2"/>
+<text x="48" y="601" font-family="Arial,sans-serif" font-size="16" fill="#A7B0BC">AMilliMATRiX | DRAFT - OWNER INSPECTION ONLY</text></svg>
