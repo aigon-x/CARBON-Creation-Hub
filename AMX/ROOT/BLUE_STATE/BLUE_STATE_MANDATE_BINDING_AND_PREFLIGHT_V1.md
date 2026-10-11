@@ -809,3 +809,63 @@ The repair is accepted only when the intended state transition is supported by e
 **ROOT/T-GOV retrospective review:** verify this is the smallest correct OCC-04 application; confirm Reaper mandate payload/hash and registry root remain unchanged; check the index/report readbacks and evidence boundaries; amend any drift and re-read amended artifacts. Formal OCC-04 disposition remains pending until Root records it.
 
 **Invalid closure:** document/prompt updated alone; scheduler wake alone; Q1=0 inferred from missing tracker access; submitted without official receipt; award described as paid without independent settlement; a killed sub-claim left submission-ready; or an unresolved block lacking owner/next action.
+
+
+---
+
+# OWNER-DIRECTED INTENT-DRIVEN EXECUTION APPLICATION — 2026-10-11
+
+**Authority:** direct Owner instruction in the 2026-10-11 Matrix-wide deep-sync run.  
+**Disposition:** APPLY THE EXISTING RULES TO EXECUTION NOW; do not create a second worker, mandate, scoring system, scheduler, queue, memory plane, or authority layer.  
+**Run family:** `AMX-DSI-20261011-061646Z`.  
+**Controlling Search sources:** `house/search/CARBON_SEARCH_BUILD_INITIATIVE_V1.md` §§3, 10, 15, 23; `house/search/CARBON_SEARCH_ACCEPTANCE_V1.json`; existing Runtime-Open, mandate-preflight, weighted-continuity, blocked-attempt-recovery and post-run ROOT/Intake rules. The Search V1 frozen acceptance target is not redefined by this operational application.
+
+## 1. Purpose and semantic boundary
+
+Apply **INTENT-DRIVEN EXECUTION** to every applicable existing Matrix worker, search, queue and workflow. “Worker intention” means the evidence-supported direction of its observable work relative to its current mandate, required outcome, decisions and actual next-state consequences. It does **not** authorize speculation about private motives, hidden thoughts, character or willingness. Where actions do not support a defensible conclusion, report `UNKNOWN / INSUFFICIENT EVIDENCE`, not an accusation or a flattering inference.
+
+The calculation governs what the runtime should do next; it is not a substitute for mandate, safety, legal, permission, privacy, financial or governance boundaries.
+
+## 2. Required weighted selection
+
+For every material decision among eligible next actions, recover the explicit objective/signals and source freshness; separate **MEASURED INTENT** from latent hypotheses; preserve materially plausible alternatives; test the relevant evidence and constraints; and prioritize by the existing Search calculus:
+
+`priority ∝ P(intent hypothesis | signals,evidence) × intent utility × decision sensitivity × cost of being wrong`
+
+subject to permissions, evidence coverage, contradiction preservation and Expected Regret. For Search candidates, calculate Expected Intent Fulfilment (EIF) only where the hypothesis probabilities and utility inputs have defensible provenance; calculate `ΔI = 1 − EIF` only when EIF is supported. Do not invent coefficients, calibrated probabilities or false precision. When required inputs are absent, record the field as `UNKNOWN / NOT NUMERICALLY SCORABLE`, state the exact missing input, and still choose the best supported lawful action qualitatively where possible.
+
+A compact decision-state receipt must capture, as applicable: run/session ID; mandate/version; explicit outcome target; source signals and timestamps; candidate actions and evidence pointers; measured intent vs hypotheses; normalized claims and contradictions; scope/permission; weights/probability inputs or their UNKNOWN reason; expected utility/EIF where computable; decision sensitivity/cost-of-error; evidence coverage and freshness; Expected Regret/continue decision; chosen next action; expected observable acceptance result; before/after priority or state; actual outcome and next-selection consequence. No private chain-of-thought is required or to be recorded.
+
+## 3. Stop locally; do not end the runtime prematurely
+
+CARBON° Search §10 governs whether **that search decision** is sufficiently stable: dominant plausible intent represented, material constraints and contradictions resolved or bounded, evidence sufficient, remaining uncertainty unlikely to alter the outcome, expected regret below the configured threshold, mandatory high-sensitivity variables handled, and a lawful action or truthful HOLD available.
+
+Passing that local stop rule does **not** complete the enclosing worker runtime. Apply the existing Blue State **RUNTIME-OPEN RULE**: persist/read back the search result, perform its authorized action or HOLD, update the relevant canonical state, then select the next highest-weight lawful action in the worker's own mandate while executable work remains. Intake submission, a report, a completed subtask, one blocked item, one repair, an empty local queue, or a successful tool call is not by itself a runtime terminal condition.
+
+## 4. Provider/tool failure and active correction
+
+Apply Search §15. A failed/unavailable intent or retrieval provider must not silently downgrade into keyword-only behavior while retaining the CARBON° Search identity. Preserve the query/session and furthest valid state, record the exact failed route and result, use only an already authorized compatible fallback, otherwise record truthful `INTENT_ENGINE_UNAVAILABLE / DEGRADED` or `HOLD`; then continue independent lawful work in the enclosing runtime.
+
+Apply Search §23 on any wrong entity, stale state, mistaken inference, conflated offering, altered objective or incorrect score: identify the precise affected claim/hypothesis/derived state; mark only that derived state invalid/superseded; preserve unaffected valid evidence/history; update Measured Intent and hypotheses; recompute only affected normalization/ranking/regret; record the delta; continue from the furthest valid state. **ACTIVE ERROR != END SEARCH. CORRECTION != RESTART EVERYTHING.** No historical success is erased and no unproven join is promoted.
+
+## 5. Cross-surface and authority parity
+
+Use the same core intent semantics for an authorized human, worker, client or public Search surface. Scope, permissions, available actions and disclosure may differ; the core evidence/intent semantics may not be silently replaced by a materially weaker engine. Marketplace intent, Search intent, worker mandate intent, and commercial/bounty outcome are distinct typed entities/state dimensions. A matching name or similar wording is not a lawful join or authority grant. Marketplace discovery does not itself prove buyer intent, qualification, permission to contact, commitment, acceptance, payment or settlement.
+
+Do not attribute a worker's intent from prompt text alone. Compare (a) its current registered mandate and current saved prompt, (b) observed execution receipts/state changes, (c) actual next-action selection, (d) durable canonical readback, and (e) owner/scope constraints. A worker marked enabled or recently woken is not necessarily executing correctly. Record rule presence, consumption evidence and behavioral acceptance as separate fields.
+
+## 6. Mandatory same-run reporting and continuation
+
+Every material correction or partial drain may be submitted to existing ROOT/Route Intake during the same run; multiple submissions are allowed when they improve continuity. Each submission must retain the same immutable Run ID and an increasing item/sequence number, identify the prior submission's payload hash, and submit only new evidence/deltas plus links to the complete current report. Do not create parallel trackers or governance paths. The final report must include a SHA-256 over a precisely defined canonical payload and the Git blob/commit readback; report the hash only after computing it from the exact stored bytes.
+
+At **actual runtime/tool termination**, send a post-run packet through existing Intake with run ID, payload hash, source snapshots, completed/changed items, attempted-but-blocked items, exact blockers/recovery owners, rule-consumption evidence, item-level disposition, and remaining next actions. Never manufacture a user case, tool run, action, outcome or artifact merely to keep execution open. Continue meaningful lawful work; never simulate activity or assert success without the expected state transition and independent readback.
+
+## 7. Acceptance / invalid states
+
+Applied rule content is not proof of worker adherence. For each active worker, acceptance requires an attributable current wake, explicit mandate/scope match, evidence-backed next action, required weighted prioritization or truthful reason it cannot be computed, persistent state/result, independent readback, and continued material work while lawful scope remains. For each Search/Marketplace integration claim, test actual signals → measured intent/hypotheses → scoring/evidence/permissions → action → outcome → durable weight/next-selection consequence. Keep CI, deployment, live response, buyer-viewability and commercial conversion distinct.
+
+Invalid states include: calling guessed motivation “intent”; invented numeric weights; treating unknown as zero/FAIL without evidence; changing the user's lawful objective to a preferred question; silently replacing Search with keyword ranking; stopping the overall worker because a local search is complete; repeated escalation without new state; claiming rule consumption from document presence alone; prompt edit/wake without behavioral acceptance; `TRACKER_UPDATED` without independent row readback; and `RUNTIME TERMINAL` while lawful executable work remains.
+
+**Operating sequence:** `SIGNAL → MEASURE INTENT → FORM HYPOTHESES → CHECK MANDATE/SCOPE → SEARCH/EXECUTE → EVIDENCE + EXPECTED REGRET → SELECT WEIGHTED NEXT ACTION → PERSIST → READ BACK → RECORD OUTCOME/WEIGHT CONSEQUENCE → INTAKE DELTA → CONTINUE`.
+
+This additive application does not alter the registered mandate payloads, mandate digests or registry root. Those invariants must be checked after persistence.
