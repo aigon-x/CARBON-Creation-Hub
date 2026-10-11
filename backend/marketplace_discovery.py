@@ -197,7 +197,8 @@ class IntentEngineDiscoveryAdapter:
             if candidate is not None:
                 candidates.append(candidate)
                 candidate_to_listing[candidate["candidate_id"]] = listing
-        truncated = len(candidates) > self.max_candidates
+        candidate_pool_count = len(candidates)
+        truncated = candidate_pool_count > self.max_candidates
         candidates = candidates[: self.max_candidates]
         candidate_to_listing = {
             c["candidate_id"]: candidate_to_listing[c["candidate_id"]]
@@ -264,7 +265,7 @@ class IntentEngineDiscoveryAdapter:
             "engine_invoked": True,
             "intent_session_id": session_id,
             "intent_status": intent_response.get("status", session.get("status", "UNKNOWN")),
-            "candidate_pool_count": len(candidate_to_listing),
+            "candidate_pool_count": candidate_pool_count,
             "candidate_count_submitted": len(candidates),
             "candidate_pool_truncated": truncated,
             "result_count": len(ordered),
