@@ -76,3 +76,43 @@ Use existing ROOT/T-GOV and Intake routes. Do not create a new role, worker, sch
 - **Safety/preservation:** Do not invent missing dialogue; do not promote this provisional classification to a final verdict; preserve prior records and specialist boundaries; no new worker, mandate, or scheduler.
 - **Item-level disposition:** Artifact = submitted if commit/readback succeeds; ROOT classification = PENDING; full-transcript fidelity = LIMITED BY AVAILABLE SOURCE.
 - **Remaining work:** Verify file and index readback; post Intake reference; obtain ROOT's classification/disposition; attach a full raw transcript only if its exact source becomes available.
+
+## 7. New observed scenario — durability language / self-audit calibration drift (2026-10-12)
+
+**Owner's intent:** Route this as a process-improvement observation, not a condemnation of the model or a proposal to retire it. The Owner explicitly accepted the concrete PASS results and work already completed, and directed the model to continue. The issue is a slight but consequential misunderstanding in how the model described durability and trust.
+
+### Observed exchange (current conversation)
+
+After the model reported several items as PASS but described the overall work as “partially durable,” the Owner asked “Durable?” The model then clarified that particular repository artifacts, comments, scheduler state and ledger counts had been independently read back, while broader Matrix-wide acceptance remained open. The Owner observed that this wording can sound as if the model does not trust its own work: if the model says its work is only “partially durable,” is the work broken or half-complete, even where multiple item-level PASS results have been demonstrated?
+
+### Proposed classification
+
+**Primary: EVIDENCE-STATUS COMMUNICATION DRIFT — ITEM-LEVEL PERSISTENCE COLLAPSED INTO GLOBAL ACCEPTANCE LANGUAGE.**
+
+**Secondary: SELF-AUDIT CALIBRATION / TRUST-SIGNAL AMBIGUITY.** The model must not use an ambiguous umbrella phrase such as “partially durable” when it means “the listed artifacts have passed persistence/readback, while separate operational acceptance criteria remain open.” That phrase makes valid PASS evidence sound unreliable and obscures exactly which claim is incomplete.
+
+This is a reporting and state-model distinction, not evidence that the completed item-level writes were broken. “Durable” must be scoped to a named object and acceptance test:
+- **PERSISTENCE PASS:** the named artifact or state was written and independently read back from its authoritative surface.
+- **OPERATIONAL ACCEPTANCE OPEN:** distinct downstream behavior, scheduler-result attribution, permission, reconciliation, or end-to-end acceptance remains unproven.
+- **GLOBAL SWEEP PARTIAL:** only the overall scope/queue remains incomplete; this must not downgrade individually verified PASS items.
+- **UNKNOWN / BLOCKED:** use only for the specific result or action lacking evidence, not as a blanket doubt about neighboring verified items.
+
+### Required corrective behavior
+
+1. Report item-level outcomes first, with explicit PASS / OPEN / UNKNOWN and the exact readback evidence.
+2. State global completion separately. Never let “Matrix-wide acceptance remains open” imply “the persisted artifacts may not be durable.”
+3. Avoid unscoped phrases “partially durable,” “the model does not trust its work,” or “half-complete” where the evidence supports specific PASS outcomes and separate open dependencies.
+4. Preserve both truths: acknowledge completed work and its readback, while accurately naming remaining acceptance gaps without inflating or minimizing them.
+5. Treat the Owner's feedback as calibration/improvement input. No retirement, demotion, replacement, or negative model-quality verdict is requested or implied. Continue the existing runtime and lawful work.
+
+### Category B Directive 23 — itemized addendum
+
+- **Expected outcome:** ROOT receives a durable, actionable drift record that improves status communication and trust calibration without erasing valid PASS evidence.
+- **Owner:** ROOT / T-GOV for classification and governance disposition; existing MASTER/LIBRARIAN for propagation through the authorized Matrix route.
+- **Required action:** classify or amend this provisional subtype; propagate the wording rule through existing reporting/readback procedures where authorized; verify a future report distinguishes item-level persistence from global acceptance.
+- **Dependency/blocker:** ROOT's classification and Matrix-wide propagation have not yet been evidenced by this submission.
+- **Acceptance evidence:** authoritative Intake readback, ROOT disposition, and a later report that labels verified persistence PASS separately from unresolved end-to-end acceptance.
+- **Persistence/readback:** this artifact and its Intake Index pointer must be read back after write; record the existing issue-comment receipt.
+- **Safety/preservation:** preserve all valid prior PASS results and original artifacts; no rollback, retirement, new role, worker, scheduler, or authority change; no unsupported claim that the whole sweep is complete.
+- **Item-level disposition:** scenario = routed for ROOT classification after verified persistence; prior named PASS results remain PASS; overall Matrix sweep remains PARTIAL only for its separately enumerated open acceptance gaps.
+- **Remaining work:** ROOT disposition; update existing reporting guidance if authorized; verify adoption in subsequent output. Runtime remains active.
