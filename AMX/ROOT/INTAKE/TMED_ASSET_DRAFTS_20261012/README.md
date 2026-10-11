@@ -1,13 +1,11 @@
 # T-MED Asset Drafts - 2026-10-12
 
-Status: DRAFT ONLY; not published.
+Status: DRAFT ONLY; not published. CARBON Critic and T-MED QA remain open.
 
-Current source assets on this branch:
-- AMX_COMMERCIAL_TRACK_RECORD_HERO_1200x627.svg
-- AMX_SEARCH_36OF36_HERO_1200x627.svg
+Editable SVG sources in this folder cover the commercial track record, D01, D02, Marketplace, Search, What I Build, and three vertical social concepts with thumbnails.
 
-Public-safe 8-page PDF deck is available in the current conversation as `AMX_PUBLIC_EVIDENCE_DECK_8SLIDE_DRAFT.pdf` (SHA-256 `484b7ef720f62b8e064e32bc732cb58c37a7f97cc5de3cb47f9ba88528479cd1`). It is not yet stored in this branch.
+The 8-page public-safe PDF deck was generated locally as `AMX_PUBLIC_EVIDENCE_DECK_8SLIDE_DRAFT.pdf`; it is not yet stored in this branch. HeyGen draft job `621e20c212a71c54fd692420d1cb462a` was last observed processing; no final MP4/subtitle readback is claimed.
 
-D04 is excluded. No posting, scheduling, profile edits, external messages, provider-routing changes, or production-configuration changes were made.
+D04 is excluded. No social publication, scheduling, profile edit, provider routing change, or production-configuration change was made.
 
-Next: CARBON renders/QA final platform assets through the existing authorized route; T-MED verifies exact files and source pointers; ROOT/T-GOV resolves the separate D04 release gate.
+Next: CARBON renders/QA final platform PNGs, carousel exports and video cuts; T-MED reads back final files; ROOT/T-GOV resolves the separate D04 release gate.
