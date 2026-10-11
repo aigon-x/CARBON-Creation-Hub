@@ -82,8 +82,8 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-09T13:05:00Z",
-  "last_updated_by": "Master/Librarian bounded reconciliation — MoboReels inbox-full delivery failure",
+  "last_updated_at": "2026-10-11T18:06:36.864Z",
+  "last_updated_by": "PRI — current official task-based route requalification",
   "record_count": 66,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -2782,6 +2782,14 @@
           "url": "https://www.opentrain.ai/jobs/python-backend-developer-for-ai-agent-data--cmutoopjw000306mwfvbs4c88/"
         },
         {
+          "kind": "CURRENT_PRIMARY_ROLE_REVALIDATED",
+          "observed_at": "2026-10-11T18:06:36.864Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "posted_at": "2026-10-04",
+          "summary": "Official OpenTrain listing rechecked on this wake: remote worldwide, four-week contractor engagement, USD 300 per approved task, 20+ hours/week, at least one approved task/day; Python backend/API/connectors/AI-agent evaluation.",
+          "url": "https://www.opentrain.ai/jobs/python-backend-developer-for-ai-agent-data--cmutoopjw000306mwfvbs4c88/"
+        },
+        {
           "kind": "EXISTING_ACCOUNT_RECOVERY_PROVEN",
           "observed_at": "2026-10-03T14:00:41Z",
           "source": "GMAIL",
@@ -2800,13 +2808,14 @@
       "execution_owner": "PRI",
       "execution_readiness": "HOLD_ACCOUNT_RECOVERY",
       "last_action_at": "2026-10-06T16:22:00Z",
-      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "next_action": "Restore the existing OpenTrain account through the current secure login/recovery route. Before submission, confirm the applicant can truthfully meet the listing 20+ hours/week requirement and one approved task/day expectation. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
       "opportunity": "python-backend-developer-ai-agent-data",
       "organization": "OpenTrain AI",
       "payment": "Provider/client payout after approved task; exact settlement rail remains to be recovered before any PAID claim.",
+      "proof_of_work_route": "TASK_BASED",
       "qualified_at": "2026-10-06T16:22:00Z",
       "reward": "USD 300 per approved task",
-      "route_verified_live": false,
+      "route_verified_live": true,
       "state": "QUALIFIED",
       "submission_ready": false,
       "title": "Python Backend Developer for AI Agent Data"
@@ -4187,6 +4196,6 @@
       "video_access_verified_at": "2026-09-30T16:52:12.432Z"
     }
   },
-  "updated_at": "2026-10-09T13:05:00Z",
+  "updated_at": "2026-10-11T18:06:36.864Z",
   "version": 1
 }
