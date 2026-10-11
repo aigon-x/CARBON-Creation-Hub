@@ -1,6 +1,6 @@
 # CATEGORY A — RUN EXECUTION METRIC, OWNER ACCOUNTABILITY COUNTDOWN, PUBLIC EVIDENCE HYGIENE
 **Date:** 2026-10-11  
-**State requested:** Owner-directed Category A / merge to existing Governance + Blue State, then apply to existing Intake and current workers.  
+**Status:** OWNER-DIRECTED / ADDITIVE BLUE STATE CONTROL PERSISTED AND READ BACK. Blue State commit `70fbdf207c4b72331a26f2cecf39c16d6aa5fa68`; Blue State blob `9fb44f0c49a6e64175754ac3b6ec303209985f1b`. Intake Index adoption and worker/scheduler behavioral receipts remain subject to independent readback.  
 **Authority boundary:** Additive control only. It does not create a new worker, scheduler, role, permission or parallel queue. It does not override security, privacy, platform safety or required authorization.
 
 ## 1. Owner intent — binding interpretation
