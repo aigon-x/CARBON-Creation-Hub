@@ -82,6 +82,18 @@ Issue routing snapshot:
 **Post-run payload SHA-256 (recomputed after source readback):** c4a1c3723a513d7bdb270162fdee72353239205b1421e7f054f3eca34ef45b8e  
 **Post-run meaning:** same-run delta records three immediate run requests and explicitly distinguishes request acknowledgement from completion; current readback proves only a post-patch Librarian timestamp, not content/output receipt. IDEAL Sales/Reaper last_run_time values did not change. Do not mark worker uptake complete.
 
+### Same-run continuation receipt — AMX-DSI-20261011-061646Z / POSTRUN-02
+
+- **Complete automation census:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_POSTRUN02_AUTOMATION_CENSUS_20261011.md
+- **GitHub commit:** b677e45cd06a4552e7c8ba9814bcd35469df4b86
+- **Source blob/readback:** 463ccff391e5fca7227ffb532c2002efefcbac95
+- **Run ID:** AMX-DSI-20261011-061646Z
+- **Parent report SHA-256:** 4fc3373103cd0b799d5596ab633b94164450b7dd57f13cf99bb5dccc36b3460b
+- **Prior post-run SHA-256:** c4a1c3723a513d7bdb270162fdee72353239205b1421e7f054f3eca34ef45b8e
+- **Correction:** Later automation peek shows Librarians last_run_time 2026-10-11T06:51:06.174498Z, IDEAL Sales 2026-10-11T06:40:46.410742Z, Reaper 2026-10-11T06:51:04.718958Z. The timestamps post-date the Blue State correction and run requests, but outcome/receipt is not exposed; rule consumption remains unverified. All three still report next_run_time=null.
+- **Roster census:** 25 connected automation records; 3 enabled, 22 disabled; registry v1.2 contains 12 mandate entries. The packet distinguishes active task flags from actual behavior and current mandate status from scheduler state.
+- **Disposition:** INTAKE NOT CLEARED; post-patch behavioural uptake and all existing blockers remain open.
+
 ### Same-run continuation receipt — AMX-DSI-20261011-061646Z / POSTRUN-01
 
 - **Parent 100-point report:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_INTENT_DRIVEN_EXECUTION_AUDIT_20261011_R01.md
