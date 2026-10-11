@@ -107,6 +107,17 @@ Issue routing snapshot:
 - **Runtime readback:** immediate run requested for Librarians, IDEAL Sales Team and Reaper. Automation connector acknowledged requests only. Subsequent peek exposed a post-Blue-State Librarian last-run timestamp, but not output or rule-consumption evidence; IDEAL Sales/Reaper last-run timestamps did not change. No behavior pass claimed.
 - **Disposition:** CONTINUATION SUBMITTED / INTAKE NOT CLEARED. No schedule changes or duplicate workers.
 
+### Same-run continuation receipt — AMX-DSI-20261011-061646Z / INRUN-08
+
+- **Current wake/ledger truth delta:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_INRUN08_LATEST_WAKE_AND_LEDGER_TRUTH_20261011.md
+- **Report blob/readback:** 0b37bc8d270b4d72190421e0390287251d7c78a5
+- **Parent 100-point report SHA-256:** 4fc3373103cd0b799d5596ab633b94164450b7dd57f13cf99bb5dccc36b3460b
+- **Current scheduler readback:** 25 records, 3 enabled. Librarians 2026-10-11T17:16:19.098714Z; IDEAL Sales 2026-10-11T17:40:23.974065Z; Reaper 2026-10-11T17:58:58.933845Z. All next_run_time=null; no output linked to the exact latest timestamps found.
+- **Reaper receipt correction:** primary Notion receipts at 13:47 and 14:42 SAST evidence bounded source-review work and killed/not-submittable subclaims, but neither is the output for the latest 19:58 SAST wake. Tracker remains TRACKER_WRITE_BLOCKED, Q1 UNKNOWN.
+- **Ledger truth:** current `overdrive/opportunities.json` blob b04be618dccf1fed8405ccd7ff5c4be34d18004d declares 66 but has 83 keys; historical last_run.full_ledger_count=62 at 2026-10-03T17:42:00Z must be preserved. Current `overdrive/state.json` blob 08f0a61ddd947fd09f4a657ba89b705270ec550f is sequence 20, last_tick 2026-10-10T18:57:59.949295+00:00, queue length 20, receipts length 0.
+- **Micro-Matrix evidence:** current bounded inventory record shows $4.99 Stripe product/price created but payment-link creation blocked; checked Agent Bounties ready-to-earn and claimable feeds returned 0; Tasc example is devnet. This is not proof no global opportunities exist, and no revenue is claimed.
+- **Disposition:** current timestamps and source findings captured; worker acceptance, tracker recovery, ledger invariant repair and broader queue remain OPEN. INTAKE NOT CLEARED.
+
 ## CURRENT OWNER ADDENDUM — INTENT-DRIVEN DEEP SYNC / 100-POINT REPORT — 2026-10-11
 
 **Run ID:** AMX-DSI-20261011-061646Z  
