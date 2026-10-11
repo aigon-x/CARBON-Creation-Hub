@@ -2221,3 +2221,16 @@ This addendum supersedes prior embedded count/scheduler snapshots where they con
 - **Owner/action:** ROOT/T-GOV to classify; existing MASTER/LIBRARIAN to propagate authorized reporting guidance and check a subsequent report for clear item-level PASS versus global OPEN status.
 - **Acceptance:** ROOT disposition and a later evidence-backed report demonstrating the distinction. No authority, role, worker, scheduler, or mandate change proposed.
 - **Current disposition:** artifact submitted; ROOT classification and propagation **PENDING**; runtime remains active.
+
+
+## CATEGORY B INTAKE ADDENDUM — SUPABASE PROJECT VISIBILITY GATE — 2026-10-12
+
+**Intake ID:** ROOT-20261012-CATB-SUPABASE-PROJECT-VISIBILITY  
+**Canonical report:** [CATEGORY_B_SUPABASE_PROJECT_VISIBILITY_GATE_20261012.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_B_SUPABASE_PROJECT_VISIBILITY_GATE_20261012.md)  
+**Artifact commit for report:** fa91c898cfcec112da4f086abd7845d52b8649e4  
+**Classification requested:** Category B — advisory research/recommendation; governance disposition pending.  
+**Finding:** connected Supabase organization listing returns AMilliMATRiX / Free plan, while `list_projects` returned an empty list. This is a connector-context visibility result, **not proof that no project exists**. Project-level schema, security, logs, queues, functions, backups and runtime were not inspected.  
+**Existing-route decision:** Supabase already appears in the existing ROOT Intake AMX Builder & Code bundle concept. Recommend MERGE this as an access-and-verification subtask into existing plugin-bundle/provider-continuity work. Do not create a duplicate project, worker, queue, scheduler, or shadow intake.  
+**Required next action:** authorized organization/project administrator confirms the existing project inventory and restores the appropriate authorized route if needed; then perform the report's read-only schema/security/operations audit. Provisioning and production changes remain held pending evidence and explicit approval.  
+**Current disposition:** MERGE recommended; route check blocked; implementation NOT STARTED; spend/infrastructure changes NONE.  
+**Directive 23 itemized acceptance:** report contains expected outcome, owner, action, dependency/blocker, acceptance evidence, persistence/readback, safety/preservation, item disposition, and remaining work for five work items. The report/index writes are not acceptance of the live Supabase route or runtime.  
