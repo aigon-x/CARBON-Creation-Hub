@@ -1,0 +1,50 @@
+# Bounty Reaper execution receipt
+
+Run ID: BR-20261011-190845-SAST-02  
+Observed: 2026-10-11 20:54:58 SAST  
+Sequence: 4  
+Payload SHA-256: `95b9d02c03b04b43540fe1dd58bdadf9c2bfdf321d0aa2c379646a4d7ebfdf62`  
+Hash input: exact UTF-8 bytes between `BEGIN_EXECUTION_PAYLOAD` and `END_EXECUTION_PAYLOAD`, excluding marker lines and including the final newline before the end marker.
+
+BEGIN_EXECUTION_PAYLOAD
+RUN_ID: BR-20261011-190845-SAST-02
+SEQUENCE: 4
+RUN_TYPE: CONTINUITY_DEEP_SWEEP_AND_STATIC_DEDUPE
+OFFICE: BOUNTY REAPER
+OBSERVED: 2026-10-11 20:54:58 SAST
+REGISTRY: canonical path fetched directly; version 1.2; declared/recomputed root SHA-256 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f MATCH.
+MANDATE: AMX-MANDATE-BOUNTY-REAPER-V1; status CURRENT; canonical payload SHA-256 754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3 MATCH; existing owner is automation 6abf8e6d6a188191aee2b5d3fe24a9c9. No role or authority expansion.
+TRACKER: TRACKER_WRITE_BLOCKED. ALL_TOOLS search exposed no authorized Google Sheets/Drive action to read/write spreadsheet 1ETiK6b2YOz499OXBA5wuvgyWMjnDZoEdJIwCt2xGeCk. No tracker read, append or independent readback occurred. Q1=UNKNOWN, NOT ZERO. No inferred Q1-empty state.
+Q1_DRAIN: UNRESOLVED because current Runs queue cannot be read. Current evidence does not establish any READY_FOR_SUBMISSION parcel, and does not establish zero.
+PARCEL_OPENZEPPELIN_CONFIDENTIAL_BATCHER_458: A_KILLED_DUPLICATE_NOT_SUBMITTABLE. In-scope source is OpenZeppelin/openzeppelin-confidential-contracts commit 4a4f6c71f58b75e391899b57e42e3b73d288dfe3, BatcherConfidential.sol blob 13c33c82280869e52742b20742dd56de907a8daf. The behavior is: a failed finalizeUnwrap caught while unwrap remains pending can let _executeRoute consume underlying potentially belonging to a different concurrent batch. Public report issue #458 and fix PR #457 were present on 2026-10-09; PR #459 also publicly described a fix. Public prior art makes this not novel for bounty submission. Static code review only; no local/fork PoC executed; no external submission.
+PARCEL_OPENZEPPELIN_CONFIDENTIAL_BATCHER_456: A_KILLED_DUPLICATE_NOT_SUBMITTABLE. Public PR #456 (2026-10-07) describes donation-manipulable Complete/Cancel outcome in custom asynchronous routes. Route-dependent, publicly disclosed; not submitted.
+PARCEL_OPENZEPPELIN_CONFIDENTIAL_QUIT_REFUND_370: A_KILLED_DUPLICATE_NOT_SUBMITTABLE. Public issue #370 and merged PR #403 (2026-10-08) cover redirectable quit refunds; prior art/fix is public.
+PARCEL_OPENBRIDGE_RETURNDATA_OOG: A_KILLED_DUPLICATE_NOT_SUBMITTABLE. Public merged PR #278 (2026-09-14) fixes unbounded recipient returndata copy/gas exhaustion. No submission.
+PARCEL_OPENBRIDGE_SENDID_COLLISION: A_KILLED_DUPLICATE_NOT_SUBMITTABLE. Public PR #277 (2026-09-09) describes collisions where underlying gateways return constant non-zero IDs. No submission.
+PARCEL_AXELAR_ADAPTER_ORIGIN_HYPOTHESIS: B_SIGNAL_NOT_CONFIRMED. Pinned in-scope adapter commit 0361935dc5edd233adbb9fbae5871ccbb8c739d8 reviewed with tests. Source explicitly maps source chain and requires configured remote-gateway equality before recipient call; no origin spoof or auth bypass established by static review. No exploit/PoC and no submission.
+PARCEL_LAYERZERO_BR-20261003-024: C_Q3_PARKED. Existing bounded work remains: bind exact eligible Executor deployment/source; test failed native-drop attacker/victim semantics in lawful local/fork scope; confirm retry/refund behavior; dedupe against current program audit and disclosures; assess current impact, PoC and submission rules. No exact deployment binding, qualifying impact or runnable PoC established this run. Do not submit.
+CURRENT_DISPOSITION: Screened the strongest accessible Batcher candidate and killed it as already public; separately screened Axelar adapter without confirming a novel issue; existing LayerZero parcel remains parked. No newly identified Q1 or submission-eligible novel finding. This is not a claim that Q1=0.
+PROGRAM_ROUTING: OpenZeppelin Confidential Contracts scope is tied to the listed v0.5.3 commit; Immunefi remains the official route if an independently novel eligible claim is later evidenced. Known public issue/PR material is not to be resubmitted. No direct-email or platform bypass.
+SAFETY: only public-source static code and public issue/PR review; no unauthorized live-target exploitation, public disclosure by Reaper, external submission, transactions, credential expansion, KYC bypass, or spend. No PoC run is claimed.
+RESULTS: external_submissions=0; external_report_ids=0; acceptance_or_awards=0; verified_payments=0; tracker_row_readback=NOT_AVAILABLE; root_intake_receipt=WRITE_ATTEMPT_PENDING.
+NEXT_ACTION: continue to another independently executable in-scope asset/source review and seek a novel, falsifiable candidate; recover the existing Live Tracker via authorized connector to determine Q1 and reconcile queue. Do not buy/top-up automation wallet. If a report becomes package-ready, use its program's official submission route and stop only at the human-only attestation/login gate.
+OWNER_GATE: none for current research; no submission-ready package identified. The only outstanding tracker gate is authorized existing spreadsheet access for queue/Q1 reconciliation.
+ITEMIZED_DIRECTIVE_23:
+1. Expected outcome: attest mandate. Owner: Bounty Reaper / ROOT oversight. Required action: fetch canonical registry and mandate every wake; completed with matching current digests/status. Dependency: canonical GitHub read. Acceptance evidence: registry v1.2 root and mandate SHA match above. Persistence/readback: prior canonical preflight receipt remains; this execution receipt must be committed and fetched back. Safety: no mandate expansion. Disposition: MERGE INTO EXISTING REAPER. Remaining work: continue per current mandate.
+2. Expected outcome: know Q1 backlog. Owner: ROOT / authorized tracker connector owner. Required action: read Runs and reconcile Q1/Q2/Q3 and prior submissions. Dependency/blocker: no authorized Google Sheets/Drive action is available in this runtime. Acceptance evidence: tracker reads plus independent readback of a new Runs row. Persistence/readback: NOT COMPLETED in tracker; this receipt is fallback only. Safety: do not infer Q1=0. Disposition: HOLD. Remaining work: authorize existing Sheet connector and repeat read/write/readback; no new tracker.
+3. Expected outcome: remove known duplicates from submission path. Owner: Bounty Reaper. Required action: preserve source URLs/issues/PRs and mark the five named public OpenZeppelin duplicate parcels KILLED. Dependency: publicly indexed prior art; no further exploit needed to disposition them. Acceptance evidence: exact public issue/PR URLs in the receipt body below. Persistence/readback: intended receipt in existing Root Intake; verify GitHub write and fetch after commit. Safety: no resubmission of known public issues. Disposition: REJECT / ALREADY-SUBSUMED. Remaining work: reconcile statuses into tracker when authorized.
+4. Expected outcome: preserve Axelar finding truth. Owner: Bounty Reaper. Required action: keep origin hypothesis at signal; no impact/PoC claim. Dependency: no static bypass confirmed. Acceptance evidence: pinned adapter source and tests. Persistence/readback: receipt fallback pending; tracker unavailable. Safety: no live testing. Disposition: HOLD / SIGNAL. Remaining work: only resume if a concrete code-path contradiction appears.
+5. Expected outcome: retain LayerZero work conservation. Owner: Bounty Reaper. Required action: keep BR-20261003-024 parked and continue bounded source/scope research; do not call it dead or submit-ready. Dependency: exact Executor binding, native-drop semantics, current official audit/program dedupe and lawful PoC. Acceptance evidence: none of these gates closed this run. Persistence/readback: prior Root Intake receipts remain; new receipt pending. Safety: local/fork/static only under rules. Disposition: HOLD / Q3. Remaining work: advance the smallest next proof/kill step when exact target/source becomes available.
+6. Expected outcome: no false payment or submission reporting. Owner: Bounty Reaper. Required action: preserve zeros only for actions actually evidenced, while Q1 remains unknown. Dependency: external submission/report receipt, acceptance and payment rail evidence. Acceptance evidence: none this run. Persistence/readback: recorded in this receipt; verify commit/readback. Safety: no spend, no public disclosure, no live exploitation. Disposition: MERGE AS RUN TRUTH. Remaining work: continue discovery and tracking until eligible work is submitted and externally receipted.
+END_OF_PAYLOAD
+END_EXECUTION_PAYLOAD
+
+Evidence pointers:
+- Confidential batcher prior art: https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/issues/458 ; https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/pull/457 ; https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/pull/459
+- Confidential async route outcome prior art: https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/pull/456
+- Confidential quit/refund prior art: https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/issues/370 ; https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/pull/403
+- OpenBridge returndata prior art/fix: https://github.com/OpenZeppelin/openzeppelin-community-contracts/pull/278
+- OpenBridge sendId prior art: https://github.com/OpenZeppelin/openzeppelin-community-contracts/pull/277
+- Axelar adapter source: https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/0361935dc5edd233adbb9fbae5871ccbb8c739d8/contracts/crosschain/axelar/AxelarGatewayAdapter.sol
+- Confidential scoped release commit: https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/commit/4a4f6c71f58b75e391899b57e42e3b73d288dfe3
+- This file is the existing Root Intake fallback only; it is not a substitute for the canonical Live Tracker Runs row. No tracker write/readback is claimed here.
