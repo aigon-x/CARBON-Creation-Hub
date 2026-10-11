@@ -2159,3 +2159,41 @@ Fresh direct GitHub reads confirm that the exact source commit is public merged 
 - **MASTER/LIBRARIAN:** after those receipts exist, produce the separate 88-control result from current evidence only, persist the immutable vector and arithmetic, and independently read it back. No prior vector or score recomputation may be used as a scoring input.
 - **Safety/preservation:** no criteria changes, no deletion or rewrite of historical vectors, no new worker/scheduler, no synthetic event, no public D04 claim and no unsupported PASS.
 - **Acceptance/disposition:** exact-head test result + fresh queue/runtime readback + new 88-row vector + arithmetic + verdict gate + readback. Until then, this obligation remains **OPEN**.
+
+
+---
+
+## CURRENT-SOURCE SUPERSESSION — INRUN-15 — 2026-10-11 — LIVE STATE / LEDGER / REAPER
+
+**Same-run:** `AMX-DSI-20261011-061646Z`  
+**Supporting artifact:** [INRUN-15 current live-state and ledger correction](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_INRUN15_CURRENT_LIVE_STATE_AND_LEDGER_CORRECTION_20261011.md)  
+**Current dispositions:** `DEEP SWEEP PARTIAL`; `INTAKE NOT CLEARED`.
+
+This addendum supersedes prior embedded count/scheduler snapshots where they conflict. Their historical source-time contents remain provenance.
+
+### Current record-count correction
+- Current `overdrive/opportunities.json` blob `85c769241258cc4ed774a6a0c5f7420323cf3096`: `record_count=84`; the `records` object has 84 distinct keys. The older 66/83 snapshot is no longer current.
+- Preserve historical `last_run.full_ledger_count=62` at `2026-10-03T17:42:00Z`; it is not a counter to overwrite.
+- The runner blob `d71c75550c72daa80cc585c8fc93ee0a4ee0fcb9` does not maintain top-level `record_count`. Backend projection blob `d832ae0a86976943cdba493fa0200d88dfee2a27` derives `routing.full_ledger_count=len(records)`, and test blob `e27d1037847825d26c088761056c7d85be710e40` checks the derived projection contract. The current 84/84 equality does not by itself verify a persistent write-path invariant. Existing issue #31 remains OPEN: ROOT/T-GOV must disposition field semantics, T-COD owns any authorized invariant/tests, MASTER validates exact-head readback. No code edit or history rewrite is claimed.
+
+### Current scheduler correction
+- Latest connected scheduler readback: 25 task records; three enabled and 22 disabled.
+- Librarians: enabled; recorded last run `2026-10-11T21:20:53.006905Z`; `next_run_time=null`.
+- IDEAL Sales Team: enabled; recorded last run `2026-10-11T21:34:48.021077Z`; `next_run_time=null`.
+- Bounty Reaper (`6abf8e6d6a188191aee2b5d3fe24a9c9`) was found DISABLED, contradicting an earlier 3-enabled snapshot. The existing task was restored to enabled in place; its saved prompt and existing hourly schedule were not altered. Readback confirms three enabled tasks.
+- An immediate run was requested for that existing Reaper task; this is request acknowledgement only. Reaper last-run timestamp has not advanced, next_run_time remains null, and no result/receipt attributable to the request has been read back. Issue #32 remains OPEN for post-request evidence and Live Tracker persistence. Q1 is UNKNOWN, not zero; no submission/award/payment is claimed.
+
+### Current income-brick boundary
+- Current `overdrive/claims.json` blob `9be10bfece528392d990a9db969cd1f8726d484d`: 84 claims, 78 WAITING and 6 CLOSED; no row has `external_action_ready=true`.
+- Current `overdrive/state.json` blob `5593ab9dcb04914951aa4ba574bb862af1bc5557`: sequence 20; last tick `2026-10-11T19:42:44.598828Z`; queue 20; `pending=0`; `processed=[]`; `ready_claims=0`. No new buyer action or paid outcome is evidenced by this tick.
+- 2CT remains DISCOVERED / qualification HOLD pending experience, US-hours availability and account-history dedupe. OpenTrain stays on existing-account recovery/eligibility hold. No duplicate account, proposal, application or buyer contact was created by this continuation.
+- No new acceptance, contract, invoice, receivable, payment or verified money-in was established.
+
+### Directive 23 — itemized live disposition
+- **Outcome:** current-source correction is durably recorded; the stale 66/83 count and false three-enabled snapshot no longer control current interpretation.
+- **Owners/actions:** ROOT/T-GOV → explicit stored-count semantics and continued scheduler/role governance; T-COD → authorized count writer/test repair and #18 convergence; existing Bounty Reaper → execute mandate and persist attributable result; MASTER/LIBRARIAN → reconcile and read back; iSCOPE/PRI → existing eligible commercial paths only; Banker → settlement truth.
+- **Dependencies/blockers:** writer invariant not acceptance-tested; Reaper output/authorized Tracker route still missing; #18 convergence is open; external commercial gates remain unresolved.
+- **Acceptance evidence:** INRUN-15 committed/read back; issue #31 and #32 comments created and independently found by comment readback; existing scheduler state rechecked after re-enabling.
+- **Safety/preservation:** no historical run snapshot rewrite, no record deletion/dedupe, no duplicate worker/scheduler/tracker, no cadence or prompt change, no D04 public release, no external contact or fabricated money-in.
+- **Item disposition:** ledger current count 84/84; writer invariant OPEN; Reaper enabled/READ BACK with run REQUESTED but output UNKNOWN; INTAKE NOT CLEARED.
+- **Remaining work:** resolve #31 semantics → authorized T-COD tests/readback; recover Reaper result/Tracker permission; continue current product/commercial obligations and whole-Matrix item census.
