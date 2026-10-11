@@ -10,3 +10,5 @@ Tracker: TRACKER_WRITE_BLOCKED; no authorized Google Sheets/Drive read/write act
 Q1: UNKNOWN, not zero; tracker backlog cannot be reconciled in this runtime.
 Next action: continue lawful public-source research on existing Reaper parcels, preserve item-level outcomes, and restore authorized tracker access through existing Root Intake governance.
 No submission, award or payment is claimed.
+
+Receipt body SHA-256 (exact UTF-8 bytes of the body above, including its final newline; this footer excluded): c045de48e1ff687ba6dbf21f57e7611b3ba4315952b3e29330873d1fcc398026
