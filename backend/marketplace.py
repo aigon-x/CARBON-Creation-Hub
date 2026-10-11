@@ -14,7 +14,13 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, model_validator
 
-from .marketplace_discovery import DiscoveryAdapter, LocalDiscoveryAdapter
+from .marketplace_discovery import (
+    DiscoveryAdapter,
+    DiscoveryUnavailableError,
+    IntentEngineDiscoveryAdapter,
+    LocalDiscoveryAdapter,
+    UnavailableDiscoveryAdapter,
+)
 from .marketplace_media import LocalMediaStore, media_store_from_env
 from .marketplace_money import MoneyAdapter, SandboxMoneyAdapter
 
@@ -1106,10 +1112,20 @@ def mount_marketplace(
     if isinstance(media, LocalMediaStore):
         app.mount("/market/media", StaticFiles(directory=media.root), name="carbon-media")
     app.state.carbon_media_store = media
-    money = money_adapter or SandboxMoneyAdapter()
-    discovery = discovery_adapter or LocalDiscoveryAdapter()
-    app.state.carbon_discovery_adapter = discovery
     demo_enabled = demo_mode if demo_mode is not None else os.getenv("CARBON_MARKETPLACE_DEMO_MODE", "").strip() in {"1", "true", "TRUE", "yes", "YES"}
+    money = money_adapter or SandboxMoneyAdapter()
+    if discovery_adapter is not None:
+        discovery = discovery_adapter
+    else:
+        configured_intent = IntentEngineDiscoveryAdapter.from_env()
+        if configured_intent is not None:
+            discovery = configured_intent
+        elif demo_enabled:
+            # Local substring search is allowed only as an explicitly labelled demo mode.
+            discovery = LocalDiscoveryAdapter()
+        else:
+            discovery = UnavailableDiscoveryAdapter()
+    app.state.carbon_discovery_adapter = discovery
     app.state.carbon_marketplace_store = store
     app.state.carbon_money_adapter = money
 
@@ -1187,12 +1203,24 @@ def mount_marketplace(
 
     @router.get("/api/carbon/search")
     def search_market(q: str = "") -> dict[str, Any]:
-        records = discovery.search(q, store.list_listings())
+        listings_now = store.list_listings()
+        try:
+            search_with_metadata = getattr(discovery, "search_with_metadata", None)
+            if callable(search_with_metadata):
+                records, discovery_status = search_with_metadata(q, listings_now)
+            else:
+                records = discovery.search(q, listings_now)
+                discovery_status = discovery.describe()
+        except DiscoveryUnavailableError as exc:
+            raise HTTPException(
+                status_code=503,
+                detail="Shared CARBON° Search intent engine is unavailable; keyword-only fallback is disabled.",
+            ) from exc
         return {
             "records": records,
             "count": len(records),
             "query": q,
-            "discovery": discovery.describe(),
+            "discovery": discovery_status,
         }
 
     @router.get("/api/carbon/listings")
