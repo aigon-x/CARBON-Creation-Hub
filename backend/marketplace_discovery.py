@@ -101,11 +101,12 @@ class IntentEngineDiscoveryAdapter:
     external_marketplace_connected = False
     max_candidates = 100
 
-    def __init__(self, intent_url: str, timeout: float = 8.0):
+    def __init__(self, intent_url: str, client_token: str, timeout: float = 8.0):
         self.intent_url = (intent_url or "").strip()
+        self.client_token = (client_token or "").strip()
         self.timeout = timeout
         parsed = urlsplit(self.intent_url) if self.intent_url else None
-        self._valid_config = bool(
+        self._url_valid = bool(
             parsed
             and parsed.scheme == "https"
             and parsed.netloc
@@ -113,7 +114,8 @@ class IntentEngineDiscoveryAdapter:
             and not parsed.query
             and not parsed.fragment
         )
-        if self._valid_config and parsed is not None:
+        self._valid_config = self._url_valid and bool(self.client_token)
+        if self._url_valid and parsed is not None:
             sessions_path = parsed.path.rstrip("/").rsplit("/", 1)[0] + "/sessions"
             self.sessions_url = urlunsplit((parsed.scheme, parsed.netloc, sessions_path, "", ""))
         else:
@@ -122,7 +124,8 @@ class IntentEngineDiscoveryAdapter:
     @classmethod
     def from_env(cls) -> "IntentEngineDiscoveryAdapter | None":
         endpoint = os.getenv("CARBON_SEARCH_INTENT_URL", "").strip()
-        return cls(endpoint) if endpoint else None
+        token = os.getenv("CARBON_SEARCH_CLIENT_TOKEN", "").strip()
+        return cls(endpoint, token) if endpoint or token else None
 
     def describe(self) -> dict[str, Any]:
         return {
@@ -130,11 +133,12 @@ class IntentEngineDiscoveryAdapter:
             "integration_state": (
                 "CONFIGURED_UNPROBED" if self._valid_config else "INVALID_CONFIGURATION"
             ),
-            "intent_endpoint_configured": self._valid_config,
+            "intent_endpoint_configured": self._url_valid,
+            "client_token_configured": bool(self.client_token),
             "external_search_connected": False,
             "external_marketplace_connected": False,
             "intent_contract": "CARBON_SEARCH_INTENT_V1",
-            "surface": "public",
+            "surface": "client",
             "candidate_pool_limit": self.max_candidates,
             "fallback_policy": "FAIL_CLOSED_NO_KEYWORD_ONLY_FALLBACK",
             "note": (
@@ -166,7 +170,7 @@ class IntentEngineDiscoveryAdapter:
             "attributes": attributes,
             "source": "CARBON° Marketplace public listing",
             "source_type": "CARBON_MARKETPLACE_PUBLIC_LISTING",
-            "visibility": "PUBLIC",
+            "visibility": "CARBON_MARKETPLACE",
             "evidence_pointer": f"/api/carbon/listings/{quote(listing_id, safe='')}",
             "action": {"name": "OPEN_MARKETPLACE_LISTING", "listing_id": listing_id},
         }
@@ -196,7 +200,8 @@ class IntentEngineDiscoveryAdapter:
             }
         if not self._valid_config:
             raise DiscoveryUnavailableError(
-                "CARBON_SEARCH_INTENT_URL must be an HTTPS URL ending in /api/search/intent."
+                "A valid HTTPS CARBON_SEARCH_INTENT_URL ending in /api/search/intent and "
+                "CARBON_SEARCH_CLIENT_TOKEN are required."
             )
         if len(query) > 1200:
             raise DiscoveryUnavailableError("Search query exceeds the shared intent contract limit.")
@@ -229,8 +234,8 @@ class IntentEngineDiscoveryAdapter:
         request_payload = {
             "query": query,
             "limit": min(50, len(candidates)),
-            "surface": "public",
-            "requested_scopes": ["PUBLIC"],
+            "surface": "client",
+            "requested_scopes": ["CARBON_MARKETPLACE"],
             "candidates": candidates,
             "allow_pivots": False,
             "max_pivots": 0,
@@ -239,7 +244,11 @@ class IntentEngineDiscoveryAdapter:
         post_request = urllib.request.Request(
             self.intent_url,
             data=json.dumps(request_payload, ensure_ascii=False).encode("utf-8"),
-            headers={"Content-Type": "application/json", "Accept": "application/json"},
+            headers={
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+                "X-CARBON-Client": self.client_token,
+            },
             method="POST",
         )
         intent_response = self._request_json(post_request)
