@@ -259,7 +259,10 @@ class IntentEngineDiscoveryAdapter:
             )
         session_request = urllib.request.Request(
             f"{self.sessions_url}/{quote(session_id, safe='')}",
-            headers={"Accept": "application/json"},
+            headers={
+                "Accept": "application/json",
+                "X-CARBON-Client": self.client_token,
+            },
             method="GET",
         )
         session = self._request_json(session_request)
