@@ -52,18 +52,6 @@
       "due_at": "2026-10-03T16:00:00Z",
       "due_now": true,
       "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
-      "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
-      "priority": 2,
-      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
-      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
-      "state": "QUALIFIED",
-      "status": "WAITING",
-      "thread_id": null
-    },
-    {
-      "due_at": "2026-10-03T16:00:00Z",
-      "due_now": true,
-      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
       "opportunity_key": "opentrain.ai|video-annotation-editor|cmurmn8kk001y06jqpmga27b3",
       "priority": 2,
       "routing_reason": "HOLD_ACCOUNT_RECOVERY",
@@ -495,6 +483,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Use the current official Backend AI Coding Task Creator listing as the current/relisted route for this existing OpenTrain task-creator opportunity. Restore the existing account/session and confirm the required mid-senior backend engineering fit truthfully before applying. Current listing: South Africa eligible, about 15 flexible hours/week, USD 30\u2013100/hour equivalent per accepted task. Do not create a second account. If existing-account access remains unavailable, obtain a fresh secure recovery route.",
+      "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
+      "priority": 8,
+      "routing_reason": "HOLD_ACCOUNT_RECOVERY",
+      "smallest_next_action": "Use the current official Backend AI Coding Task Creator listing as the current/relisted route for this existing OpenTrain task-creator opportunity. Restore the existing account/session and confirm the required mid-senior backend engineering fit truthfully before applying. Current listing: South Africa eligible, about 15 flexible hours/week, USD 30\u2013100/hour equivalent per accepted task. Do not create a second account. If existing-account access remains unavailable, obtain a fresh secure recovery route.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
       "opportunity_key": "opentrain.ai|python-ai-agent-infrastructure-developer|cmui8x2wr00050bgmasl5oj95",
       "priority": 8,
@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-11T18:25:22.624627+00:00",
+  "generated_at": "2026-10-11T18:37:11.959895+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1542,13 +1542,13 @@
       "thread_id": null
     },
     "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y": {
-      "due_at": "2026-10-03T16:00:00Z",
-      "due_now": true,
-      "next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Use the current official Backend AI Coding Task Creator listing as the current/relisted route for this existing OpenTrain task-creator opportunity. Restore the existing account/session and confirm the required mid-senior backend engineering fit truthfully before applying. Current listing: South Africa eligible, about 15 flexible hours/week, USD 30\u2013100/hour equivalent per accepted task. Do not create a second account. If existing-account access remains unavailable, obtain a fresh secure recovery route.",
       "opportunity_key": "opentrain.ai|backend-coding-task-creator-ai-evaluator|cmurzv8ev000d04l2dhhowh7y",
-      "priority": 2,
+      "priority": 8,
       "routing_reason": "HOLD_ACCOUNT_RECOVERY",
-      "smallest_next_action": "HOLD for existing-account recovery. Gmail readback on 2026-10-09 found the OpenTrain recovery thread and follow-up outbound messages, password-reset emails and current job alerts, but no inbound support reply providing a fresh secure recovery/direct-application route. Do not create a duplicate account. Resume only when a current authenticated/recovery route is evidenced.",
+      "smallest_next_action": "Use the current official Backend AI Coding Task Creator listing as the current/relisted route for this existing OpenTrain task-creator opportunity. Restore the existing account/session and confirm the required mid-senior backend engineering fit truthfully before applying. Current listing: South Africa eligible, about 15 flexible hours/week, USD 30\u2013100/hour equivalent per accepted task. Do not create a second account. If existing-account access remains unavailable, obtain a fresh secure recovery route.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
