@@ -135,6 +135,14 @@ Issue routing snapshot:
 - **Candidate correction:** current official uTest board search now advertises “Beyond the Dashboard” UX Study at $150 USD, 60 minutes, worldwide, start Oct 19, 2026. Earlier $125 / Oct 5 result remains superseded history. Live page is JavaScript-rendered; slot, screener eligibility and South African payout method remain unverified.
 - **Disposition:** candidate only; no application, account/login action, referral or income claim. INTAKE NOT CLEARED.
 
+### Same-run continuation receipt — AMX-DSI-20261011-061646Z / INRUN-12
+
+- **Report:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_INRUN12_CALLFORCE_READINESS_HOLD_AND_OVERDRIVE_STATE_20261011.md
+- **Blob:** 7be989699dbbb61e4c20039331ba3aeeaae42296; parent audit SHA-256 4fc3373103cd0b799d5596ab633b94164450b7dd57f13cf99bb5dccc36b3460b.
+- **Readiness correction:** CallForce is now WAITING / HOLD_AUTHENTICATED_ROUTE; claims ready_count=0, external_ready_count=0 (77 WAITING / 6 CLOSED). Canonical Gmail thread 1a103d43041d248b remains unreadable through currently connected routes, so no email is authorized.
+- **OVERDRIVE:** current tick still processed no queue item; queue has 20 entries; state change reflects freshness + route/readiness correction, not commercial progression.
+- **Disposition:** readiness false-positive corrected; buyer state and revenue remain unknown/unverified; ledger count invariant open; INTAKE NOT CLEARED.
+
 ## CURRENT OWNER ADDENDUM — INTENT-DRIVEN DEEP SYNC / 100-POINT REPORT — 2026-10-11
 
 **Run ID:** AMX-DSI-20261011-061646Z  
