@@ -75,6 +75,24 @@ Issue routing snapshot:
 .
 
 
+## CURRENT OWNER ADDENDUM — INTENT-DRIVEN DEEP SYNC / 100-POINT REPORT — 2026-10-11
+
+**Run ID:** AMX-DSI-20261011-061646Z  
+**Disposition:** INTAKE NOT CLEARED — 100-point evidence register persisted; multiple behavior, governance, and access gates remain open.  
+**Report:** [MATRIXWIDE_DEEP_SYNC_INTENT_DRIVEN_EXECUTION_AUDIT_20261011_R01.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_INTENT_DRIVEN_EXECUTION_AUDIT_20261011_R01.md)  
+**Report commit:** 29ba8380d7674906d42a17b1f554c9a6f1cb95b4  
+**Report blob/readback:** 8e2619268a1fdead75e6aad5b0430d6e0021f0b9  
+**Canonical payload SHA-256:** 4fc3373103cd0b799d5596ab633b94164450b7dd57f13cf99bb5dccc36b3460b  
+**Hash definition:** hash of exact report UTF-8 payload after replacing the single checksum value with literal __SELF_HASH__; 100 sequence IDs DSI-001/100 through DSI-100/100 were verified in order.  
+**Run manifest:** [MATRIXWIDE_DEEP_SYNC_RUN_MANIFEST_20261011_R01.json](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_RUN_MANIFEST_20261011_R01.json)  
+**Manifest commit:** 71a691d87c7dfde5e78d08f5d78af5644c256c09  
+**Manifest payload SHA-256:** 0d99d7db9dc74e99575c2f91f0bb50444143eec53ebe8ff4c27a8bb8c27c681a  
+**Blue State correction:** commit 6f6759fb468665090927c18cae620548d33fea7e; blob 4a7b320cfb4e8ec709281ba44af6bd5c25a54bfb. Registry root was recomputed after the write and still matches 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f.
+
+**Material disposition:** existing Search rules §§3/10/15/23 are now applied through an additive Blue State execution bridge; the change is content-accepted, but post-patch worker consumption is NOT YET BEHAVIORALLY VERIFIED. Three scheduled workers are enabled; FORX/Banker and Inbox Watch schedulers are disabled. Appointment role/holder binding, conflicting Capability Continuity status, next-wake scheduler readback, Search↔Marketplace current-head CI/live acceptance, Live Tracker access/Q1 and full multi-surface backlog census remain open. TinyFish-dependent work is budget-blocked at the recorded negative balance. No new worker, schedule, tracker, role key, bounty submission, award or payment is claimed.
+
+**Directive 23 route:** ROOT/T-GOV owns appointment source-order/binding and formal dispositions; MASTER/LIBRARIAN owns continuity and follow-up readback; T-COD/CARBON owns Search/Marketplace implementation; current commercial and bounty specialists retain their own mandates; authorized connector/admin owns tracker route restoration. Full itemized owners, dependencies, acceptance evidence, persistence/readback, preservation conditions and remaining work are in the report. Multiple deltas remain under this same Run ID/hash family; report creation is not runtime termination.
+
 ## CURRENT GOVERNANCE DISPOSITION READBACK — LEGACY QUEUE CONSOLIDATION — 2026-10-10
 **Purpose:** close stale governance-decision shells by naming the existing accepted control that absorbs them, without deleting history, creating new authority or falsely closing residual execution.
 
