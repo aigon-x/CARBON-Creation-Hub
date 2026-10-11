@@ -4,7 +4,7 @@
 **Run type:** WAKE_PREFLIGHT + DEEP_SWEEP + GOVERNANCE_CHANGE + PUBLIC_EVIDENCE + INCOME_FOLLOWTHROUGH + BLOCKED_ATTEMPT_RECOVERY  
 **Timestamp:** 2026-10-11T15:17:05Z (17:17:05 SAST)  
 **Status:** RECEIPT FILE PERSISTED; independent readback and existing-Intake routes required for full wake acceptance.  
-**Payload SHA-256:** ff757d780c58a23e27d88da939fe7502ac173a3414dbca66243a3cdf57d20b1c  
+**Payload SHA-256:** e59199f46424af69c1a296b1bd50ef762fc8769a27d8c781ec40b0cfab8b6619  
 **Previous payload hash:** NONE — first submission in this run.
 
 ## 1. Canonical preflight — current source readback
