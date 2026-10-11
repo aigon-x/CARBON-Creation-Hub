@@ -2197,3 +2197,10 @@ This addendum supersedes prior embedded count/scheduler snapshots where they con
 - **Safety/preservation:** no historical run snapshot rewrite, no record deletion/dedupe, no duplicate worker/scheduler/tracker, no cadence or prompt change, no D04 public release, no external contact or fabricated money-in.
 - **Item disposition:** ledger current count 84/84; writer invariant OPEN; Reaper enabled/READ BACK with run REQUESTED but output UNKNOWN; INTAKE NOT CLEARED.
 - **Remaining work:** resolve #31 semantics → authorized T-COD tests/readback; recover Reaper result/Tracker permission; continue current product/commercial obligations and whole-Matrix item census.
+
+
+### REAPER SEQUENCE-5 RECEIPT RECOVERED AFTER INRUN-15 READBACK
+- Primary receipt: [BOUNTY_REAPER_EXECUTION_RECEIPT_20261011_210731_SAST.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/BOUNTY_REAPER_EXECUTION_RECEIPT_20261011_210731_SAST.md), blob `5a688fa9c383d1423251252654ddb8b3412c1ceb`, payload SHA-256 `d5ecdad160c213dfaa7d100a6a0c495902a292363969d7700ac61d464f93d5d9`.
+- Sequence 5 (21:07:31 SAST) kills the narrow LayerZero failed-native-drop/permanent-recovery-loss subclaim. No runnable PoC, distinct eligible finding, submission, award or payment is established. Parent parcel remains Q3 parked; Tracker blocked and Q1 UNKNOWN, not zero.
+- This receipt predates the latest scheduler last_run_time (20:02:51Z / 22:02:51 SAST) and does not attribute a result to that wake or to the later immediate run request. Reaper remains enabled/read back; post-request output remains not found.
+- Readback: appended to the existing INRUN-15 correction artifact and routed to the existing issue #32. Acceptance remains open until a post-request result and independent receipt readback, plus authorized Tracker read/write/readback.
