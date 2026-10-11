@@ -75,6 +75,13 @@ Issue routing snapshot:
 .
 
 
+
+**Post-run packet:** [MATRIXWIDE_DEEP_SYNC_POSTRUN_20261011_R01.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_POSTRUN_20261011_R01.md)  
+**Post-run commit:** 44df862b193ccd54720c2abd4b15fd057b4a046a  
+**Post-run blob/readback:** e16e77d25625a44a9323b2ec9b94a394b06fa8fd  
+**Post-run payload SHA-256 (recomputed after source readback):** c4a1c3723a513d7bdb270162fdee72353239205b1421e7f054f3eca34ef45b8e  
+**Post-run meaning:** same-run delta records three immediate run requests and explicitly distinguishes request acknowledgement from completion; current readback proves only a post-patch Librarian timestamp, not content/output receipt. IDEAL Sales/Reaper last_run_time values did not change. Do not mark worker uptake complete.
+
 ## CURRENT OWNER ADDENDUM — INTENT-DRIVEN DEEP SYNC / 100-POINT REPORT — 2026-10-11
 
 **Run ID:** AMX-DSI-20261011-061646Z  
