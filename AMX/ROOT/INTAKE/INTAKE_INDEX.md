@@ -127,6 +127,14 @@ Issue routing snapshot:
 - **State boundary:** OVERDRIVE's 20th tick processed zero items; current Opportunity counter is 66 vs 83 keys; do not rewrite the Oct 3 historical full_run_count=62.
 - **Disposition:** route evidence preserved, no revenue claim; INTAKE NOT CLEARED.
 
+### Same-run continuation receipt — AMX-DSI-20261011-061646Z / INRUN-11
+
+- **Report:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_INRUN11_UTEST_LIVE_LISTING_REFRESH_20261011.md
+- **Blob:** 4db2e51b6a3fbdefdb313b51ca89d8c7455a327c
+- **Parent 100-point audit SHA-256:** 4fc3373103cd0b799d5596ab633b94164450b7dd57f13cf99bb5dccc36b3460b
+- **Candidate correction:** current official uTest board search now advertises “Beyond the Dashboard” UX Study at $150 USD, 60 minutes, worldwide, start Oct 19, 2026. Earlier $125 / Oct 5 result remains superseded history. Live page is JavaScript-rendered; slot, screener eligibility and South African payout method remain unverified.
+- **Disposition:** candidate only; no application, account/login action, referral or income claim. INTAKE NOT CLEARED.
+
 ## CURRENT OWNER ADDENDUM — INTENT-DRIVEN DEEP SYNC / 100-POINT REPORT — 2026-10-11
 
 **Run ID:** AMX-DSI-20261011-061646Z  
