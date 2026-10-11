@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-11T19:40:42.843433+00:00",
+  "generated_at": "2026-10-11T19:42:44.593533+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -720,6 +720,18 @@
       "routing_reason": "HOLD_CAPABILITY_GAP",
       "smallest_next_action": "Reconsider only if authoritative earlier relevant experience is recovered or the buyer explicitly accepts a shorter demonstrated-work history.",
       "state": "HOLD_CAPABILITY_GAP",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "iSCOPE qualification HOLD: verify existing evidence for at least two years of phone-based cold-calling experience and confirm US-hours availability; resolve prior-contact/account-history dedupe when an authorized Gmail read route is restored. If the gates pass, qualify and hand off to PRI for applicant-controlled application. Do not submit or imply qualification while these requirements remain unknown.",
+      "opportunity_key": "2cantalks.com|bdr-outbound-sa|2026-10-11",
+      "priority": 8,
+      "routing_reason": "HOLD_QUALIFICATION",
+      "smallest_next_action": "iSCOPE qualification HOLD: verify existing evidence for at least two years of phone-based cold-calling experience and confirm US-hours availability; resolve prior-contact/account-history dedupe when an authorized Gmail read route is restored. If the gates pass, qualify and hand off to PRI for applicant-controlled application. Do not submit or imply qualification while these requirements remain unknown.",
+      "state": "DISCOVERED",
       "status": "WAITING",
       "thread_id": null
     },
@@ -929,6 +941,18 @@
     }
   ],
   "ledger": {
+    "2cantalks.com|bdr-outbound-sa|2026-10-11": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "iSCOPE qualification HOLD: verify existing evidence for at least two years of phone-based cold-calling experience and confirm US-hours availability; resolve prior-contact/account-history dedupe when an authorized Gmail read route is restored. If the gates pass, qualify and hand off to PRI for applicant-controlled application. Do not submit or imply qualification while these requirements remain unknown.",
+      "opportunity_key": "2cantalks.com|bdr-outbound-sa|2026-10-11",
+      "priority": 8,
+      "routing_reason": "HOLD_QUALIFICATION",
+      "smallest_next_action": "iSCOPE qualification HOLD: verify existing evidence for at least two years of phone-based cold-calling experience and confirm US-hours availability; resolve prior-contact/account-history dedupe when an authorized Gmail read route is restored. If the gates pass, qualify and hand off to PRI for applicant-controlled application. Do not submit or imply qualification while these requirements remain unknown.",
+      "state": "DISCOVERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
     "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
       "due_at": null,
       "due_now": false,
