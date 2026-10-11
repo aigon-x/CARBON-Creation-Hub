@@ -75,11 +75,22 @@ class UnavailableDiscoveryAdapter:
             "fallback_policy": "FAIL_CLOSED_NO_KEYWORD_ONLY_FALLBACK",
         }
 
-    def search(self, query: str, listings: list[dict[str, Any]]) -> list[dict[str, Any]]:
-        del query, listings
+    def search_with_metadata(
+        self, query: str, listings: list[dict[str, Any]]
+    ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+        if not (query or "").strip():
+            return listings, {
+                **self.describe(),
+                "integration_state": "BROWSE_NO_QUERY",
+                "engine_invoked": False,
+            }
         raise DiscoveryUnavailableError(
             "Shared CARBON° Search intent endpoint is not configured."
         )
+
+    def search(self, query: str, listings: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        records, _metadata = self.search_with_metadata(query, listings)
+        return records
 
 
 class IntentEngineDiscoveryAdapter:
