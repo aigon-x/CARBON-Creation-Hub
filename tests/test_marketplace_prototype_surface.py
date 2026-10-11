@@ -4,12 +4,14 @@ from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
 from backend.marketplace import mount_marketplace
+from backend.marketplace_discovery import LocalDiscoveryAdapter
 from backend.marketplace_participant import mount_participant_api
 
 
 def client(tmp_path: Path) -> TestClient:
     app = FastAPI()
-    mount_marketplace(app, tmp_path, db_path=tmp_path / "market.db", demo_mode=True)
+    # Keyword filtering is permitted only as an explicitly injected local demo adapter.
+    mount_marketplace(app, tmp_path, db_path=tmp_path / "market.db", demo_mode=True, discovery_adapter=LocalDiscoveryAdapter())
     mount_participant_api(app, app.state.carbon_marketplace_store)
     return TestClient(app)
 
