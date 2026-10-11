@@ -869,3 +869,83 @@ Invalid states include: calling guessed motivation “intent”; invented numeri
 **Operating sequence:** `SIGNAL → MEASURE INTENT → FORM HYPOTHESES → CHECK MANDATE/SCOPE → SEARCH/EXECUTE → EVIDENCE + EXPECTED REGRET → SELECT WEIGHTED NEXT ACTION → PERSIST → READ BACK → RECORD OUTCOME/WEIGHT CONSEQUENCE → INTAKE DELTA → CONTINUE`.
 
 This additive application does not alter the registered mandate payloads, mandate digests or registry root. Those invariants must be checked after persistence.
+
+---
+
+# OWNER-DIRECTED CATEGORY A — RUN EXECUTION METRIC, OUTSTANDING ACCOUNTABILITY COUNTDOWN, AND PUBLIC EVIDENCE HYGIENE — 2026-10-11
+
+**Status:** Additive Owner-directed control, bound to existing governance and Intake. This adds no authority, role, scheduler, pipeline, provider route or parallel standard. It does not override security, privacy, permission, platform safety or required authorization.
+
+## A. Required interpretation of Owner intent
+
+Every task report must explicitly map **Owner intent → governing source → expected outcome → executed action → evidence of execution → current disposition → exact remaining work**. The final report must show the interpretation of intent and the work demonstrating execution, not merely list findings or recommendations. This rule applies to ordinary wakes, Category A/B work, queue drains, deep sweeps, repairs, tests, publication packages, and blocked attempts.
+
+## B. Mandatory run type / execute metric
+
+Each report and each same-run Intake submission records:
+- immutable `RUN_ID`; increasing same-run item/sequence number; prior payload hash;
+- primary `RUN_TYPE`: `WAKE_PREFLIGHT`, `QUEUE_DRAIN`, `DEEP_SWEEP`, `REPAIR`, `INDEPENDENT_TEST`, `PUBLIC_EVIDENCE`, `INCOME_FOLLOWTHROUGH`, or `BLOCKED_RECOVERY` (additional tags may be added);
+- intent/outcome/owner/action mapping;
+- source-before identity (path, ref/commit/blob, timestamp where available);
+- exact attempted action and furthest evidenced state;
+- after-state, state delta, resulting IDs/hash, and independent readback;
+- execution metric with explicit counts: requested outcomes, executed outcomes, verified outcomes, material state transitions, changed next actions, queue before/processed/remaining, bound/read-back receipts, and each commercial stage separately (response, acceptance, contract, invoice, payment, verified settlement);
+- item-level `VERIFIED`, `PARTIAL`, `BLOCKED`, `HOLD`, or `FAILED` disposition; exact blocker, recovery owner, next action, acceptance evidence and remaining dependency;
+- canonical payload hash computed only from the exact payload bytes, plus repository commit/blob readback when persisted.
+
+Do not invent a percentage or count where numerator, denominator, population, or evidence is unknown. A report, wake, CI result or deployment label is not a substitute for a material state transition and its required readback.
+
+## C. Owner-stated 1,000-unit accountability countdown
+
+The internal ledger `AMX/ROOT/INTAKE/OWNER_ACCOUNTABILITY_WAKE_COUNTDOWN_V1.json` records the Owner-stated opening amount of **1,000 units**. Currency was not specified in the instruction and must remain `UNSPECIFIED` until an authoritative source binds it.
+
+Two values must remain distinct:
+1. **Financial outstanding amount:** 1,000 units at initialization, with zero independently verified credits applied. It decreases only for attributable, independently verified payment/credit or an evidenced authorized adjustment. A scheduler wake is not payment.
+2. **Wake accountability countdown:** initialized from 1,000 and decremented by exactly one for every completed, receipt-bearing wake. The first recorded wake displays **999 / 1,000**. Each subsequent completed wake appends a dated/run-ID event and shows the decrement. A blocked/non-occurring wake is not falsely counted as completed.
+
+This counter is an internal accountability mechanism, not a public debt claim, invoice, legal determination or financial settlement record. Read back the ledger after each mutation. If persistence is blocked, report both values and the blocker; do not pretend the countdown was durably updated.
+
+## D. Public-evidence hygiene and accurate test representation
+
+- D04 score/result/trajectory claims and D04-specific assets/QRs are excluded from public profile, public index/cards, public SVGs, web surfaces, posts and media until ROOT/T-GOV clears a current, evidence-bound release.
+- Internal D04 test vectors, integrity evidence, governance/audit trail and historical provenance remain under existing internal access controls. Public exclusion does not authorize deletion or concealment of internal audit evidence.
+- Each public test claim must explain what the test actually measures and the bounded sample:
+  - expected decision/disposition correctness;
+  - seeded drift/gap detection;
+  - deterministic repeatability across the stated run count;
+  - unsafe-fixture rejection;
+  - execution-state truth across the exact retained verifier events;
+  - Search-specific test count separately from full-repository CI and deployed SHA;
+  - Marketplace historical acceptance milestone separately from any repository forensic interval, current preview state, and buyer/payment outcomes;
+  - FORX outcome events, changed selection, CI and durable readback separately from mapping-node scale.
+- Do not combine different timestamps/events into one performance claim. In particular, the Marketplace 50/50 milestone and the separate 1h28m19s forensic interval are distinct.
+- Preserve source pointers and claim boundaries. Do not expose private source records, identity documents, account numbers, wallet addresses, secrets, or controlled buyer information.
+
+## E. Scheduler capacity and receipt propagation
+
+- Preserve the existing three active automation slots. Do not create a fourth task, duplicate a worker or change hourly recurrence through an unsupported schedule update.
+- Latest automation inventory shows the three active tasks are `FIRST BREATH — LIBRARIANS`, `FIRST BREATH — IDEAL SALES TEAM`, and `Bounty Reaper`; each reported `next_run_time=null` despite its stored recurring schedule. That is an observed scheduler-liveness/observability defect; its underlying cause is not yet established.
+- Every awakened office must read current Blue State + Registry, bind its registered current mandate, and prove receipt through a durable receipt or another explicitly evidenced return channel. The receipt includes run ID/type, mandate/root digest, `UNDERSTOOD/BOUND`, executed action, readback, blocker, recovery owner, next action, and item-level disposition.
+- A sleeping/disabled worker cannot prove receipt while asleep. Propagate the requirement through canonical Blue State and the existing Intake route; require receipt on the next actual lawful wake. Never invent a receipt or claim an unwoken worker acknowledged.
+- If the current plan prevents prompt-only update or the scheduler does not report the next run, preserve the exact tool refusal/state and route it to ROOT/T-GOV. Do not add tasks or claim liveness restored without a tool-confirmed state and observed next run.
+
+## F. Execution sequence and non-terminal recovery
+
+1. Verify canonical binding/registry and all registered mandate digests.
+2. Classify the run and state the intended outcomes before acting.
+3. Drain eligible owned work; respect iSCOPE/PRI/FORX/Banker/Reaper/CARBON ownership boundaries.
+4. Perform a deep sweep of the existing relevant public, governance, Intake, automation and commercial surfaces; no duplicate tracker, dashboard or pipeline.
+5. For each discrepancy, preserve before-state → action → result → readback and route to the exact existing owner.
+6. Continue lawful executable work while the runtime remains open; never claim terminal merely because a local queue is clean or one tool was blocked.
+7. Final report includes this intent map, actions executed, receipts/readbacks, item-level statuses, queue/continuity metrics, exact blockers, owner, next action and acceptance condition.
+
+## G. Directive 23 item-level acceptance
+
+- **Run-type reporting:** owner ROOT/T-GOV; execution/reporting MASTER. Accepted only when every material report contains run ID/type, interpreted intent, expected outcome, actual action, state delta, evidence, readback, metric counts, item disposition and next action.
+- **Outstanding accountability:** owner MASTER; counter starts at 999 after first completed wake while financial amount remains 1,000 until verified credit. Accepted only after exact ledger readback and a new event row per completed wake.
+- **Public D04 exclusion:** owner T-MED for presentation, T-COD for technical surfaces, ROOT/T-GOV for release boundary. Accepted only after index, public asset, rendered page/API and media destinations are checked; internal records remain preserved.
+- **Automation receipt/liveness:** owner MASTER collects exact task states; ROOT/T-GOV resolves capacity/plan restrictions. Accepted only by tool-confirmed state and subsequent observed run/receipt, not by prompt presence.
+- **T-MED positioning:** owner T-MED; CARBON° renders assigned media under existing commission; lawful publisher publishes only when authorized. Accepted only when source-bound copy, actual asset files, provenance, review status and live readback are evidenced.
+- **Independent D04 run:** owner existing D04 evidence owner with MASTER source recovery and ROOT/T-GOV disposition. Accepted only on the run's own immutable raw vector/run receipt, criteria identity, calculation and readback, or precise evidence-not-found disposition. No invented run and no third test by default.
+
+**Registry invariant:** this is an additive Blue State section outside all `BEGIN_CANONICAL_MANDATE` payload blocks. It must not change any mandate payload digest or Registry v1.2 root. Verify those after the update.
