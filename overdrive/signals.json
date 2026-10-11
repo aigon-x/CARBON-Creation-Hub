@@ -1,18 +1,6 @@
 {
   "PRI": [
     {
-      "due_at": "2026-10-10T17:00:00Z",
-      "due_now": true,
-      "next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
-      "opportunity_key": "callforceoutsourcing.com|marketing-lead|south-africa",
-      "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a103d43041d248b for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
-      "state": "SUBMITTED",
-      "status": "READY",
-      "thread_id": "1a103d43041d248b"
-    },
-    {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
       "next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
@@ -131,6 +119,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f2de385883f66"
+    },
+    {
+      "due_at": "2026-10-10T17:00:00Z",
+      "due_now": true,
+      "next_action": "Restore an authorized read path to existing Gmail thread 1a103d43041d248b; inspect the current thread and reconcile exact buyer state before any external action. Do not send another message while the thread cannot be inspected. Then persist lifecycle/NEXT_ACTION/DUE and read back.",
+      "opportunity_key": "callforceoutsourcing.com|marketing-lead|south-africa",
+      "priority": 2,
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "Connect an authorized reader to the existing Gmail mailbox without changing sender identity, then inspect thread 1a103d43041d248b and persist the current buyer state.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": "1a103d43041d248b"
     },
     {
       "due_at": null,
@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-11T18:06:48.530571+00:00",
+  "generated_at": "2026-10-11T18:25:22.624627+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1004,13 +1004,13 @@
     "callforceoutsourcing.com|marketing-lead|south-africa": {
       "due_at": "2026-10-10T17:00:00Z",
       "due_now": true,
-      "next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
+      "next_action": "Restore an authorized read path to existing Gmail thread 1a103d43041d248b; inspect the current thread and reconcile exact buyer state before any external action. Do not send another message while the thread cannot be inspected. Then persist lifecycle/NEXT_ACTION/DUE and read back.",
       "opportunity_key": "callforceoutsourcing.com|marketing-lead|south-africa",
       "priority": 2,
-      "routing_reason": null,
-      "smallest_next_action": "Read existing thread 1a103d43041d248b for a material reply; continue in-thread only if due or requested; never repeat initial outreach.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
+      "smallest_next_action": "Connect an authorized reader to the existing Gmail mailbox without changing sender identity, then inspect thread 1a103d43041d248b and persist the current buyer state.",
       "state": "SUBMITTED",
-      "status": "READY",
+      "status": "WAITING",
       "thread_id": "1a103d43041d248b"
     },
     "cherryone.ai|content-partner-distribution|carbon-degree-of-business": {
