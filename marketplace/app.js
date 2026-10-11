@@ -65,7 +65,8 @@ function discoveryLabel(d){
  if(d.name==="CARBON_INTENT_ENGINE"){
   if(d.integration_state==="QUERY_VERIFIED")return "Intent Search · "+String(d.intent_status||"verified").toLowerCase();
   if(d.integration_state==="BROWSE_NO_QUERY")return "Browse listings";
-  if(d.intent_endpoint_configured)return "Intent Search configured · unprobed";
+  if(d.integration_state==="CONFIGURED_UNPROBED"&&d.intent_endpoint_configured&&d.client_token_configured)return "Intent Search configured · unprobed";
+  if(d.integration_state==="NO_CANDIDATES")return "Intent Search · no candidates";
   return "Intent Search unavailable";
  }
  return "Discovery unavailable";
