@@ -1,31 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-label="Proof Stack: commercial judgment, verified delivery, execution integrity, durable scale">
-  <rect width="1200" height="1600" fill="#101827"/>
-  <rect x="72" y="72" width="1056" height="1456" rx="34" fill="#172338" stroke="#5d7896" stroke-width="2"/>
-  <text x="120" y="170" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" letter-spacing="4">ULRICH DU PLESSIS</text>
-  <text x="120" y="250" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="68" font-weight="700">PROOF STACK</text>
-  <text x="120" y="302" fill="#c8d5e5" font-family="Arial,Helvetica,sans-serif" font-size="28">Commercial judgment. Verified delivery.</text>
-  <text x="120" y="344" fill="#c8d5e5" font-family="Arial,Helvetica,sans-serif" font-size="24">Evidence that survives scrutiny.</text>
-  <rect x="120" y="395" width="960" height="220" rx="22" fill="#22364d"/>
-  <text x="158" y="450" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">01 / COMMERCIAL EXECUTION</text>
-  <text x="158" y="510" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="700">10+ years</text>
-  <text x="158" y="553" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="24">~33% of regional volume for 22 of 24 months</text>
-  <text x="158" y="590" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="22">Commission cap twice · Two perfect scorecards</text>
-  <rect x="120" y="640" width="960" height="250" rx="22" fill="#22364d"/>
-  <text x="158" y="695" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">02 / RAPID TESTED DELIVERY</text>
-  <text x="158" y="755" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="700">50/50 in 1h 28m</text>
-  <text x="158" y="800" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="25">Marketplace acceptance milestone</text>
-  <text x="158" y="844" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700">36/36 tests · 81/81 CI</text>
-  <text x="158" y="875" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="21">Search deployed promotion in 4h 28m from commissioning</text>
-  <rect x="120" y="915" width="960" height="230" rx="22" fill="#22364d"/>
-  <text x="158" y="970" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">03 / EXECUTION INTEGRITY</text>
-  <text x="158" y="1032" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700">13/13 · 12/12 · 0/10</text>
-  <text x="158" y="1075" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="24">Expected dispositions · drift/gap detection · unsafe accepts</text>
-  <text x="158" y="1117" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="21">13/13 deterministic consistency across five runs</text>
-  <rect x="120" y="1170" width="960" height="210" rx="22" fill="#22364d"/>
-  <text x="158" y="1225" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">04 / DURABLE TECHNICAL SCALE</text>
-  <text x="158" y="1285" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700">100,000 nodes</text>
-  <text x="158" y="1328" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="24">100 partition hashes · 50K retained + 50K new IDs</text>
-  <text x="158" y="1364" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="21">Mapping infrastructure—not 100,000 prospects or buyers</text>
-  <text x="120" y="1442" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700">CLAIM ≤ EVIDENCE</text>
-  <text x="120" y="1482" fill="#c8d5e5" font-family="Arial,Helvetica,sans-serif" font-size="20">Bounded tests · exact scope · public-safe proof index</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1940" viewBox="0 0 1200 1940" role="img" aria-label="Inspectable work: commercial execution, separate product acceptance evidence, execution-state tests, and outcome-driven selection">
+  <rect width="1200" height="1940" fill="#101827"/>
+  <rect x="56" y="56" width="1088" height="1828" rx="32" fill="#172338" stroke="#5d7896" stroke-width="2"/>
+  <text x="96" y="126" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" letter-spacing="3">AMILLIMATRIX · WORK YOU CAN INSPECT</text>
+  <text x="96" y="208" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="700">OUTCOMES, NOT HYPE</text>
+  <text x="96" y="255" fill="#c8d5e5" font-family="Arial,Helvetica,sans-serif" font-size="25">Each result names what was tested and what it does not prove.</text>
+
+  <rect x="96" y="302" width="1008" height="225" rx="22" fill="#22364d"/>
+  <text x="132" y="352" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">01 · COMMERCIAL EXECUTION</text>
+  <text x="132" y="412" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="44" font-weight="700">10+ years</text>
+  <text x="132" y="453" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="25">Largest regional retail account · ~33% of regional volume</text>
+  <text x="132" y="489" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="25">22 of 24 months · commission cap twice · two perfect scorecards</text>
+
+  <rect x="96" y="550" width="1008" height="355" rx="22" fill="#22364d"/>
+  <text x="132" y="601" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">02 · PRODUCT DELIVERY — DISTINCT EVIDENCE CHAINS</text>
+  <text x="132" y="660" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="700">Marketplace · 50/50 acceptance milestone</text>
+  <text x="132" y="698" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="23">Historical milestone recorded 8 Oct 2026; preview is sandboxed and has no listings.</text>
+  <text x="132" y="735" fill="#f2cc8f" font-family="Arial,Helvetica,sans-serif" font-size="21">1h 28m 19s is a separate repository forensic interval — not the test runtime.</text>
+  <line x1="132" y1="759" x2="1068" y2="759" stroke="#5d7896" stroke-width="2"/>
+  <text x="132" y="808" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="700">Search · 36/36 product tests · 81/81 repository CI</text>
+  <text x="132" y="846" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="23">Promotion commit recorded 4h 28m 17s after commissioning.</text>
+  <text x="132" y="880" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="21">Build/test evidence is not buyer acceptance, revenue or payment.</text>
+
+  <rect x="96" y="928" width="1008" height="390" rx="22" fill="#22364d"/>
+  <text x="132" y="979" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">03 · EXECUTION-STATE TESTS — WHAT THEY MEASURE</text>
+  <text x="132" y="1033" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700">13/13 expected dispositions</text>
+  <text x="132" y="1067" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="22">Did each bounded test case receive its expected decision?</text>
+  <text x="132" y="1110" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700">12/12 seeded drift/gap cases detected</text>
+  <text x="132" y="1144" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="22">Did the system identify the deliberately seeded inconsistencies?</text>
+  <text x="132" y="1187" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700">13/13 deterministic checks · five runs</text>
+  <text x="132" y="1221" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="22">Did declared outputs remain consistent across repeated runs?</text>
+  <text x="132" y="1264" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700">0/10 unsafe fixtures accepted</text>
+  <text x="132" y="1298" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="22">Did any of the ten defined unsafe fixtures pass acceptance? No.</text>
+
+  <rect x="96" y="1341" width="1008" height="230" rx="22" fill="#22364d"/>
+  <text x="132" y="1392" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">04 · EXECUTION-REPORTING INTEGRITY</text>
+  <text x="132" y="1450" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="37" font-weight="700">3/3 retained verifier events</text>
+  <text x="132" y="1492" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="24">The real execution-state boundary was preserved in all three events.</text>
+  <text x="132" y="1530" fill="#f2cc8f" font-family="Arial,Helvetica,sans-serif" font-size="22">Sample size = 3 retained events; not a provider-wide ranking.</text>
+
+  <rect x="96" y="1594" width="1008" height="212" rx="22" fill="#22364d"/>
+  <text x="132" y="1645" fill="#8bd3c7" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">05 · OUTCOME CHANGED THE NEXT ACTION</text>
+  <text x="132" y="1702" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="700">929 candidates · 8 downstream outcomes</text>
+  <text x="132" y="1743" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="24">Next selection changed ·001 → ·005; CI passed and state/receipt were read back.</text>
+  <text x="132" y="1780" fill="#dbe5ef" font-family="Arial,Helvetica,sans-serif" font-size="22">Selection change proves a bounded mechanism — not a sale or payment.</text>
+
+  <text x="96" y="1838" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">TESTED ≠ DEPLOYED ≠ ACCEPTED ≠ PAID</text>
+  <text x="96" y="1872" fill="#c8d5e5" font-family="Arial,Helvetica,sans-serif" font-size="19">Source IDs: EVID-COMMERCIAL-001 · EVID-BUILD-DELIVERY-001 · EVID-DEMONSTRATOR-001</text>
 </svg>
