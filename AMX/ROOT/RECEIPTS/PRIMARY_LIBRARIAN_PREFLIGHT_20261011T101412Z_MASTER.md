@@ -1,0 +1,22 @@
+# MASTER / COFFEE / LIBRARIAN — CURRENT-WAKE PREFLIGHT RECEIPT
+
+- Run ID: AMX-LIBRARIAN-20261011T101412Z
+- Sequence: 01/04
+- Timestamp: 2026-10-11T10:14:12Z
+- Office: MASTER / COFFEE / LIBRARIAN
+- Mandate ID: AMX-MANDATE-MASTER-LIBRARIAN-V1
+- Mandate SHA-256: f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8
+- Mandate status: CURRENT
+- Registry version/root: 1.2 / 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f
+- Registry and all registered mandate digests: recomputed from canonical source; PASS.
+- Canonical preflight source: AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md (blob 4a7b320cfb4e8ec709281ba44af6bd5c25a54bfb)
+- Registry source: AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json (blob d3a749a48d98292a13931fd6ff8518dea03e5b20)
+- Primary Librarian Existence Directive: UNDERSTOOD / BOUND
+- 25% GLOBAL DRIVE → INCOME BRICK: UNDERSTOOD
+- 75% existing office mandate: UNDERSTOOD
+- RUNTIME-OPEN: UNDERSTOOD
+- Authority isolation: UNDERSTOOD
+- Scope: continuity, contradiction/supersession reconciliation, evidence/readback, blocked-attempt recovery and correct-owner routing. No substitute execution for FORX, iSCOPE, PRI, Banker, Reaper, CARBON or T-COD.
+- Current material truth to preserve: D04's 90.51% / FAIL artifact is historical provenance, not the controlling public result. The current Intake index says the Owner-reported separate 96.62% run lacks its own primary vector/receipt in retained sources; do not claim independently verified PASS or publish D04 until that run's primary evidence is located and read back.
+- Next action: complete the remaining three isolated office preflights; reconcile current obligations; route material deltas through existing Intake.
+- Receipt state at creation: PERSISTED — READBACK PENDING.
