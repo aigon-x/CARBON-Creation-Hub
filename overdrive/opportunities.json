@@ -18,8 +18,8 @@
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-09T13:05:00Z",
-  "last_reconciled_reason": "Reconcile MoboReels DSN and remove stale automatic retry posture.",
+  "last_reconciled_at": "2026-10-11T19:36:31Z",
+  "last_reconciled_reason": "Reconciled current PRI mandate readback: the existing Outlier opportunity remains QUALIFIED with an Owner/applicant-only skills-screening gate. Cleared stale due_at because no fixed buyer/provider deadline is evidenced; no lifecycle advancement or income inferred.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -82,8 +82,8 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-11T18:37:01.232Z",
-  "last_updated_by": "PRI — current OpenTrain task-based route requalification",
+  "last_updated_at": "2026-10-11T19:36:31Z",
+  "last_updated_by": "PRI",
   "record_count": 66,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -2961,7 +2961,7 @@
       "constraints": [],
       "discovered_by": "iSCOPE",
       "domain": "outlier.ai",
-      "due_at": "2026-10-04T02:49:14.724Z",
+      "due_at": null,
       "evidence": [
         {
           "kind": "CURRENT_PRIMARY_LISTING",
@@ -3063,7 +3063,7 @@
       "execution_readiness": "HUMAN_PROVIDER_GATE",
       "last_action_at": "2026-10-06T11:03:42Z",
       "message_id": "1a0fedc93e232877",
-      "next_action": "Use the existing Outlier account/dashboard and complete the provider skills screening personally under Outlier rules. Reopen support ticket 5220137 only if account/project access remains blocked after the screening route is attempted. No project assignment, receivable or payment is evidenced.",
+      "next_action": "OWNER/APPLICANT GATE: personally complete the provider's skills screening through the existing verified Outlier account/dashboard under the platform's assessment rules. Do not create another account or use hidden assistance. After screening, verify whether a project is actually assigned before treating the route as executable paid work. Reopen support ticket 5220137 only if the existing account/project route remains blocked. PRI continues other authorized commercial work in parallel; no project assignment, receivable, or payment is evidenced.",
       "onboarding_status": "DASHBOARD_READY_SKILLS_SCREENING_PENDING",
       "opportunity": "coding-expertise-ai-training",
       "organization": "Outlier AI",
@@ -3075,7 +3075,8 @@
       "routing_reason": "ACCOUNT_AND_DASHBOARD_EVIDENCED_SKILLS_SCREENING_REQUIRED",
       "state": "QUALIFIED",
       "thread_id": "1a0fedc93e232877",
-      "title": "Coding Expertise for AI Training — South Africa"
+      "title": "Coding Expertise for AI Training — South Africa",
+      "last_reconciled_at": "2026-10-11T19:36:31Z"
     },
     "poursyrup.ai|senior-ai-delivery-engineer|cape-town": {
       "buyer_fit": "Current Cape Town hybrid senior AI delivery role explicitly values shipped production work, client-facing delivery, AI agents, GPT/Claude-class models, integrations and end-to-end ownership; strong match to current AMX software/AI systems plus B2B commercial delivery evidence.",
@@ -4250,6 +4251,6 @@
       "video_access_verified_at": "2026-09-30T16:52:12.432Z"
     }
   },
-  "updated_at": "2026-10-11T18:37:01.232Z",
+  "updated_at": "2026-10-11T19:36:31Z",
   "version": 1
 }
