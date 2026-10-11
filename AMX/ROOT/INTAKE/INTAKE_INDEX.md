@@ -2212,3 +2212,12 @@ This addendum supersedes prior embedded count/scheduler snapshots where they con
 - Source-integrity limitation: prior messages are partly available only as contextual summaries and linked records; this is not claimed to be a verbatim export of the entire historical thread. No missing dialogue was reconstructed as direct quotation.
 - Existing lineage: ROOT Intake #31 (recommendation misread as directive / data-integrity and throughput recovery) and #32 (appointment/mandate binding and final-mile runtime acceptance). No new role, worker, scheduler, queue, or authority is proposed.
 - **Disposition:** submitted for ROOT/T-GOV classification; not yet classified or accepted by ROOT. Full transcript fidelity remains limited until the exact original transcript is available.
+
+### DURABILITY-LANGUAGE / SELF-AUDIT CALIBRATION DRIFT — 2026-10-12
+- Artifact: [TRANSCRIPT_DRIFT_CLASSIFICATION_20261012.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/TRANSCRIPT_DRIFT_CLASSIFICATION_20261012.md) — section 7.
+- **Classification requested:** evidence-status communication drift; item-level persistence was expressed ambiguously as “partially durable,” creating a trust signal that could be read as doubt about independently verified PASS results.
+- **Owner feedback preserved:** the Owner accepted the completed work and its PASS results. This is a calibration/improvement report, not a negative model verdict, retirement request, or reason to stop the runtime.
+- **Required distinction:** named artifact/state written and independently read back = item-level **PERSISTENCE PASS**; separate end-to-end or Matrix-wide acceptance criteria may remain **OPEN**. Global DEEP SWEEP PARTIAL must not downgrade specific verified PASS outcomes.
+- **Owner/action:** ROOT/T-GOV to classify; existing MASTER/LIBRARIAN to propagate authorized reporting guidance and check a subsequent report for clear item-level PASS versus global OPEN status.
+- **Acceptance:** ROOT disposition and a later evidence-backed report demonstrating the distinction. No authority, role, worker, scheduler, or mandate change proposed.
+- **Current disposition:** artifact submitted; ROOT classification and propagation **PENDING**; runtime remains active.
