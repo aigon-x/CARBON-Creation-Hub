@@ -82,8 +82,8 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-11T18:06:36.864Z",
-  "last_updated_by": "PRI — current official task-based route requalification",
+  "last_updated_at": "2026-10-11T18:25:12.999Z",
+  "last_updated_by": "PRI — CallForce thread-read access reconciliation",
   "record_count": 66,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -381,6 +381,17 @@
     },
     "callforceoutsourcing.com|marketing-lead|south-africa": {
       "buyer_fit": "Current CallForce careers surface describes a hands-on B2B Marketing Lead connecting digital-transformation positioning to demand generation, CRM hygiene, sales enablement and global US/UK/SA growth. This matches the recovered CV's 10+ years B2B commercial leadership plus current AI/product-building evidence.",
+      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE",
+      "routing_reason": "EXISTING_THREAD_READ_ACCESS_UNAVAILABLE",
+      "active_dependencies": {
+        "callforce_authenticated_thread_access": {
+          "kind": "PROVIDER_ROUTE",
+          "state": "ACTIVE",
+          "observed_at": "2026-10-11T18:25:12.999Z",
+          "evidence": "Close exact-ID retrieval returned Not Found; Outlook exact-ID search returned zero results; Gmail connector is disabled by administrator; Opera browser is not connected.",
+          "next": "Connect an authorized reader to the existing Gmail mailbox without changing sender identity, then inspect thread 1a103d43041d248b and persist the current buyer state."
+        }
+      },
       "capital_direction": "INBOUND / NO APPLICATION FEE",
       "constraints": [
         "Listing age is older than the other fresh targets; current careers-page presence is evidence of availability, but employer response is required before inferring active shortlisting."
@@ -404,12 +415,42 @@
           "source_id": "1a103d43041d248b",
           "summary": "PRI sent the application to the official listed recipient with the recovered current Drive CV attached and a role-specific three-part first-action note.",
           "thread_id": "1a103d43041d248b"
+        },
+        {
+          "kind": "CLOSE_THREAD_LOOKUP_NOT_FOUND",
+          "observed_at": "2026-10-11T18:25:12.999Z",
+          "source": "CLOSE",
+          "source_id": "1a103d43041d248b",
+          "result": "NOT_FOUND",
+          "summary": "Exact existing CallForce thread identifier was not found by the connected Close email-thread and email lookup."
+        },
+        {
+          "kind": "OUTLOOK_THREAD_SEARCH_NO_MATCH",
+          "observed_at": "2026-10-11T18:25:12.999Z",
+          "source": "MICROSOFT_OUTLOOK",
+          "source_id": "1a103d43041d248b",
+          "result": "ZERO_RESULTS",
+          "summary": "Exact-ID search returned no messages in the connected Outlook mailbox; this is not a substitute for reading the canonical Gmail thread."
+        },
+        {
+          "kind": "GMAIL_CONNECTOR_ADMIN_DISABLED",
+          "observed_at": "2026-10-11T18:25:12.999Z",
+          "source": "CONNECTOR_STATUS",
+          "result": "DISABLED_BY_ADMIN_NOT_AVAILABLE",
+          "summary": "Gmail connector reports disabled by administrator and unavailable for installation in this runtime."
+        },
+        {
+          "kind": "BROWSER_AUTH_ROUTE_UNAVAILABLE",
+          "observed_at": "2026-10-11T18:25:12.999Z",
+          "source": "BROWSER_CONNECTOR",
+          "result": "BROWSER_NOT_CONNECTED",
+          "summary": "Opera browser reports not connected and saved TinyFish profiles show no recorded signed-in sites; no sign-in attempt was initiated."
         }
       ],
       "execution_owner": "PRI",
       "last_action_at": "2026-10-03T22:13:20Z",
       "message_id": "1a103d43041d248b",
-      "next_action": "Monitor the CallForce application thread for a response. If progressed, answer role-specific marketing/pipeline questions from current evidence; do not infer acceptance or compensation.",
+      "next_action": "Restore an authorized read path to existing Gmail thread 1a103d43041d248b; inspect the current thread and reconcile exact buyer state before any external action. Do not send another message while the thread cannot be inspected. Then persist lifecycle/NEXT_ACTION/DUE and read back.",
       "opportunity": "marketing-lead",
       "organization": "CallForce",
       "payment": "Employment compensation; exact payroll/settlement terms to verify if progressed",
@@ -4196,6 +4237,6 @@
       "video_access_verified_at": "2026-09-30T16:52:12.432Z"
     }
   },
-  "updated_at": "2026-10-11T18:06:36.864Z",
+  "updated_at": "2026-10-11T18:25:12.999Z",
   "version": 1
 }
