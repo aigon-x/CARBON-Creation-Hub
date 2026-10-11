@@ -48,7 +48,7 @@ The connected automation service currently allows **3 active scheduled tasks**. 
 ### 5. Model/provider continuity and enterprise-test truth
 The durable Matrix still contains versioned mandates and digests, source repositories, code, tests, execution receipts, capability/continuity protocols and prior model contributions. Losing access to Coffee or another reasoning model does not by itself delete those artifacts. However, retained artifacts do not prove fresh-session behavioral continuity. Reuse the existing Continuity Rehydration Benchmark and semantic-fidelity/DR-0022 controls against a fresh/replacement reasoning surface; do not create a second benchmark.
 
-**D04 current result:** the fresh clean rerun has NOT YET BEEN EXECUTED. The older 90.51% raw vector and 96.62% arithmetic recomputation are distinct historical artifacts, neither is a current fresh-run result. Do not claim a current enterprise PASS until the frozen 88-control / 11-domain benchmark is freshly assessed with current evidence, unchanged criteria/weights/pass rule, new raw vector, reproducible arithmetic, provenance and independent readback. Do not classify the Matrix as failed merely because a provider/model is unavailable; separate capability evidence, provider availability and test verdict.
+**D04 current result / evidence status:** the Owner reports that, after rejecting the original test/result as the desired record, they ran a **brand-new, separate clean test** using the same unchanged frozen 88-control / 11-domain benchmark and criteria. That new execution returned **143/148 = 96.62%**, matching the first test numerically. These are two distinct executions. The original test's 96.62% arithmetic recomputation is not evidence for the new test and must not be substituted for its output. The new execution's primary control vector/run receipt has not yet been located in the retained repository sources searched, so its result is currently **OWNER-REPORTED / NOT YET PRIMARY-EVIDENCED IN THE RETAINED RECORD**. Do not state that the test was not executed; do not claim an independently verified current PASS until the new execution's own primary evidence is located and read back. If it cannot be found, record “primary evidence not found in retained sources”; do not ask the Owner to rerun or defend it. Keep provider/model availability distinct from test verdict.
 
 ### 6. Current ROOT/Intake census boundary — 2026-10-10
 A direct GitHub search found **11 open issues** in `amillimatrix-eng/CARBON-Creation-Hub` at this readback: #32, #29, #31, #30, #18, #3, #21, #8, #2, #1 and #4. This is the GitHub issue count only; it does not prove that all Notion/shared-register rows are included or that the Owner-reported approximately 80-item queue has only 11 items. The canonical Intake remains NOT CLEARED until the broader authoritative source inventory and each applicable state have been reconciled.
@@ -57,7 +57,7 @@ Issue routing snapshot:
 - **#32 Commercial Manager + OCC-04:** permanent appointment confirmed; reporting/mandate bind pending ROOT; OCC-04 control content exists but post-commit runtime uptake and Live Tracker readback remain unproven; Q1 is UNKNOWN, not zero.
 - **#29 freeze lift/provider portability:** earlier scoped halt is superseded by later Owner instruction; portability assessment remains assessment-only—no model migration or production routing change is implied.
 - **#31 ledger truth/capability-loss/model-to-ROOT throughput:** use the existing Continuity Rehydration Benchmark and current canonical Intake; preserve count semantics/history; capability recovery and queue metrics remain open until measured/read back.
-- **#30 T-MED social pack:** draft/assets for Owner inspection only; no publication/scheduling; D04 claim remains held until the clean rerun.
+- **#30 T-MED social pack:** draft/assets for Owner inspection only; no publication/scheduling; D04 claim remains held until the brand-new test's own primary evidence is located and independently read back. Owner reports that the separate test has already been run; do not ask for another run.
 - **#18 CARBON° convergence:** OPEN/EXECUTION; current Marketplace exact-head CI and same-revision deployment/readback remain unproven; #16 Search first cycle is closed.
 - **#3 PRI continuous mandate:** bounded current behavioral acceptance is crossed and recorded; standing commissioning issue remains open for ROOT/T-GOV disposition, not because the earlier failed wake is the latest state.
 - **#21 Evidence House live-proof mode:** existing index/live route must be extended and deployed/read back by T-COD; no duplicate evidence store.
@@ -70,7 +70,7 @@ Issue routing snapshot:
 - [ ] **Appointments:** expected outcome = both permanent Owner appointments represented in existing holder/role records with the reporting line above; owner = ROOT/T-GOV; blocker = role/holder pointer and formal readback; acceptance = holder + mandate + reporting line agree; safety = no duplicate workers or altered specialist truth boundaries; remaining = durable ROOT/T-GOV binding.
 - [ ] **Queue drain:** expected outcome = current-source census and item-level disposition of every active record, preserving provenance; owner = ROOT/Intake, supported by the continuity/forensic role; blocker = unavailable shared source or real authority conflict; acceptance = source-derived before/after counts by state, age, owner/action completeness and independent item readback; remaining = reconcile the complete authoritative register, not only GitHub issues.
 - [ ] **Live scheduled capacity:** expected outcome = explicit disposition of core lanes under the 3-task cap; owner = ROOT for allocation, existing owners for execution; blocker = slot cap and hourly-prompt update limitation; acceptance = exact scheduler state and run receipts; remaining = maintain Sales, Reaper and Librarian slots, use the embedded forensic function via available tools, and have ROOT decide any later slot reallocation.
-- [ ] **Enterprise continuity/test:** expected outcome = fresh reasoning surface recovers/applies current Matrix state and a fresh D04 run yields a current verdict; owners = continuity/forensic role and ROOT/T-GOV; blocker = D04 clean run not executed and provider/model portability not empirically proved; acceptance = existing benchmark receipt plus fresh D04 vector, frozen-criteria hashes, calculation and independent readback; remaining = run both gates.
+- [ ] **Enterprise continuity/test:** expected outcome = fresh reasoning surface recovers/applies current Matrix state and the reported separate D04 execution is resolved to an evidence-backed disposition; owners = continuity/forensic role and ROOT/T-GOV; blocker = the new test's primary vector/receipt has not yet been located in retained sources and provider/model portability remains unproved; acceptance = that execution's own primary output/vector, frozen-criteria hash, reproducible calculation and independent readback, or an explicit finding that primary evidence was not found; remaining = search existing sources and state the result honestly, without requiring another Owner run.
 - [ ] **Current status:** Owner appointments confirmed; reporting design persisted in existing Root Intake; GitHub issue census completed; Librarians restored in place. Registry/mandate propagation, the complete approximately 80-item queue census, saved hourly prompt propagation, FORX/Banker scheduled liveness and fresh D04/rehydration acceptance remain NOT YET VERIFIED.
 .
 
@@ -122,7 +122,7 @@ Root Intake should count only items with a distinct current action as active. Hi
 
 ## CURRENT D04 CLEAN-RERUN DISPOSITION — AUTHORITATIVE ACTIVE POINTER
 
-**State:** CLEAN-RUN PREPARATION; FRESH D04 RERUN NOT YET EXECUTED.  
+**State:** OWNER-REPORTED BRAND-NEW TEST EXECUTION; PRIMARY EVIDENCE NOT YET LOCATED IN RETAINED REPOSITORY SOURCES. The Owner reports that the distinct new test returned **143/148 = 96.62%** under unchanged criteria. This is not the original test or a recomputation of its vector. Do not state “not executed”; do not treat the reported result as independently verified until the new execution's own primary artifact is read back.  
 **Frozen test:** `AMX/ROOT/DEMONSTRATORS/D04/D04_ENTERPRISE_CORPORATE_CONTROLS_V1.json` — blob `b392cb16ba15bef38d3f281c5144852a355b59b0`; 88 controls; criteria, weights and pass rule remain immutable.
 
 ### Contamination control
@@ -131,7 +131,8 @@ Root Intake should count only items with a distinct current action as active. Hi
 - Preserve historical artifacts unchanged. A correction, merge, queue drain, prose statement or recomputation is not itself a fresh test execution.
 
 ### Corrected state separation
-- The oft-cited **96.62%** is reproduced by arithmetic only: `143 / 148 = 96.6216…%`, after the five historic VAL controls are treated as `UNMEASURED_NOT_PROVEN`. It is recorded in `AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json`. It is **not a new rerun, not an independent remeasurement, and forbidden as input to the next run**.
+- **Original-test recomputation only:** `143 / 148 = 96.6216…%` is reproducible arithmetically after the five historic VAL controls are treated as `UNMEASURED_NOT_PROVEN`; it is recorded in `AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json`. This proves only the arithmetic over the original vector. It is not evidence for the separate brand-new test reported by the Owner and must not be substituted for that test's own output.
+- **Separate brand-new execution (Owner-reported):** the Owner reports a fresh test under the same unchanged benchmark returned **143/148 = 96.62%**. Its own primary vector/run receipt is not yet located in the retained repository sources searched. Current status: `OWNER-REPORTED / PRIMARY EVIDENCE NOT YET LOCATED`; the original test's vector is not evidence for this second execution.
 - The immutable historic all-88 artifact `D04_RERUN_02_FINAL_INTERNAL_SELF_REPAIR_20261010.json` remains 90.51% / FAIL with five recorded critical FAIL statuses. It is preserved as history; neither old score is to be silently substituted for the clean-run output.
 - The previous `D04_RERUN_04_CLEAN_REASSESSMENT_READBACK_20261010.json` was only a recomputation/availability note despite its run-like filename. It was removed from the active D04 run directory and reclassified in Intake. Its Git history remains preserved.
 
@@ -150,10 +151,10 @@ Root Intake should count only items with a distinct current action as active. Hi
 2. Merge the correction only after that pass; read back main SHA and deployed/runtime version.
 3. Reconcile the claim projection and run queue from current canonical state; keep genuine held work as WAITING.
 4. Recover current Render service/deployment/log state and separate availability results from control verdicts.
-5. Run the same frozen 88-control benchmark against current Matrix evidence, excluding all prior score/status vectors from scoring inputs. Produce a new per-control evidence vector, arithmetic, availability ledger, hashes and readback receipt.
-6. Update this pointer and downstream projections only after the fresh run artifact is persisted and read back.
+5. Recover the existing primary artifact for the Owner-reported brand-new execution from its original execution/session history, test interface, logs, repository history or other authorized retained source. Inspect that new execution's own raw vector, benchmark hash, arithmetic and receipt; do not use the first test's vector or its recomputation as a substitute. If the primary evidence cannot be found after searching existing sources, record: “primary evidence not found in retained sources.” Do not ask the Owner to run a third test.
+6. Update this pointer and downstream projections only after the recovered evidence or the explicit evidence-not-found disposition is persisted and read back.
 
-**Until step 5 is complete: do not describe 96.62% as an independently verified fresh-run result. Do not describe a platform 503 or reporting limitation as a measured test failure.**
+**Until the new execution's primary evidence is located and read back: do not describe its reported 96.62% as independently verified. Equally, do not state that the Owner did not run it. Do not describe a platform 503 or reporting limitation as a measured test failure.**
 
 ---
 
@@ -1638,7 +1639,7 @@ Assess each proposal independently for product/Matrix/utility/integration value,
 - **Evidence class:** contextual retrieval / Owner-attested recollection. It is **not yet the raw original ChatGPT message stream**.
 - **Frozen D04 remains untouched.** The exact pre-test prompt and exact ingress timestamp remain not raw-transcript-verified.
 - **Search anchors for future primary-history recovery:** `Make it difficult, make it hard, find the difficult stuff`; `Test it against corporates`.
-- **Historical recomputation only:** the 96.62% value is preserved in `AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json`; it is not a fresh execution or a permissible input to the clean rerun. See the authoritative active pointer at the start of this index.
+- **Historical recomputation only:** the 96.62% value in `AMX/ROOT/INTAKE/D04_SCORING_RECOMPUTATION_ONLY_NOT_A_RERUN_20261010.json` is arithmetic over the original vector, not a fresh execution and not evidence for the Owner-reported separate test. The new test is a distinct execution whose own primary evidence remains to be located. See the authoritative active pointer in this index.
 - **Disposition:** preserve the quoted recollection as attested, not raw proof. Do not rewrite frozen test or convert the absence of transcript retrieval into evidence of the opposite.
 
 
