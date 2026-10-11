@@ -15,11 +15,26 @@
       "remains_unproven": "No evidence yet that these fresh outbound actions were ingested into OVERDRIVE receipts or materially progressed to application acceptance/contract/invoice/payment.",
       "scope": "PRI/OVERDRIVE attributable execution observability",
       "upgrade_action": "REUSE existing EVIDENCE_TRANSITION/receipt machinery: ingest/reconcile externally executed consequential PRI actions into the canonical ledger/receipt chain; do not build a new pipeline or dashboard."
+    },
+    {
+      "actual": "Canonical records object contained 83 keys while top-level record_count was 66 before this update.",
+      "changed": "Top-level record_count corrected to 84 after adding the 2CT discovery; new candidate remains DISCOVERED and is not handed to PRI.",
+      "classification": "CORRECTED_WITH_HOLD",
+      "expected": "record_count equals Object.keys(records).length; unqualified candidate remains owned by iSCOPE with exact gates and no external action.",
+      "observed_at": "2026-10-11T19:36:31Z",
+      "owner": "iSCOPE",
+      "proof": [
+        "overdrive/opportunities.json@0b2bcf6eaf5385bdf8cf00597857aad0aae6337e",
+        "Official application page: https://apply.2cantalks.com/j/bdr-outbound-sa"
+      ],
+      "remains_unproven": "At least two years of phone-based cold-calling experience, US-hours availability, Gmail/account-history dedupe, exact base salary, and any application/acceptance/income.",
+      "scope": "Canonical commercial ledger count and new BDR discovery",
+      "upgrade_action": "Resolve the exact applicant eligibility gates and authorized Gmail dedupe before qualification/handoff; then continue the existing iSCOPE→PRI chain."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
   "last_reconciled_at": "2026-10-11T19:36:31Z",
-  "last_reconciled_reason": "Reconciled current PRI mandate readback: the existing Outlier opportunity remains QUALIFIED with an Owner/applicant-only skills-screening gate. Cleared stale due_at because no fixed buyer/provider deadline is evidenced; no lifecycle advancement or income inferred.",
+  "last_reconciled_reason": "Corrected stale top-level record_count (was 83) to match the canonical records object (84) and added one current 2CT discovery as DISCOVERED/HOLD_QUALIFICATION. Eligibility and Gmail dedupe remain unverified; no application or outreach was sent.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -83,8 +98,8 @@
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
   "last_updated_at": "2026-10-11T19:36:31Z",
-  "last_updated_by": "PRI",
-  "record_count": 66,
+  "last_updated_by": "iSCOPE",
+  "record_count": 84,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
@@ -4249,6 +4264,49 @@
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
       "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "2cantalks.com|bdr-outbound-sa|2026-10-11": {
+      "buyer_fit": "Historical B2B sales and strategic-account execution are relevant. The role explicitly requires 2+ years of phone-based cold-calling experience; that exact requirement is not yet evidenced in the recovered record.",
+      "capital_direction": "PAYER_TO_WORK / EMPLOYMENT",
+      "commercial_role": "REMOTE B2B SALES DEVELOPMENT",
+      "constraints": [
+        "Official page requires at least two years of phone-based cold-calling experience; not yet evidenced for qualification.",
+        "US business hours, Monday to Friday, are required; applicant availability is unconfirmed.",
+        "Guaranteed monthly base is stated, but the exact amount is not published on the page.",
+        "Application requires a personal voice interview with the AI recruiter; the call is recorded/transcribed, audio is retained for 12 months and transcript for 24 months.",
+        "Gmail/account-history dedupe could not be completed because the current canonical ledger records the Gmail connector as disabled by administrator; do not infer no prior contact."
+      ],
+      "discovered_by": "iSCOPE",
+      "domain": "apply.2cantalks.com",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_APPLICATION_PAGE",
+          "observed_at": "2026-10-11T19:36:31Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "Official application page is live for a remote South Africa BDR role. It describes cold outreach plus warm inbound, a guaranteed monthly base plus uncapped commission, and a scored personal voice interview. The exact base amount is not published.",
+          "url": "https://apply.2cantalks.com/j/bdr-outbound-sa"
+        },
+        {
+          "kind": "GMAIL_HISTORY_DEDUPE_UNAVAILABLE",
+          "observed_at": "2026-10-11T18:25:12.999Z",
+          "source": "CONNECTOR_STATUS_RECORDED_IN_CANONICAL_LEDGER",
+          "summary": "The latest recorded CallForce reconciliation reports Gmail disabled by administrator; prior-contact/account-history dedupe for this new candidate is therefore unverified in this runtime."
+        }
+      ],
+      "execution_owner": "iSCOPE",
+      "execution_readiness": "HOLD_QUALIFICATION",
+      "last_reconciled_at": "2026-10-11T19:36:31Z",
+      "next_action": "iSCOPE qualification HOLD: verify existing evidence for at least two years of phone-based cold-calling experience and confirm US-hours availability; resolve prior-contact/account-history dedupe when an authorized Gmail read route is restored. If the gates pass, qualify and hand off to PRI for applicant-controlled application. Do not submit or imply qualification while these requirements remain unknown.",
+      "opportunity": "bdr-outbound-sa",
+      "organization": "2CT Sales Co.",
+      "proof_of_work_route": "INTERVIEW_HEAVY",
+      "reward": "Guaranteed monthly base (exact amount not published) plus uncapped commission on qualified meetings held and downstream closed business. The page cites R30,000+/month at the top of the floor; this is not a guaranteed outcome.",
+      "routing_reason": "ELIGIBILITY_AND_GMAIL_DEDUPE_UNVERIFIED",
+      "state": "DISCOVERED",
+      "title": "Business Development Representative — Cold Outreach and Warm Inbound (Remote, South Africa)",
+      "current_route_status": "OFFICIAL_APPLICATION_PAGE_CURRENT",
+      "upfront_cost": "NO_APPLICATION_FEE_STATED"
     }
   },
   "updated_at": "2026-10-11T19:36:31Z",
