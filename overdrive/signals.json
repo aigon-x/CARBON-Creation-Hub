@@ -519,7 +519,7 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "next_action": "Restore the existing OpenTrain account through the current secure login/recovery route. Before submission, confirm the applicant can truthfully meet the listing 20+ hours/week requirement and one approved task/day expectation. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
       "opportunity_key": "opentrain.ai|python-backend-developer-ai-agent-data|cmutoopjw000306mwfvbs4c88",
       "priority": 8,
       "routing_reason": "HOLD_ACCOUNT_RECOVERY",
@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-10T18:57:59.931781+00:00",
+  "generated_at": "2026-10-11T18:06:48.530571+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1580,7 +1580,7 @@
     "opentrain.ai|python-backend-developer-ai-agent-data|cmutoopjw000306mwfvbs4c88": {
       "due_at": null,
       "due_now": false,
-      "next_action": "Resume the existing OpenTrain account and apply through the current official role route. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
+      "next_action": "Restore the existing OpenTrain account through the current secure login/recovery route. Before submission, confirm the applicant can truthfully meet the listing 20+ hours/week requirement and one approved task/day expectation. Do not create a duplicate account. If the existing account cannot be accessed, obtain a fresh secure recovery route before submission.",
       "opportunity_key": "opentrain.ai|python-backend-developer-ai-agent-data|cmutoopjw000306mwfvbs4c88",
       "priority": 8,
       "routing_reason": "HOLD_ACCOUNT_RECOVERY",
