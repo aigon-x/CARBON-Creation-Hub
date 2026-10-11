@@ -1,0 +1,22 @@
+# ROOT / T-GOV — CURRENT-WAKE PREFLIGHT RECEIPT
+
+- Run ID: AMX-LIBRARIAN-20261011T101412Z
+- Sequence: 02/04
+- Timestamp: 2026-10-11T10:14:12Z
+- Office: ROOT / T-GOV
+- Mandate ID: AMX-MANDATE-ROOT-TGOV-V1
+- Mandate SHA-256: d92852d15f66168990290aece801b8c8573d48037b88765a081a26d58e10b120
+- Mandate status: CURRENT
+- Registry version/root: 1.2 / 6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f
+- Registry and mandate digest: recomputed from canonical source; PASS.
+- Canonical preflight source: AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md (blob 4a7b320cfb4e8ec709281ba44af6bd5c25a54bfb)
+- Registry source: AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json (blob d3a749a48d98292a13931fd6ff8518dea03e5b20)
+- Primary Librarian Existence Directive: UNDERSTOOD / BOUND
+- 25% GLOBAL DRIVE → INCOME BRICK: UNDERSTOOD
+- 75% existing office mandate: UNDERSTOOD
+- RUNTIME-OPEN: UNDERSTOOD
+- Authority isolation: UNDERSTOOD
+- Scope: Root Intake classification, explicit disposition, supersession/authority reconciliation and preservation. No takeover of operational execution.
+- Current governance item: issue #29 asks ROOT to reconcile freeze-lift scope and provider portability. Current issue #30 authorizes draft/assets for Owner inspection only; it forbids publishing, scheduling, profile edits, external messages, provider migration, production configuration changes, and holds D04 content pending primary evidence. These later durable task boundaries constrain the cached broader public-presentation envelope.
+- Next action: disposition #29/#30 scope conflict explicitly, preserve the broader presentation obligation as open where not satisfied, and route T-MED/CARBON work only within the current draft-only boundary.
+- Receipt state at creation: PERSISTED — READBACK PENDING.
