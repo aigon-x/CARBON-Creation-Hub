@@ -223,7 +223,7 @@ class IntentEngineDiscoveryAdapter:
         if not candidates:
             return [], {
                 **self.describe(),
-                "integration_state": "QUERY_VERIFIED",
+                "integration_state": "NO_CANDIDATES",
                 "engine_invoked": False,
                 "intent_status": "HOLD",
                 "result_count": 0,
