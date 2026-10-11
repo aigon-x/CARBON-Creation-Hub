@@ -21,7 +21,7 @@ class FakeResponse:
         return self.payload
 
 
-def test_intent_adapter_posts_public_candidates_and_reads_ranked_session(monkeypatch):
+def test_intent_adapter_posts_marketplace_candidates_and_reads_ranked_session(monkeypatch):
     calls = []
     listings = [
         {
@@ -65,6 +65,7 @@ def test_intent_adapter_posts_public_candidates_and_reads_ranked_session(monkeyp
             return FakeResponse({"session_id": "session-123", "status": "RESOLVED"})
         assert request.get_method() == "GET"
         assert request.full_url == "https://search.example.test/api/search/sessions/session-123"
+        assert any(k.lower() == "x-carbon-client" and v == "mock-client-token" for k, v in request.header_items())
         return FakeResponse(
             {
                 "session_id": "session-123",
