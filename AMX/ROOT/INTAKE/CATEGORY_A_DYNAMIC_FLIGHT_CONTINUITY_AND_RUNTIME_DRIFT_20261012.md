@@ -45,3 +45,14 @@ A launch without landing remains open and recoverable; a landing without launch 
 ## Safety and truth
 
 No reset of weights; no replacement of historical learnings; no fabricated timestamps/digests; no repeat of irreversible actions because an acknowledgement is absent; no scheduler cadence changes, new worker or duplicate queue; no universal PASS without evidence. A commit or prompt edit is not behavioral acceptance. Keep INTAKE OPEN until the required evidence and readbacks are present.
+## Post-flight deep-sync / implementation readback — 2026-10-12T15:08:58Z
+
+Read-back results:
+- Blue State policy exists in current main at blob `a3c0b9bc5491611059e68e9ee10fdd5be674b141`; the new protocol marker is present.
+- Registry v1.2 blob remains `d3a749a48d98292a13931fd6ff8518dea03e5b20`; registry root remains `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`.
+- This report exists/read back at current main (pre-addendum blob `d7f4ad622a10c1b342c0a5d2b23a70f4f197f453`). The canonical Intake Index contains the Category A pointer (blob `4c50162041ae4616309702cd95840dbe1f91ace7`).
+- Flight register at blob `7a89890cbc880560ce702ee1fd222409f8a79c2c` contains exactly one LAUNCH and CHECKPOINT:0002 for this flight. Landing still required.
+- Current automation peek: Librarians and IDEAL Sales are enabled; Reaper is disabled. The automation API rejected prompt-only updates to all three because the existing hourly schedule is unsupported by the current plan. Their schedules were not altered; prompt propagation is therefore NOT completed.
+- Notion session access is restricted in this runtime; GitHub/Render/Vercel inventories and selected Notion/Library/Outlook/Dropbox reads were bounded, not exhaustive. Full global transcript/platform coverage remains OPEN.
+
+**Segment disposition:** the authored governance change and Intake handoff are landed as PARTIAL once the landing receipt is read back. This is not a universal Matrix sync PASS, not behavioral prompt-consumption acceptance, and not closure of remaining propagation/recovery tests.
