@@ -2610,3 +2610,12 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Current disposition:** OPEN / ASSIGNED. The flight register contains the LAUNCH event; post-change/prompt readbacks and LANDING receipt are still required. No full-matrix sync PASS is claimed.
 - **Preflight boundaries:** current Blue State/registry, ROOT/INTAKE/deep-sync records, connected automation/runtime state, GitHub repo inventory, Render and Vercel inventory were inspected. Complete access to every transcript/session/platform is not established; restricted/unknown surfaces remain open.
 - **Observed discrepancy for reconciliation:** last automation peek showed the current Bounty Reaper task disabled while a prior Intake record reported it restored enabled. This is a current-source mismatch to investigate; no enablement change was made here.
+
+## CATEGORY A — OPPORTUNITY ALLOCATION / VERIFIED WORK / TAVILY COST GUARD — 2026-10-12
+
+- **Flight:** `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` / segment 02.
+- **Blue State commit:** `023fae28ba27ef2ab9d913c6b4d24861246d1f03`.
+- **ROOT Intake report:** [CATEGORY_A_OPPORTUNITY_ALLOCATION_AND_TAVILY_COST_GUARD_20261012.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_A_OPPORTUNITY_ALLOCATION_AND_TAVILY_COST_GUARD_20261012.md)
+- **Allocation:** 60% verified real-value work, 20% Micro-Matrix, 20% maximum platform/recruitment roles. Recruitment roles require first-party legitimacy, uniqueness, current status, location/onboarding/payout eligibility, complete net economics, safe data handling and evidenced fit.
+- **Cost control:** Owner-provided Tavily alert says 80% of October usage consumed; no upgrade/PAYGO without explicit Owner approval; audit actual usage, cache/dedupe queries, bound remaining use and record human time/credits.
+- **State:** rule committed and report routed; selection-path behavior, actual effort split, usage-log attribution, downstream outcome chain and global propagation remain OPEN pending readback/evidence.
