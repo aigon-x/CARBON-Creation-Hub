@@ -30,11 +30,27 @@
       "remains_unproven": "At least two years of phone-based cold-calling experience, US-hours availability, Gmail/account-history dedupe, exact base salary, and any application/acceptance/income.",
       "scope": "Canonical commercial ledger count and new BDR discovery",
       "upgrade_action": "Resolve the exact applicant eligibility gates and authorized Gmail dedupe before qualification/handoff; then continue the existing iSCOPE→PRI chain."
+    },
+    {
+      "actual": "Current public listings identify a US$700 RAG/CRM assistant build and a US$1,000 WhatsApp sales/partner-onboarding agent build.",
+      "changed": "Added two DISCOVERED opportunities after a duplicate check against the 84-record canonical map; neither was handed to PRI or externally contacted.",
+      "classification": "DISCOVERED_WITH_PROOF_HOLD",
+      "expected": "Persist current buyer scope/payment/acceptance facts and withhold qualification until truthful source-bound proof, current listing acceptance and authorized marketplace execution route are verified.",
+      "observed_at": "2026-10-12",
+      "owner": "iSCOPE",
+      "proof": [
+        "https://www.upwork.com/freelance-jobs/apply/Engineer-Needed-for-Agent-RAG-Workflow-Automation-Python-API-Integration_~022107920443968482841/",
+        "https://www.upwork.com/freelance-jobs/apply/WhatsApp-Agent-Show-Working-Agent-Proof-You-Built_~022106762606906386464/",
+        "Canonical ledger prior blob: 85c769241258cc4ed774a6a0c5f7420323cf3096"
+      ],
+      "remains_unproven": "Live runtime/source SHA for relevant Matrix capabilities; current Upwork authenticated application route; actual working WhatsApp/GHL demo; final affordability and acceptance/milestone details. No proposal, buyer response, contract, invoice or payment is proven.",
+      "scope": "Evidence-led buyer discovery — AI workflow builds",
+      "upgrade_action": "Verify current proof and the authorized platform route; if credible, send the scoped opportunity to PRI for review. Do not mark either candidate QUALIFIED until the proof and route gates pass."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-11T19:36:31Z",
-  "last_reconciled_reason": "Corrected stale top-level record_count (was 83) to match the canonical records object (84) and added one current 2CT discovery as DISCOVERED/HOLD_QUALIFICATION. Eligibility and Gmail dedupe remain unverified; no application or outreach was sent.",
+  "last_reconciled_at": "2026-10-12",
+  "last_reconciled_reason": "Added two public buyer-build discoveries with explicit live-proof and authorized-route holds after checking all 84 prior records for exact listing IDs and equivalent opportunities. No outreach, application, CRM update, or deployment action was performed.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -97,9 +113,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-11T19:36:31Z",
+  "last_updated_at": "2026-10-12",
   "last_updated_by": "iSCOPE",
-  "record_count": 84,
+  "record_count": 86,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
@@ -4307,8 +4323,91 @@
       "title": "Business Development Representative — Cold Outreach and Warm Inbound (Remote, South Africa)",
       "current_route_status": "OFFICIAL_APPLICATION_PAGE_CURRENT",
       "upfront_cost": "NO_APPLICATION_FEE_STATED"
+    },
+    "upwork.com|rag-crm-internal-assistant|022107920443968482841": {
+      "buyer_fit": "Specific buyer need for a bounded internal AI assistant: document-grounded answers with citations, five-category request classification, validated structured output, human review for ambiguity, one read-only CRM lookup, one approval-gated/write endpoint with duplicate prevention, and one n8n routing workflow. Fit is at the workflow/agent-safety design level only; no current source-bound proof of an equivalent deployed RAG+CRM flow has been verified.",
+      "capital_direction": "INBOUND",
+      "commercial_role": "FIXED-PRICE TECHNICAL BUILD",
+      "constraints": [
+        "Public listing states US$700 fixed-price; scope includes RAG, evaluation, FastAPI/API integration, n8n, basic UI, tests, logs, source exports and handoff documentation.",
+        "Listing currently displays 50+ proposals, 1 hire and 1 interview; active acceptance of new proposals is not independently confirmed beyond the public listing.",
+        "Buyer asks for one relevant prior AI/automation project and an explanation of evaluation/reliability. Current Matrix repositories reviewed are marked OUT-OF-CANON-FOR-IMPLEMENTATION and are not to be presented as current live-deployment proof.",
+        "Hosting and AI/API usage costs are stated to be separate; confirm funded milestone and test credentials through the authorized platform route before work."
+      ],
+      "discovered_by": "iSCOPE",
+      "domain": "upwork.com",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_LISTING",
+          "observed_at": "2026-10-12",
+          "source": "WEB",
+          "summary": "AI/ML Engineer Needed for AI Agent, RAG & Workflow Automation; US$700 fixed-price; up to 10 supplied PDF/DOCX documents, citations and missing-information flags, up to five request categories with labeled evaluation, FastAPI, one read-only CRM lookup, approval-prepared write, one validated/deduplicated write endpoint, one n8n workflow, basic UI, failure tests, logs, source/workflow exports and documentation. Buyer says documents, examples, API docs, sandbox credentials and template will be supplied. Client display: Atlanta, US; US$29K total spent; 376 hires; listing displays 50+ proposals, 1 hire, 1 interviewing; last viewed yesterday at read time.",
+          "url": "https://www.upwork.com/freelance-jobs/apply/Engineer-Needed-for-Agent-RAG-Workflow-Automation-Python-API-Integration_~022107920443968482841/"
+        },
+        {
+          "kind": "CANONICAL_DEDUPE_AND_PROOF_GATE",
+          "observed_at": "2026-10-12",
+          "source": "CANONICAL_LEDGER_AND_CURRENT_WAKE_REVIEW",
+          "summary": "Searched current opportunities ledger (blob 85c769241258cc4ed774a6a0c5f7420323cf3096; 84 records); no matching Upwork listing ID found. No current Matrix live-source SHA/deployment receipt or equivalent RAG+CRM proof established in this wake. No application or message sent."
+        }
+      ],
+      "execution_owner": "iSCOPE",
+      "execution_readiness": "HOLD_PROOF_AND_ROUTE_CHECK",
+      "last_reconciled_at": "2026-10-12",
+      "next_action": "iSCOPE: verify the listing still accepts proposals through the authorized Upwork account; verify exact live-source proof/claims and whether a truthful relevant example exists; determine whether the $700 scope and separate hosting/API costs are viable. If the evidence gates pass, route the bounded proposal to PRI for review and external progression. Do not submit or imply qualification while these remain unresolved.",
+      "opportunity": "rag-crm-internal-assistant",
+      "organization": "Upwork client — Atlanta, US (name not published in accessible listing)",
+      "payment": "US$700 fixed price through Upwork; milestone funding/escrow terms not yet verified.",
+      "reward": "US$700 fixed price",
+      "routing_reason": "CURRENT_BUYER_NEED_MATCHED; HIGH_COMPETITION_AND_LIVE_PROOF_GAP",
+      "state": "DISCOVERED",
+      "current_route_status": "PUBLIC_LISTING_READABLE_2026-10-12",
+      "title": "AI/ML Engineer Needed for AI Agent, RAG & Workflow Automation"
+    },
+    "upwork.com|whatsapp-agent-sales-onboarding|022106762606906386464": {
+      "buyer_fit": "Specific conversational automation need: two distinct lead qualification and partner-onboarding paths; sequential questions, structured company/portfolio/pricing capture, qualification, human handoff, website connection and GoHighLevel pipeline updates. This matches the type of integration problem AMX may explore, but a testable live WhatsApp/GHL implementation is not currently evidenced against an authoritative running source.",
+      "capital_direction": "INBOUND",
+      "commercial_role": "FIXED-PRICE TECHNICAL BUILD",
+      "constraints": [
+        "Buyer explicitly demands actual working WhatsApp agent(s) they can test; states that Loom-only evidence is not acceptable.",
+        "Public fixed budget is US$1,000 for two separate functions plus website and GoHighLevel integration; third-party costs require approval. Scope-to-budget feasibility must be checked before any commitment.",
+        "Current live-runtime-to-source SHA binding is not available in this session; out-of-canon repository snapshots and the draft James-Bot recovery PR cannot be represented as deployed proof.",
+        "Listing displays 15–20 proposals, 2 interviewing, buyer location Singapore and US$140 total spend; qualify payment/milestone and platform route before committing.",
+        "The older, similar WhatsApp listing is not separately tracked here; this record uses the newest listing ID and must not be duplicated under the previous posting."
+      ],
+      "discovered_by": "iSCOPE",
+      "domain": "upwork.com",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "CURRENT_PUBLIC_LISTING",
+          "observed_at": "2026-10-12",
+          "source": "WEB",
+          "summary": "WhatsApp Agent AI — Show Working Agent & Proof You Built It; posted 2026-10-04; US$1,000 fixed-price. Requires conversational AI for prospect qualification/sales and service-provider onboarding, company details, case studies, project sizes/pricing, GHL pipeline updates, website connection, qualification and safe human handoff. Listing displays 15–20 proposals, 2 interviewing, last viewed by client 38 minutes ago at read time; client joined 2026-06-25, Singapore, US$140 total spent, 8 hires, 2 active.",
+          "url": "https://www.upwork.com/freelance-jobs/apply/WhatsApp-Agent-Show-Working-Agent-Proof-You-Built_~022106762606906386464/"
+        },
+        {
+          "kind": "CANONICAL_DEDUPE_AND_PROOF_GATE",
+          "observed_at": "2026-10-12",
+          "source": "CANONICAL_LEDGER_AND_CURRENT_WAKE_REVIEW",
+          "summary": "Searched current opportunities ledger (blob 85c769241258cc4ed774a6a0c5f7420323cf3096; 84 records); no matching listing ID or same named opportunity was found. Live WhatsApp/GHL demo and source/deployment binding were not verified. No application or message sent."
+        }
+      ],
+      "execution_owner": "iSCOPE",
+      "execution_readiness": "HOLD_LIVE_DEMO_AND_ROUTE_CHECK",
+      "last_reconciled_at": "2026-10-12",
+      "next_action": "iSCOPE: only advance if an actual testable WhatsApp/GHL agent can be demonstrated from an authorized, source-bound runtime and the proposed scope can be delivered for the published budget without unsupported promises. Re-verify the live listing and authorized Upwork route; then seek PRI review. No external contact or application until those gates pass.",
+      "opportunity": "whatsapp-agent-sales-onboarding",
+      "organization": "Upwork client — Singapore (name not published in accessible listing)",
+      "payment": "US$1,000 fixed price through Upwork; milestone funding/escrow terms not yet verified.",
+      "reward": "US$1,000 fixed price",
+      "routing_reason": "CURRENT_BUYER_NEED_MATCHED; LIVE_DEMO_GATE_AND_SCOPE_RISK",
+      "state": "DISCOVERED",
+      "current_route_status": "PUBLIC_LISTING_READABLE_2026-10-12",
+      "title": "WhatsApp Agent AI — Show Working Agent & Proof You Built It"
     }
   },
-  "updated_at": "2026-10-11T19:36:31Z",
+  "updated_at": "2026-10-12",
   "version": 1
 }
