@@ -149,3 +149,30 @@ This is a bounded process/evidence classification, not a claim of intentional mi
 - **Safety/preservation:** no production deploy, no PR merge, no service creation, no database/reward/bot mutation, no conflation of James-Bot with JAM3S_BOT or HOBO.
 - **Item-level disposition:** drift record = SUBMITTED FOR ROOT CLASSIFICATION; Render inventory = PASS / complete for inspected workspace; Render as James host = NOT EVIDENCED; live runtime identity = OPEN; crash reproduction = OPEN; PR acceptance = HOLD.
 - **Remaining work:** ROOT disposition; identify current runtime and exact SHA; reproduce/fix/test; then update acceptance state. Submission is not ROOT acceptance.
+
+
+## 8.1 Verification update — James recovery branch CI (2026-10-12)
+
+### Verified result
+A CI workflow was added on the isolated recovery branch at commit `80e9f40341bcce38455c19dfd1e85c6adee5e330` (`.github/workflows/james-landing-recovery.yml`). Both the branch-push run and the PR run completed successfully:
+- [Branch-push run 38187947140](https://github.com/BullRulez/James-Bot/actions/runs/38187947140) — SUCCESS.
+- [Pull-request run 38187948203](https://github.com/BullRulez/James-Bot/actions/runs/38187948203) — SUCCESS.
+- In both runs: `npm ci`, `npm run lint` (TypeScript check), `npm run build`, Vite server startup, and the Puppeteer landing-flow test all passed.
+- The Puppeteer test reached the WATCHTOWER app from the landing CTA in both normal-storage and denied-localStorage scenarios. No uncaught page errors were reported in either scenario.
+
+### Remaining diagnostics and limits
+- Browser diagnostics recorded a failed external audio request to `https://assets.mixkit.co/sfx/preview/mixkit-sci-fi-drone-ambience-loop-3121.mp3` (`net::ERR_BLOCKED_BY_ORB`) in both scenarios. The normal-storage scenario also logged one resource 404; the available output does not conclusively attribute that 404 separately from the external resource. The app-flow assertion still passed. Treat audio/resource cleanup as OPEN, not as proof of the original crash.
+- `npm ci` reported **21 dependency audit findings: 2 low, 4 moderate, 14 high, 1 critical**. No automatic dependency fix or lockfile mutation was performed. Exact packages and production-vs-development exposure remain to be triaged before deciding merge readiness.
+- This evidence is from the branch's local Vite app in GitHub Actions, including the PR test merge with `main`. The published Netlify URL and linked AI Studio runtime could not be interactively inspected in this session, so the live deployment/source SHA has not been matched and the owner's original deployed crash has not been reproduced against production.
+- PR #1 remains open, draft, and unmerged. No production deployment, merge, bot/database/reward mutation, or Render service change occurred.
+
+### Updated Category B Directive 23 — itemized addendum
+- **Expected outcome:** distinguish source-branch regression-test success from live deployment identity, dependency health, and final product acceptance.
+- **Owners:** existing James/JAM3S maintainer and capability-continuity owner for runtime identity and patch acceptance; existing dependency owner for audit triage; ROOT/T-GOV for the governance disposition.
+- **Required action:** preserve the successful CI evidence; identify the authoritative live URL and source/deployment SHA; reproduce or close out the original crash with attributable browser evidence; classify the blocked audio/404; triage exact dependency advisories without blanket upgrade.
+- **Dependency/blocker:** interactive live-runtime access remains unavailable in this session; dependency advisory names/severity paths have not yet been captured; one audio/resource diagnostic remains unresolved.
+- **Acceptance evidence:** matching deployed URL and source SHA, attributable browser stack trace or clean production-flow reproduction, passing build/lint and both storage modes against the intended release commit, and a dependency triage disposition supported by exact advisories.
+- **Persistence/readback:** CI runs are public and linked above; the updated classification, Intake Index pointer, PR state and ROOT issue comment must be independently read back.
+- **Safety/preservation:** keep the patch isolated; no PR merge or production deploy; no automatic dependency upgrades; preserve James-Bot, JAM3S_BOT and HOBO lineage separately; no bot/database/reward/service changes.
+- **Item-level disposition:** CI build = PASS; TypeScript check = PASS; normal-storage landing transition = PASS; denied-storage landing transition = PASS; live runtime identity = OPEN; original deployed crash reproduction = OPEN; audio/resource diagnostic = OPEN; dependency triage = OPEN; PR/release acceptance = HOLD.
+- **Remaining work:** confirm live deployment/source SHA; triage the 21 audit findings and audio/resource diagnostic; obtain ROOT disposition; keep PR draft until live-runtime and release-acceptance evidence is adequate.
