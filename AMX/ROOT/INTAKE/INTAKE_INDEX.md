@@ -2598,3 +2598,15 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Proof boundary:** uses AMX Search 36/36 tests / 81/81 CI, bounded Marketplace 50/50 acceptance, and the recorded HTTP route repair; explicitly does not describe the route repair as an AI-model bug or claim the exact requested agent already deployed.
 - **Next action:** obtain the Owner's go-ahead to open the existing default browser profile's sign-in setup, then verify live listing state/account-level duplicates, reconcile each candidate through the existing iSCOPE/PRI path, and submit only when hard gates pass. No credentials in chat; no duplicate account.
 - **Counts:** 2 tailored drafts prepared; 0 submitted; 0 external messages; 0 buyer outcomes; 0 revenue credit; 0 logical staging/graph changes.
+
+## CATEGORY A — DYNAMIC FLIGHT PATH / RUNTIME DRIFT — 2026-10-12
+
+- **Flight ID:** `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`; **Authorization ID:** `AMX-AUTH-20261012-145440-9fb44f0c`; launch time `2026-10-12T14:54:40.385Z`.
+- **Canonical report:** [CATEGORY_A_DYNAMIC_FLIGHT_CONTINUITY_AND_RUNTIME_DRIFT_20261012.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_A_DYNAMIC_FLIGHT_CONTINUITY_AND_RUNTIME_DRIFT_20261012.md)
+- **Blue State binding commit:** `ba996811a165e5a35aad3c761b3c7968fa669657`.
+- **Category A:** mandatory LAUNCH → PRE-FLIGHT DEEP SYNC → EXECUTE → IN-FLIGHT CHECKPOINT/ROUTE-AND-RETURN → POST-FLIGHT DEEP SYNC → ROOT LANDING → INDEPENDENT READBACK.
+- **New drift requirement:** inspect both unmatched launches (no landing) and unmatched landings (no launch), plus duplicate/mismatched IDs, segment/order/hash conflicts. Preserve the anomaly; do not silently reconcile or fabricate a counterpart.
+- **Runtime efficiency drift:** if context/fuel pressure or oversized in-context planning risks dropping requirements, persist a compact checkpoint and route to ROOT/INTAKE early, read it back, then resume the same Flight ID; preserve weights, learnings, anchors, hashes and no-repeat boundaries.
+- **Current disposition:** OPEN / ASSIGNED. The flight register contains the LAUNCH event; post-change/prompt readbacks and LANDING receipt are still required. No full-matrix sync PASS is claimed.
+- **Preflight boundaries:** current Blue State/registry, ROOT/INTAKE/deep-sync records, connected automation/runtime state, GitHub repo inventory, Render and Vercel inventory were inspected. Complete access to every transcript/session/platform is not established; restricted/unknown surfaces remain open.
+- **Observed discrepancy for reconciliation:** last automation peek showed the current Bounty Reaper task disabled while a prior Intake record reported it restored enabled. This is a current-source mismatch to investigate; no enablement change was made here.
