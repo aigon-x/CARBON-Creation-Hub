@@ -2272,3 +2272,37 @@ This addendum supersedes prior embedded count/scheduler snapshots where they con
 - **Disposition requested:** ROOT/T-GOV to confirm/amend classification and route any control improvement through existing provider-continuity and ecosystem recovery/anti-dilution work. No new worker, queue, scheduler, provider service or shadow architecture.
 - **Item-level state:** Render inventory = PASS for inspected workspace; Render as James host = NOT EVIDENCED; actual deployed URL/source SHA = OPEN; crash reproduction and PR acceptance = HOLD; classification = SUBMITTED, ROOT disposition pending.
 - **Directive 23:** owner = ROOT/T-GOV plus existing capability-continuity and James/JAM3S maintainer; action = verify runtime URL/source SHA, capture actual browser evidence, build/lint and run both storage cases + landing transition; blocker = interactive runtime/browser access; acceptance = matching deployment SHA, reproducible trace, passing tests and readback; persistence = artifact/index/issue comment readback; preservation = no deploy/merge/service/database/reward mutation and preserve repo lineage; disposition = SUBMITTED FOR CLASSIFICATION / implementation HOLD; remaining = ROOT disposition and runtime acceptance.
+
+
+---
+
+## CURRENT SOURCE CORRECTION — OPPORTUNITIES LEDGER COUNT AND DRAIN STATUS — 2026-10-12
+
+**Authority class:** current source/readback correction in existing Intake. This supersedes the present-tense count values in the older Issue #31 snapshot only. It does not close parent issue #31 or claim commercial execution.
+
+### Current canonical readback
+- `overdrive/opportunities.json` blob: `85c769241258cc4ed774a6a0c5f7420323cf3096`.
+- Current `record_count`: **84**.
+- Current records-map keys: **84**.
+- Current distinct keys: **84**.
+- Current `last_updated_at`: `2026-10-11T19:36:31Z`.
+- `last_run.run_at` remains `2026-10-03T17:42:00Z`; `last_run.full_ledger_count=62` is a historical run snapshot and must not be rewritten to match the current map.
+- `overdrive/claims.json` blob `9be10bfece528392d990a9db969cd1f8726d484d`: 84 claims; `ready_count=0`; `external_ready_count=0`.
+- `overdrive/state.json` blob `5593ab9dcb04914951aa4ba574bb862af1bc5557`: sequence 20; queue length 20; `ready_claims=0`; last recorded tick `2026-10-11T19:42:44.598828Z`; `pending=0`; `processed=[]`; signals PRI=59 / iSCOPE=19; `state_changed=true`; receipt `receipts/0000000020-qdrain-20261010-mprtc-wrongroute.json`.
+
+### Disposition
+- The older **66 declared / 83 keys** count discrepancy is **RESOLVED / SUPERSEDED BY CURRENT SOURCE READBACK** for the inspected current snapshot. Do not repeat it as a current defect.
+- The historic value 62 remains untouched as the October 3 run snapshot.
+- The invariant across future ledger writes is **NOT YET VERIFIED** by a current code/CI acceptance receipt. Existing T-COD owns the write-path semantic/test check.
+- Parent GitHub issue #31 remains **OPEN** for independent throughput/continuity acceptance: queue length 20, no item processed on the latest recorded tick, zero ready/external-ready claims, and no current attributable buyer-facing progression established by this tick. The recorded state change is freshness/wrong-route state, not evidence of income.
+- The current GitHub subset census is 11 open issues. This is not the complete Matrix queue; the approximate 80-item multi-surface register remains unreconciled because the authoritative shared OUTSTANDING sheet is not available in this tool session.
+
+### Directive 23 — execution accountability
+- **Expected outcome:** preserve accurate current-versus-historical ledger truth and prevent stale count snapshots from driving queue decisions.
+- **Owners:** T-COD validates the existing write-path invariant and regression test; iSCOPE/PRI progress lawful commercial items; ROOT/Intake adjudicates the parent issue and complete queue baseline.
+- **Required next action:** verify future-write invariant with code/CI and fresh canonical readback; work the existing queue-length-20 items through authorized owners instead of treating pending=0 as drainage.
+- **Acceptance evidence:** exact-head test/CI and ledger readback proving count/key equality remains invariant; queue items show attributable processed state and durable next actions; any external commercial state remains backed by exact receipts.
+- **Dependencies/blockers:** current shared OUTSTANDING sheet inaccessible here; task-level latest Sales wake receipt not yet verified; no readiness-gate relaxation authorized.
+- **Persistence/readback:** this addendum is appended to the canonical Intake Index using its then-current content hash; subsequent readback required below.
+- **Safety/preservation:** no historical run snapshot rewritten; no queue/worker/tracker duplicated; no claims of application, acceptance, contract, invoice, payment or income without source evidence.
+- **Disposition:** count mismatch resolved for this snapshot; invariant, throughput and global queue drainage remain **OPEN**.
