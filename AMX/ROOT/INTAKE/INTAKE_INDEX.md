@@ -2414,3 +2414,26 @@ MASTER/COFFEE/LIBRARIAN must resume by reading the current canonical Intake Inde
 - **Persistence/readback:** this report appended here; the linked existing Issue #31 also receives the current failure-to-prove-uptake record.
 - **Safety/preservation:** maintain hourly schedule; no duplicate task/queue; do not mark claims closed without evidence; preserve finance/security/legal/provider gates.
 - **Disposition:** **OPEN — BEHAVIORAL UPTAKE UNVERIFIED; GLOBAL INTAKE NOT CLEARED.**
+
+
+---
+
+## DEEP RESEARCH QUALIFICATION — IDLE OVERDRIVE STATE IS NOT PROOF OF WORKFLOW OUTAGE — 2026-10-12
+
+Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc93ee0a4ee0fcb9`) refines the interpretation of the unchanged state files:
+
+- `tick()` re-derives `signals` and `claims` every invocation. When there are no PENDING adapter entries **and** the semantic projection of old/new signals and claims is equal, it restores the pre-scan raw signals/claims and returns WATCHING with pending=0 and state_changed=false without changing `state.json`.
+- `VOLATILE_SCAN_KEYS` excludes `generated_at` and `last_seen_at` from semantic comparison. An unchanged `claims.json`/ `signals.json` blob can therefore be intentional even after a scan. The workflow file `.github/workflows/overdrive-recovery.yml` (blob `9bfdb4940d4150e2f39246b26584da75ff81a12e`) declares a five-minute GitHub Actions schedule and says workflow logs remain the heartbeat when tracked state is unchanged.
+- Consequently, the last persisted `state.json.last_tick` of `2026-10-11T19:42:44.598828Z` and unchanged claims timestamp are **not sufficient evidence that the five-minute workflow is down**. Current GitHub Actions run logs could not be inspected via the connected tools in this pass.
+- Independently verified truth remains: all 20 retained adapter queue entries are COMPLETED with receipt paths + SHA-256; pending=0; failed=0. The claims file snapshot is 84 total, 78 WAITING, 6 CLOSED, 0 READY/external-ready, and 10 WAITING claims have original due_at values in the past.
+- The separate Librarian scheduled automation wake was observed at `2026-10-12T00:35:09.844100Z`, but no durable run-specific item-by-item receipt was located in the inspected output surfaces. This stays **BEHAVIORAL UPTAKE / QUEUE-DRAIN RECEIPT NOT VERIFIED**, not “Librarian did nothing” and not “OVERDRIVE workflow is down.”
+
+### Directive 23 accountability
+- **Expected outcome:** state-machine idle, workflow liveness and Librarian directive uptake are measured separately.
+- **Owners:** T-COD/OVERDRIVE owner verifies workflow liveness from Actions logs; MASTER/LIBRARIAN writes the current queue-drain receipt; ROOT/T-GOV resolves any real propagation/liveness defect.
+- **Required action:** inspect the current scheduled Actions log/receipt when authorized; do not use a stale state timestamp as the sole failure signal. Independently produce/read back the Librarian queue-drain receipt and item-level deltas.
+- **Acceptance:** recent workflow-run/log evidence or confirmed unchanged-state idle output; separately, run-specific Librarian source SHAs, pass-by-pass deltas and durable readback.
+- **Dependency:** Actions run-log collection not exposed by the current connected inspection surface; no Librarian-specific drain receipt found in available output records.
+- **Persistence/readback:** appended to this canonical Intake Index; also routed to existing Issue #31 below.
+- **Safety/preservation:** no forced state mutation to create a heartbeat, no false failure claim, no duplicate scheduler, no due-date rewriting or false completion.
+- **Disposition:** OVERDRIVE receipt queue DRAINED; queue-drain receipt obligation OPEN; global Matrix Intake NOT CLEARED.
