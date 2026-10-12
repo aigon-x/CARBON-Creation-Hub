@@ -1037,3 +1037,10 @@ Use existing canonical opportunity records and existing iSCOPE → PRI / FORX ou
 ## Acceptance
 
 ROOT/T-GOV and the existing owners must verify: (a) this rule is present in the current Blue State; (b) active selection routes consume the 60/20/20 rule; (c) duplicate and location/access/KYC/payout/net-value gates are present in the actual selection path; (d) Tavily no-upgrade/no-PAYGO and 80% safeguards are visible to the responsible operator; (e) a source-backed sample shows a role passing or failing with reasons; and (f) measured effort/result receipts are independently read back. A written rule alone is not behavioral acceptance. Do not change the existing runtime schedules or create duplicate workers.
+## CATEGORY A SCOPE CLARIFICATION — OPPORTUNITY ALLOCATION VS MATRIX-WIDE MONEY-IN — 2026-10-12
+
+The 60/20/20 allocation in this Blue State is **100% of opportunity-search and conversion effort only**. It does not mean 60/20/20 of total Matrix effort, compute, or the Librarian office's mandated time.
+
+Existing Blue State contains the current 25% attributable Librarian income-brick / 75% existing-office-mandate allocation. ROOT issue [#34 — CATEGORY A 33% Matrix-wide money-in focus; supersede 25%](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/34) is currently OPEN / SUBMITTED FOR GOVERNANCE; its own text requests ROOT/T-GOV classification and says it is not evidence of propagation. It requests a separate 33% Matrix-wide commercial-focus denominator. Do not silently treat that request as accepted, and do not allow the opportunity-level 60/20/20 rule to overwrite either the current Blue State rule or issue #34.
+
+ROOT/T-GOV must reconcile issue #34 against the existing 25% Librarian rule with explicit denominator, role/scope, owner, supersession and acceptance evidence. Until it is explicitly dispositioned and merged, preserve the current canonical Blue State value and report issue #34 as OPEN. This is a scope distinction, not a rejection of the Owner's 60/20/20 opportunity-level direction.
