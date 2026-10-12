@@ -2517,3 +2517,12 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Exact payload SHA-256:** `e8b842af7d7430a92660ee899d19a0a4aaf0695e9f9b284bc2d6a848873990ce`.
 - **New signals:** UNDP Kenya M&E/MRV system RFP `UNDP-KEN-00769`, https://www.ungm.org/Public/Notice/316035, due 2026-10-13 09:00 SAST; UNDP Zambia data mapping/AI readiness RFP `UNDP-ZMB-00609`, https://www.ungm.org/Public/Notice/317509, due 2026-10-22 12:14 SAST. Exact keys/references absent from the active 943-key logical store, the unregistered earlier delta and the current 86-record ledger.
 - **Disposition:** both discovery-only and RAW_UNQUALIFIED; the Zambia RFP has a national-firm eligibility gate. No stage/graph growth, qualification or external contact. Manifest registration remains blocked.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 06
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_06.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_06.md)
+- **Commit:** `9b7a8433055528277d6bff2491c87ef76f7e2822`; **blob/readback:** `8981bbb8bc04e216d7ea0662dd0758ce69e80690`.
+- **Exact payload SHA-256:** `75fcc9edf95240e5e8e98b1e14ea312fc9a57ff7d159f83a23483ed7552c4818`.
+- **New sources:** CTBTO Linux Support Services, RFP `2026-0088/RICKARD`, https://www.ungm.org/Public/Notice/317586, due 2 Nov 2026 17:00 SAST; UNDP BiH EIS operationalisation/interoperability, `UNDP-BIH-01679`, https://www.ungm.org/Public/Notice/317554, due 3 Nov 2026 16:00 SAST.
+- **Disposition:** 0 exact source-key/ID collision; both held RAW_UNQUALIFIED pending accessible TOR, true requirements and eligibility. Not staged; zero logical growth. Manifest remains v2 / 943 keys / 944 gross observations / 2 registered segments / sequence 3.
