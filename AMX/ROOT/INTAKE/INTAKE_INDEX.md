@@ -2306,3 +2306,12 @@ This addendum supersedes prior embedded count/scheduler snapshots where they con
 - **Persistence/readback:** this addendum is appended to the canonical Intake Index using its then-current content hash; subsequent readback required below.
 - **Safety/preservation:** no historical run snapshot rewritten; no queue/worker/tracker duplicated; no claims of application, acceptance, contract, invoice, payment or income without source evidence.
 - **Disposition:** count mismatch resolved for this snapshot; invariant, throughput and global queue drainage remain **OPEN**.
+
+
+### James landing stability patch — CI evidence follow-up — 2026-10-12
+- **Classification artifact:** [TRANSCRIPT_DRIFT_CLASSIFICATION_20261012.md — §8.1](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/TRANSCRIPT_DRIFT_CLASSIFICATION_20261012.md).
+- **Recovery PR:** [James-Bot PR #1](https://github.com/BullRulez/James-Bot/pull/1), head commit `80e9f40341bcce38455c19dfd1e85c6adee5e330`; remains draft/open/unmerged.
+- **CI evidence:** [push run](https://github.com/BullRulez/James-Bot/actions/runs/38187947140) and [PR run](https://github.com/BullRulez/James-Bot/actions/runs/38187948203) both SUCCESS. TypeScript check, production build, Vite startup, normal-storage landing-to-WATCHTOWER transition, and denied-localStorage transition all passed.
+- **Open evidence:** deployed Netlify/AI Studio URL-to-source SHA and original production crash remain unverified; audio request is blocked by ORB and one resource 404 was logged; npm install reported 21 audit findings (2 low, 4 moderate, 14 high, 1 critical), with exact-package triage still open.
+- **Disposition:** branch CI = PASS; live release acceptance = HOLD. Do not merge/deploy or apply automatic dependency fixes without resolved release evidence.
+- **Directive 23:** owner = existing James/JAM3S maintainer + capability-continuity owner + dependency owner, with ROOT/T-GOV for classification; action = verify live SHA and original crash, triage audio/404 and each dependency advisory; blocker = live browser/runtime access and untriaged advisory list; acceptance = source/deploy match, attributable production behavior, passing acceptance test and auditable dependency disposition; persistence/readback = this index and classification update plus linked CI runs and PR readback; safety = no merge/deploy/automatic upgrades or bot/database/reward mutation; disposition = tests PASS, production/release HOLD; remaining work = runtime identity, audit triage, ROOT disposition and release acceptance.
