@@ -86,3 +86,28 @@ Apply a shared **Matrix interaction language**, not a shared identity:
 - **What was not taken:** no bulk branch sync, cross-repo copy, UI-wide redesign, production deploy, database change, or claim that IRIS/HOBO/JAM3S are now current.
 - **Canonical route:** merge this recovery report into the existing Matrix ecosystem recovery / anti-dilution workstream. No new worker, queue, schedule, provider, or shadow architecture.
 - **State:** James patch persisted in a draft PR; IRIS, HOBO runtime and James/JAM3S lineage remain explicit HOLDs. The Matrix convergence is **not complete** until the acceptance evidence above is read back.
+
+
+## 8. Deployment route readback after Owner selected Render — 2026-10-12
+
+The Owner confirmed inspection of Render **My Workspace**. The selected workspace ID was `tea-davpb1gu01pc73fl088g`. Read-only inventory returned exactly six web services:
+- `carbon-search-intention-v1`
+- `carbon-intent-marketplace-v1-preview`
+- `amx-forx-stage1-proof`
+- `amx-oracl3-token-preflight`
+- `amx-evidence-house-backend`
+- `amx-evidence-house`
+
+None is connected to `BullRulez/James-Bot`, `BullRulez/JAM3S_BOT`, or `BullRulez/AMB-HOBO-AI-`. The workspace has one PostgreSQL database, `carbon-customer-portal` (Free, status available), and no Key Value instances. No service, database, environment, or deployment was changed.
+
+Repository routing evidence:
+- `BullRulez/James-Bot/README.md` links to the Google AI Studio app `https://ai.studio/apps/40b03075-b35c-4d00-b906-9a877e55a206`.
+- James-Bot root has no `render.yaml`, `netlify.toml`, `vercel.json`, or `.github/workflows` directory at the inspected `main` revision. JAM3S_BOT root similarly has no `render.yaml` or `netlify.toml`.
+- The public `https://jam3sbot.netlify.app/` previously yielded only initial boot text through page extraction; the old immutable preview URL returned 404. Google AI Studio's app route and both Netlify routes were not accessible to the general web browser tool, so no interactive run, JS console, live stack trace, or browser-level reproduction is claimed. TinyFish browser automation remained blocked by insufficient wallet balance.
+
+**Revised deployment disposition:** Render inspection is COMPLETE; Render is NOT the evidenced host for James/JAM3S or HOBO in this workspace. The next diagnostic route is the current AI Studio app / actual published web-app target and its browser console, plus code-level test execution. Do not create a new Render service or deploy the current draft branch there. The existing James PR stays draft, open, unmerged and untested.
+
+**New item-level evidence / Directive 23 update:** owner = existing James/JAM3S source maintainer + capability continuity owner; action = obtain authorized interactive access to the AI Studio app or supply a reproducible local runtime, run the branch build/lint and both Puppeteer modes, capture the actual failing stack trace; blocker = AI Studio page not available through current browser route and TinyFish balance prevents automation; acceptance evidence = source/commit identity matching the tested runtime, passing build/lint, reproducible before/after browser trace and landing-to-WATCHTOWER assertion; persistence = existing PR and this report/index updated/read back; safety = no production deploy, bot/database mutations, reward changes or extra service; disposition = **MODIFY in draft / HOLD deployment**; remaining work = exact crash reproduction and acceptance run.
+
+### Corrected prior statement
+The previous report text stating that Render inspection was blocked until workspace selection is superseded by this section. The Owner selected My Workspace and the service inventory was read. No James/HOBO/JAM3S service was present there. The product/runtime acceptance gate remains OPEN.
