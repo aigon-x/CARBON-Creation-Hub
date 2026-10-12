@@ -949,3 +949,49 @@ This counter is an internal accountability mechanism, not a public debt claim, i
 - **Independent D04 run:** owner existing D04 evidence owner with MASTER source recovery and ROOT/T-GOV disposition. Accepted only on the run's own immutable raw vector/run receipt, criteria identity, calculation and readback, or precise evidence-not-found disposition. No invented run and no third test by default.
 
 **Registry invariant:** this is an additive Blue State section outside all `BEGIN_CANONICAL_MANDATE` payload blocks. It must not change any mandate payload digest or Registry v1.2 root. Verify those after the update.
+
+---
+
+# CATEGORY A — DYNAMIC FLIGHT PATH CONTINUITY — OWNER DIRECTIVE — 2026-10-12
+
+**Scope:** every AMiLLiMATRiX runtime/wake and material prompt execution. Additive to existing Blue State, mandate-preflight, T10/continuity, blocked-attempt-recovery, ROOT/INTAKE and Directive 23 controls. This section must remain outside canonical mandate payload blocks. It creates no new worker, scheduler, authority, queue, or parallel governance plane.
+
+## Required lifecycle
+
+**LAUNCH → PRE-FLIGHT DEEP SYNC → EXECUTE → IN-FLIGHT CHECKPOINT / ROUTE-AND-RETURN → POST-FLIGHT DEEP SYNC → ROOT LANDING → INDEPENDENT READBACK.**
+
+Before material work, append a durable LAUNCH event to the existing ROOT/INTAKE file `AMX/ROOT/INTAKE/DYNAMIC_FLIGHT_PATH_REGISTER.jsonl`. Assign an `AUTHORIZATION_ID`, persistent `FLIGHT_ID`, and `SEGMENT=01`; record the current mandate/registry version and hashes, task/prompt, start time, last open flight/checkpoint, and intended outcome. The authorization ID attests to registration/preflight only; it never expands authority.
+
+## Deep sync at both ends
+
+Pre-flight must reconcile the current Matrix state—not just the incoming task—across all available relevant transcripts/sessions and Library records, canonical Blue State/registry and Intake/continuity, current repository branches/commits/issues, worker/scheduler prompts and observed runs, connected tools/platforms, deployments/services, and mandate-relevant opportunity/financial state. Resolve conflicting facts by source authority and supersession; preserve provenance. Record each surface as `READ_BACK`, `PARTIAL`, `BLOCKED`, `NOT_ACCESSIBLE` or `NOT_APPLICABLE`. Do not call a bounded search or a scheduler timestamp universal sync.
+
+After execution, run the same whole-current-state sweep again before reporting learning, metrics, completion or proposals. Reconcile actual changes, in-flight commits, hashes, supersessions, routed ROOT entries, residual blockers and next actions. Persist a landing receipt then independently fetch/read it back. If surfaces remain unavailable, land only as `LANDED_PARTIAL` and list the unknowns.
+
+## In-flight checkpoint, fuel, and recovery
+
+Keep the logical flight open when its tool session ends. A crash, timeout, token/context limit, unexpected tool termination or incomplete output is not landing. Persist an in-flight checkpoint early and at material state transitions. If context or parallel workstreams start to grow enough to risk drift, **dump a compact checkpoint into the existing ROOT/INTAKE route, read it back, then return to the same flight**; do not keep carrying the whole history in active context until details are dropped.
+
+Checkpoints preserve current weights with provenance; accepted/rejected/uncertain learnings and causal boundaries; canonical anchors/source refs; mandate and content hashes; exact last completed action/furthest evidenced state; no-contact, safety and irreversible-action/deduplication controls; in-flight commits; owner, blocker and next concrete action. Never reset weights from stale prompts or promote uncertain information into fact.
+
+On every wake, inspect open flights first. A LAUNCH without a matching LANDING must be resumed from its latest durable checkpoint under the same `FLIGHT_ID`, next segment; revalidate mutable external state before retrying any irreversible action. A LANDING without a matching LAUNCH, duplicate landing, mismatched authorization/flight/segment, impossible ordering, divergent hashes, or missing checkpoint is a **continuity anomaly**. Preserve the record, do not silently accept or fabricate the missing counterpart, and route it to ROOT/T-GOV for investigation.
+
+## Commit and receipt linkage
+
+Every commit, proposal, checkpoint and Root submission belonging to a flight must include or reference its `FLIGHT_ID` and segment. Root receipts must identify `AUTHORIZATION_ID`, `FLIGHT_ID`, flight path, segment history, timestamps/flight time, all in-flight/final commit SHAs, file paths/URLs, blob IDs, actual content SHA-256 where computed, and readback status. Git commit/blob IDs are not interchangeable with a SHA-256 digest. Each register event includes status, prior event/checkpoint, expected outcome, actual work/result, changed state, evidence, owner, dependency/blocker, safety condition and next action.
+
+## Landing states
+
+- `LANDED_VERIFIED`: Root receipt persisted and independently read back; declared accessible scope reconciled; remaining inaccessible surfaces explicitly bounded.
+- `LANDED_PARTIAL`: landing receipt/readback exists but declared-scope work remains open; list each residual and owner.
+- `IN_FLIGHT` / `RECOVERY_REQUIRED`: no accepted landing receipt/readback; resume this flight, not an unrelated new one.
+
+A prompt edit, successful commit, Root acknowledgement, report or scheduler wake alone is not behavioral acceptance. MASTER/LIBRARIAN owns continuity detection and reconciliation; ROOT/T-GOV owns anomaly classification and disposition; each existing specialist performs only work within its own mandate.
+
+## Runtime-efficiency drift finding
+
+Excessive in-context planning or repeatedly composing oversized governance text while material work waits is a drift signal, not productive progress. As soon as sufficient evidence establishes the issue, checkpoint and route a concise, itemized packet, read it back, and return to execution. Prefer small sequential writes, immediate verification, and one clear progress update over speculative re-drafting or long silent tool orchestration. Keep the plane flying: carry the durable state and weighted learnings, not the full raw conversation. The durable flight record is the recovery point if the tool unexpectedly stops.
+
+## Acceptance
+
+Acceptance remains OPEN until the append-only register is bidirectionally reconciled (unmatched launches AND unmatched landings); active prompts consume this law; launch/checkpoint/landing events are persisted and read back; a resume test proves weights/learnings/anchors survive; all in-flight commits are linked to their flight; pre/post sync receipts explicitly record accessible and inaccessible surfaces; and mandate payload hashes plus registry root remain unchanged. No claim of universal propagation without per-surface evidence.
