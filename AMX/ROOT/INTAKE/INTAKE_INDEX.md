@@ -2526,3 +2526,12 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Exact payload SHA-256:** `75fcc9edf95240e5e8e98b1e14ea312fc9a57ff7d159f83a23483ed7552c4818`.
 - **New sources:** CTBTO Linux Support Services, RFP `2026-0088/RICKARD`, https://www.ungm.org/Public/Notice/317586, due 2 Nov 2026 17:00 SAST; UNDP BiH EIS operationalisation/interoperability, `UNDP-BIH-01679`, https://www.ungm.org/Public/Notice/317554, due 3 Nov 2026 16:00 SAST.
 - **Disposition:** 0 exact source-key/ID collision; both held RAW_UNQUALIFIED pending accessible TOR, true requirements and eligibility. Not staged; zero logical growth. Manifest remains v2 / 943 keys / 944 gross observations / 2 registered segments / sequence 3.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 07
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_07.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_07.md)
+- **Commit:** `963343abc112e313038a0f41502442c4fcc89f60`; **blob/readback:** `d33b5989ec69891459a5ef254e686082a4757042`.
+- **Exact payload SHA-256:** `43a903fe6cc839fb1607b9a79a62db0e3c0fc0cf22bb7e9c40869be99f7fc7d8`.
+- **New signal:** UNICEF Southeast Asia performance-marketing LTA, reference `LRPS-2026-9206410`, https://www.ungm.org/Public/Notice/316300. The 3-year LTA has no guaranteed monetary value or offtake; performance-agency qualification and multi-market ROAS evidence are unverified. UNGM header and detailed Bangkok-time deadline disagree; verify through the live e-submission portal before any scheduling.
+- **Disposition:** exact source key absent from active source snapshot, unregistered earlier delta and current 86-record opportunities ledger. Discovery-only, not staged, 0 logical growth.
