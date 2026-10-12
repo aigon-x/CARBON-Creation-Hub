@@ -2576,3 +2576,14 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Dedupe:** both exact source keys/references/IDs absent from active base/registered deltas, previous unregistered delta and current 86-record ledger.
 - **Excluded:** Parliament RFQ 907/2026 closes on 12 Oct but exact time/status could not be verified; not counted as actionable.
 - **Disposition:** 2 new discovery signals; 0 candidate delta rows; 0 logical growth; 0 qualifications/bids/revenue. Manifest registration remains blocked.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 15
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_15.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_15.md)
+- **Commit:** `36e25ff95cb10887d28c788fadab5677edb5bf0a`; **blob/readback:** `d5750916230ed8088ccf3d7e74a3e5fa73594ff3`.
+- **Exact payload SHA-256:** `2ef0e9b70390e973ccb31626b7ff1c19b571d52ba1f51c42460e99a677fd38b7`.
+- **New route:** Wesgro RFP `SCM006-2026`, global online FDI data tool/service covering sectors/countries/companies for 3 years, due 26 Oct 2026 at 11:00 SAST. Requires source-rights/data coverage and true commercial service capability; exact terms not yet qualified.
+- **Dedupe:** exact source key/reference/title/ID absent from base+registered deltas+unregistered delta and current 86-record opportunities ledger.
+- **Exclusions:** SARS RFP07/2026 final closing date 8 June 2026 (expired); Parliament data-engineer/data-analyst RFQs close on 12 Oct with precise cut-off unverified and are not treated as actionable.
+- **Disposition:** 1 distinct RFP documented in Intake; 0 delta rows; 0 logical growth; manifest still v2/943 unique keys/944 gross observations/2 segments.
