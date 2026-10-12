@@ -2535,3 +2535,12 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Exact payload SHA-256:** `43a903fe6cc839fb1607b9a79a62db0e3c0fc0cf22bb7e9c40869be99f7fc7d8`.
 - **New signal:** UNICEF Southeast Asia performance-marketing LTA, reference `LRPS-2026-9206410`, https://www.ungm.org/Public/Notice/316300. The 3-year LTA has no guaranteed monetary value or offtake; performance-agency qualification and multi-market ROAS evidence are unverified. UNGM header and detailed Bangkok-time deadline disagree; verify through the live e-submission portal before any scheduling.
 - **Disposition:** exact source key absent from active source snapshot, unregistered earlier delta and current 86-record opportunities ledger. Discovery-only, not staged, 0 logical growth.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 10
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_10.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_10.md)
+- **Commit:** `7ffbc8540a1aac8147e6ef335b528f8ed8b963e1`; **blob/readback:** `b69733c980e9b73d2f0dce8d85a6c463559d0585`.
+- **Exact payload SHA-256:** `f76a7c59337e3aa79b80549da2e25e89dbfbfe75bd35810b3fbf39bd9a492495`.
+- **New route:** UNDP Czech Challenge Fund `UNDP-IRH-00317`, https://www.ungm.org/Public/Notice/317476, deadline 20 October 2026 16:00 SAST, prize US$20k–40k with at least 20% co-funding. For non-local applicants a signed local-partner agreement is mandatory for one of Bosnia and Herzegovina, Georgia or Moldova. No local partner or co-funding evidence currently exists.
+- **Disposition:** discovery-only; eligibility HOLD; exact URL/ref not present in the active source set or current 86-record opportunity ledger. Not staged; 0 logical growth, 0 qualified opportunities, 0 revenue credit.
