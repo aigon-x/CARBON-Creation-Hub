@@ -116,3 +116,36 @@ This is a reporting and state-model distinction, not evidence that the completed
 - **Safety/preservation:** preserve all valid prior PASS results and original artifacts; no rollback, retirement, new role, worker, scheduler, or authority change; no unsupported claim that the whole sweep is complete.
 - **Item-level disposition:** scenario = routed for ROOT classification after verified persistence; prior named PASS results remain PASS; overall Matrix sweep remains PARTIAL only for its separately enumerated open acceptance gaps.
 - **Remaining work:** ROOT disposition; update existing reporting guidance if authorized; verify adoption in subsequent output. Runtime remains active.
+
+
+## 8. New observed scenario — deployment-route / stale-state carry-forward drift (2026-10-12)
+
+### Evidence and scope
+The Owner asked to bring the latest James, HOBO and IRIS work current without damaging their separate lineages. The assistant's prior report listed provider-route inspection as blocked on Render workspace selection. The Owner confirmed the proposed Render inspection. A read-only inventory of the confirmed Render workspace then returned six web services, none connected to James-Bot, JAM3S_BOT or AMB-HOBO-AI-. James-Bot's README links to a Google AI Studio app; interactive browser reproduction of the reported crash was not achieved. The report and Intake Index were subsequently corrected with the inventory result and current blocker.
+
+No evidence shows that Render was the James runtime. No production deployment, service, database, bot, reward, or environment mutation occurred. The isolated James draft PR remains open/unmerged and build/browser acceptance is unverified.
+
+### Proposed classification for ROOT
+**Primary: EVIDENCE-ROUTE / STALE-STATE CARRY-FORWARD DRIFT.** A provider route was retained as a blocker before its relevance to the actual deployment was established; after new readback, the status required explicit reconciliation in the canonical report/index.
+
+**Secondary: DIAGNOSTIC ROUTE ASSUMPTION / ACCEPTANCE-BOUNDARY CLARITY.** Workspace selection was a legitimate prerequisite to inventory, but the availability of a Render workspace was not evidence that Render hosted James. The source-linked AI Studio route is now the leading diagnostic route, not a proven sole runtime. Lack of interactive access means the actual crash cause and patch acceptance remain OPEN.
+
+This is a bounded process/evidence classification, not a claim of intentional misrepresentation or proof that the stability patch is wrong. The useful correction is to distinguish: (a) provider inventory completed, (b) actual host/source identity still to be verified, and (c) application behavior not yet reproduced or accepted.
+
+### Requested disposition and corrective behavior
+1. ROOT/T-GOV should classify this as a bounded evidence-routing/status-reconciliation drift, or amend the label based on the full source record.
+2. For any deployed app, identify the live URL and source/deployment SHA before choosing a provider's logs. An empty service match means “not found in this inspected workspace,” not “the app does not exist.”
+3. Keep three states separate: provider inventory, runtime identity, and behavioral acceptance. Completion of one must not imply the others.
+4. Preserve the James PR as draft/open/unmerged until build/lint, normal-storage and denied-storage browser cases, landing-to-main-app transition, and attributable error/console evidence are checked.
+5. Reuse the existing ecosystem recovery/anti-dilution and provider-continuity route. No new worker, queue, scheduler, provider service, or shadow architecture.
+
+### Category B Directive 23 — itemized addendum
+- **Expected outcome:** ROOT receives a bounded classification of the deployment-route drift and the exact evidence required to prevent recurrence.
+- **Owner:** ROOT/T-GOV for classification; existing capability-continuity owner and James/JAM3S maintainer for source-to-runtime identity and acceptance.
+- **Required action:** confirm the deployed app's authoritative URL/source SHA; obtain an authorized interactive or reproducible local run; build/lint and test the draft patch; update existing report/index with the resulting evidence.
+- **Dependency/blocker:** AI Studio app/browser session not accessible through the current browser route; TinyFish browser automation could not start because its balance was below zero; no console stack trace or test result yet.
+- **Acceptance evidence:** verified live URL and matching source/deploy SHA, actual browser error or clean run, successful build/lint, both storage modes, landing CTA/main-interface transition, and independent source/PR readback.
+- **Persistence/readback:** this classification, canonical Intake Index pointer and ROOT issue comment must be read back after submission.
+- **Safety/preservation:** no production deploy, no PR merge, no service creation, no database/reward/bot mutation, no conflation of James-Bot with JAM3S_BOT or HOBO.
+- **Item-level disposition:** drift record = SUBMITTED FOR ROOT CLASSIFICATION; Render inventory = PASS / complete for inspected workspace; Render as James host = NOT EVIDENCED; live runtime identity = OPEN; crash reproduction = OPEN; PR acceptance = HOLD.
+- **Remaining work:** ROOT disposition; identify current runtime and exact SHA; reproduce/fix/test; then update acceptance state. Submission is not ROOT acceptance.
