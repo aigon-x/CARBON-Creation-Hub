@@ -1,0 +1,119 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "batch_id": "forx-20261012-un-procurement-ai-digital-01",
+  "created_at": "2026-10-12",
+  "run_id": "FORX-WAKE-20261012-025416Z-01",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261012-PROC-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Bangladesh — Procurement Unit",
+      "surface": "Firm procurement for AI use-case design, testing and deployment; UNGM reference UNDP-BGD-01218,2.",
+      "observed_need": "Official public notice advertises a firm-level AI design/testing/deployment requirement. The full solicitation, bidder eligibility, experience threshold, budget and award criteria have not been verified. This is evidence of posted procurement demand, not proof of AMX qualification or award likelihood.",
+      "outcome_space": [
+        "AI implementation",
+        "use-case design and testing",
+        "public procurement",
+        "Bangladesh"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/316324",
+      "source_key": "url:https://www.ungm.org/Public/Notice/316324",
+      "source_observed_at": "2026-10-12",
+      "published": "2026-09-30",
+      "source_updated": "2026-10-06",
+      "deadline_at": "2026-10-13T10:30:00Z",
+      "deadline_local_sast": "2026-10-13T12:30:00+02:00",
+      "geography": {
+        "country": "Bangladesh",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "type": "official procurement portal",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated UNDP Quantum supplier portal; existing account/profile required if already registered."
+      },
+      "contactability": "OFFICIAL_PROCUREMENT_ROUTE_PUBLISHED; bidder account and eligibility UNKNOWN",
+      "payer_hypothesis": "UNDP if selected; contract value, funding terms and award likelihood UNKNOWN.",
+      "fit_note": "Potentially relevant AI delivery procurement, but the deadline is close and a pre-bid meeting was scheduled for 2026-10-04. The public notice does not establish whether attendance is mandatory. Verify the full solicitation, eligibility, prior experience, delivery capacity, pricing, and any meeting-related condition before advancing.",
+      "source_rights": "Official public procurement metadata and brief factual summary retained with source URL. No bulk notice/document reproduction. Confirm solicitation-specific reuse/confidentiality terms before redistributing attachments.",
+      "consumer_action": "iSCOPE to retrieve the exact RFP and verify entity/consortium eligibility, full technical scope, required references, pre-bid condition, submission/account route, budget/terms and feasible delivery capacity. If all gates pass, route to PRI for bid decision and authorized external writing. Do not submit or contact the buyer from FORX.",
+      "intake_custody": "FORX continuous wake 2026-10-12; pending Root Intake receipt."
+    },
+    {
+      "id": "FORX-PROSPECT-20261012-PROC-002",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Indonesia — Procurement Unit",
+      "surface": "SLPI Phase II Digital Monitoring, Evaluation and Learning (MEL) System and Dashboard Development; reference UNDP-IDN-00925,2.",
+      "observed_need": "Official public RFP lists digital MEL system and dashboard development and an amendment uploaded meeting minutes/sample data on 2026-10-07. The complete TOR, budget, implementation requirements, bidder eligibility and evaluation criteria are not yet examined.",
+      "outcome_space": [
+        "digital MEL systems",
+        "data dashboards",
+        "monitoring and evaluation",
+        "public procurement",
+        "Indonesia"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/315385",
+      "source_key": "url:https://www.ungm.org/Public/Notice/315385",
+      "source_observed_at": "2026-10-12",
+      "published": "2026-09-23",
+      "source_updated": "2026-10-07",
+      "deadline_at": "2026-10-16T10:00:00Z",
+      "deadline_local_sast": "2026-10-16T12:00:00+02:00",
+      "geography": {
+        "country": "Indonesia",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "type": "official procurement portal",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated UNDP Quantum supplier portal; registration/account gate applies."
+      },
+      "contactability": "OFFICIAL_PROCUREMENT_ROUTE_PUBLISHED; bidder account and eligibility UNKNOWN",
+      "payer_hypothesis": "UNDP if selected; contract value and payment milestones UNKNOWN.",
+      "fit_note": "Potential systems/data work with a verifiable procurement route. Pre-bid meeting is dated 2026-10-01; attendance requirements are not established by the accessible notice. Relevant past performance, eligibility, TOR complexity and budget remain qualification gates.",
+      "source_rights": "Official public procurement metadata and brief factual summary retained with source URL. Avoid copying attached sample data or full tender documents into staging; follow tender confidentiality and reuse terms.",
+      "consumer_action": "iSCOPE to retrieve and assess the TOR, sample data, bidder eligibility/geography, relevant-project references, delivery milestones, budget and account/submission route. If credible and feasible, hand off to PRI for bid decision. FORX takes no external action.",
+      "intake_custody": "FORX continuous wake 2026-10-12; pending Root Intake receipt."
+    },
+    {
+      "id": "FORX-PROSPECT-20261012-PROC-003",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNICEF China — Supply and Logistics",
+      "surface": "Mapping available data and candidate indicators for child-centred AI development and governance; reference LRPS-2026-9206488.",
+      "observed_need": "Official UNICEF China RFP requests mapping of data and candidate indicators relevant to child-centred AI development/governance. The TOR and financial template are linked on the notice, but AMX eligibility, domain credentials, language/local-law requirements and capacity have not been assessed.",
+      "outcome_space": [
+        "data mapping",
+        "AI governance",
+        "child-centred AI",
+        "indicators and research",
+        "public procurement",
+        "China"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/316643",
+      "source_key": "url:https://www.ungm.org/Public/Notice/316643",
+      "source_observed_at": "2026-10-12",
+      "published": "2026-10-02",
+      "deadline_at": "2026-10-24T02:20:00Z",
+      "deadline_local_sast": "2026-10-24T04:20:00+02:00",
+      "clarification_deadline_at": "2026-10-16T02:20:00Z",
+      "clarification_deadline_local_sast": "2026-10-16T04:20:00+02:00",
+      "geography": {
+        "country": "China",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "type": "official procurement email",
+        "submission_url": "https://www.ungm.org/Public/Notice/316643",
+        "submission_instructions": "Notice states technical and financial proposals must be sent as separate emails to the designated UNICEF China bid mailbox, with a signed/stamped quotation and declaration form; no CC/BCC. No email has been sent."
+      },
+      "contactability": "OFFICIAL_PROCUREMENT_ROUTE_PUBLISHED; proposal eligibility and required local/domain capacity UNKNOWN",
+      "payer_hypothesis": "UNICEF if selected; contract value and payment terms UNKNOWN.",
+      "fit_note": "Strategically relevant to evidence mapping and AI governance, but child-centred/domain safeguards, relevant references, language and local eligibility may be restrictive. Clarification cutoff arrives before the proposal deadline; no assumption of qualification.",
+      "source_rights": "Official public procurement metadata and brief factual summary retained with source URL. Tender attachments and sample materials are not reproduced; confirm solicitation confidentiality, privacy, and reuse conditions.",
+      "consumer_action": "iSCOPE to inspect the linked TOR and forms, identify mandatory qualifications and child-safety/privacy controls, confirm bidder eligibility and submission requirements, and resolve whether clarification is needed before 2026-10-16. If qualified, PRI owns the external bid decision and writing. FORX does not email or submit.",
+      "intake_custody": "FORX continuous wake 2026-10-12; pending Root Intake receipt."
+    }
+  ]
+}
