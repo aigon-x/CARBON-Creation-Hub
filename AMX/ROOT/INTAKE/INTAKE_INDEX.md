@@ -2555,3 +2555,13 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Other existing technical listings:** US$100 AI automation repair and US$50 Django/API backend fix still show aged activity (client last viewed 2 weeks and 3 weeks ago respectively) and remain held on authenticated route; live acceptance/submission route is not claimed.
 - **Outcome/weight disposition:** no buyer response/contract/payment events; no outcome consumption or weight/selection change. Freshness/competition only; silence is not rejection.
 - **Status:** read-only public refresh persisted and indexed; handoffs unchanged; no external action.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 13
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_13.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_13.md)
+- **Commit:** `0b74cba25f3783c6f5139095c3c925290785eb21`; **blob/readback:** `144d75602820fab9c52e35ba71033e0cbddb1587`.
+- **Exact payload SHA-256:** `b18c299cb21eeb6461baf76d7239dd1149b1dfcc4a8d488a4c44618c2bf940ff`.
+- **New source signals:** OPCW AI foresight/innovation SaaS (`OTSB-311207`), https://www.ungm.org/Public/Notice/317287, due 30 Oct 2026 01:00 SAST; WHO health-systems performance data/analytics/digital systems (`WHO-SHQ-RFP-26-3028-P-LTA`), https://www.ungm.org/Public/Notice/311212, extended deadline 18 Oct 2026 23:59 SAST and not open to individual bidders; FAO compliance/counterparty intelligence platform (`2026/CSAPC/CSFDD/138438`), https://www.ungm.org/Public/Notice/315709, due 14 Oct 2026 12:00 SAST with Basic FAO UNGM registration and portal-only submission.
+- **Dedupe:** all 3 exact URL keys/references/IDs absent from immutable base, two registered deltas, earlier unregistered three-row delta and current 86-record opportunity ledger.
+- **Disposition:** all RAW_UNQUALIFIED. No external action, no new delta or manifest update; zero logical-store growth. Full TOR, account readiness and eligibility remain open gates.
