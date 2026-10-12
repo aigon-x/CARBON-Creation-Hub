@@ -2437,3 +2437,18 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Persistence/readback:** appended to this canonical Intake Index; also routed to existing Issue #31 below.
 - **Safety/preservation:** no forced state mutation to create a heartbeat, no false failure claim, no duplicate scheduler, no due-date rewriting or false completion.
 - **Disposition:** OVERDRIVE receipt queue DRAINED; queue-drain receipt obligation OPEN; global Matrix Intake NOT CLEARED.
+
+
+---
+
+## CATEGORY B — CROSS-MODEL RUNTIME, CANON AND ANTI-OVERWRITE CAUTION — 2026-10-12
+
+- **Intake ID:** `ROOT-20261012-CATB-CROSS-MODEL-RUNTIME-ANTI-OVERWRITE`
+- **Caution artifact:** [CATEGORY_B_CROSS_MODEL_RUNTIME_ANTI_OVERWRITE_CAUTION_20261012.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_B_CROSS_MODEL_RUNTIME_ANTI_OVERWRITE_CAUTION_20261012.md)
+- **Requested disposition:** MERGE into existing Blue State / Matrix Ecosystem Recovery & Anti-Dilution control; ROOT/T-GOV to decide. No direct Blue State mutation by this submission.
+- **Trigger:** Owner clarified that the running apps are live while repository snapshots and UI/UX reviewed by the prior model are stale and out of canon for implementation. Future models must inspect predecessor work and improve it without overwriting the active runtime or another model's work.
+- **Evidence:** James-Bot/JAM3S_BOT bot source files show high line overlap (94.7% normalized-line Jaccard for the two root `james_bot.py` copies); this is source duplication, not proof of duplicate production instances. HOBO and H0B° Unchained configs identify the same Firebase project/app/bucket while declaring different Firestore database IDs. Owner reports that bucket is in Europe; region metadata remains unverified from the cloud control plane.
+- **Required rule:** bind each running app to its immutable source/deployed SHA, service URL/ID, data store, bucket/project/region and auto-deploy path before editing. Mark stale copies OUT-OF-CANON-FOR-IMPLEMENTATION pending that binding; preserve them as provenance. Read current Blue State, prior model/PR outputs, canon and Intake decisions first. Use single-owner isolated PRs, compare-and-swap hashes, independent post-write readback and explicit rollback. Never blind-overwrite, force-push or resolve model conflicts by silently selecting one copy.
+- **Product caution:** the 2026-10-04 H0B° × JAM3S streamlined story is still labelled an Intake merge candidate, not final canon by assumption. Preserve H0B° identity and quote vault, JAM3S V1 freeze, privacy and system-of-record boundaries. Refresh UI/UX and Matrix interconnection only against the Owner-approved story and confirmed live source.
+- **Disposition:** caution submitted; stale source candidates = forensic only pending binding; duplicate-source lineage = HOLD; shared Firebase/bucket footprint = PRESERVE; assistant-created James-Bot draft PR #1 = HOLD / do not merge as a fix for the live app; Blue State acceptance = pending ROOT/T-GOV.
+- **Directive 23:** owner = ROOT/T-GOV for Blue State disposition, existing ecosystem owners for canon/runtime identity, one accountable implementation owner per target; blocker = live GCloud/Europe deployment and bucket readback plus exact runtime SHA not yet independently verified; acceptance = Blue State merge/readback, service/deployed SHA map, source lineage dispositions, approved UI/UX delta and passing tests on intended release SHA; safety = no production deploy, shared-data/config/rules change, credential change, migration or lineage erasure; remaining work = compare predecessor-model work, bind active target per app, then design/test/release through the existing governance route.
