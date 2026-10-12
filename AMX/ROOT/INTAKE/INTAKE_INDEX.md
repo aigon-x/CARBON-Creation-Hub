@@ -2234,3 +2234,24 @@ This addendum supersedes prior embedded count/scheduler snapshots where they con
 **Required next action:** authorized organization/project administrator confirms the existing project inventory and restores the appropriate authorized route if needed; then perform the report's read-only schema/security/operations audit. Provisioning and production changes remain held pending evidence and explicit approval.  
 **Current disposition:** MERGE recommended; route check blocked; implementation NOT STARTED; spend/infrastructure changes NONE.  
 **Directive 23 itemized acceptance:** report contains expected outcome, owner, action, dependency/blocker, acceptance evidence, persistence/readback, safety/preservation, item disposition, and remaining work for five work items. The report/index writes are not acceptance of the live Supabase route or runtime.  
+
+
+## CATEGORY B INTAKE ADDENDUM — IRIS / HOBO / JAMES–JAM3S CONVERGENCE RECOVERY — 2026-10-12
+
+**Intake ID:** ROOT-20261012-CATB-IRIS-HOBO-JAM3S-CONVERGENCE  
+**Canonical report:** [CATEGORY_B_IRIS_HOBO_JAM3S_CONVERGENCE_20261012.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_B_IRIS_HOBO_JAM3S_CONVERGENCE_20261012.md)  
+**Report commit:** 5c543becc8230e83bc4fe8389b0a8b1e5100914d  
+**Classification requested:** Category B — merge into existing Matrix ecosystem recovery / anti-dilution workstream; ROOT disposition pending.
+
+**Source snapshot:**
+- IRIS / MyCase: `BullRulez/IRIS-My-Case` remains initial-commit-only (2524b03c3c257e7bc9d87835a40391b54687ee59); historical About IRIS HTML is recovered, but current editable/runtime source and evidence-backend ownership remain UNKNOWN/HOLD. The manifest references `IRIS_v0_1_Package.zip`; a direct Library listing/search did not surface the ZIP itself, which is not proof of deletion.
+- HOBO: `BullRulez/AMB-HOBO-AI-` head 3f59971cedf2db4b92f9cfdfe2ad426796675adf (2026-06-15). Separate `BullRulez/Unchained_AmillimatriX-` head 38c2f603c4e1349918945b0947845ff135e0d0d2 (2026-06-27) and the published H0B° Unchained site must not be collapsed without source/deployment lineage evidence.
+- James/JAM3S: `BullRulez/James-Bot` head 97bb4637670dd116b45206b0a5aacc0a51527d09 (2026-04-28); `BullRulez/JAM3S_BOT` head 078576d4a86dc4c3f3ae532183b89a6dabf1e084 (2026-07-22). JAM3S V1 freeze and no-deploy approval gate remain controlling. Exact code-level lineage remains HOLD.
+
+**Effected bounded action:** James-Bot draft PR [#1 — Guard Matrix landing startup in restricted browsers](https://github.com/BullRulez/James-Bot/pull/1), branch `recovery/james-landing-stability-20261012`. The branch guards localStorage reads/writes, makes MatrixRain react to `active`, and replaces the retired-URL smoke test with local normal-storage / storage-denied landing-flow scenarios. Commits: f281aed79b4bf4c5b471416dd7d5a0b686a796f5, 78aaef34bfd28e68e8fc5c36e9b0c5caabdefe61, 75ea2f42bdcd7bd4faf5e393abdb5ce04aad28a0. **PR is open/draft/unmerged; build/browser tests not yet run; no deployment or backend/reward mutation.** TinyFish live browser automation was blocked by an insufficient wallet balance; the retired preview URL returned 404. The exact production crash is not yet reproduced.
+
+**Why this route:** a low-risk, isolated startup-resilience patch is testable without erasing ecosystem boundaries. Full Matrix-style visual convergence must follow the existing recovery sequence: source → identity → purpose → capabilities → relationships → deployment → current state → action → receipt. Share visual tokens and interaction semantics, not product identity: IRIS stays evidence-first and human-decision preserving; HOBO keeps its gritty canon and INTEL/cash distinction; JAM3S stays trust-through-verified-participation and its V1 freeze.
+
+**Provider findings:** Vercel returned no linked projects for James/JAM3S. Linear searches returned no relevant project issues. Render service inspection is blocked until the Owner explicitly selects a workspace. TinyFish extraction is not interaction-level verification. Blockscout chain metadata was queried, but no contract address or product-chain mapping was recovered; no on-chain state is claimed.
+
+**Directive 23 itemized disposition:** see report §6 for eight outcome rows, each with owner, action, blocker, acceptance evidence, persistence/readback, safety/preservation, disposition and remaining work. Current state: James stability patch persisted in draft PR; IRIS source recovery HOLD; HOBO runtime/source mapping HOLD; James/JAM3S lineage and live backend truth HOLD; Matrix-wide convergence NOT COMPLETE. Report/index persistence does not constitute ROOT acknowledgment, code review, test acceptance, or deployment approval.
