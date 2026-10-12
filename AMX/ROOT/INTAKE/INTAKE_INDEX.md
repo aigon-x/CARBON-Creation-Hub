@@ -2479,3 +2479,13 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Correction to the prior provisional status line:** the report at `AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_01.md` and this Index append have now both been independently read back. Report SHA-256 on exact stored bytes: `afd9e9e38c87e80e46d16d9081bcc5427228678d2ba53320c12f31c3aba18ab6`. Report blob: `313d1544aa5cab0818d59cf2ded16024a6835d69`; report commit: `cee7d02796ad269d8704d729988534f91fb18605`.
 - **Current Index readback before this correction:** `9874adf11531cd284c48c1c3b592fd24d2e5ee71`, from commit `ecd3b4fa1ad9e0ef41d80df19f0d805a7588838c`; the run ID and report SHA were present. This correction records that the Index readback condition is now satisfied; it does not resolve the manifest write blocker or qualify any candidate.
 - **Current open item:** manifest remains v2 / 943 unique source keys / 944 gross observations; new candidate delta is durable but unregistered. Owner/recovery path remains ROOT/T-GOV for blocked-write disposition and existing T-COD + FORX for supported compare-and-swap retry. The logical-store acceptance condition remains unchanged.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 02
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_02.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_02.md)
+- **Commit:** `1b25ec18e9266e9b0f6f7376587179e6df094023`; **blob/readback:** `acfc1850feeb9fac5af77212703f90a344b083de`.
+- **Exact payload SHA-256 (computed against stored bytes):** `aac2d21d929bd68bd237a25961785536daca22d5faa47b0cb5c17376ec744e11`.
+- **New source:** IARC/WHO publication workflow automation software, UNGM notice 316649; deadline 2026-10-23 18:00 GMT+2. The procurement document request requires an external email; none was sent. Candidate remains unqualified and unstaged.
+- **Dedupe:** exact notice URL key not present in the 943-key active logical store or the current opportunity ledger snapshot used for the check.
+- **Disposition:** discovery evidence persisted; no active staging growth, qualification, application, buyer contact, outcome event, weight change, or selection change. The existing manifest-write blocker continues under the first same-run receipt.
