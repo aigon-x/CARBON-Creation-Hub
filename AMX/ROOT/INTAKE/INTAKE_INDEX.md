@@ -2587,3 +2587,14 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Dedupe:** exact source key/reference/title/ID absent from base+registered deltas+unregistered delta and current 86-record opportunities ledger.
 - **Exclusions:** SARS RFP07/2026 final closing date 8 June 2026 (expired); Parliament data-engineer/data-analyst RFQs close on 12 Oct with precise cut-off unverified and are not treated as actionable.
 - **Disposition:** 1 distinct RFP documented in Intake; 0 delta rows; 0 logical growth; manifest still v2/943 unique keys/944 gross observations/2 segments.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 16
+
+- **Buyer-conversion packet:** [FORX_WAKE_20261012_025416Z_16.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_16.md)
+- **Commit:** `3d87369c748a5913179391d2b5882469acba71c4`; **blob/readback:** `8ca9d7783ecbd33326228a21b55684f3ddff6e65`; exact content fetched back and matched the prepared packet.
+- **Purpose:** translates the existing buyer-posted AI customer-service agent ($2,000) and Python/AI reliability ($30–$60/hour) listings into specific, evidence-bounded proposals, with explicit hard gates and acceptance evidence.
+- **Important correction:** **0 applications were submitted**. Current Upwork TinyFish profiles all have empty `signed_in_sites`; the customer-service page returned HTTP 403 without authenticated access. The Python/AI listing is publicly readable, but iSCOPE must validate that the evidence satisfies the stated real-AI/LLM experience condition before PRI submits.
+- **Proof boundary:** uses AMX Search 36/36 tests / 81/81 CI, bounded Marketplace 50/50 acceptance, and the recorded HTTP route repair; explicitly does not describe the route repair as an AI-model bug or claim the exact requested agent already deployed.
+- **Next action:** obtain the Owner's go-ahead to open the existing default browser profile's sign-in setup, then verify live listing state/account-level duplicates, reconcile each candidate through the existing iSCOPE/PRI path, and submit only when hard gates pass. No credentials in chat; no duplicate account.
+- **Counts:** 2 tailored drafts prepared; 0 submitted; 0 external messages; 0 buyer outcomes; 0 revenue credit; 0 logical staging/graph changes.
