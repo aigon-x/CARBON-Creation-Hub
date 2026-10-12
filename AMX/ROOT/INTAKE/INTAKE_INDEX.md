@@ -2498,3 +2498,13 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Exact payload SHA-256:** `a30a6aecc109da28c56a6bfcc6442ed724d02e640ab8b5001de895e3f7b50b23`.
 - **New signal:** UNDP South Africa RFP `UNDP-ZAF-00245`, informal-enterprise growth/formalisation consulting, official notice https://www.ungm.org/Public/Notice/317130, due 2026-10-20 16:00 SAST. Full scope/eligibility remain unknown. Collision checks: 0 exact source-key hits in active staging; reference/title absent from the 86-record opportunities snapshot.
 - **Disposition:** discovery-only and not staged because manifest registration remains blocked. No external action or commercial progression claimed.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 04
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_04.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_04.md)
+- **Commit:** `a223545f6fdff209f1f9ac0373628c66f2f4bf05`; **blob/readback:** `a6a4b5b57759c6fec5c044b1479a628d74ffcaaa`.
+- **Exact payload SHA-256:** `5a1332e5c36a88dfec79c38a938b1af7fd26ee0e5134bb87d3b19120619b4813`.
+- **Commercial source reconciliation:** verified Oct10 outbound follow-up sends on existing Synergy Interactive, Xubio and Kingston Stanley threads; each thread was individually read and contained no inbound reply. All three existing Close tasks are already complete with post-send timestamps. Canonical opportunities remain SUBMITTED/WAITING; Close pipeline 3 active, 0 won, 0 lost.
+- **Weighted-continuity disposition:** outbound sends are not buyer outcomes. No new event consumed, no weight change, and no changed selection. The prior causal weighted-continuity acceptance remains PASS; no reopening of #12/#17.
+- **Disposition:** outbound receipt reconciliation PASS; buyer outcome not observed; existing pipeline awaits buyer response; no further outreach or task duplication.
