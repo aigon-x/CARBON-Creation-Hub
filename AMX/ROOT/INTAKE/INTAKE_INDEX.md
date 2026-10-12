@@ -2544,3 +2544,14 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Exact payload SHA-256:** `f76a7c59337e3aa79b80549da2e25e89dbfbfe75bd35810b3fbf39bd9a492495`.
 - **New route:** UNDP Czech Challenge Fund `UNDP-IRH-00317`, https://www.ungm.org/Public/Notice/317476, deadline 20 October 2026 16:00 SAST, prize US$20k–40k with at least 20% co-funding. For non-local applicants a signed local-partner agreement is mandatory for one of Bosnia and Herzegovina, Georgia or Moldova. No local partner or co-funding evidence currently exists.
 - **Disposition:** discovery-only; eligibility HOLD; exact URL/ref not present in the active source set or current 86-record opportunity ledger. Not staged; 0 logical growth, 0 qualified opportunities, 0 revenue credit.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 11
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_11.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_11.md)
+- **Commit:** `004718db9ca91cc1f8a4ecd6520a1ff78a67b32e`; **blob/readback:** `4aa988a2015597a730815843db1c421c5cba7c3d`.
+- **Exact payload SHA-256:** `bc8d6d26f63f9ccc5d7e232b3410dc002b2abc0c939fcc82eb274c9e23526e08`.
+- **Current listing refresh:** existing Upwork RAG/CRM US$700 project has 50+ proposals, 1 hire, 1 interviewing and client viewed 4 hours ago; existing WhatsApp/GHL US$1,000 project has 20–50 proposals, 2 interviewing and last viewed 6 days ago. The former remains on proof/route gates; the latter remains on live testable agent proof/route gates. Both are existing iSCOPE-owned records; no duplicate task or candidate created.
+- **Other existing technical listings:** US$100 AI automation repair and US$50 Django/API backend fix still show aged activity (client last viewed 2 weeks and 3 weeks ago respectively) and remain held on authenticated route; live acceptance/submission route is not claimed.
+- **Outcome/weight disposition:** no buyer response/contract/payment events; no outcome consumption or weight/selection change. Freshness/competition only; silence is not rejection.
+- **Status:** read-only public refresh persisted and indexed; handoffs unchanged; no external action.
