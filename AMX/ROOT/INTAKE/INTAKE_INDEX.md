@@ -2624,3 +2624,7 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - Existing OPEN governance item: [#34 — 33% Matrix-wide money-in focus; supersede 25%](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/34).
 - Current Category A 60/20/20 rule applies only within 100% of opportunity-search/conversion effort; it does not change a Matrix-wide effort/compute denominator or the per-Librarian allocation.
 - ROOT/T-GOV must resolve scope/supersession explicitly. Do not infer acceptance of #34 from its title or this cross-reference.
+### Runtime-drift evidence — late segment landing
+
+- New concrete observation in [Category A dynamic-flight continuity report](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_A_DYNAMIC_FLIGHT_CONTINUITY_AND_RUNTIME_DRIFT_20261012.md): segment 03's changes were committed and read back but its LANDING event was not present before segment 04 resumed. This is being preserved as a late-landing reconciliation, with event-entry time and actual postflight-readback time distinct.
+- Segment 04's immediate Librarian wake was requested, but subsequent scheduler readback showed unchanged last-run time and next_run_time=null; it remains IN_FLIGHT / awaiting an attributable output receipt.
