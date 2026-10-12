@@ -2315,3 +2315,45 @@ This addendum supersedes prior embedded count/scheduler snapshots where they con
 - **Open evidence:** deployed Netlify/AI Studio URL-to-source SHA and original production crash remain unverified; audio request is blocked by ORB and one resource 404 was logged; npm install reported 21 audit findings (2 low, 4 moderate, 14 high, 1 critical), with exact-package triage still open.
 - **Disposition:** branch CI = PASS; live release acceptance = HOLD. Do not merge/deploy or apply automatic dependency fixes without resolved release evidence.
 - **Directive 23:** owner = existing James/JAM3S maintainer + capability-continuity owner + dependency owner, with ROOT/T-GOV for classification; action = verify live SHA and original crash, triage audio/404 and each dependency advisory; blocker = live browser/runtime access and untriaged advisory list; acceptance = source/deploy match, attributable production behavior, passing acceptance test and auditable dependency disposition; persistence/readback = this index and classification update plus linked CI runs and PR readback; safety = no merge/deploy/automatic upgrades or bot/database/reward mutation; disposition = tests PASS, production/release HOLD; remaining work = runtime identity, audit triage, ROOT disposition and release acceptance.
+
+---
+
+## DEEP RESEARCH CORRECTION — ACTIVE CLAIMS VS COMPLETED OVERDRIVE RECEIPT HISTORY — 2026-10-12
+
+This supersedes the earlier present-tense interpretation that `overdrive/state.json` queue length 20 meant 20 items were still unprocessed. That interpretation was wrong.
+
+### Current source readback
+- `overdrive/state.json` blob `5593ab9dcb04914951aa4ba574bb862af1bc5557`: 20 retained queue entries; all **20/20 status=COMPLETED**, all **20/20 have receipt path and receipt SHA-256**; pending=0; failed=0. Latest tick `2026-10-11T19:42:44.598828Z` has `processed=[]` because there were no pending tasks on that tick. The retained queue is a completed receipt history, not a live pending count.
+- `overdrive/claims.json` blob `9be10bfece528392d990a9db969cd1f8726d484d`, generated `2026-10-11T19:42:44.595798Z`: 84 claims total; **78 WAITING, 6 CLOSED, 0 READY, 0 external-ready**. There are **10 WAITING claims whose due_at values are in the past**. This is the current claim-level aging problem, not 20 pending OVERDRIVE adapter tasks.
+- `overdrive/opportunities.json` blob `85c769241258cc4ed774a6a0c5f7420323cf3096`: record_count 84 and records-map keys 84. The old 66-vs-83 count defect remains superseded/resolved for this current snapshot. Keep historical last_run.full_ledger_count=62 unchanged.
+
+### Ten overdue waiting claims — item-level disposition
+All ten claims remain WAITING and external_action_ready=false. Preserve the old due timestamp as evidence of lateness; do not clear overdue age by moving dates or pretending a blocked action was executed.
+
+1. **Alignerr — South Africa search-quality AI training** — owner PRI; blocker: authenticated browser route unavailable; existing account/session only. Recheck when the authorized browser/account route is restored.
+2. **CallForce — Marketing Lead, South Africa** — owner PRI; blocker: authorized read access to existing Gmail thread `1a103d43041d248b`; no duplicate outreach while thread cannot be inspected. Recheck on authorized thread-reader restoration.
+3. **CrowdGen — Project Coffee data-labeling specialist, South Africa** — owner PRI; blocker: authenticated browser route unavailable; existing account/session only. Recheck when authorized access is restored.
+4. **Inkwave Studios — production partnership** — owner PRI; passive wait on the existing application/thread; do not duplicate application. Recheck on inbound response or material change in route/terms.
+5. **Mindrift — All Access AI Training** — owner PRI; blocker: authenticated browser route unavailable; no duplicate account/application. Recheck when authorized access is restored.
+6. **OpenTrain — AI Content Evaluation and Editing** — owner PRI; blocker: existing-account secure recovery; no inbound support message proving a fresh route. Recheck only when a fresh authorized recovery/login route appears.
+7. **OpenTrain — Video Annotation Editor** — owner PRI; same existing-account recovery blocker. Recheck when an authenticated existing-account route is evidenced.
+8. **Redrama — adaptation/distribution for The Dragon Who Could Not Claim Me** — owner PRI; passive wait on the existing thread. Recheck on inbound response; confirm rights, terms and controlled sample access before proceeding.
+9. **TELUS — Online Data Analyst, South Africa** — owner PRI; human/provider OTP and identity-verification gate. Recheck after authorized human authentication; never store or disclose OTP.
+10. **Mindrift — Senior Data Scraping Engineer/Python** — owner iSCOPE; HOLD_CAPABILITY_GAP because required 5+ years technical experience is not evidenced. Do not submit or claim fit unless authoritative earlier experience is recovered or buyer requirements materially change.
+
+**Reclassification:** these are overdue-by-original-due-date items with explicit blockers or legitimate monitor/wait conditions, not ten currently ready-to-execute tasks. Their due aging must remain visible. The current claim contract has no separately verified next_recheck_at field in this snapshot; do not silently overwrite original due_at. Existing owners must surface the gate that permits the next step, and update through the canonical path when it changes.
+
+### Separate completed commercial progression — three paid pilots
+Independent Close activity/thread/task readbacks confirm that the already-governed single follow-up for each of Kingston Stanley, Synergy Interactive and Xubio was sent on 2026-10-10 and each matching Close task is complete. Latest thread readbacks are outbound only, `has_reply=false`; no buyer response, acceptance, contract, invoice or payment is evidenced. The canonical opportunity records already contain the follow-up receipt IDs and are now in WAITING with `due_at=null`, `next_action=WAIT for buyer-initiated material response`. Do not send duplicate follow-ups. This bounded follow-up subtask is complete; the offers are not commercially converted.
+
+Evidence: Close follow-up timestamps 2026-10-10T05:18:42Z (Kingston), 05:18:52Z (Synergy), 05:18:47Z (Xubio); completed task IDs `task_NUbriT3UcJflluR34JwvJmahe8hRZHZVKgPCeMH1pR8`, `task_LaDuW9GeM8nS9BzNRQLFayCGE4lzObbElO4qNjbP6Wz`, `task_Do97iN71mej6gag8DbqUpj6e4jbTm740dBsTzzVRr1L`. Existing canonical evidence IDs: `1a1243fc84b3cf60`, `1a1243ff3e8d00f2`, `1a1243fde7688dc4`.
+
+### Directive 23 accountability
+- **Expected outcome:** accurately distinguish completed adapter receipts from open claims; overdue claims retain truthful original aging plus a usable named recovery action/recheck; paid-pilot follow-up actions stay complete without duplicate sends.
+- **Owners:** MASTER/COFFEE/LIBRARIAN coordinates audit/readback; PRI owns commercial waits/routes; iSCOPE owns fit/qualification; ROOT owns authority conflict and complete cross-surface census; T-COD owns claim priority/recheck semantics when code changes are required.
+- **Required next action:** restore authorized route for CallForce / account-gated platforms where possible; process provider/human-only gates only through the authorized person; continue other lawful executable work. Expose next-recheck/blocked aging without overwriting due history.
+- **Acceptance:** claim-level item readback and truthful before/after status; route receipts when blockers clear; no duplicate outreach; no changes to verified completions absent contrary evidence.
+- **Dependencies:** Gmail read path disabled by administrator, Opera browser disconnected, provider OTP/training gates, applicant fit/availability facts; shared authoritative OUTSTANDING sheet remains inaccessible in this tool session.
+- **Persistence/readback:** this section is appended to the canonical Intake Index and is to be verified by fetching the latest blob after write.
+- **Safety/preservation:** no false state transition, no deadline erasure, no duplicate worker/queue, no fabricated application/acceptance/payment.
+- **Disposition:** 20-item OVERDRIVE receipt queue = **DRAINED/ALL COMPLETED** as of the inspected state; 10 overdue WAITING claims = **OPEN / BLOCKED OR PASSIVE-WAIT WITH NAMED NEXT ACTION**; global Matrix Intake = **NOT CLEARED** because the full authoritative multi-surface register remains unreconciled.
