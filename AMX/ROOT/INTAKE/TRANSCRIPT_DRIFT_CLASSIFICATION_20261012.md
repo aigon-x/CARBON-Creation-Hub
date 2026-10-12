@@ -176,3 +176,26 @@ A CI workflow was added on the isolated recovery branch at commit `80e9f40341bcc
 - **Safety/preservation:** keep the patch isolated; no PR merge or production deploy; no automatic dependency upgrades; preserve James-Bot, JAM3S_BOT and HOBO lineage separately; no bot/database/reward/service changes.
 - **Item-level disposition:** CI build = PASS; TypeScript check = PASS; normal-storage landing transition = PASS; denied-storage landing transition = PASS; live runtime identity = OPEN; original deployed crash reproduction = OPEN; audio/resource diagnostic = OPEN; dependency triage = OPEN; PR/release acceptance = HOLD.
 - **Remaining work:** confirm live deployment/source SHA; triage the 21 audit findings and audio/resource diagnostic; obtain ROOT disposition; keep PR draft until live-runtime and release-acceptance evidence is adequate.
+
+## 9. Prompt follow-through drift — 2026-10-12
+
+**Observed behavior:** After creating and recording the cross-model anti-overwrite caution, the assistant ended the response at the evidence-submission boundary and did not execute the second half of the Owner's instruction: pivot back to the active task, inspect what the prior model did, and identify a safer/better next action. The Owner explicitly corrected this omission: “You missed the second half of the prompt.” The current correction request is: “Deploy drift evidence and pivot to task.”
+
+**Primary classification:** `INSTRUCTION-COMPLETION / TASK-CONTINUITY DRIFT`.
+**Secondary classification:** `FALSE-CLOSURE RISK AT GOVERNANCE HANDOFF` — recording a report was treated as the practical endpoint even though execution was still required.
+
+**Impact boundary:** This was a missed follow-through, not evidence of production overwrite or a live deployment change. No production runtime, database, shared bucket, external buyer, CRM record, or deployment was changed in that step. The already-created James-Bot PR remains forensic only and unmerged. The defect is that the active commercial/build-discovery task did not resume promptly.
+
+**Corrective rule:** An evidence or Intake subtask must not silently replace the user's parent objective. After persisting and reading back a drift report, resume the highest-authority remaining executable task in the same wake; if a hard external authorization/dependency blocks one route, record that narrowly and continue lawful work in another route. A filing/acknowledgment is not completion of the parent task.
+
+### Category B Directive 23 — prompt-follow-through item record
+
+- **Expected outcome:** Drift item recorded and active commercial task resumed.
+- **Owner:** Current executing model for the missed follow-through; ROOT/T-GOV classifies systemic treatment.
+- **Required action:** Read back this artifact and the cross-model caution, then execute current evidence-led buyer discovery using the existing owner/route; do not create a new worker or parallel sales pipeline.
+- **Dependency/blocker:** Current buyer-research sources and exact current opportunity ledger/history; no live Google Cloud/GCS control-plane connector was found for runtime binding in this session.
+- **Acceptance evidence:** This addendum committed and read back; subsequent task output contains sourced buyer offers, scope/payment/acceptance terms where published, capability/evidence fit, provenance, confidence and gaps.
+- **Persistence/readback:** This file's resulting blob/commit SHA plus comment on existing ROOT Intake issue #31; verify both.
+- **Safety/preservation:** No contact or CRM write without explicit approval; no merging of the out-of-canon recovery PR; no false claim of live runtime or commercial acceptance.
+- **Disposition:** `RECORDED; TASK RESUMPTION IN PROGRESS`.
+- **Remaining work:** ROOT/T-GOV disposition; bind actual live runtime to current source before implementation; continue public buyer-offer discovery and deduplication against the canonical opportunity ledger and PRI/iSCOPE ownership.
