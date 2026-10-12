@@ -995,3 +995,45 @@ Excessive in-context planning or repeatedly composing oversized governance text 
 ## Acceptance
 
 Acceptance remains OPEN until the append-only register is bidirectionally reconciled (unmatched launches AND unmatched landings); active prompts consume this law; launch/checkpoint/landing events are persisted and read back; a resume test proves weights/learnings/anchors survive; all in-flight commits are linked to their flight; pre/post sync receipts explicitly record accessible and inaccessible surfaces; and mandate payload hashes plus registry root remain unchanged. No claim of universal propagation without per-surface evidence.
+---
+
+# CATEGORY A — OPPORTUNITY ALLOCATION / VERIFICATION / SEARCH-COST GUARD — OWNER DIRECTIVE — 2026-10-12
+
+**Effective:** immediately for opportunity-discovery and conversion effort. This is additive to existing Blue State, iSCOPE/PRI/FORX, Micro-Matrix, revenue-truth and commercial continuity law. It creates no parallel pipeline, scoring authority, queue, worker or scheduler.
+
+## The 60 / 20 / 20 allocation
+
+- **60% — REAL-VALUE WORK (primary lane):** paid pilots, buyer-requested builds, business modernization, automation/AI/workflow delivery, short-term contracts, remote engagements, paid trials, fixed-scope/milestone projects and explicit requests from credible buyers, developers, teams and project owners across Web2, Web3 and crypto. Position AMilliMATRiX as a builder and delivery partner, not merely a job applicant. Work from evidenced capabilities and an observable buyer need.
+- **20% — MICRO-MATRIX:** microtasking under the Owner's existing threshold: Ascent and above; Sent is the floor only. Prefer current, eligible, accessible tasks with explicit acceptance, positive net value and a verified settlement path. Micro defines the floor, not the ceiling; do not let it replace the 60% real-value lane.
+- **20% MAXIMUM — RECRUITMENT-LED / PLATFORM-ADVERTISED ROLES:** a ceiling, not a quota. Only the best-aligned options may proceed, and only after all required verification gates pass. Duplicate, stale, inaccessible, poorly aligned or unverifiable copies are opportunity bloat and must be excluded/deprioritized, not counted as independent market demand.
+
+Percentages apply to actual opportunity-search and conversion effort over the governed reporting window—not raw listing count. Deduplicate copied/syndicated/rewritten vacancies into one underlying opportunity. Record actual effort shares; do not claim compliance from plans alone. Any material deviation requires Owner authorization and recorded reason.
+
+## Mandatory verification before material effort or sensitive disclosure
+
+1. Verify the real company/project and role via a current first-party source or independently verified authorized contact, canonical URL/domain, unique vacancy/project identifier where available and source date/status.
+2. Search for duplicates by employer/brand/domain, role scope, wording, compensation and identifier. One underlying vacancy counts once unless independent hiring demand is evidenced.
+3. Verify it is currently open and actually eligible in the applicant's current jurisdiction. Check country availability, phone/number/SMS verification, account/onboarding gates, device/browser prerequisites and country-specific payout/withdrawal support before investing substantial time.
+4. Verify task scope, pay unit/currency, acceptance and rejection conditions, realistic hours, deadlines, payment timing, fees, required deposits/bonds/gas, withdrawal minimum and settlement rail. Rank by expected net value and delivery fit, not headline rates.
+5. Do not pay to apply or disclose identity documents, biometric/selfie data, wallet secrets or sensitive account information until the entity, collection purpose, handling and legitimate stage have been independently checked. A KYC request alone proves neither legitimacy nor fraud.
+6. Establish that the work maps to evidenced AMX capabilities, can actually be delivered under current constraints and does not require unsupported claims or extensive uncompensated work before a legitimate engagement.
+
+A gate that fails or cannot be verified is UNVERIFIED / HOLD / REJECT, not actionable. Preserve the precise failed gate, source, evidence and human time consumed. Recheck only on material new evidence; do not repeat applications through cosmetically altered copies.
+
+## Cost control — Tavily October 2026 notice
+
+The Owner supplied a Tavily automated alert stating that 80% of the October 2026 usage limit was consumed. This proves the alert was received, not the cause of usage.
+
+- Do not upgrade, enable PAYGO or authorize automatic paid expansion without explicit Owner approval.
+- Inspect usage/request logs, relevant keys/agents and repeated-query patterns where available. Report attribution only when logs support it.
+- Share/canonicalize search results, cache stable reads, deduplicate queries and stop researching opportunities whose source and current disposition are already known unless material state changed.
+- A provider alert at 80% is a pre-exhaustion cost incident: pause discretionary/redundant requests, preserve logs, determine remaining allowance and route a bounded-use plan to the existing cost/ROOT owner.
+- Measure human minutes and metered credits alongside unique verified opportunities, eligible accessible routes, buyer responses, contracted work, delivered/accepted work and verified settlement. Time spent before a simple eligibility/verification blocker was found is a process cost and must change later selection.
+
+## Outcome learning and ownership
+
+Use existing canonical opportunity records and existing iSCOPE → PRI / FORX outcome-learning ownership. Preserve uncertainty about rejection causes; a single rejection must not indiscriminately penalize unrelated capability or every route. When available, require event → causal attribution → scoped weight delta → durable readback → changed next selection → readback. Do not mark the existing weighted-continuation acceptance PASS without its evidence.
+
+## Acceptance
+
+ROOT/T-GOV and the existing owners must verify: (a) this rule is present in the current Blue State; (b) active selection routes consume the 60/20/20 rule; (c) duplicate and location/access/KYC/payout/net-value gates are present in the actual selection path; (d) Tavily no-upgrade/no-PAYGO and 80% safeguards are visible to the responsible operator; (e) a source-backed sample shows a role passing or failing with reasons; and (f) measured effort/result receipts are independently read back. A written rule alone is not behavioral acceptance. Do not change the existing runtime schedules or create duplicate workers.
