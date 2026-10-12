@@ -56,3 +56,12 @@ Read-back results:
 - Notion session access is restricted in this runtime; GitHub/Render/Vercel inventories and selected Notion/Library/Outlook/Dropbox reads were bounded, not exhaustive. Full global transcript/platform coverage remains OPEN.
 
 **Segment disposition:** the authored governance change and Intake handoff are landed as PARTIAL once the landing receipt is read back. This is not a universal Matrix sync PASS, not behavioral prompt-consumption acceptance, and not closure of remaining propagation/recovery tests.
+## Observed control failure — segment 03 late landing registration — 2026-10-12
+
+**Evidence-backed finding:** segment 03 of `AMX-FLT-20261012-DSYNC-145440-9fb44f0c` resumed, wrote the Blue State denominator clarification, updated the allocation report and Index, and posted a comment to existing issue #34. The subsequent segment-04 preflight fetched/read back those changes. However, no segment-03 LANDING event had been appended before `RESUME:SEGMENT-04` was written. This is a concrete deviation from the intended launch/checkpoint/landing discipline: material work was persisted, but the prior segment's formal landing receipt was missing when the next segment resumed.
+
+**Corrective handling:** a late landing reconciliation is appended to the existing flight register with both the verified prior postflight-readback time and the later record-entry time. The event order is preserved; it is not backdated as though it had originally been entered on time. ROOT must retain this as a continuity-control finding and test that future resumes cannot skip a prior segment's required landing/readback.
+
+**Boundary:** this proves a missing/out-of-order landing receipt in this run. It does not prove the work itself was lost (its commits and readback exist), nor does it prove intent or malicious behavior. This is exactly the sort of limbo/drift the proposed register should expose.
+
+Segment 04 remains `IN_FLIGHT`: the Librarian immediate-run request was accepted, but the later peek showed no updated `last_run_time` and `next_run_time=null`. There is still no attributable output, so segment 04 has a checkpoint but no landing.
