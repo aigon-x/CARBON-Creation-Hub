@@ -2489,3 +2489,12 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **New source:** IARC/WHO publication workflow automation software, UNGM notice 316649; deadline 2026-10-23 18:00 GMT+2. The procurement document request requires an external email; none was sent. Candidate remains unqualified and unstaged.
 - **Dedupe:** exact notice URL key not present in the 943-key active logical store or the current opportunity ledger snapshot used for the check.
 - **Disposition:** discovery evidence persisted; no active staging growth, qualification, application, buyer contact, outcome event, weight change, or selection change. The existing manifest-write blocker continues under the first same-run receipt.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 03
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_03.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_03.md)
+- **Commit:** `8489d8de7f48ef88ef928be458ef969aad1b46bf`; **blob/readback:** `5162295860ce8d7d25b73f637dcf11ee6892b81f`.
+- **Exact payload SHA-256:** `a30a6aecc109da28c56a6bfcc6442ed724d02e640ab8b5001de895e3f7b50b23`.
+- **New signal:** UNDP South Africa RFP `UNDP-ZAF-00245`, informal-enterprise growth/formalisation consulting, official notice https://www.ungm.org/Public/Notice/317130, due 2026-10-20 16:00 SAST. Full scope/eligibility remain unknown. Collision checks: 0 exact source-key hits in active staging; reference/title absent from the 86-record opportunities snapshot.
+- **Disposition:** discovery-only and not staged because manifest registration remains blocked. No external action or commercial progression claimed.
