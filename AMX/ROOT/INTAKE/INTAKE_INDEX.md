@@ -2619,3 +2619,8 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Allocation:** 60% verified real-value work, 20% Micro-Matrix, 20% maximum platform/recruitment roles. Recruitment roles require first-party legitimacy, uniqueness, current status, location/onboarding/payout eligibility, complete net economics, safe data handling and evidenced fit.
 - **Cost control:** Owner-provided Tavily alert says 80% of October usage consumed; no upgrade/PAYGO without explicit Owner approval; audit actual usage, cache/dedupe queries, bound remaining use and record human time/credits.
 - **State:** rule committed and report routed; selection-path behavior, actual effort split, usage-log attribution, downstream outcome chain and global propagation remain OPEN pending readback/evidence.
+### Governance cross-reference — issue #34 denominator seam
+
+- Existing OPEN governance item: [#34 — 33% Matrix-wide money-in focus; supersede 25%](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/34).
+- Current Category A 60/20/20 rule applies only within 100% of opportunity-search/conversion effort; it does not change a Matrix-wide effort/compute denominator or the per-Librarian allocation.
+- ROOT/T-GOV must resolve scope/supersession explicitly. Do not infer acceptance of #34 from its title or this cross-reference.
