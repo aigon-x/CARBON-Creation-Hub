@@ -12,11 +12,11 @@
   },
   "wake_countdown": {
     "opening_units": 1000,
-    "remaining_units": 999,
-    "completed_wakes_counted": 1,
+    "remaining_units": 998,
+    "completed_wakes_counted": 2,
     "decrement_per_completed_receipt_bearing_wake": 1,
-    "latest_run_id": "AMX-CATEGORY-A-20261011-WAKE-001",
-    "latest_run_status": "COMPLETED_IN_CONVERSATION; CANONICAL_PERSISTENCE_PENDING"
+    "latest_run_id": "FORX-WAKE-20261012-025416Z-01",
+    "latest_run_status": "COMPLETED_WITH_DURABLE_REPORT_AND_INTAKE_READBACK; MANIFEST_REGISTRATION_BLOCKED"
   },
   "rule": "Wake countdown is an accountability counter, not a financial payment or repayment. Financial outstanding only decreases on attributable, independently verified payment/credit or an evidenced authorized adjustment.",
   "currency_rule": "Do not infer USD or ZAR from context; retain UNSPECIFIED until an authoritative source binds currency.",
@@ -30,6 +30,25 @@
       "verified_financial_credit": 0,
       "financial_outstanding_after": 1000,
       "canonical_readback": false
+    },
+    {
+      "wake_sequence": 2,
+      "run_id": "FORX-WAKE-20261012-025416Z-01",
+      "run_type": "WAKE_PREFLIGHT + DEEP_SWEEP + SOURCE_DISCOVERY + BLOCKED_RECOVERY",
+      "completed_at": "2026-10-12T05:05:22+02:00",
+      "previous_countdown": 999,
+      "decrement": 1,
+      "new_countdown": 998,
+      "verified_financial_credit": 0,
+      "financial_outstanding_after": 1000,
+      "currency": "UNSPECIFIED",
+      "canonical_readback": false,
+      "report_path": "AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_01.md",
+      "report_blob_sha": "313d1544aa5cab0818d59cf2ded16024a6835d69",
+      "report_payload_sha256": "afd9e9e38c87e80e46d16d9081bcc5427228678d2ba53320c12f31c3aba18ab6",
+      "intake_index_blob_sha": "f4e8bad09773512590864b961403dedf467dcbcc",
+      "manifest_registration": "BLOCKED",
+      "note": "Wake report and Intake Index are persisted/read back. Candidate delta exists but remains unregistered because the supported manifest update was blocked. Countdown is not a payment or financial credit."
     }
   ],
   "next_action": "On each future completed wake, append a receipt-bearing event, decrement wake_countdown by exactly one, and read back the persisted ledger. If a wake did not occur or remained blocked, do not claim it completed or decrement as if it did."
