@@ -2508,3 +2508,12 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Commercial source reconciliation:** verified Oct10 outbound follow-up sends on existing Synergy Interactive, Xubio and Kingston Stanley threads; each thread was individually read and contained no inbound reply. All three existing Close tasks are already complete with post-send timestamps. Canonical opportunities remain SUBMITTED/WAITING; Close pipeline 3 active, 0 won, 0 lost.
 - **Weighted-continuity disposition:** outbound sends are not buyer outcomes. No new event consumed, no weight change, and no changed selection. The prior causal weighted-continuity acceptance remains PASS; no reopening of #12/#17.
 - **Disposition:** outbound receipt reconciliation PASS; buyer outcome not observed; existing pipeline awaits buyer response; no further outreach or task duplication.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 05
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_05.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_05.md)
+- **Commit:** `cc6db963bda1493d73ec5dd3c100c50d5ccce1c7`; **blob/readback:** `1b325a2c76d8ea4ed8d85abc212e5ca23592dee8`.
+- **Exact payload SHA-256:** `e8b842af7d7430a92660ee899d19a0a4aaf0695e9f9b284bc2d6a848873990ce`.
+- **New signals:** UNDP Kenya M&E/MRV system RFP `UNDP-KEN-00769`, https://www.ungm.org/Public/Notice/316035, due 2026-10-13 09:00 SAST; UNDP Zambia data mapping/AI readiness RFP `UNDP-ZMB-00609`, https://www.ungm.org/Public/Notice/317509, due 2026-10-22 12:14 SAST. Exact keys/references absent from the active 943-key logical store, the unregistered earlier delta and the current 86-record ledger.
+- **Disposition:** both discovery-only and RAW_UNQUALIFIED; the Zambia RFP has a national-firm eligibility gate. No stage/graph growth, qualification or external contact. Manifest registration remains blocked.
