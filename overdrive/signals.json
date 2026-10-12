@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-11T19:42:44.593533+00:00",
+  "generated_at": "2026-10-12T01:12:34.095994+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -890,6 +890,30 @@
       "state": "HOLD",
       "status": "WAITING",
       "thread_id": "1a0fedc94775d4ff"
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "iSCOPE: verify the listing still accepts proposals through the authorized Upwork account; verify exact live-source proof/claims and whether a truthful relevant example exists; determine whether the $700 scope and separate hosting/API costs are viable. If the evidence gates pass, route the bounded proposal to PRI for review and external progression. Do not submit or imply qualification while these remain unresolved.",
+      "opportunity_key": "upwork.com|rag-crm-internal-assistant|022107920443968482841",
+      "priority": 8,
+      "routing_reason": "HOLD_PROOF_AND_ROUTE_CHECK",
+      "smallest_next_action": "iSCOPE: verify the listing still accepts proposals through the authorized Upwork account; verify exact live-source proof/claims and whether a truthful relevant example exists; determine whether the $700 scope and separate hosting/API costs are viable. If the evidence gates pass, route the bounded proposal to PRI for review and external progression. Do not submit or imply qualification while these remain unresolved.",
+      "state": "DISCOVERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "iSCOPE: only advance if an actual testable WhatsApp/GHL agent can be demonstrated from an authorized, source-bound runtime and the proposed scope can be delivered for the published budget without unsupported promises. Re-verify the live listing and authorized Upwork route; then seek PRI review. No external contact or application until those gates pass.",
+      "opportunity_key": "upwork.com|whatsapp-agent-sales-onboarding|022106762606906386464",
+      "priority": 8,
+      "routing_reason": "HOLD_LIVE_DEMO_AND_ROUTE_CHECK",
+      "smallest_next_action": "iSCOPE: only advance if an actual testable WhatsApp/GHL agent can be demonstrated from an authorized, source-bound runtime and the proposed scope can be delivered for the published budget without unsupported promises. Re-verify the live listing and authorized Upwork route; then seek PRI review. No external contact or application until those gates pass.",
+      "state": "DISCOVERED",
+      "status": "WAITING",
+      "thread_id": null
     },
     {
       "due_at": null,
@@ -1850,6 +1874,30 @@
       "routing_reason": "HOLD_AUTHENTICATED_ROUTE",
       "smallest_next_action": "HOLD automated execution until a current authenticated browser route is restored. The current Opera Browser Connector readback on 2026-10-09 returned BROWSER_NOT_CONNECTED. Do not create duplicate accounts/applications. Resume through the existing account/session only after authenticated-route evidence is available; a manual Owner route may still exist independently of this automation.",
       "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "upwork.com|rag-crm-internal-assistant|022107920443968482841": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "iSCOPE: verify the listing still accepts proposals through the authorized Upwork account; verify exact live-source proof/claims and whether a truthful relevant example exists; determine whether the $700 scope and separate hosting/API costs are viable. If the evidence gates pass, route the bounded proposal to PRI for review and external progression. Do not submit or imply qualification while these remain unresolved.",
+      "opportunity_key": "upwork.com|rag-crm-internal-assistant|022107920443968482841",
+      "priority": 8,
+      "routing_reason": "HOLD_PROOF_AND_ROUTE_CHECK",
+      "smallest_next_action": "iSCOPE: verify the listing still accepts proposals through the authorized Upwork account; verify exact live-source proof/claims and whether a truthful relevant example exists; determine whether the $700 scope and separate hosting/API costs are viable. If the evidence gates pass, route the bounded proposal to PRI for review and external progression. Do not submit or imply qualification while these remain unresolved.",
+      "state": "DISCOVERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "upwork.com|whatsapp-agent-sales-onboarding|022106762606906386464": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "iSCOPE: only advance if an actual testable WhatsApp/GHL agent can be demonstrated from an authorized, source-bound runtime and the proposed scope can be delivered for the published budget without unsupported promises. Re-verify the live listing and authorized Upwork route; then seek PRI review. No external contact or application until those gates pass.",
+      "opportunity_key": "upwork.com|whatsapp-agent-sales-onboarding|022106762606906386464",
+      "priority": 8,
+      "routing_reason": "HOLD_LIVE_DEMO_AND_ROUTE_CHECK",
+      "smallest_next_action": "iSCOPE: only advance if an actual testable WhatsApp/GHL agent can be demonstrated from an authorized, source-bound runtime and the proposed scope can be delivered for the published budget without unsupported promises. Re-verify the live listing and authorized Upwork route; then seek PRI review. No external contact or application until those gates pass.",
+      "state": "DISCOVERED",
       "status": "WAITING",
       "thread_id": null
     },
