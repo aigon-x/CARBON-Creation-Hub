@@ -2565,3 +2565,14 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **New source signals:** OPCW AI foresight/innovation SaaS (`OTSB-311207`), https://www.ungm.org/Public/Notice/317287, due 30 Oct 2026 01:00 SAST; WHO health-systems performance data/analytics/digital systems (`WHO-SHQ-RFP-26-3028-P-LTA`), https://www.ungm.org/Public/Notice/311212, extended deadline 18 Oct 2026 23:59 SAST and not open to individual bidders; FAO compliance/counterparty intelligence platform (`2026/CSAPC/CSFDD/138438`), https://www.ungm.org/Public/Notice/315709, due 14 Oct 2026 12:00 SAST with Basic FAO UNGM registration and portal-only submission.
 - **Dedupe:** all 3 exact URL keys/references/IDs absent from immutable base, two registered deltas, earlier unregistered three-row delta and current 86-record opportunity ledger.
 - **Disposition:** all RAW_UNQUALIFIED. No external action, no new delta or manifest update; zero logical-store growth. Full TOR, account readiness and eligibility remain open gates.
+
+
+### FORX same-run continuation — FORX-WAKE-20261012-025416Z-01 / item 14
+
+- **Continuation packet:** [FORX_WAKE_20261012_025416Z_14.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/FORX_WAKE_20261012_025416Z_14.md)
+- **Commit:** `b4ccbfb9d127e99dcc726936a73eff33bc73ab15`; **blob/readback:** `d19575a713d144b70746d3e78caa2427537c4b5a`.
+- **Exact payload SHA-256:** `3dac29eb8dcb7b97b8cfef56ddc8b4495c7e8974e2780d246b428e5a26144d29`.
+- **New source signals:** DBSA RFP176/2026, BI/data-analytics tool for two years, https://www.etenders.gov.za/home/Download?blobName=3ae5dba5-4c2b-48ee-a884-43089d2b81b5.pdf&downloadedFileName=RFP176.2026-BUSINESS+INTELLIGENCE+%26+DATA+ANALYTICS+TOOL+FOR+A+PERIOD+OF+TWO+%282%29+YEARS.pdf, due 16 Oct 2026 23:55 SAST; compulsory briefing was 2 Oct, so attendance must be proven. UNHCR MENA web/app development EOI/2026/003/MENA/PSP, https://www.ungm.org/Public/Notice/316449, due 22 Oct 2026 21:59 SAST; this is a future supplier-interest EOI, not a guaranteed contract.
+- **Dedupe:** both exact source keys/references/IDs absent from active base/registered deltas, previous unregistered delta and current 86-record ledger.
+- **Excluded:** Parliament RFQ 907/2026 closes on 12 Oct but exact time/status could not be verified; not counted as actionable.
+- **Disposition:** 2 new discovery signals; 0 candidate delta rows; 0 logical growth; 0 qualifications/bids/revenue. Manifest registration remains blocked.
