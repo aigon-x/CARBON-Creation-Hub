@@ -2387,3 +2387,30 @@ The ten past-due claims remain **WAITING / external_action_ready=false**. This r
 - **Persistence/readback:** appended to the existing Intake Index; fetch the current content hash before relying on this section.
 - **Safety:** no duplicate accounts, duplicate follow-ups, OTP collection, overclaiming qualification, or manufactured closure.
 - **Disposition:** current evidence refined; claim lifecycle remains OPEN/WAITING until its exact gate changes or a governed terminal status is evidenced.
+
+
+---
+
+## LIBRARIAN QUEUE-DRAIN WAKE — BEHAVIORAL UPTAKE UNVERIFIED — 2026-10-12
+
+### Observed state
+- Existing `FIRST BREATH — LIBRARIANS` automation ID `6ac7c95aa91c819182be1e98e1404b95` is enabled and retains its original hourly schedule. Latest readback reports `last_run_time=2026-10-12T00:35:09.844100Z`, `updated_at=2026-10-12T00:35:32.566747Z`.
+- Current saved prompt readback does **not** contain the new explicit phrase `CATEGORY B OWNER DIRECTIVE — DRAIN THE EXISTING ROOT/INTAKE QUEUE` or its detailed priority-drain clause. An attempted saved-prompt update was rejected by the scheduler plan limitation on hourly-task prompt mutation. No schedule was changed or duplicate automation created.
+- The existing Root Intake queue-drain directive is persisted in `AMX/ROOT/INTAKE/CATEGORY_B_LIBRARIAN_INTAKE_QUEUE_DRAIN_20261012.md`; current canonical Intake Index addenda contain the source-census and correction instructions.
+- On the subsequent inspect, `overdrive/claims.json` remained blob `9be10bfece528392d990a9db969cd1f8726d484d`, generated `2026-10-11T19:42:44.595798Z`; `overdrive/opportunities.json` remained blob `85c769241258cc4ed774a6a0c5f7420323cf3096`; `overdrive/state.json` remained blob `5593ab9dcb04914951aa4ba574bb862af1bc5557`. No fresh Librarian run-specific output/receipt was found on the inspected GitHub/Notion surfaces.
+
+### Exact interpretation
+**WAKE OBSERVED; CURRENT-RUN EXECUTION / DIRECTIVE CONSUMPTION = NOT VERIFIED.** This is not proof the automation performed no work outside the inspected surfaces; it is proof that no qualifying durable receipt/readback was found here. Do not treat task last_run_time alone as drainage, synchronization, or acceptance.
+
+### Next lawful recovery action
+MASTER/COFFEE/LIBRARIAN must resume by reading the current canonical Intake Index and this directive; produce a compact run receipt with the source snapshot, item-level deltas/actions, affected receipts and readback; then continue every executable obligation. ROOT/T-GOV must resolve the hourly prompt-propagation limitation through an existing supported governance/worker instruction path. Do not create a second scheduler or silently change cadence. In parallel, do not let an unverified Librarian wake block existing PRI/iSCOPE/technical owners from progressing their own lawful items.
+
+### Directive 23 accountability
+- **Expected outcome:** explicit queue-drain instruction is behaviorally consumed by the one existing Librarian and each run leaves an attributable receipt.
+- **Owner:** MASTER/LIBRARIAN for execution/receipt; ROOT/T-GOV for supported instruction propagation and continuity acceptance.
+- **Required action:** canonical read → four isolated mandate passes → item-level disposition/execution → persist → independent readback → continue.
+- **Dependency:** hourly saved-prompt mutation unsupported; no current-run output receipt identified on inspected surfaces.
+- **Acceptance evidence:** exact run ID/timestamp, source SHAs, pass-by-pass results, items materially advanced, receipt/output hash, independent readback; no claim based on wake timestamp alone.
+- **Persistence/readback:** this report appended here; the linked existing Issue #31 also receives the current failure-to-prove-uptake record.
+- **Safety/preservation:** maintain hourly schedule; no duplicate task/queue; do not mark claims closed without evidence; preserve finance/security/legal/provider gates.
+- **Disposition:** **OPEN — BEHAVIORAL UPTAKE UNVERIFIED; GLOBAL INTAKE NOT CLEARED.**
