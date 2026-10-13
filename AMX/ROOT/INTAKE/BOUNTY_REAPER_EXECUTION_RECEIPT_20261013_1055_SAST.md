@@ -56,3 +56,9 @@ Q1: UNKNOWN, NOT ZERO
 SUBMISSIONS: NONE ESTABLISHED
 AWARDS/PAYMENT: NONE ESTABLISHED
 SAFETY: NO LIVE EXPLOITATION, PROHIBITED TESTING, FUND MOVEMENT, SPEND, CREDENTIAL EXPANSION, OR PUBLIC DISCLOSURE
+
+## Post-commit ROOT routing attempt
+
+- Attempted to deliver a model-visible parent/ROOT notification referencing this receipt and the Tracker/scheduler blockers.
+- Result: `NOT_FOUND: HTTP error prior to action invocation; HTTPException 404: Action not found`.
+- Truth boundary: no direct parent notification was delivered. The existing Root Intake receipt and Intake Index remain the persisted fallback. ROOT recovery is still required; do not infer connector restoration, queue reconciliation or scheduler reactivation.
