@@ -2635,3 +2635,13 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **ROOT routing:** existing issue [#31](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31), comment `6139633113`, independently read back.
 - **Scope:** canonical D04 supersession drift; stale issue-body ledger projection versus current 86/86 source; current tick/claim-state continuity and exact owner/acceptance requirements.
 - **Disposition:** routed, not yet governed/closed. D04 remains release-gated; issue #31 remains open; current run/flight landing is not claimed.
+
+
+## Category A — Segment 05 dynamic-flight resume / context-bloat and authorization-label drift — 2026-10-13
+
+- **Flight:** `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`, segment 05; corrected authorization `AMX-AUTH-20261013-063056Z-SEG05`; status OPEN / IN-FLIGHT.
+- **Evidence artifact:** [CURRENT_TRANSCRIPT_FLIGHT05_DRIFT_DELTA_20261013.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CURRENT_TRANSCRIPT_FLIGHT05_DRIFT_DELTA_20261013.md); commit `22ab288d888d9959e81f688e6f0f3e53ce2bb560`.
+- **New evidence:** prior segment 04 was still open, so the same flight was resumed rather than duplicated. A RESUME event's time-bearing authorization label did not match its recorded UTC timestamp; the original event is preserved and an explicit correction event supersedes that label.
+- **Runtime drift:** excessive tool-schema inspection/context handling delayed a straightforward checkpoint-and-route operation after the Owner explicitly objected to latency. Corrective rule: minimum preflight, early durable checkpoint, compact ROOT handoff, then resume execution.
+- **Readback boundary:** an immediate existing Librarian wake was requested; request success is not execution evidence. Fresh output and separate MASTER/ROOT-TGOV/T-COD/T-MED receipts remain unverified. Do not land until postflight deep sync and independent readback.
+- **Disposition:** routed for ROOT/T-GOV review; full Matrix sync and segment-05 landing remain OPEN.
