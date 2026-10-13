@@ -39,7 +39,7 @@ class FlightRegisterValidationTests(unittest.TestCase):
     def test_index_cannot_claim_unregistered_flight(self):
         raw, index = fixture(
             [event("launch-1", "LAUNCH")],
-            "- **Latest continuity checkpoint:** event `launch-1`, blob `BLOB_SHA`\\n"
+            "- **Latest continuity checkpoint:** event `launch-1`, blob `BLOB_SHA`\n"
             "- **Existing flight:** `FORX-UNREGISTERED`, segment 04",
         )
         errors = validate(raw, index)
