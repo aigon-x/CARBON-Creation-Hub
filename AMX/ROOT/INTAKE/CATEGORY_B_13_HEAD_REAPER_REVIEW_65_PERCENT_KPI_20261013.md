@@ -58,6 +58,6 @@
 - Existing governance issue #34 fetched back with title `CATEGORY A — 65% Matrix-wide money-in KPI; supersedes 45% / 33% / 25%`, body says current target 65%, and points to the current Blue State and 65% detail artifact.
 - 65% detail artifact `98003d58dc606622dfe7eb5c330f480373d178fd` fetched back exactly.
 - Registry v1.2 root recomputed as `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`; all 12 mandate payload digests remain unchanged and match.
-- Intake Index was updated and independently fetched back; the next step is to route this final report/index blob pair to existing ROOT issue #31 and fetch back its comment.
+- Intake Index was updated and independently fetched back. Existing ROOT issue #31 comment `6146942867` was posted and fetched back exactly, pointing to the current report and Index blobs.
 - Boundary: policy merge and governance surface alignment are verified; per-worker behavioral adoption remains UNPROVEN; money-in is `NONE CLAIMED`.
 
