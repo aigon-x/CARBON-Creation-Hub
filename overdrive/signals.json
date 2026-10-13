@@ -567,11 +567,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
+      "next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
+      "smallest_next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-13T12:40:43.391680+00:00",
+  "generated_at": "2026-10-13T14:32:40.451735+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1748,11 +1748,11 @@
     "scalearmy.com|ai-implementation-specialist|remote-south-africa": {
       "due_at": null,
       "due_now": false,
-      "next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
+      "next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
+      "smallest_next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
