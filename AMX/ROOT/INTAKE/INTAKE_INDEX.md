@@ -2628,3 +2628,10 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 
 - New concrete observation in [Category A dynamic-flight continuity report](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_A_DYNAMIC_FLIGHT_CONTINUITY_AND_RUNTIME_DRIFT_20261012.md): segment 03's changes were committed and read back but its LANDING event was not present before segment 04 resumed. This is being preserved as a late-landing reconciliation, with event-entry time and actual postflight-readback time distinct.
 - Segment 04's immediate Librarian wake was requested, but subsequent scheduler readback showed unchanged last-run time and next_run_time=null; it remains IN_FLIGHT / awaiting an attributable output receipt.
+
+## Current Category A drift evidence — 2026-10-13
+
+- **Persisted evidence:** [LIBRARIAN_DRIFT_EVIDENCE_20261013_0816SAST.md](LIBRARIAN_DRIFT_EVIDENCE_20261013_0816SAST.md), blob `e0dd42fe6bedafe9cf8634f9d20235ce2a60b169`.
+- **ROOT routing:** existing issue [#31](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31), comment `6139633113`, independently read back.
+- **Scope:** canonical D04 supersession drift; stale issue-body ledger projection versus current 86/86 source; current tick/claim-state continuity and exact owner/acceptance requirements.
+- **Disposition:** routed, not yet governed/closed. D04 remains release-gated; issue #31 remains open; current run/flight landing is not claimed.
