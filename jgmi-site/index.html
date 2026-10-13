@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101714">
+<meta name="description" content="JGMI by Carbon — plant hire, roadworks, civil engineering, construction management, heavy equipment, utility infrastructure and project support across South Africa.">
+<title>JGMI by Carbon | Plant, Civils & Infrastructure</title>
+<style>
+:root{--ink:#101714;--ink2:#17221d;--panel:#1b2922;--panel2:#22332a;--paper:#f3f3ed;--white:#fff;--muted:#aab6ad;--line:rgba(232,240,232,.13);--amber:#e9ad37;--amber2:#ffd16a;--mint:#87d4a5;--green:#1c5a42;--radius:22px;--shadow:0 18px 56px rgba(0,0,0,.22);--max:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--ink);color:var(--paper);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--amber2);outline-offset:3px}
+img{max-width:100%;display:block}
+.wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:800;color:var(--amber2)}
+.eyebrow:before{content:"";width:24px;height:2px;background:var(--amber)}
+.section{padding:104px 0}
+.section-light{background:var(--paper);color:var(--ink)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}
+.section-head h2{font-size:clamp(2rem,4vw,3.45rem);line-height:1.04;letter-spacing:-.045em;max-width:780px;margin:13px 0 0}
+.section-head p{max-width:430px;color:#9daaa1;margin:0}
+.section-light .section-head p{color:#626e65}
+.mini{font-size:.78rem;color:var(--muted)}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:#d4ded5;font-size:.76rem;font-weight:700}
+.dot{width:7px;height:7px;display:inline-block;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(135,212,165,.12)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;border-radius:8px;padding:13px 19px;font-weight:800;font-size:.9rem;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--amber);color:#171a12;box-shadow:0 10px 22px rgba(233,173,55,.15)}
+.btn-primary:hover{background:var(--amber2)}
+.btn-ghost{border-color:rgba(255,255,255,.28);color:white;background:rgba(255,255,255,.035)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-small{min-height:40px;padding:9px 13px;font-size:.81rem}
+.topline{border-bottom:1px solid var(--line);background:#0c100e;font-size:.73rem;color:#b7c1b8}
+.topline .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 0}
+.topline-left{display:flex;gap:18px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:50;background:rgba(16,23,20,.9);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;min-width:215px}
+.brand-mark{width:40px;height:40px;border-radius:10px;background:var(--amber);display:grid;place-items:center;color:#141a14;font-weight:1000;letter-spacing:-.06em;font-size:1.05rem;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.brand-name{font-weight:900;font-size:1rem;letter-spacing:.025em;line-height:1.12}
+.brand-name small{display:block;color:var(--muted);font-size:.64rem;letter-spacing:.17em;margin-top:5px;text-transform:uppercase;font-weight:700}
+.nav-links{display:flex;align-items:center;gap:23px;font-size:.82rem;color:#d2d9d2}
+.nav-links a:hover{color:var(--amber2)}
+.nav-actions{display:flex;gap:9px;align-items:center}
+.menu-toggle{display:none;border:1px solid var(--line);background:transparent;color:white;width:43px;height:43px;border-radius:9px;font-size:1.25rem}
+.hero{position:relative;overflow:hidden;min-height:680px;padding:92px 0 80px;background:radial-gradient(ellipse at 73% 42%,rgba(65,116,75,.22),transparent 42%),linear-gradient(135deg,#111914 0%,#16241c 64%,#101714 100%)}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:62px 62px;mask-image:linear-gradient(90deg,transparent,black 55%)}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:50px}
+.hero-copy{position:relative;z-index:3}
+.hero .eyebrow{margin-bottom:20px}
+.hero h1{font-size:clamp(3rem,6.6vw,6.15rem);line-height:.96;letter-spacing:-.075em;margin:0;max-width:780px}
+.hero h1 span{color:var(--amber)}
+.hero-lead{font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.65;color:#bdc8bf;max-width:560px;margin:26px 0 28px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-proof{display:flex;gap:24px;flex-wrap:wrap;margin-top:32px;color:#bac6bd;font-size:.79rem}
+.hero-proof span{display:flex;gap:8px;align-items:center}
+.hero-visual{min-height:486px;position:relative;border:1px solid rgba(255,255,255,.14);border-radius:18px;overflow:hidden;background:#1c2b22;box-shadow:0 35px 90px rgba(0,0,0,.3)}
+.hero-photo{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,20,15,.22),rgba(13,20,15,.03)),linear-gradient(0deg,rgba(10,15,12,.76),transparent 62%),url('https://images.pexels.com/photos/1579356/pexels-photo-1579356.jpeg?auto=compress&cs=tinysrgb&w=1800') center/cover no-repeat;filter:saturate(.8)}
+#terrain{position:absolute;inset:0;width:100%;height:100%;z-index:1;opacity:.8}
+.visual-stamp{position:absolute;z-index:2;top:20px;left:20px;display:flex;align-items:center;gap:9px;background:rgba(11,17,13,.7);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(9px);border-radius:8px;padding:9px 12px;font-size:.68rem;text-transform:uppercase;letter-spacing:.13em;font-weight:800}
+.visual-coordinate{position:absolute;top:23px;right:23px;z-index:2;text-align:right;font-size:.67rem;letter-spacing:.12em;color:#dce6dd;text-transform:uppercase}
+.visual-bottom{position:absolute;z-index:2;bottom:0;left:0;right:0;padding:26px;display:flex;justify-content:space-between;align-items:end;gap:16px}
+.visual-bottom h3{font-size:1.55rem;margin:0;letter-spacing:-.035em}
+.visual-bottom p{font-size:.8rem;color:#c0cbc1;margin:5px 0 0}
+.visual-ring{width:72px;height:72px;border:1px solid rgba(233,173,55,.8);border-radius:50%;display:grid;place-items:center;color:var(--amber2);font-size:.66rem;text-align:center;line-height:1.2;transform:rotate(-10deg);flex-shrink:0}
+.statbar{position:relative;z-index:3;background:var(--amber);color:#1c2118}
+.stats{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:26px 24px;border-right:1px solid rgba(20,26,18,.2)}
+.stat:last-child{border-right:0}
+.stat strong{display:block;font-size:1.65rem;line-height:1.2;letter-spacing:-.05em}
+.stat span{display:block;font-size:.76rem;font-weight:700;opacity:.8;margin-top:6px}
+.intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.intro-statement{font-size:clamp(1.55rem,3vw,2.65rem);line-height:1.22;letter-spacing:-.045em;margin:18px 0}
+.intro-statement span{color:var(--green)}
+.intro-body{color:#515d54;font-size:1rem}
+.intro-notes{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:26px}
+.note-card{border:1px solid #d9ded5;padding:18px;border-radius:12px;background:#fbfbf7}
+.note-card b{display:block;font-size:.88rem;margin-bottom:5px}
+.note-card span{font-size:.78rem;color:#687269;line-height:1.55;display:block}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.service-card{min-height:260px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(150deg,rgba(255,255,255,.052),rgba(255,255,255,.016));padding:25px;display:flex;flex-direction:column;transition:transform .25s,border-color .25s,background .25s}
+.service-card:hover{transform:translateY(-4px);border-color:rgba(233,173,55,.55);background:linear-gradient(150deg,rgba(233,173,55,.07),rgba(255,255,255,.02))}
+.icon-box{width:48px;height:48px;border-radius:11px;background:rgba(233,173,55,.12);color:var(--amber2);display:grid;place-items:center;margin-bottom:24px}
+.icon-box svg{width:26px;height:26px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.service-card h3{font-size:1.15rem;line-height:1.25;margin:0 0 10px;letter-spacing:-.02em}
+.service-card p{font-size:.85rem;color:#adbbb0;margin:0 0 17px;flex:1}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.67rem;color:#cfdbd1;border:1px solid var(--line);border-radius:5px;padding:4px 7px}
+.sub-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.sub-strip span{font-size:.77rem;color:#d2ddd4;padding:9px 12px;background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:6px}
+.equip-wrap{display:grid;grid-template-columns:.75fr 1.25fr;gap:42px;align-items:start}
+.equip-lead{position:sticky;top:112px}
+.equip-lead h2{font-size:clamp(2.15rem,4vw,3.25rem);line-height:1.02;letter-spacing:-.055em;margin:14px 0 20px}
+.equip-lead p{color:#b1beb4}
+.filter-bar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}
+.filter-btn{border:1px solid var(--line);background:transparent;color:#c5d0c7;padding:9px 12px;border-radius:7px;font-size:.76rem;font-weight:800;cursor:pointer}
+.filter-btn.active,.filter-btn:hover{background:var(--amber);color:#151a13;border-color:var(--amber)}
+.equip-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.equip-item{padding:20px;border:1px solid var(--line);background:#17221c;border-radius:12px;min-height:160px}
+.equip-item[hidden]{display:none}
+.equip-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.equip-number{font-size:.66rem;letter-spacing:.1em;color:var(--amber2);font-weight:900}
+.equip-item h3{font-size:1rem;margin:12px 0 7px}
+.equip-item p{font-size:.78rem;color:#aebbb2;margin:0}
+.equip-item .stock{font-size:.65rem;font-weight:800;color:#9bdda9}
+.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.project-card{background:#fff;border:1px solid #dce1d8;color:var(--ink);border-radius:16px;padding:28px;position:relative;overflow:hidden;min-height:280px}
+.project-card.dark{background:#18221c;color:var(--paper);border-color:rgba(255,255,255,.1)}
+.project-card .status{display:inline-flex;align-items:center;gap:7px;font-size:.67rem;text-transform:uppercase;letter-spacing:.1em;font-weight:900;color:#2d6b49;background:#e2f2e5;padding:6px 9px;border-radius:4px}
+.project-card.dark .status{color:#ffcf70;background:rgba(233,173,55,.13)}
+.project-card h3{font-size:1.5rem;line-height:1.1;letter-spacing:-.04em;margin:24px 0 10px;max-width:500px}
+.project-card p{font-size:.86rem;color:#616d63;max-width:520px}
+.project-card.dark p{color:#afbbb1}
+.project-meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:23px;padding-top:16px;border-top:1px solid #e4e7e0;font-size:.75rem;font-weight:800}
+.project-card.dark .project-meta{border-color:var(--line)}
+.project-meta span{display:flex;gap:6px;align-items:center}
+.project-ghost{position:absolute;right:-8px;bottom:-48px;font-size:8rem;line-height:1;letter-spacing:-.1em;color:rgba(20,43,27,.07);font-weight:1000;pointer-events:none}
+.project-card.dark .project-ghost{color:rgba(233,173,55,.08)}
+.pipeline-note{margin-top:14px;font-size:.78rem;color:#606d63}
+.project-card.dark .pipeline-note{color:#aab8ad}
+.ops-section{background:#101714;position:relative;overflow:hidden}
+.ops-section:before{content:"";position:absolute;right:-200px;top:70px;width:560px;height:560px;border-radius:50%;background:rgba(35,102,68,.16);filter:blur(80px)}
+.ops-layout{display:grid;grid-template-columns:.73fr 1.27fr;gap:42px;position:relative}
+.ops-copy h2{font-size:clamp(2.1rem,4vw,3.45rem);line-height:1.02;letter-spacing:-.06em;margin:15px 0 21px}
+.ops-copy p{color:#b7c2b9}
+.workflow{display:grid;gap:9px;margin-top:25px}
+.workflow-step{display:grid;grid-template-columns:35px 1fr;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:11px 0}
+.workflow-step i{width:30px;height:30px;border:1px solid rgba(233,173,55,.45);border-radius:50%;color:var(--amber2);display:grid;place-items:center;font-style:normal;font-size:.72rem;font-weight:900}
+.workflow-step b{font-size:.85rem;display:block}
+.workflow-step span{font-size:.73rem;color:#95a39a;display:block}
+.console{background:#e9eee5;color:var(--ink);border-radius:16px;padding:17px;box-shadow:var(--shadow);min-width:0}
+.console-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 4px 18px}
+.console-title{display:flex;gap:10px;align-items:center;font-size:.84rem;font-weight:900}
+.console-mark{width:28px;height:28px;background:var(--ink);color:var(--amber);display:grid;place-items:center;border-radius:7px;font-size:.72rem}
+.demo-badge{color:#3e6a4f;background:#d8ebd9;border-radius:4px;padding:5px 8px;font-size:.61rem;letter-spacing:.1em;font-weight:900}
+.console-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;background:#dce2d8;padding:5px;border-radius:8px}
+.console-tab{border:0;background:transparent;border-radius:5px;padding:10px 6px;color:#566257;font-weight:800;font-size:.73rem;cursor:pointer}
+.console-tab.active{background:#fff;color:#142119;box-shadow:0 2px 7px rgba(22,44,27,.08)}
+.console-panel{display:none;padding:21px 7px 8px}
+.console-panel.active{display:block}
+.console-heading{display:flex;justify-content:space-between;gap:14px;align-items:start;margin-bottom:18px}
+.console-heading h3{font-size:1.2rem;margin:0;line-height:1.2;letter-spacing:-.035em}
+.console-heading p{font-size:.75rem;color:#6c786e;margin:6px 0 0}
+.demo-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field label{display:block;font-size:.67rem;color:#657166;font-weight:800;margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;background:#fff;border:1px solid #d3dbd1;border-radius:6px;color:#162019;padding:10px 11px;font-size:.8rem;min-width:0}
+.field textarea{min-height:78px;resize:vertical}
+.field.full{grid-column:1/-1}
+.quote-total{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px;background:#15251a;color:white;border-radius:8px;margin-top:14px}
+.quote-total span{font-size:.76rem;color:#c0cfc2}
+.quote-total strong{font-size:1.45rem;color:var(--amber2);letter-spacing:-.04em}
+.console-actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap}
+.console-actions small{font-size:.68rem;color:#657166}
+.demo-table{width:100%;border-collapse:collapse;font-size:.75rem}
+.demo-table th{text-align:left;font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:#657166;padding:10px 8px;border-bottom:1px solid #d5ddd3}
+.demo-table td{padding:13px 8px;border-bottom:1px solid #d5ddd3;vertical-align:top}
+.badge-demo{display:inline-block;padding:4px 6px;border-radius:4px;background:#f7e8c6;color:#795310;font-size:.62rem;font-weight:900}
+.badge-demo.green{background:#d8eedc;color:#28603b}
+.badge-demo.red{background:#f9dddd;color:#8a3030}
+.tender-checks{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.tender-check{display:flex;gap:9px;align-items:start;padding:12px;background:#fff;border:1px solid #d8dfd5;border-radius:7px;font-size:.76rem}
+.tender-check i{color:#3b8855;font-style:normal;font-weight:1000}
+.tender-check span small{display:block;color:#748075;margin-top:3px;font-size:.65rem}
+.tender-callout{padding:14px;border-left:3px solid var(--amber);background:#f8f0dc;color:#5d4c25;font-size:.75rem;margin-top:13px}
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cap-card{border:1px solid #d8ded5;border-radius:12px;padding:22px;background:#fff}
+.cap-card h3{font-size:1rem;margin:12px 0 8px}
+.cap-card p{font-size:.8rem;color:#5e6b61;margin:0}
+.cap-icon{width:35px;height:35px;background:#e6f1e7;border-radius:8px;display:grid;place-items:center;color:#275c3d;font-weight:1000}
+.cap-footer{font-size:.77rem;color:#6d786d;margin-top:22px}
+.pricing-section{background:linear-gradient(135deg,#1a2920,#101714 62%);position:relative;overflow:hidden}
+.pricing-section:after{content:"";position:absolute;right:-160px;bottom:-230px;width:520px;height:520px;border:1px solid rgba(233,173,55,.12);border-radius:50%;box-shadow:0 0 0 60px rgba(233,173,55,.025),0 0 0 120px rgba(233,173,55,.02)}
+.pricing-layout{position:relative;z-index:1;display:grid;grid-template-columns:.93fr 1.07fr;gap:48px;align-items:start}
+.pricing-intro h2{font-size:clamp(2.5rem,5vw,4.4rem);line-height:.99;letter-spacing:-.065em;margin:15px 0 22px}
+.pricing-intro h2 span{color:var(--amber)}
+.pricing-intro p{color:#b7c5b9;max-width:480px}
+.price-compare{display:flex;gap:13px;align-items:center;margin-top:30px;padding:18px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025)}
+.price-compare .strike{color:#91a095;font-size:1.4rem;text-decoration:line-through;font-weight:800}
+.price-compare .arrow{color:var(--amber);font-size:1.5rem}
+.price-compare .family{color:var(--amber2);font-size:1.45rem;font-weight:1000;letter-spacing:-.04em}
+.price-compare small{display:block;color:#a8b6aa;font-size:.68rem;font-weight:600;letter-spacing:0}
+.pricing-card{background:#f3f3ed;color:#151d17;border-radius:17px;padding:27px;box-shadow:0 25px 90px rgba(0,0,0,.27)}
+.price-top{display:flex;justify-content:space-between;align-items:start;gap:15px;border-bottom:1px solid #dbe0d8;padding-bottom:19px;margin-bottom:8px}
+.price-top h3{margin:0;font-size:1.25rem;letter-spacing:-.04em}
+.price-top p{font-size:.73rem;color:#6b766c;margin:5px 0 0}
+.discount-badge{white-space:nowrap;background:#d9ecdb;color:#2d6943;border-radius:4px;padding:7px 9px;font-size:.68rem;font-weight:1000}
+.fee-row{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;padding:10px 0;border-bottom:1px solid #e0e4dd;font-size:.78rem}
+.fee-row span{color:#556156}
+.fee-row strong{font-size:.8rem;white-space:nowrap}
+.fee-total{display:grid;grid-template-columns:1fr auto;align-items:center;gap:14px;padding:16px 0 5px}
+.fee-total span{font-size:.84rem;font-weight:900}
+.fee-total strong{font-size:1.08rem;text-decoration:line-through;color:#737d73}
+.discount-line{display:flex;justify-content:space-between;gap:14px;color:#2e7548;padding:4px 0 14px;font-size:.8rem;font-weight:900}
+.pay-total{padding:16px 17px;background:#15231a;border-radius:9px;color:white;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.pay-total small{display:block;color:#b0c1b3;font-size:.7rem}
+.pay-total strong{display:block;font-size:2rem;letter-spacing:-.06em;color:var(--amber2);line-height:1.15}
+.pay-total .once{font-size:.71rem;color:#c7d4c8;text-align:right}
+.price-cta{display:grid;gap:10px;margin-top:15px}
+.price-cta .btn{width:100%}
+.price-note{font-size:.7rem;color:#657166;line-height:1.55;margin:13px 0 0}
+.pricing-sources{margin-top:18px;font-size:.7rem;color:#8e9d91}
+.pricing-sources summary{cursor:pointer;color:#c1cec3;font-weight:700}
+.pricing-sources a{color:#f2c45c;text-decoration:underline;text-underline-offset:3px}
+.launch-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}
+.launch-step{padding:17px 16px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.025)}
+.launch-step b{display:block;font-size:.83rem;margin:10px 0 5px}
+.launch-step span{display:block;font-size:.71rem;color:#aab8ac}
+.launch-step em{font-size:.68rem;font-style:normal;color:var(--amber2);font-weight:900;letter-spacing:.1em}
+.contact{background:#e7ebe3;color:var(--ink);padding:75px 0}
+.contact-layout{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px}
+.contact h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.03;letter-spacing:-.055em;margin:11px 0}
+.contact p{color:#5f6c61;margin:0;max-width:700px}
+.contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+footer{padding:28px 0 36px;background:#0b100d;color:#a6b2a8}
+.footer-top{display:flex;justify-content:space-between;gap:25px;align-items:start;padding-bottom:23px;border-bottom:1px solid var(--line)}
+.footer-brand{font-size:.88rem;font-weight:900;color:#edf2eb}
+.footer-brand small{display:block;font-weight:500;color:#86958a;font-size:.72rem;margin-top:5px}
+.footer-links{display:flex;gap:17px;flex-wrap:wrap;font-size:.74rem}
+.footer-bottom{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.68rem;color:#78877c;padding-top:18px}
+.footer-bottom a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:980px){.nav-links{gap:14px}.nav-links a:nth-child(4),.nav-links a:nth-child(5){display:none}.hero-inner{grid-template-columns:1fr .86fr;gap:25px}.hero-visual{min-height:440px}.section{padding:82px 0}.service-grid{grid-template-columns:repeat(2,1fr)}.intro-grid{gap:35px}.pricing-layout{gap:28px}.ops-layout{gap:28px}.equip-wrap{gap:26px}}
+@media(max-width:760px){.wrap{width:min(var(--max),calc(100% - 30px))}.topline .wrap{font-size:.66rem}.topline-left span:nth-child(3){display:none}.nav{height:66px}.brand{min-width:0}.brand-name{font-size:.9rem}.nav-actions .btn{display:none}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:#101714;border-bottom:1px solid var(--line);padding:16px 22px 20px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a,.nav-links a:nth-child(4),.nav-links a:nth-child(5){display:block;padding:12px 0;border-bottom:1px solid var(--line)}.hero{padding:60px 0 52px;min-height:0}.hero-inner{grid-template-columns:1fr;gap:35px}.hero h1{font-size:clamp(3.15rem,14vw,5rem)}.hero-visual{min-height:390px}.hero-proof{gap:12px}.stats{grid-template-columns:repeat(2,1fr)}.stat{padding:20px;border-bottom:1px solid rgba(20,26,18,.2)}.stat:nth-child(2){border-right:0}.stat:nth-child(3),.stat:nth-child(4){border-bottom:0}.stat strong{font-size:1.45rem}.section{padding:68px 0}.section-head{display:block;margin-bottom:28px}.section-head p{margin-top:18px}.intro-grid,.equip-wrap,.ops-layout,.pricing-layout{grid-template-columns:1fr;gap:28px}.intro-notes{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:1fr}.service-card{min-height:0}.equip-lead{position:static}.equip-list{grid-template-columns:1fr 1fr}.projects-grid{grid-template-columns:1fr}.project-card{min-height:250px}.cap-grid{grid-template-columns:1fr 1fr}.console{padding:11px}.console-tabs{grid-template-columns:repeat(2,1fr)}.console-tab{padding:11px 4px}.console-panel{padding:17px 2px 4px}.demo-table{font-size:.67rem}.demo-table th,.demo-table td{padding:10px 5px}.tender-checks{grid-template-columns:1fr}.launch-steps{grid-template-columns:repeat(2,1fr)}.contact-layout{grid-template-columns:1fr}.contact-actions{margin-top:8px}.footer-top{display:block}.footer-links{margin-top:18px}}
+@media(max-width:430px){.intro-notes,.equip-list,.cap-grid{grid-template-columns:1fr}.hero-visual{min-height:335px}.visual-bottom{padding:19px}.visual-bottom h3{font-size:1.27rem}.visual-ring{width:61px;height:61px;font-size:.6rem}.demo-fields{grid-template-columns:1fr}.field.full{grid-column:auto}.pricing-card{padding:18px}.fee-row{gap:8px;font-size:.72rem}.fee-row strong{font-size:.72rem}.pay-total strong{font-size:1.8rem}.price-top{display:block}.discount-badge{display:inline-block;margin-top:10px}.launch-steps{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="wrap"><div class="topline-left"><span>JGMI BY CARBON</span><span>PLANT · CIVILS · INFRASTRUCTURE</span><span>South Africa · Multi-region projects</span></div><span>Built around the job. Designed for the next one.</span></div></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="JGMI by Carbon home"><span class="brand-mark">JG</span><span class="brand-name">JGMI <span style="color:var(--amber)">by Carbon</span><small>Plant · Civils · Projects</small></span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#equipment">Equipment</a><a href="#projects">Project profile</a><a href="#operations">Operations desk</a><a href="#tenders">Tender readiness</a>
+    </nav>
+    <div class="nav-actions"><a class="btn btn-primary btn-small" href="#quote">Request a quote <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button></div>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow">Plant capacity. Civil delivery.</div>
+      <h1>Heavy capability.<br><span>Clear delivery.</span></h1>
+      <p class="hero-lead">Plant hire, roadworks, civil engineering and construction support for contractors, developers, municipalities and infrastructure projects across South Africa.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#quote">Scope a project <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#services">Explore capabilities <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-proof"><span><i class="dot"></i> Heavy equipment and site support</span><span><i class="dot"></i> Project-based mobilisation</span><span><i class="dot"></i> Direct commercial contact</span></div>
+    </div>
+    <div class="hero-visual" aria-label="Construction site visual with an animated 3D technical mesh">
+      <div class="hero-photo"></div><canvas id="terrain" aria-hidden="true"></canvas>
+      <div class="visual-stamp"><i class="dot"></i> Infrastructure response · 01</div>
+      <div class="visual-coordinate">JGMI / CARBON<br>28°S · 24°E / ZA</div>
+      <div class="visual-bottom"><div><h3>From site prep to handover.</h3><p>Plant, people, process and project visibility.</p></div><div class="visual-ring">FIELD<br>READY</div></div>
+    </div>
+  </div>
+</section>
+<section class="statbar" aria-label="Business capabilities at a glance"><div class="wrap stats">
+  <div class="stat"><strong>20+</strong><span>Major plant units reported in the fleet</span></div>
+  <div class="stat"><strong>Multi-sector</strong><span>Roads, civils, construction and utilities</span></div>
+  <div class="stat"><strong>National</strong><span>Project response across South Africa</span></div>
+  <div class="stat"><strong>End-to-end</strong><span>Scope, quote, mobilise, track and close</span></div>
+</div></section>
+<section class="section section-light" id="profile">
+  <div class="wrap intro-grid">
+    <div><div class="eyebrow" style="color:var(--green)">A stronger commercial front</div><p class="intro-statement">Serious site capability deserves a <span>serious business presence.</span></p></div>
+    <div class="intro-body">
+      <p>JGMI supports work where equipment availability, site coordination, dependable delivery and clean documentation matter. The capability spans plant and truck hire, road and civil works, construction management, grounds maintenance and utility infrastructure.</p>
+      <p>This commercial profile is designed for the people who need to assess a contractor before they make contact: procurement teams, project managers, engineers, developers and principal contractors. It makes the service offering easier to understand, enquire about and evaluate.</p>
+      <div class="intro-notes">
+        <div class="note-card"><b>Capability in one place</b><span>Services, plant categories, locations and project context are easy to scan.</span></div>
+        <div class="note-card"><b>Built for procurement</b><span>Structured capability information supports RFQs, vendor reviews and tender preparation.</span></div>
+        <div class="note-card"><b>Commercial follow-through</b><span>Quote requests, work records, invoice packs and follow-ups can follow one defined process.</span></div>
+        <div class="note-card"><b>Expandable by design</b><span>A clean digital foundation can grow into operational tools when the business is ready.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">What JGMI does</div><h2>One delivery partner.<br>Multiple ways to deploy.</h2></div><p>Hire equipment on its own, secure plant and operator support, or discuss a wider site package. Final scope and availability are confirmed per project.</p></div>
+    <div class="service-grid">
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M3 18h18M5 18l1-5h6l2 5M8 13l2-6h5l2 6M15 7l2-3h3M18 4v4M4 18v2m15-2v2"/></svg></div><h3>Plant & heavy equipment hire</h3><p>Plant for earthworks, material handling, excavation, levelling, compaction and construction support.</p><div class="tag-row"><span class="tag">Excavators</span><span class="tag">CAT / earthmoving</span><span class="tag">TLBs</span><span class="tag">Loaders</span><span class="tag">Graders & rollers</span></div></article>
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M3 20h18M4 16l4-7h8l4 7M8 9l2-4h4l2 4M6 16v4m12-4v4M10 13h4"/></svg></div><h3>Road construction & maintenance</h3><p>Road formation, earthworks, grading, compaction, access roads, repair programmes and associated site activities.</p><div class="tag-row"><span class="tag">Roadworks</span><span class="tag">Grading</span><span class="tag">Compaction</span><span class="tag">Access routes</span></div></article>
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20v-5l4-4 3 2 4-7 3 4v10M4 8l4-3 3 3M15 4h4"/></svg></div><h3>Civil engineering & earthworks</h3><p>Site clearance, bulk earthmoving, excavation, trenching, foundations, drainage and civil project support.</p><div class="tag-row"><span class="tag">Earthworks</span><span class="tag">Trenching</span><span class="tag">Drainage</span><span class="tag">Site prep</span></div></article>
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 20h16M7 20V5h6v15M13 8h6M17 8v4M17 12l-2 3m2-3 2 3M5 5h10M5 5l2-2m-2 2 2 2"/></svg></div><h3>Crane hire & lifting support</h3><p>Crane-truck hire and lifting support for construction, logistics, equipment placement and site requirements.</p><div class="tag-row"><span class="tag">Crane trucks</span><span class="tag">Lifting support</span><span class="tag">Site placement</span></div></article>
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M2 17h13V6H2zM15 10h4l3 4v3h-7M6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm12 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg></div><h3>Truck hire & bulk logistics</h3><p>Tipper and dump trucks, water trucks and tankers, concrete/mixing trucks and heavy-duty transport support.</p><div class="tag-row"><span class="tag">Tippers</span><span class="tag">Water tankers</span><span class="tag">Mixing trucks</span><span class="tag">Material haulage</span></div></article>
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20l3-8 3 3 3-7 5 12M6 6v4m-2-2h4M16 3v3m-2-1h4"/></svg></div><h3>Grass cutting & grounds maintenance</h3><p>Grass cutting, vegetation control, route and site maintenance, clearing and routine grounds support.</p><div class="tag-row"><span class="tag">Grass cutting</span><span class="tag">Vegetation control</span><span class="tag">Site upkeep</span></div></article>
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 3v18M20 3v18M4 8h16M4 16h16M8 3v18m8-18v18"/></svg></div><h3>Telecommunications & utility works</h3><p>Legacy line removal, corridor clearance, utility decommissioning and associated access, plant and site coordination.</p><div class="tag-row"><span class="tag">Line removal</span><span class="tag">Corridor clearance</span><span class="tag">Utility infrastructure</span></div></article>
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V7h14v13M8 7V4h8v3M8 11h3m2 0h3M8 15h3m2 0h3"/></svg></div><h3>Construction & project management</h3><p>Site coordination, work sequencing, progress visibility, equipment scheduling and contractor interfaces.</p><div class="tag-row"><span class="tag">Site coordination</span><span class="tag">Mobilisation</span><span class="tag">Project tracking</span></div></article>
+      <article class="service-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M12 3v18M4 7h16M5 7l-3 6h6L5 7Zm14 0-3 6h6l-3-6ZM5 20h14"/></svg></div><h3>Water, concrete & site support</h3><p>Water supply to site, dust suppression, concrete logistics and the supporting plant needed to keep work moving.</p><div class="tag-row"><span class="tag">Water carts</span><span class="tag">Concrete mixers</span><span class="tag">Dust suppression</span></div></article>
+    </div>
+    <div class="sub-strip"><span>Commercial & industrial developments</span><span>Hospitality and building sites</span><span>Municipal and public infrastructure</span><span>Remote and regional sites by arrangement</span></div>
+  </div>
+</section>
+<section class="section section-light" id="equipment">
+  <div class="wrap equip-wrap">
+    <div class="equip-lead"><div class="eyebrow" style="color:var(--green)">Plant & equipment</div><h2>Equipment for the work in front of you.</h2><p>A fleet-led business needs more than a list of machines. The catalogue is grouped by job type so a buyer can identify the right category, then request the actual model, capacity, operator and availability for the project.</p><a class="btn btn-dark" href="#quote">Ask about availability ↗</a><p class="mini" style="color:#6c786d;margin-top:12px">Specific machine specifications, hours and transport are confirmed on quotation.</p></div>
+    <div>
+      <div class="filter-bar" role="group" aria-label="Filter equipment categories"><button class="filter-btn active" data-filter="all">All categories</button><button class="filter-btn" data-filter="earth">Earthmoving</button><button class="filter-btn" data-filter="haul">Trucks & haulage</button><button class="filter-btn" data-filter="water">Water & concrete</button><button class="filter-btn" data-filter="lift">Lifting</button><button class="filter-btn" data-filter="grounds">Grounds</button></div>
+      <div class="equip-list">
+        <article class="equip-item" data-kind="earth"><div class="equip-top"><span class="equip-number">PLANT / 01</span><span class="stock">ENQUIRE</span></div><h3>Excavators & tracked plant</h3><p>Digging, trenching, demolition support, bulk earthmoving and loading operations.</p></article>
+        <article class="equip-item" data-kind="earth"><div class="equip-top"><span class="equip-number">PLANT / 02</span><span class="stock">ENQUIRE</span></div><h3>CAT / earthmoving fleet</h3><p>Heavy machinery for production earthworks, site preparation and material movement.</p></article>
+        <article class="equip-item" data-kind="earth"><div class="equip-top"><span class="equip-number">PLANT / 03</span><span class="stock">ENQUIRE</span></div><h3>TLBs & front-end loaders</h3><p>Trenching, loading, landscaping, utility support and general construction tasks.</p></article>
+        <article class="equip-item" data-kind="earth"><div class="equip-top"><span class="equip-number">PLANT / 04</span><span class="stock">ENQUIRE</span></div><h3>Graders, dozers & rollers</h3><p>Road formation, levelling, ground shaping and compaction work.</p></article>
+        <article class="equip-item" data-kind="haul"><div class="equip-top"><span class="equip-number">TRANSPORT / 05</span><span class="stock">ENQUIRE</span></div><h3>Tipper & dump trucks</h3><p>Bulk materials, spoil removal, aggregates and earthmoving support.</p></article>
+        <article class="equip-item" data-kind="haul"><div class="equip-top"><span class="equip-number">TRANSPORT / 06</span><span class="stock">ENQUIRE</span></div><h3>Heavy transport & site logistics</h3><p>Movement of equipment, materials and supporting plant subject to load and route requirements.</p></article>
+        <article class="equip-item" data-kind="water"><div class="equip-top"><span class="equip-number">SITE SUPPORT / 07</span><span class="stock">ENQUIRE</span></div><h3>Water trucks & tankers</h3><p>Water delivery, dust control and site support. Capacity is confirmed by unit.</p></article>
+        <article class="equip-item" data-kind="water"><div class="equip-top"><span class="equip-number">SITE SUPPORT / 08</span><span class="stock">ENQUIRE</span></div><h3>Concrete / mixing trucks</h3><p>Concrete delivery and mixing support for the construction programme.</p></article>
+        <article class="equip-item" data-kind="lift"><div class="equip-top"><span class="equip-number">LIFTING / 09</span><span class="stock">ENQUIRE</span></div><h3>Crane trucks & lifting</h3><p>Plant and material placement for deliveries and construction sites.</p></article>
+        <article class="equip-item" data-kind="grounds"><div class="equip-top"><span class="equip-number">GROUNDS / 10</span><span class="stock">ENQUIRE</span></div><h3>Grass-cutting & vegetation equipment</h3><p>Grounds maintenance, clearing, road reserves and upkeep programmes.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow">Project profile</div><h2>Built on real work.<br>Ready for the next scope.</h2></div><p>A stronger company profile translates equipment and operating capability into information that buyers can actually evaluate.</p></div>
+    <div class="projects-grid">
+      <article class="project-card dark"><span class="status"><i class="dot"></i> Reported active contract</span><div class="project-ghost">200</div><h3>Telecommunications legacy-line removal</h3><p>Management has described a Telkom-related decommissioning scope covering approximately 200 kilometres of legacy telephone line. This capability spans corridor access, plant mobilisation, removal coordination and site close-out.</p><div class="project-meta"><span>≈ 200 km reported scope</span><span>Utility infrastructure</span></div><div class="pipeline-note">Project notes supplied by JGMI management; approved reference details can be added to a final portfolio.</div></article>
+      <article class="project-card"><span class="status">Development pipeline</span><div class="project-ghost">R</div><h3>Fish River Sun hospitality development opportunity</h3><p>A large hospitality development opportunity discussed by management, with a project value described at approximately R400 million-plus. The opportunity remains in the pipeline; it is not presented here as an awarded or completed contract.</p><div class="project-meta"><span>Hospitality / development</span><span>Large-project pipeline</span></div><div class="pipeline-note">The profile makes space for major opportunities as they progress through the formal procurement process.</div></article>
+    </div>
+    <p class="pipeline-note">Project records are presented as either reported active work or pipeline opportunities, so the status is clear to a procurement reader.</p>
+  </div>
+</section>
+<section class="section ops-section" id="operations">
+  <div class="wrap ops-layout">
+    <div class="ops-copy"><div class="eyebrow">Carbon operations demonstration</div><h2>The website is the front door. <span style="color:var(--amber)">The process is the leverage.</span></h2><p>When a company is handling large jobs and expensive equipment, the commercial trail matters: what was quoted, what was approved, what work happened, what evidence supports the invoice, and what remains unpaid.</p><p>This interactive sample shows how JGMI could connect a first enquiry to a quote, work record, invoice pack and payment follow-up in one repeatable flow.</p>
+      <div class="workflow">
+        <div class="workflow-step"><i>01</i><div><b>Scope & quotation</b><span>Client, site, plant, rates, hours, inclusions and exclusions.</span></div></div>
+        <div class="workflow-step"><i>02</i><div><b>Contract & mobilisation</b><span>Approved scope, responsible people, site dates and work order.</span></div></div>
+        <div class="workflow-step"><i>03</i><div><b>Job records & evidence</b><span>Plant hours, signed job cards, delivery notes and progress.</span></div></div>
+        <div class="workflow-step"><i>04</i><div><b>Invoice & collections</b><span>Submission proof, due date, follow-up owner and escalation trail.</span></div></div>
+      </div>
+      <p class="mini">Interactive demonstration data only. Production accounting, legal and tender integrations would be configured from JGMI's actual process and records.</p>
+    </div>
+    <div class="console">
+      <div class="console-top"><div class="console-title"><span class="console-mark">C°</span> JGMI Operations Desk</div><span class="demo-badge">LIVE UI DEMO · SAMPLE DATA</span></div>
+      <div class="console-tabs" role="tablist" aria-label="Operations demo panels">
+        <button class="console-tab active" role="tab" aria-selected="true" data-panel="quotePanel">Quote builder</button>
+        <button class="console-tab" role="tab" aria-selected="false" data-panel="workPanel">Work order</button>
+        <button class="console-tab" role="tab" aria-selected="false" data-panel="invoicePanel">Invoices</button>
+        <button class="console-tab" role="tab" aria-selected="false" data-panel="tenderPanel">Tender file</button>
+      </div>
+      <div class="console-panel active" id="quotePanel" role="tabpanel">
+        <div class="console-heading"><div><h3>Build a project enquiry</h3><p>Change the details and generate a structured email request.</p></div><span class="badge-demo green">DRAFT</span></div>
+        <div class="demo-fields">
+          <div class="field"><label for="qClient">Client / organisation</label><input id="qClient" value="Project team" maxlength="90"></div>
+          <div class="field"><label for="qRegion">Project region</label><select id="qRegion"><option>Cape Town / Western Cape</option><option>KwaZulu-Natal</option><option>Eastern Cape</option><option>Gauteng</option><option>National / multi-region</option><option>Other / to confirm</option></select></div>
+          <div class="field"><label for="qService">Service / plant type</label><select id="qService"><option>Excavator and earthmoving</option><option>Roadworks and compaction</option><option>Tipper truck / haulage</option><option>Water truck / tanker</option><option>Crane truck / lifting</option><option>Grass cutting / site maintenance</option><option>Civil engineering / project works</option><option>Telecommunications / utility works</option><option>Construction management</option></select></div>
+          <div class="field"><label for="qDuration">Estimated duration</label><select id="qDuration"><option>To be scoped</option><option>1–3 days</option><option>1–2 weeks</option><option>1 month</option><option>3 months or more</option></select></div>
+          <div class="field full"><label for="qScope">Work scope / site notes</label><textarea id="qScope" maxlength="1200" placeholder="Describe the site, expected quantities, equipment and dates.">Please confirm equipment availability, rate structure, mobilisation and the information required for a formal quotation.</textarea></div>
+        </div>
+        <div class="quote-total"><div><span>Estimate state</span><br><span style="font-size:.69rem">Rate and mobilisation to be confirmed</span></div><strong>Quote pending scope</strong></div>
+        <div class="console-actions"><small>No price is invented before the scope is confirmed.</small><button class="btn btn-dark btn-small" id="emailQuote">Prepare quote request ↗</button></div>
+      </div>
+      <div class="console-panel" id="workPanel" role="tabpanel">
+        <div class="console-heading"><div><h3>Work-order control</h3><p>What a job hand-off can look like once a quote is approved.</p></div><span class="badge-demo">SAMPLE</span></div>
+        <table class="demo-table"><thead><tr><th>Control</th><th>Example record</th><th>State</th></tr></thead><tbody>
+          <tr><td>Work order</td><td>JGMI-DEMO-024<br><span class="mini" style="color:#6b786d">Earthworks / site access</span></td><td><span class="badge-demo green">Ready to plan</span></td></tr>
+          <tr><td>Mobilisation</td><td>Equipment, operator, delivery and site contact</td><td><span class="badge-demo">Confirm</span></td></tr>
+          <tr><td>Job evidence</td><td>Hours, job cards, delivery notes, sign-off</td><td><span class="badge-demo">Required</span></td></tr>
+          <tr><td>Change control</td><td>Variations approved before additional work</td><td><span class="badge-demo">Track</span></td></tr>
+        </tbody></table>
+        <div class="tender-callout">The operational win: approved scope, actual work and invoice evidence remain connected instead of scattered across phones and messages.</div>
+      </div>
+      <div class="console-panel" id="invoicePanel" role="tabpanel">
+        <div class="console-heading"><div><h3>Invoice & payment follow-up</h3><p>Keep submission proof, due dates and next actions visible.</p></div><span class="badge-demo red">EXAMPLE ONLY</span></div>
+        <table class="demo-table"><thead><tr><th>Reference</th><th>Commercial event</th><th>Next action</th></tr></thead><tbody>
+          <tr><td>INV-DEMO-014</td><td>Invoice submitted<br><span class="mini" style="color:#6b786d">Acknowledgement filed</span></td><td><span class="badge-demo">Track due date</span></td></tr>
+          <tr><td>INV-DEMO-015</td><td>Payment overdue<br><span class="mini" style="color:#6b786d">Follow-up evidence logged</span></td><td><span class="badge-demo red">Escalate</span></td></tr>
+          <tr><td>INV-DEMO-016</td><td>Supporting job card missing</td><td><span class="badge-demo">Complete pack</span></td></tr>
+        </tbody></table>
+        <div class="tender-callout">A recorded follow-up cannot force a payer to pay. It does make dates, promises, documentation gaps and the escalation history easier to prove and act on.</div>
+      </div>
+      <div class="console-panel" id="tenderPanel" role="tabpanel">
+        <div class="console-heading"><div><h3>Tender readiness file</h3><p>A structured pack built around the requirements of each opportunity.</p></div><span class="badge-demo">CONTROL LIST</span></div>
+        <div class="tender-checks">
+          <div class="tender-check"><i>✓</i><span>Company profile<span><small>Services, regions and contact route</small></span></span></div>
+          <div class="tender-check"><i>✓</i><span>Equipment schedule<span><small>Plant type and evidence of availability</small></span></span></div>
+          <div class="tender-check"><i>→</i><span>Compliance documents<span><small>Current source copies and expiry dates</small></span></span></div>
+          <div class="tender-check"><i>→</i><span>Project references<span><small>Approved scope, value, dates and status</small></span></span></div>
+          <div class="tender-check"><i>→</i><span>Pricing & exclusions<span><small>Rates, mobilisation, assumptions and validity</small></span></span></div>
+          <div class="tender-check"><i>→</i><span>Submission receipt<span><small>Deadline, portal receipt and follow-up owner</small></span></span></div>
+        </div>
+        <div class="tender-callout">The checklist helps keep the pack complete. The actual tender documents decide eligibility; current registration, grading and certificates must be supplied and validated.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-light" id="tenders">
+  <div class="wrap">
+    <div class="section-head"><div><div class="eyebrow" style="color:var(--green)">Procurement readiness</div><h2>Make capability easier to buy.</h2></div><p>A modern profile is a starting point. Procurement teams also need clear documents, consistent details and fast answers that match the specific tender or RFQ.</p></div>
+    <div class="cap-grid">
+      <article class="cap-card"><div class="cap-icon">01</div><h3>Capability statement</h3><p>A concise business profile, service matrix, operating regions, fleet categories, key contacts and approved project references.</p></article>
+      <article class="cap-card"><div class="cap-icon">02</div><h3>Tender response pack</h3><p>A per-opportunity checklist for the returnable schedules, submission deadlines, technical requirements and supporting documents.</p></article>
+      <article class="cap-card"><div class="cap-icon">03</div><h3>Commercial controls</h3><p>Quote versioning, scope and variation records, work evidence, invoice submission proof, payment due dates and action ownership.</p></article>
+    </div>
+    <p class="cap-footer">Registration, grading, tax, B-BBEE, safety and other statutory status should be represented from current source documents. This website does not assume any certification or tender eligibility that has not been provided.</p>
+  </div>
+</section>
+<section class="section pricing-section" id="quote">
+  <div class="wrap">
+    <div class="pricing-layout">
+      <div class="pricing-intro"><div class="eyebrow">Commercial offer · JGMI by Carbon</div><h2>A business this capable should have a <span>digital front door.</span></h2><p>The package gives JGMI a proper business presence now and a structured starting point for the commercial processes that support larger projects.</p><p>Carbon’s standard itemised schedule is <strong style="color:#fff">R63,700</strong>. The founding-family launch offer reduces the one-time price to <strong style="color:var(--amber2)">R7,963</strong>.</p>
+        <div class="price-compare"><div><span class="strike">R63,700</span><small>Carbon standard schedule</small></div><span class="arrow">→</span><div><span class="family">R7,963</span><small>Founding-family price</small></div></div>
+        <p class="mini" style="margin-top:18px">One payment. No monthly Carbon service fee is included in this launch quote.</p>
+      </div>
+      <div class="pricing-card">
+        <div class="price-top"><div><h3>Corporate Presence & Launch</h3><p>Itemised project scope · once-off</p></div><span class="discount-badge">FAMILY RATE −87.5%</span></div>
+        <div class="fee-row"><span>Commercial strategy & company positioning</span><strong>R6,800</strong></div>
+        <div class="fee-row"><span>Company profile, service architecture & copy</span><strong>R6,900</strong></div>
+        <div class="fee-row"><span>Custom responsive website design & build</span><strong>R13,800</strong></div>
+        <div class="fee-row"><span>Plant/equipment catalogue & service pages</span><strong>R7,200</strong></div>
+        <div class="fee-row"><span>Project profile & tender-capability presentation</span><strong>R4,900</strong></div>
+        <div class="fee-row"><span>Enquiry and quotation-request workflow</span><strong>R5,600</strong></div>
+        <div class="fee-row"><span>3D/WebGL visual layer & performance tuning</span><strong>R6,200</strong></div>
+        <div class="fee-row"><span>Search foundations, accessibility & QA</span><strong>R4,900</strong></div>
+        <div class="fee-row"><span>Domain/hosting setup, deployment & launch configuration</span><strong>R3,900</strong></div>
+        <div class="fee-row"><span>Quote-to-job, invoice and payment-follow-up workflow blueprint</span><strong>R3,500</strong></div>
+        <div class="fee-total"><span>Carbon standard schedule</span><strong>R63,700</strong></div>
+        <div class="discount-line"><span>Founding-family discount (87.5%, rounded)</span><span>−R55,737</span></div>
+        <div class="pay-total"><div><small>One-time launch price</small><strong>R7,963</strong></div><div class="once">ONCE-OFF<br>NO MONTHLY CARBON FEE</div></div>
+        <div class="price-cta"><a class="btn btn-primary" href="https://buy.stripe.com/8x26oH7hf4eYaYhgGSaR208" target="_blank" rel="noopener">Pay R7,963 securely ↗</a><a class="btn btn-dark" href="mailto:JGMI_Carbon@outlook.com?subject=JGMI%20by%20Carbon%20%E2%80%94%20Launch%20Approval&body=I%20would%20like%20to%20discuss%20the%20JGMI%20by%20Carbon%20Corporate%20Presence%20%26%20Launch%20package%20at%20the%20R7%2C963%20founding-family%20rate.">Discuss / approve by email</a></div>
+        <p class="price-note">Payment activates the launch work: confirm the final company details, select/register the domain, connect hosting, test enquiries and complete the go-live check. Same-night launch is the target when the domain, DNS and content approvals are ready. The site and this quote are for JGMI; the final scope is confirmed with the owner before production go-live.</p>
+        <div class="pricing-sources"><details><summary>Market context & pricing references</summary><p>Public South African website-pricing guides vary substantially by scope. Current published examples describe professional SME/corporate builds in the approximate R15,000–R60,000 range, with custom builds extending higher where content, functionality and integrations increase. This is context for the scope, not a claim that every quote covers identical work.</p><p><a href="https://www.procompare.co.za/articles/web-design/website-cost-south-africa" target="_blank" rel="noopener">Reference A · South African website pricing guide</a><br><a href="https://www.pagepanther.co.za/blog/how-much-does-a-website-design-cost-in-south-africa/" target="_blank" rel="noopener">Reference B · Website design cost guide</a></p></details></div>
+      </div>
+    </div>
+    <div class="launch-steps" aria-label="Launch process"><div class="launch-step"><em>STEP 01</em><b>Approve the offer</b><span>Confirm the company facts, scope and preferred domain name.</span></div><div class="launch-step"><em>STEP 02</em><b>Activate launch</b><span>Payment funds domain selection, setup and the final production pass.</span></div><div class="launch-step"><em>STEP 03</em><b>Connect & test</b><span>Configure domain/hosting, mobile layout, links and quote enquiries.</span></div><div class="launch-step"><em>STEP 04</em><b>Go live</b><span>Publish the approved site and hand over the live URL and launch notes.</span></div></div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="wrap contact-layout"><div><div class="eyebrow" style="color:var(--green)">Start with the scope</div><h2>Tell us what the site needs to move.</h2><p>Send the site location, type of work, plant or crew required, project dates and supporting documents. JGMI can respond with the next questions and a structured quotation route.</p><p style="margin-top:15px;font-weight:800;color:#183323">JGMI_Carbon@outlook.com</p></div><div class="contact-actions"><a class="btn btn-dark" href="mailto:JGMI_Carbon@outlook.com?subject=JGMI%20by%20Carbon%20%E2%80%94%20Project%20Enquiry">Email JGMI ↗</a><a class="btn btn-primary" href="#operations" style="background:var(--amber)">See the operations demo ↓</a></div></div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-top"><div class="footer-brand">JGMI by Carbon<small>Plant hire · Civil engineering · Roads · Infrastructure</small></div><div class="footer-links"><a href="#services">Services</a><a href="#equipment">Equipment</a><a href="#projects">Project profile</a><a href="#operations">Operations desk</a><a href="#quote">Launch package</a><a href="mailto:JGMI_Carbon@outlook.com">Contact</a></div></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> JGMI by Carbon. All rights reserved.</span><span>Prepared as a commercial demonstration by Carbon.</span><span><a href="https://www.pexels.com/photo/aerial-photo-of-excavator-road-roller-and-bulldozer-1579356/" target="_blank" rel="noopener">Illustrative equipment image: Pexels</a></span></div>
+  </div>
+</footer>
+<script>
+(function(){
+  var nav = document.getElementById('navLinks');
+  var menu = document.getElementById('menuToggle');
+  menu.addEventListener('click',function(){var open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open?'true':'false');menu.textContent=open?'×':'☰';});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';});});
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.querySelectorAll('.filter-btn').forEach(function(btn){btn.addEventListener('click',function(){
+    document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+    btn.classList.add('active');var filter=btn.getAttribute('data-filter');
+    document.querySelectorAll('.equip-item').forEach(function(item){item.hidden=filter!=='all'&&item.getAttribute('data-kind')!==filter;});
+  });});
+  document.querySelectorAll('.console-tab').forEach(function(btn){btn.addEventListener('click',function(){
+    document.querySelectorAll('.console-tab').forEach(function(b){b.classList.remove('active');b.setAttribute('aria-selected','false');});
+    document.querySelectorAll('.console-panel').forEach(function(p){p.classList.remove('active');});
+    btn.classList.add('active');btn.setAttribute('aria-selected','true');document.getElementById(btn.getAttribute('data-panel')).classList.add('active');
+  });});
+  document.getElementById('emailQuote').addEventListener('click',function(){
+    var client=document.getElementById('qClient').value.trim()||'Project team';
+    var region=document.getElementById('qRegion').value;
+    var service=document.getElementById('qService').value;
+    var duration=document.getElementById('qDuration').value;
+    var scope=document.getElementById('qScope').value.trim()||'Scope to be discussed.';
+    var subject='JGMI quote request — '+service;
+    var body='PROJECT ENQUIRY / QUOTATION REQUEST\\n\\nClient: '+client+'\\nRegion: '+region+'\\nService / plant: '+service+'\\nEstimated duration: '+duration+'\\n\\nScope / site notes:\\n'+scope+'\\n\\nPlease advise required site details, machine specifications, availability, mobilisation, rates and quotation validity.\\n\\nSent from the JGMI by Carbon demonstration.';
+    window.location.href='mailto:JGMI_Carbon@outlook.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  });
+
+  var canvas=document.getElementById('terrain'),gl=null,program=null,buffer=null;
+  try{gl=canvas.getContext('webgl',{alpha:true,antialias:true,powerPreference:'low-power'});}catch(e){}
+  if(!gl){canvas.style.display='none';return;}
+  var vs='attribute vec2 a_position; attribute float a_intensity; uniform float u_point; varying float v_intensity; void main(){gl_Position=vec4(a_position,0.0,1.0); gl_PointSize=u_point; v_intensity=a_intensity;}';
+  var fs='precision mediump float; varying float v_intensity; void main(){vec3 green=vec3(0.20,0.93,0.66); vec3 gold=vec3(1.0,0.72,0.22); vec3 c=mix(green,gold,clamp(v_intensity,0.0,1.0)); float a=0.18+0.55*clamp(v_intensity,0.0,1.0); gl_FragColor=vec4(c,a);}';
+  function shader(type,src){var s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)){gl.deleteShader(s);return null;}return s;}
+  var v=shader(gl.VERTEX_SHADER,vs),f=shader(gl.FRAGMENT_SHADER,fs);if(!v||!f){canvas.style.display='none';return;}
+  program=gl.createProgram();gl.attachShader(program,v);gl.attachShader(program,f);gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS)){canvas.style.display='none';return;}
+  gl.useProgram(program);buffer=gl.createBuffer();
+  var posLoc=gl.getAttribLocation(program,'a_position'),intLoc=gl.getAttribLocation(program,'a_intensity'),pointLoc=gl.getUniformLocation(program,'u_point');
+  gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);gl.lineWidth(1);
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var start=performance.now();
+  function resize(){var r=canvas.getBoundingClientRect(),dpr=Math.min(window.devicePixelRatio||1,1.65);canvas.width=Math.max(1,Math.round(r.width*dpr));canvas.height=Math.max(1,Math.round(r.height*dpr));gl.viewport(0,0,canvas.width,canvas.height);}
+  function project(x,y,z,angle,aspect){
+    var ca=Math.cos(angle),sa=Math.sin(angle),xr=x*ca-z*sa,zr=x*sa+z*ca;
+    var pitch=.78,yp=y*Math.cos(pitch)-zr*Math.sin(pitch),zp=y*Math.sin(pitch)+zr*Math.cos(pitch)+21;
+    return [(xr/zp)*2.1/aspect,(yp/zp)*2.1-.18,zp];
+  }
+  function render(now){
+    var r=canvas.getBoundingClientRect();if(!r.width||!r.height)return;
+    if(canvas.width!==Math.round(r.width*Math.min(window.devicePixelRatio||1,1.65))||canvas.height!==Math.round(r.height*Math.min(window.devicePixelRatio||1,1.65)))resize();
+    gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
+    var t=reduced?0:(now-start)/1000,angle=reduced?.12:t*.065,aspect=canvas.width/canvas.height;
+    var points=[],intensities=[],counts={lines:0,pts:0};
+    var rows=24,cols=34;
+    function height(x,z){return Math.sin(x*.34+t*.33)*.48+Math.cos(z*.27-x*.1+t*.24)*.37+Math.sin((x+z)*.18)*.18;}
+    var grid=[];
+    for(var zi=0;zi<=rows;zi++){grid[zi]=[];for(var xi=0;xi<=cols;xi++){var x=(xi/cols-.5)*24,z=(zi/rows-.5)*18-3,y=height(x,z);grid[zi][xi]=project(x,y,z,angle,aspect);}}
+    function line(a,b,inten){points.push(a[0],a[1],b[0],b[1]);intensities.push(inten,inten);counts.lines+=2;}
+    for(var z2=0;z2<=rows;z2++){for(var x2=0;x2<=cols;x2++){var q=grid[z2][x2];if(x2<cols)line(q,grid[z2][x2+1],.2+((x2+z2)%8)/12);if(z2<rows)line(q,grid[z2+1][x2],.22+((x2*3+z2)%9)/13);}}
+    var meshN=points.length/2,meshPoints=points.slice(),meshInt=intensities.slice();
+    gl.bindBuffer(gl.ARRAY_BUFFER,buffer);var combined=new Float32Array(points.length/2*3);
+    for(var i=0;i<points.length/2;i++){combined[i*3]=points[i*2];combined[i*3+1]=points[i*2+1];combined[i*3+2]=intensities[i];}
+    gl.bufferData(gl.ARRAY_BUFFER,combined,gl.DYNAMIC_DRAW);gl.enableVertexAttribArray(posLoc);gl.vertexAttribPointer(posLoc,2,gl.FLOAT,false,12,0);gl.enableVertexAttribArray(intLoc);gl.vertexAttribPointer(intLoc,1,gl.FLOAT,false,12,8);gl.uniform1f(pointLoc,1.8*(canvas.width/900));gl.drawArrays(gl.LINES,0,meshN);
+    var nodes=[],nodeRows=[3,7,12,17,21];
+    nodeRows.forEach(function(zi,idx){[3,8,14,21,28,32].forEach(function(xi,j){var q=grid[zi][xi];nodes.push(q[0],q[1],.9-((idx+j)%4)*.13);});});
+    var nodeData=new Float32Array(nodes.length);
+    for(var n=0;n<nodes.length/3;n++){nodeData[n*3]=nodes[n*3];nodeData[n*3+1]=nodes[n*3+1];nodeData[n*3+2]=nodes[n*3+2];}
+    gl.bufferData(gl.ARRAY_BUFFER,nodeData,gl.DYNAMIC_DRAW);gl.vertexAttribPointer(posLoc,2,gl.FLOAT,false,12,0);gl.vertexAttribPointer(intLoc,1,gl.FLOAT,false,12,8);gl.uniform1f(pointLoc,3.0*(canvas.width/900));gl.drawArrays(gl.POINTS,0,nodes.length/3);
+    if(!reduced)requestAnimationFrame(render);
+  }
+  resize();requestAnimationFrame(render);window.addEventListener('resize',resize);
+})();
+</script>
+</body>
+</html>
