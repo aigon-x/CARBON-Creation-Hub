@@ -3440,19 +3440,29 @@
           "observed_at": "2026-10-03T14:00:00Z",
           "source": "AUTHORIZED_BROWSER",
           "summary": "Current official application was inspected with lawful profile data recoverable from the existing CV. Remaining required fields include applicant video plus factual availability/referral attestations; generic 'personal profile data unavailable' is not a valid blocker."
+        },
+        {
+          "kind": "CURRENT_OFFICIAL_ROLE_REVERIFIED",
+          "observed_at": "2026-10-13T14:27:21Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://jobs.ashbyhq.com/scale%20army%20careers/3e49f332-28b9-400c-a146-f1682ce962da",
+          "summary": "The same canonical listing URL currently displays the title Workflow Automation Specialist, remote contract, South Africa eligible, USD $2,300/month, and U.S. business hours (9 AM–5 PM EST). It describes connecting existing systems and automating manual data/reporting processes. The application page requires a form plus a recorded skills video. This current title/compensation supersedes the stale title in the prior ledger projection; no application was submitted."
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-03T14:00:00Z",
-      "next_action": "PRI to complete the official application using recovered CV/profile data. Exact remaining human/provider gates: required applicant video and truthful availability/referral attestations; do not broaden this into a generic personal-data HOLD.",
+      "next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
       "opportunity": "ai-implementation-specialist",
       "organization": "Scale Army",
       "payer_path": "Scale Army employer/contractor hiring route",
       "routing_reason": "PROVIDER_OR_HUMAN_GATE_REMAINS",
       "state": "QUALIFIED",
-      "title": "AI Implementation Specialist — Remote South Africa",
-      "upfront_cost": "NONE_EVIDENCED"
+      "title": "Workflow Automation Specialist — Remote South Africa",
+      "upfront_cost": "NONE_EVIDENCED",
+      "reward": "USD $2,300/month advertised; final compensation set after evaluating experience and location.",
+      "current_route_status": "OFFICIAL_LISTING_REVERIFIED_2026-10-13",
+      "last_reconciled_at": "2026-10-13T14:27:21Z"
     },
     "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
       "domain": "seastarfilm.com",
