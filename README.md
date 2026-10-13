@@ -13,6 +13,15 @@ Built by **Ulrich du Plessis / AMilliMATRiX**. This repository includes a workin
 
 For a technical evaluation, start with the backend source and tests, then try a search in the public interface. See [backend setup and API contract](backend/README.md). The demos use free hosting and can need roughly a minute to start after idle time; local runtime storage does not establish durable customer intake. Worker enablement, outreach and submission do not establish acceptance, invoice, payment, or realized revenue.
 
+
+## Fixed-scope technical review
+
+Need a fast, bounded second opinion on a public repository or a non-sensitive code/config excerpt? The **Quick Technical Review is US$4.99 one time** and includes concise written findings, up to three prioritized recommendations, and one concrete example fix where the supplied evidence supports it.
+
+**[Buy the Quick Technical Review — US$4.99](https://buy.stripe.com/9B6eVd7hfeTCaYh62eaR200)**
+
+Scope limits: one public repository URL or one non-sensitive excerpt up to 100 lines. No live penetration testing, production access, credentials or secret handling, implementation, or guarantee that a vulnerability exists. Do not send passwords, private keys, seed phrases, customer records, or private endpoints. Payment is processed through Stripe; the published scope governs delivery.
+
 ## The Dragon Who Could Not Claim Me
 
 **Selected vertical-drama sample from AMilliMATRiX / CARBON° Production Studio.**
