@@ -18,7 +18,7 @@ def event(event_id, event_type, **extra):
 
 
 def fixture(events, index_template):
-    raw = ("\\n".join(json.dumps(e, separators=(",", ":")) for e in events) + "\\n").encode()
+    raw = ("\n".join(json.dumps(e, separators=(",", ":")) for e in events) + "\n").encode()
     return raw, index_template.replace("BLOB_SHA", git_blob_sha1(raw))
 
 
