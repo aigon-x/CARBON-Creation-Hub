@@ -2660,7 +2660,7 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 ## Segment 05 continuity — ROOT drift and receipt recovery (2026-10-13)
 
 - **ROOT event-order drift comment:** existing issue #31 comment `6139828703`, independently read back. It records the observed segment-04 checkpoint after segment-05 resume/correction and requires append-only preservation.
-- **Latest continuity checkpoint:** [DYNAMIC_FLIGHT_PATH_REGISTER.jsonl](DYNAMIC_FLIGHT_PATH_REGISTER.jsonl), event `AMX-FLT-20261012-DSYNC-145440-9fb44f0c:CHECKPOINT:SEGMENT-12:FORX-REGISTER-AND-INDEX-ANOMALY-20261013`, blob `76d9b3728a8c4aafd378fdd9fb79a3f20ecbfb39`, status IN_FLIGHT (proposed; branch readback pending ROOT merge).
+- **Latest continuity checkpoint:** [DYNAMIC_FLIGHT_PATH_REGISTER.jsonl](DYNAMIC_FLIGHT_PATH_REGISTER.jsonl), event `AMX-FLT-20261012-DSYNC-145440-9fb44f0c:CHECKPOINT:SEGMENT-12:FORX-REGISTER-AND-INDEX-ANOMALY-20261013`, blob `76d9b3728a8c4aafd378fdd9fb79a3f20ecbfb39`, status IN_FLIGHT. The FORX registration anomaly below remains open pending ROOT/T-GOV disposition.
 - **FORX registration anomaly / proposed repair:** [FORX register continuity proposal](FORX_REGISTER_CONTINUITY_FIX_PROPOSAL_20261013.md); this branch preserves the segment 02–04 artifacts as provenance and does not backfill a launch.
 - Three current office receipts were persisted/read back: MASTER blob `24351acdb99a3cc2da2c6a50a0985060746271ef`; T-COD blob `ffe57acceb826230e860d54c9fb3aa0f1726f816`; T-MED blob `df6ff0ac7d3501f7a5d56bf4092a8ab9c3c178ab`.
 - ROOT/T-GOV's standardized receipt-file write was blocked; issue #31 comment `6139791983` records the exact action, blocker and recovery owner. ROOT's drift evidence remains persisted and indexed.
