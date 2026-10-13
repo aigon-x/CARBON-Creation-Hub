@@ -87,3 +87,45 @@ Root may report the authority/queue repair complete only when:
 - **Outcome:** recurrence prevention. **Owner:** existing continuity/forensic role + ROOT/T-GOV. **Action:** prevent stale subordinate snapshots from overriding later valid Owner supersession; require version/supersession ordering and readback checks on every future wake. **Acceptance:** regression detects and flags this exact stale-25/75 recurrence. **Persistence:** existing drift register/Intake route and observed receipt. **Status:** OPEN.
 
 **Truth statement:** this incident record is evidence and a corrective route request. The current canonical sources show unresolved stale values; no claim is made that the 45% policy is already fully bound, that Intake is cleared, or that every worker has consumed the update.
+
+
+## 8. ADDENDUM — MISSED EXTERNAL RESEARCH / PRIMARY-COMMERCIAL-TASK DISPLACEMENT — 2026-10-13
+
+**Additional incident:** The Owner explicitly asked to use the internet to establish what Naledi, the AI recruiter for 2CT Sales Co.'s South African BDR role, is likely to ask, and to route the failure to do that research as drift. The earlier response had supplied generic coaching and a sample opening without first consulting the current first-party recruitment page or the company's published hiring-process material. That was an avoidable evidence-retrieval and intent-fidelity failure. The primary commercial task remained the outstanding application and 15-minute assessment; governance work is a dependency/side task, not a substitute for moving that task forward.
+
+### Verified evidence now recovered
+
+- Official role/application page: https://apply.2cantalks.com/j/bdr-outbound-sa
+  - Specifies a same-sitting CV upload + voice interaction with Naledi, scored like a real call; fast, plain answers; quiet room/microphone.
+  - Explicit requirement themes: at least two years of cold calling and a daily number/results; coachability; clear spoken English for US buyers; US working hours; dialler/CRM familiarity; dependable remote setup including backup connectivity/power; and an example of the hardest sale and what it cost to make it.
+  - Stated job process: cold-call-first outbound, warm inbound dialled within five minutes, qualify before booking, booked meetings confirmed/reconfirmed, multi-touch cadence and same-day honest CRM notes.
+  - Stated evaluation/success themes: dial volume, connect/conversation/meeting numbers, qualified meetings that actually hold, recorded call-quality improvement and accurate CRM.
+  - Named frameworks in the ad: Blount for prospecting/objections, Keenan for discovery, Belfort for tonality and pace.
+- Official 2CT team/hiring-process page: https://2ctsalesco.com/about/
+  - Describes the wider selection process as including written application, voice quality test and a simulated cold call with three live objections, and emphasizes tonality, coachability and ability to handle a "no" without flinching.
+  - This is evidence of the wider company selection model. It does **not** prove Naledi's initial 10–15-minute screen will contain all three objections or the exact same live audition.
+- Official 2CT playbook: https://2ctsalesco.com/playbook/phone-just-beat-email-4x-q1-2026/
+  - Describes their published view of cold-call performance using a concise opener, problem-centric discovery, quantified impact and time-specific follow-through.
+- Official accent-objection article: https://2ctsalesco.com/playbook/offshore-outbound-accent-objection/
+  - Reinforces that their public position focuses on confidence, relevance, tonality and responding to the prospect rather than accent alone.
+
+No public exact question list or Naledi system prompt was located in this search. Therefore the answer must distinguish: **explicitly stated assessment criteria** versus **probable question types inferred from that criteria**. Never claim to know her hidden script.
+
+### Corrective behavior
+
+Before advising on a named online application/assessment:
+1. search and read the live first-party application/role page;
+2. search current first-party recruitment/hiring-process materials and any genuinely relevant candidate reports;
+3. extract direct requirements, exact stated questions and scenario cues;
+4. label each conclusion as explicitly stated, strongly indicated, or uncertain;
+5. convert that evidence to a short prioritized preparation sheet and model answers grounded in the Owner's complete professional fact base;
+6. keep the current executable application/assessment as the primary commercial objective; route governance corrections without letting them displace the buyer/assessment action;
+7. when the user explicitly asks for internet research, do not substitute unaided speculation or a generic script.
+
+### Directive 23
+
+- **Outcome:** assessment preparation reflects actual current source evidence. **Owner:** current assistant / existing professional-positioning function. **Action:** use official source research before coaching and provide question-likelihood tiers plus grounded answer cues. **Dependency:** live sources and full factual profile. **Acceptance evidence:** cited first-party page reads and a clearly calibrated prep sheet. **Persistence/readback:** this incident addendum and existing issue #31. **Safety:** no claim to know private prompts or guaranteed questions. **Disposition:** OPEN until applied to the current assessment.
+- **Outcome:** current commercial task remains primary. **Owner:** current commercial operator within existing authority. **Action:** move directly to application/assessment preparation and execution; side tasks cannot replace the primary job. **Dependency:** user's participation for actual voice interview, CV upload and any access prompts. **Acceptance evidence:** actual application receipt and assessment completion/next-step state. **Persistence/readback:** existing commercial record, with lifecycle kept truthful. **Safety:** don't claim to have applied or completed Naledi's interview on the user's behalf. **Disposition:** OPEN.
+- **Outcome:** future recurrence prevention. **Owner:** ROOT/T-GOV + existing continuity/forensic role. **Action:** include missed-source-research and primary-task-displacement in the intent-fidelity regression family. **Acceptance:** a comparable future request triggers source retrieval and current-source-grounded advice before assumptions are presented. **Disposition:** OPEN.
+
+**Truth:** research is now performed for this wake and official sources are linked above. The earlier failure is not retroactively erased; neither the application nor the interview is represented as completed.
