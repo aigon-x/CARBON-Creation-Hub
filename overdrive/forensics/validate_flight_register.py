@@ -18,7 +18,7 @@ from typing import Any
 
 def git_blob_sha1(raw: bytes) -> str:
     """Return the Git blob object SHA-1 for exact checked-out file bytes."""
-    header = b"blob " + str(len(raw)).encode("ascii") + b"\\0"
+    header = b"blob " + str(len(raw)).encode("ascii") + b"\0"
     return hashlib.sha1(header + raw).hexdigest()
 
 
@@ -167,7 +167,7 @@ def validate(register_bytes: bytes, index_text: str) -> list[str]:
     # An Index line may call a flight "Existing flight" only if its launch is
     # registered. Historical/anomaly labels are permitted and preserve provenance.
     for line_no, line in enumerate(index_text.splitlines(), start=1):
-        match = re.search(r"\\*\\*Existing flight:\\*\\*\\s+`([^`]+)`", line)
+        match = re.search(r"\*\*Existing flight:\*\*\s+`([^`]+)`", line)
         if not match:
             continue
         flight_id = match.group(1)
