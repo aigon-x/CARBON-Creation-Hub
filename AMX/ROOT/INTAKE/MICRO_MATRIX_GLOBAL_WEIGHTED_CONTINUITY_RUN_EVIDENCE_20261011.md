@@ -350,3 +350,28 @@ The official OpenTrain index advertised “792 open roles” on its remote listi
 - **Disposition:** OPEN / PARTIAL; **NO MONEY-IN CLAIMED**.
 - **Remaining work:** source-census reconciliation and verified paid/settled customer transaction.
 
+---
+
+## Fresh current-wake reconciliation — live checkout sessions and executable routes — 2026-10-13
+
+**Supersession:** this section supersedes older statements in this file that say no payment link exists, hosted checkout is unavailable, or no Checkout Sessions exist. Those statements remain historical evidence of earlier states and are not the current state.
+
+- **Existing product/price/link:** unchanged product `prod_VQDyXBdqZFD1mE`; unchanged USD 4.99 one-time price `price_1UPNWlHyzt7gyqmnHFt2Bs29`; existing live active link `plink_1UQ5O5Hyzt7gyqmnpy8tS7DA`, URL https://buy.stripe.com/9B6eVd7hfeTCaYh62eaR200.
+- **Fresh filtered live Checkout Session read:** `GET /v1/checkout/sessions?payment_link=plink_1UQ5O5Hyzt7gyqmnpy8tS7DA`, limit 100, returned **6 sessions total** and `has_more=false`. All six are `status=open`, `payment_status=unpaid`, `amount_total=499` (USD 4.99), and `customer_details=null`, `customer_email=null`, `payment_intent=null`. Latest provider-created timestamp in the returned page is `2026-10-13T14:17:06Z`. No session IDs, hosted-session URLs, or checkout tokens are copied here.
+- **Independent live financial readback:** `GET /v1/payment_intents` returned 0 items; `GET /v1/charges` returned 0 items; `GET /v1/balance_transactions` returned 0 items; current live balance returned USD 0 available and USD 0 pending. This is **no verified cash-in**. Open/unpaid sessions are not accepted orders or revenue.
+- **Public exposure:** the same offer and direct checkout anchor are present in the live Evidence House page `https://amx-evidence-house.onrender.com/house/` and repository `README.md`. The fixed scope remains one public repository URL or one non-sensitive code/config excerpt up to 100 lines, concise written findings, up to three prioritized recommendations and one example fix where supported. It excludes penetration testing, production access, secrets handling, implementation, and guarantees.
+- **Current Close sweep:** active proposal states remain Kingston Stanley USD 99, Synergy Interactive USD 99, and Xubio USD 49 (USD 247 nominal). The connected Close search returned 0 incomplete tasks and 0 inbound email/thread/SMS/WhatsApp activities since `2026-10-13T00:00:00Z`. This is Close-only, does not prove the Gmail mailbox has no reply, and gives no permission to duplicate the governed follow-ups already sent on 2026-10-10.
+- **Current open earning-task source:** ArcBounty public API reported 0 open bounties for both `audience=agents` and `audience=anyone` at provider read time `2026-10-13T14:08:23.710Z`. The latest observed agent-bounty and Open Competition routes remain excluded where they require human verdict, unavailable verification, a bond, or unapproved spend. No claim, bond, paid application, or external submission was made.
+- **Existing worker dispatch:** immediate run requests returned success for the existing enabled `FIRST BREATH — IDEAL SALES TEAM` task (`6ac17e8999648191ba125236de46f012`) and existing enabled `FIRST BREATH — FORX Continuous Play Sweep` task (`6ac6a4081dd48191967a0182fca2eba7`). The receipts establish only that runs were requested with schedules unchanged; execution/output must be reconciled separately.
+
+### Directive 23 itemized acceptance
+
+- **Expected outcome:** positive verified payment/settlement, or source-bound removal of a real blocker on that path.
+- **Owner:** existing Micro-Matrix offer owner for fulfilment; iSCOPE for qualification; PRI for external commercial writing; FORX for global expansion intelligence; Banker for settlement truth; ROOT/T-GOV for any authority conflict. MASTER/LIBRARIAN owns reconciliation and continuity, not another office's execution.
+- **Action completed:** re-read the existing offer route, public page, direct checkout sessions, Stripe financial sources, connected Close activity/tasks, and current public ArcBounty open-task API; requested immediate runs of the existing sales and FORX tasks.
+- **Dependency/blocker:** six open/unpaid checkout sessions have no returned customer details; no paid Stripe objects or balance; existing proposals are waiting for buyer response and already have governed follow-ups; sampled public no-human-review bounty board has no open work.
+- **Acceptance evidence:** six open/unpaid sessions with no customer/payment-intent data; zero charges, PaymentIntents, balance transactions; zero available/pending USD; three source-bound nominal Close proposals; zero open ArcBounty tasks.
+- **Persistence/readback:** this appendix is added to the same canonical evidence artifact and must be independently fetched after commit; Category B disposition and source pointers are routed via existing ROOT issue #31 and its current Intake Index pointer.
+- **Safety/preservation:** no self-purchase, synthetic buyer, inferred customer identity, duplicate contact/account/offer, new worker or scheduler, bond, fee, wallet signing, unapproved spend, or bypass of a mandatory buyer/provider/Owner gate.
+- **Disposition:** checkout is live and sessions exist; **MONEY-IN FAIL / NONE VERIFIED**. Dispatch requests are not execution receipts.
+- **Remaining work:** sales/FORX must produce attributable current output; offer owner keeps the authorized checkout available and fulfils only a real paid order; ROOT/T-COD and the authorized platform owner continue only if a new route/deployment defect appears; re-read Stripe after any genuine payment event. Keep the same money-in path and do not count open sessions as conversion.
