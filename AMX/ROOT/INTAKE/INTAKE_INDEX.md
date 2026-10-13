@@ -2655,3 +2655,13 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **ROOT/T-GOV receipt file:** attempted at `LIBRARIAN_RECEIPTS/ROOT_TGOV_WAKE_20261013_0827SAST.md`; blocked before persistence. Exact blocker and recovery action are recorded in existing ROOT issue #31 comment `6139791983`. Governance evidence remains available in [Librarian drift evidence](LIBRARIAN_DRIFT_EVIDENCE_20261013_0816SAST.md) and the prior issue comments; this is not four-office receipt completion.
 - **Drift evidence:** [LIBRARIAN_DRIFT_EVIDENCE_20261013_0816SAST.md](LIBRARIAN_DRIFT_EVIDENCE_20261013_0816SAST.md), blob `e0dd42fe6bedafe9cf8634f9d20235ce2a60b169`; ROOT issue #31 evidence comment `6139633113` and prompt-propagation blocker comment `6139730317`.
 - **Flight:** `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`, segment 04, IN_FLIGHT. No landing recorded.
+
+
+## Segment 05 continuity — ROOT drift and receipt recovery (2026-10-13)
+
+- **ROOT event-order drift comment:** existing issue #31 comment `6139828703`, independently read back. It records the observed segment-04 checkpoint after segment-05 resume/correction and requires append-only preservation.
+- **Latest continuity checkpoint:** [DYNAMIC_FLIGHT_PATH_REGISTER.jsonl](DYNAMIC_FLIGHT_PATH_REGISTER.jsonl), event `AMX-FLT-20261012-DSYNC-145440-9fb44f0c:CHECKPOINT:SEGMENT-05:INTAKE-RECOVERY-20261013`, blob `ca100baca17c99b0964e0ad172b0a7f2698822eb`, status IN_FLIGHT.
+- Three current office receipts were persisted/read back: MASTER blob `24351acdb99a3cc2da2c6a50a0985060746271ef`; T-COD blob `ffe57acceb826230e860d54c9fb3aa0f1726f816`; T-MED blob `df6ff0ac7d3501f7a5d56bf4092a8ab9c3c178ab`.
+- ROOT/T-GOV's standardized receipt-file write was blocked; issue #31 comment `6139791983` records the exact action, blocker and recovery owner. ROOT's drift evidence remains persisted and indexed.
+- Saved-prompt correction remains blocked by plan-level `automation_schedule_not_available`; existing automation `6ac7c95aa91c819182be1e98e1404b95` remains enabled and hourly with unchanged prompt.
+- **Disposition:** partial receipt set only; same flight remains open; no landing claimed.
