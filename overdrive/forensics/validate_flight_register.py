@@ -127,7 +127,7 @@ def validate(register_bytes: bytes, index_text: str) -> list[str]:
     # follow it. The Index must reference the latest CHECKPOINT event but its blob
     # digest must cover the complete current append-only register.
     pointer = re.search(
-        r"Latest continuity checkpoint:.*?event `([^`]+)`, blob `([0-9a-f]{40})`",
+        r"Latest continuity checkpoint(?: \([^)]*\))?:.*?event `([^`]+)`, blob `([0-9a-f]{40})`",
         index_text,
     )
     if not pointer:
