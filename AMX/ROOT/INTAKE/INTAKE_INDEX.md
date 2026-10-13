@@ -2665,3 +2665,9 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - ROOT/T-GOV's standardized receipt-file write was blocked; issue #31 comment `6139791983` records the exact action, blocker and recovery owner. ROOT's drift evidence remains persisted and indexed.
 - Saved-prompt correction remains blocked by plan-level `automation_schedule_not_available`; existing automation `6ac7c95aa91c819182be1e98e1404b95` remains enabled and hourly with unchanged prompt.
 - **Disposition:** partial receipt set only; same flight remains open; no landing claimed.
+
+## Bounty Reaper wake — 2026-10-13 10:55 SAST
+
+- **Pre-flight receipt:** [BOUNTY_REAPER_PREFLIGHT_RECEIPT_20261013_1038_SAST.md](BOUNTY_REAPER_PREFLIGHT_RECEIPT_20261013_1038_SAST.md), blob `29ab1cac33b6051043faef69e05d1b33b0a9081b` — canonical registry and Reaper mandate digests recomputed and matched; current live automation state observed disabled; Tracker remains inaccessible.
+- **Execution receipt:** [BOUNTY_REAPER_EXECUTION_RECEIPT_20261013_1055_SAST.md](BOUNTY_REAPER_EXECUTION_RECEIPT_20261013_1055_SAST.md), blob `89b89c77a0e4d353823a368082a12076197ff205` — separate Stargate V2 FeeLibV1 rounding screen matched current unit-test oracle; public failed-recipient issue #104 is closed as deliberate behavior; both are not novel submission candidates. LayerZero `BR-20261003-024` remains Q3/PARKED only for a materially distinct attacker-controlled path; previously killed subclaims are not reopened.
+- **Truth boundary:** `TRACKER_WRITE_BLOCKED`; Runs/Queue/Payouts not read or written; Q1 remains UNKNOWN, NOT ZERO; no bounty submission, external report ID, award or verified payment established. Existing Bounty Reaper automation was not changed; ROOT/authorized connector owner must reconcile the disabled state and restore Tracker/readback access.
