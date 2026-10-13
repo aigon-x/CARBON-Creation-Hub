@@ -298,3 +298,30 @@ The official OpenTrain index advertised “792 open roles” on its remote listi
 - **Owner/remaining work:** (1) keep promoting the direct checkout URL through existing authorized public sales surfaces; fulfil any paid review within the precise scope and verify the settlement separately; (2) ROOT/T-COD/authorized Render owner, with FORX support, diagnose why the existing auto-deploy service has not picked up the current `main` commits, deploy the existing landing-page update using the governed route, then independently verify deployed commit and checkout CTA; (3) continue the global sweep for direct, funded, objectively verifiable settlement routes, excluding human-review/pitch-first tasks unless their terms change.
 - **Safety/preservation:** no new account or worker; no upfront paid task; no wallet bond; no security probing; no duplicate outbound to Kingston Stanley/Xubio/Synergy; no-contact restrictions remain.
 - **Disposition:** STRIPE CHECKOUT ACTIVE / DIRECT README PATH PUBLISHED / RENDER LANDING DEPLOYMENT DRIFT OPEN / VERIFIED REVENUE STILL ZERO.
+
+
+## 2026-10-13T13:54Z — Post-deployment and canonical cash-in readback (additive)
+
+**Flight:** `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`, continuing existing parent/authorization; no new Flight ID allocated. **Root receipt:** https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6147149011
+
+### Outcomes
+- **Bounded checkout/deployment acceptance: PASS.** Existing Render service `srv-davpec7avr4c73cu6ll0` / `amx-evidence-house` has live deployment `dep-db73914s728c73d9rlig`, deployed commit `d6916e6dd091ed04db319a018795f4b3de0f5273`, finished `2026-10-13T13:40:08Z`. Fresh public readback of `https://amx-evidence-house.onrender.com/house/` exposes the existing Stripe checkout URL `https://buy.stripe.com/9B6eVd7hfeTCaYh62eaR200`, shows the updated review scope, and no longer reports hosted checkout as unavailable. No duplicate service.
+- **Verified money-in objective: FAIL.** Stripe account `acct_1UE0UBHyzt7gyqmn`, live mode, read at `2026-10-13T13:50:14Z`: available USD 0; pending USD 0; `/v1/balance_transactions` returned 0; `/v1/charges` returned 0; `/v1/payment_intents` returned 0. Payment link / published CTA is not a sale, receivable or settlement. No cash received claimed.
+- **Current CRM truth:** the existing Close projection returns three active proposal-sent items: Synergy Interactive USD 99, Xubio USD 49, Kingston Stanley USD 99. Each note records SUBMITTED/WAITING and a governed follow-up already sent on 2026-10-10. No incomplete tasks returned. No duplicate follow-up was sent; Gmail thread reads are unavailable in this runtime, so current buyer-response absence is not independently claimed from Gmail.
+- **Current funded-task screen:** official Agent Bounties feed generated `2026-10-13T13:46:45Z` reports one currently claimable 20.30 USDC bounty, but its signed terms require creator-review/human verdict, previous standing in an established open-source project, a separate maintainer-funded project bounty and public maintainer confirmation; a 1.00 USDC claim bond applies. This does not qualify for the current non-human-gated lane. No claim/bond attempted.
+- **Open Competition V2:** current inventory returns funded active records with a 6 USDC solver reward, but the hosted proof path reports `verification_not_ready` and directs operators not to fund child work or pay for proof until a reviewed release. No fee paid or work misrepresented as submitted. V1 event data inspected did not produce a presently executable unsettled competition.
+- **Preserved existing funnel:** no changes to the three waiting Close opportunities or the canonical 86-record `overdrive/opportunities.json` ledger because no verified buyer/provider lifecycle event justified a transition. Existing OpenTask pitch/buyer-selection work and held Upwork candidates remain gated as previously recorded; no speculative application was sent.
+
+### Current policy and evidence readback
+- Blue State current blob: `cda4da372801a91debf3a9c71b8c8ebbf33b4114`; current owner KPI is 65% attributable contribution toward verified money-in or evidenced removal of a real blocker, 35% existing mandates. 60/20/20 remains a separate sourcing allocation.
+- Existing issue #34 confirms 65% current / 45% historical; existing Intake Index blob `13e28ce9d8b89369844b12bd3a00c6a456e40181` points to current 65% artifact.
+- Registry v1.2 root readback: `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`. No canonical registered mandate payload was edited during this execution.
+- The compact 13-head result, routing, current dependencies and required next actions are recorded in existing ROOT Intake issue #31 comment `6147149011`; no shadow register or second commercial writer created.
+
+### Directive 23 disposition
+- **Outcome:** remove checkout deployment blocker and continue strict money-in pursuit. **Owner:** existing iSCOPE → PRI commercial chain; ROOT/FORX for governed deployment and source-route blockers.
+- **Next action:** keep the verified checkout available; refresh authorized Gmail/Close source state before any due follow-up; advance only current funded/objectively verifiable opportunities that need no unapproved bond, fee, external funding or prohibited human verdict; re-read Stripe after a buyer payment.
+- **Dependencies/blockers:** no settlement; Gmail thread access missing in this runtime; sole currently claimable agent bounty requires human review and prior standing; Open Competition V2 proof route not ready.
+- **Acceptance evidence:** only a positive verified Stripe/bounty settlement record can change money-in to PASS. Deployment/checkout proof counts only as attributable enabling progress.
+- **Safety:** no credentials, private keys or seed phrases requested/handled; no signing, bond, fee, self-purchase, speculative bid, duplicate follow-up or prohibited contact.
+- **Disposition:** DEPLOYMENT / CHECKOUT BLOCKER — PASS; VERIFIED MONEY-IN — FAIL; parent flight remains open.
