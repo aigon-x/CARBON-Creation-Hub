@@ -49,8 +49,8 @@
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-12",
-  "last_reconciled_reason": "Added two public buyer-build discoveries with explicit live-proof and authorized-route holds after checking all 84 prior records for exact listing IDs and equivalent opportunities. No outreach, application, CRM update, or deployment action was performed.",
+  "last_reconciled_at": "2026-10-13T12:37:28Z",
+  "last_reconciled_reason": "Reconciled the live official 2CT application page with the Owner's explicit eligibility confirmation and authorization to continue. Eligibility criteria are owner-attested and treated as passed; prior-contact/account-history dedupe remains open because Gmail read access and authenticated browser access are unavailable. No application or assessment was submitted.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -113,7 +113,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-12",
+  "last_updated_at": "2026-10-13",
   "last_updated_by": "iSCOPE",
   "record_count": 86,
   "record_key": "normalized organization/domain + opportunity + title",
@@ -4282,15 +4282,14 @@
       "video_access_verified_at": "2026-09-30T16:52:12.432Z"
     },
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
-      "buyer_fit": "Historical B2B sales and strategic-account execution are relevant. The role explicitly requires 2+ years of phone-based cold-calling experience; that exact requirement is not yet evidenced in the recovered record.",
+      "buyer_fit": "Owner-confirmed eligibility for the official South Africa BDR role; historical B2B/front-line sales evidence is relevant. Qualification criteria are owner-attested, not independently document-verified.",
       "capital_direction": "PAYER_TO_WORK / EMPLOYMENT",
       "commercial_role": "REMOTE B2B SALES DEVELOPMENT",
       "constraints": [
-        "Official page requires at least two years of phone-based cold-calling experience; not yet evidenced for qualification.",
-        "US business hours, Monday to Friday, are required; applicant availability is unconfirmed.",
+        "Prior-contact/application/account-history dedupe remains unverified because the current Gmail connector is recorded as disabled by administrator and no authenticated browser route is connected.",
         "Guaranteed monthly base is stated, but the exact amount is not published on the page.",
-        "Application requires a personal voice interview with the AI recruiter; the call is recorded/transcribed, audio is retained for 12 months and transcript for 24 months.",
-        "Gmail/account-history dedupe could not be completed because the current canonical ledger records the Gmail connector as disabled by administrator; do not infer no prior contact."
+        "Application requires a recorded/scored voice interview with the AI recruiter; obey any assessment integrity rules and do not use hidden assistance where prohibited.",
+        "No application submission, assessment completion, buyer response, offer, contract, invoice or payment is evidenced in this wake."
       ],
       "discovered_by": "iSCOPE",
       "domain": "apply.2cantalks.com",
@@ -4308,21 +4307,35 @@
           "observed_at": "2026-10-11T18:25:12.999Z",
           "source": "CONNECTOR_STATUS_RECORDED_IN_CANONICAL_LEDGER",
           "summary": "The latest recorded CallForce reconciliation reports Gmail disabled by administrator; prior-contact/account-history dedupe for this new candidate is therefore unverified in this runtime."
+        },
+        {
+          "kind": "OWNER_CONFIRMED_ELIGIBILITY_AND_PIPELINE_AUTHORIZATION",
+          "observed_at": "2026-10-13T10:39:19Z",
+          "source": "OWNER_CONVERSATION",
+          "summary": "Owner explicitly confirmed they meet the role's phone-based cold-calling and US-hours requirements and authorized continuing the application pipeline. This is an owner attestation; no application submission is implied."
+        },
+        {
+          "kind": "CURRENT_OFFICIAL_APPLICATION_PAGE_REVERIFIED",
+          "observed_at": "2026-10-13T12:37:28Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "The official South Africa BDR application page remains live and still requires CV upload followed by the scored voice assessment with Naledi in the same sitting.",
+          "url": "https://apply.2cantalks.com/j/bdr-outbound-sa"
         }
       ],
       "execution_owner": "iSCOPE",
-      "execution_readiness": "HOLD_QUALIFICATION",
-      "last_reconciled_at": "2026-10-11T19:36:31Z",
-      "next_action": "iSCOPE qualification HOLD: verify existing evidence for at least two years of phone-based cold-calling experience and confirm US-hours availability; resolve prior-contact/account-history dedupe when an authorized Gmail read route is restored. If the gates pass, qualify and hand off to PRI for applicant-controlled application. Do not submit or imply qualification while these requirements remain unknown.",
+      "execution_readiness": "HOLD_ACCOUNT_HISTORY_DEDUPE",
+      "last_reconciled_at": "2026-10-13T12:37:28Z",
+      "next_action": "Before submitting, restore an authorized read path to the existing Gmail/account history and dedupe prior 2CT contact/application. If no prior submission exists, use the current official application route, upload the current CV as-is (sufficient-to-test; no polish cycle), and complete Naledi's scored voice assessment in the same sitting. If a prior application exists, resume that existing route and do not duplicate. Persist actual submission/assessment receipt and read back; do not claim either before evidence.",
       "opportunity": "bdr-outbound-sa",
       "organization": "2CT Sales Co.",
       "proof_of_work_route": "INTERVIEW_HEAVY",
       "reward": "Guaranteed monthly base (exact amount not published) plus uncapped commission on qualified meetings held and downstream closed business. The page cites R30,000+/month at the top of the floor; this is not a guaranteed outcome.",
-      "routing_reason": "ELIGIBILITY_AND_GMAIL_DEDUPE_UNVERIFIED",
-      "state": "DISCOVERED",
+      "routing_reason": "ELIGIBILITY_OWNER_CONFIRMED_PRIOR_CONTACT_DEDUPE_UNAVAILABLE",
+      "state": "QUALIFIED",
       "title": "Business Development Representative — Cold Outreach and Warm Inbound (Remote, South Africa)",
       "current_route_status": "OFFICIAL_APPLICATION_PAGE_CURRENT",
-      "upfront_cost": "NO_APPLICATION_FEE_STATED"
+      "upfront_cost": "NO_APPLICATION_FEE_STATED",
+      "qualified_at": "2026-10-13T10:39:19Z"
     },
     "upwork.com|rag-crm-internal-assistant|022107920443968482841": {
       "buyer_fit": "Specific buyer need for a bounded internal AI assistant: document-grounded answers with citations, five-category request classification, validated structured output, human review for ambiguity, one read-only CRM lookup, one approval-gated/write endpoint with duplicate prevention, and one n8n routing workflow. Fit is at the workflow/agent-safety design level only; no current source-bound proof of an equivalent deployed RAG+CRM flow has been verified.",
@@ -4408,6 +4421,6 @@
       "title": "WhatsApp Agent AI — Show Working Agent & Proof You Built It"
     }
   },
-  "updated_at": "2026-10-12",
+  "updated_at": "2026-10-13",
   "version": 1
 }
