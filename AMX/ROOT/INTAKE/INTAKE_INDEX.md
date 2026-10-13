@@ -2645,3 +2645,13 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Runtime drift:** excessive tool-schema inspection/context handling delayed a straightforward checkpoint-and-route operation after the Owner explicitly objected to latency. Corrective rule: minimum preflight, early durable checkpoint, compact ROOT handoff, then resume execution.
 - **Readback boundary:** an immediate existing Librarian wake was requested; request success is not execution evidence. Fresh output and separate MASTER/ROOT-TGOV/T-COD/T-MED receipts remain unverified. Do not land until postflight deep sync and independent readback.
 - **Disposition:** routed for ROOT/T-GOV review; full Matrix sync and segment-05 landing remain OPEN.
+
+
+## Current Librarian wake receipts — 2026-10-13
+
+- **MASTER receipt:** [MASTER_WAKE_20261013_0827SAST.md](LIBRARIAN_RECEIPTS/MASTER_WAKE_20261013_0827SAST.md), blob `24351acdb99a3cc2da2c6a50a0985060746271ef` — persisted/read back.
+- **T-COD receipt:** [TCOD_WAKE_20261013_0827SAST.md](LIBRARIAN_RECEIPTS/TCOD_WAKE_20261013_0827SAST.md), blob `ffe57acceb826230e860d54c9fb3aa0f1726f816` — persisted/read back.
+- **T-MED receipt:** [TMED_WAKE_20261013_0827SAST.md](LIBRARIAN_RECEIPTS/TMED_WAKE_20261013_0827SAST.md), blob `df6ff0ac7d3501f7a5d56bf4092a8ab9c3c178ab` — persisted/read back.
+- **ROOT/T-GOV receipt file:** attempted at `LIBRARIAN_RECEIPTS/ROOT_TGOV_WAKE_20261013_0827SAST.md`; blocked before persistence. Exact blocker and recovery action are recorded in existing ROOT issue #31 comment `6139791983`. Governance evidence remains available in [Librarian drift evidence](LIBRARIAN_DRIFT_EVIDENCE_20261013_0816SAST.md) and the prior issue comments; this is not four-office receipt completion.
+- **Drift evidence:** [LIBRARIAN_DRIFT_EVIDENCE_20261013_0816SAST.md](LIBRARIAN_DRIFT_EVIDENCE_20261013_0816SAST.md), blob `e0dd42fe6bedafe9cf8634f9d20235ce2a60b169`; ROOT issue #31 evidence comment `6139633113` and prompt-propagation blocker comment `6139730317`.
+- **Flight:** `AMX-FLT-20261012-DSYNC-145440-9fb44f0c`, segment 04, IN_FLIGHT. No landing recorded.
