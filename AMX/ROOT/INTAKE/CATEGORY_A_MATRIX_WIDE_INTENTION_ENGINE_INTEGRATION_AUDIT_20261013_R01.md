@@ -226,3 +226,40 @@ ROOT/T-GOV is requested to:
 - **Expected outcome:** runtime/source status is not mistaken for behavioral completion. **Owner:** MASTER/LIBRARIAN. **Action:** reconcile current records and only claim verified states with attributable receipts. **Dependency/blocker:** cross-consumer evidence and current live outcomes. **Acceptance evidence:** independent readback and evidenced joins. **Persistence/readback:** link subsequent receipts here and to #18. **Safety/preservation:** no false pass or unsupported Matrix-wide claim. **Disposition:** OPEN.
 
 **Final status:** Investigation evidence prepared for the existing ROOT Intake path. The report itself has no authority to declare integration accepted; ROOT disposition, implementation/rollout and subsequent behavioral acceptance remain open.
+
+
+---
+
+## 10. Post-audit runtime readback — 2026-10-13 SAST
+
+This section supersedes only the dated status claims in Sections 6 and 9 that exact-head CI and same-revision deployment/runtime had not yet been verified. All earlier observations remain historical provenance.
+
+### Executed and verified
+
+- **Current source head:** `2c720b2c0aa7b5e24a0bf39cc38811d764803634`, PR #14, branch `build/carbon-intent-marketplace-v1`.
+- **Exact-head CI:** GitHub Actions run [38202721580](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/38202721580), “Evidence House Backend Tests”, completed SUCCESS on that exact SHA; its `test` check completed SUCCESS.
+- **Same-SHA preview deployment:** Render deployment `dep-db76623rjlhs73a2hifg` is LIVE on `2c720b2c0aa7b5e24a0bf39cc38811d764803634` at [Marketplace preview](https://carbon-intent-marketplace-v1-preview.onrender.com). This is the existing preview service only; PR #14 remains OPEN / DRAFT / UNMERGED.
+- **Live route readback:** `GET /api/health`, `GET /api/carbon/bootstrap`, `GET /openapi.json`, and `GET /api/carbon/search` responded. OpenAPI advertises the Marketplace Search route plus 52 total routes.
+- **Shared Search health:** after one transient HTTP 503 on the first probe, repeat reads of [Search health](https://carbon-search-intention-v1.onrender.com/api/search/health) and [Search contract](https://carbon-search-intention-v1.onrender.com/api/search/contract) succeeded. The live contract still reports `CARBON_SEARCH_V1`, `INTELLAGENT`, and 35 mandatory gates; `external_provider` and `marketplace_provider` remain `UNCONFIGURED`.
+
+### Acceptance still fails at live consumer integration
+
+- Marketplace bootstrap reports `discovery.name=LOCAL_CARBON_MARKET`, `external_search_connected=false`, `external_marketplace_connected=false`, `demo_mode=true`, `money_moved=false`, and `production_provider_connected=false`.
+- The live `GET /api/carbon/search` response likewise reports `discovery.name=LOCAL_CARBON_MARKET` and a provider-selection remainder. Therefore the newly deployed revision is live, but its effective runtime is **not yet invoking the shared intent endpoint** for Marketplace search.
+- At this source revision, `IntentEngineDiscoveryAdapter.from_env()` selects the shared engine only if `CARBON_SEARCH_INTENT_URL` or `CARBON_SEARCH_CLIENT_TOKEN` is configured. With neither configured, explicit preview demo mode selects the local adapter. The effective runtime configuration therefore does not yet supply the shared Search endpoint/client-token pair. No secret value was retrieved or exposed during this pass.
+- The adapter implementation in `backend/marketplace_discovery.py` expects an HTTPS endpoint ending in `/api/search/intent` plus a client-surface token matching Search's `AMX_SEARCH_CLIENT_TOKEN`; a successful qualified query must POST to Search, receive a session ID, GET the session and observe ranked candidates before reporting `QUERY_VERIFIED`.
+- The marketplace currently has zero listings. The shared adapter can be configured, but full behavioral acceptance still needs a safe, explicit preview fixture (or existing verified public candidate) and a query proving event → session readback → ranking/output consequence. Do not treat route presence, healthy status, or a local empty result as shared-engine acceptance.
+- Search suffered a single initial 503 on this pass; two later health/contract probes succeeded. Classify the one 503 as **transient observed, not a persistent service failure** unless fresh regression evidence appears.
+- Sandbox boundary preserved: the live Marketplace still reports `SANDBOX_NO_MONEY_MOVED` and `money_moved=false`. No real payment, settlement, production provider, or credential change was performed.
+
+### Next action / owner disposition
+
+- **T-COD / existing CARBON runtime owner:** bind the currently stored Render environment configuration to the existing shared Search endpoint and approved client-token value, without exposing secrets in source/transcripts; do not rotate a shared token until its consumers and impact are reconciled.
+- **MASTER/LIBRARIAN:** read back the effective runtime adapter state and exact deployment SHA after the configuration change.
+- **FORX + ROOT/T-GOV:** produce/reconcile the full per-consumer denominator and formal Category A disposition through existing issue #18. Keep #18 OPEN / EXECUTION, PR #14 DRAFT/UNMERGED, #16 CLOSED, and 35-gate Search V1 frozen until behavior has been read back. If the existing runtime secret cannot be securely recovered, record the exact owner/action/gate instead of guessing or using a dummy credential.
+
+### Directive 23 itemized delta
+
+- **Expected outcome:** source commit proven on a hosted Marketplace preview. **Owner:** T-COD / CARBON runtime. **Action:** deploy exact head. **Dependency:** existing preview service. **Acceptance evidence:** CI run 38202721580 + deployment dep-db76623rjlhs73a2hifg on SHA 2c720b2. **Persistence/readback:** GitHub run and Render deployment readback. **Safety:** preview/sandbox only; no money moved. **Disposition:** PASS for same-SHA CI/deployment only.
+- **Expected outcome:** Marketplace invokes shared intent runtime. **Owner:** T-COD/CARBON runtime; ROOT governs authority. **Action:** provide the current endpoint and client token at runtime, then verify live POST/session readback and result ordering. **Dependency/blocker:** effective adapter is LOCAL_CARBON_MARKET; environment pair not configured and no listings present. **Acceptance evidence:** `QUERY_VERIFIED`, session ID, ordered candidate IDs and durable readback on the exact deployed SHA. **Persistence/readback:** this audit and #18. **Safety:** do not expose/rotate secrets without consumer check; sandbox money remains disabled. **Disposition:** OPEN / FAIL acceptance, recovery path identified.
+- **Expected outcome:** matrix-wide original intention algorithm acceptance. **Owner:** ROOT/T-GOV + existing consumer owners. **Action:** enumerate and test each current consumer; recover original formula lineage. **Dependency/blocker:** consumer denominator, per-consumer receipts and formula origin still unresolved. **Acceptance evidence:** exact revision and behavioral receipt per consumer plus source/hash for the formula or bounded provenance census. **Persistence/readback:** existing #18 / ROOT Intake. **Safety:** preserve roles, privacy and frozen contract; no duplicate engine. **Disposition:** OPEN.
