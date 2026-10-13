@@ -325,3 +325,28 @@ The official OpenTrain index advertised “792 open roles” on its remote listi
 - **Acceptance evidence:** only a positive verified Stripe/bounty settlement record can change money-in to PASS. Deployment/checkout proof counts only as attributable enabling progress.
 - **Safety:** no credentials, private keys or seed phrases requested/handled; no signing, bond, fee, self-purchase, speculative bid, duplicate follow-up or prohibited contact.
 - **Disposition:** DEPLOYMENT / CHECKOUT BLOCKER — PASS; VERIFIED MONEY-IN — FAIL; parent flight remains open.
+
+---
+
+## 2026-10-13T13:50Z — Latest direct live checkout-session reconciliation
+
+**Purpose:** correct the session census without promoting unpaid checkout activity to income.
+
+- **Payment link:** existing live link `plink_1UQ5O5Hyzt7gyqmnpy8tS7DA`; read-only retrieval returned `active=true`, live mode, URL `https://buy.stripe.com/9B6eVd7hfeTCaYh62eaR200`. No duplicate link or price was created.
+- **Fresh filtered Checkout Sessions read:** the Stripe live API, filtered by the existing link ID, currently returns **2 sessions**. Both have `status=open`, `payment_status=unpaid`, `amount_total=499` (USD 4.99), and no attached PaymentIntent or customer details in the returned fields. Their created timestamps decode to 2026-10-13T13:17:43Z and 2026-10-13T13:28:24Z. Session IDs and any potentially identifying checkout tokens are deliberately not copied into this public artifact.
+- **Independent payment evidence:** direct live API reads returned 0 charges, 0 PaymentIntents, and 0 balance transactions. Balance transaction listing has `has_more=false`. No positive available/pending balance change was evidenced by those endpoints in this read.
+- **Source inconsistency:** the preceding 13:50:14Z checkpoint stated that Checkout Sessions were empty, while this filtered current-link read returns two sessions whose source timestamps are earlier than that checkpoint. Retain the earlier statement as historical snapshot evidence; do not silently rewrite it. Current session census is 2 open/unpaid, but the cross-read discrepancy still needs a source/timing reconciliation. The absence of customer details means the sessions do not identify genuine buyers, and no such inference is made.
+- **Objective disposition:** checkout link/deployment acceptance remains PASS as already recorded. Actual money-in remains **FAIL / $0 evidenced**. Neither an open session, a link click nor a published offer is payment.
+- **Next concrete action:** re-read the same live link's sessions, charges, PaymentIntents and balance transactions after any material payment event; only advance the commercial lifecycle on a source-verifiable paid/settled event, and reconcile the session census discrepancy if it persists.
+
+### Directive 23 — itemized acceptance
+- **Expected outcome:** accurately reconcile the live checkout funnel and never misstate checkout activity as income.
+- **Owner:** existing Micro-Matrix offer owner + existing iSCOPE → PRI commercial chain; Banker owns settlement truth.
+- **Action completed:** fetched active payment link; fetched the same-link Checkout Sessions; separately fetched charge, PaymentIntent and balance-transaction lists.
+- **Dependency/blocker:** two open/unpaid sessions do not expose customer identity or a paid outcome; one prior empty-session census conflicts with the current filtered response.
+- **Acceptance evidence:** active link ID, 2 open/unpaid sessions at USD 4.99 each, 0 charges, 0 PaymentIntents, 0 balance transactions.
+- **Persistence/readback:** this correction is appended to the existing canonical income evidence file and must be fetched back after write.
+- **Safety/preservation:** no checkout sessions were created or modified; no self-purchase; no contact, refund, invoice or customer identity inferred; checkout IDs omitted from public evidence.
+- **Disposition:** OPEN / PARTIAL; **NO MONEY-IN CLAIMED**.
+- **Remaining work:** source-census reconciliation and verified paid/settled customer transaction.
+
