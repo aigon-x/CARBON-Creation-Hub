@@ -134,32 +134,19 @@ Issue #22 is governance-dispositioned. Operational effectiveness remains evidenc
 
 For every applicable Librarian office, this directive precedes ordinary mandate content but does not expand authority.
 
-## 25 / 75 WEIGHTED DISTRIBUTION
+## CURRENT 45% MATRIX-WIDE MONEY-IN PERFORMANCE KPI — OWNER SUPERSESSION — 2026-10-13
 
-**25% OF TOTAL ATTRIBUTABLE LIBRARIAN EFFORT = GLOBAL DRIVE → INCOME BRICK / MONEY COMING IN.**
+**CURRENT: 45% of every autonomous worker's evaluated KPI is measured against attributable contribution toward verified money-in or the evidenced removal of a real blocker on that path.**
 
-That 25% is specifically for tracing and hardening the chain:
+- **This is a performance/KPI weight, not a 45% time, compute, activity, or staffing quota.** It does not make every specialist a salesperson or transfer another office's mandate.
+- The remaining **55%** is assessed under each worker's existing mandate and governing responsibilities.
+- Credit can be given for a source-backed step that materially enables a real path to payment, but label it **ATTRIBUTABLE PROGRESS TOWARD MONEY-IN**, not realized income. Direct cash, accepted work, contract, invoice/receivable, paid/settled, and enabling progress are different states.
+- A run, report, prompt change, candidate list, application draft, submitted application, nominal bounty value, unaccepted deliverable, or unverified payment does not itself count as money-in.
+- A contribution must be attributable, observable, and independently evidenced. Do not count one outcome multiple times or assign causal credit without evidence.
+- **Keep the existing 60/20/20 sourcing rule separate.** It governs effort allocation inside opportunity search/sourcing (60% real-value/direct-buyer work, 20% qualifying Micro-Matrix work, 20% maximum recruitment/platform-led sourcing). It is not the 45% KPI and is not applied retroactively to inbound or accepted offers.
+- Inbound/accepted offers bypass the sourcing allocation and progress from their furthest source-verified stage through existing iSCOPE → PRI → Banker ownership where applicable. Do not invent identity, acceptance, invoice, payment, or settlement status.
 
-GLOBAL EXPANSION / OPPORTUNITY SUPPLY
-→ QUALIFIED CURRENT PROBLEM
-→ CORRECT BUYER / ROUTE
-→ BUYABLE POSITIONING / OFFER
-→ BUYER-READY DELIVERY / ACCESS
-→ RESPONSE
-→ ACCEPTANCE
-→ CONTRACT / INVOICE
-→ PAYMENT
-→ VERIFIED SETTLEMENT.
-
-Within that 25%, Librarians use only their existing governed authority to detect, reconcile, harden, unblock, route and verify the highest-value break preventing lawful existing opportunities from becoming money-in.
-
-Examples: sleeping/orphaned owners; stale/wrong contacts; weak qualification; weak positioning; non-buyable offer structure; poor price/scope framing; artifact/access/quality failure; stalled follow-up or objection state; stale commercial ledger state; accepted work not progressing to invoice/payment; provider/technical dependency blocking a real commercial path; activity metrics outranking actual conversion; outcome learning not changing future opportunity selection.
-
-Generic governance cleanup, hash work, reporting, map growth, dashboards, evidence formatting or architecture polish do **not** count toward the 25% merely because they are useful. They count only when materially and directly necessary to remove an evidenced income blocker.
-
-**75% OF TOTAL ATTRIBUTABLE LIBRARIAN EFFORT = THE OFFICE'S EXISTING GOVERNED MANDATE AND RESPONSIBILITIES.**
-
-Highest precedence does not mean 100% resource allocation. The 25/75 split is a weighted operating target across an attributable run/window, not a stopwatch quota or report-word quota.
+**Supersession record:** the former 25% income-brick / 75% office-mandate section that occupied this position is superseded as a current percentage rule by the Owner's 2026-10-13 45% KPI direction. Its prior exact wording is preserved in Blue State Git history (preceding blob `e7219b643f257dd3c59b86c1b56c8c91f97f8ee4`) and must not be treated as current. The pre-existing runtime-open and role-fidelity rules below remain active.
 
 ## RUNTIME-OPEN RULE
 
@@ -168,7 +155,7 @@ Highest precedence does not mean 100% resource allocation. The 25/75 split is a 
 **ONE REPAIR COMPLETE != RUNTIME COMPLETE.**
 **ONE BLOCKER ROUTED != RUNTIME COMPLETE.**
 
-When Intake or the immediate queue is clean, the Librarian must continue: spend the appropriate 25% share on the income brick and the remaining 75% on the rest of its governed mandate while lawful executable work remains.
+When Intake or the immediate queue is clean, the Librarian must continue while lawful executable work remains: apply the current 45% money-in KPI to score attributable progress within its mandate; use the remaining 55% to assess the worker's existing governed responsibilities. This is KPI weighting, not a time/compute quota. The runtime-open invariant remains active.
 
 A wake must not voluntarily end merely because a queue, report, repair, subsystem or local blocker is finished. Continue until the runtime/tool itself ends, governed retirement/succession occurs, or lawful executable scope is genuinely exhausted.
 
@@ -192,7 +179,7 @@ This directive does not merge mandates or transfer operational ownership.
 
 Every applicable Librarian office must independently persist/read back an attributable receipt containing:
 
-OFFICE | CURRENT MANDATE ID | CURRENT MANDATE SHA-256 | STATUS | PRIMARY LIBRARIAN EXISTENCE DIRECTIVE = UNDERSTOOD / BOUND | 25% INCOME BRICK = UNDERSTOOD | 75% EXISTING MANDATE = UNDERSTOOD | RUNTIME-OPEN RULE = UNDERSTOOD | AUTHORITY ISOLATION = UNDERSTOOD | TIMESTAMP | RECEIPT LOCATION.
+OFFICE | CURRENT MANDATE ID | CURRENT MANDATE SHA-256 | STATUS | PRIMARY PURPOSE = UNDERSTOOD / BOUND | 45% MONEY-IN KPI = UNDERSTOOD / BOUND | 55% EXISTING MANDATE = UNDERSTOOD / BOUND | 60/20/20 SOURCING SPLIT KEPT DISTINCT = UNDERSTOOD | RUNTIME-OPEN RULE = UNDERSTOOD | AUTHORITY ISOLATION = UNDERSTOOD | TIMESTAMP | RECEIPT LOCATION.
 
 No generic MASTER statement may substitute for another office's receipt.
 
@@ -1044,3 +1031,89 @@ The 60/20/20 allocation in this Blue State is **100% of opportunity-search and c
 Existing Blue State contains the current 25% attributable Librarian income-brick / 75% existing-office-mandate allocation. ROOT issue [#34 — CATEGORY A 33% Matrix-wide money-in focus; supersede 25%](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/34) is currently OPEN / SUBMITTED FOR GOVERNANCE; its own text requests ROOT/T-GOV classification and says it is not evidence of propagation. It requests a separate 33% Matrix-wide commercial-focus denominator. Do not silently treat that request as accepted, and do not allow the opportunity-level 60/20/20 rule to overwrite either the current Blue State rule or issue #34.
 
 ROOT/T-GOV must reconcile issue #34 against the existing 25% Librarian rule with explicit denominator, role/scope, owner, supersession and acceptance evidence. Until it is explicitly dispositioned and merged, preserve the current canonical Blue State value and report issue #34 as OPEN. This is a scope distinction, not a rejection of the Owner's 60/20/20 opportunity-level direction.
+
+---
+
+# OWNER-AUTHORIZED CATEGORY A — EVERY-FLIGHT OBJECTIVE / PASS-FAIL / 13-HEAD REVIEW CONTRACT — 2026-10-13
+
+**Status:** Owner-directed operational rule merged into this Blue State. It does not alter any canonical mandate payload or the mandate registry. ROOT/T-GOV retains governance disposition over propagation and each existing owner retains its registered mandate.
+
+## 1. One flight, one objective statement, one verdict
+
+Every flight/wake/run by every Matrix worker, Librarian, PRI, income runner, or other governed runtime MUST state the following before material work:
+
+- `FLIGHT_ID` and segment; reuse the existing open flight on resume.
+- `OBJECTIVE`: one plain sentence saying what must change.
+- `WHY`: why this flight is needed now.
+- `PASS_TEST`: the observable state change/evidence that will prove the objective was met.
+- `MANDATE / SCOPE`: applicable registered owner and hard boundary.
+- `45% KPI LINK`: expected attributable money-in contribution, exact blocker on the money path, or `NO DIRECT MONEY-IN LINK — EXPLAINED`. Never claim revenue without verified financial evidence.
+- `NEXT_ACTION_IF_FAIL`: the immediate repair, owner and acceptance condition if the test fails.
+
+If the objective or its pass test cannot be stated clearly before execution, **pre-flight FAIL / HOLD MATERIAL WORK**, correct the ambiguity, and route the exact defect. Do not invent a vague objective after the work is done.
+
+## 2. The post-flight verdict is exactly PASS or FAIL
+
+Every flight must end with this short block:
+
+- `OBJECTIVE:` repeat the pre-flight objective.
+- `RESULT:` `PASS` or `FAIL` only.
+- `WHY:` one or more plain factual reasons.
+- `PROOF:` state delta plus independent readback/evidence link, or `NO PROOF`.
+- `MONEY-IN KPI (45%):` verified money-in, attributable progress toward money-in, evidenced blocker removed, or no attributable contribution with reason. Do not conflate these.
+- `NEXT:` one concrete next action, named existing owner, dependency and acceptance test.
+
+**PASS** means every mandatory pass test declared before the flight was met and the required resulting state was independently verified. For an external action, use the external receipt/status. For a repository or governance change, read back the exact current artifact and verify required invariants.
+
+**FAIL** means any mandatory pass test was not met, the resulting state is unknown/unverified, required readback is missing, evidence conflicts, or an external/human/tool gate prevented the objective. State the specific unmet test and next repair. A tool call, report, commit, routing attempt, partial change, blocked item, or successful subtask is not PASS for the overall objective.
+
+A compound flight receives a PASS only if every pre-declared mandatory objective passes. If any mandatory objective fails, the overall flight result is FAIL; individual sub-results may be shown but never hide the overall FAIL. Do not use “partial,” “in progress,” “blocked,” “mostly done,” or “successful run” as substitutes for the required verdict. They may describe the reason for FAIL.
+
+## 3. Mandatory plain-language tests
+
+- **10-year-old test:** Can a child explain what we tried to do, whether we did it, what proves it, and what happens next?
+- **3-year-old test:** Can the child point to **YES / NO** and the proof?
+- These are output-clarity checks, not permission to weaken the actual acceptance test. The formal FORX 13-head sequence remains unchanged, including its current Head 9 (12-year-old clarity lens) and Head 13 (3-year-old literal-continuity lens). Apply the Owner-requested 10-year-old test as an additional plain-language check, not as an unauthorized edit to the 13-head mechanism.
+
+If either check fails, the report fails the clarity test and must be rewritten in plain words.
+
+## 4. Required 13-headed FORX Reaper output after every flight
+
+Every post-flight report must include one concise evidence-bound pass through the existing FORX 13-head mechanism in its registered order. Use one short line per head: **finding → recommendation/action → existing owner or `NONE`**. If a head finds no material issue, write `NO DELTA`; do not fabricate findings. The 13 heads are:
+
+1. INSTIGATOR
+2. SPECIFICATION
+3. PROVENANCE / AUTHORITY
+4. EFFICIENCY
+5. CONTINUITY CHALLENGER A
+6. ROI / VALUE
+7. FAILURE NODE / DEPENDENCY GRAPH
+8. ROUTING / EXECUTION OWNERSHIP
+9. CONTINUITY CHALLENGER B — canonical 12-year-old lens
+10. VERIFICATION
+11. OPTIMIZATION
+12. WEIGHTED CONTINUATION
+13. CONTINUITY CHALLENGER C — 3-year-old literal-continuity lens
+
+The Instigator's accusation is a probe, never a fact. Each line must separate what evidence shows from unknowns. Recommendations must be actionable: say what must change, which existing owner does it, what it depends on, and what evidence closes it. No new worker, head, scheduler, queue, tracker, reporting system, or authority is created.
+
+## 5. Root Intake routing — Category B candidate
+
+After every flight, route the concise 13-head result and any proposed shared behavioral change through the **existing Root Intake as Category B**. Use the existing governance issue/route; do not create a competing route. The Category B packet must include the run objective and PASS/FAIL verdict, the 13-head findings, exact proposed actions, receiving existing owner, dependency, acceptance test, persistence/readback requirement, safety condition, item disposition, and remaining work.
+
+ROOT/T-GOV, MASTER/LIBRARIAN and FORX assess each Category B packet, reconcile duplicates against existing controls, and convert accepted recommendations into actions owned by the relevant existing workers. Category B is a proposal/recommendation state until the authorized governance disposition is recorded; it is not silently promoted to Canon or a new authority. Acknowledgement or filing alone is not implementation acceptance.
+
+## 6. Runtime remains open
+
+After the post-flight block and Category B routing, continue from the same flight and furthest evidenced state while lawful executable work remains. A failed objective requires its next repair, or another independent executable objective if the repair is owner-gated. Do not stop at a receipt, one failed parcel, a clean queue, or an explanation. Do not repeat an unchanged failed tool call without a new route or material evidence.
+
+## 7. Acceptance of this migration
+
+This specific migration is PASS only when:
+1. This rule is present in the canonical Blue State and independently fetched back.
+2. Current registry root and every registered mandate payload hash are unchanged.
+3. The run-specific Category B 13-head review is committed to existing Root Intake, added to the existing Index and routed on the existing ROOT governance issue.
+4. Those artifacts are independently read back and their exact current links/blob IDs are verified.
+
+**This merge does not prove Matrix-wide behavioral adoption.** Each existing runtime needs an attributable post-flight sample complying with this contract before universal adoption may be reported PASS.
+
