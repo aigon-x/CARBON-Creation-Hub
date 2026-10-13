@@ -62,3 +62,10 @@ SAFETY: NO LIVE EXPLOITATION, PROHIBITED TESTING, FUND MOVEMENT, SPEND, CREDENTI
 - Attempted to deliver a model-visible parent/ROOT notification referencing this receipt and the Tracker/scheduler blockers.
 - Result: `NOT_FOUND: HTTP error prior to action invocation; HTTPException 404: Action not found`.
 - Truth boundary: no direct parent notification was delivered. The existing Root Intake receipt and Intake Index remain the persisted fallback. ROOT recovery is still required; do not infer connector restoration, queue reconciliation or scheduler reactivation.
+
+## Continuation slice — Stargate FeeLib boundary check (2026-10-13 11:09 SAST)
+
+- The same `_calculateFee` expression was evaluated at the valid owner-configured boundary `feeMill = FEE_DENOMINATOR = 1,000,000`. For every positive amount, integer-division result is the amount itself and the appended `+ 1` yields `amount + 1`; `applyFeeView` then attempts `amountInSD - fee`, which underflows/reverts (apart from uint64 conversion boundary behavior).
+- The contract permits a 100% fee configuration, but `setFeeConfig` is `onlyOwner`. The relevant unit test explicitly assumes away inputs for which `expectedFee > _amountInSD` and comments that underflow can occur in real life; it uses the same formula as the expected oracle.
+- Disposition: B — configuration edge recorded / NOT PROMOTED. This is owner-configuration-dependent and no unprivileged actor path, affected production config, qualifying user-funds impact, or bounty-eligible exploit was established. It is not a report package. If later public deployment evidence shows an active in-scope path set to 100%, reassess only with authorized local/fork PoC and current program scope.
+- Source blobs: FeeLibV1.sol `bea4e8a01305bb91e68027ef6e8afa08bc0ace31`; FeeLibV1.t.sol `bfdb61dd9a1eaf2ba40606db36fd58f1ed303cde`.
