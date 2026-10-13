@@ -49,3 +49,15 @@
 - Registered mandate digest verification: `12/12 MATCHED`
 
 **Root disposition requested:** KEEP / MODIFY / REJECT / SUBSUME each proposed action and assign accepted work to existing owners. Category B filing is not equivalent to governance acceptance or Matrix-wide adoption.
+
+## Post-flight acceptance update — 2026-10-13 15:33 SAST
+
+**RESULT: PASS** for the bounded 65% authority-update flight.
+
+- Blue State current blob `cda4da372801a91debf3a9c71b8c8ebbf33b4114` fetched back exactly; current heading says 65%, remaining KPI balance says 35%, active pre-/post-flight fields say 65%, and the separate 60/20/20 rule remains.
+- Existing governance issue #34 fetched back with title `CATEGORY A — 65% Matrix-wide money-in KPI; supersedes 45% / 33% / 25%`, body says current target 65%, and points to the current Blue State and 65% detail artifact.
+- 65% detail artifact `98003d58dc606622dfe7eb5c330f480373d178fd` fetched back exactly.
+- Registry v1.2 root recomputed as `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`; all 12 mandate payload digests remain unchanged and match.
+- Intake Index was updated and independently fetched back; the next step is to route this final report/index blob pair to existing ROOT issue #31 and fetch back its comment.
+- Boundary: policy merge and governance surface alignment are verified; per-worker behavioral adoption remains UNPROVEN; money-in is `NONE CLAIMED`.
+
