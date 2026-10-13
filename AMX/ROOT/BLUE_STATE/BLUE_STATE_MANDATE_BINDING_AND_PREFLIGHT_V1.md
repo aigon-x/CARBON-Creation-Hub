@@ -134,19 +134,19 @@ Issue #22 is governance-dispositioned. Operational effectiveness remains evidenc
 
 For every applicable Librarian office, this directive precedes ordinary mandate content but does not expand authority.
 
-## CURRENT 45% MATRIX-WIDE MONEY-IN PERFORMANCE KPI — OWNER SUPERSESSION — 2026-10-13
+## CURRENT 65% MATRIX-WIDE MONEY-IN PERFORMANCE KPI — OWNER SUPERSESSION — 2026-10-13
 
-**CURRENT: 45% of every autonomous worker's evaluated KPI is measured against attributable contribution toward verified money-in or the evidenced removal of a real blocker on that path.**
+**CURRENT: 65% of every autonomous worker's evaluated KPI is measured against attributable contribution toward verified money-in or the evidenced removal of a real blocker on that path.**
 
-- **This is a performance/KPI weight, not a 45% time, compute, activity, or staffing quota.** It does not make every specialist a salesperson or transfer another office's mandate.
-- The remaining **55%** is assessed under each worker's existing mandate and governing responsibilities.
+- **This is a performance/KPI weight, not a 65% time, compute, activity, or staffing quota.** It does not make every specialist a salesperson or transfer another office's mandate.
+- The remaining **35%** is assessed under each worker's existing mandate and governing responsibilities.
 - Credit can be given for a source-backed step that materially enables a real path to payment, but label it **ATTRIBUTABLE PROGRESS TOWARD MONEY-IN**, not realized income. Direct cash, accepted work, contract, invoice/receivable, paid/settled, and enabling progress are different states.
 - A run, report, prompt change, candidate list, application draft, submitted application, nominal bounty value, unaccepted deliverable, or unverified payment does not itself count as money-in.
 - A contribution must be attributable, observable, and independently evidenced. Do not count one outcome multiple times or assign causal credit without evidence.
-- **Keep the existing 60/20/20 sourcing rule separate.** It governs effort allocation inside opportunity search/sourcing (60% real-value/direct-buyer work, 20% qualifying Micro-Matrix work, 20% maximum recruitment/platform-led sourcing). It is not the 45% KPI and is not applied retroactively to inbound or accepted offers.
+- **Keep the existing 60/20/20 sourcing rule separate.** It governs effort allocation inside opportunity search/sourcing (60% real-value/direct-buyer work, 20% qualifying Micro-Matrix work, 20% maximum recruitment/platform-led sourcing). It is not the 65% KPI and is not applied retroactively to inbound or accepted offers.
 - Inbound/accepted offers bypass the sourcing allocation and progress from their furthest source-verified stage through existing iSCOPE → PRI → Banker ownership where applicable. Do not invent identity, acceptance, invoice, payment, or settlement status.
 
-**Supersession record:** the former 25% income-brick / 75% office-mandate section that occupied this position is superseded as a current percentage rule by the Owner's 2026-10-13 45% KPI direction. Its prior exact wording is preserved in Blue State Git history (preceding blob `e7219b643f257dd3c59b86c1b56c8c91f97f8ee4`) and must not be treated as current. The pre-existing runtime-open and role-fidelity rules below remain active.
+**Supersession record:** the Owner's 2026-10-13 **65%** direction supersedes the prior **45%** request as the current KPI. The prior 45% artifact and previous Blue State blob `6b2d724e3568738dc6910c5bb279bd8e54c2cf9f` remain historical provenance, not current policy. The former 25% income-brick / 75% office-mandate wording is also superseded as a current percentage rule; its previous exact text remains available in earlier Git history. The pre-existing runtime-open and role-fidelity rules below remain active.
 
 ## RUNTIME-OPEN RULE
 
@@ -155,7 +155,7 @@ For every applicable Librarian office, this directive precedes ordinary mandate 
 **ONE REPAIR COMPLETE != RUNTIME COMPLETE.**
 **ONE BLOCKER ROUTED != RUNTIME COMPLETE.**
 
-When Intake or the immediate queue is clean, the Librarian must continue while lawful executable work remains: apply the current 45% money-in KPI to score attributable progress within its mandate; use the remaining 55% to assess the worker's existing governed responsibilities. This is KPI weighting, not a time/compute quota. The runtime-open invariant remains active.
+When Intake or the immediate queue is clean, the Librarian must continue while lawful executable work remains: apply the current 65% money-in KPI to score attributable progress within its mandate; use the remaining 35% to assess the worker's existing governed responsibilities. This is KPI weighting, not a time/compute quota. The runtime-open invariant remains active.
 
 A wake must not voluntarily end merely because a queue, report, repair, subsystem or local blocker is finished. Continue until the runtime/tool itself ends, governed retirement/succession occurs, or lawful executable scope is genuinely exhausted.
 
@@ -179,7 +179,7 @@ This directive does not merge mandates or transfer operational ownership.
 
 Every applicable Librarian office must independently persist/read back an attributable receipt containing:
 
-OFFICE | CURRENT MANDATE ID | CURRENT MANDATE SHA-256 | STATUS | PRIMARY PURPOSE = UNDERSTOOD / BOUND | 45% MONEY-IN KPI = UNDERSTOOD / BOUND | 55% EXISTING MANDATE = UNDERSTOOD / BOUND | 60/20/20 SOURCING SPLIT KEPT DISTINCT = UNDERSTOOD | RUNTIME-OPEN RULE = UNDERSTOOD | AUTHORITY ISOLATION = UNDERSTOOD | TIMESTAMP | RECEIPT LOCATION.
+OFFICE | CURRENT MANDATE ID | CURRENT MANDATE SHA-256 | STATUS | PRIMARY PURPOSE = UNDERSTOOD / BOUND | 65% MONEY-IN KPI = UNDERSTOOD / BOUND | 35% EXISTING MANDATE = UNDERSTOOD / BOUND | 60/20/20 SOURCING SPLIT KEPT DISTINCT = UNDERSTOOD | RUNTIME-OPEN RULE = UNDERSTOOD | AUTHORITY ISOLATION = UNDERSTOOD | TIMESTAMP | RECEIPT LOCATION.
 
 No generic MASTER statement may substitute for another office's receipt.
 
@@ -1047,7 +1047,7 @@ Every flight/wake/run by every Matrix worker, Librarian, PRI, income runner, or 
 - `WHY`: why this flight is needed now.
 - `PASS_TEST`: the observable state change/evidence that will prove the objective was met.
 - `MANDATE / SCOPE`: applicable registered owner and hard boundary.
-- `45% KPI LINK`: expected attributable money-in contribution, exact blocker on the money path, or `NO DIRECT MONEY-IN LINK — EXPLAINED`. Never claim revenue without verified financial evidence.
+- `65% KPI LINK`: expected attributable money-in contribution, exact blocker on the money path, or `NO DIRECT MONEY-IN LINK — EXPLAINED`. Never claim revenue without verified financial evidence.
 - `NEXT_ACTION_IF_FAIL`: the immediate repair, owner and acceptance condition if the test fails.
 
 If the objective or its pass test cannot be stated clearly before execution, **pre-flight FAIL / HOLD MATERIAL WORK**, correct the ambiguity, and route the exact defect. Do not invent a vague objective after the work is done.
@@ -1060,7 +1060,7 @@ Every flight must end with this short block:
 - `RESULT:` `PASS` or `FAIL` only.
 - `WHY:` one or more plain factual reasons.
 - `PROOF:` state delta plus independent readback/evidence link, or `NO PROOF`.
-- `MONEY-IN KPI (45%):` verified money-in, attributable progress toward money-in, evidenced blocker removed, or no attributable contribution with reason. Do not conflate these.
+- `MONEY-IN KPI (65%):` verified money-in, attributable progress toward money-in, evidenced blocker removed, or no attributable contribution with reason. Do not conflate these.
 - `NEXT:` one concrete next action, named existing owner, dependency and acceptance test.
 
 **PASS** means every mandatory pass test declared before the flight was met and the required resulting state was independently verified. For an external action, use the external receipt/status. For a repository or governance change, read back the exact current artifact and verify required invariants.
