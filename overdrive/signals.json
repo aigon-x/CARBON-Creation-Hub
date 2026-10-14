@@ -567,11 +567,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
+      "next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
+      "smallest_next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-14T17:00:20.630377+00:00",
+  "generated_at": "2026-10-14T18:37:12.568149+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1760,11 +1760,11 @@
     "scalearmy.com|ai-implementation-specialist|remote-south-africa": {
       "due_at": null,
       "due_now": false,
-      "next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
+      "next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
+      "smallest_next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
