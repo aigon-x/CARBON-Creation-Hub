@@ -113,9 +113,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-13",
+  "last_updated_at": "2026-10-14",
   "last_updated_by": "iSCOPE",
-  "record_count": 86,
+  "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
@@ -4429,6 +4429,43 @@
       "state": "DISCOVERED",
       "current_route_status": "PUBLIC_LISTING_READABLE_2026-10-12",
       "title": "WhatsApp Agent AI — Show Working Agent & Proof You Built It"
+    },
+    "upwork.com|carpentry-inquiry-automation|022109970451600320481": {
+      "domain": "upwork.com",
+      "organization": "Upwork client — name not published in accessible listing",
+      "opportunity": "carpentry-inquiry-automation",
+      "title": "AI Automation for Carpentry Inquiries",
+      "state": "DISCOVERED",
+      "execution_owner": "iSCOPE",
+      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE_AND_PROOF_CHECK",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "capital_direction": "INBOUND / FIXED_PRICE",
+      "payment": "US$400 fixed price through Upwork; milestone funding/escrow and net payout terms unverified.",
+      "reward": "US$400 fixed price",
+      "last_action_at": "2026-10-14",
+      "qualified_at": null,
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "observed_at": "2026-10-14",
+          "source": "UPWORK_PUBLIC_LISTING",
+          "url": "https://www.upwork.com/freelance-jobs/apply/Automation-for-Carpentry-Inquiries_~022109970451600320481/",
+          "summary": "Worldwide fixed-price project posted 2026-10-13. Buyer wants a reusable carpentry/joinery inquiry workflow: ingest from one channel; use AI to summarize and extract customer, project type, location, description, timeline and missing information; write to Google Sheets with unique reference/status; notify owner by email; include basic error handling and duplicate prevention; test with 10 fictional inquiries; provide documentation and commercial reuse rights. Budget US$400. At current read, 50+ proposals and 1 interview; client account joined 2026-10-13 and has no established history visible on the listing."
+        },
+        {
+          "kind": "CANONICAL_DEDUPE_AND_PROOF_HOLD",
+          "observed_at": "2026-10-14",
+          "source": "CANONICAL_LEDGER_AND_CURRENT_WAKE_REVIEW",
+          "summary": "Current canonical ledger (blob 7717ebc32e19dcbd3e3a6c2d8f8ff29af3031f27) had 86 records and no matching listing ID/title; this record was added under its unique listing ID. The current wake did not verify a source-bound example demonstrating the full requested intake-to-AI-extraction-to-Sheets-to-email workflow with duplicate/error tests. Submission requires an authorized Upwork account/session; the Opera Browser Connector currently returns BROWSER_NOT_CONNECTED. No proposal, contract, funded milestone, delivery, invoice or payment is evidenced."
+        }
+      ],
+      "constraints": [
+        "Verify current listing still accepts proposals and inspect buyer/funding terms at the official listing before spending bid credits.",
+        "Verify truthful, source-bound proof for the complete requested workflow; do not describe benchmarks or unrelated AI/system work as an equivalent shipped workflow.",
+        "Recover the existing authorized Upwork account/session; no duplicate account and no off-platform contact.",
+        "Bound hosting, API, setup and maintenance costs against the US$400 ceiling and clarify exactly one intake channel before any binding offer."
+      ],
+      "next_action": "iSCOPE: verify exact current listing state, existing source-bound workflow proof and net scope viability; recover authorized Upwork session. If every gate passes, hand the opportunity to PRI for a bounded proposal that states only evidenced capability and explicit acceptance criteria. Otherwise retain HOLD with the exact failed gate. No application or claim of qualification before proof and route pass."
     }
   },
   "updated_at": "2026-10-13",
