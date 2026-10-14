@@ -1,0 +1,54 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 4,
+  "batch_id": "forx-20261014-undp-bangladesh-expiry-upsert-01",
+  "created_at": "2026-10-14T20:22:50.665Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261012-PROC-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Bangladesh — Procurement Unit",
+      "surface": "Firm procurement for AI use-case design, testing and deployment; UNGM reference UNDP-BGD-01218,2.",
+      "observed_need": "Official public notice advertises a firm-level AI design/testing/deployment requirement. The full solicitation, bidder eligibility, experience threshold, budget and award criteria have not been verified. This is evidence of posted procurement demand, not proof of AMX qualification or award likelihood.",
+      "outcome_space": [
+        "AI implementation",
+        "use-case design and testing",
+        "public procurement",
+        "Bangladesh"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/316324",
+      "source_key": "url:https://www.ungm.org/Public/Notice/316324",
+      "source_observed_at": "2026-10-14T20:22:50.665Z",
+      "published": "2026-09-30",
+      "source_updated": "2026-10-06",
+      "deadline_at": "2026-10-13T10:30:00Z",
+      "deadline_local_sast": "2026-10-13T12:30:00+02:00",
+      "geography": {
+        "country": "Bangladesh",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "type": "official procurement portal",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated UNDP Quantum supplier portal; existing account/profile required if already registered."
+      },
+      "contactability": "OFFICIAL_PROCUREMENT_ROUTE_PUBLISHED; bidder account and eligibility UNKNOWN",
+      "payer_hypothesis": "UNDP if selected; contract value, funding terms and award likelihood UNKNOWN.",
+      "fit_note": "Potentially relevant AI delivery procurement, but the deadline is close and a pre-bid meeting was scheduled for 2026-10-04. The public notice does not establish whether attendance is mandatory. Verify the full solicitation, eligibility, prior experience, delivery capacity, pricing, and any meeting-related condition before advancing.",
+      "source_rights": "Official public procurement metadata and brief factual summary retained with source URL. No bulk notice/document reproduction. Confirm solicitation-specific reuse/confidentiality terms before redistributing attachments.",
+      "consumer_action": "Do not pursue or submit against the expired deadline. Official UNGM page re-read 2026-10-14 still lists the closing time as 13-Oct-2026 06:30 (GMT-4), equivalent to 10:30 UTC, and says no revisions have been made. Preserve this as historical procurement evidence; only reopen if an official extension or reissue is independently verified.",
+      "intake_custody": "FORX continuous wake 2026-10-12; pending Root Intake receipt.",
+      "last_rechecked_at": "2026-10-14T20:22:50.665Z",
+      "current_route_status": "DEADLINE_PASSED_NO_EXTENSION_FOUND",
+      "execution_readiness": "HOLD_EXPIRED_DEADLINE",
+      "recheck_evidence": {
+        "observed_at": "2026-10-14T20:22:50.665Z",
+        "url": "https://www.ungm.org/Public/Notice/316324",
+        "current_published_deadline": "2026-10-13 06:30 GMT-4 (2026-10-13T10:30:00Z)",
+        "official_page_revision_status": "No revisions have been made."
+      }
+    }
+  ]
+}
