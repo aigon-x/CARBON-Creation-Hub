@@ -13,7 +13,7 @@ This is an additive correction to the existing public-evidence package, not a se
 - R03: `TMED_PUBLIC_EVIDENCE_PROFILE_PACKAGE_20261011_R03.md`
 - Current Blue State blob: `424eeac324e455c94a557f9bc573baf26c2af400`
 - Registry: v1.2, blob `d3a749a48d98292a13931fd6ff8518dea03e5b20`, recomputed root `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`
-- T-MED current mandate digest: `3204cb5d8dfcfbc1c904a4a23f0077959bb9371152a2ef32be48e7e858d148f1`
+- T-MED current mandate digest: `3204cb5d8dfcfbc1e904a4a23f0077959bb9371152a2ef32be48e7e858d148f1`
 
 The current Blue State and all 12 registered mandate payload digests were independently fetched/recomputed in this wake. The Registry root matches. Do not use R03's older Blue State blob as the current authority.
 
