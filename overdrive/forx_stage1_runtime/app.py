@@ -507,32 +507,13 @@ def load_geonames():
                                 duplicates += 1
 
             conn.commit()
-            rows = conn.execute(
-                """
-                SELECT payload
-                FROM (
-                    SELECT
-                        payload,
-                        country,
-                        category,
-                        source_record_id,
-                        ROW_NUMBER() OVER (
-                            PARTITION BY country, category
-                            ORDER BY source_record_id
-                        ) AS rn
-                    FROM nodes
-                )
-                ORDER BY rn, country, category, source_record_id
-                LIMIT ?
-                """,
-                (TARGET,),
-            )
-            selected = [json.loads(row[0]) for row in rows]
         finally:
             conn.close()
 
+        store_ready = True
         return {
-            "nodes": selected,
+            "node_store_path": db_path,
+            "selection_order": "source_record_id",
             "raw_rows": raw_rows,
             "rejected": rejected,
             "duplicates": duplicates,
@@ -543,11 +524,12 @@ def load_geonames():
             "source_revision": latest_modified,
         }
     finally:
-        for path in (zip_path, db_path):
-            try:
-                os.remove(path)
-            except FileNotFoundError:
-                pass
+        try:
+            os.remove(zip_path)
+        except FileNotFoundError:
+            pass
+        if not store_ready:
+            remove_sqlite(db_path)
 
 def choose_diverse(nodes, target):
     by_country = {}
