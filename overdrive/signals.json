@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-14T11:45:24.427027+00:00",
+  "generated_at": "2026-10-14T17:00:20.630377+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -894,11 +894,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Proposal draft now prepared and attached proof package exists. This has NOT been submitted. Restore the existing authorized Upwork browser/account; verify the live listing, buyer/milestone funding and terms, and whether proposal submission is still open; submit once only if all gates pass, attach the package, and persist the actual submission receipt. No application, contract, delivery acceptance, invoice, or income is currently evidenced.",
+      "next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
       "opportunity_key": "upwork.com|carpentry-inquiry-automation|022109970451600320481",
       "priority": 8,
       "routing_reason": "HOLD_AUTHENTICATED_UPWORK_ROUTE",
-      "smallest_next_action": "Proposal draft now prepared and attached proof package exists. This has NOT been submitted. Restore the existing authorized Upwork browser/account; verify the live listing, buyer/milestone funding and terms, and whether proposal submission is still open; submit once only if all gates pass, attach the package, and persist the actual submission receipt. No application, contract, delivery acceptance, invoice, or income is currently evidenced.",
+      "smallest_next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
       "state": "DISCOVERED",
       "status": "WAITING",
       "thread_id": null
@@ -1880,11 +1880,11 @@
     "upwork.com|carpentry-inquiry-automation|022109970451600320481": {
       "due_at": null,
       "due_now": false,
-      "next_action": "Proposal draft now prepared and attached proof package exists. This has NOT been submitted. Restore the existing authorized Upwork browser/account; verify the live listing, buyer/milestone funding and terms, and whether proposal submission is still open; submit once only if all gates pass, attach the package, and persist the actual submission receipt. No application, contract, delivery acceptance, invoice, or income is currently evidenced.",
+      "next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
       "opportunity_key": "upwork.com|carpentry-inquiry-automation|022109970451600320481",
       "priority": 8,
       "routing_reason": "HOLD_AUTHENTICATED_UPWORK_ROUTE",
-      "smallest_next_action": "Proposal draft now prepared and attached proof package exists. This has NOT been submitted. Restore the existing authorized Upwork browser/account; verify the live listing, buyer/milestone funding and terms, and whether proposal submission is still open; submit once only if all gates pass, attach the package, and persist the actual submission receipt. No application, contract, delivery acceptance, invoice, or income is currently evidenced.",
+      "smallest_next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
       "state": "DISCOVERED",
       "status": "WAITING",
       "thread_id": null
