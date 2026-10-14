@@ -250,11 +250,28 @@
       "remains_unproven": "Buyer receipt/open/reply; whether each Close draft is a duplicate of the sent Outlook item or an additional unsent message; authorization/canonicality of sender identity; purchase, acceptance, contract, invoice, receivable, settlement.",
       "upgrade_action": "ROOT/T-GOV + PRI reconcile actual send history/sender identity and preserve no-further-contact state. Do not contact the three buyers again absent a material buyer-initiated reply or explicit newly governed route. Update each existing item only after direct evidence; no new opportunity record.",
       "safety": "No outbound action taken. No duplicate follow-up, public post, new sender/account, worker or scheduler. No revenue or payment claimed."
+    },
+    {
+      "observed_at": "2026-10-14T23:33:48Z",
+      "owner": "iSCOPE qualification; PRI sole external commercial writer",
+      "scope": "SCALE_ARMY_TRADE_GROWTH_MARKETING_ROLE_REQUALIFICATION_20261014",
+      "classification": "CURRENT_OFFICIAL_LISTING_REQUALIFIED; WORK_SAMPLE_ROUTE; ACCOUNT_HISTORY_DEDUPE_AND_APPLICATION_SUBMISSION_OPEN",
+      "expected": "Requalify the existing proof-first candidate without creating a duplicate opportunity or submitting a duplicate application. Keep lifecycle unchanged until account-history deduplication and material role-fit gates are resolved.",
+      "actual": "The current official Scale Army Ashby listing at the existing candidate URL is titled Trade & Growth Marketing Manager, superseding the previously recorded title. It lists South Africa as eligible, remote contract work, advertised compensation of US$2,500/month subject to experience and location, and 09:00–17:00 EST availability. Requirements include 4+ years in trade/growth/B2B retail or CPG marketing, hands-on paid-campaign and A/B-test experience, buyer-facing sales materials, and AI-supported workflows; application requires a form and skills video. Existing B2B/trade-marketing history is relevant, but paid-campaign fit and account/application history are not verified in this runtime. Official page search result is current; direct open exposes a JavaScript-only page. No application or external contact was made.",
+      "changed": "Source title, compensation/eligibility, role requirements, and application gate requalified from the current official listing. No new opportunity record created; no lifecycle, owner, or external-action state changed.",
+      "proof": [
+        "Official primary listing: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/",
+        "Existing application route: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/application",
+        "Official listing rechecked 2026-10-14: Trade & Growth Marketing Manager; South Africa eligible; remote contract; US$2.5K/month subject to experience/location; 9 AM–5 PM EST; form plus skills video."
+      ],
+      "remains_unproven": "Gmail/account-history deduplication and prior Scale Army application/contact state; demonstrated hands-on paid-campaign/A/B-test experience; completed application/video; buyer response, acceptance, contract, invoice, payment, or realized revenue.",
+      "upgrade_action": "ROOT/connector administrator restores the existing authorized Gmail/account-history read route. iSCOPE then deduplicates prior Scale Army contact/application and confirms fit against the paid-campaign requirement. If no prior submission exists and fit is supported, PRI submits once through the existing official route and persists the actual receipt/readback. Do not create a duplicate record or repeat external contact.",
+      "safety": "No external contact or application; no new opportunity record, worker, pipeline, sender, or account; no CV-polish cycle; no Owner interruption."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T18:40:04.525Z",
-  "last_reconciled_reason": "Read-backed update to the three existing paid-pilot records after direct Outlook evidence showed 13-Oct checkout-link emails alongside separate Close draft status; preserved NO_FURTHER_CONTACT, sender-drift and no-payment truth. Existing keys/count unchanged.",
+  "last_reconciled_at": "2026-10-14T23:33:48Z",
+  "last_reconciled_reason": "Read-backed current official-source requalification for the existing Scale Army candidate; preserved record count and lifecycle because Gmail/account-history dedupe and paid-campaign fit remain unresolved. No external action.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -317,8 +334,8 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-14T18:40:04.525Z",
-  "last_updated_by": "MASTER / COFFEE / LIBRARIAN",
+  "last_updated_at": "2026-10-14T23:33:48Z",
+  "last_updated_by": "PRI/iSCOPE wake reconciliation",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -4892,6 +4909,6 @@
       "current_route_status": "OFFICIAL_LISTING_DIRECT_FETCHED_2026-10-14; AUTHENTICATED_SUBMISSION_ROUTE_UNAVAILABLE"
     }
   },
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-14T23:33:48Z",
   "version": 1
 }
