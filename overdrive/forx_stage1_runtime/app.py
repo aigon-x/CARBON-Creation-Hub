@@ -590,80 +590,70 @@ def combine_source_stores(a, g, target):
 def build():
     with lock:
         state["status"] = "RUNNING"
+        state["phase"] = "SOURCE_INGESTION"
         state["started_at"] = datetime.now(timezone.utc).isoformat()
         state["errors"] = []
 
+    source_store_paths = set()
+    partition_dir = None
     try:
         if MODE == "stage1-proof" or SOURCE_ADAPTER == "audiala-stage1":
             source_result = load_audiala()
+            source_store_paths.add(source_result["node_store_path"])
         elif SOURCE_ADAPTER == "geonames-cities500":
             source_result = load_geonames()
+            source_store_paths.add(source_result["node_store_path"])
         elif SOURCE_ADAPTER == "audiala+geonames":
             a = load_audiala()
+            source_store_paths.add(a["node_store_path"])
             g = load_geonames()
-            combined = {}
-            duplicates = a["duplicates"] + g["duplicates"]
-            for node in a["nodes"] + g["nodes"]:
-                ck = canonical_key(node["name"], node["latitude"], node["longitude"])
-                if ck in combined:
-                    duplicates += 1
-                    continue
-                combined[ck] = node
-            source_result = {
-                "nodes": list(combined.values()),
-                "raw_rows": a["raw_rows"] + g["raw_rows"],
-                "rejected": a["rejected"] + g["rejected"],
-                "duplicates": duplicates,
-                "source_sha256": hashlib.sha256(
-                    (a["source_sha256"] + g["source_sha256"]).encode()
-                ).hexdigest(),
-                "source_url": f"{AUDIALA_URL} + {GEONAMES_URL}",
-                "source_name": "Audiala + GeoNames",
-                "source_license": "CC BY 4.0",
-                "source_revision": f"{AUDIALA_REPO_COMMIT}+{g['source_revision']}",
-            }
+            source_store_paths.add(g["node_store_path"])
+            source_result = combine_source_stores(a, g, TARGET)
+            source_store_paths.add(source_result["node_store_path"])
+            # The combined SQLite store now owns the deduplicated source sequence.
+            # Remove both inputs before expensive selection to reduce disk pressure.
+            for input_path in (a["node_store_path"], g["node_store_path"]):
+                remove_sqlite(input_path)
+                source_store_paths.discard(input_path)
         else:
             raise RuntimeError(f"Unsupported FORX_SOURCE_ADAPTER={SOURCE_ADAPTER}")
 
-        nodes = choose_diverse(source_result["nodes"], TARGET)
-
-        parts = []
-        partition_dir = tempfile.mkdtemp(prefix=f"amx-forx-{RUN_ID}-")
-        for i in range(0, len(nodes), PARTITION_SIZE):
-            body = {
-                "schema_version": "2.2",
-                "run_id": RUN_ID,
-                "checkpoint_id": CHECKPOINT_ID,
-                "partition_index": len(parts) + 1,
-                "nodes": nodes[i : i + PARTITION_SIZE],
-            }
-            raw = json.dumps(body, separators=(",", ":"), sort_keys=True)
-            part_index = len(parts) + 1
-            part_path = os.path.join(partition_dir, f"partition-{part_index:06d}.json")
-            with open(part_path, "w", encoding="utf-8") as fh:
-                fh.write(raw)
-            parts.append(
+        print(
+            "FORX_PROGRESS " + json.dumps(
                 {
-                    "partition_index": part_index,
-                    "count": len(body["nodes"]),
-                    "sha256": hashlib.sha256(raw.encode()).hexdigest(),
-                    "path": part_path,
-                }
-            )
-        cdist = {}
-        kdist = {}
-        source_dist = {}
-        domains = 0
-        for n in nodes:
-            cdist[n["country"]] = cdist.get(n["country"], 0) + 1
-            kdist[n["category"]] = kdist.get(n["category"], 0) + 1
-            source_dist[n["source"]] = source_dist.get(n["source"], 0) + 1
-            if n.get("domain"):
-                domains += 1
+                    "run_id": RUN_ID,
+                    "stage": "SOURCE_INGESTION_COMPLETE",
+                    "source_adapter": SOURCE_ADAPTER,
+                    "raw_rows": source_result["raw_rows"],
+                    "rejected": source_result["rejected"],
+                    "duplicates": source_result["duplicates"],
+                },
+                separators=(",", ":"), sort_keys=True,
+            ),
+            flush=True,
+        )
+        with lock:
+            state["phase"] = "STREAMING_SELECTION_PARTITION_HASH"
 
-        id_raw = "\n".join(n["source_record_id"] for n in nodes)
-        selection_sha256 = hashlib.sha256(id_raw.encode()).hexdigest()
+        partition_dir = tempfile.mkdtemp(prefix=f"amx-forx-{RUN_ID}-")
+        streamed = write_streamed_partitions(
+            source_result["node_store_path"],
+            TARGET,
+            PARTITION_SIZE,
+            partition_dir,
+            RUN_ID,
+            CHECKPOINT_ID,
+            source_result["selection_order"],
+        )
+        parts = streamed["parts"]
+        selected_count = streamed["selected_count"]
+        cdist = streamed["country_distribution"]
+        kdist = streamed["category_distribution"]
+        source_dist = streamed["source_distribution"]
+        domains = streamed["website_domain_bearing_count"]
+        selection_sha256 = streamed["selection_sha256"]
         completed = datetime.now(timezone.utc).isoformat()
+        threshold = 1000 if MODE == "stage1-proof" else TARGET
 
         manifest = {
             "schema_version": "2.2",
@@ -681,11 +671,11 @@ def build():
             "partition_size": PARTITION_SIZE,
             "partition_count": len(parts),
             "partition_hashes": {str(p["partition_index"]): p["sha256"] for p in parts},
-            "selected_count": len(nodes),
+            "selected_count": selected_count,
             "selection_sha256": selection_sha256,
             "source_cursor_start": 0,
-            "source_cursor_next": len(nodes),
-            "cumulative_unique_count_snapshot": len(nodes),
+            "source_cursor_next": selected_count,
+            "cumulative_unique_count_snapshot": selected_count,
             "raw_rows_ingested": source_result["raw_rows"],
             "rows_rejected": source_result["rejected"],
             "duplicates_removed": source_result["duplicates"],
@@ -697,15 +687,14 @@ def build():
             "completed_at": completed,
         }
 
-        threshold = 1000 if MODE == "stage1-proof" else TARGET
         receipt = {
             "schema_version": "2.2",
             "receipt_type": "FORX_STAGE1_RUNTIME_OUTPUT" if MODE == "stage1-proof" else "FORX_PRODUCTION_RUNTIME_OUTPUT",
             "status": (
                 "RUNTIME_COMPLETE_NOT_YET_DURABLY_VERIFIED"
-                if MODE == "stage1-proof" and len(nodes) >= threshold
+                if MODE == "stage1-proof" and selected_count >= threshold
                 else "PRODUCTION_RUNTIME_COMPLETE_NOT_YET_DURABLY_VERIFIED"
-                if MODE != "stage1-proof" and len(nodes) >= threshold
+                if MODE != "stage1-proof" and selected_count >= threshold
                 else "RUNTIME_UNDER_THRESHOLD"
             ),
             "mode": MODE,
@@ -720,8 +709,8 @@ def build():
             "raw_rows_ingested": source_result["raw_rows"],
             "rows_rejected": source_result["rejected"],
             "duplicates_removed": source_result["duplicates"],
-            "normalized_selected_nodes": len(nodes),
-            "coordinate_backed_count": len(nodes),
+            "normalized_selected_nodes": selected_count,
+            "coordinate_backed_count": selected_count,
             "country_count": len(cdist),
             "country_distribution": cdist,
             "category_count": len(kdist),
@@ -734,8 +723,8 @@ def build():
             "partition_hashes": {str(p["partition_index"]): p["sha256"] for p in parts},
             "selection_sha256": selection_sha256,
             "source_cursor_start": 0,
-            "source_cursor_next": len(nodes),
-            "cumulative_unique_count_snapshot": len(nodes),
+            "source_cursor_next": selected_count,
+            "cumulative_unique_count_snapshot": selected_count,
             "started_at": state["started_at"],
             "completed_at": completed,
             "errors": state["errors"],
@@ -744,21 +733,22 @@ def build():
                 "Runtime output alone is not production PASS; durable persistence and independent readback remain required.",
                 "Historical Stage-1 PASS remains immutable provenance and must not receive duplicate productive credit.",
                 "GeoNames cities500 represents global populated places, not a business-ownership registry; downstream iSCOPE must not treat every node as a prospect without qualification.",
-                "Production source ingestion is disk-backed and streamed; partition bodies are file-backed in the running instance to avoid retaining the full source and all partition payloads in RAM.",
-                "Instance-local partition files are not durable acceptance evidence by themselves; external persistence plus independent readback remains required.",
+                "Source ingestion, diversity selection, partition serialization and selection hashing are streamed with disk-backed SQLite and a single bounded partition buffer.",
+                "Partition artifacts remain instance-local until the existing authorized durable-output route independently persists and reads them back.",
             ],
         }
 
         with lock:
             state.update(
                 {
-                    "node_count": len(nodes),
+                    "node_count": selected_count,
                     "partitions": parts,
                     "partition_dir": partition_dir,
                     "manifest": manifest,
                     "receipt": receipt,
                     "completed_at": completed,
-                    "status": "COMPLETE" if len(nodes) >= threshold else "UNDER_THRESHOLD",
+                    "phase": "RUNTIME_OUTPUT_READY_NOT_DURABLY_VERIFIED",
+                    "status": "COMPLETE" if selected_count >= threshold else "UNDER_THRESHOLD",
                 }
             )
 
@@ -768,8 +758,14 @@ def build():
     except Exception as e:
         with lock:
             state["errors"].append({"type": "runtime_exception", "error": repr(e)})
+            state["phase"] = "FAILED"
             state["status"] = "FAILED"
         print("FORX_RUNTIME_FAILURE " + repr(e), flush=True)
+    finally:
+        for store_path in tuple(source_store_paths):
+            remove_sqlite(store_path)
+        if partition_dir and state.get("status") == "FAILED":
+            shutil.rmtree(partition_dir, ignore_errors=True)
 
 
 @app.on_event("startup")
