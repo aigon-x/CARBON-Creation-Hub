@@ -2876,3 +2876,61 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Persistence/readback:** this Intake Index addendum plus the source asset blob and read-only Stripe/Metricool responses; independent GitHub Index fetch required after this commit.
 - **Safety/preservation:** preserve existing accounts, asset, T-MED pack, and hourly Librarian task; no unsupported SVG post, new worker/account, duplicate outreach, live payment mutation, or D04 public claim.
 - **Disposition:** asset SOURCE = VERIFIED; render/format readiness = BLOCKED; publication = OPEN / NOT EFFECTED; Stripe money-in = NONE VERIFIED; commercial state convergence = OPEN.
+
+
+## 2026-10-14 — Librarian four-office continuation receipt (wake started 21:51 SAST)
+
+**Run ID:** `AMX-LIBRARIAN-20261014-2151SAST-01`  
+**Recorded:** 2026-10-14 21:51 SAST / 19:51 UTC  
+**Receipt location:** this append-only `AMX/ROOT/INTAKE/INTAKE_INDEX.md` entry, with four separately attributed office blocks below. This is not represented as four individual receipt files. Earlier individual-file / issue-comment writes were blocked by connector safety controls; no alternate authentication or write-safety boundary was bypassed.
+
+### Shared canonical preflight — PASS
+
+Directly fetched current main:
+- Blue State file blob `424eeac324e455c94a557f9bc573baf26c2af400`.
+- Registry v1.2 file blob `d3a749a48d98292a13931fd6ff8518dea03e5b20`.
+- Declared and independently recomputed registry root: `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`.
+- All 12 canonical registered mandate payload digests were independently recalculated from the exact BEGIN/END payloads and matched their entries.
+
+Each office receipt below binds: **PRIMARY PURPOSE understood; current 65% attributable-money-in / evidenced-blocker-removal KPI understood as a performance weight (not time/compute quota); 35% existing mandate understood; 60/20/20 kept distinct as sourcing-only allocation; runtime-open rule understood; authority isolation understood.** No cadence change, duplicate Librarian or new worker was created.
+
+### MASTER / COFFEE / LIBRARIAN — OFFICE RECEIPT
+
+- **Mandate:** `AMX-MANDATE-MASTER-LIBRARIAN-V1`
+- **SHA-256:** `f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8`
+- **Status:** PREFLIGHT PASS; current money-in and ledger reconciliation performed; further reconciliation remains OPEN.
+- **Direct Stripe live readback:** account `AMILLIMATRIX`, context `acct_1UE0UBHyzt7gyqmn`; 42 Checkout Sessions = 13 OPEN/UNPAID, 29 EXPIRED/UNPAID, zero COMPLETE/PAID, and zero sessions containing a customer or email attribution. PaymentIntents 0; Charges 0; Invoices 0; Balance Transactions 0; available and pending USD balances both 0. This is a readback of the connected Stripe account only, not a claim about every possible financial rail. **Stripe money-in: NONE VERIFIED.** No financial object was created or altered.
+- **Commercial continuity:** current `overdrive/opportunities.json` blob `f0c3e87fb79d9283d82314d08b2f06f80d631886`, 87 map keys / 87 declared records, last updated `2026-10-14T18:40:04.525Z`. `overdrive/claims.json` blob `ccb6dcdfdd67526d6e793c8436368848ea98d2ad`, 87 claims, generated `2026-10-14T18:40:15.159019Z`: 81 WAITING / 6 CLOSED / 0 READY / 0 externally ready; 10 WAITING items have past-due timestamps, which do not bypass item-level gates. `overdrive/state.json` blob `47fb6dcfaa920594d3de38c28cfd69d8f210c9fd`: sequence 20, last tick `2026-10-14T18:40:15.162070Z`, queue length 20. A persisted tick is not a new buyer outcome.
+- **Next action / recovery owner:** MASTER continues the single-writer reconciliation of opportunity → claims → state → source-backed next action, updating stale projections append-only. Existing iSCOPE/PRI own qualification and selling. No duplicate follow-up, external action or money-in credit was manufactured.
+
+### ROOT / T-GOV — OFFICE RECEIPT
+
+- **Mandate:** `AMX-MANDATE-ROOT-TGOV-V1`
+- **SHA-256:** `d92852d15f66168990290aece801b8c8573d48037b88765a081a26d58e10b120`
+- **Status:** PREFLIGHT PASS; historical source-order reconciled; distinct-run D04 evidence and scheduler-write recovery remain OPEN.
+- **D04 source order:** current Blue State and current T-MED R04 establish **96.62% PASS / zero measured FAILs for the historical frozen D04 vector**; the older 90.51% FAIL projection is a stale reversion in that historical chain. This is not a fresh run. The separately Owner-reported 143/148 execution's primary vector/receipt was not found in retained sources searched. **D04 public release remains HOLD** until ROOT's source-bound release disposition and the separate-run evidence/release dependency are resolved; do not ask the Owner to rerun by default.
+- **Prompt continuity:** the one existing hourly Librarian task `6ac7c95aa91c819182be1e98e1404b95` remains enabled with stale 25/75 wording. The prior prompt-only mutation returned `automation_schedule_not_available`; cadence was not changed and no duplicate schedule was made.
+- **Next action / recovery owner:** ROOT/T-GOV identifies a supported in-place prompt-only write/readback route and supported PR/issue-comment route; preserves issue #18 OPEN / EXECUTION and Search #16 CLOSED / first-cycle complete; issues the D04 release disposition when the existing evidence condition is met. No live-result acceptance is inferred from a report or source-order correction.
+
+### T-COD — OFFICE RECEIPT
+
+- **Mandate:** `AMX-MANDATE-TCOD-V1`
+- **SHA-256:** `67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3`
+- **Status:** PREFLIGHT PASS; bounded source/test repair verified on the existing branch; merge and production/runtime acceptance OPEN.
+- **Existing branch preserved:** `t-cod/proposal-neutral-recovery-20261014-2005`. Current branch source readbacks: `backend/app.py` blob `119640c72a957d84889a608e3df09ae39e3ea346`; `house/remediation/proposal.js` blob `2478bfd9ca995048a836bc1b425e0055ca62c772`; `house/remediation/proposal.html` blob `c28ad51fadcc15c5db683defc34f0f426cfb8b55`. The HTML/JS contain recovery-link handling.
+- **Test evidence:** commit `ccf3d5ff01ada8af5e48498e0dddab65c19ae375` adds regression cases for invalid/revoked/cancelled/expired proposal paths. GitHub Actions run [38618258562](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/38618258562) was independently read: job `test` completed SUCCESS; pytest, smoke test, provider-neutral container build and container-runtime steps all succeeded. Commit combined status separately shows the Vercel check SUCCESS. Do not substitute that one Vercel status for the Actions run.
+- **Not accepted yet:** no merged PR and no production deployment/runtime readback was established in this pass. The prior draft-PR creation attempt was blocked by connector safety controls.
+- **Next action / recovery owner:** T-COD preserves this branch and exact-head CI evidence; ROOT/T-GOV supplies an approved review/PR persistence route. After permitted base reconciliation and review, require same-revision deployment plus direct active/expired/unknown/revoked/cancelled route readbacks while preserving the verified PRI customer/thread gate. Do not bypass the blocked write route or claim issue #18 closed.
+
+### T-MED — OFFICE RECEIPT
+
+- **Mandate:** `AMX-MANDATE-TMED-V1`
+- **SHA-256:** `3204cb5d8dfcfbc1c904a4a23f0077959bb9371152a2ef32be48e7e858d148f1`
+- **Status:** PREFLIGHT PASS; source-order correction COMPLETE; publish-media readiness BLOCKED; publication/live readback OPEN / NOT EFFECTED.
+- **Current package:** directly fetched [R04 source correction](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/TMED_PUBLIC_EVIDENCE_PROFILE_PACKAGE_20261014_R04_SOURCE_CORRECTION.md), blob `c6d8fe628f14e16793337336216edb6120237970`. R02/R03 remain preserved. R04 corrects the stale chronology to “Founder & Solutions Architect — AMilliMATRiX | 2024–Present” with a bounded qualification, and points Featured/Search evidence to issue #16, not the stale branch URL.
+- **Authority and actual media state:** the Owner's 14 October directive authorizes publication on the existing TikTok/YouTube accounts; issue #30's older draft-only restriction is superseded only for these two channels. Existing Metricool connection is the authorized path. Current invitation asset `AMX_TIKTOK_003_BOUNDED_WORK_INVITATION_20261014.svg` is source-verified but unsupported as direct TikTok upload media; no supported PNG/JPEG/WebP render, MP4/MOV video, post-specific thumbnail/subtitles, scheduled post, provider post ID/URL or live publication readback was found. D04 remains excluded from public content.
+- **Next action / recovery owner:** ROOT/T-GOV plus the existing CARBON° production owner recover the approved render route through the existing commission; CARBON° supplies real supported non-D04 media with hashes/properties; T-MED independently fetches and QA-checks exact bytes, rights, claims and accessibility; the existing publisher publishes through existing accounts and captures provider receipt plus public URL/ID and live readback. Keep issue #30 OPEN. No profile edit, post, schedule, account or publishing lane was created.
+
+### Four-office wake disposition
+
+**PARTIAL / OPEN.** Preflight is verified for all four registered current offices. Each office has a distinct bound receipt block and current source evidence at this Intake location. MASTER's Stripe readback shows no verified money-in; ledger/claims/state convergence remains OPEN. ROOT's D04 public-release and prompt-write dependencies remain OPEN. T-COD's tests pass on the existing unmerged branch, with live acceptance OPEN. T-MED's source correction is durable, while rendered media and publication remain OPEN. Runtime remains open while lawful work remains. No historical issue was reopened solely from cached text, and no worker mandate was crossed.
