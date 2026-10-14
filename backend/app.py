@@ -285,6 +285,7 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         projected["quote_status"] = quote_status
         projected["valid_until"] = valid_until
         projected["validity_hours"] = validity_hours
+        projected["recovery_url"] = "/house/"
         return projected
 
     @app.get("/api/proposals/{portal_token}")
@@ -395,7 +396,15 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         @app.get("/proposal/{portal_token}")
         @app.get("/proposal/{portal_token}/")
         def customer_proposal_page(portal_token: str):
-            proposal_projection(portal_token)
+            try:
+                proposal_projection(portal_token)
+            except HTTPException as exc:
+                if exc.status_code != 404:
+                    raise
+                # Keep the bearer token out of the recovery URL. The short digest
+                # preserves a safe reconciliation reference without exposing registry data.
+                recovery_ref = hashlib.sha256(portal_token.encode("utf-8")).hexdigest()[:12].upper()
+                return RedirectResponse(url=f"/house/?ref={recovery_ref}", status_code=307)
             return FileResponse(house_dir / "proposal.html")
 
         @app.get("/house")
