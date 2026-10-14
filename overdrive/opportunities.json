@@ -214,11 +214,27 @@
       "remains_unproven": "Tender document completeness/current status for CED 09 and Q28; Q28 compulsory briefing date and whether bidder attended; current company procurement eligibility, experience references, required staffing/certifications, CSD/tax/forms, local representation and authorized bid decision.",
       "scope": "ISCOPE_TENDER_SCREEN_NOT_QUALIFIED_20261014_WAKE_03",
       "upgrade_action": "Do not add or submit any tender until primary-source current document/status and all entity/team/briefing/physical-submission gates are verified. The George bid is not executable on current AMX evidence. Prioritize the existing US$400 fixed-scope route and SocialsGroup paid-trial route once their direct authenticated/account gates pass."
+    },
+    {
+      "actual": "Full-day Close projection readback on 2026-10-14 at 2026-10-14T18:00:57.917Z: inbound activity search for Email/EmailThread across 00:00 SAST to the current check returned zero results; incomplete Close tasks due by the current time returned zero. This result is scoped to Close only and does not establish absence of Gmail replies. The existing CallForce Marketing Lead record remains SUBMITTED with historical due_at=2026-10-10T17:00:00Z and execution_readiness=HOLD_AUTHENTICATED_ROUTE; its exact Gmail thread 1a103d43041d248b has not been read during this run. The last canonical record still requires authorized Gmail-thread read before any follow-up; the overdue timestamp is preserved as history, not reset.",
+      "changed": "Rechecked the whole current day in Close rather than a narrow recent window. No Close inbound response or actionable due task was surfaced. No buyer lifecycle transition or follow-up authorized. CallForce stays on its furthest evidenced state until the existing Gmail thread is recovered.",
+      "classification": "CLOSE_FULL_DAY_READ_NO_INBOUND; GMAIL_TRUTH_UNAVAILABLE; CALLFORCE_DUE_RECOVERY_OPEN",
+      "observed_at": "2026-10-14T18:00:57.917Z",
+      "owner": "ROOT/connector administrator restores existing mailbox reader; PRI reads the exact thread and owns any later lawful commercial action.",
+      "proof": [
+        "Close activity_search: activity_types=activity.email,activity.email_thread; direction=inbound; 2026-10-14 00:00:00+02:00 through current time; count=0.",
+        "Close find_tasks: is_complete=false; due_date.end=current time; count=0.",
+        "Canonical callforce key: callforceoutsourcing.com|marketing-lead|south-africa; existing Gmail thread ID 1a103d43041d248b; readiness HOLD_AUTHENTICATED_ROUTE; due_at=2026-10-10T17:00:00Z.",
+        "Current connector inventory has no Gmail action available; Gmail app connector is DISABLED_BY_ADMIN / NOT_AVAILABLE. Opera Browser Connector previously returned BROWSER_NOT_CONNECTED. TinyFish current wallet read is -1.051248 USD, auto-reload unconfigured and pending top-up null."
+      ],
+      "remains_unproven": "Any Gmail reply outside Close, current CallForce thread content/recipient/sent status, buyer response/acceptance, and any non-Stripe settlement.",
+      "scope": "CLOSE_AND_CALLFORCE_READBACK_20261014_WAKE_03",
+      "upgrade_action": "Do not send a third or corrective follow-up blindly. ROOT/connector administrator must restore the existing authorized Gmail read path or provide an already-approved same-identity route. PRI then reads thread 1a103d43041d248b, reconciles lifecycle/NEXT_ACTION/DUE and independently reads the canonical record back."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T17:57:10.067Z",
-  "last_reconciled_reason": "Fresh wake rechecked existing commercial primary sources and triaged three public tender signals as not qualified/raw signal only. Current Stripe snapshot persisted immediately before this observation: 41 Checkout Sessions (14 open/unpaid, 27 expired/unpaid), zero customer attribution, zero charges/PaymentIntents/paid invoices/balance transactions. No lifecycle upgrade or external action occurred; existing authenticated access, application dedupe and owner fact gates remain open.",
+  "last_reconciled_at": "2026-10-14T18:00:57.917Z",
+  "last_reconciled_reason": "Fresh live Stripe settlement read, official-source requalification, raw tender screening and full-day Close projection reconciliation. Registry root/roles current and verified; Stripe 41 sessions (14 open, 27 expired), no customer attribution or payment objects; Close inbound count zero (Close only) and CallForce exact Gmail thread gate remains open. No lifecycle upgrades or external contact.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -281,7 +297,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-14T17:57:10.067Z",
+  "last_updated_at": "2026-10-14T18:00:57.917Z",
   "last_updated_by": "PRI",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
