@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 3,
+  "batch_id": "forx-20261014-unicef-digital-intelligence-seo-01",
+  "created_at": "2026-10-14T20:17:45.277Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261014-PROC-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNICEF Supply Division — Service Contracting Centre",
+      "surface": "Digital Intelligence and SEO Services; RFPS-NYH-2026-503962.",
+      "observed_need": "The official UNGM notice invites qualified suppliers for digital intelligence and SEO services. The binding RFPS and Annex B Terms of Reference could not be retrieved through this route (attachment request returned 403). This is evidence of an issued procurement, not proof that AMX is qualified, can deliver the scope or is likely to win.",
+      "outcome_space": [
+        "digital intelligence",
+        "SEO",
+        "web analytics",
+        "marketing performance",
+        "public procurement"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/317910",
+      "source_key": "url:https://www.ungm.org/Public/Notice/317910",
+      "source_observed_at": "2026-10-14T20:17:45.277Z",
+      "published": "2026-10-13",
+      "source_updated": "2026-10-13",
+      "deadline_at": "2026-11-11T22:59:00Z",
+      "deadline_local_sast": "2026-11-12T00:59:00+02:00",
+      "clarification_deadline_at": "2026-10-21T21:59:00Z",
+      "clarification_deadline_local_sast": "2026-10-21T23:59:00+02:00",
+      "geography": "Multiple destinations on the official UNGM list, including South Africa; supplier eligibility remains unverified.",
+      "public_route": "Official UNGM solicitation; see primary notice for its mandatory acknowledgement, clarification, and separate technical/commercial proposal instructions. FORX has not contacted the buyer.",
+      "contactability": "OFFICIAL_PROCUREMENT_ROUTE_PUBLISHED; supplier eligibility and compliance unknown",
+      "payer_hypothesis": "UNICEF if selected; budget, terms and award probability unknown.",
+      "fit_note": "Topical adjacency only. Relevant SEO/digital-intelligence references, legal/supplier eligibility, certifications, exact deliverables/tools, capacity, pricing and margin are unverified. This is a raw sourcing signal, not near-term money-in.",
+      "source_rights": "Official public notice metadata and factual summary; preserve the source URL and follow all solicitation confidentiality and reuse terms. Annex contents were not copied because retrieval was blocked.",
+      "execution_readiness": "HOLD_TOR_AND_ELIGIBILITY",
+      "consumer_action": "iSCOPE: retrieve and assess the binding RFPS and Terms of Reference, check eligibility, relevant references, deliverables/tools, capacity, data/privacy/licensing duties, budget/margin and submission compliance. If hard gates pass, record a qualification disposition and route to PRI for any external acknowledgement or bid decision. No external action by FORX.",
+      "intake_custody": "Existing Root Intake issue #31; discovery recorded 2026-10-14.",
+      "truth_boundary": "RAW SIGNAL ONLY. No acknowledgement, buyer contact, proposal, contract, invoice, acceptance or payment is evidenced."
+    }
+  ]
+}
