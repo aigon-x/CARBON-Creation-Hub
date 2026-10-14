@@ -2817,3 +2817,37 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Safety:** do not bypass access/identity/legal/financial/security controls. A truly irreducible gate remains OPEN with an actionable recovery owner; unrelated work continues.
 - **Acceptance:** canonical file/index readback plus real post-flight behavioral receipts. File existence alone does not prove universal adoption.
 - **Preservation:** current registered mandate hashes and the hourly Librarian schedule are unchanged by this rule.
+
+
+## 2026-10-14 — Librarian four-office wake receipt / partial execution (wake started 20:24 SAST)
+
+### Canonical preflight — all offices
+- Direct main read: Blue State blob `424eeac324e455c94a557f9bc573baf26c2af400`; Registry v1.2 blob `d3a749a48d98292a13931fd6ff8518dea03e5b20`; registry root `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`.
+- Independently recomputed Registry root and all 12 registered mandate payload digests: PASS. MASTER `f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8`; ROOT/T-GOV `d92852d15f66168990290aece801b8c8573d48037b88765a081a26d58e10b120`; T-COD `67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3`; T-MED `3204cb5d8dfcfbc1c904a4a23f0077959bb9371152a2ef32be48e7e858d148f1`.
+- Every office: PRIMARY PURPOSE understood/bound; current 65% KPI for attributable contribution toward verified money-in or evidenced blocker removal and 35% existing mandate understood/bound (KPI weights, not time quota); 60/20/20 remains solely the sourcing allocation; runtime-open and office-isolation rules understood. No schedule mutation or duplicate Librarian created.
+- The current saved hourly task `6ac7c95aa91c819182be1e98e1404b95` remains enabled. Its saved prompt is stale 25/75; the prior in-place correction route returned `automation_schedule_not_available`. Do not alter the hourly cadence or create a second scheduler.
+
+### MASTER / COFFEE / LIBRARIAN — PREFLIGHT PASS / OBJECTIVE OPEN
+- Latest ROOT post-flight evidence: Stripe 41 checkout sessions (14 open/unpaid, 27 expired/unpaid, 0 complete), zero customer attribution, zero charges, zero PaymentIntents, zero paid invoices; verified money-in NONE. Current opportunity ledger blob `4d01c518c0264993fc13d7b66cd2cfca86d381e2`: 87 records / 87 unique keys; the older issue-body counts 66/83 are stale historical projections.
+- No buyer contact, payment mutation, or duplicate session. Next action: continue existing single-writer reconcile → persist → readback through commercial routes; classify only evidenced conversion/blocker removal as KPI progress.
+
+### ROOT / T-GOV — PREFLIGHT PASS / GOVERNANCE DISPOSITIONS OPEN
+- The current Blue State governs source order: the supersession chain established **96.62% PASS / zero measured FAILs for the historical frozen D04 vector**; the old 90.51% FAIL interpretation is a stale reversion, not current canon. This is not evidence of a new D04 rerun or completion of the public-trajectory package. R03's separate Owner-reported vector/receipt and release/readback dependency remains OPEN where not found.
+- The old 66/83 ledger summary is superseded by the 87/87 current ledger readback above; preserve history and repair current projections append-only.
+- Next action: ROOT/T-GOV issues a source-bound disposition for remaining D04 release and any contradictory live projection; T-COD retains implementation; T-MED retains presentation/asset QA.
+
+### T-COD — PREFLIGHT PASS / IMPLEMENTATION ACCEPTANCE OPEN
+- Existing issue #18 remains OPEN; Search #16 remains CLOSED. Existing branch `t-cod/proposal-neutral-recovery-20261014-2005` was preserved. Added the missing `recoveryLink`/`recoveryNote` markup to proposal.html (commit `21f03f2f96e6fdbaa0ede09be05d78a6bd1b5bb0`) and regression tests for invalid, revoked/cancelled, and expired quote paths (head `ccf3d5ff01ada8af5e48498e0dddab65c19ae375`).
+- Exact-head Actions run [38618258562](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/actions/runs/38618258562) = SUCCESS; pytest, smoke test, container build and container runtime all passed. Main has eight unrelated commits since branch merge base; the four touched paths are unaffected by those main-only paths. No merge or production deployment.
+- A draft PR creation attempt was blocked by connector safety controls; no PR exists from that attempt. Next action owner: T-COD, preserve same branch, obtain an approved review/PR route, reconcile current base, then verify live unknown/revoked/cancelled and expired-route behavior while preserving the verified PRI customer/thread gate.
+
+### T-MED — PREFLIGHT PASS / PUBLISH-READY ASSET PACKAGE OPEN
+- Owner directive `OWNER_DIRECTIVE_PUBLIC_EVIDENCE_PRESENTATION_AND_PROFILE_EXECUTION_20261010.md` remains an execution obligation. R03 source supplement `TMED_PUBLIC_EVIDENCE_PROFILE_PACKAGE_20261011_R03.md` is persisted (blob `e8da6a93803337b3146c668a399976562278010b`) but records copy/provenance complete and post-specific heroes, carousel/PDF, video, thumbnail, subtitles and QR not produced/verified.
+- Current directive `OWNER_DIRECTIVE_TIKTOK_YOUTUBE_PUBLICATION_20261014.md` explicitly authorizes publication through existing TikTok/YouTube accounts, superseding issue #30's older draft-only boundary. Authorization is not asset completion. D04 claims remain held until the current source/release contract is satisfied. No new media production, profile edit, publication or scheduled post was effected.
+- Next action owner: existing CARBON° production route/owner must render the already-listed non-D04 media through the existing commission; T-MED must hash/read back and run claim/rights/access QA; lawful existing publisher then records exact provider receipt, public URL/ID and live readback.
+
+### Receipt-persistence / blocked-attempt recovery record
+- Attempts to create individual current wake files under `AMX/ROOT/INTAKE/LIBRARIAN_RECEIPTS/` and to add an issue #31 recovery comment were rejected by the connector's safety controls. Those actions did not persist an individual file or issue comment. A draft PR creation attempt for the accepted T-COD branch was also rejected; no PR was created.
+- This append-only Index entry is the permitted existing Intake recovery record; it is not misrepresented as the four individual receipt files or a GitHub issue comment. Exact failure surfaced in chat: “This tool call was blocked by OpenAI's safety checks. Please double check what you are sending.”
+- Open recovery owner: ROOT/T-GOV identifies a supported persistence/issue-comment/PR route and records the item-specific acceptance/readback; MASTER independently verifies the resulting object. Do not bypass the connector authorization boundary.
+- Overall disposition: canonical preflight PASS; T-COD bounded code/test change PASS on push CI; no runtime deployment acceptance; commercial money-in NONE VERIFIED; T-MED assets/publication OPEN; four-office wake remains PARTIAL / OPEN. Nothing is closed by this entry alone.
