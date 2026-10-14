@@ -2749,10 +2749,10 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **Disposition:** prompt correction OPEN/BLOCKED on `automation_schedule_not_available`; task-bound output not verified; same hourly task preserved; no new task/segment, external contact, session mutation or payment mutation. ROOT/T-GOV + authorized platform owner must provide an in-place prompt-only update route and independent saved-prompt/output readback.
 
 
-## 2026-10-14 — Carbon° commercial continuity / pricing / Ameligram Category B
+## 2026-10-14 — Carbon° commercial continuity and pricing
 
-- **Owner-approved Blue State commercial rule:** charm pricing, market-benchmarked accessible entry points, no-dead-end inbound offer recovery, configurable domain migration, and conditional MTXID/Your MtriX member pricing; registry unchanged.
+- **Owner-approved Blue State commercial rule:** charm pricing, market-benchmarked accessible entry points, no-dead-end inbound offer recovery, configurable domain migration, and conditional MTXID / Your MtriX member pricing; mandate registry unchanged.
 - **Pricing benchmark report:** [CARBON_COMMERCIAL_PRICE_BENCHMARK_AND_ENTRY_POINT_RECOMMENDATIONS_20261014.md](CARBON_COMMERCIAL_PRICE_BENCHMARK_AND_ENTRY_POINT_RECOMMENDATIONS_20261014.md). Initial prices are recommendations/pilot hypotheses, not live catalogue entries; member entitlement lookup and margins remain gates.
-- **Ameligram Category B feasibility directive:** [CATEGORY_B_AMELIGRAM_PRIVATE_ECOSYSTEM_MESSAGING_FEASIBILITY_20261014.md](CATEGORY_B_AMELIGRAM_PRIVATE_ECOSYSTEM_MESSAGING_FEASIBILITY_20261014.md). Owner's ecosystem-only messaging product idea is captured without halting current work or authorizing implementation. ROOT/T-GOV to classify and assign an existing owner.
 - **H0B° education-and-pull:** preserve the existing clown/entertainment character; humorous “If only they knew” content may point to verified Carbon°/ecosystem benefits but must not become a generic AI/sales assistant.
-- **Acceptance truth:** documentation/merge does not prove price catalogue activation, identity lookup, offer routing, domain migration, Ameligram build, or conversion uplift.
+- **Future compatibility:** observations about future ecosystem surfaces do not create tasks or product commitments. The current Carbon° routes should remain portable and extensible without blocking later, separately authorized integrations.
+- **Acceptance truth:** documentation/merge does not prove price catalogue activation, identity lookup, offer routing, domain migration or conversion uplift.
