@@ -423,4 +423,4 @@ H0B° can educate and attract through comedic “If only they knew” episodes a
 
 ### Build boundary
 
-No source, payment, member-discount, custom-domain, Ameligram, or production capability is marked implemented by this specification. T-COD must reuse current product and routing architecture, preserve existing identity and product boundaries, and pass route, price arithmetic, entitlement fallback, redirect and regression tests before claiming implementation.
+No payment, member-entitlement, custom-domain or production capability is marked implemented by this specification. T-COD must reuse current product and routing architecture, preserve existing identity and product boundaries, and pass route, price arithmetic, entitlement fallback, redirect and regression tests before claiming implementation.
