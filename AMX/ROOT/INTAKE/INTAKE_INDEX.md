@@ -1,5 +1,28 @@
 # OWNER DIRECTIVE — P0 / HIGHEST EXISTING PRIORITY — CLEAR ROOT INTAKE NOW
 
+## CURRENT LIBRARIAN FLIGHT — Q DRAIN + CONVERSION BLOCKER SYNC — 2026-10-14
+
+**Lifecycle:** PRESENT / EVIDENCE — appended correction; ROOT disposition and implementation acceptance remain open. This entry supersedes stale current-state projections without deleting their historical provenance.
+
+### Current canonical source snapshots
+- Blue State current KPI source: `AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md`, blob `a616c3ab40bf9f3c0fa6fb23f957f1eaae82627d`. Current rule: 65% evaluated KPI for attributable money-in or evidenced blocker removal; 35% for the worker's existing mandate. Keep 60/20/20 restricted to sourcing effort. Former 25/75 prompt text is superseded.
+- `overdrive/opportunities.json` blob `17d66fdd94810d6f3c61866b6dcd059687546a04`: `record_count=87`, actual records-map keys=87. Old 66-vs-83 count mismatch is historical/stale. Historical `last_run.run_at=2026-10-03T17:42:00Z` remains unchanged; count parity is not proof of a current market scan or commercial execution.
+- `overdrive/claims.json` blob `b33fa65dd5efabb375f28aa9ddca942bebd1e660`, generated `2026-10-14T09:16:42.273809Z`: 87 claims; 81 WAITING / 6 CLOSED; zero READY, zero external-ready, empty executable order. Ten WAITING claims have past due_at values; item-level gates remain in each record. Do not infer that elapsed due_at authorizes an external action.
+- `overdrive/state.json` blob `481d998db897ef98610919e833afd11b78683e3a`: sequence=20; last_tick=`2026-10-14T09:16:42.276231Z`; `state_changed=true` while `processed=[]`; its 20 completed adapter entries are retained historical receipts. This proves a state change, not a queue drain or money-in.
+- Existing FORX outcome→weight→selection receipt `overdrive/forensics/FORX-WEIGHTED-CONTINUITY-LATEST.json`, blob `cc3275dd9a0b46269400a88c528161645eb2af2c`, remains accepted for its bounded historical test: 8 real outcome events, changed next selection `FORX-PROSPECT-20261007-001` → `FORX-PROSPECT-20261007-005`, durable state readback. Do not call this fresh current-flight revenue evidence or reopen absent regression.
+
+### Current verified execution blockers and existing recovery destinations
+- **65/35 prompt propagation:** existing Librarian automation remains saved with legacy 25/75. Exact prompt-only update attempt was rejected with `automation_schedule_not_available` because this plan does not support changes to hourly-scheduled tasks. Cadence was not changed; prompt correction was not applied. Recovery owner is ROOT / supported automation write path; acceptance requires exact saved-prompt readback plus behavioral evidence.
+- **Q / conversion:** current status is not “drained”. Zero claims are externally ready; ten due timestamps sit across actual WAITING/HOLD states such as buyer wait, authenticated browser/Gmail path, account recovery, identity/OTP or capability/eligibility gaps. Work each item according to its exact source-backed next_action; continue independent lawful work and don't weaken gates.
+- **CARBON° offer-route conversion gap:** under existing [issue #18](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/18), current `backend/app.py` blob `db9424d9d1d4b781ce4e4ef04a9be5436bf4616c` returns 404 for unknown and REVOKED/CANCELLED proposal tokens; expired quotes are statused EXPIRED. `house/remediation/proposal.js` blob `abc6c7baef2dcae0bc85291261635a9e7cf0bef5` displays QUOTE EXPIRED but no refresh/reissue CTA or neutral CARBON° Business recovery action was found. A bounded test/repair contract was appended to existing issue #18 (comment [6165475086](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/18#issuecomment-6165475086)) for current T-COD/product owner. Implementation/deployment are NOT claimed.
+- **Experimental integrity:** a current flight mistakenly requested (but did not receive completion confirmation for) an immediate run of the existing IDEAL SALES TEAM automation before the protected-experiment guard was fully applied. Post-request task inventory still showed its prior last_run_time and no evidence of a resulting run; record as possible timing interference, not confirmed run/contamination. No further requests or changes to the iSCOPE→PRI or Bounty Reaper experimental subjects without recovered Owner boundaries/release. Exact incident and recovery are in existing issue #31 comment [6165474393](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6165474393).
+
+### Flight-control interpretation
+The sequence SYNC → PREP → LAUNCH → FLIGHT → SYNC / ANCHOR WEIGHTS → FLIGHT → ... → LAND is a repeating guideline, not a fixed count of syncs. Re-sync on new evidence, changed state, material pivot, blocker, owner handoff or acceptance boundary. Anchor weights only to the current authority and attributable source-backed outcomes. Do not land on a clean queue, report, prompt attempt, wake timestamp or Intake write. Land only when the environment/tool ends, governed terminal closure applies, or lawful executable scope is genuinely exhausted / precisely held with recovery owner and next action.
+
+**Boundaries:** This entry is evidence/index maintenance only. It does not change Canon, Merge authority, worker ownership, registry hashes, experiment settings or V1 build authority.
+
+
 **ACTIVE FRONT-OF-QUEUE GOVERNANCE INSTRUCTION — 2026-10-06**
 
 **Authority:** OWNER DIRECTIVE  
