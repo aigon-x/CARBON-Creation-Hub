@@ -109,11 +109,33 @@
       "remains_unproven": "No buyer identity or paid order is evidenced; sessions cannot be attributed to a buyer; no successful payment/settlement is evidenced; the existing email inbox remains unavailable to connected read/send tools.",
       "scope": "AMX-MICROMATRIX-20261011-R01",
       "upgrade_action": "Keep the same public offer and checkout link; continue lawful distribution of the existing offer. Do not use social publication while issue #30's draft-only mandate controls. ROOT/connector administrator must restore the existing sender's authenticated read/send capability or provide an already-authorized alternative without changing sender identity. On any completed checkout, read custom_fields/payment_status directly, deliver only the bounded safe scope, and ask Banker to verify settlement before PAID."
+    },
+    {
+      "actual": "Live Stripe readback in the existing AMILLIMATRIX account at 2026-10-14T14:23:36.631Z: 5 active payment links; 36 total Checkout Sessions across the five links, of which 30 are open/unpaid and 6 are expired/unpaid; 0 complete sessions, no customer/customer_email attribution in any session; charges=0, PaymentIntents=0, paid invoices=0, charge-type balance transactions=0. Per-link open counts: Kingston Stanley 6, Xubio 6, Synergy Interactive 9, JGMI by Carbon 3, Micro-Matrix Quick Technical Review 6 open + 6 expired. Close thread readback confirms 13 Oct checkout-link messages for Kingston Stanley, Xubio and Synergy Interactive remain outgoing drafts, not sent. Close inbound Email/EmailThread search 10–14 Oct returned 0, which does not establish absence of mail replies in Gmail.",
+      "changed": "Current totals supersede previous provider snapshots: 36 sessions, not 35; the Micro-Matrix link has 12 total sessions, now 6 open and 6 expired, all unpaid. Current account-wide payment objects remain zero. Three checkout-link emails were verified as drafts, not sends. No lifecycle upgrade, buyer identity, purchase or revenue inferred.",
+      "classification": "VERIFIED_CURRENT_STRIPE_AND_CLOSE_READBACK_NO_PAYMENT_EVIDENCED; GMAIL_READ_PATH_RECOVERY_OPEN",
+      "expected": "Canonical state reflects current provider evidence while preserving distinctions between session, buyer response, acceptance, contract, invoice, payment and settlement. Existing draft messages remain drafts and no third unsolicited follow-up is sent.",
+      "observed_at": "2026-10-14T14:23:36.631Z",
+      "owner": "PRI for commercial records and existing offer progression; Banker for settlement truth; ROOT/connector administrator for Gmail/browser route recovery.",
+      "proof": [
+        "Stripe live account acct_1UE0UBHyzt7gyqmn; GET /v1/payment_links?active=true returned 5 active links, has_more=false (2026-10-14T14:23:36.631Z)",
+        "GET /v1/checkout/sessions?limit=100 returned 36 total; status=open returned 30; status=expired returned 6; status=complete returned 0; all sessions unpaid; all reads has_more=false.",
+        "Open sessions by payment link: Kingston Stanley 6 at US$99; Xubio 6 at US$49; Synergy Interactive 9 at US$99; JGMI by Carbon 3; Micro-Matrix Quick Technical Review 6 open and 6 expired at US$4.99.",
+        "GET /v1/charges?limit=100 returned 0, has_more=false.",
+        "GET /v1/payment_intents?limit=100 returned 0, has_more=false.",
+        "GET /v1/invoices?status=paid&limit=100 returned 0, has_more=false.",
+        "GET /v1/balance_transactions?type=charge&limit=100 returned 0, has_more=false.",
+        "Close draft readbacks: Kingston acti_uMfFtmRnkznOyFyB6uUJKIoc45BmN3Lu7ospfSoelUE/acti_9iXy26pBnNCCALva6SWlrQiv6pVBHvxrutaCe0bsxmb; Xubio acti_KwclJa3zGyQ51Jm7OFsT0QcR2icneMkmr2zppyZ6Kke/acti_JJ5SD7xKirWYszKyzYDlZGNWjRSWJpGseA2CCwsXaI7; Synergy acti_RJXhaJ9UcQkvUdFsgElXTi2AZrxpq4UJFPS99F3tLBT/acti_wCUYEqYeiuMtaJacZAJ51XXHyXH0ok1wFvzaRwQwriJ. Each latest message status=draft, direction=outgoing.",
+        "Close inbound Email/EmailThread search over 2026-10-10 through 2026-10-14 returned 0. This applies to Close only, not Gmail."
+      ],
+      "remains_unproven": "No buyer is attributed to an open checkout session; no buyer acceptance, contract, invoice/receivable, paid order, or settlement is evidenced in this Stripe account. Gmail buyer replies and the CallForce Gmail thread remain unreadable via currently exposed connectors. Non-Stripe/bank cash is not covered by this Stripe audit.",
+      "scope": "STRIPE_LIVE_MONEY_IN_AND_CLOSE_DRAFT_READBACK_20261014",
+      "upgrade_action": "Preserve all three opportunity records as SUBMITTED/WAITING and preserve the no-third-follow-up rule. User has stated access is granted; this is not a request for repeated authorization. Runtime evidence currently shows no Gmail read/send tool available, Opera Browser Connector returns BROWSER_NOT_CONNECTED, existing TinyFish profile prof_038698ac484842d1 has no signed_in_sites recorded, and TinyFish wallet is negative with auto-reload unconfigured. ROOT/connector administrator: restore the existing sender's authorized read/send route or reconnect existing browser identity; do not create another account/sender. After route recovery, inspect Gmail thread 1a103d43041d248b before any action. Banker remains final owner of settlement truth."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T11:58:29.215Z",
-  "last_reconciled_reason": "Verified the existing Micro-Matrix US$4.99 checkout was improved in-place with optional repository URL and question fields plus a revised confirmation message, then read back the same active link. Exact-link session count is now 12, all open/unpaid/unattributed, and live payment object queries returned zero; no income claim.",
+  "last_reconciled_at": "2026-10-14T14:23:36.631Z",
+  "last_reconciled_reason": "Reconciled direct live Stripe and Close reads at 2026-10-14T14:23:36.631Z. Current provider snapshot: 36 Checkout Sessions (30 open/unpaid, 6 expired/unpaid, 0 complete), no customer attribution, and zero charges, PaymentIntents, paid invoices or charge-balance transactions. Verified the three 13 Oct checkout-link messages are still drafts. Gmail/CallForce read-path blocker remains open; no external lifecycle or revenue claim.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -1703,12 +1725,27 @@
           "source_id": "STRIPE_LIVE_SESSION_READBACK_20261014T114511Z",
           "url": "https://buy.stripe.com/28EeVd597dPy9UdaiuaR203",
           "summary": "Current GET /v1/checkout/sessions filtered by this exact payment_link returned 6 sessions at USD 99; all are open/unpaid, has_more=false, and 0 have customer/customer_email attribution. The same live account scan at 2026-10-14T11:45:11.882Z returned 0 charges, 0 PaymentIntents and 0 charge-type balance transactions. Session records do not establish a buyer identity, buyer intent, purchase, or revenue. Existing 7 Oct offer and 10 Oct follow-up remain sent; 13 Oct checkout-link email remains an unsent draft. Do not send another unsolicited follow-up absent buyer reply or a new authorized route."
+        },
+        {
+          "kind": "STRIPE_CURRENT_SESSION_STATUS_READBACK_20261014T1414Z",
+          "observed_at": "2026-10-14T14:23:36.631Z",
+          "source": "STRIPE_LIVE_ACCOUNT_READBACK",
+          "source_id": "STRIPE_LIVE_MONEY_IN_READBACK_20261014T1414Z",
+          "url": "https://buy.stripe.com/28EeVd597dPy9UdaiuaR203",
+          "summary": "Live AMILLIMATRIX account readback: GET /v1/checkout/sessions?payment_link=plink_1UQ6bzHyzt7gyqmnwNcWItRf&status=open&limit=100 returned 6/6 sessions open/unpaid; zero customer/customer_email attribution. Account-wide readback: 0 charges, 0 PaymentIntents, 0 paid invoices, 0 charge-type balance transactions. No purchase/revenue inferred. Existing sent offer and prior follow-up remain the only evidenced outbound contact; later checkout-link email is still an unsent draft."
+        },
+        {
+          "kind": "CLOSE_CHECKOUT_LINK_DRAFT_READBACK_20261014",
+          "observed_at": "2026-10-14T14:23:36.631Z",
+          "source": "CLOSE_LIVE_READBACK",
+          "source_id": "acti_uMfFtmRnkznOyFyB6uUJKIoc45BmN3Lu7ospfSoelUE",
+          "summary": "Close thread readback acti_uMfFtmRnkznOyFyB6uUJKIoc45BmN3Lu7ospfSoelUE: latest checkout-link email acti_9iXy26pBnNCCALva6SWlrQiv6pVBHvxrutaCe0bsxmb is status=draft, direction=outgoing, recipient vanessa@kingstonstanley.com; it is not a sent message. Do not send without buyer-initiated response or a newly verified authorized route."
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-10T05:18:42Z",
-      "last_reconciled_at": "2026-10-10",
+      "last_reconciled_at": "2026-10-14T14:23:36.631Z",
       "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
       "opportunity": "sourcing-overflow-pilot",
       "organization": "Kingston Stanley",
@@ -3677,12 +3714,27 @@
           "source_id": "STRIPE_LIVE_SESSION_READBACK_20261014T114511Z",
           "url": "https://buy.stripe.com/eVq5kD30ZeTCfex0HUaR201",
           "summary": "Current GET /v1/checkout/sessions filtered by this exact payment_link returned 9 sessions at USD 99; all are open/unpaid, has_more=false, and 0 have customer/customer_email attribution. The same live account scan at 2026-10-14T11:45:11.882Z returned 0 charges, 0 PaymentIntents and 0 charge-type balance transactions. Session records do not establish a buyer identity, buyer intent, purchase, or revenue. Existing 7 Oct offer and 10 Oct follow-up remain sent; 13 Oct checkout-link email remains an unsent draft. Do not send another unsolicited follow-up absent buyer reply or a new authorized route."
+        },
+        {
+          "kind": "STRIPE_CURRENT_SESSION_STATUS_READBACK_20261014T1414Z",
+          "observed_at": "2026-10-14T14:23:36.631Z",
+          "source": "STRIPE_LIVE_ACCOUNT_READBACK",
+          "source_id": "STRIPE_LIVE_MONEY_IN_READBACK_20261014T1414Z",
+          "url": "https://buy.stripe.com/eVq5kD30ZeTCfex0HUaR201",
+          "summary": "Live AMILLIMATRIX account readback: GET /v1/checkout/sessions?payment_link=plink_1UQ6bVHyzt7gyqmnYyOR6FwW&status=open&limit=100 returned 9/9 sessions open/unpaid; zero customer/customer_email attribution. Account-wide readback: 0 charges, 0 PaymentIntents, 0 paid invoices, 0 charge-type balance transactions. No purchase/revenue inferred. Existing sent offer and prior follow-up remain the only evidenced outbound contact; later checkout-link email is still an unsent draft."
+        },
+        {
+          "kind": "CLOSE_CHECKOUT_LINK_DRAFT_READBACK_20261014",
+          "observed_at": "2026-10-14T14:23:36.631Z",
+          "source": "CLOSE_LIVE_READBACK",
+          "source_id": "acti_RJXhaJ9UcQkvUdFsgElXTi2AZrxpq4UJFPS99F3tLBT",
+          "summary": "Close thread readback acti_RJXhaJ9UcQkvUdFsgElXTi2AZrxpq4UJFPS99F3tLBT: latest checkout-link email acti_wCUYEqYeiuMtaJacZAJ51XXHyXH0ok1wFvzaRwQwriJ is status=draft, direction=outgoing, recipient blake@sinyc.com; it is not a sent message. Do not send without buyer-initiated response or a newly verified authorized route."
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-10T05:18:52Z",
-      "last_reconciled_at": "2026-10-10",
+      "last_reconciled_at": "2026-10-14T14:23:36.631Z",
       "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 9 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
       "opportunity": "candidate-sourcing-pilot",
       "organization": "Synergy Interactive",
@@ -4300,12 +4352,27 @@
           "source_id": "STRIPE_LIVE_SESSION_READBACK_20261014T114511Z",
           "url": "https://buy.stripe.com/eVqbJ1gRPeTCd6p76iaR202",
           "summary": "Current GET /v1/checkout/sessions filtered by this exact payment_link returned 6 sessions at USD 49; all are open/unpaid, has_more=false, and 0 have customer/customer_email attribution. The same live account scan at 2026-10-14T11:45:11.882Z returned 0 charges, 0 PaymentIntents and 0 charge-type balance transactions. Session records do not establish a buyer identity, buyer intent, purchase, or revenue. Existing 7 Oct offer and 10 Oct follow-up remain sent; 13 Oct checkout-link email remains an unsent draft. Do not send another unsolicited follow-up absent buyer reply or a new authorized route."
+        },
+        {
+          "kind": "STRIPE_CURRENT_SESSION_STATUS_READBACK_20261014T1414Z",
+          "observed_at": "2026-10-14T14:23:36.631Z",
+          "source": "STRIPE_LIVE_ACCOUNT_READBACK",
+          "source_id": "STRIPE_LIVE_MONEY_IN_READBACK_20261014T1414Z",
+          "url": "https://buy.stripe.com/eVqbJ1gRPeTCd6p76iaR202",
+          "summary": "Live AMILLIMATRIX account readback: GET /v1/checkout/sessions?payment_link=plink_1UQ6bwHyzt7gyqmn96dQprpf&status=open&limit=100 returned 6/6 sessions open/unpaid; zero customer/customer_email attribution. Account-wide readback: 0 charges, 0 PaymentIntents, 0 paid invoices, 0 charge-type balance transactions. No purchase/revenue inferred. Existing sent offer and prior follow-up remain the only evidenced outbound contact; later checkout-link email is still an unsent draft."
+        },
+        {
+          "kind": "CLOSE_CHECKOUT_LINK_DRAFT_READBACK_20261014",
+          "observed_at": "2026-10-14T14:23:36.631Z",
+          "source": "CLOSE_LIVE_READBACK",
+          "source_id": "acti_KwclJa3zGyQ51Jm7OFsT0QcR2icneMkmr2zppyZ6Kke",
+          "summary": "Close thread readback acti_KwclJa3zGyQ51Jm7OFsT0QcR2icneMkmr2zppyZ6Kke: latest checkout-link email acti_JJ5SD7xKirWYszKyzYDlZGNWjRSWJpGseA2CCwsXaI7 is status=draft, direction=outgoing, recipient lnotrica@xubio.com; it is not a sent message. Do not send without buyer-initiated response or a newly verified authorized route."
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-10T05:18:47Z",
-      "last_reconciled_at": "2026-10-10",
+      "last_reconciled_at": "2026-10-14T14:23:36.631Z",
       "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
       "opportunity": "onboarding-support-pilot",
       "organization": "Xubio",
