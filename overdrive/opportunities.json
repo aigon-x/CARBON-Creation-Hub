@@ -91,11 +91,29 @@
       "remains_unproven": "Whether any open Checkout Session was created by a prospective buyer, given no customer attribution; whether any payment occurred outside this Stripe account; bank payout/settlement; total company revenue outside the read account.",
       "scope": "STRIPE_LIVE_MONEY_IN_READBACK_20261014",
       "upgrade_action": "Do not infer revenue from session count. Preserve sent state and no-third-follow-up restriction for Kingston Stanley/Xubio/Synergy Interactive. Continue the existing public micro-offer and find a permitted distribution/sender route. ROOT/connector administrator must recover the existing authorized sender identity or surface a permitted alternative consistent with the single commercial writer; Banker independently verifies actual cash/settlement."
+    },
+    {
+      "actual": "Existing Micro-Matrix Quick Technical Review Payment Link was updated in place (same ID plink_1UQ5O5Hyzt7gyqmnpy8tS7DA, same active URL, same existing product and US$4.99 one-time price). Stripe now shows two optional text fields at checkout: public repository URL (max 255 characters) and main review question (max 255 characters). Hosted confirmation states how to provide a non-sensitive excerpt and reiterates scope/safety. Independent GET Payment Link readback confirmed active=true and both fields/confirmation. Latest exact-link Checkout Session read at 2026-10-14T11:58:29.215Z returned 12 sessions, all open/unpaid, customer_email=null and payment_intent=null; has_more=false. Charges=0, PaymentIntents=0, charge-type balance transactions=0, all has_more=false.",
+      "changed": "Improved the existing offer’s delivery handoff without creating a new product, price, checkout link, sender, or pipeline. Standard paid buyers can optionally provide a public repo URL and question at checkout; excerpt-only requests still use the existing email route. Fresh session count supersedes the prior count of 11; no buyer identity or purchase inferred.",
+      "classification": "VERIFIED_IN_PLACE_CHECKOUT_INTAKE_IMPROVEMENT_NO_PAYMENT_EVIDENCED",
+      "expected": "A genuine paid buyer can submit enough context at checkout to begin a bounded review; buyer-provided content remains untrusted input and secret/private-data restrictions remain clear; actual cash-in only counts after paid/settlement evidence.",
+      "observed_at": "2026-10-14T11:58:29.215Z",
+      "owner": "PRI for existing offer/conversion; existing Micro-Matrix owner for fulfilment; Banker for settlement truth",
+      "proof": [
+        "Stripe live account acct_1UE0UBHyzt7gyqmn; PostPaymentLinksPaymentLink accepted for existing plink_1UQ5O5Hyzt7gyqmnpy8tS7DA",
+        "Independent GET Payment Link readback: active=true; unchanged URL https://buy.stripe.com/9B6eVd7hfeTCaYh62eaR200; custom_fields=repositoryurl/mainquestion, both optional text fields max 255; hosted confirmation read back exactly.",
+        "Public page CTA remains live: https://amx-evidence-house.onrender.com/house; repo README contains the same US$4.99 CTA.",
+        "GET /v1/checkout/sessions?payment_link=plink_1UQ5O5Hyzt7gyqmnpy8tS7DA&limit=100 at 2026-10-14T11:58:29.215Z: 12 sessions, all open/unpaid, 0 customer_email, 0 PaymentIntent, has_more=false.",
+        "GET /v1/charges?limit=100: 0; GET /v1/payment_intents?limit=100: 0; GET /v1/balance_transactions?type=charge&limit=100: 0; each has_more=false."
+      ],
+      "remains_unproven": "No buyer identity or paid order is evidenced; sessions cannot be attributed to a buyer; no successful payment/settlement is evidenced; the existing email inbox remains unavailable to connected read/send tools.",
+      "scope": "AMX-MICROMATRIX-20261011-R01",
+      "upgrade_action": "Keep the same public offer and checkout link; continue lawful distribution of the existing offer. Do not use social publication while issue #30's draft-only mandate controls. ROOT/connector administrator must restore the existing sender's authenticated read/send capability or provide an already-authorized alternative without changing sender identity. On any completed checkout, read custom_fields/payment_status directly, deliver only the bounded safe scope, and ask Banker to verify settlement before PAID."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T11:45:11.882Z",
-  "last_reconciled_reason": "Reconciled a current per-payment-link Stripe live readback and verified the existing public Quick Technical Review CTA is reachable. All 35 Checkout Sessions across five active links remain open/unpaid with no customer attribution; charges, PaymentIntents and charge-type balance transactions returned zero. Updated existing Kingston Stanley, Xubio and Synergy Interactive records in place; no duplicate records and no buyer revenue claim.",
+  "last_reconciled_at": "2026-10-14T11:58:29.215Z",
+  "last_reconciled_reason": "Verified the existing Micro-Matrix US$4.99 checkout was improved in-place with optional repository URL and question fields plus a revised confirmation message, then read back the same active link. Exact-link session count is now 12, all open/unpaid/unattributed, and live payment object queries returned zero; no income claim.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
