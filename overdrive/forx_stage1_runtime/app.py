@@ -531,32 +531,60 @@ def load_geonames():
         if not store_ready:
             remove_sqlite(db_path)
 
-def choose_diverse(nodes, target):
-    by_country = {}
-    for n in nodes:
-        by_country.setdefault(n["country"], {}).setdefault(n["category"], []).append(n)
+def combine_source_stores(a, g, target):
+    """Preserve Audiala-then-GeoNames order and cross-source dedupe on disk."""
+    combined_path = create_node_store("amx-forx-combined-")
+    conn = sqlite3.connect(combined_path)
+    cross_duplicates = 0
+    sequence = 0
+    try:
+        conn.execute("PRAGMA temp_store=FILE")
+        conn.execute("PRAGMA cache_size=-4096")
+        for node in iter_store_nodes(a["node_store_path"]):
+            sequence += 1
+            cur = conn.execute(
+                "INSERT OR IGNORE INTO nodes "
+                "(ck,country,category,source_record_id,sequence,payload) VALUES (?,?,?,?,?,?)",
+                (canonical_key(node["name"], node["latitude"], node["longitude"]),
+                 node["country"], node["category"], node["source_record_id"], sequence,
+                 json.dumps(node, separators=(",", ":"), sort_keys=True)),
+            )
+            if cur.rowcount == 0:
+                cross_duplicates += 1
 
-    chosen = []
-    positions = {(c, k): 0 for c, ks in by_country.items() for k in ks}
-    countries = sorted(by_country)
-
-    while len(chosen) < min(target, len(nodes)):
-        progressed = False
-        for c in countries:
-            for k in sorted(by_country[c]):
-                pos = positions[(c, k)]
-                arr = by_country[c][k]
-                if pos < len(arr):
-                    chosen.append(arr[pos])
-                    positions[(c, k)] = pos + 1
-                    progressed = True
-                    if len(chosen) >= target:
-                        break
-            if len(chosen) >= target:
-                break
-        if not progressed:
-            break
-    return chosen
+        # Preserve the former combined-mode contract: GeoNames contributed its
+        # already-diverse top TARGET rows before the combined diversity pass.
+        for node in iter_diverse_nodes(g["node_store_path"], target, "source_record_id"):
+            sequence += 1
+            cur = conn.execute(
+                "INSERT OR IGNORE INTO nodes "
+                "(ck,country,category,source_record_id,sequence,payload) VALUES (?,?,?,?,?,?)",
+                (canonical_key(node["name"], node["latitude"], node["longitude"]),
+                 node["country"], node["category"], node["source_record_id"], sequence,
+                 json.dumps(node, separators=(",", ":"), sort_keys=True)),
+            )
+            if cur.rowcount == 0:
+                cross_duplicates += 1
+        conn.commit()
+        return {
+            "node_store_path": combined_path,
+            "selection_order": "sequence",
+            "raw_rows": a["raw_rows"] + g["raw_rows"],
+            "rejected": a["rejected"] + g["rejected"],
+            "duplicates": a["duplicates"] + g["duplicates"] + cross_duplicates,
+            "source_sha256": hashlib.sha256(
+                (a["source_sha256"] + g["source_sha256"]).encode()
+            ).hexdigest(),
+            "source_url": f"{AUDIALA_URL} + {GEONAMES_URL}",
+            "source_name": "Audiala + GeoNames",
+            "source_license": "CC BY 4.0",
+            "source_revision": f"{AUDIALA_REPO_COMMIT}+{g['source_revision']}",
+        }
+    except Exception:
+        remove_sqlite(combined_path)
+        raise
+    finally:
+        conn.close()
 
 
 def build():
