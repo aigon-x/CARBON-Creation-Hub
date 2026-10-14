@@ -1,3 +1,4 @@
+import hashlib
 import json
 from pathlib import Path
 
@@ -52,7 +53,55 @@ def test_customer_portal_route_and_unknown_token(tmp_path, monkeypatch):
     r = c.get("/proposal/test-token")
     assert r.status_code == 200
     assert "proposal" in r.text
-    assert c.get("/proposal/nope").status_code == 404
+
+    missing = c.get("/proposal/nope", follow_redirects=False)
+    expected_ref = hashlib.sha256(b"nope").hexdigest()[:12].upper()
+    assert missing.status_code == 307
+    assert missing.headers["location"] == f"/house/?ref={expected_ref}"
+    assert "nope" not in missing.headers["location"]
+    assert c.get("/api/proposals/nope").status_code == 404
+
+
+def test_revoked_and_cancelled_portal_pages_recover_without_token_leak(tmp_path, monkeypatch):
+    c = portal_client(tmp_path, monkeypatch)
+    registry_path = tmp_path.parent / (tmp_path.name + "-private-proposals.json")
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    base = registry["proposals"]["test-token"]
+    registry["proposals"]["revoked-token-secret"] = {**base, "status": "REVOKED"}
+    registry["proposals"]["cancelled-token-secret"] = {**base, "status": "CANCELLED"}
+    registry_path.write_text(json.dumps(registry), encoding="utf-8")
+
+    for token in ("revoked-token-secret", "cancelled-token-secret"):
+        page = c.get(f"/proposal/{token}", follow_redirects=False)
+        expected_ref = hashlib.sha256(token.encode("utf-8")).hexdigest()[:12].upper()
+        assert page.status_code == 307
+        assert page.headers["location"] == f"/house/?ref={expected_ref}"
+        assert token not in page.headers["location"]
+        assert c.get(f"/api/proposals/{token}").status_code == 404
+
+
+def test_expired_quote_has_neutral_recovery_and_keeps_old_quote_nonbinding(tmp_path, monkeypatch):
+    c = portal_client(tmp_path, monkeypatch)
+    registry_path = tmp_path.parent / (tmp_path.name + "-private-proposals.json")
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    registry["proposals"]["test-token"]["status"] = "ISSUED"
+    registry["proposals"]["test-token"]["issued_at"] = "2020-01-01T00:00:00Z"
+    registry_path.write_text(json.dumps(registry), encoding="utf-8")
+
+    response = c.get("/api/proposals/test-token")
+    assert response.status_code == 200
+    body = response.json()
+    assert body["quote_status"] == "EXPIRED"
+    assert body["recovery_url"] == "/house/"
+    assert body["valid_until"] is not None
+
+    root = Path(__file__).resolve().parents[1]
+    page = (root / "house/remediation/proposal.html").read_text(encoding="utf-8")
+    script = (root / "house/remediation/proposal.js").read_text(encoding="utf-8")
+    assert 'id="recoveryLink"' in page
+    assert 'id="recoveryNote"' in page
+    assert "$('recoveryLink').href" in script
+    assert "$('recoveryNote').classList.remove('hidden')" in script
 
 
 def test_change_request_is_non_binding_and_filters_unknown_modules(tmp_path, monkeypatch):
