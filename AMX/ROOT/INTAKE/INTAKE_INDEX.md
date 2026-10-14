@@ -2807,3 +2807,13 @@ Further code readback of `overdrive/runner.py` (blob `d71c75550c72daa80cc585c8fc
 - **H0B° education-and-pull:** preserve the existing clown/entertainment character; humorous “If only they knew” content may point to verified Carbon°/ecosystem benefits but must not become a generic AI/sales assistant.
 - **Future compatibility:** observations about future ecosystem surfaces do not create tasks or product commitments. The current Carbon° routes should remain portable and extensible without blocking later, separately authorized integrations.
 - **Acceptance truth:** documentation/merge does not prove price catalogue activation, identity lookup, offer routing, domain migration or conversion uplift.
+
+
+## 2026-10-14 — CATEGORY A NO TOOL-ACCESS DEAD-END RECOVERY CONTROL
+
+- **Current governing rule artifact:** [CATEGORY A NO TOOL-ACCESS DEAD-END / BLOCKED-ATTEMPT RECOVERY RULE](./CATEGORY_A_NO_TOOL_ACCESS_DEAD_END_RECOVERY_RULE_20261014.md).
+- **Rule:** tool/connector access failure is never, by itself, a terminal disposition. Preserve the objective, capture the exact attempted route/error, exhaust authorized alternatives, continue independent lawful work, and persist a completion-ready recovery parcel with named owner, next action, dependency, acceptance test, safety condition, readback location and remaining work.
+- **Governance integration:** the rule is now incorporated in the existing Blue State Blocked Attempt Recovery Law; it creates no separate queue or authority. ROOT/T-GOV retains disposition and ongoing oversight.
+- **Safety:** do not bypass access/identity/legal/financial/security controls. A truly irreducible gate remains OPEN with an actionable recovery owner; unrelated work continues.
+- **Acceptance:** canonical file/index readback plus real post-flight behavioral receipts. File existence alone does not prove universal adoption.
+- **Preservation:** current registered mandate hashes and the hourly Librarian schedule are unchanged by this rule.

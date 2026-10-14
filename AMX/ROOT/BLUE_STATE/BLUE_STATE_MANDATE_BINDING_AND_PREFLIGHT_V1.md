@@ -666,22 +666,29 @@ For every blocked attempt, preserve a durable recovery parcel containing:
 - current execution owner;
 - completion acceptance condition.
 
-Required continuation:
+### NO TOOL-ACCESS DEAD-END — OWNER-DIRECTED CATEGORY A ENFORCEMENT
 
-1. **RECOVER** the blocked attempt as an open obligation on the next continuity pass.
-2. **RETRY OR REROUTE** through an already-authorized equivalent path when the same owner can lawfully complete it.
-3. If completion requires another existing owner, authority decision, implementation repair, or dependency resolution, **ROUTE THE RECOVERY PARCEL THROUGH ROOT/INTAKE FOR COMPLETION OWNERSHIP** while preserving the original work item and evidence.
-4. Intake must classify/route the unresolved execution obligation; it must not convert the block into passive history.
-5. The receiving owner resumes from the furthest evidenced state. Do not restart from zero, duplicate external actions, or discard completed work.
-6. Closure requires the original acceptance condition to be met and independently read back, or an explicit governed cancellation/supersession.
+**TOOL ACCESS UNAVAILABLE IS NEVER, BY ITSELF, A TERMINAL DISPOSITION. A BLOCKER IS A RECOVERY ASSIGNMENT, NOT AN EXCUSE TO STOP.**
 
-**BLOCKED RECEIPT -> OPEN OBLIGATION -> RECOVERY OWNER -> COMPLETION / GOVERNED CANCELLATION.**
+This is an explicit enforcement of this existing Blocked Attempt Recovery Law and the existing Capable-Model Self-Repair control—not a new authority, worker, queue, scheduler, or parallel policy system. It applies whenever the Owner, ROOT/Librarian, or another authorized authority directs work.
 
-A local blocker remains local. Unrelated executable work continues.
+On the same wake/run in which a route fails, the existing executor MUST:
 
-**REPORTING A BLOCKER != HANDING OFF THE BLOCKER.**  
-**HANDING OFF != COMPLETION.**  
-**NO RECOVERY OWNER / NEXT ACTION -> INVALID BLOCKED STATE.**
+1. **Keep the objective intact.** Preserve the instruction, intended outcome, existing owner/mandate, pass test, current source of truth, and hard safety/authority boundaries. Do not substitute a report or explanation for the requested outcome.
+2. **Capture the actual failure.** Record the attempted tool/operation, exact object and route, furthest evidenced state, exact error/permission response, and receipt/timestamp when available. Do not claim an unattempted route failed.
+3. **Diagnose the specific gate.** Distinguish absent tool, disconnected connector, missing permission, authentication/OTP/CAPTCHA, provider/runtime outage, unsupported operation, safety refusal, stale source, malformed data, and genuinely human-only authority. A failed read does not mean the source is empty; a tool error does not prove the outcome impossible.
+4. **Exhaust authorized alternatives before escalation.** Inspect the available relevant tools and connected sources; try an authorized equivalent API/connector/write route or the existing ROOT/Route Intake/governance route. Use the smallest safe, reversible, idempotent action. Do not repeat an unchanged failed operation without new evidence or a materially different route.
+5. **Continue independent work immediately.** A route-specific blocker holds only tasks that depend on it. Keep every independent lawful branch moving. Do not stop the flight because one tool failed, an Intake note was written, a report was produced, or a wake was requested.
+6. **Create a completion-ready recovery parcel for any remaining blocker.** Persist it in the existing Root/Route Intake or existing issue, not a new queue. It must contain the objective, expected outcome, existing owner, attempted route and exact error, furthest state, alternative routes tried and why they cannot complete this same outcome, recovery owner, next action, dependency, pass/acceptance test, persistence/readback location, safety/preservation condition, item-level disposition, and remaining work.
+7. **Escalate with an executable handoff, not a complaint.** Where a real permission/platform/credential/Owner-only/legal/financial/security gate remains, state the exact authorized action required and named recovery owner. Keep the obligation OPEN and continue unrelated work. Do not ask the Owner to solve something another authorized route can solve.
+8. **Never bypass controls.** This rule does not create credentials, grant access, authorize unauthorized external communications, perform human-only identity/consent/signature/OTP actions, spend money, bypass access controls, or weaken legal/security/safety requirements.
+9. **Persist and independently read back.** Read back each successful source change. A comment, draft, commit, acknowledgement, task assignment, run request, or scheduler timestamp does not alone prove downstream execution or adoption.
+10. **Report what happened, not an excuse.** State what changed with evidence; what did not change; which alternatives were attempted; the exact remaining gate; named recovery owner and next action; acceptance evidence; and whether independent work continued. Never mark PASS/DONE until the predeclared test and independent readback pass.
+
+**NO TOOL ACCESS -> DIAGNOSE -> AUTHORIZED ALTERNATIVE -> EXECUTE OR ACTIONABLE RECOVERY PARCEL -> READBACK.**
+
+**“I couldn't because I had no tool access” without the required recovery sequence is a governance failure.** CDD/FGR/“sabotage drift” may be recorded as the Owner's operational failure classifications where applicable; intent is not inferred without independent evidence.
+
 
 ## COMPLETION / NON-DRIFT
 
@@ -1024,13 +1031,15 @@ Use existing canonical opportunity records and existing iSCOPE → PRI / FORX ou
 ## Acceptance
 
 ROOT/T-GOV and the existing owners must verify: (a) this rule is present in the current Blue State; (b) active selection routes consume the 60/20/20 rule; (c) duplicate and location/access/KYC/payout/net-value gates are present in the actual selection path; (d) Tavily no-upgrade/no-PAYGO and 80% safeguards are visible to the responsible operator; (e) a source-backed sample shows a role passing or failing with reasons; and (f) measured effort/result receipts are independently read back. A written rule alone is not behavioral acceptance. Do not change the existing runtime schedules or create duplicate workers.
-## CATEGORY A SCOPE CLARIFICATION — OPPORTUNITY ALLOCATION VS MATRIX-WIDE MONEY-IN — 2026-10-12
+## CATEGORY A SCOPE CLARIFICATION — OPPORTUNITY ALLOCATION VS MATRIX-WIDE MONEY-IN — 2026-10-12 (HISTORICAL PROJECTION CORRECTED 2026-10-14)
 
 The 60/20/20 allocation in this Blue State is **100% of opportunity-search and conversion effort only**. It does not mean 60/20/20 of total Matrix effort, compute, or the Librarian office's mandated time.
 
-Existing Blue State contains the current 25% attributable Librarian income-brick / 75% existing-office-mandate allocation. ROOT issue [#34 — CATEGORY A 33% Matrix-wide money-in focus; supersede 25%](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/34) is currently OPEN / SUBMITTED FOR GOVERNANCE; its own text requests ROOT/T-GOV classification and says it is not evidence of propagation. It requests a separate 33% Matrix-wide commercial-focus denominator. Do not silently treat that request as accepted, and do not allow the opportunity-level 60/20/20 rule to overwrite either the current Blue State rule or issue #34.
+**Current Matrix-wide KPI:** the Owner's 2026-10-13 supersession is **65% of evaluated worker performance/KPI attributable to progress toward verified money-in or evidenced removal of a real blocker, and 35% for the worker's existing governed mandate**. This is a performance-accountability weight, not wall-clock, time, compute, staffing, activity, or blanket sales quota. The 60/20/20 sourcing allocation remains a distinct rule limited to opportunity sourcing.
 
-ROOT/T-GOV must reconcile issue #34 against the existing 25% Librarian rule with explicit denominator, role/scope, owner, supersession and acceptance evidence. Until it is explicitly dispositioned and merged, preserve the current canonical Blue State value and report issue #34 as OPEN. This is a scope distinction, not a rejection of the Owner's 60/20/20 opportunity-level direction.
+**Superseded wording:** the older 25% income-brick / 75% office-mandate projection, and the earlier 33% and 45% requests, are retained as historical provenance only. They are not current policy and may not be presented as the current percentage rule.
+
+**Issue #34 remains OPEN for propagation and per-worker behavioral acceptance, not for ambiguity about which percentage is current.** ROOT/T-GOV and MASTER/LIBRARIAN must read back the current 65/35 authority and verify actual worker consumption. A prompt edit, report, or wake timestamp alone is not universal adoption evidence.
 
 ---
 
