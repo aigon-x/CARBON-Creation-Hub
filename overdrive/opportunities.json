@@ -575,6 +575,13 @@
           "source": "WEB_BROWSER",
           "source_id": "cc0ad526-3e17-468c-834d-9a6b9384d738",
           "summary": "Official contact form submitted successfully; page returned 'Thank you for your message!' confirmation. No account, subscription or unrelated action taken."
+        },
+        {
+          "kind": "CURRENT_OFFICIAL_COLLABORATION_ROUTE_RECHECK",
+          "observed_at": "2026-10-14T18:27:00Z",
+          "source": "OFFICIAL_SITE",
+          "url": "https://www.blackbear.co.za/",
+          "summary": "Current official site continues to invite collaboration and experienced subject-matter experts; its services include route-to-market strategy and commercial optimisation. Existing official contact-form submission was already confirmed on 2026-10-10. This recheck does not change buyer lifecycle and does not authorize repeat contact; wait for a substantive response, then qualify exact scope/economics and pursue bounded paid project work if offered."
         }
       ],
       "execution_owner": "PRI",
@@ -592,7 +599,8 @@
       "state": "SUBMITTED",
       "subject": "Route-to-market / commercial optimisation project collaboration",
       "thread_id": null,
-      "title": "Project / fractional route-to-market and commercial optimisation collaboration"
+      "title": "Project / fractional route-to-market and commercial optimisation collaboration",
+      "last_reconciled_at": "2026-10-14T18:27:00Z"
     },
     "callforceoutsourcing.com|marketing-lead|south-africa": {
       "buyer_fit": "Current CallForce careers surface describes a hands-on B2B Marketing Lead connecting digital-transformation positioning to demand generation, CRM hygiene, sales enablement and global US/UK/SA growth. This matches the recovered CV's 10+ years B2B commercial leadership plus current AI/product-building evidence.",
@@ -3674,12 +3682,19 @@
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "url": "https://jobs.ashbyhq.com/scale%20army%20careers/3e49f332-28b9-400c-a146-f1682ce962da",
           "summary": "The same canonical listing URL currently displays the title Workflow Automation Specialist, remote contract, South Africa eligible, USD $2,300/month, and U.S. business hours (9 AM–5 PM EST). It describes connecting existing systems and automating manual data/reporting processes. The application page requires a form plus a recorded skills video. This current title/compensation supersedes the stale title in the prior ledger projection; no application was submitted."
+        },
+        {
+          "kind": "CURRENT_OFFICIAL_LISTING_RECHECK",
+          "observed_at": "2026-10-14T18:27:00Z",
+          "source": "OFFICIAL_PUBLIC_LISTING",
+          "url": "https://jobs.ashbyhq.com/scale%20army%20careers/3e49f332-28b9-400c-a146-f1682ce962da",
+          "summary": "Official Ashby listing remains publicly discoverable at this recheck: Workflow Automation Specialist; remote contract; South Africa eligible; USD $2,300/month advertised, final compensation set after evaluating experience/location; U.S. business hours. Scope is practical automation connecting existing systems and improving manual data/reporting workflows. Application requires a form plus a candidate-recorded skills video. No authenticated submission state or application receipt is available; no submission is claimed."
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-03T14:00:00Z",
-      "next_action": "Use the current official listing title and compensation. Applicant must record the required skills video personally. Re-inspect the current application form for exact factual fields, then submit only through the official route if all attestations are truthful. Use the existing CV as-is; no polish cycle. Persist genuine submission receipt and read back; do not claim application or income before evidence.",
+      "next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
       "opportunity": "ai-implementation-specialist",
       "organization": "Scale Army",
       "payer_path": "Scale Army employer/contractor hiring route",
@@ -3688,8 +3703,8 @@
       "title": "Workflow Automation Specialist — Remote South Africa",
       "upfront_cost": "NONE_EVIDENCED",
       "reward": "USD $2,300/month advertised; final compensation set after evaluating experience and location.",
-      "current_route_status": "OFFICIAL_LISTING_REVERIFIED_2026-10-13",
-      "last_reconciled_at": "2026-10-13T14:27:21Z"
+      "current_route_status": "OFFICIAL_LISTING_RECHECKED_2026-10-14; CANDIDATE_RECORDED_VIDEO_REQUIRED",
+      "last_reconciled_at": "2026-10-14T18:27:00Z"
     },
     "seastarfilm.com|production-licensing|the-dragon-who-could-not-claim-me": {
       "domain": "seastarfilm.com",
