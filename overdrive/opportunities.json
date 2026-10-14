@@ -131,11 +131,43 @@
       "remains_unproven": "No buyer is attributed to an open checkout session; no buyer acceptance, contract, invoice/receivable, paid order, or settlement is evidenced in this Stripe account. Gmail buyer replies and the CallForce Gmail thread remain unreadable via currently exposed connectors. Non-Stripe/bank cash is not covered by this Stripe audit.",
       "scope": "STRIPE_LIVE_MONEY_IN_AND_CLOSE_DRAFT_READBACK_20261014",
       "upgrade_action": "Preserve all three opportunity records as SUBMITTED/WAITING and preserve the no-third-follow-up rule. User has stated access is granted; this is not a request for repeated authorization. Runtime evidence currently shows no Gmail read/send tool available, Opera Browser Connector returns BROWSER_NOT_CONNECTED, existing TinyFish profile prof_038698ac484842d1 has no signed_in_sites recorded, and TinyFish wallet is negative with auto-reload unconfigured. ROOT/connector administrator: restore the existing sender's authorized read/send route or reconnect existing browser identity; do not create another account/sender. After route recovery, inspect Gmail thread 1a103d43041d248b before any action. Banker remains final owner of settlement truth."
+    },
+    {
+      "actual": "Fresh live Stripe API read during this wake returned 37 Checkout Sessions across the five existing active offer links: 11 open/unpaid, 26 expired/unpaid, 0 complete, with no customer/customer_email attribution. Group counts: Micro-Matrix Quick Technical Review 13 (2 open, 11 expired; US$4.99); Xubio 6 (2 open, 4 expired; US$49); Kingston Stanley 6 (3 open, 3 expired; US$99); Synergy Interactive 9 (1 open, 8 expired; US$99); JGMI by Carbon 3 (3 open, 0 expired; payment link amount as configured). GET charges=0, PaymentIntents=0, paid invoices=0, balance transactions=0; all list reads returned has_more=false.",
+      "changed": "Supersedes the prior 2026-10-14 Stripe snapshot of 36 sessions (30 open, 6 expired) with a fresh total of 37 (11 open, 26 expired). Current session volume is not buyer identity, acceptance or income; no paid object or settlement is evidenced.",
+      "classification": "LIVE_STRIPE_READBACK_NO_PAYMENT_EVIDENCED; 37_SESSIONS_11_OPEN_26_EXPIRED",
+      "expected": "Canonical financial state distinguishes session creation, buyer attribution, acceptance, payment and terminal settlement. No income may be inferred from unpaid sessions.",
+      "observed_at": "2026-10-14T16:55:15Z",
+      "owner": "PRI records / Banker terminal settlement truth",
+      "proof": [
+        "AMILLIMATRIX live Stripe account acct_1UE0UBHyzt7gyqmn; GET /v1/checkout/sessions?limit=100: 37 objects, has_more=false; 11 open/unpaid, 26 expired/unpaid, zero complete, zero customer attribution.",
+        "Grouped current checkout objects by existing payment-link IDs: plink_1UQ5O5Hyzt7gyqmnpy8tS7DA=13; plink_1UQ6bwHyzt7gyqmn96dQprpf=6; plink_1UQ6bzHyzt7gyqmnwNcWItRf=6; plink_1UQ6bVHyzt7gyqmnYyOR6FwW=9; plink_1UQ8YsHyzt7gyqmnXxlxe0S0=3.",
+        "GET /v1/charges?limit=100: 0 objects; GET /v1/payment_intents?limit=100: 0 objects; GET /v1/invoices?status=paid&limit=100: 0 objects; GET /v1/balance_transactions?limit=100: 0 objects; has_more=false for all."
+      ],
+      "remains_unproven": "Buyer identity and intent for all open sessions, paid purchase, customer invoice, payout/bank settlement, and any money received outside the connected Stripe account.",
+      "scope": "STRIPE_LIVE_MONEY_IN_READBACK_20261014_WAKE_02",
+      "upgrade_action": "Do not contact the three existing waiting micro-offer leads again without buyer response/new official route. Continue lawful conversion work only on verified route. Banker must independently verify any settlement before PAID is recorded."
+    },
+    {
+      "actual": "Requalified existing proof-first candidate inputs against current official sources without creating new opportunity records or contacting anyone. SocialsGroup's official Marketing Operations Executive page is live: remote anywhere subject to at least four hours/day overlapping UK hours; contract rate agreed on experience and work-sample performance; application ~20 minutes, then a short call and a paid 1–2 week real-client-work trial if advanced. Scale Army's official application page currently titles the role Brand & Category Growth Manager, remote contract, South Africa listed, advertises US$2.5K/month subject to experience/location adjustment, requires 9 AM–5 PM EST availability, a PDF CV, video and a personally contributed marketing work sample. These are source requalification signals only; do not create/qualify duplicate records until existing account/contact history is reconciled.",
+      "changed": "The direct Scale Army application route clarifies the current title and pay fields; stale search-index title alone is not controlling. The SocialsGroup role-specific page directly confirms the paid-trial process omitted from its homepage. Full Gmail/account-history dedupe cannot be completed because the designated Gmail reader is not available in this runtime; no application/contact/offer lifecycle state was changed.",
+      "classification": "CURRENT_PRIMARY_SOURCE_REQUALIFICATION; ACCOUNT_HISTORY_DEDUPE_OPEN; NO_EXTERNAL_ACTION",
+      "observed_at": "2026-10-14T16:55:15Z",
+      "owner": "iSCOPE qualification → PRI sole external commercial writer",
+      "proof": [
+        "SocialsGroup official job page: https://internal.socialsgroup.com/careers/role-marketing-ops-executive",
+        "Scale Army official job page: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07",
+        "Scale Army current application: https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/application",
+        "Existing candidate research and rule preserved on ROOT issue #22; no extra pipeline or record created."
+      ],
+      "remains_unproven": "Whether the owner already applied or has a contact thread for either exact role; owner availability and requested rate; any buyer response, acceptance or payment.",
+      "scope": "ISCOPE_PROOF_FIRST_CANDIDATE_RECHECK_20261014_WAKE_02",
+      "upgrade_action": "Recover the existing authorized Gmail/account history and deduplicate these exact role IDs before advancing. SocialsGroup Marketing Operations Executive is the strongest proof-of-work route to prioritize if the dedupe gate passes; confirm UK-hour overlap and an acceptable rate before any submission. Preserve current existing SocialsGroup High-Ticket Sales Closer offer as WAITING and do not duplicate contact."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T14:23:36.631Z",
-  "last_reconciled_reason": "Reconciled direct live Stripe and Close reads at 2026-10-14T14:23:36.631Z. Current provider snapshot: 36 Checkout Sessions (30 open/unpaid, 6 expired/unpaid, 0 complete), no customer attribution, and zero charges, PaymentIntents, paid invoices or charge-balance transactions. Verified the three 13 Oct checkout-link messages are still drafts. Gmail/CallForce read-path blocker remains open; no external lifecycle or revenue claim.",
+  "last_reconciled_at": "2026-10-14T16:55:15Z",
+  "last_reconciled_reason": "Fresh same-wake Stripe readback and official-source candidate requalification. Current Stripe totals 37 (11 open/unpaid, 26 expired/unpaid, 0 complete; no customer attribution or paid objects). Current official Upwork direct fetch restored the activity reading to 50+ proposals / 1 interview rather than the conflicting search-index projection. SocialsGroup paid trial and Scale Army current application facts recorded as candidate-only observations; no new role record or external action because Gmail/account-history dedupe and authenticated submission routes remain unavailable.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -198,7 +230,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-14",
+  "last_updated_at": "2026-10-14T16:55:15Z",
   "last_updated_by": "PRI",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
@@ -4696,6 +4728,13 @@
           "summary": "Prepared a buyer-specific proposal describing the local Apps Script starter and the exact 12/12 mocked test scope; explicitly states it is not a deployed production integration and requires buyer-owned Sheet/provider credentials, one agreed intake channel, an approved usage budget, and a controlled end-to-end test. Not submitted because existing authorized Upwork browser/account route remains unavailable.",
           "attachment_uri": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
           "proposal_status": "PREPARED_NOT_SUBMITTED"
+        },
+        {
+          "kind": "CURRENT_PRIMARY_LISTING_REVERIFIED_DIRECT_FETCH",
+          "observed_at": "2026-10-14T16:55:15Z",
+          "source": "UPWORK_OFFICIAL_LISTING_DIRECT_FETCH",
+          "url": "https://www.upwork.com/freelance-jobs/apply/Automation-for-Carpentry-Inquiries_~022109970451600320481/",
+          "summary": "Direct fetch of the official listing in this wake confirms US$400 fixed-price; requested scope remains one-channel carpentry/joinery inquiry intake, AI summary/extraction with missing-information flags, Google Sheets reference/status, email notification, error handling, duplicate prevention, ten fictional tests, documentation and commercial reuse rights. Listing activity displayed 50+ proposals, 1 interview, 0 invites, and client last viewed yesterday; the listing shows client member since Oct 12, 2026. This direct primary-page snapshot supersedes a conflicting public search-index snapshot (20–50 proposals / 0 interviews); do not infer buyer quality or acceptance from activity indicators."
         }
       ],
       "constraints": [
@@ -4704,7 +4743,7 @@
         "Recover the existing authorized Upwork account/session; no duplicate account and no off-platform contact.",
         "Bound hosting, API, setup and maintenance costs against the US$400 ceiling and clarify exactly one intake channel before any binding offer."
       ],
-      "next_action": "Proposal draft now prepared and attached proof package exists. This has NOT been submitted. Restore the existing authorized Upwork browser/account; verify the live listing, buyer/milestone funding and terms, and whether proposal submission is still open; submit once only if all gates pass, attach the package, and persist the actual submission receipt. No application, contract, delivery acceptance, invoice, or income is currently evidenced.",
+      "next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
       "proof_asset": {
         "status": "LOCAL_PROOF_OF_WORK_PACKAGE_CREATED",
         "artifact": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
@@ -4723,7 +4762,8 @@
         "truthful_claim_boundary": "12/12 local mock tests passed; no live Google Sheets, Gemini, or email integration/deployment is claimed. Do not imply client account setup or production acceptance already occurred.",
         "submission_gate": "Existing authorized Upwork session must be restored; re-check buyer/milestone terms and live listing in authenticated context before submitting once."
       },
-      "source_verified_at": "2026-10-14T11:21:47.367Z"
+      "source_verified_at": "2026-10-14T16:55:15Z",
+      "current_route_status": "OFFICIAL_LISTING_DIRECT_FETCHED_2026-10-14; AUTHENTICATED_SUBMISSION_ROUTE_UNAVAILABLE"
     }
   },
   "updated_at": "2026-10-14",
