@@ -63,6 +63,186 @@ def canonical_key(name, lat, lon):
     return f"{norm(name)}|{round(float(lat), 4)}|{round(float(lon), 4)}"
 
 
+def create_node_store(prefix):
+    """Create a disk-backed, deduplicated node store; never keep the population in RAM."""
+    fd, path = tempfile.mkstemp(prefix=prefix, suffix=".sqlite3")
+    os.close(fd)
+    conn = sqlite3.connect(path)
+    try:
+        conn.execute("PRAGMA journal_mode=OFF")
+        conn.execute("PRAGMA synchronous=OFF")
+        conn.execute("PRAGMA temp_store=FILE")
+        conn.execute("PRAGMA cache_size=-4096")
+        conn.execute(
+            """
+            CREATE TABLE nodes (
+                ck TEXT PRIMARY KEY,
+                country TEXT NOT NULL,
+                category TEXT NOT NULL,
+                source_record_id TEXT NOT NULL,
+                sequence INTEGER NOT NULL,
+                payload TEXT NOT NULL
+            )
+            """
+        )
+        conn.commit()
+    finally:
+        conn.close()
+    return path
+
+
+def remove_sqlite(path):
+    """Remove a runtime-owned temporary SQLite store without failing cleanup."""
+    if not path:
+        return
+    for candidate in (path, path + "-journal", path + "-wal", path + "-shm"):
+        try:
+            os.remove(candidate)
+        except FileNotFoundError:
+            pass
+
+
+def iter_store_nodes(store_path):
+    """Iterate every stored payload in source insertion order, one row at a time."""
+    conn = sqlite3.connect(store_path)
+    try:
+        conn.execute("PRAGMA temp_store=FILE")
+        conn.execute("PRAGMA cache_size=-2048")
+        cursor = conn.execute("SELECT payload FROM nodes ORDER BY sequence")
+        for (payload,) in cursor:
+            yield json.loads(payload)
+    finally:
+        conn.close()
+
+
+def iter_diverse_nodes(store_path, target, selection_order="sequence"):
+    """Yield a stable round-robin by country/category using disk-backed SQL ordering."""
+    order_column = {
+        "sequence": "sequence",
+        "source_record_id": "source_record_id",
+    }.get(selection_order)
+    if order_column is None:
+        raise ValueError(f"Unsupported selection order: {selection_order}")
+
+    conn = sqlite3.connect(store_path)
+    try:
+        # Force sort/window spill to disk and keep SQLite's page cache bounded.
+        conn.execute("PRAGMA temp_store=FILE")
+        conn.execute("PRAGMA cache_size=-2048")
+        cursor = conn.execute(
+            f"""
+            SELECT payload
+            FROM (
+                SELECT
+                    payload,
+                    country,
+                    category,
+                    source_record_id,
+                    sequence,
+                    ROW_NUMBER() OVER (
+                        PARTITION BY country, category
+                        ORDER BY {order_column}
+                    ) AS rn
+                FROM nodes
+            )
+            ORDER BY rn, country, category, {order_column}
+            LIMIT ?
+            """,
+            (max(0, int(target)),),
+        )
+        for (payload,) in cursor:
+            yield json.loads(payload)
+    finally:
+        conn.close()
+
+
+def write_streamed_partitions(
+    store_path, target, partition_size, partition_dir, run_id, checkpoint_id,
+    selection_order="sequence",
+):
+    """Stream selected nodes into one bounded partition buffer and incremental hashes."""
+    parts = []
+    country_distribution = {}
+    category_distribution = {}
+    source_distribution = {}
+    website_domain_bearing_count = 0
+    selected_count = 0
+    selection_hash = hashlib.sha256()
+    partition_nodes = []
+
+    def flush_partition():
+        if not partition_nodes:
+            return
+        partition_index = len(parts) + 1
+        body = {
+            "schema_version": "2.2",
+            "run_id": run_id,
+            "checkpoint_id": checkpoint_id,
+            "partition_index": partition_index,
+            "nodes": partition_nodes,
+        }
+        raw = json.dumps(body, separators=(",", ":"), sort_keys=True).encode("utf-8")
+        part_path = os.path.join(partition_dir, f"partition-{partition_index:06d}.json")
+        temp_path = part_path + ".tmp"
+        with open(temp_path, "wb") as fh:
+            fh.write(raw)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(temp_path, part_path)
+        part = {
+            "partition_index": partition_index,
+            "count": len(partition_nodes),
+            "sha256": hashlib.sha256(raw).hexdigest(),
+            "path": part_path,
+        }
+        parts.append(part)
+        print(
+            "FORX_PROGRESS " + json.dumps(
+                {
+                    "run_id": run_id,
+                    "stage": "PARTITION_WRITTEN",
+                    "partition_index": partition_index,
+                    "partition_count_so_far": len(parts),
+                    "selected_count_so_far": selected_count,
+                    "partition_sha256": part["sha256"],
+                },
+                separators=(",", ":"),
+                sort_keys=True,
+            ),
+            flush=True,
+        )
+        partition_nodes.clear()
+
+    for node in iter_diverse_nodes(store_path, target, selection_order):
+        selected_count += 1
+        source_record_id = str(node["source_record_id"])
+        if selected_count > 1:
+            selection_hash.update(b"\n")
+        selection_hash.update(source_record_id.encode("utf-8"))
+        country = node["country"]
+        category = node["category"]
+        source = node["source"]
+        country_distribution[country] = country_distribution.get(country, 0) + 1
+        category_distribution[category] = category_distribution.get(category, 0) + 1
+        source_distribution[source] = source_distribution.get(source, 0) + 1
+        if node.get("domain"):
+            website_domain_bearing_count += 1
+        partition_nodes.append(node)
+        if len(partition_nodes) >= partition_size:
+            flush_partition()
+
+    flush_partition()
+    return {
+        "parts": parts,
+        "selected_count": selected_count,
+        "country_distribution": country_distribution,
+        "category_distribution": category_distribution,
+        "source_distribution": source_distribution,
+        "website_domain_bearing_count": website_domain_bearing_count,
+        "selection_sha256": selection_hash.hexdigest(),
+    }
+
+
 def fetch_bytes(url, user_agent):
     h = hashlib.sha256()
     buf = io.BytesIO()
@@ -76,97 +256,154 @@ def fetch_bytes(url, user_agent):
 
 
 def load_audiala():
-    raw, observed_sha = fetch_bytes(AUDIALA_URL, "AMX-FORX-Audiala/2.0")
-    if observed_sha != AUDIALA_FILE_SHA256:
-        state["errors"].append(
-            {
-                "type": "source_hash_mismatch",
-                "source": "audiala",
-                "expected": AUDIALA_FILE_SHA256,
-                "observed": observed_sha,
-            }
-        )
+    """Stream the Audiala source to disk and deduplicate normalized nodes in SQLite."""
+    fd, source_path = tempfile.mkstemp(prefix="amx-forx-audiala-", suffix=".csv")
+    os.close(fd)
+    store_path = create_node_store("amx-forx-audiala-")
+    store_ready = False
+    try:
+        source_hash = hashlib.sha256()
+        with requests.get(
+            AUDIALA_URL,
+            stream=True,
+            timeout=180,
+            headers={"User-Agent": "AMX-FORX-Audiala/2.0"},
+        ) as response:
+            response.raise_for_status()
+            with open(source_path, "wb") as out:
+                for chunk in response.iter_content(chunk_size=1024 * 1024):
+                    if chunk:
+                        source_hash.update(chunk)
+                        out.write(chunk)
+        observed_sha = source_hash.hexdigest()
+        if observed_sha != AUDIALA_FILE_SHA256:
+            state["errors"].append(
+                {
+                    "type": "source_hash_mismatch",
+                    "source": "audiala",
+                    "expected": AUDIALA_FILE_SHA256,
+                    "observed": observed_sha,
+                }
+            )
 
-    text_data = raw.decode("utf-8-sig")
-    reader = csv.DictReader(io.StringIO(text_data))
-    raw_rows = 0
-    rejected = 0
-    duplicates = 0
-    dedup = {}
+        raw_rows = 0
+        rejected = 0
+        duplicates = 0
+        conn = sqlite3.connect(store_path)
+        try:
+            conn.execute("PRAGMA temp_store=FILE")
+            conn.execute("PRAGMA cache_size=-4096")
 
-    def pick(row, *cands):
-        lookup = {norm(k): v for k, v in row.items()}
-        for c in cands:
-            v = lookup.get(norm(c))
-            if v is not None and str(v).strip() != "":
-                return str(v).strip()
-        return None
+            def pick(row, *cands):
+                lookup = {norm(k): v for k, v in row.items()}
+                for candidate in cands:
+                    value = lookup.get(norm(candidate))
+                    if value is not None and str(value).strip() != "":
+                        return str(value).strip()
+                return None
 
-    def pick_prefix(row, prefixes):
-        for k, v in row.items():
-            nk = norm(k)
-            if any(nk.startswith(norm(p)) for p in prefixes) and v is not None and str(v).strip() != "":
-                return str(v).strip()
-        return None
+            def pick_prefix(row, prefixes):
+                for key, value in row.items():
+                    nk = norm(key)
+                    if (
+                        any(nk.startswith(norm(prefix)) for prefix in prefixes)
+                        and value is not None
+                        and str(value).strip() != ""
+                    ):
+                        return str(value).strip()
+                return None
 
-    for row in reader:
-        raw_rows += 1
-        qid = pick(row, "qid", "wikidata_qid", "wikidata", "wikidata_id", "id")
-        name = pick(row, "name_en", "english_name", "name", "label_en", "title_en") or pick_prefix(
-            row, ["name", "label", "title"]
-        )
-        lat = parse_float(pick(row, "latitude", "lat", "y"))
-        lon = parse_float(pick(row, "longitude", "lon", "lng", "long", "x"))
-        country = pick(row, "country_name", "country", "country_code", "country_iso2", "iso2", "countrycode")
-        category = pick(row, "type_slug", "place_type", "category_slug", "category", "type", "kind")
-        locality = pick(row, "city", "locality", "region", "admin1", "state", "province")
-        guide = pick(row, "url_en", "guide_url_en", "audiala_url_en", "url", "guide_url")
+            with open(source_path, "r", encoding="utf-8-sig", newline="") as csv_file:
+                for row in csv.DictReader(csv_file):
+                    raw_rows += 1
+                    qid = pick(row, "qid", "wikidata_qid", "wikidata", "wikidata_id", "id")
+                    name = pick(row, "name_en", "english_name", "name", "label_en", "title_en") or pick_prefix(
+                        row, ["name", "label", "title"]
+                    )
+                    lat = parse_float(pick(row, "latitude", "lat", "y"))
+                    lon = parse_float(pick(row, "longitude", "lon", "lng", "long", "x"))
+                    country = pick(row, "country_name", "country", "country_code", "country_iso2", "iso2", "countrycode")
+                    category = pick(row, "type_slug", "place_type", "category_slug", "category", "type", "kind")
+                    locality = pick(row, "city", "locality", "region", "admin1", "state", "province")
+                    guide = pick(row, "url_en", "guide_url_en", "audiala_url_en", "url", "guide_url")
 
-        if not qid or not name or lat is None or lon is None or not country or not category:
-            rejected += 1
-            continue
-        if not (-90 <= lat <= 90 and -180 <= lon <= 180):
-            rejected += 1
-            continue
+                    if not qid or not name or lat is None or lon is None or not country or not category:
+                        rejected += 1
+                        continue
+                    if not (-90 <= lat <= 90 and -180 <= lon <= 180):
+                        rejected += 1
+                        continue
 
-        ck = canonical_key(name, lat, lon)
-        if ck in dedup:
-            duplicates += 1
-            continue
+                    node = {
+                        "source_record_id": f"wikidata:{qid}",
+                        "name": name,
+                        "latitude": lat,
+                        "longitude": lon,
+                        "country": country,
+                        "locality": locality,
+                        "category": category,
+                        "website": None,
+                        "domain": None,
+                        "source_page": guide,
+                        "source": "Audiala Places (Wikidata-backed POI dataset)",
+                        "source_repo": AUDIALA_REPO,
+                        "source_file": "data/audiala-places.csv",
+                        "source_file_sha256": observed_sha,
+                        "source_repo_commit": AUDIALA_REPO_COMMIT,
+                        "license": AUDIALA_LICENSE,
+                        "source_updated": AUDIALA_UPDATED,
+                        "ingested_at": datetime.now(timezone.utc).isoformat(),
+                        "confidence": "dataset-curated-coordinate",
+                    }
+                    cur = conn.execute(
+                        "INSERT OR IGNORE INTO nodes "
+                        "(ck,country,category,source_record_id,sequence,payload) "
+                        "VALUES (?,?,?,?,?,?)",
+                        (
+                            canonical_key(name, lat, lon),
+                            country,
+                            category,
+                            node["source_record_id"],
+                            raw_rows,
+                            json.dumps(node, separators=(",", ":"), sort_keys=True),
+                        ),
+                    )
+                    if cur.rowcount == 0:
+                        duplicates += 1
+                    if raw_rows % 50000 == 0:
+                        print(
+                            "FORX_PROGRESS " + json.dumps(
+                                {"run_id": RUN_ID, "stage": "AUDIALA_INGEST", "raw_rows": raw_rows,
+                                 "rejected": rejected, "duplicates": duplicates},
+                                separators=(",", ":"), sort_keys=True,
+                            ),
+                            flush=True,
+                        )
 
-        dedup[ck] = {
-            "source_record_id": f"wikidata:{qid}",
-            "name": name,
-            "latitude": lat,
-            "longitude": lon,
-            "country": country,
-            "locality": locality,
-            "category": category,
-            "website": None,
-            "domain": None,
-            "source_page": guide,
-            "source": "Audiala Places (Wikidata-backed POI dataset)",
-            "source_repo": AUDIALA_REPO,
-            "source_file": "data/audiala-places.csv",
-            "source_file_sha256": observed_sha,
-            "source_repo_commit": AUDIALA_REPO_COMMIT,
-            "license": AUDIALA_LICENSE,
-            "source_updated": AUDIALA_UPDATED,
-            "ingested_at": datetime.now(timezone.utc).isoformat(),
-            "confidence": "dataset-curated-coordinate",
+            conn.commit()
+        finally:
+            conn.close()
+
+        store_ready = True
+        return {
+            "node_store_path": store_path,
+            "selection_order": "sequence",
+            "raw_rows": raw_rows,
+            "rejected": rejected,
+            "duplicates": duplicates,
+            "source_sha256": observed_sha,
+            "source_url": AUDIALA_URL,
+            "source_name": AUDIALA_REPO,
+            "source_license": AUDIALA_LICENSE,
+            "source_revision": AUDIALA_REPO_COMMIT,
         }
-
-    return {
-        "nodes": list(dedup.values()),
-        "raw_rows": raw_rows,
-        "rejected": rejected,
-        "duplicates": duplicates,
-        "source_sha256": observed_sha,
-        "source_url": AUDIALA_URL,
-        "source_name": AUDIALA_REPO,
-        "source_license": AUDIALA_LICENSE,
-        "source_revision": AUDIALA_REPO_COMMIT,
-    }
+    finally:
+        try:
+            os.remove(source_path)
+        except FileNotFoundError:
+            pass
+        if not store_ready:
+            remove_sqlite(store_path)
 
 
 def load_geonames():
