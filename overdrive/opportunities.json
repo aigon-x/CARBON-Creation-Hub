@@ -163,11 +163,30 @@
       "remains_unproven": "Whether the owner already applied or has a contact thread for either exact role; owner availability and requested rate; any buyer response, acceptance or payment.",
       "scope": "ISCOPE_PROOF_FIRST_CANDIDATE_RECHECK_20261014_WAKE_02",
       "upgrade_action": "Recover the existing authorized Gmail/account history and deduplicate these exact role IDs before advancing. SocialsGroup Marketing Operations Executive is the strongest proof-of-work route to prioritize if the dedupe gate passes; confirm UK-hour overlap and an acceptable rate before any submission. Preserve current existing SocialsGroup High-Ticket Sales Closer offer as WAITING and do not duplicate contact."
+    },
+    {
+      "actual": "Live Stripe read at 2026-10-14T17:54:17.175Z: 41 Checkout Sessions across existing payment links; 14 open/unpaid, 27 expired/unpaid, 0 complete/paid (session status counts={\"open/unpaid\":14,\"expired/unpaid\":27}). Customer-attributed sessions: 0. Charges=0; PaymentIntents=0; paid invoices=0; balance transactions=0. All five list readbacks returned has_more=false.",
+      "changed": "Supersedes the prior snapshot of 37 sessions / 11 open / 26 expired. Fresh state is 41 total sessions: 14 open/unpaid and 27 expired/unpaid, no customer attribution and no paid/settlement objects. This is provider activity only, not buyer intent or realized income.",
+      "classification": "LIVE_STRIPE_READBACK_NO_CUSTOMER_ATTRIBUTION_OR_PAYMENT_EVIDENCED",
+      "expected": "Canonical commercial state must distinguish payment-session activity from buyer, acceptance, contract, invoice, paid order and independently verified settlement.",
+      "observed_at": "2026-10-14T17:54:17.175Z",
+      "owner": "PRI maintains commercial ledger; Banker retains terminal settlement truth.",
+      "proof": [
+        "AMILLIMATRIX live Stripe account acct_1UE0UBHyzt7gyqmn; GET /v1/checkout/sessions?limit=100 returned 41, has_more=false; status counts={\"open/unpaid\":14,\"expired/unpaid\":27}; customer attribution=0.",
+        "GET /v1/charges?limit=100: 0, has_more=false.",
+        "GET /v1/payment_intents?limit=100: 0, has_more=false.",
+        "GET /v1/invoices?status=paid&limit=100: 0, has_more=false.",
+        "GET /v1/balance_transactions?limit=100: 0, has_more=false.",
+        "Session groups by existing payment link: {\"plink_1UQ6bVHyzt7gyqmnYyOR6FwW\":{\"count\":10,\"open_unpaid\":2,\"expired_unpaid\":8,\"complete\":0,\"customerAttributed\":0,\"currencies\":{\"usd\":10},\"latest_created\":1792000148,\"metadata_leads\":{\"Synergy Interactive\":10}},\"plink_1UQ6bzHyzt7gyqmnwNcWItRf\":{\"count\":7,\"open_unpaid\":4,\"expired_unpaid\":3,\"complete\":0,\"customerAttributed\":0,\"currencies\":{\"usd\":7},\"latest_created\":1791999391,\"metadata_leads\":{\"Kingston Stanley\":7}},\"plink_1UQ6bwHyzt7gyqmn96dQprpf\":{\"count\":7,\"open_unpaid\":3,\"expired_unpaid\":4,\"complete\":0,\"customerAttributed\":0,\"currencies\":{\"usd\":7},\"latest_created\":1791999036,\"metadata_leads\":{\"Xubio\":7}},\"plink_1UQ5O5Hyzt7gyqmnpy8tS7DA\":{\"count\":14,\"open_unpaid\":3,\"expired_unpaid\":11,\"complete\":0,\"customerAttributed\":0,\"currencies\":{\"usd\":14},\"latest_created\":1791998877,\"metadata_leads\":{\"MICRO_MATRIX\":14}},\"plink_1UQ8YsHyzt7gyqmnXxlxe0S0\":{\"count\":3,\"open_unpaid\":2,\"expired_unpaid\":1,\"complete\":0,\"customerAttributed\":0,\"currencies\":{\"zar\":3},\"latest_created\":1791917618,\"metadata_leads\":{\"unattributed-source\":3}}}"
+      ],
+      "remains_unproven": "Identity/intent of any open sessions, paid purchase, any invoices paid outside this Stripe account, bank payout/settlement, and total receipts through non-Stripe rails.",
+      "scope": "STRIPE_LIVE_MONEY_IN_READBACK_20261014_WAKE_03",
+      "upgrade_action": "No duplicate contact to Kingston Stanley, Xubio or Synergy Interactive without buyer response or a new verified official route. Keep the existing offer/link and await attributable evidence. Banker must verify settlement before any PAID lifecycle transition."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T16:55:15Z",
-  "last_reconciled_reason": "Fresh same-wake Stripe readback and official-source candidate requalification. Current Stripe totals 37 (11 open/unpaid, 26 expired/unpaid, 0 complete; no customer attribution or paid objects). Current official Upwork direct fetch restored the activity reading to 50+ proposals / 1 interview rather than the conflicting search-index projection. SocialsGroup paid trial and Scale Army current application facts recorded as candidate-only observations; no new role record or external action because Gmail/account-history dedupe and authenticated submission routes remain unavailable.",
+  "last_reconciled_at": "2026-10-14T17:54:17.175Z",
+  "last_reconciled_reason": "Fresh same-wake pre-flight, live Stripe and Close readback. Registry v1.2 root independently recomputed and matched; iSCOPE/PRI remain current. Stripe changed from 37 to 41 sessions (14 open/unpaid, 27 expired/unpaid, no customer attribution; zero payment/settlement objects). Public tender leads CED 09/2026-2027 and Q28 EDTEA were assessed only as unqualified raw signals because eligibility, mandatory-briefing status, live primary documents and authorized bid submission cannot be evidenced. No external commercial action performed.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -230,7 +249,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-14T16:55:15Z",
+  "last_updated_at": "2026-10-14T17:54:17.175Z",
   "last_updated_by": "PRI",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
