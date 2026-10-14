@@ -230,11 +230,31 @@
       "remains_unproven": "Any Gmail reply outside Close, current CallForce thread content/recipient/sent status, buyer response/acceptance, and any non-Stripe settlement.",
       "scope": "CLOSE_AND_CALLFORCE_READBACK_20261014_WAKE_03",
       "upgrade_action": "Do not send a third or corrective follow-up blindly. ROOT/connector administrator must restore the existing authorized Gmail read path or provide an already-approved same-identity route. PRI then reads thread 1a103d43041d248b, reconciles lifecycle/NEXT_ACTION/DUE and independently reads the canonical record back."
+    },
+    {
+      "observed_at": "2026-10-14T18:40:04.525Z",
+      "owner": "PRI + ROOT/T-GOV; MASTER/LIBRARIAN preserves ledger truth",
+      "scope": "OUTLOOK_SENT_VS_CLOSE_DRAFT_AND_SENDER_DRIFT_RECONCILIATION_20261014",
+      "classification": "SENDER_DRIFT_AND_OUTBOUND_STATUS_CONTRADICTION; NO_BUYER_REPLY_OR_PAYMENT_EVIDENCED",
+      "expected": "Existing buyer lifecycle truth records each actual outbound message and sender accurately; conflicting draft/sent states and sender identity are reconciled before any new outbound action.",
+      "actual": "Outlook returned three 13-Oct messages with exact current recipients/offer contents at 20:58:31Z–20:58:34Z. Existing Root sender-drift mail says the three messages were sent using usduplessis@outlook.com rather than a separately verified Matrix business sender. The existing CRM/opportunity evidence still contains Close checkout-link records marked draft. This wake's connected Outlook searches by the three recipient addresses/domains from 2026-10-13 onward returned zero buyer replies; this is Outlook-only and does not prove no replies exist in Gmail. Current Stripe readback remains 14 open/unpaid, 27 expired/unpaid, 0 complete, 0 charges, 0 PaymentIntents and 0 paid invoices.",
+      "changed": "Three previously draft-described checkout-link messages are now evidenced as Outlook items; do not resend, and freeze further outbound contact pending route/sender reconciliation.",
+      "proof": [
+        "OUTLOOK_SENT_ITEM:AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNgAAAA==:2026-10-13T20:58:34Z:vanessa@kingstonstanley.com",
+        "OUTLOOK_SENT_ITEM:AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNQAAAA==:2026-10-13T20:58:32Z:lnotrica@xubio.com",
+        "OUTLOOK_SENT_ITEM:AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNAAAAA==:2026-10-13T20:58:31Z:blake@sinyc.com",
+        "Outlook CDD/Sender Drift email item: AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNwAAAA==",
+        "Prior Close draft evidence remains in existing opportunity records; no Close draft was sent by this wake.",
+        "Stripe live AMILLIMATRIX: 41 sessions; 14 open/unpaid, 27 expired/unpaid, 0 complete, 0 charges, 0 PaymentIntents, 0 paid invoices, 0 charge-type balance transactions."
+      ],
+      "remains_unproven": "Buyer receipt/open/reply; whether each Close draft is a duplicate of the sent Outlook item or an additional unsent message; authorization/canonicality of sender identity; purchase, acceptance, contract, invoice, receivable, settlement.",
+      "upgrade_action": "ROOT/T-GOV + PRI reconcile actual send history/sender identity and preserve no-further-contact state. Do not contact the three buyers again absent a material buyer-initiated reply or explicit newly governed route. Update each existing item only after direct evidence; no new opportunity record.",
+      "safety": "No outbound action taken. No duplicate follow-up, public post, new sender/account, worker or scheduler. No revenue or payment claimed."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T18:00:57.917Z",
-  "last_reconciled_reason": "Fresh live Stripe settlement read, official-source requalification, raw tender screening and full-day Close projection reconciliation. Registry root/roles current and verified; Stripe 41 sessions (14 open, 27 expired), no customer attribution or payment objects; Close inbound count zero (Close only) and CallForce exact Gmail thread gate remains open. No lifecycle upgrades or external contact.",
+  "last_reconciled_at": "2026-10-14T18:40:04.525Z",
+  "last_reconciled_reason": "Read-backed update to the three existing paid-pilot records after direct Outlook evidence showed 13-Oct checkout-link emails alongside separate Close draft status; preserved NO_FURTHER_CONTACT, sender-drift and no-payment truth. Existing keys/count unchanged.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -297,8 +317,8 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-14T18:00:57.917Z",
-  "last_updated_by": "PRI",
+  "last_updated_at": "2026-10-14T18:40:04.525Z",
+  "last_updated_by": "MASTER / COFFEE / LIBRARIAN",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -1847,17 +1867,25 @@
           "source": "CLOSE_LIVE_READBACK",
           "source_id": "acti_uMfFtmRnkznOyFyB6uUJKIoc45BmN3Lu7ospfSoelUE",
           "summary": "Close thread readback acti_uMfFtmRnkznOyFyB6uUJKIoc45BmN3Lu7ospfSoelUE: latest checkout-link email acti_9iXy26pBnNCCALva6SWlrQiv6pVBHvxrutaCe0bsxmb is status=draft, direction=outgoing, recipient vanessa@kingstonstanley.com; it is not a sent message. Do not send without buyer-initiated response or a newly verified authorized route."
+        },
+        {
+          "kind": "OUTLOOK_SENT_CHECKOUT_LINK_EMAIL_20261013",
+          "observed_at": "2026-10-13T20:58:34Z",
+          "source": "OUTLOOK_SENT_ITEMS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNgAAAA==",
+          "summary": "Outlook record retrieved for subject \"AMX sourcing-overflow pilot — USD 99 checkout\", recipient Vanessa Placido <vanessa@kingstonstanley.com>, offer USD 99. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
+          "url": "https://buy.stripe.com/28EeVd597dPy9UdaiuaR203"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-10T05:18:42Z",
-      "last_reconciled_at": "2026-10-14T14:23:36.631Z",
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "last_action_at": "2026-10-13T20:58:34Z",
+      "last_reconciled_at": "2026-10-14T18:40:04.525Z",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity": "sourcing-overflow-pilot",
       "organization": "Kingston Stanley",
       "recipient": "vanessa@kingstonstanley.com",
-      "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
+      "routing_reason": "OUTLOOK_THIRD_OUTBOUND_AND_SENDER_DRIFT_RECONCILIATION_REQUIRED; WAIT_FOR_BUYER_RESPONSE",
       "state": "SUBMITTED",
       "title": "48-hour sourcing overflow pilot",
       "payment_rail_readback": {
@@ -3843,17 +3871,25 @@
           "source": "CLOSE_LIVE_READBACK",
           "source_id": "acti_RJXhaJ9UcQkvUdFsgElXTi2AZrxpq4UJFPS99F3tLBT",
           "summary": "Close thread readback acti_RJXhaJ9UcQkvUdFsgElXTi2AZrxpq4UJFPS99F3tLBT: latest checkout-link email acti_wCUYEqYeiuMtaJacZAJ51XXHyXH0ok1wFvzaRwQwriJ is status=draft, direction=outgoing, recipient blake@sinyc.com; it is not a sent message. Do not send without buyer-initiated response or a newly verified authorized route."
+        },
+        {
+          "kind": "OUTLOOK_SENT_CHECKOUT_LINK_EMAIL_20261013",
+          "observed_at": "2026-10-13T20:58:31Z",
+          "source": "OUTLOOK_SENT_ITEMS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNAAAAA==",
+          "summary": "Outlook record retrieved for subject \"AMX candidate-sourcing pilot — USD 99 checkout\", recipient Blake Bhatia <blake@sinyc.com>, offer USD 99. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
+          "url": "https://buy.stripe.com/eVq5kD30ZeTCfex0HUaR201"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-10T05:18:52Z",
-      "last_reconciled_at": "2026-10-14T14:23:36.631Z",
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 9 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "last_action_at": "2026-10-13T20:58:31Z",
+      "last_reconciled_at": "2026-10-14T18:40:04.525Z",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity": "candidate-sourcing-pilot",
       "organization": "Synergy Interactive",
       "recipient": "blake@sinyc.com",
-      "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
+      "routing_reason": "OUTLOOK_THIRD_OUTBOUND_AND_SENDER_DRIFT_RECONCILIATION_REQUIRED; WAIT_FOR_BUYER_RESPONSE",
       "state": "SUBMITTED",
       "title": "24-hour candidate sourcing pilot",
       "payment_rail_readback": {
@@ -4481,17 +4517,25 @@
           "source": "CLOSE_LIVE_READBACK",
           "source_id": "acti_KwclJa3zGyQ51Jm7OFsT0QcR2icneMkmr2zppyZ6Kke",
           "summary": "Close thread readback acti_KwclJa3zGyQ51Jm7OFsT0QcR2icneMkmr2zppyZ6Kke: latest checkout-link email acti_JJ5SD7xKirWYszKyzYDlZGNWjRSWJpGseA2CCwsXaI7 is status=draft, direction=outgoing, recipient lnotrica@xubio.com; it is not a sent message. Do not send without buyer-initiated response or a newly verified authorized route."
+        },
+        {
+          "kind": "OUTLOOK_SENT_CHECKOUT_LINK_EMAIL_20261013",
+          "observed_at": "2026-10-13T20:58:32Z",
+          "source": "OUTLOOK_SENT_ITEMS_READBACK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACKnbyNQAAAA==",
+          "summary": "Outlook record retrieved for subject \"AMX onboarding-support pilot — USD 49 checkout\", recipient Lucila Notrica <lnotrica@xubio.com>, offer USD 49. Connected ROOT sender-drift evidence reports the three 13-Oct outbound emails were sent from usduplessis@outlook.com rather than a separately verified canonical Matrix business sender. The message is additional to the existing 7-Oct initial offer and 10-Oct follow-up recorded here. A separate Close checkout-link message is still marked draft, so the exact sent-message/draft relationship must be reconciled. No buyer receipt, response, acceptance, purchase or payment is inferred.",
+          "url": "https://buy.stripe.com/eVqbJ1gRPeTCd6p76iaR202"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
-      "last_action_at": "2026-10-10T05:18:47Z",
-      "last_reconciled_at": "2026-10-14T14:23:36.631Z",
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "last_action_at": "2026-10-13T20:58:32Z",
+      "last_reconciled_at": "2026-10-14T18:40:04.525Z",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity": "onboarding-support-pilot",
       "organization": "Xubio",
       "recipient": "lnotrica@xubio.com",
-      "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
+      "routing_reason": "OUTLOOK_THIRD_OUTBOUND_AND_SENDER_DRIFT_RECONCILIATION_REQUIRED; WAIT_FOR_BUYER_RESPONSE",
       "state": "SUBMITTED",
       "title": "48-hour onboarding-support pilot",
       "payment_rail_readback": {
