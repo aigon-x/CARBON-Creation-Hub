@@ -26,6 +26,18 @@
     $('statusPill').textContent = label;
     $('statusPill').className = 'pill ' + cls;
 
+    if (p.quote_status === 'EXPIRED') {
+      const recoveryPath = typeof p.recovery_url === 'string'
+        && p.recovery_url.startsWith('/')
+        && !p.recovery_url.startsWith('//')
+        ? p.recovery_url : '/house/';
+      const target = new URL(recoveryPath, location.origin);
+      if (p.proposal_ref) target.searchParams.set('proposal_ref', p.proposal_ref);
+      $('recoveryLink').href = target.pathname + target.search + target.hash;
+      $('recoveryLink').classList.remove('hidden');
+      $('recoveryNote').classList.remove('hidden');
+    }
+
     if (p.full_proposal_url) {
       $('fullProposalLink').href = p.full_proposal_url;
       $('fullProposalLink').classList.remove('hidden');
