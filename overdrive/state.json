@@ -26,15 +26,15 @@
   "last_receipt": "receipts/0000000020-qdrain-20261010-mprtc-wrongroute.json",
   "last_signal_count": {
     "PRI": 59,
-    "iSCOPE": 21
+    "iSCOPE": 22
   },
-  "last_tick": "2026-10-13T14:32:40.457120+00:00",
+  "last_tick": "2026-10-14T09:16:42.276231+00:00",
   "last_tick_result": {
     "pending": 0,
     "processed": [],
     "signals": {
       "PRI": 59,
-      "iSCOPE": 21
+      "iSCOPE": 22
     },
     "state_changed": true
   },
