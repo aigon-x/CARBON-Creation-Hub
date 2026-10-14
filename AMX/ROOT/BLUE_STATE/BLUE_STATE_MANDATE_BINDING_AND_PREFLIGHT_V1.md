@@ -1179,3 +1179,58 @@ A future implementation claiming compliance must show:
 8. The exact source, changed artifact, review/test evidence and independent readback are recorded before implementation is called complete.
 
 **Preservation rule:** add to Carbon°; do not erase the work that made Carbon° recognizable. The approved visual direction should mature through controlled extensions, not repeated identity resets.
+
+
+---
+
+# OWNER-AUTHORIZED CARBON° COMMERCIAL CONTINUITY AND PRICING RULE — 2026-10-14
+
+**Status:** Owner-authorized additive rule. Existing authorities and flows remain unchanged; no new worker, router, scoring system, identity authority, payment authority, queue or scheduler.
+
+## 1. Outbound plus inbound
+
+Global outbound penetration remains ongoing and evidence-led. Target active, commercially plausible businesses with a specific, supported positioning, UX, distribution or conversion gap; a live URL, domain age or traffic estimate alone is not proof of buying intent. Existing FORX → iSCOPE → PRI ownership remains controlling.
+
+Inbound from social channels, LinkedIn, referrals, ecosystem products, existing customers and old offer links is equally important. Route a visitor by intent to the relevant product, current proposal or neutral Carbon° Business entry; do not force every visitor through cold outbound qualification.
+
+## 2. No dead-end expired offers
+
+An expired quote remains historical context, not a currently valid offer. When reopened, show its state and offer refresh/reissue with current scope, pricing and terms. If the exact offer cannot be resolved, send the visitor to a neutral Carbon° Business recovery destination while preserving any original reference for reconciliation. Do not return a preventable 404 or silently revive the old price.
+
+Preserve the issued quote's existing validity rule; the validity clock starts only when an actual priced quote is issued, not when a draft is created. A change request is not acceptance, invoicing or payment. The rule applies to email, social, LinkedIn, QR, referral and product links.
+
+## 3. Domain readiness without a domain purchase
+
+The first Owner-funded domain remains a planned migration milestone after revenue permits. Prepare the existing app and proposal route for migration now through configurable canonical-base settings, stable offer/order references and controlled redirects; do not hard-code one future domain throughout content and do not create a second router. Domain purchase or migration is not claimed by this rule.
+
+## 4. Market-benchmarked entry prices
+
+Before publishing a new price, compare current public offers with the same scope in the relevant geography and currency. Record source URLs, date, package scope, tax/VAT treatment, ongoing costs and uncertainty. Use the comparable market center (prefer a sample median, with mean where useful) and choose an accessible entry point in the credible lower portion of the market: above unsustainable bargain-basement offers but below the market center when delivery cost, capacity and margin permit.
+
+Normalize by actual work: pages and bespoke layouts, copy, imagery, enquiry forms, analytics, hosting, revisions, ecommerce, integrations, maintenance and ownership. Do not describe a handful of vendors as a universal industry tariff. For custom software, novel integrations or thin samples, require a scoped estimate instead of an invented fixed price. Global prices require local/currency research; simple FX conversion is not market calibration.
+
+## 5. Charm pricing — default
+
+First choose the intended market/value tier, then use a coherent just-below threshold as the default customer-facing price: 19 rather than 20; 49 rather than 50; 99 rather than 100; 499 rather than 500; 2.99 rather than 3.00. Apply the equivalent convention to the displayed local currency—for example, R4,999.99 rather than R5,000. Where the intended tier is roughly 130, prefer a coherent price such as 129.99 or 129 over an arbitrary 131 if scope and economics support it.
+
+Do not distort scope, fabricate a higher reference price, or randomly reduce a price just to obtain a nine ending. Exact tax, discount, FX, invoice and contract arithmetic must remain correct. Rounded prices may be used where a documented enterprise, contractual, tax/regulatory or margin reason supports the exception.
+
+## 6. MTXID / Your MtriX member pricing
+
+Use the current governed identity/access route if and when it can verify status. Current source evidence says the MTXID identity concept exists in the JAM3S model, but exact implementation is incomplete and its semantic relationship with the user-facing “Your MtriX” abstraction remains on HOLD. Do not claim a live entitlement lookup until the exact existing route is tested and read back.
+
+When verified participation/contribution status is available, show both true public price and eligible member price. The target design band is about 10%–20%; exact status-to-discount mapping requires existing ROOT/T-GOV and Banker/product-owner confirmation of eligibility, cost and margin. An ID is not a payment, a reputation asset, or proof of a contribution tier. If identity/status lookup is absent or fails, fall back to public price and let the customer continue; identity failure must not block conversion. Apply benefits to eligible Carbon° scope only unless explicit rules cover third-party pass-throughs; avoid unauthorized discount stacking.
+
+## 7. Configurable quote; safe production trigger
+
+Predefined options must map to versioned scope, price, dependencies and exclusions. Update a customer-visible quote automatically only for known approved combinations. Free text and unknown integrations become a reviewed change request, not a fabricated exact price. Before production, preserve the accepted scope, exact quote version, terms, permissions, required payment/approval state and build brief. A paid hosted demo has its own explicit fee and access window; expiry can revoke hosted access but cannot erase what a browser has already copied.
+
+## 8. H0B° education-and-pull boundary
+
+H0B° may use a comedic “If only they knew” content lane to educate and draw attention to verified benefits across Carbon° and AMX ecosystems. It remains a clown, entertainer, roaster and character—not a generic AI assistant, corporate sales agent or status issuer. Keep the joke first, a true product fact second, and a relevant unobtrusive next step where useful. Claims about discounts, availability, search results or savings must be verified. Use the existing H0B°/JAM3S governance route; do not duplicate identity or referral authority.
+
+## 9. CDD / RGR safeguards and acceptance
+
+CDD remains an enforcement diagnostic under the existing Public Evidence & Commercial Positioning Standard; keep supported positioning strong without claiming unproven functionality or results. RGR remains a non-authoritative recurrence classification handled through existing Root/Route Intake. Repeated expired-link dead ends, incorrect charm prices, fabricated market benchmarks, unverified member benefits or H0B° character dilution go to the existing owner/control, not a new system.
+
+Runtime acceptance requires live tests for expired/missing offer recovery, active versus stale quote state, domain redirects, price/tax/discount arithmetic, member entitlement with success/failure fallback, quote versioning and regression checks across existing product flows. Documentation alone is not behavioural acceptance.
