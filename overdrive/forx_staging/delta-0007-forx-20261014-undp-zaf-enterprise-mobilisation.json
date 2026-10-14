@@ -1,0 +1,53 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 7,
+  "batch_id": "forx-20261014-undp-zaf-enterprise-mobilisation-01",
+  "created_at": "2026-10-14T20:44:51.718Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261014-PROC-002",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP South Africa — ECoWYERT programme",
+      "surface": "Enterprise Mobilisation, Capacity Building and Participant Accompaniment Service; reference UNDP-ZAF-00246.",
+      "observed_need": "The official notice describes a single auditable participant pipeline with outreach through women’s/youth networks, community structures, digital channels and business-support partners; eligibility screening and referrals; diagnostics of registration, business planning, finance records and digital readiness; approved training delivery; mentorship/action plans; follow-up and disaggregated reporting.",
+      "outcome_space": [
+        "enterprise mobilisation",
+        "cross-border trade",
+        "women and youth enterprises",
+        "participant data pipeline",
+        "capacity building",
+        "referral networks",
+        "South Africa"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/317536",
+      "source_key": "url:https://www.ungm.org/Public/Notice/317536",
+      "source_observed_at": "2026-10-14T20:44:51.718Z",
+      "published": "2026-10-09",
+      "deadline_at": "2026-10-23T11:00:00Z",
+      "deadline_local_sast": "2026-10-23T13:00:00+02:00",
+      "geography": {
+        "country": "South Africa",
+        "priority_provinces": "See complete solicitation / ECoWYERT scope",
+        "delivery_locality": "Local outreach and delivery implied; exact geographic coverage requires full TOR."
+      },
+      "public_route": {
+        "type": "official UNDP Quantum procurement portal",
+        "notice_url": "https://www.ungm.org/Public/Notice/317536",
+        "procurement_reference": "UNDP-ZAF-00246",
+        "quantum_portal": "http://supplier.quantum.partneragencies.org",
+        "existing_profile_rule": "The notice instructs existing suppliers to use the existing profile; do not create another profile."
+      },
+      "contactability": "OFFICIAL_PROCUREMENT_ROUTE_PUBLISHED; existing supplier profile, bid eligibility and decision-maker access unverified.",
+      "payer_hypothesis": "UNDP if selected; contract value, payment schedule and margin not yet established.",
+      "fit_note": "There is a potentially useful digital/data workstream in the auditable participant pipeline, approved diagnostics, consent-governed records, referrals and results reporting. However, the main contract is a local service-delivery assignment requiring women/youth/rural enterprise mobilisation, training, mentorship, ecosystem networks and partner coordination. AMX delivery capacity, relevant references, access to approved materials, local network, province coverage, privacy controls and economics are all unverified; do not infer fit from the digital component alone.",
+      "source_rights": "Official public procurement notice and factual summary retained with source URL. Follow any solicitation confidentiality, data-protection, and reuse restrictions; participant data must not be collected without the buyer-approved protocol.",
+      "execution_readiness": "HOLD_TOR_LOCAL_NETWORK_AND_DELIVERY_CAPACITY",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "iSCOPE to inspect the binding TOR, eligibility and experience thresholds, required province/partner coverage, staffing and in-person delivery, data-protection/consent controls, use of UNDP-approved tools/materials, reporting workload, commercial terms and viable margin. Qualify only if the hard delivery/network gates are evidenced; if so, route to PRI for bid decision and authorized external action. FORX does not contact or submit.",
+      "intake_custody": "Existing Root Intake issue #31; official source screened 2026-10-14.",
+      "truth_boundary": "RAW SIGNAL ONLY. No qualified opportunity, buyer intent, bid, award, acceptance, invoice or payment is evidenced."
+    }
+  ]
+}
