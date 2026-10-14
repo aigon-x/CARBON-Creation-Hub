@@ -414,8 +414,8 @@ def load_geonames():
     rejected = 0
     duplicates = 0
     latest_modified = None
-    db_fd, db_path = tempfile.mkstemp(prefix="amx-forx-geonames-", suffix=".sqlite3")
-    os.close(db_fd)
+    db_path = create_node_store("amx-forx-geonames-")
+    store_ready = False
 
     try:
         with requests.get(
@@ -437,17 +437,7 @@ def load_geonames():
             conn.execute("PRAGMA journal_mode=OFF")
             conn.execute("PRAGMA synchronous=OFF")
             conn.execute("PRAGMA temp_store=FILE")
-            conn.execute(
-                """
-                CREATE TABLE nodes (
-                    ck TEXT PRIMARY KEY,
-                    country TEXT NOT NULL,
-                    category TEXT NOT NULL,
-                    source_record_id TEXT NOT NULL,
-                    payload TEXT NOT NULL
-                )
-                """
-            )
+            conn.execute("PRAGMA cache_size=-4096")
 
             with zipfile.ZipFile(zip_path) as zf:
                 names = [n for n in zf.namelist() if n.endswith(".txt")]
@@ -510,8 +500,8 @@ def load_geonames():
                                 "confidence": "geonames-curated-coordinate",
                             }
                             cur = conn.execute(
-                                "INSERT OR IGNORE INTO nodes (ck,country,category,source_record_id,payload) VALUES (?,?,?,?,?)",
-                                (ck, country, category, node["source_record_id"], json.dumps(node, separators=(",", ":"), sort_keys=True)),
+                                "INSERT OR IGNORE INTO nodes (ck,country,category,source_record_id,sequence,payload) VALUES (?,?,?,?,?,?)",
+                                (ck, country, category, node["source_record_id"], raw_rows, json.dumps(node, separators=(",", ":"), sort_keys=True)),
                             )
                             if cur.rowcount == 0:
                                 duplicates += 1
