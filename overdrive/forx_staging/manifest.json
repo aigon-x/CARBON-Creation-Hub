@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 4,
+  "manifest_version": 5,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -91,14 +91,27 @@
         "FORX-PROSPECT-20261014-PROC-001"
       ],
       "segment_sequence": 3
+    },
+    {
+      "path": "overdrive/forx_staging/delta-0004-forx-20261014-undp-bangladesh-expiry-upsert.json",
+      "git_blob_sha": "4b68ee4e237e109b149c88caf2508573b249e89b",
+      "count": 1,
+      "batch_id": "forx-20261014-undp-bangladesh-expiry-upsert-01",
+      "source_keys": [
+        "url:https://www.ungm.org/Public/Notice/316324"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261012-PROC-001"
+      ],
+      "segment_sequence": 4
     }
   ],
   "current_unique_source_keys": 947,
-  "gross_observation_versions": 948,
+  "gross_observation_versions": 949,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
-  "next_segment_sequence": 4,
-  "last_updated": "2026-10-14T20:18:23.906Z",
+  "next_segment_sequence": 5,
+  "last_updated": "2026-10-14T20:23:11.778Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
