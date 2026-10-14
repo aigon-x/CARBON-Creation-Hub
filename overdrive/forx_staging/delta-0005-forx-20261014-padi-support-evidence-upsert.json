@@ -1,0 +1,55 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 5,
+  "batch_id": "forx-20261014-padi-support-evidence-upsert-01",
+  "created_at": "2026-10-14T20:33:12.944Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261008-037",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "Padi SL",
+      "surface": "Google Play multi-service app; package com.nexgenux.padi; Sierra Leone",
+      "observed_need": "Current June 2026 Play listing combines chat, ride-hailing, food delivery and marketplace functionality focused on Sierra Leone.",
+      "outcome_space": [
+        "super app",
+        "ride hailing",
+        "food delivery",
+        "marketplace",
+        "communications"
+      ],
+      "source": "https://play.google.com/store/apps/details?id=com.nexgenux.padi",
+      "published": "2026-06-10",
+      "payer_hypothesis": "Padi SL operator",
+      "fit_note": "Existing Padi SL source describes a Sierra Leone super-app launch. First-party support content adds specific OTP, partner onboarding, marketplace trust/reporting and moderation workflow surfaces. These are discovery hypotheses only; no incident rates, conversion data, buyer request, budget, or paid need is established.",
+      "consumer_action": "iSCOPE: verify operating/legal entity and decision-maker route; ask whether partner activation, OTP completion, marketplace trust/safety or conversion has a live funded problem; require candidate-specific evidence and a credible bounded scope before promotion. No FORX pitch or buyer contact.",
+      "source_key": "url:https://play.google.com/store/apps/details?id=com.nexgenux.padi",
+      "source_observed_at": "2026-10-14T20:33:12.944Z",
+      "last_enriched_at": "2026-10-14T20:33:12.944Z",
+      "problem_surface": [
+        {
+          "kind": "FIRST_PARTY_SUPPORT_GUIDANCE",
+          "url": "https://getpadi.app/support",
+          "observed_at": "2026-10-14T20:33:12.944Z",
+          "findings": [
+            "Support FAQ addresses users not receiving OTP codes and gives retry/signal/country-code guidance.",
+            "Driver, restaurant and shop partner onboarding is described; the operator says applications are reviewed within 48 hours.",
+            "Marketplace suspected-scam reporting and 24-hour moderation review are documented.",
+            "The page footer names NexGen UX & Engineering LLC as operator."
+          ],
+          "confidence_boundary": "First-party support content proves that these workflows and guidance are documented; it does not establish incident volume, a systemic defect, buyer budget or purchasing intent."
+        }
+      ],
+      "identity_evidence": {
+        "source_url": "https://getpadi.app/support",
+        "supported_claim": "The current first-party site footer names NexGen UX & Engineering LLC as operator.",
+        "unresolved": "Legal-entity status, actual decision-maker, contracting route and buyer mandate have not been independently verified."
+      },
+      "additional_sources": [
+        "https://getpadi.app/support"
+      ],
+      "truth_boundary": "RAW_UNQUALIFIED. Product workflow documented; problem severity, purchasing intent, fit, route and revenue remain unverified."
+    }
+  ]
+}
