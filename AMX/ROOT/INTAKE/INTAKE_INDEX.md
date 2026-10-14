@@ -40,6 +40,17 @@ The sequence SYNC → PREP → LAUNCH → FLIGHT → SYNC / ANCHOR WEIGHTS → F
 
 **Boundary:** append-only evidence/index maintenance. No changes to mandate hashes, source-owned commercial states, schedules, payment links, external buyer state or governance authority.
 
+
+### Runtime-derived state refresh — 2026-10-14T11:21:58Z (fresh readback)
+
+This is a newer readback of the generated OVERDRIVE projections than the earlier snapshot above; retain the earlier blob IDs as provenance rather than silently rewriting history.
+
+- `overdrive/opportunities.json`: blob `506c53e42a8fbdda177e972e13a4b656348283ac`; `record_count=87`, actual key count=87. The carpentry fixed-price proposal remains `PREPARED_NOT_SUBMITTED`, with `HOLD_AUTHENTICATED_UPWORK_ROUTE`.
+- `overdrive/claims.json`: blob `39776ca71dcd86cd8bfdf67856c2d92e47f39cca`; generated `2026-10-14T11:21:57.903537Z`; 87 keys (81 WAITING / 6 CLOSED); `ready_claims=0`; `executable_order=[]`. It now reflects the current ledger’s newer next-actions, including the carpentry proposal hold and Stripe readback on the three waiting offers.
+- `overdrive/state.json`: blob `24f296cd134df9adfb1ba9e0ca32189c2a6c7ee4`; `sequence=20`; `last_tick=2026-10-14T11:21:57.905245Z`; `last_tick_result.pending=0`, `processed=[]`, PRI signals=59, iSCOPE signals=22, `state_changed=true`; `last_receipt=receipts/0000000020-qdrain-20261010-mprtc-wrongroute.json`. This is a generated-state refresh / active tick readback, **not** a new completed commercial action, new receipt, queue drain, buyer response or money-in.
+- **Disposition:** generated projection now aligns to the newest ledger blob, but no claims are executable in the derived order. Keep the commercial objective **FAIL — NO VERIFIED MONEY-IN EVIDENCED** and the runtime open. Existing owner/next-action gates remain controlling; do not manufacture an executable item or weaken a source gate to fill an empty order.
+- **Recovery owner:** MASTER/LIBRARIAN for state reconciliation and continuity; iSCOPE/PRI continue independent lawful commercial opportunities under their own mandates. Acceptance requires an actual source-backed commercial action/state transition and readback, not a later timestamp alone.
+
 **ACTIVE FRONT-OF-QUEUE GOVERNANCE INSTRUCTION — 2026-10-06**
 
 **Authority:** OWNER DIRECTIVE  
