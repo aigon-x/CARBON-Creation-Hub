@@ -114,7 +114,7 @@
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
   "last_updated_at": "2026-10-14",
-  "last_updated_by": "iSCOPE",
+  "last_updated_by": "PRI",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -4437,7 +4437,7 @@
       "title": "AI Automation for Carpentry Inquiries",
       "state": "DISCOVERED",
       "execution_owner": "iSCOPE",
-      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE_AND_PROOF_CHECK",
+      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE_AND_LIVE_INTEGRATION_CHECK",
       "proof_of_work_route": "FIXED_SCOPE",
       "capital_direction": "INBOUND / FIXED_PRICE",
       "payment": "US$400 fixed price through Upwork; milestone funding/escrow and net payout terms unverified.",
@@ -4457,6 +4457,15 @@
           "observed_at": "2026-10-14",
           "source": "CANONICAL_LEDGER_AND_CURRENT_WAKE_REVIEW",
           "summary": "Current canonical ledger (blob 7717ebc32e19dcbd3e3a6c2d8f8ff29af3031f27) had 86 records and no matching listing ID/title; this record was added under its unique listing ID. The current wake did not verify a source-bound example demonstrating the full requested intake-to-AI-extraction-to-Sheets-to-email workflow with duplicate/error tests. Submission requires an authorized Upwork account/session; the Opera Browser Connector currently returns BROWSER_NOT_CONNECTED. No proposal, contract, funded milestone, delivery, invoice or payment is evidenced."
+        },
+        {
+          "kind": "LOCAL_PROOF_OF_WORK_ASSET_CREATED",
+          "observed_at": "2026-10-14",
+          "source": "CURRENT_ASSISTANT_RUN",
+          "source_id": "AMX-PRI-20261014-CARPENTRY-DEMO-01",
+          "summary": "Created a Google Apps Script starter implementing a single authenticated JSON intake channel, structured AI extraction through a configurable Gemini API, deduplicated Google Sheets rows with reference IDs and lifecycle status, owner email notification, and error logging. Deterministic local tests passed 12/12, including ten fictional inquiry cases, duplicate prevention, missing-information handling, unauthorized request rejection, malformed JSON, and simulated AI/email failures. All external services were mocked; the asset is not a deployed production integration.",
+          "artifact_uri": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
+          "artifact_sha256": "22cfe4b726929cf779f8fc44ede83411d28c6d76273f46d229d4b4e2189153b9"
         }
       ],
       "constraints": [
@@ -4465,7 +4474,15 @@
         "Recover the existing authorized Upwork account/session; no duplicate account and no off-platform contact.",
         "Bound hosting, API, setup and maintenance costs against the US$400 ceiling and clarify exactly one intake channel before any binding offer."
       ],
-      "next_action": "iSCOPE: verify exact current listing state, existing source-bound workflow proof and net scope viability; recover authorized Upwork session. If every gate passes, hand the opportunity to PRI for a bounded proposal that states only evidenced capability and explicit acceptance criteria. Otherwise retain HOLD with the exact failed gate. No application or claim of qualification before proof and route pass."
+      "next_action": "PRI: preserve as proof of a bounded workflow, not a live integration claim. Before submitting a proposal, restore the authorized Upwork session; verify the live listing and buyer/milestone terms; review this package against the buyer's exact scope; confirm a client-owned Sheet, Gemini provider/key, and usage budget. Only then propose the agreed scoped deployment/testing/handover and persist the external submission receipt. No bid, contract, invoice, or income is proven.",
+      "proof_asset": {
+        "status": "LOCAL_PROOF_OF_WORK_PACKAGE_CREATED",
+        "artifact": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
+        "sha256": "22cfe4b726929cf779f8fc44ede83411d28c6d76273f46d229d4b4e2189153b9",
+        "tests": "12/12 PASS using local Node.js mocks; no live API, network or email calls",
+        "limitation": "Not deployed; live Gemini, Google Sheets, and email integrations, buyer-account access, and production acceptance are unverified. Package has not been committed/read back from a canonical repository path.",
+        "created_at": "2026-10-14"
+      }
     }
   },
   "updated_at": "2026-10-13",
