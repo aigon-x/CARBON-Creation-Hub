@@ -346,3 +346,34 @@ STUDIOS = FULFILMENT.
 MATRIX = CONTINUITY / GOVERNANCE / TRUST.
 
 The customer should experience one product, not the seams.
+
+
+---
+
+## 14. OWNER-APPROVED CARBON° VISUAL IDENTITY / IMAGERY DIRECTION — 2026-10-14
+
+The governing identity and asset-preservation rules are the Blue State addendum **“OWNER-AUTHORIZED CARBON° BRAND / VISUAL-CONTINUITY INVARIANT — 2026-10-14.”** This section maps that invariant into the existing product experience; it does not create another brand standard.
+
+### Preserve the established Carbon° signature
+
+- Keep the existing Carbon° wordmark, degree mark, typography and premium dark/carbon foundation.
+- Keep existing subsystem accent colours in their current approved context. Do not normalize the family to one global accent or derive mandatory permanent hues from an exploratory image.
+- Preserve the house/architectural hero reference as a strong part of the visual vocabulary, without requiring every product to use a house.
+- Preserve the Grok folder and all its existing imagery, archives, learning, notes, attribution, provenance and rights context. It is an important source collection, not expendable legacy material. The folder has not been directly inspected in this update; no inventory or rights-readback claim is made.
+
+### Broaden imagery without losing Carbon° character
+
+Use a curated range of architecture, people, creative production, commerce, physical materials, network/discovery signals and dimensional intelligence imagery. Art direction should remain deliberate, premium, layered, dimensional and recognizably Carbon° rather than generic technology decoration. Use richer imagery and stronger transitions to reduce text overload while retaining strong existing copy and factual descriptions.
+
+A rotating hero/slideshow/scene sequence is an optional pattern where it strengthens the story. It is not mandatory until designed and tested. Any implementation must preserve legibility, performance and reduced-motion behavior.
+
+### Do not confuse approval states
+
+- **DIRECTION APPROVED:** this visual/positioning direction has Owner approval.
+- **ASSETS REVIEWED:** not claimed for the complete Grok folder.
+- **IMPLEMENTED:** requires actual asset/code changes.
+- **DEPLOYED / BUYER-VIEWABLE:** requires same-revision deployment and live readback.
+- **CDD:** apply the existing Public Evidence & Commercial Positioning Standard; do not down-sell the approved direction or inflate its lifecycle.
+- **RGR:** any recurrence of a known preservation/identity failure is routed through existing Root/Route Intake to its responsible existing control; no parallel mechanism is created.
+
+The intent is **one Carbon° identity, multiple recognizable product experiences, and cumulative creative development without loss of approved work**. Search acceptance and the existing #18 product-convergence gates remain unchanged.
