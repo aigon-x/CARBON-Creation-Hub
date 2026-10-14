@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 6,
+  "manifest_version": 7,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -117,14 +117,27 @@
         "FORX-PROSPECT-20261008-037"
       ],
       "segment_sequence": 5
+    },
+    {
+      "path": "overdrive/forx_staging/delta-0006-forx-20261014-undp-indonesia-deadline-review.json",
+      "git_blob_sha": "20a789fc0847654e2f1448062c9fd64671e1e476",
+      "count": 1,
+      "batch_id": "forx-20261014-undp-indonesia-deadline-review-01",
+      "source_keys": [
+        "url:https://www.ungm.org/Public/Notice/315385"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261012-PROC-002"
+      ],
+      "segment_sequence": 6
     }
   ],
   "current_unique_source_keys": 947,
-  "gross_observation_versions": 950,
+  "gross_observation_versions": 951,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
-  "next_segment_sequence": 6,
-  "last_updated": "2026-10-14T20:33:31.974Z",
+  "next_segment_sequence": 7,
+  "last_updated": "2026-10-14T20:39:33.875Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
