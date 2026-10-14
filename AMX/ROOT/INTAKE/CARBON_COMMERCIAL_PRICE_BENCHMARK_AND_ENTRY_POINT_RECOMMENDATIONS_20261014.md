@@ -1,93 +1,97 @@
-# CARBON° Commercial Price Benchmark and Entry-Point Recommendations
-**Checked:** 14 October 2026  
-**Market focus for first price ladder:** South Africa / ZAR  
-**Status:** Research-backed launch recommendations; not yet a tested conversion result or universal global rate card.
+# CARBON° Commercial Price Benchmarks and Recommended Entry Points
+**Research checked:** 14 October 2026  
+**Initial calibration market:** South Africa / ZAR  
+**State:** researched recommendations and pilot hypotheses—not a live catalogue, accepted tariff, or demonstrated conversion result.
 
-## Executive recommendation
+## Recommendation
 
-Position Carbon° in the credible lower portion of the comparable market, not at the bargain-basement extreme. First establish the intended tier and exact deliverables; then apply the charm-pricing rule. These initial values need a bounded pilot and a real effort/margin check before they become executable quote-catalogue rules.
+Set packages from comparable public scope, delivery cost and target market first; then apply the default charm-pricing presentation. Position Carbon° toward the accessible lower portion of the credible market rather than the absolute cheapest end. Do not promise a luxury bespoke result inside an entry price intended for tightly bounded components.
 
-## 1. Current public comparison evidence
+The market is not one number: one page, five-page brochure, lead-generation site, online store, signed-in web application and bespoke interactive experience are materially different products. Public comparison sources themselves warn that the market figures are ranges and packages vary in copy, design, integrations and ongoing costs.
 
-### Website / landing-page builds
+## 1. Public market evidence
 
-- A recent sample-based comparison of 20 South African providers reports median published prices of approximately R1,990 for one-page builds, R4,725 for 3–7 page sites, and R8,795 for 8–12 page sites; stated ranges are R1,400–R3,699, R1,499–R14,780 and R4,500–R17,420 respectively. These are sample medians, not national official tariffs. Source: https://studio.localpros.co.za/prices/website-design-cost-guide
-- A separate South African 2026 guide states R5,000–R15,000 as the typical small-business five-page range, and R12,000–R40,000 for a 10+ page content-managed site. Source: https://www.eminentwebx.co.za/website-cost-south-africa/
-- Local Pros currently publishes a R6,500 once-off own-website entry package and R30,000 for online shops. Source: https://studio.localpros.co.za/website-design-package
-- Other published local benchmarks vary by scope: Cape Town Websites lists R6,500 for up to five pages; Social Agencies cites a R5,590 5–9 page small-business package; STRKR Studio publishes R7,500 for five-page business and R9,500 for lead-generation builds. Sources: https://capetownwebsites.co.za/pricing ; https://www.socialagencies.co.za/guides/website-cost-south-africa/ ; https://www.strkr.co.za/blog/how-much-does-website-cost-south-africa-2026
-- Ecommerce pricing varies widely because product count, stock/shipping/payment handling, tax, and third-party integrations change the work. One multi-provider comparison reports a R7,250 median among 12 online-store price pages with a R3,000–R23,690 range; other agencies publish much higher packages. Source: https://studio.localpros.co.za/prices/website-design-cost-guide
+### Websites
+
+- Dean Goulding's 2026 South African guide, checked 26 September, reports typical one-page designer builds of **R2,000–R5,000** and cites a sample average of R3,765; typical five-page business sites at **R5,000–R15,000**, citing an average of R6,254 from an SME Rocket survey of 56 agencies; online shops from about **R8,000**, citing an R8,445 average; and custom work from R30,000 upward. These are reported sample figures, not a national regulated tariff. https://deangouldingwebsites.co.za/guides/website-cost-south-africa/
+- New Perspective Design's published 2026 rate card lists R1,990 for one landing page, R3,490 for a 1–3-page starter, R5,590 for a 5–9-page business site, R8,590 for a 9–12-page lead-generation site, and R7,580 for an online store of up to 10 products plus product pages. It describes these as its own package prices, based in part on paid invoices and package rates, not the entire market. https://www.newperspectivestudio.co.za/how-much-do-web-designers-charge-in-south-africa/
+- Eminent WebX's September 2026 guide states typical ranges of R5,000–R15,000 for a five-page business site, R12,000–R40,000 for a 10+ page content-managed site, R15,000–R60,000+ for an online store, and R30,000–R200,000+ for a custom system/portal/web app. Its prices exclude VAT; it explicitly notes that final scope and recurring costs matter. https://www.eminentwebx.co.za/website-cost-south-africa/
+- The spread is material. A lower-priced static one-page build is not a fair direct comparator for a bespoke, cinematic, multi-page brand experience with custom interaction, 3D/WebGL, complex enquiry flows or custom integrations. Custom effects and unusual workflows must be scoped and priced separately.
 
 ### Social media management
 
-- Social Media SA publishes R3,500/month for one platform and 8 posts; R6,500/month for two platforms and 16 posts; R11,000/month for three platforms and 24 posts plus reels; and R18,000/month for four platforms/daily content. The source also notes ad management fees and ad spend are separate considerations. Sources: https://socialmediasa.co.za/social-media-management-cape-town-pricing and https://socialmediasa.co.za/blog/social-media-management-cost-south-africa
+Social Media SA's current public price page lists **R3,500/month** for one platform and 8 posts, **R6,500/month** for two platforms and 16 posts, **R11,000/month** for three platforms and 24 posts plus reels, and **R18,000/month** for four-platform/daily content. Packages include different levels of creation, community management and reporting. Treat ad spend and any paid-media budget separately. https://socialmediasa.co.za/social-media-management
 
-### Web applications / portals
+### Web apps and client portals
 
-- A 2026 South African guide identifies published packaged sign-in web-app ranges of R29,900–R120,000, custom platforms of R60,000–R250,000+, web MVPs of R90,000–R220,000, production applications of R220,000–R550,000, and SaaS platforms above R550,000. These are distinctly more complex than a marketing site and should not be reduced to per-page pricing. Source: https://www.syniqsolutions.co.za/blog/web-app-development-cost-south-africa
+A South African 2026 comparison of published developer prices distinguishes packaged apps from custom applications: packaged sign-in apps at R29,900–R120,000; custom portals/platforms at R60,000–R250,000+; MVPs at R90,000–R220,000; production applications at R220,000–R550,000; and larger multi-tenant SaaS products at R550,000–R1.1 million+. The source read five providers' pages on 3 October 2026 and states their scopes differ. A web application is not a brochure website; authenticated roles, permissions, data, integration and security create substantial additional work. https://www.syniqsolutions.co.za/blog/web-app-development-cost-south-africa
 
-### Price-ending evidence
+### Does charm pricing always work?
 
-- Thomas and Morwitz’s Journal of Consumer Research paper finds a nine-ending / left-digit effect under particular conditions, especially where the leftmost digit changes and the prices are compared directly; it is not a guarantee that any .99 price will convert better in every category. Source: https://academic.oup.com/jcr/article-abstract/32/1/54/1796360
-- A 2020 Journal of Marketing Research paper further reports that left-digit bias varies by evaluation mode, stronger during stimulus-based comparison than memory-based evaluation. Source: https://journals.sagepub.com/doi/full/10.1177/0022243720932532
+- Thomas and Morwitz's *Journal of Consumer Research* paper finds a nine-ending/left-digit effect under specific comparison conditions, particularly when the leftmost digit changes; it is not a universal conversion guarantee. https://academic.oup.com/jcr/article-abstract/32/1/54/1796360
+- Manning and Sprott's *Journal of Consumer Research* study finds that price-ending combinations can shift choice, with just-below endings favouring the lower-priced alternative in tested cases; effects depend on price level, shopping goal and comparison context. https://academic.oup.com/jcr/article-abstract/36/2/328/1942926
 
-## 2. Proposed initial entry points
+## 2. Recommended first public entry prices
 
-These recommendations use the market center as a reference and position Carbon° toward the accessible lower-middle band while maintaining a premium visual/product standard. They are proposed anchors, not yet live checkout prices.
+These are proposed launch anchors pending CARBON° scope approval and Banker/existing commercial-owner cost-and-margin validation. They intentionally sit in a credible accessible band, use charm pricing, and are not described as universal market averages.
 
-| Offer | Comparable basis | Proposed public launch anchor | Guarded scope |
+| Offer | Comparable published evidence | Proposed public anchor | Scope guard |
 |---|---|---:|---|
-| One-page presence / focused landing page | Sample median around R1,990; public listings range roughly R1,400–R3,699; some providers start higher | **R2,499.99 once-off** | One responsive page, core narrative/CTA, contact route, basic on-page setup and one bounded revision. No bespoke backend or integrations. |
-| Small-business website | Sample median around R4,725; broader five-page range roughly R5,000–R15,000; published entry examples around R5,590–R6,500 | **R4,999.99 once-off** | Up to five templated/customized sections/pages within a defined component system, responsive layout, contact/WhatsApp route and basic metadata. Scope and content assumptions listed. |
-| Conversion / lead-generation site | 8–12 page median around R8,795; one published five-page lead-generation offer at R9,500 | **R8,499.99 once-off** | Up to eight core pages/sections, structured enquiry capture, one bounded funnel, analytics events and clearly stated SEO/copy limits. Complex CRM/integration work extra. |
-| Simple commerce store | Sample online-store median around R7,250 but broad range; public packages often start around R8,000 and rise materially | **R9,999.99 once-off** | Simple storefront, capped product catalogue, one standard payment route and one standard shipping/fulfilment configuration. Bespoke stock, POS, marketplace or ERP links separately scoped. |
-| Social Starter | Published comparable: R3,500/month, one platform, 8 posts | **R3,499.99/month** | One platform, 8 planned content posts, captions/graphics and monthly summary. Explicitly exclude ad spend and define community management/response limits. |
-| Social Growth | Published comparables around R5,500–R6,500/month for two platforms and about 16 posts | **R5,999.99/month** | Two platforms, up to 16 defined content pieces, with exact story/reel/community-management limits. Ad spend separate. |
-| Social Pro | Published comparables around R8,500–R11,000/month for three platforms / roughly 24 pieces and reels | **R9,999.99/month** | Three platforms and up to 24 defined pieces; scope video complexity and response coverage. Ad spend and production days separate. |
-| Custom web app / client portal | Packaged app prices start around R29,900; custom MVP and production systems commonly tens to hundreds of thousands | **No fixed catalogue price yet** | Scope first: roles, workflows, data sensitivity, integration, migration, security, support, hosting and acceptance. Do not create an instant exact price from vague feature selection. |
+| Focused landing page | R2,000–R5,000 typical; one published R1,990 price; cited sample average R3,765 | **R2,499.99 once-off** | One responsive page, clear value proposition/CTA, contact route, basic metadata and one bounded revision. No custom backend or complex integration. |
+| Small-business website | R5,000–R15,000 typical; one agency lists R5,590 for 5–9 pages; reported sample average R6,254 | **R4,999.99 once-off** | Up to five bounded pages/sections using a defined reusable system, responsive layout, contact/WhatsApp route and agreed basic metadata. Content and revision assumptions disclosed. Excludes bespoke WebGL, complex backend, custom portal, and extensive custom copy/photography. |
+| Lead-generation site | One published 9–12-page package at R8,590; five-page average and expanded sites vary materially with scope | **R8,499.99 once-off** | Defined responsive pages, one structured enquiry path/funnel and agreed analytics setup. CRM, booking, automation, custom forms, paid campaign work or extensive copy are separately scoped. |
+| Simple online store | One published small shop at R7,580; reports cite shops from R8,000 to R15,000+ and up to R50,000–R60,000+ as complexity rises | **R9,999.99 once-off** | Limited catalogue, one standard checkout/payment route and one standard shipping/fulfilment configuration. Define product cap, catalogue setup, transaction fees, tax, fulfilment and maintenance. Custom POS, marketplace, ERP, stock or courier integrations are extra. |
+| Social Starter | Public comparator R3,500/mo for 1 platform, 8 posts | **R3,499.99/month** | One platform, 8 defined posts, captions/graphics and monthly report. Define approval, response and community-management limits. Ad spend excluded. |
+| Social Growth | Public comparator R6,500/mo for 2 platforms, 16 posts and stories/reels | **R5,999.99/month** | Two platforms, up to 16 defined pieces, and explicitly bounded stories/reels/community management. Ad spend excluded. |
+| Social Pro | Public comparator R11,000/mo for 3 platforms and 24 posts plus reels | **R9,999.99/month** | Three platforms and up to 24 defined pieces, with exact video complexity, community response, approvals and reporting limits. Paid media and production days excluded unless added. |
+| Custom app / portal / advanced interactive site | Packaged app prices start around R29,900; custom platforms and production apps commonly reach tens or hundreds of thousands | **No automatic fixed price** | Scope workflows, access roles, integrations, data, security, migration, hosting, support and acceptance before quoting. Advanced WebGL, custom animation, client portal and custom data flows must not be represented as included in a basic site package. |
 
-### Paid interactive demo
+**Market position:** these entry anchors are near or below the lower edge of common comparable bands, but not at the absolute cheapest advertised end. The boundary is the scope: lower-price packages cannot silently expand into bespoke premium work.
 
-There is no reliable apples-to-apples public “industry average” for a bespoke, time-limited interactive demo. Do not falsely label the pilot price a market average.
+## 3. Paid interactive demo
 
-**Pilot recommendation:** R999.99 for a 14-day, hosted, bounded demo with one principal journey and one controlled change cycle. No repository, production secrets or unrestricted source handover. A conversion-credit rule can credit the demo fee toward the full build if the customer accepts within a stated follow-up window; this must be explicit in the issued offer. Lower-effort, template-only previews may later be tested separately at R499.99 for seven days if the production cost supports that entry point.
+No sufficiently comparable public price standard was found for a bespoke, hosted, time-limited interactive website demonstration. A specific market average would therefore be fabricated.
 
-This is an internal pilot hypothesis. Test willingness to pay, creation effort, conversion to full build, support costs and margin before freezing it as a price rule.
+**Pilot hypothesis:** **R999.99 for 14 days** for one hosted, bounded demonstration journey and one controlled change cycle. It does not include code repository access, production secrets or unrestricted source files. State exactly what the demo includes and what it does not. Test whether the demo fee is credited toward the full build if the client accepts within an explicit period; do not advertise a credit before the actual terms are approved.
 
-## 3. MTXID / Your MtriX member pricing
+A simpler static concept/PDF and a hosted interactive demo are different deliverables. Any lower-cost concept tier should be separately specified and priced. The 14-day term and fee are testable hypotheses, not market-derived averages or live offers.
 
-**Proposed benefit band:** 10%–20% below the true public price for an authenticated, eligible participation/contribution status, with the precise mapping pending existing identity-service readback and cost/margin approval. The MTX ID is an identifier; possession alone does not prove eligibility or purchased reputation.
+## 4. MTXID / Your MtriX participant pricing
 
-- First implement/read back an existing authorized identity-to-entitlement path; current source evidence does not establish that this is live.
-- Preserve the public one-off price for customers without an ID or while the identity/status route is unavailable.
-- Use verified status, not assumed identity, to set the eligible price; make the difference visible.
-- Exclude taxes and third-party pass-through costs unless expressly authorized. Do not stack promotions unless the pricing rules allow it.
-- Record both list and member price, entitlement reason, rule/version and exact checkout total.
+**Design target:** a visible **10%–20%** member/contribution benefit against the genuine public price, if verified identity/status and approved commercial rules support the entitlement. The exact discount band is not automatic for every ID.
 
-## 4. Charm-pricing display rule
+- Reuse existing identity/access authority; do not create a new membership database or status system.
+- Current source reconciliation says the MTXID identity concept exists in the JAM3S model, but its exact implementation is incomplete and the relationship to the user-facing Your MtriX abstraction remains on HOLD. No live entitlement lookup is claimed.
+- When the existing route verifies an eligible status, show the public price and the applicable member price, entitlement reason and rule version. The identifier alone is not proof of contribution status, payment, reputation or entitlement.
+- If identity/status lookup is unavailable or fails, fall back to the public price and let the customer continue. Identity failure must never become a sales dead end.
+- Apply discounts only to eligible Carbon° scope, unless governing price rules explicitly include third-party costs. Avoid unapproved discount stacking.
+- Banker/existing commercial owner must validate cost, payment fees, pass-throughs, taxes and margin before the schedule goes live.
 
-Default to a coherent just-below threshold after the market tier and scope are fixed: 19 rather than 20; 49 rather than 50; 99 rather than 100; 499 rather than 500; 2.99 rather than 3.00. In ZAR, use the equivalent sensible threshold form, e.g. R4,999.99 instead of R5,000.
+## 5. Charm pricing — standing presentation rule
 
-Do not arbitrarily change the economic tier to get a nine ending. Keep all tax, discount, quote and invoice calculations exact, and retain a documented exception for contractual, enterprise, regulatory or margin-driven round pricing.
+Choose the commercially correct tier first, then prefer a coherent just-below threshold: 19 instead of 20; 49 instead of 50; 99 instead of 100; 499 instead of 500; 2.99 instead of 3.00; and similarly R4,999.99 rather than R5,000 where appropriate.
 
-## 5. Customer acquisition and offer continuity
+Do not randomly price a product at 129 instead of 131 merely to force a nine-ending—the price must still fit the correct market tier, scope and margin. Exact invoice totals, taxes, currency conversion and discounts remain arithmetically correct. Round prices are permitted for documented contract, enterprise, tax/regulatory or cost reasons. A nine-ending is a default, not a substitute for trust or sound price research.
 
-- Outbound prospecting is continuously weighted and evidence-led; inbound visitors from socials, LinkedIn, referrals, ecosystems and previous offers are routed according to intent.
-- An expired quote stays visible as historical context and can be refreshed/reissued; it never becomes an uncontextualized dead end or 404.
-- The neutral destination is Carbon° Business where a specific route cannot be recovered. Current quote terms are never silently revived.
-- The eventual domain is a funded migration milestone. Until then use stable proposal references and configurable canonical-base URLs; test redirects and domain cutover without new app/router duplication.
-- H0B° can educate and attract with comedy-led “If only they knew” content, but must remain H0B°—a clown, not a generic AI salesperson. Claims about member savings, search quality or availability must be verified.
+## 6. Inbound continuity, future domain, and H0B° pull
 
-## 6. Acceptance before price rules go live
+- Outbound penetration remains continuous and evidence weighted. Inbound from social channels, LinkedIn, old customers, referrals and ecosystem surfaces routes according to visitor intent.
+- An expired quote remains historical context; allow refresh/reissue under new terms. A missing or expired path that cannot be resolved routes to the neutral Carbon° Business entry/recovery route instead of ending in a preventable 404. Do not revive an old price silently.
+- Keep stable proposal/order references and configurable canonical-base URLs. The first Owner-funded domain is a future migration milestone; prepare redirects and path continuity but do not require a domain purchase before current work can advance.
+- H0B° may make funny “If only they knew” content about verified Carbon° and AMX benefits, but must remain H0B°: a clown, entertainer, roaster and narrator—not a generic AI assistant or sales bot. Every product claim, availability statement and discount must be verified; comedy first, a useful next step only when it fits.
 
-1. Banker / existing commercial owner verifies delivery cost, payment fees, pass-through costs, tax presentation and viable margin for each proposed anchor.
-2. CARBON° confirms the exact scope, exclusions, revision count, hosting/ownership terms and feature dependencies.
-3. T-COD implements the existing quote catalogue/configuration path only after authorization; unknown free-text scope routes to human review.
-4. Member pricing is not activated until an existing MTXID/Your MtriX status lookup is verified and fails safely to public price.
-5. Expired, missing, converted and active offer links pass routing tests without dead ends; domain-independent routing and redirects are tested.
-6. Price-ending, discount and tax arithmetic pass tests; historical quotes are not mutated.
-7. Pilot metrics capture qualified visits, concept engagement, paid demos, demo-to-build, accepted deliverables, human effort, margin and actual settlement.
-8. No price or conversion uplift is reported as realized until real data proves it.
+## 7. Launch/acceptance gates
 
-## Sources checked
+1. CARBON° confirms package scope, exclusions, number of revisions, content assumptions, ownership/hosting terms and dependencies.
+2. Banker/existing commercial owner confirms unit cost, payment fee, taxes and margin.
+3. T-COD uses the existing quote/routing substrate only after the price catalogue and scope contract are authorized.
+4. Free-text requests outside known price rules become reviewed change requests, not invented instant prices.
+5. Existing MTXID status is independently verified before member discounts go live; failure falls back to public price.
+6. Active, expired, converted and unresolved offers pass route-recovery tests; no avoidable dead ends. Existing product flows regression-test cleanly.
+7. Charm price, discount, tax and invoice calculations are exact; historical quote versions remain immutable.
+8. Pilot measures qualified traffic, concept engagement, paid demo purchases, demo-to-build conversion, production effort, contribution margin, accepted delivery and verified settlement.
+9. No conversion uplift or revenue is reported as achieved without observed evidence.
 
-Public prices and guides were checked on 14 October 2026. They are a benchmark snapshot, not a tariff. Recheck before publication and again by target country/currency.
+## Sources
+
+All public pages above were checked on 14 October 2026 or show a September/October 2026 publication/check date on the source itself. Public asking prices are comparison evidence, not proof of what every competitor charges or what Carbon° can profitably deliver. Refresh benchmarks by target country/currency before a live catalogue is published.
