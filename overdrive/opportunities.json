@@ -182,11 +182,43 @@
       "remains_unproven": "Identity/intent of any open sessions, paid purchase, any invoices paid outside this Stripe account, bank payout/settlement, and total receipts through non-Stripe rails.",
       "scope": "STRIPE_LIVE_MONEY_IN_READBACK_20261014_WAKE_03",
       "upgrade_action": "No duplicate contact to Kingston Stanley, Xubio or Synergy Interactive without buyer response or a new verified official route. Keep the existing offer/link and await attributable evidence. Banker must verify settlement before any PAID lifecycle transition."
+    },
+    {
+      "actual": "Fresh official-source recheck in the current wake: (1) Upwork AI Automation for Carpentry Inquiries remains listed at US$400 fixed price; official page displays 50+ proposals, 1 interview, 0 invites and client last viewed yesterday. Proposal/package remain prepared/not submitted. (2) SocialsGroup Marketing Operations Executive official role page remains open; remote contract anywhere with at least four hours/day UK overlap, rate negotiated on experience/work sample, approximately 20-minute application, one short call and a paid 1–2 week trial if advanced. (3) Scale Army official Brand & Category Growth Manager application remains open; South Africa eligible, remote contract, advertised US$2.5K/month subject to experience/location, PDF CV, applicant-recorded video and work sample required. (4) Black Bear Strategy official site continues to invite expert/collaboration enquiries; the existing contact was already submitted, so it remains WAITING and no duplicate contact was made.",
+      "changed": "Same current primary-source routes were re-read; there is no source evidence authorizing any lifecycle upgrade. Exact existing-account/Gmail deduplication and applicant-provided constraints remain unavailable. No new opportunity record, application, message or offer was created/sent.",
+      "classification": "CURRENT_PRIMARY_SOURCE_RECHECK; EXISTING_ROUTE_AND_ACCOUNT_DEDUPE_GATES_OPEN",
+      "observed_at": "2026-10-14T17:57:10.067Z",
+      "owner": "iSCOPE for discovery/dedupe; PRI for post-handoff progression and sole external commercial writer.",
+      "proof": [
+        "https://www.upwork.com/freelance-jobs/apply/Automation-for-Carpentry-Inquiries_~022109970451600320481/",
+        "https://internal.socialsgroup.com/careers/role-marketing-ops-executive",
+        "https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07/application",
+        "https://www.blackbear.co.za/"
+      ],
+      "remains_unproven": "Account-level prior submission/contact dedupe for new SocialsGroup role and current Scale Army role; owner’s exact UK-hour overlap, acceptable rate and full application facts; buyer acceptance, contract, invoice or payment.",
+      "scope": "ISCOPE_PRI_EXISTING_PRIMARY_ROUTE_RECHECK_20261014_WAKE_03",
+      "upgrade_action": "Do not submit or contact until the existing authenticated account/thread route is restored and duplicate application/contact status plus required owner facts are established. The prepared US$400 proposal remains the immediate fixed-scope candidate if its authenticated Upwork gate passes; SocialsGroup is the higher-fit confirmed paid-trial path if the dedupe/availability/rate gates pass. Continue waiting on already-sent Black Bear and existing Sales Closer offers; no duplicate follow-up."
+    },
+    {
+      "actual": "Additional public tender signals screened without creating opportunities or contacting issuers. Cederberg Municipality CED 09/2026-2027 (labour-only tourism/marketing/development) is mirrored by a tender bulletin as closing 16 Oct 2026 at 12:00 in Clanwilliam; the official documents/extension notice could not be retrieved directly in this wake. Q28 EDTEA 2026/2027 (market-link growth programme for 20 MSMEs, six months) is referenced by the national eTenders URL https://www.etenders.gov.za/Home/?id=172944, but that page returned the portal shell without the tender details; a secondary listing reports 20 Oct 2026 at 15:00 and compulsory in-person briefing with no date exposed. George Municipality GMT006/26-27 is directly verified from its official tender page and 76-page bid document; it closes 28 Oct 2026 at 12:00, but demands comparable recent tourism experience, a qualified multi-person team, a Garden Route office/permanent representative within 30 days, and hard-copy tender-box submission.",
+      "changed": "All three are preserved as raw near-matches only, not executable/qualified opportunities. The Cederberg source and missing bid details, the Q28 compulsory-briefing/official-document gap, and George's hard eligibility/team/local-presence/cash-carry gates are material blockers. No bid record added to avoid qualifying from incomplete evidence; no bid pack, purchase, contact, or submission occurred.",
+      "classification": "PUBLIC_TENDER_RAW_SIGNAL_ONLY; NOT_QUALIFIED; NO_NEW_OPPORTUNITY_RECORD",
+      "observed_at": "2026-10-14T17:57:10.067Z",
+      "owner": "iSCOPE for evidence qualification; legal entity/company-authorized Owner representative for tender eligibility, team credentials, tax/CSD and bid authority; PRI only after a valid qualified handoff.",
+      "proof": [
+        "Cederberg mirror: https://tenderbulletins.co.za/tender-bulletin/appointment-of-a-service-provider-to-conduct-tourism-marketing-and-development-in-the-cederberg-municipal-area-labour-only/",
+        "Q28 EDTEA official portal pointer: https://www.etenders.gov.za/Home/?id=172944 ; secondary listing: https://easytenders.co.za/tenders/q28-edtea-2026-2027-kzn-market-link-growth",
+        "George Municipality official notice: https://www.george.gov.za/supply-chain-categor/gmt006-26-27-tender-for-the-the-appointment-of-a-service-provider-to-supply-advertising-agency-services-for-destination-marketing-events-and-advertising-as-and-when-required-for-a-period-of-three/",
+        "George official bid document: https://www.george.gov.za/wp-content/uploads/2026/09/GMT006-of-26-27-Bid-Document-Advertising-Agency.pdf"
+      ],
+      "remains_unproven": "Tender document completeness/current status for CED 09 and Q28; Q28 compulsory briefing date and whether bidder attended; current company procurement eligibility, experience references, required staffing/certifications, CSD/tax/forms, local representation and authorized bid decision.",
+      "scope": "ISCOPE_TENDER_SCREEN_NOT_QUALIFIED_20261014_WAKE_03",
+      "upgrade_action": "Do not add or submit any tender until primary-source current document/status and all entity/team/briefing/physical-submission gates are verified. The George bid is not executable on current AMX evidence. Prioritize the existing US$400 fixed-scope route and SocialsGroup paid-trial route once their direct authenticated/account gates pass."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T17:54:17.175Z",
-  "last_reconciled_reason": "Fresh same-wake pre-flight, live Stripe and Close readback. Registry v1.2 root independently recomputed and matched; iSCOPE/PRI remain current. Stripe changed from 37 to 41 sessions (14 open/unpaid, 27 expired/unpaid, no customer attribution; zero payment/settlement objects). Public tender leads CED 09/2026-2027 and Q28 EDTEA were assessed only as unqualified raw signals because eligibility, mandatory-briefing status, live primary documents and authorized bid submission cannot be evidenced. No external commercial action performed.",
+  "last_reconciled_at": "2026-10-14T17:57:10.067Z",
+  "last_reconciled_reason": "Fresh wake rechecked existing commercial primary sources and triaged three public tender signals as not qualified/raw signal only. Current Stripe snapshot persisted immediately before this observation: 41 Checkout Sessions (14 open/unpaid, 27 expired/unpaid), zero customer attribution, zero charges/PaymentIntents/paid invoices/balance transactions. No lifecycle upgrade or external action occurred; existing authenticated access, application dedupe and owner fact gates remain open.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -249,7 +281,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-14T17:54:17.175Z",
+  "last_updated_at": "2026-10-14T17:57:10.067Z",
   "last_updated_by": "PRI",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
