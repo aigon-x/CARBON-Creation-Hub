@@ -377,3 +377,50 @@ A rotating hero/slideshow/scene sequence is an optional pattern where it strengt
 - **RGR:** any recurrence of a known preservation/identity failure is routed through existing Root/Route Intake to its responsible existing control; no parallel mechanism is created.
 
 The intent is **one Carbon° identity, multiple recognizable product experiences, and cumulative creative development without loss of approved work**. Search acceptance and the existing #18 product-convergence gates remain unchanged.
+
+
+---
+
+## 15. OWNER-APPROVED COMMERCIAL DISTRIBUTION, OFFER CONTINUITY AND PRICING — 2026-10-14
+
+This section translates the Blue State commercial-routing, member-pricing and charm-pricing rule into the existing CARBON° product experience. It extends the single existing convergence route; it does not create another application, sales system, quote authority or identity service.
+
+### One business, two continuously active paths
+
+**Global outbound:** lawful evidence-led discovery and weighted penetration across countries, sectors, problem classes and distribution rails. Target active, commercially plausible entities with a specific, evidence-backed reason to improve; qualify the entity and route before spending significant bespoke production effort.
+
+**Inbound:** social content, LinkedIn, referrals, first-party ecosystem surfaces, existing customers and prior offers must converge on one usable commercial experience. Do not drop inbound traffic into the cold-outbound qualification journey when a direct purchase or current customer route is appropriate.
+
+### Offer continuity and neutral recovery
+
+- Use existing proposal/customer references and the current portal/routing substrate.
+- An expired offer remains readable as expired where permitted. The visitor can request a refresh/reissue or choose the neutral CARBON° Business entry point. It must not be a terminal “expired, goodbye”, dead URL or 404.
+- Preserve context and history without claiming the historical quote is current. A refreshed quote has a new exact price/scope/version and its own validity terms.
+- Use stable path patterns and configurable canonical-base-URL settings. Build/test the current platform-hosted product so the future Owner-funded domain can be attached with controlled redirects, TLS, canonical links, email/QR/link updates and no broken historical offer routes. Domain purchase is deferred until funding is available; it is not a reason to pause current product and sales-flow preparation.
+- Keep Search #16 acceptance and #18 convergence gates unchanged. Domain readiness is portability and route recovery, not a license to alter current Search semantics.
+
+### Visual-first offer-to-build experience
+
+1. Show a bounded personalized visual concept, thumbnail or watermarked PDF with the business's opportunity and one clear next step.
+2. Offer either the defined full build or a paid, hosted, time-limited interactive demo. Demonstration access, source exposure and expiry are separate from quote validity.
+3. Let the buyer select predefined features and write custom requests. Update price only from a governed, versioned catalogue; route unknown work to a reviewed quote.
+4. Preserve a customer-returnable proposal/order, quote history, change requests and status. Confirm the final scope, price and terms; verify the applicable acceptance/payment requirements before starting production.
+5. Measure qualified engagement, demo payment, demo-to-build progression, effort/margin, accepted delivery and verified settlement. Conversion uplift remains a hypothesis until the pilot has real evidence.
+
+### Entry-price research recommendations
+
+The separately persisted pricing report records current South African public comparisons and initial proposed anchors. These are controlled launch hypotheses, not a universal international tariff. Global campaigns must repeat the comparable-price check for the target market/currency and account for actual delivery cost.
+
+Charm pricing is the default on public packages: choose a coherent market/value tier first, then present its threshold price using a just-below 9-ending / .99 convention. The system must not manipulate a reference price or distort the exact invoice arithmetic.
+
+### Participant / member price
+
+Show the public one-off price by default. Where the existing identity system can verify a qualifying MTXID/Your MtriX participation or contribution entitlement, show the applicable additional benefit transparently. Current implementation evidence does not yet justify claiming the identity-to-entitlement check is live; when it cannot be verified, continue at public price without blocking the buyer. The target 10%–20% member benefit band and exact status mapping require cost/margin and governance confirmation.
+
+### H0B° social pull
+
+H0B° can educate and attract through comedic “If only they knew” episodes about verified ecosystem benefits, intent search, useful listings, member entitlements and recovering old offers. H0B° remains a clown/entertainment character, not generic AI or a corporate sales agent. Product facts and discounts must be evidence-backed, and the CTA should serve the joke/content rather than flatten it into an advertisement.
+
+### Build boundary
+
+No payment, member-entitlement, custom-domain or production capability is marked implemented by this specification. T-COD must reuse current product and routing architecture, preserve existing identity and product boundaries, and pass route, price arithmetic, entitlement fallback, redirect and regression tests before claiming implementation.
