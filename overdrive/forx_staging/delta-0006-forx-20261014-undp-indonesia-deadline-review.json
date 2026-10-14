@@ -1,0 +1,61 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 6,
+  "batch_id": "forx-20261014-undp-indonesia-deadline-review-01",
+  "created_at": "2026-10-14T20:39:15.926Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261012-PROC-002",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Indonesia — Procurement Unit",
+      "surface": "SLPI Phase II Digital Monitoring, Evaluation and Learning (MEL) System and Dashboard Development; reference UNDP-IDN-00925,2.",
+      "observed_need": "Official public RFP lists digital MEL system and dashboard development and an amendment uploaded meeting minutes/sample data on 2026-10-07. The complete TOR, budget, implementation requirements, bidder eligibility and evaluation criteria are not yet examined.",
+      "outcome_space": [
+        "digital MEL systems",
+        "data dashboards",
+        "monitoring and evaluation",
+        "public procurement",
+        "Indonesia"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/315385",
+      "source_key": "url:https://www.ungm.org/Public/Notice/315385",
+      "source_observed_at": "2026-10-14T20:39:15.926Z",
+      "published": "2026-09-23",
+      "source_updated": "2026-10-07",
+      "deadline_at": "2026-10-16T10:00:00Z",
+      "deadline_local_sast": "2026-10-16T12:00:00+02:00",
+      "geography": {
+        "country": "Indonesia",
+        "locality": "UNKNOWN"
+      },
+      "public_route": {
+        "type": "official procurement portal",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated UNDP Quantum supplier portal; registration/account gate applies."
+      },
+      "contactability": "OFFICIAL_PROCUREMENT_ROUTE_PUBLISHED; bidder account and eligibility UNKNOWN",
+      "payer_hypothesis": "UNDP if selected; contract value and payment milestones UNKNOWN.",
+      "fit_note": "Potential systems/data work with a verifiable procurement route. Pre-bid meeting is dated 2026-10-01; attendance requirements are not established by the accessible notice. Relevant past performance, eligibility, TOR complexity and budget remain qualification gates.",
+      "source_rights": "Official public procurement metadata and brief factual summary retained with source URL. Avoid copying attached sample data or full tender documents into staging; follow tender confidentiality and reuse terms.",
+      "consumer_action": "URGENT iSCOPE triage before the 16-Oct-2026 10:00 UTC deadline: retrieve the complete RFP/TOR, verify mandatory bidder qualifications and whether the elapsed 1-Oct pre-bid conference is a hard gate, assess relevant delivered MEL/dashboard projects, delivery capacity and acceptable contract economics, then verify the existing Quantum supplier profile and exact Draft Response/current amendments. Do not create a new supplier profile. If any hard gate is unresolved or failed, preserve HOLD and do not submit. If all gates pass, route promptly to PRI for the bid decision and authorized external submission; FORX does not email or bid.",
+      "intake_custody": "FORX continuous wake 2026-10-12; pending Root Intake receipt.",
+      "last_rechecked_at": "2026-10-14T20:39:15.926Z",
+      "current_route_status": "OPEN_OFFICIAL_TENDER_DEADLINE_APPROACHING",
+      "execution_readiness": "TIME_CRITICAL_HOLD_TOR_ELIGIBILITY_AND_PORTAL_ROUTE",
+      "tender_deadline_recheck": {
+        "observed_at": "2026-10-14T20:39:15.926Z",
+        "official_url": "https://www.ungm.org/Public/Notice/315385",
+        "reference": "UNDP-IDN-00925,2 / RFP/UNDP/PRC0191675/032/2026",
+        "published_closing_time": "2026-10-16 06:00 GMT-4",
+        "closing_at_utc": "2026-10-16T10:00:00Z",
+        "closing_at_sast": "2026-10-16T12:00:00+02:00",
+        "approx_hours_remaining": 37.3,
+        "official_page_revision_status": "Page states no revisions have been made; last amendment dated 7-Oct-2026 added bidder minutes/sample data.",
+        "prebid_conference": "1-Oct-2026 Jakarta time; already elapsed, mandatory attendance status not resolved from the accessible notice."
+      },
+      "truth_boundary": "TIME-CRITICAL PROCUREMENT SIGNAL ONLY. No qualification, draft response, submission, buyer contact, award, contract, invoice or income is evidenced."
+    }
+  ]
+}
