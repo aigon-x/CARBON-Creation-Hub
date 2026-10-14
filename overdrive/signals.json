@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-14T09:16:42.272062+00:00",
+  "generated_at": "2026-10-14T10:09:21.639759+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -894,11 +894,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "iSCOPE: verify exact current listing state, existing source-bound workflow proof and net scope viability; recover authorized Upwork session. If every gate passes, hand the opportunity to PRI for a bounded proposal that states only evidenced capability and explicit acceptance criteria. Otherwise retain HOLD with the exact failed gate. No application or claim of qualification before proof and route pass.",
+      "next_action": "PRI: preserve as proof of a bounded workflow, not a live integration claim. Before submitting a proposal, restore the authorized Upwork session; verify the live listing and buyer/milestone terms; review this package against the buyer's exact scope; confirm a client-owned Sheet, Gemini provider/key, and usage budget. Only then propose the agreed scoped deployment/testing/handover and persist the external submission receipt. No bid, contract, invoice, or income is proven.",
       "opportunity_key": "upwork.com|carpentry-inquiry-automation|022109970451600320481",
       "priority": 8,
-      "routing_reason": "HOLD_AUTHENTICATED_ROUTE_AND_PROOF_CHECK",
-      "smallest_next_action": "iSCOPE: verify exact current listing state, existing source-bound workflow proof and net scope viability; recover authorized Upwork session. If every gate passes, hand the opportunity to PRI for a bounded proposal that states only evidenced capability and explicit acceptance criteria. Otherwise retain HOLD with the exact failed gate. No application or claim of qualification before proof and route pass.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE_AND_LIVE_INTEGRATION_CHECK",
+      "smallest_next_action": "PRI: preserve as proof of a bounded workflow, not a live integration claim. Before submitting a proposal, restore the authorized Upwork session; verify the live listing and buyer/milestone terms; review this package against the buyer's exact scope; confirm a client-owned Sheet, Gemini provider/key, and usage budget. Only then propose the agreed scoped deployment/testing/handover and persist the external submission receipt. No bid, contract, invoice, or income is proven.",
       "state": "DISCOVERED",
       "status": "WAITING",
       "thread_id": null
@@ -1880,11 +1880,11 @@
     "upwork.com|carpentry-inquiry-automation|022109970451600320481": {
       "due_at": null,
       "due_now": false,
-      "next_action": "iSCOPE: verify exact current listing state, existing source-bound workflow proof and net scope viability; recover authorized Upwork session. If every gate passes, hand the opportunity to PRI for a bounded proposal that states only evidenced capability and explicit acceptance criteria. Otherwise retain HOLD with the exact failed gate. No application or claim of qualification before proof and route pass.",
+      "next_action": "PRI: preserve as proof of a bounded workflow, not a live integration claim. Before submitting a proposal, restore the authorized Upwork session; verify the live listing and buyer/milestone terms; review this package against the buyer's exact scope; confirm a client-owned Sheet, Gemini provider/key, and usage budget. Only then propose the agreed scoped deployment/testing/handover and persist the external submission receipt. No bid, contract, invoice, or income is proven.",
       "opportunity_key": "upwork.com|carpentry-inquiry-automation|022109970451600320481",
       "priority": 8,
-      "routing_reason": "HOLD_AUTHENTICATED_ROUTE_AND_PROOF_CHECK",
-      "smallest_next_action": "iSCOPE: verify exact current listing state, existing source-bound workflow proof and net scope viability; recover authorized Upwork session. If every gate passes, hand the opportunity to PRI for a bounded proposal that states only evidenced capability and explicit acceptance criteria. Otherwise retain HOLD with the exact failed gate. No application or claim of qualification before proof and route pass.",
+      "routing_reason": "HOLD_AUTHENTICATED_ROUTE_AND_LIVE_INTEGRATION_CHECK",
+      "smallest_next_action": "PRI: preserve as proof of a bounded workflow, not a live integration claim. Before submitting a proposal, restore the authorized Upwork session; verify the live listing and buyer/milestone terms; review this package against the buyer's exact scope; confirm a client-owned Sheet, Gemini provider/key, and usage budget. Only then propose the agreed scoped deployment/testing/handover and persist the external submission receipt. No bid, contract, invoice, or income is proven.",
       "state": "DISCOVERED",
       "status": "WAITING",
       "thread_id": null
