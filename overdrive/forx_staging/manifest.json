@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 5,
+  "manifest_version": 6,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -104,14 +104,27 @@
         "FORX-PROSPECT-20261012-PROC-001"
       ],
       "segment_sequence": 4
+    },
+    {
+      "path": "overdrive/forx_staging/delta-0005-forx-20261014-padi-support-evidence-upsert.json",
+      "git_blob_sha": "c9d3444bfa25f20cd68ad8398d94450f67afac06",
+      "count": 1,
+      "batch_id": "forx-20261014-padi-support-evidence-upsert-01",
+      "source_keys": [
+        "url:https://play.google.com/store/apps/details?id=com.nexgenux.padi"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261008-037"
+      ],
+      "segment_sequence": 5
     }
   ],
   "current_unique_source_keys": 947,
-  "gross_observation_versions": 949,
+  "gross_observation_versions": 950,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
-  "next_segment_sequence": 5,
-  "last_updated": "2026-10-14T20:23:11.778Z",
+  "next_segment_sequence": 6,
+  "last_updated": "2026-10-14T20:33:31.974Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
