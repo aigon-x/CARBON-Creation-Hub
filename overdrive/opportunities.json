@@ -46,6 +46,28 @@
       "remains_unproven": "Live runtime/source SHA for relevant Matrix capabilities; current Upwork authenticated application route; actual working WhatsApp/GHL demo; final affordability and acceptance/milestone details. No proposal, buyer response, contract, invoice or payment is proven.",
       "scope": "Evidence-led buyer discovery — AI workflow builds",
       "upgrade_action": "Verify current proof and the authorized platform route; if credible, send the scoped opportunity to PRI for review. Do not mark either candidate QUALIFIED until the proof and route gates pass."
+    },
+    {
+      "actual": "Connected Stripe account AMILLIMATRIX in live mode was read for active payment links, all Checkout Sessions, PaymentIntents, Charges, paid Invoices and charge-type Balance Transactions. Five existing payment links are active. All 30 Checkout Sessions returned are open/unpaid: Kingston Stanley 4; Xubio 4; Synergy Interactive 8; JGMI by Carbon 3; Micro-Matrix Quick Technical Review 11. No customer email is present on these sessions. PaymentIntent list/search, Charge list/search, paid-invoice search and charge Balance Transaction list returned zero records.",
+      "changed": "Records a fresh provider readback for the existing payment rail. Does not infer buyer intent from open sessions, does not claim global revenue is zero, and does not create or deactivate links.",
+      "classification": "VERIFIED_STRIPE_READBACK_NO_PAYMENT_EVIDENCED",
+      "expected": "Every buyer-funded offer tracks external reply, active checkout, completed payment and realized settlement as separate states. Current session state alone must not be treated as buyer action or revenue.",
+      "observed_at": "2026-10-14T11:09:36.582Z",
+      "owner": "PRI with Banker retaining settlement truth",
+      "proof": [
+        "Stripe live account acct_1UE0UBHyzt7gyqmn",
+        "GET /v1/payment_links?active=true — 5 active links",
+        "GET /v1/checkout/sessions?limit=100 — 30/30 open/unpaid, has_more=false",
+        "GET /v1/payment_intents?limit=100 — 0 records",
+        "GET /v1/payment_intents/search status:succeeded — 0 records",
+        "GET /v1/charges?limit=100 — 0 records",
+        "GET /v1/charges/search status:succeeded — 0 records",
+        "GET /v1/invoices/search status:paid — 0 records",
+        "GET /v1/balance_transactions?type=charge — 0 records"
+      ],
+      "remains_unproven": "Whether any open session was created by a buyer, as customer_email is null and no buyer event has been matched; payments received through non-Stripe rails; payout/settlement through bank; total business revenue outside this connected Stripe account.",
+      "scope": "STRIPE_LIVE_MONEY_IN_READBACK_20261014",
+      "upgrade_action": "Preserve existing outreach state; no further unsolicited follow-up to Kingston Stanley, Synergy Interactive or Xubio absent buyer response or new route evidence. Resolve the missing authorized sender capability and continue other lawful direct-buyer opportunities. Banker must independently verify any realized cash/settlement before PAID is recorded."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
@@ -1624,19 +1646,39 @@
           "thread_id": "1a115eaaa87931dd",
           "observed_at": "2026-10-10T05:18:42Z",
           "summary": "One governed in-thread follow-up sent after current-route and duplicate-history verification."
+        },
+        {
+          "kind": "STRIPE_ACTIVE_LINK_UNPAID_READBACK_KINGSTON_STANLEY_20261014",
+          "observed_at": "2026-10-14T11:09:36.582Z",
+          "source": "STRIPE_LIVE_ACCOUNT_READBACK",
+          "source_id": "STRIPE_LIVE_MONEY_IN_READBACK_20261014",
+          "summary": "Existing offer payment link remains active. 4 checkout sessions are open/unpaid; none is attributed to a customer because all returned sessions have customer_email=null. No completed checkout, successful PaymentIntent/Charge, paid invoice or charge-type balance transaction was found in this account readback. Do not classify as buyer click, purchase, contract or revenue.",
+          "url": "https://buy.stripe.com/28EeVd597dPy9UdaiuaR203"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-10T05:18:42Z",
       "last_reconciled_at": "2026-10-10",
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail reconciled 2026-10-14T11:09:36.582Z: link active; 4 open/unpaid sessions with no customer attribution; no successful payment is evidenced. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
       "opportunity": "sourcing-overflow-pilot",
       "organization": "Kingston Stanley",
       "recipient": "vanessa@kingstonstanley.com",
       "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
       "state": "SUBMITTED",
-      "title": "48-hour sourcing overflow pilot"
+      "title": "48-hour sourcing overflow pilot",
+      "payment_rail_readback": {
+        "observed_at": "2026-10-14T11:09:36.582Z",
+        "stripe_mode": "LIVE",
+        "payment_link_status": "ACTIVE",
+        "open_unpaid_checkout_sessions": 4,
+        "successful_payment_intents": 0,
+        "successful_charges": 0,
+        "paid_invoices": 0,
+        "payment_received": "NOT_EVIDENCED_IN_CONNECTED_STRIPE_ACCOUNT",
+        "customer_attribution": "UNKNOWN",
+        "settlement_truth_owner": "BANKER"
+      }
     },
     "kjplumbing.co.za|quote-request-pilot|2026-10-07": {
       "canonical_ingest": {
@@ -3570,19 +3612,39 @@
           "thread_id": "1a115eaa267e2344",
           "observed_at": "2026-10-10T05:18:52Z",
           "summary": "One governed in-thread follow-up sent after current-route and duplicate-history verification."
+        },
+        {
+          "kind": "STRIPE_ACTIVE_LINK_UNPAID_READBACK_SYNERGY_INTERACTIVE_20261014",
+          "observed_at": "2026-10-14T11:09:36.582Z",
+          "source": "STRIPE_LIVE_ACCOUNT_READBACK",
+          "source_id": "STRIPE_LIVE_MONEY_IN_READBACK_20261014",
+          "summary": "Existing offer payment link remains active. 8 checkout sessions are open/unpaid; none is attributed to a customer because all returned sessions have customer_email=null. No completed checkout, successful PaymentIntent/Charge, paid invoice or charge-type balance transaction was found in this account readback. Do not classify as buyer click, purchase, contract or revenue.",
+          "url": "https://buy.stripe.com/eVq5kD30ZeTCfex0HUaR201"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-10T05:18:52Z",
       "last_reconciled_at": "2026-10-10",
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail reconciled 2026-10-14T11:09:36.582Z: link active; 8 open/unpaid sessions with no customer attribution; no successful payment is evidenced. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
       "opportunity": "candidate-sourcing-pilot",
       "organization": "Synergy Interactive",
       "recipient": "blake@sinyc.com",
       "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
       "state": "SUBMITTED",
-      "title": "24-hour candidate sourcing pilot"
+      "title": "24-hour candidate sourcing pilot",
+      "payment_rail_readback": {
+        "observed_at": "2026-10-14T11:09:36.582Z",
+        "stripe_mode": "LIVE",
+        "payment_link_status": "ACTIVE",
+        "open_unpaid_checkout_sessions": 8,
+        "successful_payment_intents": 0,
+        "successful_charges": 0,
+        "paid_invoices": 0,
+        "payment_received": "NOT_EVIDENCED_IN_CONNECTED_STRIPE_ACCOUNT",
+        "customer_attribution": "UNKNOWN",
+        "settlement_truth_owner": "BANKER"
+      }
     },
     "socialsgroup.com|high-ticket-sales-closer|2026-10-10": {
       "buyer_fit": "Strong match to evidenced B2B sales, strategic-account and conversion experience. External message led with buyer-relevant commercial outcomes, not internal AMX terminology.",
@@ -4165,19 +4227,39 @@
           "thread_id": "1a115eab0eca3203",
           "observed_at": "2026-10-10T05:18:47Z",
           "summary": "One governed in-thread follow-up sent after current-route and duplicate-history verification."
+        },
+        {
+          "kind": "STRIPE_ACTIVE_LINK_UNPAID_READBACK_XUBIO_20261014",
+          "observed_at": "2026-10-14T11:09:36.582Z",
+          "source": "STRIPE_LIVE_ACCOUNT_READBACK",
+          "source_id": "STRIPE_LIVE_MONEY_IN_READBACK_20261014",
+          "summary": "Existing offer payment link remains active. 4 checkout sessions are open/unpaid; none is attributed to a customer because all returned sessions have customer_email=null. No completed checkout, successful PaymentIntent/Charge, paid invoice or charge-type balance transaction was found in this account readback. Do not classify as buyer click, purchase, contract or revenue.",
+          "url": "https://buy.stripe.com/eVqbJ1gRPeTCd6p76iaR202"
         }
       ],
       "execution_owner": "PRI",
       "execution_readiness": "WAITING",
       "last_action_at": "2026-10-10T05:18:47Z",
       "last_reconciled_at": "2026-10-10",
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges.",
+      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail reconciled 2026-10-14T11:09:36.582Z: link active; 4 open/unpaid sessions with no customer attribution; no successful payment is evidenced. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
       "opportunity": "onboarding-support-pilot",
       "organization": "Xubio",
       "recipient": "lnotrica@xubio.com",
       "routing_reason": "INITIAL_PLUS_ONE_GOVERNED_FOLLOWUP_SENT_NO_INBOUND_YET",
       "state": "SUBMITTED",
-      "title": "48-hour onboarding-support pilot"
+      "title": "48-hour onboarding-support pilot",
+      "payment_rail_readback": {
+        "observed_at": "2026-10-14T11:09:36.582Z",
+        "stripe_mode": "LIVE",
+        "payment_link_status": "ACTIVE",
+        "open_unpaid_checkout_sessions": 4,
+        "successful_payment_intents": 0,
+        "successful_charges": 0,
+        "paid_invoices": 0,
+        "payment_received": "NOT_EVIDENCED_IN_CONNECTED_STRIPE_ACCOUNT",
+        "customer_attribution": "UNKNOWN",
+        "settlement_truth_owner": "BANKER"
+      }
     },
     "ypai.ai|qa-reviewer-adjudicator|remote-south-africa": {
       "buyer_fit": "Remote South Africa; structured QA review/adjudication, rubric scoring, disagreement resolution and written feedback align with evidenced QA/evaluation capability.",
