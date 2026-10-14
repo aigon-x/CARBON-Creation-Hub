@@ -1,4 +1,4 @@
-import csv, hashlib, io, json, os, sqlite3, tempfile, threading, zipfile
+import csv, hashlib, io, json, os, shutil, sqlite3, tempfile, threading, zipfile
 from datetime import datetime, timezone
 from urllib.parse import urlparse
 
