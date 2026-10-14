@@ -1117,3 +1117,65 @@ This specific migration is PASS only when:
 
 **This merge does not prove Matrix-wide behavioral adoption.** Each existing runtime needs an attributable post-flight sample complying with this contract before universal adoption may be reported PASS.
 
+
+
+---
+
+# OWNER-AUTHORIZED CARBON° BRAND / VISUAL-CONTINUITY INVARIANT — 2026-10-14
+
+**Owner disposition:** APPROVED DIRECTION — PRESERVE AND INTEGRATE.  
+**Scope:** CARBON° Business umbrella identity, connected product identities, brand presentation and asset continuity.  
+**Authority boundary:** This is an additive owner-authorized product/identity invariant, not a new worker, office, design authority, evidence standard, scorer, queue or governance system. Existing CARBON°, T-MED, T-COD and ROOT/T-GOV boundaries remain controlling.
+
+## 1. Master identity and hierarchy
+
+- **Umbrella name:** Carbon° Business.
+- **Underlying positioning line:** The Degree of Business.
+- Preserve the established Carbon° wordmark, typography, degree-symbol motif, black/carbon/graphite/white foundation and existing premium look. Do not casually re-font, flatten, rename or replace the identity.
+- CARBON° remains the recognizable master identity. Existing, approved subsystem colours are retained as contextual product identifiers: colour may vary by product/experience, while the common wordmark, degree mark, dark foundation and art direction maintain family recognition.
+- Do not force every subsystem into one accent colour, and do not invent a new permanent colour assignment merely from an exploratory mock-up. Preserve current approved palettes and assignments.
+- When the client’s own brand is the purpose of a commissioned surface (for example, JGMI), the client brand remains dominant. A discreet “Created by Carbon° Business” credit is sufficient where attribution is agreed; Carbon° must not compete with the client’s brand.
+
+## 2. The Carbon° visual signature
+
+Every product may use subject-appropriate imagery, but the imagery must continue to feel recognizably Carbon°: deliberate composition, dark/carbon material language where appropriate, cinematic and controlled lighting, depth, texture, dimensionality, strong contrast and a premium sense of precision. Avoid generic stock-tech imagery that could belong to any unrelated vendor.
+
+- The existing architectural/house visual is an important approved reference and may remain a signature hero anchor. It is not a compulsory image for every product or every scene.
+- Visual variety is welcomed where it expresses the actual product: architecture and physical space; creative/studio production; products and commerce; people and business; discovery/network signals; data/intelligence and abstract systems.
+- A curated slideshow, rotating hero, or scene sequence is an optional presentation treatment—not a mandatory redesign. Use it only where it improves storytelling and orientation. Preserve performance, legibility, keyboard/touch usability and reduced-motion/accessibility behavior.
+- More purposeful imagery and richer visual depth may replace text overload, but existing strong copy, definitions and factual detail are preserved. Improve hierarchy and presentation; do not discard substance.
+- Subsystem colours identify the active product. Imagery, composition and motion provide variation. They should not fragment the master identity.
+
+## 3. Source assets, Grok folder and preservation
+
+The existing Grok folder and its contents are **PRESERVED SOURCE / REFERENCE ASSETS**. Do not discard, overwrite, devalue or replace the folder or its contents because a new concept was approved. Preserve its images, archives/ZIPs, notes, learnings, attribution, rights information, provenance and historical context. Review and reuse relevant assets when the authorized Drive route is available; until directly inspected, do not claim an inventory or content-level verification of that folder.
+
+Asset lifecycle remains governed by existing asset/rights controls: source/reference material is not automatically a ready-to-market master solely because of its provider or folder location. Promote individual assets only through the existing rights/provenance/quality review. Rebuild or re-render provider-dependent assets where needed without stripping legally required attribution or destroying source provenance.
+
+## 4. CDD — existing evidence/positioning law
+
+Use the existing Public Evidence & Commercial Positioning Standard and its established **Capability Downselling Drift (CDD)** enforcement diagnostic. Do not create a second evidence standard.
+
+- Preserve the strongest commercially meaningful wording that current evidence supports; do not weaken it merely because the concept is unusual or the creator is uncomfortable asserting quality.
+- Equally, never claim that a visual concept is implemented, deployed, buyer-viewable, exclusive, legally cleared or fully production-ready unless the corresponding evidence exists.
+- Owner approval of the Carbon° direction means the **direction/concept is approved**. It does not by itself prove production assets, slideshow behavior, website implementation, trademark clearance, Grok-folder inspection or deployment.
+- Keep necessary boundaries and unknowns in the evidence/detail layer rather than using them to dilute the core design statement.
+
+## 5. RGR — recurrence under existing controls
+
+Recurrent Governance Regression (RGR) remains a non-authoritative recurrence classification, not an office, worker, institution or independent control plane. If a later handoff or implementation repeats a known identity/preservation failure—such as flattening the palette into one global colour, replacing the accepted font, losing the degree mark, discarding the Grok folder, replacing strong imagery with generic visuals, or overwriting approved source assets—route the occurrence through the existing Root/Route Intake and map it to the responsible existing control. Restore the governed source, compare against the approved direction and independently read back the correction. Do not create parallel RGR machinery.
+
+## 6. Acceptance and continuity
+
+A future implementation claiming compliance must show:
+
+1. The master Carbon° identity and typography remain intact.
+2. Existing subsystem palettes are preserved and remain context-specific.
+3. The house/architectural reference and other approved imagery remain available; the visual system supports variety without losing Carbon° character.
+4. The Grok folder and existing asset/source history remain intact; any source inspection claims are evidence-backed.
+5. Any slideshow/rotation is purposeful and tested, or is explicitly deferred—never claimed implemented from this specification alone.
+6. Existing written content and factual accuracy are preserved while navigation, hierarchy, imagery and depth are refined.
+7. CDD is assessed under the existing public-evidence standard; RGR, if triggered, is routed as recurrence under existing controls only.
+8. The exact source, changed artifact, review/test evidence and independent readback are recorded before implementation is called complete.
+
+**Preservation rule:** add to Carbon°; do not erase the work that made Carbon° recognizable. The approved visual direction should mature through controlled extensions, not repeated identity resets.
