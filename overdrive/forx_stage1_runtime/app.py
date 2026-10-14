@@ -36,6 +36,7 @@ if PARTITION_SIZE < 1:
 
 state = {
     "status": "STARTING",
+    "phase": "STARTUP",
     "started_at": None,
     "completed_at": None,
     "node_count": 0,
@@ -505,6 +506,15 @@ def load_geonames():
                             )
                             if cur.rowcount == 0:
                                 duplicates += 1
+                            if raw_rows % 50000 == 0:
+                                print(
+                                    "FORX_PROGRESS " + json.dumps(
+                                        {"run_id": RUN_ID, "stage": "GEONAMES_INGEST", "raw_rows": raw_rows,
+                                         "rejected": rejected, "duplicates": duplicates},
+                                        separators=(",", ":"), sort_keys=True,
+                                    ),
+                                    flush=True,
+                                )
 
             conn.commit()
         finally:
@@ -791,6 +801,7 @@ def status():
     r = state.get("receipt") or {}
     return {
         "status": state["status"],
+        "phase": state.get("phase"),
         "mode": MODE,
         "run_id": RUN_ID,
         "node_count": state.get("node_count", 0),
