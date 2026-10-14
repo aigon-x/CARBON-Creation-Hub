@@ -136,7 +136,7 @@
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
   "last_updated_at": "2026-10-14",
-  "last_updated_by": "PRI",
+  "last_updated_by": "iSCOPE",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -4519,7 +4519,7 @@
       "title": "AI Automation for Carpentry Inquiries",
       "state": "DISCOVERED",
       "execution_owner": "iSCOPE",
-      "execution_readiness": "HOLD_AUTHENTICATED_ROUTE_AND_LIVE_INTEGRATION_CHECK",
+      "execution_readiness": "HOLD_AUTHENTICATED_UPWORK_ROUTE",
       "proof_of_work_route": "FIXED_SCOPE",
       "capital_direction": "INBOUND / FIXED_PRICE",
       "payment": "US$400 fixed price through Upwork; milestone funding/escrow and net payout terms unverified.",
@@ -4548,6 +4548,22 @@
           "summary": "Created a Google Apps Script starter implementing a single authenticated JSON intake channel, structured AI extraction through a configurable Gemini API, deduplicated Google Sheets rows with reference IDs and lifecycle status, owner email notification, and error logging. Deterministic local tests passed 12/12, including ten fictional inquiry cases, duplicate prevention, missing-information handling, unauthorized request rejection, malformed JSON, and simulated AI/email failures. All external services were mocked; the asset is not a deployed production integration.",
           "artifact_uri": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
           "artifact_sha256": "22cfe4b726929cf779f8fc44ede83411d28c6d76273f46d229d4b4e2189153b9"
+        },
+        {
+          "kind": "CURRENT_PRIMARY_LISTING_REVERIFIED_20261014",
+          "observed_at": "2026-10-14T11:21:47.367Z",
+          "source": "UPWORK_PUBLIC_LISTING",
+          "url": "https://www.upwork.com/freelance-jobs/apply/Automation-for-Carpentry-Inquiries_~022109970451600320481/",
+          "summary": "Opened directly and re-read 2026-10-14. Listing title AI Automation for Carpentry Inquiries; posted October 13, 2026; US$400 fixed-price; worldwide; buyer in Belgium joined October 13; 50+ proposals and 1 interview; last viewed yesterday at read time. Exact scope: one inquiry channel, AI summary/extraction, customer/project/location/description/timeline/missing data, Google Sheets unique reference/status, email notification, basic error handling, duplicate prevention, ten fictional tests, documentation and commercial reuse rights."
+        },
+        {
+          "kind": "PROPOSAL_DRAFT_PREPARED_NOT_SUBMITTED_20261014",
+          "observed_at": "2026-10-14T11:21:47.367Z",
+          "source": "CURRENT_ASSISTANT_RUN",
+          "source_id": "AMX-ISCOPE-20261014-CARPENTRY-PROPOSAL-01",
+          "summary": "Prepared a buyer-specific proposal describing the local Apps Script starter and the exact 12/12 mocked test scope; explicitly states it is not a deployed production integration and requires buyer-owned Sheet/provider credentials, one agreed intake channel, an approved usage budget, and a controlled end-to-end test. Not submitted because existing authorized Upwork browser/account route remains unavailable.",
+          "attachment_uri": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
+          "proposal_status": "PREPARED_NOT_SUBMITTED"
         }
       ],
       "constraints": [
@@ -4556,7 +4572,7 @@
         "Recover the existing authorized Upwork account/session; no duplicate account and no off-platform contact.",
         "Bound hosting, API, setup and maintenance costs against the US$400 ceiling and clarify exactly one intake channel before any binding offer."
       ],
-      "next_action": "PRI: preserve as proof of a bounded workflow, not a live integration claim. Before submitting a proposal, restore the authorized Upwork session; verify the live listing and buyer/milestone terms; review this package against the buyer's exact scope; confirm a client-owned Sheet, Gemini provider/key, and usage budget. Only then propose the agreed scoped deployment/testing/handover and persist the external submission receipt. No bid, contract, invoice, or income is proven.",
+      "next_action": "Proposal draft now prepared and attached proof package exists. This has NOT been submitted. Restore the existing authorized Upwork browser/account; verify the live listing, buyer/milestone funding and terms, and whether proposal submission is still open; submit once only if all gates pass, attach the package, and persist the actual submission receipt. No application, contract, delivery acceptance, invoice, or income is currently evidenced.",
       "proof_asset": {
         "status": "LOCAL_PROOF_OF_WORK_PACKAGE_CREATED",
         "artifact": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
@@ -4564,7 +4580,18 @@
         "tests": "12/12 PASS using local Node.js mocks; no live API, network or email calls",
         "limitation": "Not deployed; live Gemini, Google Sheets, and email integrations, buyer-account access, and production acceptance are unverified. Package has not been committed/read back from a canonical repository path.",
         "created_at": "2026-10-14"
-      }
+      },
+      "proposal_draft": {
+        "status": "PREPARED_NOT_SUBMITTED",
+        "created_at": "2026-10-14T11:21:47.367Z",
+        "target_listing_url": "https://www.upwork.com/freelance-jobs/apply/Automation-for-Carpentry-Inquiries_~022109970451600320481/",
+        "body": "Hi,\n\nI built a Google Apps Script starter for this intake pattern: one authenticated JSON/webhook channel, AI extraction of customer and project details with missing-information flags, a deduplicated Google Sheets record with reference ID and status, owner email notification, and error logging.\n\nThe local test harness passes 12/12 mock tests, including ten fictional inquiries, duplicate submissions, missing information, malformed/oversized input, unauthorized requests, and simulated AI/email failures. To be precise, this is a tested proof-of-work package, not a deployed production integration; the real Google, Gemini, and email connections still need to be configured in your account.\n\nFor your fixed-price scope, I would configure one agreed intake channel in your Google account, connect a buyer-owned Sheet and your authorized AI/email credentials, run the ten fictional test cases plus one agreed controlled live test, verify duplicate and failure behavior, then hand over the source and setup/operating documentation. I would keep provider usage under your approved account and budget; no paid API calls would be made without your authorization.\n\nAcceptance would be: one inquiry captured, structured fields and missing details recorded, unique reference/status, owner notification, duplicate prevention, logged failures, ten fictional cases passing, one controlled end-to-end test, and documentation/source handover.\n\nBefore implementation, I would confirm which existing form or channel should feed the webhook and how you want the Sheet statuses named.\n\nRegards",
+        "attachment": "sandbox:/mnt/data/carpentry-inquiry-automation-pilot.zip",
+        "attachment_sha256": "22cfe4b726929cf779f8fc44ede83411d28c6d76273f46d229d4b4e2189153b9",
+        "truthful_claim_boundary": "12/12 local mock tests passed; no live Google Sheets, Gemini, or email integration/deployment is claimed. Do not imply client account setup or production acceptance already occurred.",
+        "submission_gate": "Existing authorized Upwork session must be restored; re-check buyer/milestone terms and live listing in authenticated context before submitting once."
+      },
+      "source_verified_at": "2026-10-14T11:21:47.367Z"
     }
   },
   "updated_at": "2026-10-13",
