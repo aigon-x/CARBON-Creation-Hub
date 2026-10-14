@@ -339,11 +339,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity_key": "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "smallest_next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
@@ -591,11 +591,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 9 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity_key": "sinyc.com|candidate-sourcing-pilot|2026-10-07",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 9 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "smallest_next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
@@ -675,11 +675,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity_key": "xubio.com|onboarding-support-pilot|2026-10-07",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "smallest_next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
@@ -709,7 +709,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-14T18:37:12.568149+00:00",
+  "generated_at": "2026-10-14T18:40:15.156648+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1364,11 +1364,11 @@
     "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07": {
       "due_at": null,
       "due_now": false,
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity_key": "kingstonstanley.com|sourcing-overflow-pilot|2026-10-07",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "smallest_next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
@@ -1784,11 +1784,11 @@
     "sinyc.com|candidate-sourcing-pilot|2026-10-07": {
       "due_at": null,
       "due_now": false,
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 9 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity_key": "sinyc.com|candidate-sourcing-pilot|2026-10-07",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 9 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "smallest_next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
@@ -1988,11 +1988,11 @@
     "xubio.com|onboarding-support-pilot|2026-10-07": {
       "due_at": null,
       "due_now": false,
-      "next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "opportunity_key": "xubio.com|onboarding-support-pilot|2026-10-07",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "WAIT for a buyer-initiated material response in the existing thread. Do not send another unsolicited follow-up unless new buyer evidence or an explicit official route emerges. Payment rail rechecked 2026-10-14T11:45:11.882Z: link active; 6 open/unpaid sessions with no customer attribution; live account returned 0 charges, 0 PaymentIntents and 0 charge balance transactions. The latest follow-up is already sent; an additional checkout-link message is an UNSENT draft and must not be sent without a buyer response or new authorized route.",
+      "smallest_next_action": "NO FURTHER OUTBOUND CONTACT. Reconcile the 13-Oct Outlook-sent checkout-link email against the separate Close draft and the existing sender/authority record. Monitor only for a buyer-initiated reply through an authorized existing route; do not send another follow-up or resend. Stripe sessions are not customer-attributed and remain unpaid; Banker must verify any settlement before PAID.",
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
