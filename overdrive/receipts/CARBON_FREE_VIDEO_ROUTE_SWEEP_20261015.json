@@ -81,7 +81,8 @@
         "https://support.google.com/youtube/answer/15260303",
         "https://support.google.com/youtube/answer/56100",
         "https://support.google.com/youtube/answer/16631240"
-      ]
+      ],
+      "cost_evidence": "Official YouTube Help documents this as an experimental native creation workflow but does not state a price or credit requirement on that page. Lack of a stated charge is not proof that this account is eligible or that usage is free; verify live account access, limits and any charge before classifying ZERO_COST."
     },
     {
       "provider": "Hugging Face ZeroGPU / Wan2.2",
