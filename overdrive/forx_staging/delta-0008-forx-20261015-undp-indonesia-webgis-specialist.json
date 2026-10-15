@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "logical_store": "FORX_PROSPECT_STAGING",
+  "segment_kind": "APPEND_UPSERT",
+  "segment_sequence": 8,
+  "batch_id": "forx-20261015-undp-indonesia-webgis-specialist-01",
+  "created_at": "2026-10-15T06:20:00Z",
+  "records": [
+    {
+      "id": "FORX-PROSPECT-20261015-PROC-001",
+      "state": "RAW_UNQUALIFIED",
+      "organization": "UNDP Indonesia — Procurement Unit",
+      "surface": "IT/WebGIS Dashboard Specialist, individual consultant; reference UNDP-IDN-00930.",
+      "observed_need": "The official UNGM notice describes design, development, integration, testing and handover of a digital Blue Carbon Readiness Framework assessment system and WebGIS dashboard, including methodology/indicator translation, database development, geospatial and non-spatial integration, interoperability, UAT, documentation, training and handover.",
+      "outcome_space": [
+        "digital assessment systems",
+        "WebGIS dashboard",
+        "geospatial data integration",
+        "data interoperability",
+        "system testing and handover",
+        "Indonesia"
+      ],
+      "source": "https://www.ungm.org/Public/Notice/316659",
+      "source_key": "url:https://www.ungm.org/Public/Notice/316659",
+      "source_observed_at": "2026-10-15T06:20:00Z",
+      "published": "2026-10-02",
+      "deadline_at": "2026-10-16T16:30:00Z",
+      "deadline_local_sast": "2026-10-16T18:30:00+02:00",
+      "geography": {
+        "country": "Indonesia",
+        "locality": "Home-based in Indonesia; travel to Jakarta and other Indonesian locations may be required; ability to perform from outside Indonesia UNKNOWN."
+      },
+      "contract_duration": "90 working days within 7 months",
+      "public_route": {
+        "type": "official UNDP Quantum procurement portal",
+        "url": "https://supplier.quantum.partneragencies.org",
+        "submission_mode": "Authenticated supplier/consultant portal; existing-profile status and account access UNKNOWN.",
+        "existing_profile_rule": "Use an existing supplier profile if one already exists; do not create another profile."
+      },
+      "contactability": "OFFICIAL_PROCUREMENT_ROUTE_PUBLISHED; applicant eligibility, portal account and submission readiness UNKNOWN.",
+      "payer_hypothesis": "UNDP if selected; rate, total value, payment milestones and contract terms UNKNOWN.",
+      "fit_note": "The scope overlaps at a high level with AMX work on data pipelines, systems and dashboards, but this is not proof of qualification. Demonstrable WebGIS/geospatial engineering, database/interoperability experience, required qualifications/references, location feasibility and delivery capacity have not been verified. The full solicitation/TOR is not readable through the current source-inspection route.",
+      "source_rights": "Public notice metadata and a bounded factual summary only. Retrieve and respect full solicitation terms before using any tender or sample data.",
+      "execution_readiness": "TIME_CRITICAL_HOLD_TOR_EXPERIENCE_GEOGRAPHY_AND_PORTAL_ROUTE",
+      "commercial_status": "RAW_UNQUALIFIED",
+      "consumer_action": "Urgent iSCOPE triage before the published 2026-10-16 16:30 UTC deadline: retrieve the complete TOR and amendments; verify mandatory education, skills, prior WebGIS/geospatial projects, references, geography/travel and location rules, fee/budget and milestone terms; dedupe against any existing Quantum profile; confirm a permissible submit route. Do not qualify or submit until each hard gate is evidenced. If gates pass, route to PRI for a bid decision and authorized portal submission; FORX does not contact or submit.",
+      "intake_custody": "Existing Root Intake issue #31; source independently checked against the official UNGM notice on 2026-10-15.",
+      "truth_boundary": "RAW PROCUREMENT SIGNAL ONLY. No qualification, application, proposal, submission, award, contract, invoice or income is evidenced."
+    }
+  ]
+}
