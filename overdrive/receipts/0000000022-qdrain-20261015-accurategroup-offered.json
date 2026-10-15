@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-10-15T13:27:41.769252+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "OUTBOUND_SEND",
+        "observed_at": "2026-10-15T13:16:37Z",
+        "source": "OUTLOOK",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXgwAAAA==",
+        "subject": "A fixed-fee sourcing test for one technology or AI vacancy",
+        "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source links, fit rationale and pre-screen notes within 24 hours after receipt of brief and must-have criteria."
+      }
+    ],
+    "opportunity_key": "accurategroup.co.za|technology-sourcing-pilot|2026-10-15",
+    "to": "OFFERED"
+  },
+  "sequence": 22,
+  "sha256": "88568e4720c277298feacecd2b7c2969c7307404fab0ca3e8f575846e26fca96",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261015-accurategroup-offered"
+}

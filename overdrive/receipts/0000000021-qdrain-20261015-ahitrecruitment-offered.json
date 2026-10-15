@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-10-15T13:27:41.768811+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "OUTBOUND_SEND",
+        "observed_at": "2026-10-15T13:16:18Z",
+        "source": "OUTLOOK",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXggAAAA==",
+        "subject": "A 24-hour sourcing pilot for one live IT or engineering vacancy",
+        "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source-linked shortlist, fit notes and screening questions within 24 hours after receipt of role brief and must-have criteria."
+      }
+    ],
+    "opportunity_key": "ahitrecruitment.com|sourcing-overflow-pilot|2026-10-15",
+    "to": "OFFERED"
+  },
+  "sequence": 21,
+  "sha256": "e1580321c566519f7855cdd3eb34d2091afaf45502a07e14e4852f19c1312aeb",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261015-ahitrecruitment-offered"
+}

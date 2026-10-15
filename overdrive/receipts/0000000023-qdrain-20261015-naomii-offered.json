@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-10-15T13:27:41.769611+00:00",
+  "result": {
+    "adapter": "MISSING_RECORD_UPSERT",
+    "created": true,
+    "critic": {
+      "commercial_state": "PASS",
+      "duplicate_identity": "PASS_NO_MATCH_FOUND",
+      "external_action": "NOT_PERFORMED_BY_ADAPTER",
+      "factual_claims": "PASS_EVIDENCE_GATED"
+    },
+    "evidence": [
+      {
+        "kind": "OUTBOUND_SEND",
+        "observed_at": "2026-10-15T13:16:56Z",
+        "source": "OUTLOOK",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhAAAAA==",
+        "subject": "A 24-hour sourcing overflow test against one live tech role",
+        "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source-linked shortlist, fit rationale and pre-screen notes within 24 hours after receipt of role brief and must-have criteria."
+      }
+    ],
+    "opportunity_key": "naomii.app|technology-sourcing-overflow-pilot|2026-10-15",
+    "to": "OFFERED"
+  },
+  "sequence": 23,
+  "sha256": "5fe7015cbaf90c7aa322052cb173dbe844bbc743252278b189c46fa74b365968",
+  "status": "COMPLETED",
+  "task_id": "qdrain-20261015-naomii-offered"
+}
