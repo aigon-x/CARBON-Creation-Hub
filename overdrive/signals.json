@@ -255,6 +255,18 @@
     {
       "due_at": null,
       "due_now": false,
+      "next_action": "Before submission, use the existing authorized Outlook/TinyFish route to inspect prior Corzly mail and any existing application/account history; do not create a duplicate application. Verify that the 15:00\u201300:00 SAST core-hours schedule is workable. If the route and facts pass, apply through the official Corzly role form using the current CV as-is (sufficient-to-test), answer role-specific questions truthfully, and complete any required assessment personally. Persist the actual submission receipt and read it back; do not claim application, buyer response, offer, contract, invoice or payment before evidence.",
+      "opportunity_key": "corzly.com|account-executive-property-partnerships|2026-10-15",
+      "priority": 8,
+      "routing_reason": "HOLD_ACCOUNT_HISTORY_DEDUPE",
+      "smallest_next_action": "Before submission, use the existing authorized Outlook/TinyFish route to inspect prior Corzly mail and any existing application/account history; do not create a duplicate application. Verify that the 15:00\u201300:00 SAST core-hours schedule is workable. If the route and facts pass, apply through the official Corzly role form using the current CV as-is (sufficient-to-test), answer role-specific questions truthfully, and complete any required assessment personally. Persist the actual submission receipt and read it back; do not claim application, buyer response, offer, contract, invoice or payment before evidence.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": null,
+      "due_now": false,
       "next_action": "CLOSED for unsolicited follow-up unless buyer reopens.",
       "opportunity_key": "cuinatevabarcelona.com|website-trust-review|2026-10-07",
       "priority": 8,
@@ -745,7 +757,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-15T13:31:15.722319+00:00",
+  "generated_at": "2026-10-15T13:42:21.798837+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1168,6 +1180,18 @@
       "state": "REJECTED",
       "status": "WAITING",
       "thread_id": "1a115302e8719783"
+    },
+    "corzly.com|account-executive-property-partnerships|2026-10-15": {
+      "due_at": null,
+      "due_now": false,
+      "next_action": "Before submission, use the existing authorized Outlook/TinyFish route to inspect prior Corzly mail and any existing application/account history; do not create a duplicate application. Verify that the 15:00\u201300:00 SAST core-hours schedule is workable. If the route and facts pass, apply through the official Corzly role form using the current CV as-is (sufficient-to-test), answer role-specific questions truthfully, and complete any required assessment personally. Persist the actual submission receipt and read it back; do not claim application, buyer response, offer, contract, invoice or payment before evidence.",
+      "opportunity_key": "corzly.com|account-executive-property-partnerships|2026-10-15",
+      "priority": 8,
+      "routing_reason": "HOLD_ACCOUNT_HISTORY_DEDUPE",
+      "smallest_next_action": "Before submission, use the existing authorized Outlook/TinyFish route to inspect prior Corzly mail and any existing application/account history; do not create a duplicate application. Verify that the 15:00\u201300:00 SAST core-hours schedule is workable. If the route and facts pass, apply through the official Corzly role form using the current CV as-is (sufficient-to-test), answer role-specific questions truthfully, and complete any required assessment personally. Persist the actual submission receipt and read it back; do not claim application, buyer response, offer, contract, invoice or payment before evidence.",
+      "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
       "due_at": "2026-10-03T15:55:00Z",
