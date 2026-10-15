@@ -250,11 +250,41 @@
       "safety": "No outbound action taken. No duplicate follow-up, public post, new sender/account, worker or scheduler. No revenue or payment claimed.",
       "scope": "OUTLOOK_SENT_VS_CLOSE_DRAFT_AND_SENDER_DRIFT_RECONCILIATION_20261014",
       "upgrade_action": "ROOT/T-GOV + PRI reconcile actual send history/sender identity and preserve no-further-contact state. Do not contact the three buyers again absent a material buyer-initiated reply or explicit newly governed route. Update each existing item only after direct evidence; no new opportunity record."
+    },
+    {
+      "actual": "Screened more than 20 distinct candidate inputs across four materially different surfaces: remote employment/contract roles; paid-trial/fixed-scope/task-based work; expert/partner collaboration; and public procurement. Current official Corzly evidence supports a new South Africa-eligible Account Executive role at USD $2,500/month base plus conditional uncapped commission. The existing 90-record ledger had no Corzly organization/domain/role match. Existing Scale Army, SocialsGroup, Black Bear, 2CT and Upwork routes were preserved as existing records; commission-only or secondary-source leads and partner/tender hypotheses were not promoted without stronger buyer/route evidence.",
+      "changed": "Added exactly one qualified Corzly opportunity to the existing canonical ledger, with proof_of_work_route=INTERVIEW_HEAVY and execution_readiness=HOLD_ACCOUNT_HISTORY_DEDUPE. No application, outbound message, new worker, CRM or pipeline was created. Existing PRI offers and their 2026-10-19 follow-up due conditions remain unchanged.",
+      "classification": "ISCOPE_DISCOVERY_SWEEP; ONE_NEW_QUALIFIED_ROLE; ACCOUNT_HISTORY_DEDUPE_OPEN",
+      "observed_at": "2026-10-15T13:33:30Z",
+      "owner": "iSCOPE for discovery and qualification; PRI for post-handoff progression and sole external commercial writing.",
+      "proof": [
+        "https://careers.corzly.com/careers/account-executive",
+        "https://careers.corzly.com/careers",
+        "https://jobs.ashbyhq.com/scale%20army%20careers/d2cfa9c7-e673-46be-8717-8b94a53e2b07",
+        "https://internal.socialsgroup.com/careers/role-marketing-ops-executive",
+        "https://jobs.workable.com/view/7hLfqrUT2HRP9FZTcXg5TF/remote-marketing-operations-assistant-in-cape-town-at-remote-recruitment",
+        "https://www.blackbear.co.za/",
+        "https://afri-trade.co.za/",
+        "https://rocqueconsulting.com/",
+        "https://www.preztacks.com/careers",
+        "https://waggle.beeline.life/careers",
+        "https://dootsa.com/careers",
+        "https://yanderacquisition.com/careers.html",
+        "https://www.maratto.africa/domain-experts",
+        "https://www.reasonate.africa/join-the-collective",
+        "https://bemc.co.za/people/",
+        "https://apply.2cantalks.com/j/bdr-outbound-sa",
+        "https://www.upwork.com/freelance-jobs/apply/Automation-for-Carpentry-Inquiries_~022109970451600320481/",
+        "https://www.george.gov.za/supply-chain-categor/gmt006-26-27-tender-for-the-the-appointment-of-a-service-provider-to-supply-advertising-agency-services-for-destination-marketing-events-and-advertising-as-and-when-required-for-a-period-of-three/"
+      ],
+      "remains_unproven": "Prior Corzly mail/application history, schedule confirmation specific to this role, any application submission, buyer response, acceptance, contract, invoice/receivable, or payment.",
+      "scope": "ISCOPE_COMMERCIAL_DISCOVERY_SWEEP_20261015_CORZLY_AE",
+      "upgrade_action": "Use the existing authorized Outlook/TinyFish route for account-history dedupe and application only if the route is available and the role-specific schedule is workable. Continue monitoring the three already-offered fixed-fee pilots; no second touch before their recorded due time."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T18:40:04.525Z",
-  "last_reconciled_reason": "Read-backed update to the three existing paid-pilot records after direct Outlook evidence showed 13-Oct checkout-link emails alongside separate Close draft status; preserved NO_FURTHER_CONTACT, sender-drift and no-payment truth. Existing keys/count unchanged.",
+  "last_reconciled_at": "2026-10-15T13:33:30Z",
+  "last_reconciled_reason": "Read-backed update to the three existing paid-pilot records after direct Outlook evidence showed 13-Oct checkout-link emails alongside separate Close draft status; preserved NO_FURTHER_CONTACT, sender-drift and no-payment truth. Existing keys/count unchanged. Added one Corzly Account Executive opportunity after current official-source verification and canonical-ledger dedupe; preserved interview-heavy route, conditional commission truth, and the existing-account-history hold. No external application or outreach was performed.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -317,9 +347,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-15T13:27:41.769Z",
-  "last_updated_by": "MASTER / COFFEE / LIBRARIAN",
-  "record_count": 90,
+  "last_updated_at": "2026-10-15T13:33:30Z",
+  "last_updated_by": "iSCOPE → PRI existing commercial field force",
+  "record_count": 91,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -995,6 +1025,63 @@
       "recipient": "info@corkcitygaol.com",
       "state": "REJECTED",
       "thread_id": "1a115302e8719783"
+    },
+    "corzly.com|account-executive-property-partnerships|2026-10-15": {
+      "opportunity": "account-executive-property-partnerships",
+      "organization": "Corzly",
+      "domain": "corzly.com",
+      "title": "Account Executive, Property Partnerships & Reservation Sales",
+      "commercial_role": "B2B SALES / PROPERTY PARTNERSHIPS / RESERVATION CONVERSION",
+      "state": "QUALIFIED",
+      "discovered_by": "iSCOPE",
+      "execution_owner": "PRI",
+      "execution_readiness": "HOLD_ACCOUNT_HISTORY_DEDUPE",
+      "routing_reason": "OFFICIAL_SOUTH_AFRICA_ELIGIBLE_USD_BASE_PLUS_COMMISSION; HIGH_B2B_SALES_FIT; CANONICAL_LEDGER_DEDUPE_PASS; ACCOUNT_HISTORY_DEDUPE_OPEN",
+      "capital_direction": "PAYER_TO_WORK / EMPLOYMENT",
+      "buyer_fit": "Strong fit to the Owner's evidenced historical B2B/strategic-account sales execution: the role includes prospecting, cold calls, qualification, proposals, negotiation, close and relationship follow-through. The official listing says direct short-term-rental experience is helpful but not required where strong sales ability and commitment to learning are present. Luxury property/hospitality is adjacent/new domain, not claimed as prior experience.",
+      "capability_match": [
+        "B2B and strategic-account sales execution",
+        "Outbound prospecting, qualification, objection handling, follow-up and close",
+        "Commercial relationship and partner development",
+        "Practical AI-tool use as a delivery aid, without inflating historical AI seniority"
+      ],
+      "proof_of_work_route": "INTERVIEW_HEAVY",
+      "current_route_status": "OFFICIAL_ROLE_PAGE_CURRENT; REMOTE_SOUTH_AFRICA; APPLICATION_FORM_LINKED",
+      "payer_path": "Corzly employer payroll for base salary; property-partner commission under the employer's published terms.",
+      "reward": "USD $2,500/month base (role page says dependent on experience) plus uncapped commission. Published commission is 10% of the property's management revenue during its first 12 months, with commission payable when the property is live and the partner stays; the page also mentions second/third-year residual commissions. Commission is conditional, not guaranteed income.",
+      "upfront_cost": "NONE_EVIDENCED",
+      "qualified_at": "2026-10-15T13:33:30Z",
+      "last_reconciled_at": "2026-10-15T13:33:30Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_ROLE_PAGE",
+          "observed_at": "2026-10-15T13:33:30Z",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "url": "https://careers.corzly.com/careers/account-executive",
+          "summary": "Official Corzly role page remains active and explicitly lists Remote — South Africa, fully remote, full-time, USD $2,500/month base plus uncapped commission. The role combines reservation sales for an existing luxury portfolio with prospecting and closing new property-management partners. Core hours are Monday–Friday, 08:00–17:00 U.S. Central (15:00–00:00 SAST). Application begins with role-specific questions and a resume; shortlisted candidates face a one-way video interview, live interview, sales role-play, written follow-up exercise and reference check. Page displays posted date 2026-08-23."
+        },
+        {
+          "kind": "CANONICAL_LEDGER_DEDUPE",
+          "observed_at": "2026-10-15T13:33:30Z",
+          "source": "overdrive/opportunities.json",
+          "summary": "Current 90-record canonical ledger was searched by Corzly/domain/role; no matching organization or role record exists. One new canonical opportunity key created; no duplicate pipeline or CRM created."
+        },
+        {
+          "kind": "ACCOUNT_HISTORY_DEDUPE_UNAVAILABLE",
+          "observed_at": "2026-10-15T13:33:30Z",
+          "source": "CURRENT_RUNTIME_TOOL_INVENTORY",
+          "summary": "This runtime did not expose an authorized Outlook/TinyFish mailbox or application-history read action. No prior contact/application is assumed; external submission remains on hold until the existing authorized Outlook/TinyFish route and account history can be inspected."
+        }
+      ],
+      "constraints": [
+        "South Africa eligibility and the advertised base are explicitly stated on the official role page; final compensation depends on experience.",
+        "The role requires weekday core hours 15:00–00:00 SAST. Prior Owner attestation for U.S.-hours phone sales exists for the current 2CT route, but this exact Corzly schedule has not been separately verified.",
+        "Direct short-term-rental experience is not required if strong sales ability is present; do not claim luxury-hospitality experience without evidence.",
+        "Selection is interview-heavy rather than a paid trial: one-way video, live interview, live sales role-play, written follow-up exercise and references.",
+        "Prior Corzly contact/application history has not been read in the existing Outlook/TinyFish account."
+      ],
+      "next_action": "Before submission, use the existing authorized Outlook/TinyFish route to inspect prior Corzly mail and any existing application/account history; do not create a duplicate application. Verify that the 15:00–00:00 SAST core-hours schedule is workable. If the route and facts pass, apply through the official Corzly role form using the current CV as-is (sufficient-to-test), answer role-specific questions truthfully, and complete any required assessment personally. Persist the actual submission receipt and read it back; do not claim application, buyer response, offer, contract, invoice or payment before evidence.",
+      "due_at": null
     },
     "crowdgen.com|project-coffee-data-labeling-specialist|south-africa": {
       "buyer_fit": "Official South Africa-specific project. Evaluates AI-generated text, categorizes data and other AI-training tasks; up to 20 hours/week.",
@@ -5036,6 +5123,6 @@
       "video_access_verified_at": "2026-09-30T16:52:12.432Z"
     }
   },
-  "updated_at": "2026-10-14",
+  "updated_at": "2026-10-15",
   "version": 1
 }
