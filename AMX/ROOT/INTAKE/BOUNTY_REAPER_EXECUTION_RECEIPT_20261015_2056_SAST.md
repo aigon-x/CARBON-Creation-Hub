@@ -15,6 +15,7 @@ Directly fetched from `amillimatrix-eng/CARBON-Creation-Hub`:
 - Role: `BOUNTY-REAPER`; mandate: `AMX-MANDATE-BOUNTY-REAPER-V1`; status `CURRENT`.
 - Exact marker-bounded canonical payload: 1,082 UTF-8 bytes. Independently recomputed SHA-256 `754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3` — MATCH.
 - Existing owner identity observed in prior durable Reaper receipts: `6abf8e6d6a188191aee2b5d3fe24a9c9`. No scheduler change or duplicate worker created in this run.
+- Live automation lookup at 2026-10-15 20:56 SAST: the one existing task is `is_enabled=true`; `last_run_time=2026-10-15T18:54:53.824764Z` (20:54:53 SAST); `next_run_time=null` despite its stored hourly schedule. No enable/schedule mutation was made. Preserve this as an open scheduler-observability/liveness discrepancy for ROOT to reconcile; do not spawn a duplicate.
 
 ## Canonical tracker / Q1 drain
 
