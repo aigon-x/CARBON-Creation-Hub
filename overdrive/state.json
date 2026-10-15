@@ -616,6 +616,93 @@
       "receipt": "receipts/0000000020-qdrain-20261010-mprtc-wrongroute.json",
       "receipt_sha256": "2c2801931ddbdeaf71cadc61eb5e5f7387ab36da03f7e4096c36d932f9bd6c4f",
       "status": "COMPLETED"
+    },
+    {
+      "id": "qdrain-20261015-ahitrecruitment-offered",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "ahitrecruitment.com|sourcing-overflow-pilot|2026-10-15",
+        "identity": {
+          "organization": "AHIT Recruitment",
+          "opportunity": "US$99 one-role IT and engineering sourcing pilot",
+          "domain": "ahitrecruitment.com"
+        },
+        "to": "OFFERED",
+        "execution_owner": "PRI",
+        "recipient": "info@ahitrecruitment.com",
+        "observed_at": "2026-10-15T13:16:18Z",
+        "due_at": "2026-10-19T08:00:00Z",
+        "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+        "evidence": [
+          {
+            "kind": "OUTBOUND_SEND",
+            "source": "OUTLOOK",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXggAAAA==",
+            "observed_at": "2026-10-15T13:16:18Z",
+            "subject": "A 24-hour sourcing pilot for one live IT or engineering vacancy",
+            "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source-linked shortlist, fit notes and screening questions within 24 hours after receipt of role brief and must-have criteria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261015-accurategroup-offered",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "accurategroup.co.za|technology-sourcing-pilot|2026-10-15",
+        "identity": {
+          "organization": "Accurate Group",
+          "opportunity": "US$99 one-role technology and AI sourcing pilot",
+          "domain": "accurategroup.co.za"
+        },
+        "to": "OFFERED",
+        "execution_owner": "PRI",
+        "recipient": "contact@accurategroup.co.za",
+        "observed_at": "2026-10-15T13:16:37Z",
+        "due_at": "2026-10-19T08:00:00Z",
+        "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+        "evidence": [
+          {
+            "kind": "OUTBOUND_SEND",
+            "source": "OUTLOOK",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXgwAAAA==",
+            "observed_at": "2026-10-15T13:16:37Z",
+            "subject": "A fixed-fee sourcing test for one technology or AI vacancy",
+            "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source links, fit rationale and pre-screen notes within 24 hours after receipt of brief and must-have criteria."
+          }
+        ]
+      }
+    },
+    {
+      "id": "qdrain-20261015-naomii-offered",
+      "adapter": "MISSING_RECORD_UPSERT",
+      "status": "PENDING",
+      "payload": {
+        "opportunity_key": "naomii.app|technology-sourcing-overflow-pilot|2026-10-15",
+        "identity": {
+          "organization": "Naomii Talent Solutions",
+          "opportunity": "US$99 one-role technology sourcing overflow pilot",
+          "domain": "naomii.app"
+        },
+        "to": "OFFERED",
+        "execution_owner": "PRI",
+        "recipient": "hello@naomii.app",
+        "observed_at": "2026-10-15T13:16:56Z",
+        "due_at": "2026-10-19T08:00:00Z",
+        "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+        "evidence": [
+          {
+            "kind": "OUTBOUND_SEND",
+            "source": "OUTLOOK",
+            "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhAAAAA==",
+            "observed_at": "2026-10-15T13:16:56Z",
+            "subject": "A 24-hour sourcing overflow test against one live tech role",
+            "summary": "Sent from usduplessis@outlook.com; fixed US$99 single-role pilot; no retainer; source-linked shortlist, fit rationale and pre-screen notes within 24 hours after receipt of role brief and must-have criteria."
+          }
+        ]
+      }
     }
   ],
   "ready_claims": 0,
