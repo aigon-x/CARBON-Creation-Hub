@@ -74,6 +74,17 @@ The PDF content was not readable through the available retrieval route in this r
 - No report package created or submitted. No Immunefi report ID, acceptance, award, receivable or verified payment established.
 - No live-target exploitation, mainnet/public-testnet testing, transaction, fund movement, spend, credential expansion, KYC bypass or public disclosure.
 
+## Separate candidate screen — 0x Settler
+
+This wake continued beyond the LayerZero audit gate and screened a distinct, current Immunefi program/source without opening another worker or external submission:
+- Program scope: https://immunefi.com/bug-bounty/0x/scope/ (published scope says last updated 2026-09-21; includes 0x Settler and lists direct theft/permanent freeze among eligible impact classes; PoC and KYC are required).
+- Immutable reviewed repository snapshot: `0xProject/0x-settler@275cf8ce398bcc862753deee7ff043764c1e27b9`.
+- Hypothesis screened: alleged function-level reentrancy through re-entry into `execute()` from external pool/action callbacks, publicly described in issue #646 on 2026-09-07: https://github.com/0xProject/0x-settler/issues/646. The issue is public and marked closed/completed, so it is not a fresh/private report.
+- Exact source: `src/core/Permit2Payment.sol` blob `96318212668d40355ff34628f28edfef8d96c737`. `takerSubmitted` calls `TransientStorage.setPayer(msgSender)`; `setPayer` checks `_PAYER_SLOT` and reverts `ReentrantPayer(address)` when a payer is already set. `setOperatorAndCallback` also explicitly documents the payer slot as the implicit entrypoint reentrancy guard. This directly contradicts the issue's core assumption that nested `execute()` can run before the original slippage check.
+- Additional screened callback gate: `_setOperatorAndCall` stores a specific target + selector + callback, calls that target, then requires the callback slot to have been consumed; `getAndClearCallback` checks caller and selector and clears before callback execution. The Uniswap V4 call path selects the manager from chain-specific code, not a public caller-supplied target in the exposed action.
+- Disposition: **A — KILLED / PUBLIC PRIOR ART / NO BOUNTY CANDIDATE** for the claimed general `execute()` reentrancy gap. No local exploit test or live-target test was run; conclusion is bounded to the claim against the reviewed source. The public issue's no-pause/best-practice and cross-chain-replay assertions were not promoted.
+- Outcome: no candidate package, external submission, report ID, acceptance, award or payment. This screen is recorded as a kill, not as a vulnerability discovery.
+
 ## Accessible inventory and continuation
 
 The current accessible `BLACK/jobs` inventory contains historical Reaper LayerZero and XOXNO job files. Prior Reaper receipts classify the current Symbiosis helper-balance signal as outside the listed asset/impact boundary; the sampled Stargate 100%-fee claim as killed; Sei Giga narrow abort, Veda request-integrity, Axelar origin and OpenBridge stale-vote hypotheses as killed/narrowed; XOXNO stale-position as not reproduced; sBTC nonce behavior as public prior art; and vesting arithmetic as a B signal with no identified project/source, eligible impact or PoC. No alternative ready Q1 package was recovered.
