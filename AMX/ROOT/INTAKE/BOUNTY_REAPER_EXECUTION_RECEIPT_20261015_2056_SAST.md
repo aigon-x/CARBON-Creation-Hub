@@ -119,6 +119,29 @@ Follow-on static review was pinned to SP1's official latest-release tag availabl
 - Local execution environment check: `rustc` and `cargo` are not installed; `nvidia-smi` is unavailable. The required current-release runnable PoC / production-circuit reproduction was therefore **not** built or executed in this runtime. This is a concrete test gate, not evidence of a vulnerability. Do not submit the PR as a finding or imply the bounty's PoC gate was met.
 - Disposition: `B — STATIC SCREEN ONLY / NO SUBMISSION CANDIDATE PROMOTED`. Continue only with a new, specific source-level inconsistency that can be deduplicated against the official audit/known-issue lists and validated in a suitable lawful local environment.
 
+## XOXNO INV-ACCT-10 recovery — reviewed liquidation-credit path killed
+
+Recovered the existing frozen job source `XOXNO/rs-lending-xlm@a2486b255b974ef8432ce44de014931f51552f4b` and continued the exact stale-account-position hypothesis. This is a bounded static disposition, not a whole-repository proof.
+
+### Exact source evidence
+
+- `docs/reference/invariants.md`, blob `a03076080ec1f34b1ec8632751998d2ba472fff5`, defines `INV-ACCT-10`: pool keeps market totals, trusts controller-provided scaled positions, and controller is responsible for reconciliation. The document explicitly says the property test `prop_accounting_conservation` checks the supply and debt equalities within four token units after every operation.
+- `contracts/controller/src/positions/liquidation/plan.rs`, blob `f14ca6f3ff969aa95cdcec85ab9c46690dda1427`: the plan computes risk totals and derives seizure entries from the passed account's own `supply_positions`; liquidation plan validation occurs before application.
+- `contracts/controller/src/positions/liquidation/math.rs`, blob `8acaee358492426cf806da32da7603c0869242b7`: `calculate_seized_collateral` iterates current account positions and derives shares against the same cached supply index. A full close carries the exact stored `position.scaled_amount`; partial seizure converts down and caps against the held position. Under-delivery only scales planned seizures down against measured repayment.
+- `contracts/controller/src/positions/liquidation/mod.rs`, blob `891333a89d6d332d2f3b40e03b1f5a3cf255d7a7`: `process_liquidation` loads the account, builds and validates the plan, applies measured repayments, trims seizures to received value, then applies transfer or share-credit mode in the same call.
+- `contracts/controller/src/positions/liquidation/apply.rs`, blob `0bedd96acfd5955ae599636fba4db49ff3920605`: share-credit mode fetches the debtor's current in-memory supply position and uses checked subtraction of gross seizure shares; over-seizure reverts. Receiver credit adds only net shares. Only fee shares are sent to the pool for reclassification as revenue; seizure and receiver allocations are asserted to conserve shares.
+- `contracts/pool/src/ops/seize.rs`, blob `9d487a302fbc055fdeaeb0829100b3cc4e941270`: deposit-side `PoolSeizeEntry` reclassifies the provided shares as revenue; it does not move cash.
+- `contracts/controller/tests/positions/liquidation_seize_modes.rs`, blob `98dcbb3c87cb34329c61bed55214e5d0f05b3b30`: tests exercise exact fee-plus-liquidator conservation, under-delivery scaling, fee bounds, full-close exact shares at a non-unit index, and the partial-seizure bound. `tests/test-harness/tests/controller/liquidation_seize_modes.rs`, blob `81b4c9d0d71fc63c78ca14079c47234a73a2ef4c`, contains end-to-end credit-mode scenarios and tests that pool supplied shares and cash remain unchanged, with only revenue changing.
+- Searches through the connected GitHub source for `INV-ACCT-10`, `PoolSeizeEntry` and liquidation/accounting issue text surfaced no matching public issue or matching commit result. This is bounded connector search evidence, not exhaustive proof of no prior art.
+
+### Disposition and gate
+
+**A — KILLED FOR THE REVIEWED LIQUIDATION CREDIT / SEIZURE PATH.** No concrete stale-position write was found in this path; the data flow follows the documented invariant and includes checked subtraction and allocation-conservation assertions. Do not promote the previous generic stale-account hypothesis as a vulnerability based only on the pool trusting its controller.
+
+Scope limit: other controller mutation paths were not exhaustively audited, so this is not a global proof that `INV-ACCT-10` can never fail. The whole-repository property test `prop_accounting_conservation` was not run. The execution runtime has no `cargo` or `rustc`; an attempted local public clone fails because this runtime cannot resolve `github.com`. Static source was therefore read through the authorized GitHub connector, but executable reproduction remains blocked by the local Rust toolchain / clone transport. No source-changing action, live test, transaction, external submission, report ID, award or payment occurred.
+
+Next lawful advancement if executable infrastructure becomes available: run the exact pinned checkout's existing `prop_accounting_conservation` and focused liquidation-credit tests, then inspect other account mutation paths only if a specific non-returned/stale-position source can be isolated. Do not label this bounded kill as a Q1 submission.
+
 ## Accessible inventory and continuation
 
 The current accessible `BLACK/jobs` inventory contains historical Reaper LayerZero and XOXNO job files. Prior Reaper receipts classify the current Symbiosis helper-balance signal as outside the listed asset/impact boundary; the sampled Stargate 100%-fee claim as killed; Sei Giga narrow abort, Veda request-integrity, Axelar origin and OpenBridge stale-vote hypotheses as killed/narrowed; XOXNO stale-position as not reproduced; sBTC nonce behavior as public prior art; and vesting arithmetic as a B signal with no identified project/source, eligible impact or PoC. No alternative ready Q1 package was recovered.
