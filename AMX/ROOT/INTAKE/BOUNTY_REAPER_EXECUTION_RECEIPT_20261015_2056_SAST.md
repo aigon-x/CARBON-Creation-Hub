@@ -36,7 +36,7 @@ Current published official LayerZero Ethereum deployment documentation identifie
 - Executor target: `0x173272739Bd7Aa6e4e214714048a9fE699453059`.
 - Source: https://docs.layerzero.network/v2/deployments/chains/ethereum
 
-This closes the missing **documented target/chain/address association** for the Ethereum Executor. It does **not** by itself prove that the current deployed proxy's implementation bytecode is identical to the pinned source. The public Etherscan page identifies the address as an upgradeable proxy and shows an abbreviated implementation address; exact deployed implementation/source equivalence is not independently verified in this run.
+This closes the missing **documented target/chain/address association** for the Ethereum Executor. Etherscan's indexed proxy page links this proxy to implementation address `0xfe9ab78ed4f9f3dbb168d9f5e5213d78605c9805`. However, the retrieved Etherscan page was crawled months earlier and the direct implementation page returned HTTP 403; the current on-chain implementation slot and implementation-source/bytecode equivalence were not independently read in this run. Treat the implementation pointer as a useful lead, not a verified current source binding.
 
 ### Pinned source and semantics
 
