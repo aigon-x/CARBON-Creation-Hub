@@ -1,0 +1,132 @@
+{
+  "manifest_id": "AMX-LIBRARIAN-WAKE-MANIFEST-20261015-064518Z",
+  "observed_at_utc": "2026-10-15T07:20:33.076Z",
+  "observed_at_sast": "2026-10-15 09:xx SAST (UTC timestamp above is authoritative)",
+  "disposition": "PARTIAL_OPEN",
+  "canonical": {
+    "blue_state_path": "AMX/ROOT/BLUE_STATE/BLUE_STATE_MANDATE_BINDING_AND_PREFLIGHT_V1.md",
+    "blue_state_blob": "424eeac324e455c94a557f9bc573baf26c2af400",
+    "registry_path": "AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json",
+    "registry_blob": "d3a749a48d98292a13931fd6ff8518dea03e5b20",
+    "registry_version": "1.2",
+    "declared_root": "6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f",
+    "recomputed_root": "6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f",
+    "root_result": "MATCH",
+    "current_kpi": "65% evaluated performance weight for attributable money-in or evidenced blocker removal; 35% existing mandate. KPI is not a time quota. 60/20/20 remains separate sourcing allocation.",
+    "limitation": "Registry root recomputed this wake; individual linked mandate payloads were not byte-rehashed anew this wake. Registered digests and prior receipts are referenced."
+  },
+  "receipts": [
+    {
+      "office": "MASTER / COFFEE / LIBRARIAN",
+      "path": "AMX/ROOT/INTAKE/LIBRARIAN_RECEIPTS/MASTER_WAKE_20261015_0845SAST.md",
+      "blob": "b8e1e54071e07529e9346b77a2eebe7073d763ed",
+      "commit": "30b529d2e62e955c72eb0f926d3fce5adcbc08bf",
+      "readback": "PASS"
+    },
+    {
+      "office": "ROOT / T-GOV",
+      "path": "AMX/ROOT/INTAKE/LIBRARIAN_RECEIPTS/ROOT_TGOV_WAKE_20261015_0845SAST.md",
+      "blob": "c73dae9de8507393ccc7b2359d08ad1ae3aa16c8",
+      "commit": "7724dffc215a6367da1152c698fea061e163da81",
+      "readback": "PASS"
+    },
+    {
+      "office": "T-COD",
+      "path": "AMX/ROOT/INTAKE/LIBRARIAN_RECEIPTS/TCOD_WAKE_20261015_0845SAST.md",
+      "blob": "93b2903a1ccc22b47df47e711615e99c1fb7b8ef",
+      "commit": "6bfdf5e01083765273ab4246022b1568a6d8e9f0",
+      "readback": "PASS"
+    },
+    {
+      "office": "T-MED",
+      "path": "AMX/ROOT/INTAKE/LIBRARIAN_RECEIPTS/TMED_WAKE_20261015_0845SAST.md",
+      "blob": "0c904e5a7a0d829fdcaf46b299d7acbb1a76c351",
+      "commit": "5bf015ea90355f3666250faa9a059894f7a224ea",
+      "readback": "PASS"
+    }
+  ],
+  "additional_artifacts": [
+    {
+      "path": "AMX/ROOT/INTAKE/TMED_PUBLIC_EVIDENCE_PROFILE_PACKAGE_20261015_R05_SCOPE_CORRECTION.md",
+      "blob": "f600d542c892c44ad9b0398accd2cb953aa59b91",
+      "commit": "486e8e1e30a016536f72355c3f46c3a37f88568f",
+      "readback": "PASS",
+      "status": "DRAFT ONLY; issue #30 linked by comment 6186704025"
+    }
+  ],
+  "current_findings": {
+    "stripe_live_account_read": {
+      "result": "42 Checkout Sessions (12 open, 30 expired; all 42 unpaid; zero customer IDs/emails); zero PaymentIntents, charges, paid invoices and Balance Transactions; all lists has_more=false.",
+      "latest_jgmi_session": "ZAR 7,963; JGMI by Carbon / corporate_presence_launch; open/unpaid/no customer attribution.",
+      "join_result": "No matching JGMI/Carbon corporate presence record found in 87 opportunity records or 87 claims. ORPHAN / UNATTRIBUTED / NOT PAID.",
+      "intake_comment_ids": [
+        6186349655,
+        6186545432
+      ],
+      "limitation": "Connected Stripe account only; all-rail settlement remains UNKNOWN / NOT RECONCILED."
+    },
+    "forx_runtime": {
+      "result": "Recurring server_failed OOM events at 512 MiB in existing amx-forx-stage1-proof service. Latest observed failure 2026-10-15T06:38:50.860461Z. At least ten observed from 06:09:56Z through 06:38:51Z; interspersed server_available events.",
+      "endpoint_health": "UNKNOWN / NOT ACCEPTED. Filtered request log had no matching 502/503 rows for queried paths/time; direct endpoint fetch inaccessible via current web reader.",
+      "intake_comment_id": 6186493499,
+      "t_cod_receipt_updated": true,
+      "no_mutation": true
+    },
+    "automation": {
+      "task": "FIRST BREATH — LIBRARIANS",
+      "task_id": "6ac7c95aa91c819182be1e98e1404b95",
+      "is_enabled": false,
+      "saved_schedule": "hourly, Africa/Johannesburg",
+      "restoration_error": "automation_schedule_not_available: plan does not support hourly schedules.",
+      "current_cadence_changed": false,
+      "duplicate_created": false,
+      "liveness_intake_comment_id": 6186175198,
+      "inventory_readback": "25 task records, 2 enabled; enabled tasks FORX and IDEAL SALES TEAM both reported next_run_time=null."
+    },
+    "tmed_scope": {
+      "current_issue_30": "DRAFT ONLY; no posting, scheduling, profile edit, external contact, approval submission, or Metricool write.",
+      "d04": "HOLD; separate Owner-reported run primary vector/receipt not located; no public D04 score or media.",
+      "rendered_media": "NOT PRODUCED / NOT VERIFIED; existing CARBON° render route not confirmed active."
+    }
+  },
+  "durable_intake_references": [
+    {
+      "issue": 31,
+      "comment_id": 6186175198,
+      "topic": "Librarian hourly-task re-enable block"
+    },
+    {
+      "issue": 31,
+      "comment_id": 6186380279,
+      "topic": "index of four office receipts"
+    },
+    {
+      "issue": 31,
+      "comment_id": 6186349655,
+      "topic": "fresh live Stripe reconciliation"
+    },
+    {
+      "issue": 31,
+      "comment_id": 6186493499,
+      "topic": "fresh FORX OOM regression and acceptance gate"
+    },
+    {
+      "issue": 31,
+      "comment_id": 6186545432,
+      "topic": "JGMI orphan cross-surface join"
+    },
+    {
+      "issue": 30,
+      "comment_id": 6186704025,
+      "topic": "R05 T-MED scope correction link"
+    }
+  ],
+  "no_side_effects": [
+    "No buyer contact or bid",
+    "No financial object/session mutation",
+    "No FORX service/deployment/configuration change",
+    "No social publication, scheduling, profile edit, approval submission, or Metricool write",
+    "No duplicate scheduler, worker, pipeline, account, or source-of-truth store"
+  ],
+  "open_acceptance": "Task restoration under supported hourly plan, commercial ledger join or governed orphan disposition, stable FORX service and exact receipt/readback, authorized CARBON media rendering, owner inspection, and ROOT issue #29/#30 scope resolution."
+}
