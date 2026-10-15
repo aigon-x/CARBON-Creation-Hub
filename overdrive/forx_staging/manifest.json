@@ -3,7 +3,7 @@
   "logical_store": "overdrive/forx_prospect_buffer.json",
   "storage_mode": "IMMUTABLE_BASE_PLUS_BOUNDED_DELTAS",
   "identity_mode": "EXACT_SOURCE_KEY_PRIMARY",
-  "manifest_version": 7,
+  "manifest_version": 8,
   "base_snapshot": {
     "path": "overdrive/forx_prospect_buffer.json",
     "git_blob_sha": "dd741395129330eaf2b0359738941a3c86f16f0a",
@@ -130,6 +130,18 @@
         "FORX-PROSPECT-20261012-PROC-002"
       ],
       "segment_sequence": 6
+    },
+    {
+      "path": "overdrive/forx_staging/delta-0008-forx-20261015-undp-indonesia-webgis-specialist.json",
+      "git_blob_sha": "577d41801a589edf348a707315f503e35c8615a3",
+      "count": 1,
+      "batch_id": "forx-20261015-undp-indonesia-webgis-specialist-01",
+      "source_keys": [
+        "url:https://www.ungm.org/Public/Notice/316659"
+      ],
+      "record_ids": [
+        "FORX-PROSPECT-20261015-PROC-001"
+      ]
     }
   ],
   "current_unique_source_keys": 947,
