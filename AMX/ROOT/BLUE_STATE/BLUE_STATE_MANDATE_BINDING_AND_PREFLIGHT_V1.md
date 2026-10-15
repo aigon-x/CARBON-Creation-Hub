@@ -1243,3 +1243,64 @@ H0B° may use a comedic “If only they knew” content lane to educate and draw
 CDD remains an enforcement diagnostic under the existing Public Evidence & Commercial Positioning Standard; keep supported positioning strong without claiming unproven functionality or results. RGR remains a non-authoritative recurrence classification handled through existing Root/Route Intake. Repeated expired-link dead ends, incorrect charm prices, fabricated market benchmarks, unverified member benefits or H0B° character dilution go to the existing owner/control, not a new system.
 
 Runtime acceptance requires live tests for expired/missing offer recovery, active versus stale quote state, domain redirects, price/tax/discount arithmetic, member entitlement with success/failure fallback, quote versioning and regression checks across existing product flows. Documentation alone is not behavioural acceptance.
+
+
+---
+
+# OWNER-DIRECTED CATEGORY A — EXTERNAL AGENT RELIABILITY / EXECUTION-CHAIN ENFORCEMENT — 2026-10-15
+
+**Authority:** Explicit Owner instruction in the active 2026-10-15 conversation.  
+**Classification:** CATEGORY A — BLUE STATE / GOVERNANCE EVIDENCE AND EXECUTION RELIABILITY.  
+**Scope:** Existing AMiLLiMATRiX runtimes, the existing Engine of Intent and authorized consumers, existing connected-tool execution, continuity/recovery, and outcome verification.  
+**Lifecycle boundary:** This Owner-directed operating control is additive to the existing intent-driven execution, dynamic-flight continuity, mandate-preflight, T10, post-run, blocked-attempt recovery and existing Root Intake controls. It creates no new worker, runtime, scheduler, engine, queue, tracker, memory plane, authority or benchmark. It does not modify any registered canonical mandate payload, registry entry/digest/root, frozen Search V1 acceptance gate, Canon status, or the Master Build File.
+
+## 1. Controlling problem statement
+
+The Matrix must not confuse **recorded intention/governance** with **runtime consumption**. The existing intention core and its V1 contract exist. The Category A intention integration audit records that current per-consumer adoption and behavioral acceptance remain incomplete. A prompt containing the correct rule, a model acknowledging it, a successful build, a deployment, a scheduler wake, or an API health response is not proof that the responsible consumer invoked the current shared core or that the result changed an authorized next action.
+
+Apply the existing end-to-end chain:
+
+**CURRENT OWNER/MANDATE + MEASURED INTENT + SOURCE EVIDENCE → AUTHORIZED ROUTE → ACTUAL TOOL OPERATION → EXACT RECEIPT → DURABLE STATE CHANGE → INDEPENDENT READBACK → VERIFIED OUTCOME → TRUTHFUL STATUS + NEXT ACTION.**
+
+A missing link leaves the objective open at the furthest evidenced state. Preserve UNKNOWN/HOLD when evidence or access is missing. Never convert a missing receipt to success, infer sabotage from a discrepancy, or label a whole workflow complete because one component passed.
+
+## 2. Resource-aware reliability rule
+
+The Owner is building AMX as a solo developer under constrained AI access, trials, usage quotas and intermittent multimodal availability. Optimize for **verified outcome per unit of available time, context, tool use, retry load and known monetary cost**. Do not copy a large lab's agent harness wholesale.
+
+Anthropic's published long-running-agent experiment reported about US$9 for its solo run versus US$200 for its multi-agent harness. This is a specific experimental comparison, not a universal estimate or guarantee. Reuse only techniques that provide measured value in AMX's own workload. Default to one bounded execution path with deterministic checks where sufficient; use extra agents/model calls only when the task needs independent reasoning or evaluation and the benefit justifies the added quota, latency and cost.
+
+Where observable, report elapsed time, model/API spend or token usage, tool calls, retries and cost per independently verified passing objective. If usage/cost data is unavailable, mark it UNKNOWN rather than estimate or fabricate it. Preserve the current governing 65% / 35% performance weighting and separate 60/20/20 sourcing allocation; this section does not redefine either.
+
+## 3. Minimum execution discipline — existing controls, made operational
+
+1. **Recover state without context bloat.** Follow the existing pre-flight deep-sync and coverage requirements. Keep full provenance in its durable source and use a compact checkpoint identifying controlling source/hash, current state, owner, objective, open obligation, furthest verified stage, blocker, next action and irreversible-action/no-repeat boundary. Retrieve large source sections only when the next action needs them; a short summary never outranks its linked current source.
+2. **Bind one action contract.** Before a material action, identify the expected observable result, current mandate/owner, permitted route, safety/permission/financial constraints and acceptance/readback test. Known workflows should use bounded, deterministic steps; reserve model judgment for ambiguity and evidence-based choices. Do not replace the requested objective with a nearby easier deliverable.
+3. **Verify tool execution, not tool availability.** For each consequential operation, retain the actual invocation and returned result, run/task/correlation identity where available, exact destination/source ID, and operation-specific acceptance state. Connected/listed does not imply authenticated, permitted, within quota, fit, or successfully executed. Acknowledgement/accepted request/wake timestamp does not prove a completed run.
+4. **Verify the environment's outcome.** Read back the actual destination or resulting environment after a write/deployment/tool action. A successful model turn, tool call, local test, CI check or HTTP response proves only its own stage unless it explicitly tests the final required condition. Report PASS only when the governing terminal acceptance conditions are independently satisfied; otherwise use PARTIAL, BLOCKED, NOT RUN or FAIL accurately.
+5. **Recover safely and idempotently.** On interruption, reconnect or quota/tool failure, resume the existing obligation/flight from the furthest durable checkpoint. Record the precise blocker and existing recovery owner/next lawful action. Inspect prior receipts/state before retrying side effects; do not duplicate posts, messages, records, commits, account changes or payments. Continue other independent lawful work only under current mandates and runtime rules.
+6. **Enforce intent at each real consumer.** Preserve the single versioned Engine of Intent and its authorized thin-adapter contracts. Do not clone or approximate its math in worker prompts. For each existing consumer, require source/adapter and owner, core/contract version, permission scope, exact revision, actual runtime invocation, response/session/result receipt, durable consequence, readback and downstream outcome where applicable. A source file, endpoint, deployment, prompt, or mocked test alone is not consumer acceptance.
+7. **Independently evaluate failure-prone behavior.** Use the existing Continuity Rehydration Benchmark and the already-frozen Search V1 behavioral vectors/gates through their established owners. Use deterministic assertions for hashes, schemas, IDs, counters, lifecycle state and destination readback; use a separately calibrated critic only where qualitative judgment is required. Repeat critical cases in fresh/replacement sessions. Never average a hard governance, safety, privacy, authorization or no-contact violation into a pass.
+8. **Preserve ownership and chronology.** Each existing stream/office writes only inside its mandate. Route other-scope changes to the registered owner. Keep failed attempts, corrections, prior versions and conflicting evidence reconstructable. Do not silently overwrite earlier state to make the current narrative look consistent.
+
+## 4. Existing evidence anchors and active test boundaries
+
+- Research record: [ROOT INTAKE — CATEGORY A — External Agent Reliability / Execution-Chain Remediation Research — 2026-10-15](https://app.notion.com/p/3fa8f8b56cd781059c70f0df29612c8f?pvs=204).
+- Root throughput/readback route: [existing issue #31 — model-to-Root throughput](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6189308258).
+- Existing provider-portability assessment: [issue #29 — agent-harness / execution-continuity supplement](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/29#issuecomment-6189404607). This is assessment only; it does not authorize a model switch, credentials, billing or data transfer.
+- Existing intention/convergence route: [issue #18 — Category A external-harness evidence applied to intention integration](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/18#issuecomment-6189459139).
+- Existing per-consumer intention audit: [CATEGORY_A_MATRIX_WIDE_INTENTION_ENGINE_INTEGRATION_AUDIT_20261013_R01.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_A_MATRIX_WIDE_INTENTION_ENGINE_INTEGRATION_AUDIT_20261013_R01.md).
+- Existing flight/continuity evidence: [CATEGORY_A_DYNAMIC_FLIGHT_PATH_CONTINUITY_AND_RUNTIME_DRIFT_20261012.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/CATEGORY_A_DYNAMIC_FLIGHT_PATH_CONTINUITY_AND_RUNTIME_DRIFT_20261012.md).
+- External methods: [Anthropic — harness design for long-running agents](https://www.anthropic.com/engineering/harness-design-long-running-apps); [OpenAI — sessions and recovery](https://developers.openai.com/api/docs/guides/agents-api/sessions); [OpenAI — agent workflow evaluations](https://developers.openai.com/api/docs/guides/agent-evals); [Claude Cowork — scheduled tasks](https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork).
+
+**Current known gap (use exact newer source/readback before claiming closure):** the recorded intention audit distinguishes the already existing Search core and its closed bounded V1 first cycle from matrix-wide consumer adoption. The recorded Marketplace runtime readback reported local-only discovery while its external/shared Search providers were unconfigured; the shared-intent invocation and ranked-session readback therefore remained unaccepted in that recorded state. Each live caller must be re-read before stating whether that exact gap has since changed.
+
+## 5. Governance and implementation boundaries
+
+- ROOT/T-GOV retains disposition, scope and cross-stream governance.
+- MASTER/LIBRARIAN retains evidence, lifecycle, provenance, integration oversight and truthful readback.
+- T-COD and each registered surface owner implement only authorized changes within their boundaries.
+- Use the existing Root Intake, issue #18 / #29 / #31, existing benchmark and current flight/continuity routes. Do not create parallel machinery.
+- This section instructs execution to apply existing controls and test the evidenced gap. It does not itself Merge or Canonize any research artifact, authorize a provider migration, move credentials/data, change production configuration, or declare current-consumer behavior accepted. V1 code/adapter changes continue through the existing owner, review, merge and exact-revision acceptance process.
+
+**Acceptance:** This control is active as an Owner-directed additive Blue State section once its exact source/readback is verified. The research artifact and proposed code-level deltas remain subject to the existing Root/T-GOV disposition and lifecycle process; each behavior claim still requires fresh runtime evidence.
