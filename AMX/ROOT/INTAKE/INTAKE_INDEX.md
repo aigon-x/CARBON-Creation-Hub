@@ -2958,3 +2958,21 @@ Each office receipt below binds: **PRIMARY PURPOSE understood; current 65% attri
 - **Acceptance evidence:** independent fetch-back of this Index append; corrected R04 blob readback; PR URL/review/merge plus exact-head CI and deployed route readback; rendered-media hashes/properties and claim/rights QA; provider receipt, public URL/ID and live readback; source-bound commercial reconciliation and Banker settlement evidence if payment occurs.
 - **Persistence/readback:** this is the existing Index recovery route; no PR, R04 correction, rendered media, publication or JGMI ledger record is claimed persisted by this wake. **Safety/preservation:** no duplicate scheduler, cadence change, new opportunity/ledger, external contact, payment mutation, session token, controlled evidence, LinkedIn edit or D04 publication; preserve branch, R02/R03 and all provenance.
 - **Disposition:** canonical preflight PASS; 12/12 digests PASS; D04 historical source order dispositioned / public HOLD; T-COD source progress / PR and deployment acceptance OPEN; T-MED R04 erratum BLOCKED / media BLOCKED / publication NOT EFFECTED; verified money-in NONE; runtime OPEN. Remaining work stays with the named owners above until accepted/read back or governed cancellation.
+
+
+---
+
+## INDEX RECORD — AMX-ROOT-INTAKE-20261015-EXT-AGENT-RELIABILITY — 2026-10-15
+
+- **Title:** ROOT INTAKE — CATEGORY A — External Agent Reliability / Execution-Chain Remediation Research.
+- **Owner / responsibility:** MASTER/LIBRARIAN — provenance, evidence and integration oversight; ROOT/T-GOV — disposition of material governance/implementation deltas; existing owners retain their runtimes and builders.
+- **Lifecycle:** **ACCEPTED by Owner** for the research/integration evidence package. The additive Blue State operating control is PRESENT / ACTIVE IN BLUE STATE with source/readback verified. Research and unapplied implementation proposals are not thereby MERGED or CANON.
+- **V1 relevance:** reliability and continuity reinforcement for existing execution and intention-engine consumers; no Master Build File change authorized or performed by this acceptance.
+- **Parent / existing controls:** current Blue State intent-driven execution and dynamic-flight continuity sections; existing Runtime-Open, mandate-preflight, T10, blocked-attempt-recovery and post-run controls; existing Continuity Rehydration Benchmark and frozen Search V1 behavioral vectors.
+- **Duplicate / supersession assessment:** corroborating evidence/additive operating control absorbed by existing Blue State and Root Intake routes. No second benchmark, engine, worker, scheduler, router, queue or authority created.
+- **Source and provenance:** [Notion research record](https://app.notion.com/p/3fa8f8b56cd781059c70f0df29612c8f?pvs=204); [Blue State commit](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/commit/4029faa26bd52454a25300fec4a0a2c507d3b634); [Owner acceptance/readback receipt — existing issue #31](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6189975820); [existing intention integration route — #18](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/18#issuecomment-6189459139); [existing provider-portability route — #29](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/29#issuecomment-6189404607).
+- **Integrity result:** Blue State blob `13feca18a6583ed332bc5ace15658db91a8ed852`; mandate registry blob `d3a749a48d98292a13931fd6ff8518dea03e5b20`; registered root `6f46db56ce4b54bd4655f9e0f5e919dcdb004520d6a0acd455281841a1d7912f`; all 12 registered mandate payload digests recomputed and matched.
+- **Build impact:** none. No implementation code/adapter, provider configuration, credential, deployment, frozen Search V1 gate, mandate payload, registry, or Master Build File changed.
+- **Unresolved / next governed action:** ROOT/T-GOV disposition where required; verify real shared-intent invocation, session/ranking readback and state consequence per existing consumer; execute and baseline the existing behavioral benchmark; recover an authorized current provider-adapter inventory for the existing #29 assessment. Issues #18 and #29 remain OPEN.
+- **Evidence boundary:** the Owner's acceptance is not runtime acceptance, revenue evidence, model-provider migration approval, Merge, or Canon promotion.
+
