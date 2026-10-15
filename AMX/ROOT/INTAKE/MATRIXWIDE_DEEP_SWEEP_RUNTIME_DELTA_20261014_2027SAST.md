@@ -137,3 +137,11 @@ A fresh private automation peek after the runtime/procurement update returned th
 - **Payment/settlement objects:** `GET /v1/payment_intents?limit=100` returned 0; `GET /v1/charges?limit=100` returned 0; `GET /v1/invoices?status=paid&limit=100` returned 0; `GET /v1/balance_transactions?type=charge&limit=100` returned 0; `GET /v1/payouts?limit=100` returned 0. Each read was in live mode with no additional pages exposed by the list response.
 - **Compared with the previous read:** the 14-Oct 17:54Z snapshot contained 41 sessions (14 open, 27 expired); the fresh 15-Oct snapshot contains 42 (12 open, 30 expired). The status distribution changed, but no buyer was attributed and no successful payment or payout was evidenced.
 - **Disposition:** connected Stripe cash-in remains NOT EVIDENCED. Do not write PAID or claim global revenue is zero from this single rail. Existing offer links and checkout settings were not changed; no buyer was contacted and no payment mutation was made.
+
+
+## 12. Fresh 200K proposal-branch comparison — 2026-10-15
+
+- Read-only GitHub comparison, `main...proposal/forx-200k-streaming-memory-20261014`: **diverged, proposal branch 7 commits ahead and 30 commits behind current main**. The compared code change is `overdrive/forx_stage1_runtime/app.py`, 472 additions / 228 deletions (700 changed lines).
+- Main runtime file blob remains `9cf5a6e29405b320395a9bab3148469c8e0ec872`; proposal-branch file blob remains `7be949e2212d9397554f5b1bb1db2e9755cdf14d`. The existing Render service configuration still points at branch `main`, so the proposal code is **not deployed** on the inspected service.
+- A read-only PR search for the branch/“FORX 200K” surfaced no matching PR in this check. This search result alone is not a repository-wide proof that no related PR exists. No CI acceptance result was established by this comparison.
+- **Disposition:** leave the branch proposal-only. T-COD must reconcile the 30-commit drift and run the required code/test review under its existing authority; FORX independently accepts only after endpoint, exact 200K durable output and restart-resume proof. No merge, rebase, deploy, service change or workflow run was triggered by this read.
