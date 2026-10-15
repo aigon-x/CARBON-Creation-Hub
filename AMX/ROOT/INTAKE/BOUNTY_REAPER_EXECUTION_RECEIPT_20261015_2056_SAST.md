@@ -161,6 +161,14 @@ Scope limit: other controller mutation paths were not exhaustively audited, so t
 
 Next lawful advancement if executable infrastructure becomes available: run the exact pinned checkout's existing `prop_accounting_conservation` and focused liquidation-credit tests, then inspect other account mutation paths only if a specific non-returned/stale-position source can be isolated. Do not label this bounded kill as a Q1 submission.
 
+## Symbiosis MetaRouterGateway scope-bound recheck — hold retained
+
+Fresh source readback in the same existing parcel, pinned by verified Git blob hashes:
+- `symbiosis-finance/core-contracts/contracts/synth-core/metarouter/MetaRouterGateway.sol`, blob `95fcff0f32bdea443a415cd462bc5456039634cd`, is 32 source lines. Its only token-claim method is `claimTokens(address _token, address _from, uint256 _amount) external onlyMetarouter` and performs `safeTransferFrom(_token, _from, metaRouter, _amount)`. The immutable `metaRouter` address is the only caller allowed by the modifier.
+- `symbiosis-finance/core-contracts/contracts/synth-core/metarouter/MetaRouter.sol`, blob `09dbc638a0ee7084dcdbac83ef35947afbb7ecf9`, shows `metaRoute()` uses the gateway to pull the caller's approved token amount into MetaRouter. The separate `externalCall()` is public and can request a receive-side contract call; on call failure it sends the specified token amount from MetaRouter to a caller-chosen `_to`. Its `_externalCall` rejects the gateway as `_receiveSide`. The transfer source is the MetaRouter's own balance, not a direct `transferFrom` from the listed gateway assets.
+- Current official program scope (retrieved in the prior receipt) lists four `MetaRouterGateway` deployments, and only direct theft or permanent freeze of ERC-20 tokens from those listed assets qualifies. The focused source review still identifies no public path whereby the untrusted caller of `externalCall()` can invoke `claimTokens()` on the gateway or make the gateway pay `_to` directly.
+
+Disposition: **B — SCOPE-GATED / NOT SUBMITTABLE; NO PROMOTION.** The MetaRouter helper-balance concern does not satisfy the published gateway-only asset boundary on the evidence recovered. This does not declare the MetaRouter safe and does not prove a complete absence of cross-contract call paths; the exact remaining reopening condition is an identified, code-grounded path from attacker-controlled calldata/authority to a qualifying direct theft/permanent freeze of a listed deployed Gateway asset, plus a compliant local/fork PoC and full audit/known-issue dedupe. No call against a deployment, test transaction, approval, fund movement, report or submission was made.
 ## Accessible inventory and continuation
 
 The current accessible `BLACK/jobs` inventory contains historical Reaper LayerZero and XOXNO job files. Prior Reaper receipts classify the current Symbiosis helper-balance signal as outside the listed asset/impact boundary; the sampled Stargate 100%-fee claim as killed; Sei Giga narrow abort, Veda request-integrity, Axelar origin and OpenBridge stale-vote hypotheses as killed/narrowed; XOXNO stale-position as not reproduced; sBTC nonce behavior as public prior art; and vesting arithmetic as a B signal with no identified project/source, eligible impact or PoC. No alternative ready Q1 package was recovered.
@@ -174,7 +182,7 @@ This run materially advanced the LayerZero parcel by recovering the documented E
 - **Acceptance:** canonical queue is read, row content is independently verified, and any eligible completed packet enters its official program with an external receipt/report ID.
 - **Persistence here:** existing Root Intake fallback only; no shadow tracker or parallel evidence plane created.
 
-RUN_RESULT: PRODUCTIVE — LAYERZERO TARGET ASSOCIATION BOUND; FAILED-DROP CLAIMS REMAIN KILLED; PARENT Q3 PARKED.
+RUN_RESULT: PRODUCTIVE — LAYERZERO FAILED-DROP CLAIM KILLED / 2023 AUDIT PRIOR ART CONFIRMED / 2026 DIFF DEDUPE OPEN; XOXNO LIQUIDATION-CREDIT CLAIM KILLED; 0x SETTLER REENTRANCY CLAIM KILLED; 1INCH SPECULATIVE TIMESTAMP CLAIM NOT PROMOTED; SYMBIOSIS GATEWAY-ONLY SCOPE GATE RETAINS HOLD. NO SUBMISSION-READY PARCEL ESTABLISHED IN ACCESSIBLE EVIDENCE.
 TRACKER: TRACKER_WRITE_BLOCKED.
 Q1: UNKNOWN, NOT ZERO.
 EXTERNAL SUBMISSION / ACCEPTANCE / AWARD / PAYMENT: NONE ESTABLISHED.
