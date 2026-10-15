@@ -25,17 +25,18 @@
   },
   "last_receipt": "receipts/0000000023-qdrain-20261015-naomii-offered.json",
   "last_signal_count": {
-    "PRI": 59,
+    "PRI": 62,
     "iSCOPE": 22
   },
-  "last_tick": "2026-10-15T13:27:41.769857+00:00",
+  "last_tick": "2026-10-15T13:28:43.797148+00:00",
   "last_tick_result": {
     "pending": 0,
-    "processed": [
-      "qdrain-20261015-ahitrecruitment-offered",
-      "qdrain-20261015-accurategroup-offered",
-      "qdrain-20261015-naomii-offered"
-    ]
+    "processed": [],
+    "signals": {
+      "PRI": 62,
+      "iSCOPE": 22
+    },
+    "state_changed": true
   },
   "queue": [
     {

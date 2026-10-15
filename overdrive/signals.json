@@ -145,6 +145,42 @@
       "thread_id": "1a11b54b561ebb5c"
     },
     {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "opportunity_key": "accurategroup.co.za|technology-sourcing-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "opportunity_key": "ahitrecruitment.com|sourcing-overflow-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "opportunity_key": "naomii.app|technology-sourcing-overflow-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
@@ -709,7 +745,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-15T13:27:41.762449+00:00",
+  "generated_at": "2026-10-15T13:28:43.791461+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -989,6 +1025,18 @@
       "status": "WAITING",
       "thread_id": null
     },
+    "accurategroup.co.za|technology-sourcing-pilot|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "opportunity_key": "accurategroup.co.za|technology-sourcing-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
     "addictivedramas.com|licensing-production|the-dragon-who-could-not-claim-me": {
       "due_at": null,
       "due_now": false,
@@ -1012,6 +1060,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a103d3f1631dffd"
+    },
+    "ahitrecruitment.com|sourcing-overflow-pilot|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "opportunity_key": "ahitrecruitment.com|sourcing-overflow-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "alakai-productions|production-collaboration|the-dragon-who-could-not-claim-me": {
       "due_at": null,
@@ -1516,6 +1576,18 @@
       "state": "RESPONDED",
       "status": "WAITING",
       "thread_id": "1a0fedc9bdd30527"
+    },
+    "naomii.app|technology-sourcing-overflow-pilot|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "opportunity_key": "naomii.app|technology-sourcing-overflow-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "netshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": null,
