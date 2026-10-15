@@ -116,3 +116,15 @@ The latest metadata timestamps for Librarians, Sales and FORX were not matched t
 - Commercial ledger still reads 87 declared/actual records; claims still read 87 with `ready_count=0`, `external_ready_count=0`, 81 WAITING and six CLOSED; state remains at sequence 20 with no newly processed queue items. The staging delta is a procurement signal, not a ledger qualification or commercial outcome.
 - Current Blue State file remains present at blob `424eeac324e455c94a557f9bc573baf26c2af400`; historical 25% prompt wording on the Librarian and the scheduler-update limitation remain unresolved. This receipt does not claim universal policy propagation.
 - **Disposition:** submitted through the existing Root Intake route; Root acceptance still pending. No duplicate task/worker/queue, schedule change, service mutation/deploy, external email, tender submission, payment change or publication was performed.
+
+
+## 10. Live automation metadata recheck — 2026-10-15
+
+A fresh private automation peek after the runtime/procurement update returned the following current metadata. These timestamps/statuses are not exact-run output receipts and must not be promoted to proof of successful work:
+
+- Existing `FIRST BREATH — FORX Continuous Play Sweep` (`6ac6a4081dd48191967a0182fca2eba7`): **enabled**; last-run metadata `2026-10-15T05:22:00.050157Z`; `next_run_time=null`. No exact output receipt tied to that run was located in this read.
+- Existing `FIRST BREATH — IDEAL SALES TEAM` (`6ac17e8999648191ba125236de46f012`): **enabled**; last-run metadata `2026-10-15T05:35:38.686767Z`; `next_run_time=null`. Exact-run material output was not verified here.
+- Existing `FIRST BREATH — LIBRARIANS` (`6ac7c95aa91c819182be1e98e1404b95`): current peek returns **disabled**, last-run metadata `2026-10-15T03:15:51.978721Z`, updated at `2026-10-15T03:16:56.958876Z`, `next_run_time=null`. Its stored schedule still says `RRULE:FREQ=HOURLY`; its prompt still contains the historical 25% wording, and no 65% wording is present in the saved prompt. The reason/actor for the disable is not exposed by this lookup.
+- Existing Bounty Reaper, Banker Cash Watch and halted CARBON° Production Studio remain disabled in this same peek.
+
+**Handling:** No task was re-enabled, run-now triggered, duplicated or rescheduled in this pass. Preserve the existing hourly rule; do not convert it to daily or create a replacement. Continue only the user's existing manual-wake route while the hourly plan restriction is unresolved. The Librarian's disabled state and prompt-policy drift are reported as source-backed current state, not silently repaired. Root/authorized automation owner can disposition the disabled flag through the existing intake route if a status change is required; this is not evidence the prior task run failed or that its work products are absent.
