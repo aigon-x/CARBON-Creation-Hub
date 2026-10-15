@@ -85,6 +85,30 @@ This wake continued beyond the LayerZero audit gate and screened a distinct, cur
 - Disposition: **A — KILLED / PUBLIC PRIOR ART / NO BOUNTY CANDIDATE** for the claimed general `execute()` reentrancy gap. No local exploit test or live-target test was run; conclusion is bounded to the claim against the reviewed source. The public issue's no-pause/best-practice and cross-chain-replay assertions were not promoted.
 - Outcome: no candidate package, external submission, report ID, acceptance, award or payment. This screen is recorded as a kill, not as a vulnerability discovery.
 
+## Additional reward-route and current-program screening
+
+### Sablier — reward route closed
+
+The pre-existing unbound vesting-arithmetic signal was checked against Sablier as one possible vesting ecosystem, without assuming the old signal originated there.
+- Sablier's own bounty page states the program was deprecated effective **2026-05-01**: https://sablier.notion.site/bug-bounty
+- Sablier's EVM repository security policy also states that it does not operate a bounty and reports are not eligible for rewards: https://github.com/sablier-labs/evm-monorepo/security
+- Disposition for a Sablier payout route: **A — NOT REWARD-ELIGIBLE under the retrieved current policy**. No vulnerability was claimed, no private submission or direct contact was made, and no external report/award/payment exists.
+- The older generic vesting-arithmetic B signal remains **B — UNBOUND SIGNAL**; there is not enough evidence to attribute it to Sablier or promote it to a live, in-scope target.
+
+### SP1 — current live program; public candidate triage
+
+Official current program:
+- Information/reward route: https://immunefi.com/bug-bounty/sp1/information/
+- Current scope: https://immunefi.com/bug-bounty/sp1/scope/
+- Program was live from 2026-09-21, last updated 2026-10-13, maximum reward $100,000. The scope requires a runnable PoC and limits eligible proof-system impacts to specified soundness/completeness failures in production configurations; it excludes several experimental/debug paths and requires latest-release reproducibility.
+
+Three already-public issue reports were checked against the current scope and candidate novelty gate:
+1. **#2927 — BLS12-381 decompression infinity/subgroup handling**: https://github.com/succinctlabs/sp1/issues/2927. Its own description marks the finding dormant because the relevant precompile is decommissioned and expressly says it is not an SP1 proof-system soundness issue. **A — KILLED / NOT AN ELIGIBLE LIVE IMPACT.**
+2. **#2926 — Weierstrass decompression wrappers panic**: https://github.com/succinctlabs/sp1/issues/2926. Public since 2026-08-04, before the bounty launch; the author states no execution was performed and the affected precompiles have no active executor/AIR implementation. The report is about disabled wrapper behavior, not demonstrated false-proof acceptance or a qualifying production proof verifier impact. **A — PUBLIC PRIOR ART / NOT SUBMISSION-READY.**
+3. **#2922 — deferred proof verification setting**: https://github.com/succinctlabs/sp1/issues/2922. Public since 2026-08-03, before bounty launch. Its own report says the proof mismatch is caught in compression and it is not a soundness problem; the requested improvements are documentation and execute-time testing. **A — PUBLIC PRIOR ART / NON-QUALIFYING IMPACT.**
+
+These issue reports were screened as prior art, not repackaged. No candidate survived for a private bounty submission. No report package, report ID, acceptance, award, receivable or payment was produced. The screen does not establish that the entire SP1 codebase is exhausted; any further SP1 path must be reviewed against the latest release, official known-issue/audit lists and a runnable local PoC before promotion.
+
 ## Accessible inventory and continuation
 
 The current accessible `BLACK/jobs` inventory contains historical Reaper LayerZero and XOXNO job files. Prior Reaper receipts classify the current Symbiosis helper-balance signal as outside the listed asset/impact boundary; the sampled Stargate 100%-fee claim as killed; Sei Giga narrow abort, Veda request-integrity, Axelar origin and OpenBridge stale-vote hypotheses as killed/narrowed; XOXNO stale-position as not reproduced; sBTC nonce behavior as public prior art; and vesting arithmetic as a B signal with no identified project/source, eligible impact or PoC. No alternative ready Q1 package was recovered.
