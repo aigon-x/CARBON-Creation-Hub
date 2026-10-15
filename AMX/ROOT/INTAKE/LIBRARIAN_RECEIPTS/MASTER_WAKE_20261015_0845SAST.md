@@ -33,3 +33,15 @@ Current evidence and next action:
 - Commercial issue #3 remains the standing commissioning control until a current reconcile→persist→readback→continued material action cycle is evidenced.
 
 Receipt location: AMX/ROOT/INTAKE/LIBRARIAN_RECEIPTS/MASTER_WAKE_20261015_0845SAST.md
+
+
+## Same-wake continuation — fresh live payment-rail readback
+Timestamp: 2026-10-15T06:53:46Z / 08:53:46 SAST
+
+A fresh read-only Stripe inventory was performed after this receipt was initially written. Complete list reads returned 42 Checkout Sessions (12 open, 30 expired; all 42 unpaid; no customer ID/email attribution), zero PaymentIntents, zero charges, zero paid invoices, and zero Balance Transactions. All five list calls returned has_more=false.
+
+The newest open session is labelled JGMI by Carbon / corporate_presence_launch for ZAR 7,963, but it has no customer attribution. Classification: UNATTRIBUTED RAIL ACTIVITY, not buyer acceptance, receivable, paid, or settled. This connected-account read does not establish the status of every receiving rail.
+
+This same-wake result supersedes the earlier sentence above that no fresh Stripe read had yet been performed. Next action: existing PRI reconciles the session against the existing opportunity/offer/thread without duplicate outreach; MASTER independently reads back the join or preserves the exact unattributed blocker; Banker retains independent settlement truth. No session/payment mutation or buyer contact occurred.
+
+Intake record: existing issue #31 comment 6186349655; fetched back successfully.
