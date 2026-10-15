@@ -64,7 +64,7 @@ The public audit repository directory lists, among other relevant material:
 - `MessageLib-Paladin-15DEC2023-Initial.pdf`
 - `MessageLib-Paladin-11JUN2026-Diff.pdf`
 
-The PDF content was not readable through the available retrieval route in this run. Their existence and filenames are evidence that audit material exists, not evidence of its contents. **AUDIT DEDUPE remains NOT PASSED.** Prior receipts describe the 2023 Paladin MessageLib report as thematic prior art concerning upfront Executor fees/native airdrops; exact identity with this narrowed failure path is not established.
+The 2023 Paladin final PDF was recovered from its public publisher and text inspected: https://paladinsec.co/assets/audits/20231215_Paladin_LayerZeroMessageLib_Final_Report.pdf. Its Issue #03 (pp. 19–20) explicitly states that executor/verifier fees are paid upfront whether or not they do the destination work; it gives a large native airdrop as an example where an executor can collect the fee then abandon delivery. The resolution is ACKNOWLEDGED, recommending that applications choose reliable providers. This is confirmed, material prior art for the economic premise of an Executor getting paid despite non-execution, so the current claim cannot be submitted as a novel version of that general issue. The exact implementation-specific path may differ, but no eligible, materially distinct impact has been proven. The 2026 diff PDF MessageLib-Paladin-11JUN2026-Diff.pdf remains unread through the available connector route. AUDIT DEDUPE: the 2023 thematic prior art is confirmed; complete current audit dedupe is NOT PASSED.
 
 ### Parcel disposition
 
@@ -119,6 +119,13 @@ Follow-on static review was pinned to SP1's official latest-release tag availabl
 - Local execution environment check: `rustc` and `cargo` are not installed; `nvidia-smi` is unavailable. The required current-release runnable PoC / production-circuit reproduction was therefore **not** built or executed in this runtime. This is a concrete test gate, not evidence of a vulnerability. Do not submit the PR as a finding or imply the bounty's PoC gate was met.
 - Disposition: `B — STATIC SCREEN ONLY / NO SUBMISSION CANDIDATE PROMOTED`. Continue only with a new, specific source-level inconsistency that can be deduplicated against the official audit/known-issue lists and validated in a suitable lawful local environment.
 
+## LayerZero audit dedupe delta — 2023 primary PDF recovered
+
+Source: Paladin Blockchain Security, Smart Contract Security Assessment for LayerZero (MessageLib), final report dated 2023-12-15. Public publisher PDF: https://paladinsec.co/assets/audits/20231215_Paladin_LayerZeroMessageLib_Final_Report.pdf.
+
+The report's Issue #03 (printed pages 19–20) is titled “Message lib lacks direct on-chain incentive for executors and verifiers to actually do their part, as the fee is collected at the source chain when a transaction is sent out.” It states that fees are paid upfront regardless of whether an executor/verifier does its part, specifically gives the example of a large native airdrop where an executor can collect a fee and then never execute the destination message, and records the resolution as ACKNOWLEDGED. The stated resolution asks applications to select providers based on reliability metrics. This confirms material thematic prior art, not just a filename-level hint.
+
+Disposition update for BR-20261003-024: the generic “Executor can retain/collect compensation while native airdrop/destination execution fails” premise is A — PUBLIC AUDIT PRIOR ART / NOT NOVEL FOR SUBMISSION under the program's published audit-exclusion rule. The source-specific low-level failed-call/refund semantics remain a code observation, not an eligible finding without a distinct qualifying impact; no such impact or compliant PoC is established. The prior claim that the 2023 audit's contents were unreadable is superseded by this source recovery. The 2026 MessageLib diff audit remains unread, therefore full dedupe is still not passed. Do not submit the generic native-drop premise.
 ## XOXNO INV-ACCT-10 recovery — reviewed liquidation-credit path killed
 
 Recovered the existing frozen job source `XOXNO/rs-lending-xlm@a2486b255b974ef8432ce44de014931f51552f4b` and continued the exact stale-account-position hypothesis. This is a bounded static disposition, not a whole-repository proof.
