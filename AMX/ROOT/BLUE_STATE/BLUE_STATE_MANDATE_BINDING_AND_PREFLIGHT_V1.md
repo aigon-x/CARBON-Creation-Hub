@@ -1304,3 +1304,51 @@ Where observable, report elapsed time, model/API spend or token usage, tool call
 - This section instructs execution to apply existing controls and test the evidenced gap. It does not itself Merge or Canonize any research artifact, authorize a provider migration, move credentials/data, change production configuration, or declare current-consumer behavior accepted. V1 code/adapter changes continue through the existing owner, review, merge and exact-revision acceptance process.
 
 **Acceptance:** This control is active as an Owner-directed additive Blue State section once its exact source/readback is verified. The research artifact and proposed code-level deltas remain subject to the existing Root/T-GOV disposition and lifecycle process; each behavior claim still requires fresh runtime evidence.
+
+
+---
+
+# TOKYO — BOUNDED MATRIX-WIDE DRIFT-CONTROL FUNCTION — OWNER-DIRECTED MERGE — 2026-10-15
+
+**Disposition:** MERGE — BOUNDED / ACTIVE AS A SHARED ROUTING CONTROL. This section resolves the pre-integration status recorded in [ROOT INTAKE issue #31 comment 6190517913](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6190517913).
+
+## 1. What TOKYO is — and is not
+
+TOKYO is the shared pre-route and post-output drift-control function applied within the **existing Route INTAKE and existing execution routes**. It checks that incoming intent is understood, the correct existing owner is selected, and the result matches the original intent before the existing receipt/continuity surface is updated.
+
+TOKYO is **not** a separate office, worker, mandate-bearing role, second ROOT, execution owner, scheduler, queue, dashboard, independent authority, or mandatory multi-office approval gate. No new mandate or registry entry is created by this merge. The existing unregistered-role rule remains unchanged. The current authorized owner performs the check as part of the route they already own.
+
+This dated Owner-directed Blue State rule supersedes the 2026-10-05 “NO DRIFT ZONE” intake text **only** to the extent that the earlier mnemonic-only wording would prevent this bounded TOKYO function from being used. All other RGR limits remain: RGR creates no authority, worker, office, or independent governance layer.
+
+## 2. Shared scope and domain separation
+
+Apply the same shared MATRIX-wide invariants across the domain scopes **AMX CORE**, **CARBON°**, and **TELEGRAM / AMALIGRAM**. These labels do not create three ROOT authorities or commission a new project, worker, or route by themselves. Each action must still resolve to a currently authorized existing owner and execution surface.
+
+Shared rules remain single-source. Domain-specific state may remain separate where needed, but must reference the shared controlling rule rather than fork or silently redefine it. CARBON° capabilities remain within the existing domain until evidence and a separately authorized decision establish a true independent division.
+
+## 3. Non-blocking route
+
+**EXISTING ROUTE INTAKE → TOKYO PRE-ROUTE INTENT/STATE CHECK → ONE CORRECT EXISTING ROUTE / OWNER → AUTHORIZED EXECUTION → TOKYO OUTPUT-FIDELITY CHECK → EXISTING RECEIPT / CONTINUITY SURFACE.**
+
+At intake, check the original requested outcome, latest controlling source, supersession/history, authority, evidence, current state, blocker scope, and correct existing owner. Preserve the distinction between **VERIFIED**, **OWNER-REPORTED**, **INFERRED**, and **UNKNOWN**.
+
+- If intent, authority, owner, route, and required evidence are clear, pass the work through immediately. Do not wait for all three domain routes or every T-Librarian to acknowledge it.
+- If one action is ambiguous or authority-bound, hold **only that affected action**. Preserve the source and furthest evidenced state, state the exact unresolved point, and route a source-linked packet through existing INTAKE to the correct existing control/owner with a next action and acceptance condition.
+- Unrelated lawful work continues. A blocked connector, unclear item, or missing receipt does not freeze an entire domain or create a new institution.
+- Cross-domain work retains one provenance root and is split into bounded packets only where different existing owners are genuinely required.
+
+## 4. Authority and execution boundaries
+
+TOKYO may flag drift and prevent an unverified statement from being treated as current. It may not silently edit CANON, BLUE STATE, mandate payloads/registry, or domain authority. Proposed authority or canonical changes continue through the existing ROOT/T-GOV disposition and merge process.
+
+Preserve the current owners and scopes: ROOT/T-GOV for governance and authority; T-COD for authorized code/runtime implementation; T-MED for its media/presentation/publication scope; and the existing commercial, discovery, settlement, and domain owners for their respective actions. TOKYO does not take over execution or alter existing single-writer rules.
+
+## 5. Output verification and priority
+
+Before marking work done, compare the actual output to the original intention and verify it on the existing source/receipt surface. A narrative report, issue creation, commit, scheduler timestamp, or “sent” label alone is not proof of the downstream outcome. Persist the actual result, remaining blocker, owner, and next action using existing continuity surfaces. Close only on the applicable acceptance readback or governed cancellation.
+
+The commercial objective remains first. Reliability or governance work may run as bounded parallel work when it directly removes a material blocker to priority execution or protects an existing control. Do **not** impose a rule that every revenue task must finish before any reliability work starts; do not let unrelated documentation or side projects displace the current P0/money-in objective.
+
+## 6. Activation and evidence boundary
+
+This rule is active as shared Blue State on merge. That establishes the control requirement; it does **not** prove that every worker prompt, saved automation, or runtime has consumed it, nor that drift-free behavior has already been demonstrated. Runtime adoption and behavioral acceptance require the existing owner to read back the rule and produce actual route/output evidence. Do not claim those later states without receipts.
