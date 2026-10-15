@@ -128,3 +128,12 @@ A fresh private automation peek after the runtime/procurement update returned th
 - Existing Bounty Reaper, Banker Cash Watch and halted CARBON° Production Studio remain disabled in this same peek.
 
 **Handling:** No task was re-enabled, run-now triggered, duplicated or rescheduled in this pass. Preserve the existing hourly rule; do not convert it to daily or create a replacement. Continue only the user's existing manual-wake route while the hourly plan restriction is unresolved. The Librarian's disabled state and prompt-policy drift are reported as source-backed current state, not silently repaired. Root/authorized automation owner can disposition the disabled flag through the existing intake route if a status change is required; this is not evidence the prior task run failed or that its work products are absent.
+
+
+## 11. Fresh live Stripe cash-in readback — 2026-10-15
+
+- **Account/scope:** connected live Stripe account `AMILLIMATRIX`, account `acct_1UE0UBHyzt7gyqmn`. This is a read of the existing account and does not cover external bank deposits, cash, other processors or other business income.
+- **Checkout Sessions:** `GET /v1/checkout/sessions?limit=100` returned 42 records, `has_more=false`: 12 `open`, 30 `expired`, zero `complete`. All 42 had `payment_status=unpaid`; none exposed a customer/customer-email attribution. Session count alone is not buyer intent or revenue.
+- **Payment/settlement objects:** `GET /v1/payment_intents?limit=100` returned 0; `GET /v1/charges?limit=100` returned 0; `GET /v1/invoices?status=paid&limit=100` returned 0; `GET /v1/balance_transactions?type=charge&limit=100` returned 0; `GET /v1/payouts?limit=100` returned 0. Each read was in live mode with no additional pages exposed by the list response.
+- **Compared with the previous read:** the 14-Oct 17:54Z snapshot contained 41 sessions (14 open, 27 expired); the fresh 15-Oct snapshot contains 42 (12 open, 30 expired). The status distribution changed, but no buyer was attributed and no successful payment or payout was evidenced.
+- **Disposition:** connected Stripe cash-in remains NOT EVIDENCED. Do not write PAID or claim global revenue is zero from this single rail. Existing offer links and checkout settings were not changed; no buyer was contacted and no payment mutation was made.
