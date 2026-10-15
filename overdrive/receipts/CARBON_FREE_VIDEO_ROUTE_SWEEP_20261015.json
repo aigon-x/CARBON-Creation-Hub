@@ -87,14 +87,39 @@
       "provider": "Hugging Face ZeroGPU / Wan2.2",
       "state": "MANUAL_BRIDGE_CANDIDATE",
       "priority": 2,
-      "evidence": "Public Wan2.2 I2V ZeroGPU demo discovered; the base Wan-AI/Wan2.2-I2V-A14B model card lists Apache-2.0.",
+      "evidence": "Public Wan2.2 I2V ZeroGPU demo discovered; base Wan-AI/Wan2.2-I2V-A14B model metadata lists Apache-2.0. Additional public Gradio Spaces discovered: Pepe104/MiniMax-H3-Turbo-Lora-UNCENSORED and vamo455/Omni-videos-custom-auto_prompt_high-quality. wavespeed/wan2.2 is a public Space tagged text-to-video/image-to-video, but is not presumed free.",
       "rights": "Base model license does not establish the hosted Space's terms, output-rights status, privacy, queue limits or download success. Must inspect exact Space and output.",
       "invoke": "NOT_EXECUTED",
       "official_sources": [
         "https://huggingface.co/spaces?hardware=zerogpu",
         "https://huggingface.co/spaces?category=video-generation",
         "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
-        "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B"
+        "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B",
+        "https://huggingface.co/spaces/Pepe104/MiniMax-H3-Turbo-Lora-UNCENSORED",
+        "https://huggingface.co/spaces/vamo455/Omni-videos-custom-auto_prompt_high-quality",
+        "https://huggingface.co/spaces/wavespeed/wan2.2"
+      ],
+      "space_candidates_discovered": [
+        {
+          "name": "Wan2.2 14B Fast",
+          "url": "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+          "space_metadata": "Gradio; MCP-server tag; last updated 2026-08-25; no rights/readback test in this run."
+        },
+        {
+          "name": "MiniMax-H3-Turbo-LoRA",
+          "url": "https://huggingface.co/spaces/Pepe104/MiniMax-H3-Turbo-Lora-UNCENSORED",
+          "space_metadata": "Gradio; last updated 2026-08-16; model/output license, availability and download not verified."
+        },
+        {
+          "name": "Omni videos custom auto-prompt high-quality",
+          "url": "https://huggingface.co/spaces/vamo455/Omni-videos-custom-auto_prompt_high-quality",
+          "space_metadata": "Gradio; last updated 2026-08-30; license, costs, queue and output retrieval not verified."
+        },
+        {
+          "name": "WaveSpeed Wan2.2",
+          "url": "https://huggingface.co/spaces/wavespeed/wan2.2",
+          "space_metadata": "Public Space advertises text-to-video/image-to-video; pricing/free entitlement not established, do not treat as free."
+        }
       ]
     },
     {
