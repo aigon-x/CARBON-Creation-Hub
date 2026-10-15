@@ -615,11 +615,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
+      "next_action": "Candidate must personally record the prepared skills-video script, confirm availability for the required U.S. business hours, then submit through the existing authorized application route. Do not create a duplicate application or polish the current CV. This runtime has no authenticated Ashby/browser submission action; until the existing authorized route is exposed, keep the application NOT SUBMITTED. Persist the genuine submission receipt and read it back before changing lifecycle.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
+      "smallest_next_action": "Candidate must personally record the prepared skills-video script, confirm availability for the required U.S. business hours, then submit through the existing authorized application route. Do not create a duplicate application or polish the current CV. This runtime has no authenticated Ashby/browser submission action; until the existing authorized route is exposed, keep the application NOT SUBMITTED. Persist the genuine submission receipt and read it back before changing lifecycle.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
@@ -757,7 +757,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-15T13:42:21.798837+00:00",
+  "generated_at": "2026-10-15T17:42:30.751581+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1856,11 +1856,11 @@
     "scalearmy.com|ai-implementation-specialist|remote-south-africa": {
       "due_at": null,
       "due_now": false,
-      "next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
+      "next_action": "Candidate must personally record the prepared skills-video script, confirm availability for the required U.S. business hours, then submit through the existing authorized application route. Do not create a duplicate application or polish the current CV. This runtime has no authenticated Ashby/browser submission action; until the existing authorized route is exposed, keep the application NOT SUBMITTED. Persist the genuine submission receipt and read it back before changing lifecycle.",
       "opportunity_key": "scalearmy.com|ai-implementation-specialist|remote-south-africa",
       "priority": 8,
       "routing_reason": "WAITING",
-      "smallest_next_action": "Preserve the existing route without a duplicate application or CV-polish cycle. A candidate-recorded skills video and truthful application attestations are required before submission; do not claim application or income without a genuine receipt. No owner notification is needed for this routine gate.",
+      "smallest_next_action": "Candidate must personally record the prepared skills-video script, confirm availability for the required U.S. business hours, then submit through the existing authorized application route. Do not create a duplicate application or polish the current CV. This runtime has no authenticated Ashby/browser submission action; until the existing authorized route is exposed, keep the application NOT SUBMITTED. Persist the genuine submission receipt and read it back before changing lifecycle.",
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": null
