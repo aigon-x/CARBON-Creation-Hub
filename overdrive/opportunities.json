@@ -287,11 +287,28 @@
       "remains_unproven": "Buyer receipt/open/reply and buyer intent; whether any non-Stripe rail carried funds; bank settlement outside these Stripe objects; causal meaning of session count/status changes. This is a live Stripe-object read, not a universal claim that no business income exists.",
       "upgrade_action": "Do not resend or contact Kingston Stanley, Xubio or Synergy Interactive; continue preserving their existing no-further-outbound state until a material buyer-initiated reply or a new governed route. Banker independently verifies any settlement before PAID. ROOT/T-GOV + PRI reconcile sender identity and sent-vs-draft truth; iSCOPE/PRI continue other lawful eligible commercial routes without duplicate applications.",
       "safety": "Read-only Stripe queries. No new payment links, sessions, products, invoices, customers, or buyer messages created. No lifecycle promotion or revenue attribution."
+    },
+    {
+      "observed_at": "2026-10-15T06:56:48.205Z",
+      "owner": "PRI records the existing payment-rail observation; Banker retains terminal settlement verification.",
+      "scope": "STRIPE_LIVE_BALANCE_AND_PAYOUT_READBACK_20261015_WAKE_01",
+      "classification": "FRESH_LIVE_STRIPE_BALANCE_ZERO_AND_NO_PAYOUT_OBJECTS; SUPPLEMENTAL_TO_CHECKOUT_READBACK",
+      "expected": "Complete the live Stripe settlement-side read by checking the current available/pending account balance and payout list in the existing account, without inferring settlement from Checkout Sessions.",
+      "actual": "Fresh live Stripe GET /v1/balance read for existing AMILLIMATRIX account returned USD available=0 and USD pending=0 (refund/dispute prefunding available/pending also 0; connect_reserved USD=0). GET /v1/payouts?limit=100 returned data=[] and has_more=false. These Stripe reads show no current USD Stripe balance or payout objects; they do not establish whether funds moved through any non-Stripe rail.",
+      "changed": "Supplemented STRIPE_LIVE_MONEY_IN_READBACK_20261015_WAKE_01 with direct balance and payout results. The existing 42 unpaid Checkout Sessions (12 open, 30 expired), zero PaymentIntents/Charges/Invoices/Balance Transactions remain as read in the immediately preceding provider call. No records or lifecycle states changed.",
+      "proof": [
+        "Connected Stripe account: AMILLIMATRIX, acct_1UE0UBHyzt7gyqmn, livemode=true.",
+        "GET /v1/balance: available USD 0; pending USD 0; refund/dispute prefunding USD 0; connect_reserved USD 0.",
+        "GET /v1/payouts?limit=100: data=[], has_more=false."
+      ],
+      "remains_unproven": "Any payments or settlement through a non-Stripe rail; historic cleared funds not represented by current balance or current payout list; buyer intent, acceptance, contract or receivable. No universal all-rail revenue-zero claim is made.",
+      "upgrade_action": "Banker independently verifies any cash receipt/settlement before PAID. Preserve the existing no-further-outbound restrictions on Kingston Stanley, Xubio and Synergy Interactive. ROOT/T-GOV retains the existing sender/status and PR-disposition gates.",
+      "safety": "Read-only Stripe API calls; no payment object, link, invoice, customer or external message created or changed."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-15T06:43:27.417Z",
-  "last_reconciled_reason": "Added the fresh live AMILLIMATRIX Stripe account readback to the existing control-observation sequence and preserved the Scale Army official-source requalification in this same ledger-only recovery PR; record count, opportunity lifecycle, and no-contact controls unchanged.",
+  "last_reconciled_at": "2026-10-15T06:56:48.205Z",
+  "last_reconciled_reason": "Appended a supplemental readback of live Stripe available/pending USD balance and payout list to the existing control-observation sequence; record count and commercial lifecycle unchanged.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -354,7 +371,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-15T06:43:27.417Z",
+  "last_updated_at": "2026-10-15T06:56:48.205Z",
   "last_updated_by": "PRI commercial wake reconciliation",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
@@ -4929,6 +4946,6 @@
       "current_route_status": "OFFICIAL_LISTING_DIRECT_FETCHED_2026-10-14; AUTHENTICATED_SUBMISSION_ROUTE_UNAVAILABLE"
     }
   },
-  "updated_at": "2026-10-15T06:43:27.417Z",
+  "updated_at": "2026-10-15T06:56:48.205Z",
   "version": 1
 }
