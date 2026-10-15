@@ -267,11 +267,31 @@
       "remains_unproven": "Gmail/account-history deduplication and prior Scale Army application/contact state; demonstrated hands-on paid-campaign/A/B-test experience; completed application/video; buyer response, acceptance, contract, invoice, payment, or realized revenue.",
       "upgrade_action": "ROOT/connector administrator restores the existing authorized Gmail/account-history read route. iSCOPE then deduplicates prior Scale Army contact/application and confirms fit against the paid-campaign requirement. If no prior submission exists and fit is supported, PRI submits once through the existing official route and persists the actual receipt/readback. Do not create a duplicate record or repeat external contact.",
       "safety": "No external contact or application; no new opportunity record, worker, pipeline, sender, or account; no CV-polish cycle; no Owner interruption."
+    },
+    {
+      "observed_at": "2026-10-15T06:43:27.417Z",
+      "owner": "PRI records the existing commercial payment-rail readback; Banker retains terminal settlement verification; ROOT/T-GOV governs the existing sender/status contradiction.",
+      "scope": "STRIPE_LIVE_MONEY_IN_READBACK_20261015_WAKE_01",
+      "classification": "FRESH_LIVE_STRIPE_READBACK_NO_PAYMENT_OR_SETTLEMENT_EVIDENCED; PRIOR_SNAPSHOT_SUPERSEDED",
+      "expected": "Refresh the existing AMILLIMATRIX live Stripe payment-rail state, supersede stale provider counts only from direct source reads, and preserve buyer/contact and lifecycle controls.",
+      "actual": "During this wake, the existing AMILLIMATRIX Stripe account in livemode was read directly through GET /v1/checkout/sessions (limit=100; has_more=false): 42 Checkout Sessions, all unpaid; 12 status=open and 30 status=expired, 0 complete. All returned sessions have customer=null and no customer-detail email; PaymentIntents=0, Charges=0, Invoices=0, and Balance Transactions=0 (all five list reads completed with has_more=false).",
+      "changed": "Supersedes the last canonical Stripe snapshot recorded 2026-10-14T17:54:17.175Z (41 sessions: 14 open/unpaid, 27 expired/unpaid) with the fresh account-wide read (42: 12 open/unpaid, 30 expired/unpaid). No buyer identity, acceptance, contract, invoice, receivable, payment, or settlement is established by these session statuses. Existing no-further-outbound-contact restrictions remain unchanged.",
+      "proof": [
+        "Connected Stripe account list: AMILLIMATRIX, account acct_1UE0UBHyzt7gyqmn, livemode=true.",
+        "GET /v1/checkout/sessions?limit=100: 42 returned, has_more=false; statuses=open:12, expired:30; payment_status=unpaid:42.",
+        "GET /v1/payment_intents?limit=100: 0 returned, has_more=false.",
+        "GET /v1/charges?limit=100: 0 returned, has_more=false.",
+        "GET /v1/invoices?limit=100: 0 returned, has_more=false.",
+        "GET /v1/balance_transactions?limit=100: 0 returned, has_more=false."
+      ],
+      "remains_unproven": "Buyer receipt/open/reply and buyer intent; whether any non-Stripe rail carried funds; bank settlement outside these Stripe objects; causal meaning of session count/status changes. This is a live Stripe-object read, not a universal claim that no business income exists.",
+      "upgrade_action": "Do not resend or contact Kingston Stanley, Xubio or Synergy Interactive; continue preserving their existing no-further-outbound state until a material buyer-initiated reply or a new governed route. Banker independently verifies any settlement before PAID. ROOT/T-GOV + PRI reconcile sender identity and sent-vs-draft truth; iSCOPE/PRI continue other lawful eligible commercial routes without duplicate applications.",
+      "safety": "Read-only Stripe queries. No new payment links, sessions, products, invoices, customers, or buyer messages created. No lifecycle promotion or revenue attribution."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-14T23:33:48Z",
-  "last_reconciled_reason": "Read-backed current official-source requalification for the existing Scale Army candidate; preserved record count and lifecycle because Gmail/account-history dedupe and paid-campaign fit remain unresolved. No external action.",
+  "last_reconciled_at": "2026-10-15T06:43:27.417Z",
+  "last_reconciled_reason": "Added the fresh live AMILLIMATRIX Stripe account readback to the existing control-observation sequence and preserved the Scale Army official-source requalification in this same ledger-only recovery PR; record count, opportunity lifecycle, and no-contact controls unchanged.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -334,8 +354,8 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-14T23:33:48Z",
-  "last_updated_by": "PRI/iSCOPE wake reconciliation",
+  "last_updated_at": "2026-10-15T06:43:27.417Z",
+  "last_updated_by": "PRI commercial wake reconciliation",
   "record_count": 87,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
@@ -4909,6 +4929,6 @@
       "current_route_status": "OFFICIAL_LISTING_DIRECT_FETCHED_2026-10-14; AUTHENTICATED_SUBMISSION_ROUTE_UNAVAILABLE"
     }
   },
-  "updated_at": "2026-10-14T23:33:48Z",
+  "updated_at": "2026-10-15T06:43:27.417Z",
   "version": 1
 }
