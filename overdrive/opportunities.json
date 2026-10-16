@@ -398,11 +398,27 @@
       "remains_unproven": "Employer receipt/read, response, interview, compensation terms, job offer, contract or payment.",
       "scope": "KODAH_BDR_APPLICATION_SUBMITTED_20261016",
       "upgrade_action": "Wait until 2026-10-23T08:25:19Z or earlier employer response; inspect the same thread and confirm role status before one follow-up."
+    },
+    {
+      "actual": "Four distinct current-job emails with CV attachment were sent and exact Outlook Sent Items were independently read back: Edgefolio SDR, PLOY SDR, Gees Talent/Beeline SDR, and Hotsourced current remote LegalTech SDR route request.",
+      "changed": "Added only missing unique opportunity records; no previously existing record rewritten. Three are application emails via public job-route contacts; Hotsourced is pending exact route confirmation. No offers/revenue claimed.",
+      "classification": "FOUR_APPLICATION_SENT_ITEMS_READBACK; BUYER_OUTCOMES_PENDING",
+      "observed_at": "2026-10-16T08:23:54Z",
+      "owner": "PRI",
+      "proof": [
+        "Edgefolio sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjgAAAA==",
+        "PLOY sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjwAAAA==",
+        "Gees Talent sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkAAAAA==",
+        "Hotsourced sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkQAAAA=="
+      ],
+      "remains_unproven": "Email delivery/reading, responses, ATS acceptance, interviews, job offers, compensation agreement, contracts, invoices, or payment.",
+      "scope": "EMPLOYMENT_APPLICATIONS_20261016_0819Z_TO_0824Z",
+      "upgrade_action": "Monitor reply/bounce state; qualify any response immediately. For Hotsourced, use direct LinkedIn application only after browser route is restored or recruiter gives a route. Continue other high-fit current paid roles rather than end after this receipt."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-16T08:26:01Z",
-  "last_reconciled_reason": "Reconciled the new official Kodah Business Development Representative application after checking current official role, canonical ledger and Outlook history; sent the application with the existing CV, verified it in Sent Items and confirmed attachment metadata. Added one unique SUBMITTED record; no response or income inferred. Existing offer waiting windows and delivery-failure state preserved.",
+  "last_reconciled_at": "2026-10-16T08:23:54Z",
+  "last_reconciled_reason": "Added four distinct payer-posted employment applications after current mailbox dedupe and direct Outlook Sent Item readback. Exact state is SUBMITTED/WAITING; Hotsourced is route-confirmation-pending because its published contact is a general recruiting inbox rather than confirmed requisition ATS. No buyer reply, offer, contract, invoice, or payment inferred.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -465,9 +481,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-16T10:26:01+02:00",
-  "last_updated_by": "iSCOPE → PRI existing commercial field force",
-  "record_count": 101,
+  "last_updated_at": "2026-10-16T10:23:54+02:00",
+  "last_updated_by": "PRI",
+  "record_count": 105,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -5866,6 +5882,233 @@
       "subject": "Application — Business Development Representative (Remote / EMEA)",
       "thread_id": null,
       "title": "Business Development Representative"
+    },
+    "edgefolio.com|sales-development-representative|2026-10-16": {
+      "buyer_fit": "Strong direct fit to 10+ years EMEA B2B sales, account development, route-to-market, negotiation and senior-stakeholder work. AI product-building provides adjacent technical fluency. Direct fund/asset-management sales experience not established; not claimed.",
+      "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
+      "constraints": [
+        "Role page describes remote-first but London/remote context; eligibility for a South Africa-based hire remains unconfirmed.",
+        "Compensation amount not published; recruiter response needed.",
+        "Email sent item is not proof of delivery, buyer response, offer, contract or income."
+      ],
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_ROLE -> TRANSFERABLE_B2B_FIT -> OFFICIAL_HIRING_EMAIL",
+      "domain": "edgefolio.com",
+      "due_at": "2026-10-23T08:19:16Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "observed_at": "2026-10-16T07:35:00Z",
+          "source": "WEB",
+          "url": "https://edgefolio.com/job/sales-development-representative/",
+          "summary": "Current Sales Development Representative opening; remote-first; requires prospect research/pipeline build and B2B SDR capabilities. Page directs CV/application email to careers@edgefolio.com; compensation amount not listed."
+        },
+        {
+          "kind": "PRIOR_APPLICATION_HISTORY_DEDUPE",
+          "observed_at": "2026-10-16T08:19:00Z",
+          "source": "OUTLOOK",
+          "result": "ZERO_MATCHES",
+          "summary": "No previous message to careers@edgefolio.com found before this application."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "observed_at": "2026-10-16T08:19:16Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjgAAAA==",
+          "subject": "Application — Sales Development Representative",
+          "summary": "Official careers email route used with CV attached. Sent item independently read back. Asked recruiter to confirm South Africa remote eligibility and compensation. No reply or offer inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING_FOR_BUYER_RESPONSE",
+      "last_action_at": "2026-10-16T08:19:16Z",
+      "last_reconciled_at": "2026-10-16T08:19:16Z",
+      "next_action": "Wait for reply. By 2026-10-23, recheck the same thread and role status; if no reply, confirm the proper candidate portal/route before one follow-up. If reply arrives, qualify work location, base/variable pay, start date and application steps. No duplicate application.",
+      "opportunity": "Sales Development Representative",
+      "organization": "Edgefolio",
+      "payment": "Employment compensation; role listing does not publish the amount.",
+      "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL",
+      "qualified_at": "2026-10-16T07:35:00Z",
+      "recipient": "careers@edgefolio.com",
+      "reward": "Not published",
+      "state": "SUBMITTED",
+      "subject": "Application — Sales Development Representative",
+      "thread_id": null,
+      "title": "Sales Development Representative",
+      "current_route_status": "OFFICIAL_ROLE_PAGE_EMAIL_ROUTE_VERIFIED",
+      "current_route_confidence": "HIGH"
+    },
+    "ploy.club|sales-development-representative|2026-10-16": {
+      "buyer_fit": "Strong fit to documented EMEA B2B sales, senior stakeholder development, prospecting, route-to-market and negotiation. Current AI product/system build is adjacent to technology-company context. Direct SaaS SDR quota/CRM-tool metrics are not evidenced; not claimed.",
+      "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
+      "constraints": [
+        "Public posting does not publish compensation amount.",
+        "Application has been sent to the recruiter email named in the current role listing; recipient reading and buyer response remain unknown.",
+        "Do not infer an offer from a sent email."
+      ],
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_ROLE -> B2B_COMMERCIAL_FIT -> PUBLISHED_RECRUITER_EMAIL",
+      "domain": "ploy.club",
+      "due_at": "2026-10-23T08:20:22Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_ROLE_LISTING",
+          "observed_at": "2026-10-16T07:55:00Z",
+          "source": "WEB",
+          "url": "https://za.linkedin.com/jobs/view/sdr-email-outbound-at-ploy-4456168947",
+          "summary": "Current Sales Development Representative job listing; email outbound, prospecting, lead qualification and meeting generation; Cape Town relevance; the listing directs CV applications to tim@ploy.club."
+        },
+        {
+          "kind": "PRIOR_APPLICATION_HISTORY_DEDUPE",
+          "observed_at": "2026-10-16T08:20:00Z",
+          "source": "OUTLOOK",
+          "result": "ZERO_MATCHES",
+          "summary": "No previous email to tim@ploy.club found before this application."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "observed_at": "2026-10-16T08:20:22Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjwAAAA==",
+          "subject": "Application — Sales Development Representative",
+          "summary": "Sent to the public job-listing contact with CV attached. Exact sent item read back in Outlook. No buyer reply or offer established."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING_FOR_BUYER_RESPONSE",
+      "last_action_at": "2026-10-16T08:20:22Z",
+      "last_reconciled_at": "2026-10-16T08:20:22Z",
+      "next_action": "Wait for a buyer response. By 2026-10-23, recheck response and current role status. Before follow-up, verify that the same role remains active and the recruiter email remains the permitted route. No duplicate application.",
+      "opportunity": "Sales Development Representative",
+      "organization": "PLOY",
+      "payment": "Employment compensation; no amount published in the listing.",
+      "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL",
+      "qualified_at": "2026-10-16T07:55:00Z",
+      "recipient": "tim@ploy.club",
+      "reward": "Not published",
+      "state": "SUBMITTED",
+      "subject": "Application — Sales Development Representative",
+      "thread_id": null,
+      "title": "Sales Development Representative",
+      "current_route_status": "ROLE_LISTING_RECRUITER_EMAIL_VERIFIED",
+      "current_route_confidence": "HIGH"
+    },
+    "geestalent.com|beeline-sdr|2026-10-16": {
+      "buyer_fit": "Strong fit to documented EMEA B2B sales, account development, route-to-market, negotiation and stakeholder management. Current AI product-building provides adjacent technical fluency. Direct experience selling Beeline software and prior SaaS SDR quota are not evidenced; not claimed.",
+      "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
+      "constraints": [
+        "Salary not stated in the inspected listing.",
+        "This email applies for the role via the listed recruiter inbox; formal ATS requirements may still apply.",
+        "No buyer response, interview, offer or payment is evidenced."
+      ],
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_ROLE -> DIRECT_SALES_FIT -> RECRUITER_APPLICATION",
+      "domain": "geestalent.com",
+      "due_at": "2026-10-23T08:20:59Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_ROLE_LISTING",
+          "observed_at": "2026-10-16T07:50:00Z",
+          "source": "WEB",
+          "url": "https://za.linkedin.com/jobs/view/sales-development-representative-at-gees-talent-4465032814",
+          "summary": "Current Gees Talent listing for a Sales Development Representative supporting Beeline; remote considered from Cape Town; requests CV and a personal letter/pitch."
+        },
+        {
+          "kind": "PRIOR_APPLICATION_HISTORY_DEDUPE",
+          "observed_at": "2026-10-16T08:20:00Z",
+          "source": "OUTLOOK",
+          "result": "ZERO_MATCHES",
+          "summary": "No prior message to cvs@geestalent.com found before this application."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "observed_at": "2026-10-16T08:20:59Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkAAAAA==",
+          "subject": "SDR Application — Ulrich du Plessis",
+          "summary": "Application email and CV attachment sent to cvs@geestalent.com; exact Sent Item read back. The email provides a truthful commercial summary and public proof links. No recipient response or offer inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING_FOR_BUYER_RESPONSE",
+      "last_action_at": "2026-10-16T08:20:59Z",
+      "last_reconciled_at": "2026-10-16T08:20:59Z",
+      "next_action": "Wait for recruiter response. By 2026-10-23, verify response and whether an ATS submission is required; complete any required next step through the existing application history without duplicate registration.",
+      "opportunity": "Sales Development Representative — Beeline",
+      "organization": "Gees Talent / Beeline",
+      "payment": "Employment compensation; current listing does not publish a salary amount.",
+      "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL",
+      "qualified_at": "2026-10-16T07:50:00Z",
+      "recipient": "cvs@geestalent.com",
+      "reward": "Not published",
+      "state": "SUBMITTED",
+      "subject": "SDR Application — Ulrich du Plessis",
+      "thread_id": null,
+      "title": "Sales Development Representative — Beeline",
+      "current_route_status": "ROLE_LISTING_RECRUITER_EMAIL_VERIFIED",
+      "current_route_confidence": "HIGH"
+    },
+    "hotsourced.io|legaltech-sdr|2026-10-16": {
+      "buyer_fit": "Strong transferable fit to 10+ years of EMEA B2B sales, prospecting/account development, negotiation and stakeholder management. The current role requires outbound cold calling, meetings, multichannel follow-up and CRM discipline. Hands-on HubSpot/Lemlist experience is not established; explicitly not claimed.",
+      "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
+      "constraints": [
+        "Current role's official LinkedIn application button could not be used through the unconnected browser; recruitment@hotsourced.io is a published company recruitment inbox from a prior Hotsourced job post, but it is not verified as the exact ATS route for this requisition.",
+        "Current role advertised base R220,000–R286,000/year and OTE R374,000–R462,000/year; variable/OTE depends on performance.",
+        "No delivery to recruiter, buyer response, interview, offer or payment established."
+      ],
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_LIVE_JOB -> TRANSFERABLE_SALES_FIT -> PUBLIC_RECRUITMENT_CONTACT_ROUTE",
+      "domain": "hotsourced.io",
+      "due_at": "2026-10-23T08:23:54Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_ROLE_LISTING",
+          "observed_at": "2026-10-16T07:40:00Z",
+          "source": "WEB",
+          "url": "https://za.linkedin.com/jobs/view/sales-development-representative-remote-south-africa-at-hotsourced-4479869590",
+          "summary": "Current remote South Africa LegalTech SDR listing; base R220,000–R286,000/year, OTE R374,000–R462,000/year; UK hours translate to 11:00–19:00 SAST; founder/SME outbound and meeting generation."
+        },
+        {
+          "kind": "PUBLIC_RECRUITMENT_EMAIL_PROVENANCE",
+          "observed_at": "2026-10-16T08:22:00Z",
+          "source": "WEB",
+          "url": "https://www.linkedin.com/posts/amreen-mushtaq_hiring-fullstackdeveloper-rubyonrails-activity-7356345347239002112-qVPc",
+          "summary": "A prior Hotsourced hiring post publicly listed recruitment@hotsourced.io for applications. This establishes it as a company recruitment route, not proof it is the exact approved route for this separate requisition."
+        },
+        {
+          "kind": "PRIOR_APPLICATION_HISTORY_DEDUPE",
+          "observed_at": "2026-10-16T08:23:00Z",
+          "source": "OUTLOOK",
+          "result": "ZERO_MATCHES",
+          "summary": "No previous email to recruitment@hotsourced.io found before this application."
+        },
+        {
+          "kind": "APPLICATION_ROUTE_REQUEST_SENT",
+          "observed_at": "2026-10-16T08:23:54Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkQAAAA==",
+          "subject": "Application — Remote Sales Development Representative (South Africa)",
+          "summary": "CV attached. Asked recruiter to consider the application or route it to the relevant recruiter/ATS if another route is mandatory. Sent Item read back independently; no delivery, application acceptance or recruiter reply inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "ROUTE_CONFIRMATION_WAITING",
+      "last_action_at": "2026-10-16T08:23:54Z",
+      "last_reconciled_at": "2026-10-16T08:23:54Z",
+      "next_action": "Await recruiter reply or routing instructions. If none by 2026-10-23, verify the exact active application route via current public posting, then use that route without creating a duplicate candidate record.",
+      "opportunity": "Sales Development Representative — LegalTech",
+      "organization": "Hotsourced / confidential UK LegalTech client",
+      "payment": "Advertised base R220,000–R286,000/year plus performance commission; OTE R374,000–R462,000/year. OTE is not guaranteed.",
+      "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL_ROUTE_CONFIRMATION",
+      "qualified_at": "2026-10-16T07:40:00Z",
+      "recipient": "recruitment@hotsourced.io",
+      "reward": "Base ZAR 220,000–286,000/year; stated OTE ZAR 374,000–462,000/year",
+      "state": "SUBMITTED",
+      "subject": "Application — Remote Sales Development Representative (South Africa)",
+      "thread_id": null,
+      "title": "Sales Development Representative — LegalTech",
+      "current_route_status": "PUBLIC_GENERAL_RECRUITMENT_CONTACT_USED_ROUTE_CONFIRMATION_PENDING",
+      "current_route_confidence": "MEDIUM"
     }
   },
   "updated_at": "2026-10-16",
