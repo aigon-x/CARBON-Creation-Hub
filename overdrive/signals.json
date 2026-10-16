@@ -277,6 +277,66 @@
       "thread_id": null
     },
     {
+      "due_at": "2026-10-23T08:19:16Z",
+      "due_now": false,
+      "next_action": "Wait for reply. By 2026-10-23, recheck the same thread and role status; if no reply, confirm the proper candidate portal/route before one follow-up. If reply arrives, qualify work location, base/variable pay, start date and application steps. No duplicate application.",
+      "opportunity_key": "edgefolio.com|sales-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Wait for reply. By 2026-10-23, recheck the same thread and role status; if no reply, confirm the proper candidate portal/route before one follow-up. If reply arrives, qualify work location, base/variable pay, start date and application steps. No duplicate application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-23T08:20:22Z",
+      "due_now": false,
+      "next_action": "Wait for a buyer response. By 2026-10-23, recheck response and current role status. Before follow-up, verify that the same role remains active and the recruiter email remains the permitted route. No duplicate application.",
+      "opportunity_key": "ploy.club|sales-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Wait for a buyer response. By 2026-10-23, recheck response and current role status. Before follow-up, verify that the same role remains active and the recruiter email remains the permitted route. No duplicate application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-23T08:20:59Z",
+      "due_now": false,
+      "next_action": "Wait for recruiter response. By 2026-10-23, verify response and whether an ATS submission is required; complete any required next step through the existing application history without duplicate registration.",
+      "opportunity_key": "geestalent.com|beeline-sdr|2026-10-16",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Wait for recruiter response. By 2026-10-23, verify response and whether an ATS submission is required; complete any required next step through the existing application history without duplicate registration.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-23T08:23:54Z",
+      "due_now": false,
+      "next_action": "Await recruiter reply or routing instructions. If none by 2026-10-23, verify the exact active application route via current public posting, then use that route without creating a duplicate candidate record.",
+      "opportunity_key": "hotsourced.io|legaltech-sdr|2026-10-16",
+      "priority": 8,
+      "routing_reason": "FOLLOWUP_NOT_DUE",
+      "smallest_next_action": "Await recruiter reply or routing instructions. If none by 2026-10-23, verify the exact active application route via current public posting, then use that route without creating a duplicate candidate record.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-23T08:25:19Z",
+      "due_now": false,
+      "next_action": "Wait for a substantive employer response in the existing application email thread. At 2026-10-23T08:25:19Z, inspect the same mailbox thread and recheck the current role before one concise follow-up if there is no response. If a response arrives sooner, qualify compensation, target markets, working arrangement and next hiring step. Do not duplicate the application.",
+      "opportunity_key": "kodah.ai|business-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a substantive employer response in the existing application email thread. At 2026-10-23T08:25:19Z, inspect the same mailbox thread and recheck the current role before one concise follow-up if there is no response. If a response arrives sooner, qualify compensation, target markets, working arrangement and next hiring step. Do not duplicate the application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
@@ -865,7 +925,7 @@
       "thread_id": null
     }
   ],
-  "generated_at": "2026-10-16T08:22:03.312059+00:00",
+  "generated_at": "2026-10-16T08:27:06.905276+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1445,6 +1505,18 @@
       "status": "WAITING",
       "thread_id": null
     },
+    "edgefolio.com|sales-development-representative|2026-10-16": {
+      "due_at": "2026-10-23T08:19:16Z",
+      "due_now": false,
+      "next_action": "Wait for reply. By 2026-10-23, recheck the same thread and role status; if no reply, confirm the proper candidate portal/route before one follow-up. If reply arrives, qualify work location, base/variable pay, start date and application steps. No duplicate application.",
+      "opportunity_key": "edgefolio.com|sales-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Wait for reply. By 2026-10-23, recheck the same thread and role status; if no reply, confirm the proper candidate portal/route before one follow-up. If reply arrives, qualify work location, base/variable pay, start date and application steps. No duplicate application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
     "faceproduction.net|catalogue-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": null,
       "due_now": false,
@@ -1481,6 +1553,18 @@
       "status": "WAITING",
       "thread_id": "1a100231af090dc1"
     },
+    "geestalent.com|beeline-sdr|2026-10-16": {
+      "due_at": "2026-10-23T08:20:59Z",
+      "due_now": false,
+      "next_action": "Wait for recruiter response. By 2026-10-23, verify response and whether an ATS submission is required; complete any required next step through the existing application history without duplicate registration.",
+      "opportunity_key": "geestalent.com|beeline-sdr|2026-10-16",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Wait for recruiter response. By 2026-10-23, verify response and whether an ATS submission is required; complete any required next step through the existing application history without duplicate registration.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
     "goodshort.com|content-partnership|the-dragon-who-could-not-claim-me": {
       "due_at": null,
       "due_now": false,
@@ -1502,6 +1586,18 @@
       "routing_reason": "WAITING",
       "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
       "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "hotsourced.io|legaltech-sdr|2026-10-16": {
+      "due_at": "2026-10-23T08:23:54Z",
+      "due_now": false,
+      "next_action": "Await recruiter reply or routing instructions. If none by 2026-10-23, verify the exact active application route via current public posting, then use that route without creating a duplicate candidate record.",
+      "opportunity_key": "hotsourced.io|legaltech-sdr|2026-10-16",
+      "priority": 8,
+      "routing_reason": "FOLLOWUP_NOT_DUE",
+      "smallest_next_action": "Await recruiter reply or routing instructions. If none by 2026-10-23, verify the exact active application route via current public posting, then use that route without creating a duplicate candidate record.",
+      "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
     },
@@ -1624,6 +1720,18 @@
       "state": "DELAYED",
       "status": "WAITING",
       "thread_id": "1a117e1e2b753369"
+    },
+    "kodah.ai|business-development-representative|2026-10-16": {
+      "due_at": "2026-10-23T08:25:19Z",
+      "due_now": false,
+      "next_action": "Wait for a substantive employer response in the existing application email thread. At 2026-10-23T08:25:19Z, inspect the same mailbox thread and recheck the current role before one concise follow-up if there is no response. If a response arrives sooner, qualify compensation, target markets, working arrangement and next hiring step. Do not duplicate the application.",
+      "opportunity_key": "kodah.ai|business-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a substantive employer response in the existing application email thread. At 2026-10-23T08:25:19Z, inspect the same mailbox thread and recheck the current role before one concise follow-up if there is no response. If a response arrives sooner, qualify compensation, target markets, working arrangement and next hiring step. Do not duplicate the application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "laverticaldramamarket.com|alternate-submission-route|the-dragon-who-could-not-claim-me": {
       "due_at": null,
@@ -1924,6 +2032,18 @@
       "state": "QUALIFIED",
       "status": "WAITING",
       "thread_id": "1a0fedc93e232877"
+    },
+    "ploy.club|sales-development-representative|2026-10-16": {
+      "due_at": "2026-10-23T08:20:22Z",
+      "due_now": false,
+      "next_action": "Wait for a buyer response. By 2026-10-23, recheck response and current role status. Before follow-up, verify that the same role remains active and the recruiter email remains the permitted route. No duplicate application.",
+      "opportunity_key": "ploy.club|sales-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "AWAITING_REPLY_OR_DUE_INTERVAL",
+      "smallest_next_action": "Wait for a buyer response. By 2026-10-23, recheck response and current role status. Before follow-up, verify that the same role remains active and the recruiter email remains the permitted route. No duplicate application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "poursyrup.ai|senior-ai-delivery-engineer|cape-town": {
       "due_at": null,

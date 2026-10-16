@@ -25,15 +25,15 @@
   },
   "last_receipt": "receipts/0000000023-qdrain-20261015-naomii-offered.json",
   "last_signal_count": {
-    "PRI": 72,
+    "PRI": 77,
     "iSCOPE": 22
   },
-  "last_tick": "2026-10-16T08:22:03.317949+00:00",
+  "last_tick": "2026-10-16T08:27:06.911483+00:00",
   "last_tick_result": {
     "pending": 0,
     "processed": [],
     "signals": {
-      "PRI": 72,
+      "PRI": 77,
       "iSCOPE": 22
     },
     "state_changed": true
