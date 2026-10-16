@@ -106,6 +106,25 @@ Continuation after the receipt's first independent candidate screen; this sectio
 ### Disposition
 **A — KILLED / PUBLIC PRIOR ART / NOT SUBMITTABLE.** Do not repackage the threshold-bypass/replay behavior. The exact live `validateThreshold()` value and every deployed integration gate were not independently read during this source-only screen, so no claim is made that the issue is currently exploitable. Regardless, the exact core behavior is pre-disclosed and the current program charges a non-refundable submission fee; no submission, fee, transaction, or funds movement was made.
 
+## SSV Network v1.2.0 operator-removal freeze hypothesis — bounded kill
+
+### Program and exact source boundary
+- Official current SSV Immunefi scope: https://immunefi.com/bug-bounty/ssvnetwork/scope/ (last updated 13 September 2026, maximum USD 250,000; PoC and KYC required). Program rules state that issues already identified in audits or documented on `docs.ssv.network` or any branch of the specified repository are ineligible.
+- Official deployed target address is SSV Network `0xDD9BC35aE942eF0cFa76930954a156B3fF30a4E1` on Ethereum mainnet, corroborated by official docs `https://docs.ssv.network/developers/smart-contracts/` and the Immunefi scope.
+- The official repository's current mainnet upgrade config/playbook still says `currentVersion=v1.2.0`, `targetVersion=v2.0.0`; current mainnet artifacts show deployed v2 implementations/batch preparation but no `upgrade-result.v2.0.0.json`. Therefore the exact chain implementation was not read from Etherscan in this run; this static screen is pinned to the declared current `v1.2.0` source rather than claiming v2 is deployed.
+- Pinned repository: `ssvlabs/ssv-network@v1.2.0`. `contracts/modules/SSVOperators.sol` blob `029cbc343497fe99b607198d4bc1eb0e56f95819`; `contracts/modules/SSVClusters.sol` blob `3a77d1dc40b3cc45098cd0ee12e45e39d20aac01`; `contracts/libraries/OperatorLib.sol` blob `3fdc17ef8fab9e06911439538e91e971f5f2cf51`; `contracts/libraries/ClusterLib.sol` blob `0a231e4d4092ba008493083eb8a75ff2e15dd043`.
+
+### Specific hypothesis screened
+An operator owner can call `SSVOperators.removeOperator()` while its operator is still referenced by active clusters. The function settles current fees, then sets the operator's `snapshot.block`, `snapshot.balance`, `validatorCount`, and `fee` to zero. Hypothesis: this might permanently block the affected cluster owner from removing validators or withdrawing cluster funds.
+
+### Static evidence and disposition
+- `SSVOperators.removeOperator()` performs the reset above without requiring `operator.validatorCount == 0`.
+- `OperatorLib.updateClusterOperators()` does **not** revert for an operator whose `snapshot.block == 0`: it skips snapshot/count updates and fee accrual for that operator, while still adding the preserved `operator.snapshot.index` to `cumulativeIndex`.
+- `SSVClusters.removeValidator()` calls `updateClusterOperators()` before writing the adjusted cluster data, so the source path does not show the supposed automatic freeze merely because an operator was removed. Other remaining active operators continue to accrue as usual; the removed operator's post-removal fee contribution becomes zero. The owner can remove validators from the stale operator set and rebuild a cluster with a replacement set; this source screen does not show a funds-loss path from the reset itself.
+- The exact owner-triggered removal is a documented protocol lifecycle choice, not evidence of attacker-controlled direct theft or permanent freezing. Program rules also exclude documented issues and privilege-only impacts.
+
+Disposition: **A — KILLED FOR THE REVIEWED V1.2.0 OPERATOR-REMOVAL FREEZE CLAIM.** No local Solidity execution or fork test was run; this is a bounded source-level kill, not a full SSV audit. No report/package, KYC action, transaction, or bounty submission occurred.
+
 ## 6. Carried-forward queue and prior-art state
 
 - LayerZero `BR-20261003-024`: retain prior receipt state. Generic failed native-drop/non-execution economics are confirmed thematic prior art in Paladin's 2023 MessageLib audit Issue #03; the current source-only failed-drop and permanent-lock claims remain killed. The 2026 diff audit remains unread through current retrieval paths, so full audit dedupe is incomplete. Parent remains parked only for a materially distinct eligible path; do not submit the generic native-drop premise.
@@ -115,6 +134,7 @@ Continuation after the receipt's first independent candidate screen; this sectio
 - Enzyme Onyx zero-share-price redemption: prior receipt remains `A — PUBLIC QA PRIOR ART`; do not resubmit the acknowledged zero-share-value claim.
 - Symbiosis MetaRouter balance helper: prior receipt remains `B — SCOPE-GATED / NOT SUBMITTABLE`; no attack path to the currently listed MetaRouterGateway assets has been established.
 - Lombard BasculeV1 threshold/replay hypothesis: `A — KILLED / PUBLIC PRIOR ART`; the same nonzero-threshold below-threshold repeat-without-consuming condition was documented in Sherlock 2025 issue L-5 and acknowledged. No submission fee paid.
+- SSV Network v1.2.0 operator-removal freeze hypothesis: `A — KILLED FOR REVIEWED PATH`; removed operators are skipped by `updateClusterOperators` while their saved index is retained, so the generic cluster-freeze claim was not substantiated.
 
 ## 7. Run outcome and truth boundary
 
