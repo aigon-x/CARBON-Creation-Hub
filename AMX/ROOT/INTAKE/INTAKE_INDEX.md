@@ -3046,3 +3046,18 @@ Each office receipt below binds: **PRIMARY PURPOSE understood; current 65% attri
 ### Current conclusion / open obligations
 
 **DRAIN Q = OPEN / NOT CLEARED.** Verified item closed in this continuation: RoI registry/hash integration. This append corrects the stale index projection; it is not global Root disposition and does not clear remaining queue items. Continue the existing flight from the furthest evidenced state, with item-level owners and acceptance/readback; no new queue, worker, tracker, or governance authority created.
+
+
+---
+
+## 2026-10-16 — Current Overdrive Ledger / Claim Queue Readback
+
+**Current direct main-branch readback; this supersedes older ledger count snapshots for present tense only. Historical run fields remain unchanged.**
+
+- `overdrive/opportunities.json`: blob `eb27e6542b3d4835229b1dbb221266042d7c3826`; `record_count=108`; canonical records-map keys = `108`; normalized identity-key duplicates found = `0`. `last_updated_at=2026-10-16T10:39:11+02:00`, `last_reconciled_at=2026-10-16T08:39:11Z`. The existing `last_run.run_at=2026-10-03T17:42:00Z` and `last_run.full_ledger_count=62` remain an historical run snapshot, not the current map count.
+- `overdrive/claims.json`: blob `88b15824b892e38301829a95ee1ecf75e1221341`; generated `2026-10-16T08:40:31.783771Z`; 108 claims; 102 WAITING / 6 CLOSED; `ready_count=0`; `external_ready_count=0`; `executable_order=[]`.
+- `overdrive/state.json`: blob `d117c948e0046b7d2fcacb0e2cbae6762335ac22`; sequence 23; latest persisted tick `2026-10-16T08:40:31.786740Z`; tick result `pending=0`, `processed=[]`, signals PRI=80/iSCOPE=22, `state_changed=true`; adapter status `OPERATIONAL` at that tick. This is a historical point-in-time receipt, not current runtime liveness: current scheduler inventory has zero enabled records.
+- The 10 WAITING claims with past-due timestamps remain individually gated. A due time is not authorization, evidence of readiness, or permission to contact/apply/submit. The records include authenticated-browser/account-recovery gates (Alignerr, CrowdGen, Mindrift, OpenTrain), an existing CallForce email thread that must be read through an authorized route, response-monitoring only for Inkwave and Redrama, TELUS OTP/identity completion, and a Mindrift experience-evidence gate. Resume each from its own `next_action`; do not create duplicate accounts or send duplicate outreach.
+- A first-pass grouping of claim `next_action` text found a large buyer-response-wait set, provider/auth/access blocks, eligibility/capability gates, and a small number of applicant-owned steps. These are classifications derived from instructions, **not a new canonical state field**. Claims must stay at their individual source-backed states.
+
+**Disposition:** the previous 66-vs-83 count discrepancy and later 87-entry snapshot are historical. The current map and `record_count` are at 108/108 with no normalized duplicate keys in this direct check. Parity is not a current market scan, a claim-ready queue, an external submission, or revenue evidence. Queue remains **OPEN / NOT CLEARED**; verified external-ready inventory remains zero in this claims snapshot, while Q1/bounty tracker truth remains **UNKNOWN, NOT ZERO** because the authoritative Runs/Queue/Payouts tracker is inaccessible in this runtime.
