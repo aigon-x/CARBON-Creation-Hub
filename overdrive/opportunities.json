@@ -351,11 +351,41 @@
       "remains_unproven": "Email delivery/recipient reading, buyer response, compensation, offer, contract, start date, invoice, payment.",
       "scope": "voor.sport|sales-business-development-associate|2026-10-16",
       "upgrade_action": "Wait for the buyer response; if none by the recorded due time, verify the same email route before a single follow-up. Continue other payer-posted roles in parallel."
+    },
+    {
+      "actual": "A fixed US$99 workflow QA pilot email to info@wrightsai.com is present in the existing Outlook Sent Items folder. The official contact page publishes that address. No buyer reply or bounce was found in current mailbox search.",
+      "changed": "Added the already-sent message to the canonical ledger as OFFERED/WAITING, preserving the original message ID, scope, recipient and governed due time. No new external message was sent during this reconciliation.",
+      "classification": "WRIGHTSAI_OUTBOUND_SEND_RECONCILED; WAITING_FOR_BUYER",
+      "observed_at": "2026-10-16T08:13:38Z",
+      "owner": "PRI — existing commercial writer",
+      "proof": [
+        "Official contact page https://www.wrightsai.com/contact.html",
+        "Outlook Sent Items ID AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjAAAAA=="
+      ],
+      "remains_unproven": "Buyer read/response, acceptance, contract, invoice, payment or settlement.",
+      "scope": "WRIGHTSAI_FIXED_PILOT_RECONCILIATION_20261016",
+      "upgrade_action": "Wait until 2026-10-19T08:00:00Z or an earlier substantive buyer response; do not repeat contact before due."
+    },
+    {
+      "actual": "A fixed US$99 workflow QA pilot was sent to the official-site-published address zakaria@zakariabarjac.com, then returned undeliverable. The bounce reports SMTP 554 5.1.1, recipient mailbox does not exist.",
+      "changed": "Inserted the original send and failure receipt into the canonical record at state=DELIVERY_FAILED. No retry was sent to the failed address.",
+      "classification": "ZAKARIA_EMAIL_ROUTE_DELIVERY_FAILED; ALTERNATE_ROUTE_REVALIDATION_OPEN",
+      "observed_at": "2026-10-16T08:13:38Z",
+      "owner": "PRI for existing opportunity; iSCOPE/PRI to revalidate current official alternative route",
+      "proof": [
+        "Official site https://zakariabarjac.com/",
+        "Outlook Sent Items ID AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiwAAAA==",
+        "Outlook undeliverable ID AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLJpxFgAAAA==",
+        "SMTP 554 5.1.1: recipient mailbox does not exist."
+      ],
+      "remains_unproven": "Any successful delivery, buyer response, acceptance, contract, invoice or payment.",
+      "scope": "ZAKARIABARJAC_DELIVERY_FAILURE_RECONCILIATION_20261016",
+      "upgrade_action": "Do not retry the bounced address. Verify another official contact route before any approach; continue other eligible commercial work."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-16T08:08:55Z",
-  "last_reconciled_reason": "Added one distinct, current official VOOR Sport employment application after mailbox dedupe. The official role page provides an explicit hiring email route; Outlook sent item independently read back with resume attachment. State is SUBMITTED/WAITING only; no delivery, buyer response, offer, contract, invoice, or payment inferred. No speculative outbound customer offer or duplicate application was sent.",
+  "last_reconciled_at": "2026-10-16T08:13:38Z",
+  "last_reconciled_reason": "Merged the current official-route WRIGHTSAI offer and Zakaria Barjac delivery failure into the latest ledger without overwriting the concurrently reconciled VOOR Sport application. Preserved original Outlook message and bounce IDs, distinct lifecycle states, and next actions. No repeat outreach performed.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -418,9 +448,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-16T10:08:55+02:00",
-  "last_updated_by": "PRI",
-  "record_count": 98,
+  "last_updated_at": "2026-10-16T10:13:38+02:00",
+  "last_updated_by": "iSCOPE → PRI existing commercial field force",
+  "record_count": 100,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -5650,6 +5680,120 @@
       "title": "Sales & Business Development Associate",
       "current_route_status": "OFFICIAL_HIRING_EMAIL_VERIFIED",
       "current_route_confidence": "HIGH"
+    },
+    "wrightsai.com|independent-prehandoff-ai-workflow-qa-pilot|2026-10-16": {
+      "buyer_fit": "Official site offers practical AI automation implementation. An independent pre-handoff acceptance pass is a complementary, bounded QA service; no buyer interest is inferred.",
+      "capital_direction": "PAYER_TO_WORK",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "One workflow; runnable test harness and evidence-backed findings covering expected outputs, missing information, tool failures/retries, duplicate actions, unsupported answers and the human-handoff boundary. 48-hour delivery starts after receipt of a redacted workflow specification and sample inputs. No production credentials or client personal data required for the initial pass.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjAAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "constraints": [
+        "No buyer response or acceptance is evidenced.",
+        "Delivery begins after a redacted workflow specification and sample inputs are received.",
+        "Mocked tests are not represented as a deployed production integration.",
+        "Do not repeat contact before the governed review time."
+      ],
+      "current_route_confidence": "HIGH_FOR_OFFICIAL_CONTACT_ROUTE; BUYER_INTEREST_UNVERIFIED",
+      "current_route_status": "OFFICIAL_EMAIL_ROUTE_VERIFIED; OUTBOUND_SEND_VERIFIED; WAITING_FOR_BUYER_RESPONSE",
+      "discovered_by": "PRI",
+      "domain": "wrightsai.com",
+      "due_at": "2026-10-19T08:00:00Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_CONTACT_ROUTE",
+          "observed_at": "2026-10-16T08:13:38Z",
+          "source": "OFFICIAL_SITE",
+          "url": "https://www.wrightsai.com/contact.html",
+          "summary": "Current official contact page publishes info@wrightsai.com as the business email for its Cape Town AI automation agency."
+        },
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-16T07:58:29Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjAAAAA==",
+          "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
+          "summary": "Sent from the existing Outlook account to the official published email. Fixed US$99 one-workflow acceptance-test offer. No buyer response or read receipt is evidenced."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-16T07:58:29Z",
+      "last_reconciled_at": "2026-10-16T08:13:38Z",
+      "next_action": "Wait for a substantive buyer reply. If there is no response by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one concise follow-up. If buyer replies sooner, qualify workflow specification, sample inputs, scope and payment route. Do not send a second touch before due.",
+      "opportunity": "US$99 fixed-scope AI workflow acceptance pilot",
+      "organization": "WRIGHTSAI",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "recipient": "info@wrightsai.com",
+      "reward": "US$99 fixed fee, not accepted or paid.",
+      "state": "OFFERED",
+      "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
+      "thread_id": null,
+      "title": "Independent pre-handoff QA for one AI workflow"
+    },
+    "zakariabarjac.com|independent-prehandoff-ai-workflow-qa-pilot|2026-10-16": {
+      "buyer_fit": "Official site describes AI automation for South African service businesses, but the contacted email address returned a definitive recipient-not-found SMTP error. No buyer interest or message delivery is inferred.",
+      "capital_direction": "PAYER_TO_WORK",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "One workflow; runnable test harness and evidence-backed findings covering expected outputs, missing information, tool failures/retries, duplicate actions/idempotency, unsupported answers and human handoff. 48-hour turnaround starts after a redacted workflow specification and sample inputs are received.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiwAAAA==",
+        "status": "DELIVERY_FAILED",
+        "type": "FIXED_SCOPE"
+      },
+      "constraints": [
+        "Published email address rejected by destination as nonexistent (SMTP 554 5.1.1).",
+        "Do not resend to the same address.",
+        "Official site lists other public contact routes, but no alternate route has been used for this offer."
+      ],
+      "current_route_confidence": "LOW_AFTER_RECIPIENT_FAILURE",
+      "current_route_status": "OFFICIAL_EMAIL_DELIVERY_FAILED; ALTERNATE_ROUTE_REVALIDATION_REQUIRED",
+      "discovered_by": "PRI",
+      "domain": "zakariabarjac.com",
+      "due_at": null,
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_CONTACT_ROUTE",
+          "observed_at": "2026-10-16T08:13:38Z",
+          "source": "OFFICIAL_SITE",
+          "url": "https://zakariabarjac.com/",
+          "summary": "Official site lists zakaria@zakariabarjac.com and public phone contacts; only the email route was used in this outreach."
+        },
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-16T07:57:36Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiwAAAA==",
+          "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
+          "summary": "Sent to the published address zakaria@zakariabarjac.com. This does not establish successful delivery."
+        },
+        {
+          "kind": "DELIVERY_FAILURE",
+          "observed_at": "2026-10-16T07:57:41Z",
+          "source": "OUTLOOK_BOUNCE",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEMAAAACcuKl8g3RkyfBaEy7toItQACLJpxFgAAAA==",
+          "summary": "SMTP 554 5.1.1: remote destination reports the mailbox does not exist. Delivery failed; this is not a buyer rejection."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "HOLD_ROUTE_REVALIDATION",
+      "last_action_at": "2026-10-16T07:57:41Z",
+      "last_reconciled_at": "2026-10-16T08:13:38Z",
+      "next_action": "Do not retry the failed address. Revalidate an alternate official contact route from the current website before any further approach. Continue other existing commercial items while this route is repaired.",
+      "opportunity": "US$99 fixed-scope AI workflow acceptance pilot",
+      "organization": "Zakaria Barjac AI Automation Agency",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "recipient": "zakaria@zakariabarjac.com",
+      "reward": "US$99 fixed fee, not accepted or paid.",
+      "state": "DELIVERY_FAILED",
+      "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
+      "thread_id": null,
+      "title": "Independent pre-handoff QA for one AI workflow"
     }
   },
   "updated_at": "2026-10-16",
