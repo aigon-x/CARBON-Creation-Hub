@@ -145,3 +145,40 @@ A fresh private automation peek after the runtime/procurement update returned th
 - Main runtime file blob remains `9cf5a6e29405b320395a9bab3148469c8e0ec872`; proposal-branch file blob remains `7be949e2212d9397554f5b1bb1db2e9755cdf14d`. The existing Render service configuration still points at branch `main`, so the proposal code is **not deployed** on the inspected service.
 - A read-only PR search for the branch/“FORX 200K” surfaced no matching PR in this check. This search result alone is not a repository-wide proof that no related PR exists. No CI acceptance result was established by this comparison.
 - **Disposition:** leave the branch proposal-only. T-COD must reconcile the 30-commit drift and run the required code/test review under its existing authority; FORX independently accepts only after endpoint, exact 200K durable output and restart-resume proof. No merge, rebase, deploy, service change or workflow run was triggered by this read.
+
+
+## 13. FORX same-runtime continuation — live OOM regression + draft repair PR + direct-buyer signals — 2026-10-16
+
+**Classification:** material runtime regression; blocked-attempt recovery; raw source discovery. This append reuses the existing Root Intake runtime-delta file. No new issue, graph, worker, scheduler, staging plane, or authority.
+
+### Live current state
+- Existing Render service `amx-forx-stage1-proof` / `srv-db2udid9fdbs739b5ru0`; workspace access was used directly (no Owner gate needed). Service remains configured to auto-deploy branch `main`.
+- Fresh public `/status` check at approximately 2026-10-16 05:05 UTC: `RUNNING`, run `forx-20261010-200k-01`, target 200000, `node_count=0`, `partition_count=0`, errors empty. `/manifest` and `/runtime-receipt` returned HTTP 425.
+- Fresh Render event after earlier Intake notes: `evt-db8r0se417fc739tc780` at `2026-10-16T05:04:49.046385Z`, `server_failed`, explicit `oomKilled.memoryLimit=512Mi`. Events show restart/available cycles followed by new OOM events at 04:53:52, 04:56:47, 04:59:22 and 05:04:49 UTC.
+- Last accepted scale remains `forx-20261009-100k-01`: 100,000 nodes, 100,000 unique source-record IDs and 100 partitions. There is no 200K or 250K accepted durable result from the current run. Weighted-continuity remains PASS for its previously tested scope (8 events); no new outcome/weight change is claimed.
+- Main/deployed `app.py` blob `9cf5a6e29405b320395a9bab3148469c8e0ec872` materializes a selected target list prior to diversity/partition processing. This is a plausible memory-pressure contributor; exact causal isolation remains with T-COD.
+
+### Existing repair path advanced
+- Opened existing-branch Draft PR #42: https://github.com/amillimatrix-eng/CARBON-Creation-Hub/pull/42
+- Head `85bb7384b6f3a928626f0946278ef9efb4856624`; base SHA at PR creation `70c90e6d5baddb9cec9bf25d489ec134091feb74`.
+- Existing proposal branch is divergent; most recent `main...proposal/forx-200k-streaming-memory-20261014` compare showed 7 commits ahead / 77 behind. Only `app.py` differs (472 additions / 228 deletions); proposal uses disk-backed selection and streamed partitions.
+- PR is draft, open, unmerged and undeployed; GitHub returned `mergeable=false`. Combined status exposed only a Vercel success check; no FORX test workflow run was found for this proposal head. It is an owner review route, not an accepted fix. T-COD must reconcile against current main, add/run bounded-memory/exact-ID/hash/cleanup/restart tests and prove end-to-end durable transfer/readback. FORX independently accepts live results. Do not merge/deploy merely to stop OOM.
+
+### Direct-buyer and platform raw signals (not qualified, not staged)
+Deduplication checked against the inspected current `overdrive/opportunities.json` blob `276085173b6e7a47de1a93ddb97a1761630a6bb3` (91 records) and current Root Intake #31 comments.
+1. **South African Revenue Service — RFP13/2026, Security Technology Integration specialist-resource panel.** Official notice: https://www.sars.gov.za/tender/rfp13-2026-appointment-of-one-or-more-service-providers-to-provide-specialist-resources-in-support-of-the-sars-security-technology-integration-project-for-a-period-of-three-3-years-on-an-as-and-whe/ . Official index shows closing 26 Oct 2026 at 11:00 SAST; non-compulsory briefing was 2 Oct, and main tender, briefing presentation, and Q&A are linked. The full requirement and mandatory security/integration qualifications have not been parsed from the official attachments; iSCOPE should review hard gates. Treat as raw/NOT QUALIFIED.
+2. **UNDP Moldova — RFP26/03339 / UNDP-MDA-01093,1, data warehouse system for the Ministry of Labour and Social Protection.** Official notice: https://www.ungm.org/Public/Notice/312848 . Live notice deadline is 20 Oct 2026, 09:30 GMT-4 (=15:30 SAST). It requires technical, eligibility/qualification, key-personnel, financial and functional/non-functional compliance documents; consortium information is included. Submission is through the Quantum supplier portal. Four-day runway and unknown eligibility/references make it RAW/HIGH-GATE, not a presumed-fit bid.
+3. **Upwork AI Automation Specialist Needed:** https://www.upwork.com/freelance-jobs/apply/Automation-Specialist-Needed_~022110777831069340871/ . Page lists $300 fixed price, remote, urgent troubleshooting for an existing custom system using n8n/Make/AI agents/APIs/Python; 50+ proposals, one hire, client $3.8K total spend/four hires. Detailed bug, acceptance criteria and delivery feasibility unknown. RAW/iSCOPE gate.
+4. **Upwork AI Automation and n8n CRM Integration:** https://www.upwork.com/freelance-jobs/apply/Automation-and-n8n-CRM-Integration_~022108554545506937497/ . Page describes a $10, 1–2 hour GoHighLevel webhook → OpenAI lead summary/score → GHL field/tag test plus Loom; long-term work is not guaranteed and requires proven n8n/GHL skill. 50+ proposals; buyer reports $17K total spend/384 hires. RAW/proof-of-work candidate, expected value uncertain.
+
+No new FORX candidate IDs are assigned because existing staging remains fail-closed. iSCOPE qualifies; PRI alone writes externally. No external contacts, portal registrations, bids, contracts, invoice, or payments occurred.
+
+### Existing staging gate unchanged
+Manifest v8 blob `0d525f782c8da535fcb30b26dffe288259020cfb` declares 947 unique source keys / 951 gross observations, while prior independent recomputation produced 948 / 952. `next_segment_sequence=7` conflicts with the registered `delta-0008`. No append or ID allocation until the canonical logical union, counters and sequence are reconciled and read back.
+
+### Intake persistence routing
+- Workspace selection is a route-scoped Render connector prerequisite, not a global Owner-only blocker.
+- The drift report and runtime/PR/marketplace signals were successfully persisted in existing issue #31 as comments #6208311269, #6208441881 and #6208518330; official SARS signal is comment #6208470670.
+- The additional Moldova comment attempt was blocked by the connector safety gate. This appendix is the authorized alternative write attempt to the same existing Root Intake directory and must be read back before persistence is accepted.
+
+**Disposition:** runtime repair OPEN; 200K/250K acceptance OPEN; staging reconciliation OPEN; Moldova and SARS procurement qualification OPEN; marketplace leads RAW; no cash-in proven.
