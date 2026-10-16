@@ -349,6 +349,18 @@
       "thread_id": null
     },
     {
+      "due_at": "2026-10-23T08:35:56Z",
+      "due_now": false,
+      "next_action": "Await recruiter response about whether intro photo/video is mandatory and preferred route. If mandatory, the applicant must provide a genuine photo or personally recorded introduction; do not generate an artificial identity asset. If waived or recruiter provides a later route, complete the application and read back evidence.",
+      "opportunity_key": "thesurgeapp.com|part-time-telesales-consultant|2026-10-16",
+      "priority": 8,
+      "routing_reason": "FOLLOWUP_NOT_DUE",
+      "smallest_next_action": "Await recruiter response about whether intro photo/video is mandatory and preferred route. If mandatory, the applicant must provide a genuine photo or personally recorded introduction; do not generate an artificial identity asset. If waived or recruiter provides a later route, complete the application and read back evidence.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
@@ -937,7 +949,7 @@
       "thread_id": null
     }
   ],
-  "generated_at": "2026-10-16T08:33:17.735859+00:00",
+  "generated_at": "2026-10-16T08:37:29.162151+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -2246,6 +2258,18 @@
       "routing_reason": "HUMAN_PROVIDER_GATE",
       "smallest_next_action": "Resume the existing official TELUS application through secure authentication. Current irreducible gate is provider OTP/identity verification; do not expose or persist OTP values.",
       "state": "QUALIFIED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "thesurgeapp.com|part-time-telesales-consultant|2026-10-16": {
+      "due_at": "2026-10-23T08:35:56Z",
+      "due_now": false,
+      "next_action": "Await recruiter response about whether intro photo/video is mandatory and preferred route. If mandatory, the applicant must provide a genuine photo or personally recorded introduction; do not generate an artificial identity asset. If waived or recruiter provides a later route, complete the application and read back evidence.",
+      "opportunity_key": "thesurgeapp.com|part-time-telesales-consultant|2026-10-16",
+      "priority": 8,
+      "routing_reason": "FOLLOWUP_NOT_DUE",
+      "smallest_next_action": "Await recruiter response about whether intro photo/video is mandatory and preferred route. If mandatory, the applicant must provide a genuine photo or personally recorded introduction; do not generate an artificial identity asset. If waived or recruiter provides a later route, complete the application and read back evidence.",
+      "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
     },
