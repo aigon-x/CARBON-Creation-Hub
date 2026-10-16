@@ -182,3 +182,11 @@ Manifest v8 blob `0d525f782c8da535fcb30b26dffe288259020cfb` declares 947 unique 
 - The additional Moldova comment attempt was blocked by the connector safety gate. This appendix is the authorized alternative write attempt to the same existing Root Intake directory and must be read back before persistence is accepted.
 
 **Disposition:** runtime repair OPEN; 200K/250K acceptance OPEN; staging reconciliation OPEN; Moldova and SARS procurement qualification OPEN; marketplace leads RAW; no cash-in proven.
+
+
+## 14. Persistence and chronology correction — 2026-10-16
+
+- The alternative Root Intake append in §13 **has persisted and passed readback**. Current file blob: `16ba1e3cc71a0f3942d0f20eae4d4c36c53f4813`; persistence is no longer pending for this file append. The separate Moldova issue-comment attempt was refused, but the existing Intake runtime-delta file is now the successful fallback on the same Root Intake path.
+- Chronology clarification: the exact SARS RFP13/2026 reference/URL was absent from the issue-comment history during the initial source dedup check, then was persisted afterward in existing issue #31 comment `6208470670`. Therefore SARS is now present in current Root Intake and must be treated as already recorded; §13 does not authorize duplicating it. The two Upwork source URLs were recorded in comment `6208441881`.
+- Latest live runtime evidence, including OOM event `evt-db8r0se417fc739tc780`, was appended and then read back successfully in this file. Existing issue comments `6208311269`, `6208441881`, `6208470670`, and `6208518330` provide the chronology and exact supporting parcels.
+- This persistence PASS applies only to the Intake file/comment readbacks. It does **not** close runtime repair, 200K/250K scale acceptance, staging reconciliation, or commercial qualification. Manifest v8 remains fail-closed; no candidate IDs or staging append have occurred.
