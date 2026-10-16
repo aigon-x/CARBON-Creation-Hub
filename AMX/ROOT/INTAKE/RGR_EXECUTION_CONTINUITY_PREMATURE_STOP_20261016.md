@@ -44,55 +44,55 @@ This record is an RGR truth receipt, not itself a commercial win. At the time of
 
 ## 7. Continued commercial execution — 2026-10-16
 
-The flight continued after the prior premature-stop correction. Four additional role-specific application emails were sent with the current resume attached, each independently retrieved from Outlook Sent Items. They are recorded in the existing \`overdrive/opportunities.json\`, \`overdrive/claims.json\`, and \`overdrive/signals.json\`. Existing canonical route and state are preserved; no duplicate tracker or pipeline was created.
+The flight continued after the prior premature-stop correction. Four additional role-specific application emails were sent with the current resume attached, each independently retrieved from Outlook Sent Items. They are recorded in the existing `overdrive/opportunities.json`, `overdrive/claims.json`, and `overdrive/signals.json`. Existing canonical route and state are preserved; no duplicate tracker or pipeline was created.
 
 ### Verified application receipts
 
 1. **VOOR Sport — Sales & Business Development Associate**
-   - Route: official role page directs applications to \`jobs@voor.sport\`.
-   - Sent: \`2026-10-16T08:08:55Z\`.
-   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjQAAAA==\`.
-   - Canonical opportunity: \`voor.sport|sales-business-development-associate|2026-10-16\`.
+   - Route: official role page directs applications to `jobs@voor.sport`.
+   - Sent: `2026-10-16T08:08:55Z`.
+   - Outlook item: `AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjQAAAA==`.
+   - Canonical opportunity: `voor.sport|sales-business-development-associate|2026-10-16`.
    - State: SUBMITTED / WAITING. Compensation not published.
 
 2. **Edgefolio — Sales Development Representative**
-   - Route: current role page explicitly lists \`careers@edgefolio.com\` for CV/application.
-   - Sent: \`2026-10-16T08:19:16Z\`.
-   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjgAAAA==\`.
-   - Canonical opportunity: \`edgefolio.com|sales-development-representative|2026-10-16\`.
+   - Route: current role page explicitly lists `careers@edgefolio.com` for CV/application.
+   - Sent: `2026-10-16T08:19:16Z`.
+   - Outlook item: `AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjgAAAA==`.
+   - Canonical opportunity: `edgefolio.com|sales-development-representative|2026-10-16`.
    - State: SUBMITTED / WAITING. South Africa remote eligibility and pay amount remain unconfirmed.
 
 3. **PLOY — Sales Development Representative**
-   - Route: current public job listing names \`tim@ploy.club\` for CV applications.
-   - Sent: \`2026-10-16T08:20:22Z\`.
-   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjwAAAA==\`.
-   - Canonical opportunity: \`ploy.club|sales-development-representative|2026-10-16\`.
+   - Route: current public job listing names `tim@ploy.club` for CV applications.
+   - Sent: `2026-10-16T08:20:22Z`.
+   - Outlook item: `AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjwAAAA==`.
+   - Canonical opportunity: `ploy.club|sales-development-representative|2026-10-16`.
    - State: SUBMITTED / WAITING. Compensation not published.
 
 4. **Gees Talent / Beeline — Sales Development Representative**
-   - Route: current role listing specifies \`cvs@geestalent.com\`.
-   - Sent: \`2026-10-16T08:20:59Z\`.
-   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkAAAAA==\`.
-   - Canonical opportunity: \`geestalent.com|beeline-sdr|2026-10-16\`.
+   - Route: current role listing specifies `cvs@geestalent.com`.
+   - Sent: `2026-10-16T08:20:59Z`.
+   - Outlook item: `AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkAAAAA==`.
+   - Canonical opportunity: `geestalent.com|beeline-sdr|2026-10-16`.
    - State: SUBMITTED / WAITING. Compensation not published.
 
 5. **Hotsourced — current remote South Africa LegalTech SDR**
    - Live listing advertises base ZAR 220,000–286,000/year and OTE ZAR 374,000–462,000/year; OTE is not guaranteed.
-   - Sent: \`2026-10-16T08:23:54Z\` to the published general recruitment address \`recruitment@hotsourced.io\`, after a zero-match mailbox dedupe.
-   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkQAAAA==\`.
-   - Canonical opportunity: \`hotsourced.io|legaltech-sdr|2026-10-16\`.
+   - Sent: `2026-10-16T08:23:54Z` to the published general recruitment address `recruitment@hotsourced.io`, after a zero-match mailbox dedupe.
+   - Outlook item: `AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkQAAAA==`.
+   - Canonical opportunity: `hotsourced.io|legaltech-sdr|2026-10-16`.
    - State: SUBMITTED / ROUTE_CONFIRMATION_WAITING. The general inbox is publicly evidenced as a Hotsourced recruitment contact from a prior job post but is not independently verified as the ATS route for this exact requisition. The email asks the recruiter to route or provide the exact approved submission path.
 
 ### Delivery and commercial truth
 These receipts prove that the messages are present in Sent Items with attachments; they do not prove mail delivery, recipient reading, recruiter response, ATS acceptance, interview, offer, contract or payment. Current searches found no buyer response for these applications. No job offer or income is claimed.
 
-The separate attempted US$99 message to \`zakaria@zakariabarjac.com\` received a verified bounce because the destination address was not found. This is a route/source-quality failure, not a buyer rejection. Do not retry that address or resume speculative US$99 outreach.
+The separate attempted US$99 message to `zakaria@zakariabarjac.com` received a verified bounce because the destination address was not found. This is a route/source-quality failure, not a buyer rejection. Do not retry that address or resume speculative US$99 outreach.
 
 ### Next execution
 - Continue identifying actual payer-posted jobs and paid-task work with an available, evidenced route; prioritize disclosed base pay and short time-to-first-payment.
 - Recheck application responses and bounces; do not send duplicate submissions.
 - Hotsourced exact ATS route remains to be confirmed by the recruiter. Do not represent it as an ATS submission.
-- Corzly's higher-base role remains open for official form submission, but the TinyFish browser run did not start because the metered wallet balance is \`-1.051248 USD\`. No retry was attempted; free application/email routes remain in use.
+- Corzly's higher-base role remains open for official form submission, but the TinyFish browser run did not start because the metered wallet balance is `-1.051248 USD`. No retry was attempted; free application/email routes remain in use.
 - No new buyer offer, contract, invoice, receivable or payment has yet been established. This is continued execution evidence, not a commercial win.
 
 
@@ -102,12 +102,31 @@ A sixth distinct employment application was sent in this flight after a zero-mat
 
 - **Role:** Heldertech Business Development Representative.
 - **Public listing:** https://za.linkedin.com/jobs/view/business-development-representative-at-heldertech-4450469439
-- **Advertised route:** \`erin@heldertech.co.za\`, with CV and cover letter.
-- **Sent:** \`2026-10-16T08:30:53Z\`.
-- **Outlook item:** \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkwAAAA==\`.
+- **Advertised route:** `erin@heldertech.co.za`, with CV and cover letter.
+- **Sent:** `2026-10-16T08:30:53Z`.
+- **Outlook item:** `AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkwAAAA==`.
 - **Verified:** Sent Item read back to exact listed recipient; CV attachment flag true.
 - **Compensation signal:** public listing describes a basic salary plus once-off payment per signed business fibre link and 10% commission on generated gross profit; stated realistic OTE R15,500–R25,500/month, not guaranteed.
 - **Qualification truth:** the listing is indexed as about two months old. The message asks whether the vacancy remains open; currentness and recipient delivery remain unconfirmed. The application does not claim specialist fibre sales experience.
-- **Canonical record:** \`heldertech.co.za|business-development-representative|2026-10-16\`, committed in \`overdrive/opportunities.json\`.
+- **Canonical record:** `heldertech.co.za|business-development-representative|2026-10-16`, committed in `overdrive/opportunities.json`.
 
-No recruiter reply, interview, offer, contract, invoice, receivable, or payment is evidenced. Current inbox searches found no reply from Heldertech or the other four recently applied-to employers. Continue with current paid-role discovery and follow the exact evidence chain; do not stop at this receipt.
+No recruiter reply, interview, offer, contract, invoice, receivable, or payment is evidenced. Current inbox searches found no reply from Heldertech or the other five recently applied-to employers. Continue with current paid-role discovery and follow the exact evidence chain; do not stop at this receipt.
+
+
+## 9. Continued commercial execution — The Surge telesales
+
+A further current public-role application was sent through the exact recruitment email listed on the advertisement, after a zero-match recipient-history check.
+
+- **Role:** Part-Time Telesales Consultant, Cape Town.
+- **Public listing:** https://widget.bizcommunity.com/job/cape-town/marketing-media/part-time-telesales-consultant-076809a
+- **Advertised terms:** one day/week; remote; R530/day starting rate, possible R950+/day after three months subject to performance, plus monthly bonuses; closing date 25 November 2026.
+- **Sent:** \`2026-10-16T08:35:56Z\` to \`recruitment@thesurgeapp.com\`.
+- **Outlook item:** \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXlAAAAA==\`.
+- **Readback:** exact Sent Item returned with the CV attachment.
+- **Required-media boundary:** The advert asks for a photo or short introductory video. No genuine applicant photo/video was available in this workspace. The email openly says it was not attached and asks whether it is mandatory before initial review. This is an incomplete application pending response, not a full compliant submission.
+- **Canonical opportunity:** \`thesurgeapp.com|part-time-telesales-consultant|2026-10-16\`, now recorded in \`overdrive/opportunities.json\`.
+
+No recruiter reply, media waiver, interview, offer, contract, invoice, receivable or payment is evidenced. If the recruiter insists on the media, the applicant must provide a genuine photo or personally recorded video; an artificial substitute will not be made. Continue other executable money-in routes meanwhile.
+
+## 10. Updated run truth
+Across the current application sequence, exact Outlook Sent Items have been independently read back for six job applications plus one route-confirmation contact to Hotsourced. The seventh application route to The Surge remains incomplete on the explicitly flagged media requirement. The earlier Zakaria address produced an actual invalid-recipient bounce and is not retried. **No employer offer, buyer acceptance, contract, invoice, receivable or payment has been verified.** The run remains open for more lawful commercial work; this Intake update is not a stop condition.
