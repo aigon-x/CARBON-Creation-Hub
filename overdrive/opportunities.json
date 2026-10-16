@@ -381,11 +381,28 @@
       "remains_unproven": "Any successful delivery, buyer response, acceptance, contract, invoice or payment.",
       "scope": "ZAKARIABARJAC_DELIVERY_FAILURE_RECONCILIATION_20261016",
       "upgrade_action": "Do not retry the bounced address. Verify another official contact route before any approach; continue other eligible commercial work."
+    },
+    {
+      "actual": "The official Kodah careers page currently lists a remote UK/EMEA Business Development Representative opening and directs applicants to send a CV and short note to careers@kodah.ai. Existing canonical ledger and Outlook search found no prior application/contact for Kodah. A new application email was sent and found in Outlook Sent Items; its PDF CV attachment was independently confirmed.",
+      "changed": "Added one distinct official-email application to the existing canonical ledger with the original sent-message ID, verified attachment name, current role evidence, and a due review time. No duplicate application was created.",
+      "classification": "KODAH_BDR_APPLICATION_SUBMITTED; EMPLOYER_OUTCOME_PENDING",
+      "expected": "Application remains SUBMITTED until buyer response; no inference of interview, offer, contract, invoice or income.",
+      "observed_at": "2026-10-16T08:26:01Z",
+      "owner": "PRI — existing commercial writer; iSCOPE discovery/qualification",
+      "proof": [
+        "Official careers page: https://kodah.ai/careers",
+        "Outlook Sent Items ID: AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkgAAAA==",
+        "Attachment: Ulrich_Du_Plessis_Professional_Resume.pdf",
+        "Official recipient: careers@kodah.ai"
+      ],
+      "remains_unproven": "Employer receipt/read, response, interview, compensation terms, job offer, contract or payment.",
+      "scope": "KODAH_BDR_APPLICATION_SUBMITTED_20261016",
+      "upgrade_action": "Wait until 2026-10-23T08:25:19Z or earlier employer response; inspect the same thread and confirm role status before one follow-up."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-16T08:13:38Z",
-  "last_reconciled_reason": "Merged the current official-route WRIGHTSAI offer and Zakaria Barjac delivery failure into the latest ledger without overwriting the concurrently reconciled VOOR Sport application. Preserved original Outlook message and bounce IDs, distinct lifecycle states, and next actions. No repeat outreach performed.",
+  "last_reconciled_at": "2026-10-16T08:26:01Z",
+  "last_reconciled_reason": "Reconciled the new official Kodah Business Development Representative application after checking current official role, canonical ledger and Outlook history; sent the application with the existing CV, verified it in Sent Items and confirmed attachment metadata. Added one unique SUBMITTED record; no response or income inferred. Existing offer waiting windows and delivery-failure state preserved.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -448,9 +465,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-16T10:13:38+02:00",
+  "last_updated_at": "2026-10-16T10:26:01+02:00",
   "last_updated_by": "iSCOPE → PRI existing commercial field force",
-  "record_count": 100,
+  "record_count": 101,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -5794,6 +5811,61 @@
       "subject": "Independent pre-handoff QA for one AI workflow — US$99 pilot",
       "thread_id": null,
       "title": "Independent pre-handoff QA for one AI workflow"
+    },
+    "kodah.ai|business-development-representative|2026-10-16": {
+      "buyer_fit": "Current official careers page lists a remote UK/EMEA Business Development Representative role. Applicant brings 10+ years of EMEA B2B sales, route-to-market, distribution and strategic-account execution; current AI-assisted product-building evidence is positioned as an additional capability, with test boundaries preserved.",
+      "capital_direction": "INBOUND / NO APPLICATION FEE",
+      "constraints": [
+        "Compensation range is not published on the current role page and remains to be established.",
+        "Application email was sent to the official hiring address; employer receipt/read and response are not evidenced.",
+        "Bounded product test results do not imply production deployment or universal system performance."
+      ],
+      "current_route_confidence": "HIGH",
+      "current_route_status": "OFFICIAL_EMAIL_APPLICATION_SENT; EMPLOYER_RESPONSE_UNVERIFIED",
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CAPABILITY -> NEW APPLICATION -> PAYER/DEMAND",
+      "domain": "kodah.ai",
+      "due_at": "2026-10-23T08:25:19Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_OFFICIAL_ROLE",
+          "observed_at": "2026-10-16T08:26:01Z",
+          "source": "OFFICIAL_SITE",
+          "url": "https://kodah.ai/careers",
+          "summary": "Current official careers page lists a Business Development Representative role remote / UK / EMEA, full-time, and requests a CV plus a short note at careers@kodah.ai."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "observed_at": "2026-10-16T08:25:19Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkgAAAA==",
+          "subject": "Application — Business Development Representative (Remote / EMEA)",
+          "summary": "Sent from usduplessis@outlook.com to the official careers@kodah.ai address. Application led with 10+ years of EMEA B2B sales/strategic-account experience and concise, bounded evidence of AI-assisted product builds. No employer receipt or response inferred."
+        },
+        {
+          "kind": "CV_ATTACHMENT_VERIFIED",
+          "observed_at": "2026-10-16T08:26:01Z",
+          "source": "OUTLOOK_ATTACHMENT_METADATA",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkgAAAA==",
+          "summary": "Sent item contains the attachment Ulrich_Du_Plessis_Professional_Resume.pdf. Attachment metadata independently read back after send."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-16T08:25:19Z",
+      "last_reconciled_at": "2026-10-16T08:26:01Z",
+      "message_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkgAAAA==",
+      "next_action": "Wait for a substantive employer response in the existing application email thread. At 2026-10-23T08:25:19Z, inspect the same mailbox thread and recheck the current role before one concise follow-up if there is no response. If a response arrives sooner, qualify compensation, target markets, working arrangement and next hiring step. Do not duplicate the application.",
+      "opportunity": "Business Development Representative (Remote / EMEA)",
+      "organization": "Kodah",
+      "proof_of_work_route": "INTERVIEW_HEAVY",
+      "qualified_at": "2026-10-16T08:26:01Z",
+      "recipient": "careers@kodah.ai",
+      "reward": "Full-time employment; compensation not published and not yet agreed.",
+      "state": "SUBMITTED",
+      "subject": "Application — Business Development Representative (Remote / EMEA)",
+      "thread_id": null,
+      "title": "Business Development Representative"
     }
   },
   "updated_at": "2026-10-16",
