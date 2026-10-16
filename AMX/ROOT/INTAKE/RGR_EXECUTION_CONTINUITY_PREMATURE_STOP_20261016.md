@@ -41,3 +41,56 @@ Existing canonical opportunity key:
 
 ## 6. Current result boundary
 This record is an RGR truth receipt, not itself a commercial win. At the time of creation, no new payment or buyer commitment has been established.
+
+## 7. Continued commercial execution — 2026-10-16
+
+The flight continued after the prior premature-stop correction. Four additional role-specific application emails were sent with the current resume attached, each independently retrieved from Outlook Sent Items. They are recorded in the existing \`overdrive/opportunities.json\`, \`overdrive/claims.json\`, and \`overdrive/signals.json\`. Existing canonical route and state are preserved; no duplicate tracker or pipeline was created.
+
+### Verified application receipts
+
+1. **VOOR Sport — Sales & Business Development Associate**
+   - Route: official role page directs applications to \`jobs@voor.sport\`.
+   - Sent: \`2026-10-16T08:08:55Z\`.
+   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjQAAAA==\`.
+   - Canonical opportunity: \`voor.sport|sales-business-development-associate|2026-10-16\`.
+   - State: SUBMITTED / WAITING. Compensation not published.
+
+2. **Edgefolio — Sales Development Representative**
+   - Route: current role page explicitly lists \`careers@edgefolio.com\` for CV/application.
+   - Sent: \`2026-10-16T08:19:16Z\`.
+   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjgAAAA==\`.
+   - Canonical opportunity: \`edgefolio.com|sales-development-representative|2026-10-16\`.
+   - State: SUBMITTED / WAITING. South Africa remote eligibility and pay amount remain unconfirmed.
+
+3. **PLOY — Sales Development Representative**
+   - Route: current public job listing names \`tim@ploy.club\` for CV applications.
+   - Sent: \`2026-10-16T08:20:22Z\`.
+   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjwAAAA==\`.
+   - Canonical opportunity: \`ploy.club|sales-development-representative|2026-10-16\`.
+   - State: SUBMITTED / WAITING. Compensation not published.
+
+4. **Gees Talent / Beeline — Sales Development Representative**
+   - Route: current role listing specifies \`cvs@geestalent.com\`.
+   - Sent: \`2026-10-16T08:20:59Z\`.
+   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkAAAAA==\`.
+   - Canonical opportunity: \`geestalent.com|beeline-sdr|2026-10-16\`.
+   - State: SUBMITTED / WAITING. Compensation not published.
+
+5. **Hotsourced — current remote South Africa LegalTech SDR**
+   - Live listing advertises base ZAR 220,000–286,000/year and OTE ZAR 374,000–462,000/year; OTE is not guaranteed.
+   - Sent: \`2026-10-16T08:23:54Z\` to the published general recruitment address \`recruitment@hotsourced.io\`, after a zero-match mailbox dedupe.
+   - Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkQAAAA==\`.
+   - Canonical opportunity: \`hotsourced.io|legaltech-sdr|2026-10-16\`.
+   - State: SUBMITTED / ROUTE_CONFIRMATION_WAITING. The general inbox is publicly evidenced as a Hotsourced recruitment contact from a prior job post but is not independently verified as the ATS route for this exact requisition. The email asks the recruiter to route or provide the exact approved submission path.
+
+### Delivery and commercial truth
+These receipts prove that the messages are present in Sent Items with attachments; they do not prove mail delivery, recipient reading, recruiter response, ATS acceptance, interview, offer, contract or payment. Current searches found no buyer response for these applications. No job offer or income is claimed.
+
+The separate attempted US$99 message to \`zakaria@zakariabarjac.com\` received a verified bounce because the destination address was not found. This is a route/source-quality failure, not a buyer rejection. Do not retry that address or resume speculative US$99 outreach.
+
+### Next execution
+- Continue identifying actual payer-posted jobs and paid-task work with an available, evidenced route; prioritize disclosed base pay and short time-to-first-payment.
+- Recheck application responses and bounces; do not send duplicate submissions.
+- Hotsourced exact ATS route remains to be confirmed by the recruiter. Do not represent it as an ATS submission.
+- Corzly's higher-base role remains open for official form submission, but the TinyFish browser run did not start because the metered wallet balance is \`-1.051248 USD\`. No retry was attempted; free application/email routes remain in use.
+- No new buyer offer, contract, invoice, receivable or payment has yet been established. This is continued execution evidence, not a commercial win.
