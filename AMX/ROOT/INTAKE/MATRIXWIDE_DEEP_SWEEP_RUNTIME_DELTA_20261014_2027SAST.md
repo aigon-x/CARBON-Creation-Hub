@@ -200,3 +200,18 @@ Fresh Render event readback advanced beyond the previous entry:
 - Fresh public checks after this cycle: `/status` HTTP 503; `/manifest` HTTP 503; `/runtime-receipt` HTTP 425.
 
 This supersedes the approximately 05:05Z `/status` success recorded in §13: the current service is now externally unavailable on status/manifest and still has no accepted receipt. The live 200K run remains unaccepted; last accepted scale is 100K. The repeated OOM events and 503s are fresh evidence for T-COD's existing repair route, not authority to deploy the branch proposal automatically. No service change, staging mutation, candidate ID, contact, bid or payment occurred.
+
+
+## 16. Fresh endpoint 502 despite platform availability event + existing Ekurhuleni source dedupe — 2026-10-16
+
+### Runtime
+- Latest platform availability event retrieved: `evt-db8r48qjnfac73dcuso0` at `2026-10-16T05:12:03.399031Z`.
+- The immediately preceding failure remains `evt-db8r2ge417fc739tfm9g` at `05:08:17.084917Z`, explicit `oomKilled.memoryLimit=512Mi`.
+- A subsequent fresh public read returned `/status` HTTP 502, `/manifest` HTTP 502, and `/runtime-receipt` HTTP 425.
+- Therefore a platform `server_available` event is not proof of healthy application endpoints. There is still no current manifest/receipt or accepted 200K/250K output. T-COD owns repair; FORX independent acceptance remains exact counts/unique IDs/partition hashes/durable readback/restart proof.
+
+### Commercial source dedup
+A new public-source search surfaced Ekurhuleni's `GEQ.CM&T.09.12 RE-ADVERT` (destination brand, brand strategy, implementation plan and tourism website, listed close 19 October). Exact-source dedup found the original signal already preserved in existing Root Intake issue #31 comment `6186320898`, with the official listing link and the hard gates (CSD plus Ekurhuleni supplier database, physical submission, supplier/agency eligibility unverified). The re-advert confirms the same closing date; it does not create a new buyer/opportunity. **No duplicate observation, candidate ID, or staging append was created.**
+Source: https://www.ekurhuleni.gov.za/business/quotes/geq-cmt-09-12-re-advert/
+
+Staging remains fail-closed on the previously recorded v8 count/sequence discrepancy. No service change, deployment, external contact, bid, contract or payment occurred in this update.
