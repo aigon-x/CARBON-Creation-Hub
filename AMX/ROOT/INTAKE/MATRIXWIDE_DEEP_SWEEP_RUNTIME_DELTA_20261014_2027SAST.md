@@ -190,3 +190,13 @@ Manifest v8 blob `0d525f782c8da535fcb30b26dffe288259020cfb` declares 947 unique 
 - Chronology clarification: the exact SARS RFP13/2026 reference/URL was absent from the issue-comment history during the initial source dedup check, then was persisted afterward in existing issue #31 comment `6208470670`. Therefore SARS is now present in current Root Intake and must be treated as already recorded; §13 does not authorize duplicating it. The two Upwork source URLs were recorded in comment `6208441881`.
 - Latest live runtime evidence, including OOM event `evt-db8r0se417fc739tc780`, was appended and then read back successfully in this file. Existing issue comments `6208311269`, `6208441881`, `6208470670`, and `6208518330` provide the chronology and exact supporting parcels.
 - This persistence PASS applies only to the Intake file/comment readbacks. It does **not** close runtime repair, 200K/250K scale acceptance, staging reconciliation, or commercial qualification. Manifest v8 remains fail-closed; no candidate IDs or staging append have occurred.
+
+
+## 15. Immediate post-OOM availability check — 2026-10-16 05:08Z
+
+Fresh Render event readback advanced beyond the previous entry:
+- Newest failure: `evt-db8r2ge417fc739tfm9g` at `2026-10-16T05:08:17.084917Z`, `server_failed`, explicit `oomKilled.memoryLimit=512Mi`.
+- Immediately preceding `server_available`: `evt-db8r1l2jnfac73dcurng` at `05:06:28.824905Z`.
+- Fresh public checks after this cycle: `/status` HTTP 503; `/manifest` HTTP 503; `/runtime-receipt` HTTP 425.
+
+This supersedes the approximately 05:05Z `/status` success recorded in §13: the current service is now externally unavailable on status/manifest and still has no accepted receipt. The live 200K run remains unaccepted; last accepted scale is 100K. The repeated OOM events and 503s are fresh evidence for T-COD's existing repair route, not authority to deploy the branch proposal automatically. No service change, staging mutation, candidate ID, contact, bid or payment occurred.
