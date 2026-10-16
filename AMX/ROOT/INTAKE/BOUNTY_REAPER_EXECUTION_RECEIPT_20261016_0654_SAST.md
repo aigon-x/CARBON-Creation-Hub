@@ -59,6 +59,25 @@ Disposition: **A — PUBLIC / NON-QUALIFYING OR ALREADY-REPORTED SIGNALS; NO SUB
 
 Local runtime check: `git`, `node`, `npm`, `python3` and `curl` are present; `cargo`, `rustc`, `forge`, `solc` and `anvil` are absent. A local DNS lookup for `github.com` returned no result. The source connector remains available for static reading, but local clone + executable Rust/EVM validation cannot be claimed in this runtime. This is an exact capability boundary, not evidence of a bug.
 
+## Continued at 07:03 SAST — Lombard Finance Bascule / BridgeV2 screen
+
+Official current bounty: https://immunefi.com/bug-bounty/lombard-finance/information/ and https://immunefi.com/bug-bounty/lombard-finance/scope/. Scope page was last updated 2026-10-15; max stated critical reward $500,000, with PoC and KYC required. Critically, current scope says every report requires a **non-refundable submission fee** before review; no fee was paid and no report was submitted.
+
+### Source / asset binding
+- Public source repository: `lombard-finance/evm-smart-contracts`, current main source blobs fetched through GitHub connector: `contracts/bridge/BridgeV2.sol` `4b87ad6caf13faa5e94caff7f1d46e3da7b4ecb7`; `contracts/bascule/GMPBasculeV1.sol` `8aeb2c0b61c23b1e82933cbf483d7d06f3a71b44`; `contracts/bascule/GMPBasculeV2.sol` `9ac1d98a02a7c74c3755c4f3ffd272096f9200e8`; `contracts/bascule/interfaces/IGMPBascule.sol` `6bb81475ccd09d55b9eb78487128c2478ea34f18`; `contracts/LBTC/AssetRouter.sol` `bc8cef70b4a28589cade05784aa32fdc61745218`; `mainnet.json` `125c071bc6adef7055e55ff033437d37214091b7`.
+- Current official scope includes BasculeV1, GMPBasculeV1, AssetRouter, Mailbox and BridgeV2. The resources page binds deployment addresses through `mainnet.json`, but not every repository contract is automatically in scope: only the official scope table is controlling.
+- Current repository audit index lists the prior Sherlock GMP Bascule audit dated 2025-12-25, plus OpenZeppelin/Sherlock reports for BridgeV2 and mint/burn controls. The PDF report content for the Bascule audit could not be extracted through the available document route; full audit-text dedupe was not claimed.
+
+### Hypothesis screened: Bascule mint-ID collision / permanent denial
+- `IGMPBascule.Message` consists of `nonce`, `recipient`, `toToken` and `amount`. Its source comment explicitly states the nonce is unique under the assumption the Ledger chain is the only sender; if there were multiple source chains, source-chain identity would need to be included.
+- `GMPBasculeV1._mintID()` and V2 hash the nonce, the current destination `block.chainid`, recipient, token and amount. `reportMints()` verifies the trusted signer's proof before recording an unreported ID; `validateMint()` is restricted to `MINT_VALIDATOR_ROLE`, marks a reported ID minted, rejects repeats, and blocks unreported mints at/above the threshold.
+- `AssetRouter` stores one `ledgerChainId` and `bitcoinChainId`; its `validateMint` integration constructs the Bascule message from the mint fields. The reviewed source does not establish multiple independent Ledger source chains feeding one Bascule nonce namespace, nor a caller-controlled way to forge a duplicate Ledger nonce.
+- `BridgeV2.handlePayload()` requires the configured Mailbox, marks each `payload.id` spent in the same transaction, checks the inbound path's source bridge against configuration, verifies the permitted destination token, applies the rate limit, and mints only after those checks. Failed downstream calls revert the transaction state; the repository README documents the Mailbox retry model and handler-local replay guard.
+
+Disposition: **A — NO PROMOTION / ARCHITECTURAL ASSUMPTION NOT SHOWN VIOLATED.** The nonce-collision idea is conditional on a source topology mismatch not established by the current deployment/source evidence. No direct theft, permanent freeze or other accepted impact was reproduced; no local PoC was executed. Do not frame the interface's explicit single-Ledger-source assumption as a vulnerability without evidence that production violates it and a deterministic impact path.
+
+### Program economics / no-spend gate
+The official program's non-refundable fee is a material cost before triage. Current state has no finding, compliant PoC, or fully deduped private packet that would justify paying it. No payment commitment or submission was made. Reopen only after a candidate survives exact deployed asset/source binding, current impact rules, audit and public-prior-art dedupe, plus a compliant local PoC. No live/public-testnet testing or asset movement occurred.
 ## 5. Consolidated parcel truth carried forward
 
 The parent receipt was directly fetched at blob `d4259e0787112391211ea8fe4985391a8d95c99e` and contains the following evidence-backed statuses:
@@ -83,7 +102,7 @@ No source-changing action, live-target test, mainnet/public-testnet test, transa
 
 **Next action:** ROOT enables authorized Google Drive/Sheets access while Reaper continues one distinct, current-scope public-source candidate at a time, prioritizing repositories whose required local PoC toolchain can actually run. Do not spend another cycle on the killed subclaims or on SP1 build-only issues as bounty candidates.
 
-RUN_RESULT: PRODUCTIVE — CANONICAL MANDATE VERIFIED; TRACKER BLOCKER REFINED TO WORKSPACE-ADMIN DISABLED GOOGLE DRIVE CONNECTOR; CURRENT SCHEDULER NULL-NEXT-RUN DISCREPANCY RECORDED; SP1 PUBLIC ISSUE CENSUS SCREENED; NO SUBMISSION-READY FINDING ESTABLISHED.
+RUN_RESULT: PRODUCTIVE — CANONICAL MANDATE VERIFIED; TRACKER BLOCKER REFINED TO WORKSPACE-ADMIN DISABLED GOOGLE DRIVE CONNECTOR; CURRENT SCHEDULER NULL-NEXT-RUN DISCREPANCY RECORDED; SP1 PUBLIC ISSUE CENSUS SCREENED; LOMBARD BASCULE/BRIDGE SOURCE PATH SCREENED WITH NO PROMOTION; NO SUBMISSION-READY FINDING ESTABLISHED.
 TRACKER: TRACKER_WRITE_BLOCKED.
 Q1: UNKNOWN, NOT ZERO.
 EXTERNAL SUBMISSION / ACCEPTANCE / AWARD / PAYMENT: NONE ESTABLISHED.
