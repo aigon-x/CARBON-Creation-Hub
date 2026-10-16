@@ -62,3 +62,22 @@ Initial evaluation rubric from the charter:
 Every future wake/run should append a delta rather than rewrite history. Preserve old findings and supersede only with source-backed corrections. Each handoff carries: receipt ID, branch/commit SHA, source timestamps, changed facts, unresolved UNKNOWN/HOLD items, owner, next action, acceptance test, and readback result.
 
 **Current disposition:** durable charter commit recorded; flight receipt being committed; outcome audit remains OPEN. This packet is not ROOT approval and not a claim of final success.
+
+
+## Final persistence sync — additional live evidence (2026-10-16)
+**Readback performed:** both charter and this receipt were fetched from the probation branch after commit. Charter blob SHA: `79c84aa4e85d3c200fdac11398b4f650b5476b5f`. Receipt blob SHA before this addendum: `2d9dcc417fc716521b3c04a085a543fc59491e1f`. Review PR #43 exists and is open against `main`; it requests ROOT disposition. This is durable persistence of a probation proposal, not ROOT acceptance.
+
+### Stripe live-mode readback
+Using the AMX-connected Stripe account in live mode:
+- The latest 10 Checkout Sessions returned were all `expired` and `unpaid`; `has_more=true`, so this page is not a full historical count.
+- The first-page reads for PaymentIntents, Charges, Invoices, and Payouts each returned zero records.
+- Therefore **no verified paid/settled receipt was found in the inspected first pages**, and no revenue is attributed to this flight. This does not prove that the entire account has never received revenue: the Checkout Sessions list is paginated and this pass did not reconcile every customer/opportunity or exhaust all historical pages.
+- Next action: paginate the relevant live-mode records and match successful payments/payouts to Close opportunities by stable customer/payment IDs, dates, amount, and currency before any money-in claim.
+
+### Final same-run delta
+- PR #43 is open, non-draft, not merged; head commit observed: `66ca6e7e14fe016b3cbc43ad578ea457e6015cda`.
+- PR #42 remains open and draft; the FORX Stage-1 runtime state was reported suspended in Render during this flight. Neither code merge nor a proposal is evidence that the runtime is restored.
+- The branch and both files were read back successfully. The current receipt is being updated with this Stripe result and final readback state; one more readback is required after this update.
+- Full transcript-space and all-tentacle enumeration is still **OPEN**. The evidence matrix is broad but must not be represented as exhaustive. Continue from the recorded source register and update with stable IDs and pagination/terminal markers.
+
+**Closure rule:** this receipt confirms durable persistence of the current findings and the ROOT review handoff. It does not close the wider execution flight, prove Tokyo adoption, prove universal weight/anchor inheritance, or approve the role permanently.
