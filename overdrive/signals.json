@@ -361,6 +361,18 @@
       "thread_id": null
     },
     {
+      "due_at": "2026-10-23T08:39:11Z",
+      "due_now": false,
+      "next_action": "Await recruiter response on the required video route and initial-screening eligibility. If they require the video, the applicant must record a genuine 60\u201390 second introduction and provide it through the requested route; do not generate a surrogate applicant recording. Continue other live roles meanwhile.",
+      "opportunity_key": "talentadvantage.ca|sales-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "FOLLOWUP_NOT_DUE",
+      "smallest_next_action": "Await recruiter response on the required video route and initial-screening eligibility. If they require the video, the applicant must record a genuine 60\u201390 second introduction and provide it through the requested route; do not generate a surrogate applicant recording. Continue other live roles meanwhile.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
@@ -949,7 +961,7 @@
       "thread_id": null
     }
   ],
-  "generated_at": "2026-10-16T08:37:29.162151+00:00",
+  "generated_at": "2026-10-16T08:40:31.781595+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -2236,6 +2248,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a0f1a3a7ad58e63"
+    },
+    "talentadvantage.ca|sales-development-representative|2026-10-16": {
+      "due_at": "2026-10-23T08:39:11Z",
+      "due_now": false,
+      "next_action": "Await recruiter response on the required video route and initial-screening eligibility. If they require the video, the applicant must record a genuine 60\u201390 second introduction and provide it through the requested route; do not generate a surrogate applicant recording. Continue other live roles meanwhile.",
+      "opportunity_key": "talentadvantage.ca|sales-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "FOLLOWUP_NOT_DUE",
+      "smallest_next_action": "Await recruiter response on the required video route and initial-screening eligibility. If they require the video, the applicant must record a genuine 60\u201390 second introduction and provide it through the requested route; do not generate a surrogate applicant recording. Continue other live roles meanwhile.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "techemulsion.com|agent-workflow-qa-overflow-pilot|2026-10-15": {
       "due_at": "2026-10-19T08:00:00Z",
