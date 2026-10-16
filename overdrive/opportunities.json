@@ -336,11 +336,26 @@
       "remains_unproven": "Current authenticated Upwork account/session, application-history deduplication, current listing acceptance and milestone funding; no buyer submission or revenue.",
       "scope": "UPWORK_BROWSER_ROUTE_BLOCKED_ATTEMPT_RECOVERY_20261016",
       "upgrade_action": "Continue other eligible commercial work using connected sources. For Upwork, resume with the existing Google sign-in/setup route when the profile is saved and the browser session is available; do not create a duplicate account. If TinyFish browser automation is needed, resolve its wallet condition before retrying that specific route."
+    },
+    {
+      "actual": "Current official VOOR Sport employment application sent through the hiring email specified on the official role page, after zero-match prior-application search; exact Outlook Sent Item read back with CV attachment.",
+      "changed": "Added one new application record at SUBMITTED/WAITING; no buyer response or compensation terms inferred.",
+      "classification": "CURRENT_OFFICIAL_APPLICATION_SENT; BUYER_OUTCOME_PENDING",
+      "observed_at": "2026-10-16T08:08:55Z",
+      "owner": "PRI",
+      "proof": [
+        "Official role: https://voor.sport/en/jobs/sales-business-development-associate",
+        "Outlook sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjQAAAA==",
+        "Attachment SHA-256 117fbba641d541cdb5a77c887268fca1d8e045c5e9bdeac3525047c7ef52248e"
+      ],
+      "remains_unproven": "Email delivery/recipient reading, buyer response, compensation, offer, contract, start date, invoice, payment.",
+      "scope": "voor.sport|sales-business-development-associate|2026-10-16",
+      "upgrade_action": "Wait for the buyer response; if none by the recorded due time, verify the same email route before a single follow-up. Continue other payer-posted roles in parallel."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-16T07:58:21Z",
-  "last_reconciled_reason": "Reconciled six verified Outlook Sent Items offers that were absent from the canonical ledger; inserted six existing-send records as OFFERED with original Outlook message IDs and no duplicate outreach. Recorded fresh Stripe live readback (42 expired/unpaid Checkout Sessions; zero PaymentIntents, Charges or Invoices), current Outlook/Close no-inbound window, and the route-specific TinyFish pre-start wallet failure. Updated the existing Upwork record with the exact route failure and a continued next action. No new external message or application was submitted; lifecycle and settlement truth remain unchanged.",
+  "last_reconciled_at": "2026-10-16T08:08:55Z",
+  "last_reconciled_reason": "Added one distinct, current official VOOR Sport employment application after mailbox dedupe. The official role page provides an explicit hiring email route; Outlook sent item independently read back with resume attachment. State is SUBMITTED/WAITING only; no delivery, buyer response, offer, contract, invoice, or payment inferred. No speculative outbound customer offer or duplicate application was sent.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -403,9 +418,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-16T09:58:21+02:00",
-  "last_updated_by": "iSCOPE → PRI existing commercial field force",
-  "record_count": 97,
+  "last_updated_at": "2026-10-16T10:08:55+02:00",
+  "last_updated_by": "PRI",
+  "record_count": 98,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -5580,8 +5595,63 @@
       "thread_id": null,
       "title": "White-label overflow: one agent workflow reliability pilot",
       "upfront_cost": 0
+    },
+    "voor.sport|sales-business-development-associate|2026-10-16": {
+      "buyer_fit": "Direct fit to 10+ years of EMEA B2B sales, strategic-account management, route-to-market, negotiation and commercial follow-through. Current AI-assisted product-building adds practical systems thinking relevant to CRM accuracy, sales materials and operational reporting. The owner’s record does not establish prior Pipedrive-specific experience; not claimed.",
+      "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
+      "constraints": [
+        "Official page does not publish compensation; verify salary and employment terms if progressed.",
+        "Pipedrive-specific experience is not established and was not claimed.",
+        "A sent application email is not proof of delivery, buyer response, offer, contract, invoice or payment."
+      ],
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_OFFICIAL_ROLE -> CAPABILITY_MATCH -> OFFICIAL_EMAIL_APPLICATION",
+      "domain": "voor.sport",
+      "due_at": "2026-10-23T08:08:55Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_PRIMARY_LISTING",
+          "observed_at": "2026-10-16T07:45:00Z",
+          "source": "WEB",
+          "url": "https://voor.sport/en/jobs/sales-business-development-associate",
+          "summary": "Official role page lists Sales & Business Development Associate; lead research/qualification, Pipedrive CRM data, sales materials, contract processing, invoicing/post-sales administration; on-site Cape Town or remote; requests CV and short motivation to jobs@voor.sport. Compensation is not published."
+        },
+        {
+          "kind": "PRIOR_APPLICATION_HISTORY_DEDUPE",
+          "observed_at": "2026-10-16T08:08:00Z",
+          "source": "OUTLOOK",
+          "result": "ZERO_MATCHES",
+          "summary": "Mailbox search to jobs@voor.sport returned no prior application messages before submission."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "observed_at": "2026-10-16T08:08:55Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXjQAAAA==",
+          "subject": "Application — Sales & Business Development Associate",
+          "summary": "Sent from existing mailbox usduplessis@outlook.com to the official advertised hiring address jobs@voor.sport with Ulrich_Du_Plessis_Professional_Resume.pdf attached (SHA-256 117fbba641d541cdb5a77c887268fca1d8e045c5e9bdeac3525047c7ef52248e). Outlook Sent Items independently read back the exact recipient, subject, timestamp and attachment flag. This proves the send item, not delivery or buyer receipt."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-16T08:08:55Z",
+      "last_reconciled_at": "2026-10-16T08:08:55Z",
+      "next_action": "Wait for a substantive buyer response. If none arrives by 2026-10-23T08:08:55Z, recheck the existing route and message delivery before one short follow-up. If a response arrives, confirm compensation, working arrangement, start expectations and interview steps. Do not send duplicate applications.",
+      "opportunity": "Sales & Business Development Associate",
+      "organization": "VOOR Sport",
+      "payment": "Employment compensation; amount and payroll terms are not published in the current official listing.",
+      "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL",
+      "qualified_at": "2026-10-16T07:45:00Z",
+      "recipient": "jobs@voor.sport",
+      "reward": "Not published",
+      "state": "SUBMITTED",
+      "subject": "Application — Sales & Business Development Associate",
+      "thread_id": null,
+      "title": "Sales & Business Development Associate",
+      "current_route_status": "OFFICIAL_HIRING_EMAIL_VERIFIED",
+      "current_route_confidence": "HIGH"
     }
   },
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "version": 1
 }
