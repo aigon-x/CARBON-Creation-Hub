@@ -253,6 +253,18 @@
       "thread_id": null
     },
     {
+      "due_at": "2026-10-23T08:08:55Z",
+      "due_now": false,
+      "next_action": "Wait for a substantive buyer response. If none arrives by 2026-10-23T08:08:55Z, recheck the existing route and message delivery before one short follow-up. If a response arrives, confirm compensation, working arrangement, start expectations and interview steps. Do not send duplicate applications.",
+      "opportunity_key": "voor.sport|sales-business-development-associate|2026-10-16",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a substantive buyer response. If none arrives by 2026-10-23T08:08:55Z, recheck the existing route and message delivery before one short follow-up. If a response arrives, confirm compensation, working arrangement, start expectations and interview steps. Do not send duplicate applications.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
@@ -829,7 +841,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-16T08:02:48.340900+00:00",
+  "generated_at": "2026-10-16T08:15:19.477078+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -2174,6 +2186,18 @@
       "routing_reason": "WAITING",
       "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
       "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "voor.sport|sales-business-development-associate|2026-10-16": {
+      "due_at": "2026-10-23T08:08:55Z",
+      "due_now": false,
+      "next_action": "Wait for a substantive buyer response. If none arrives by 2026-10-23T08:08:55Z, recheck the existing route and message delivery before one short follow-up. If a response arrives, confirm compensation, working arrangement, start expectations and interview steps. Do not send duplicate applications.",
+      "opportunity_key": "voor.sport|sales-business-development-associate|2026-10-16",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "Wait for a substantive buyer response. If none arrives by 2026-10-23T08:08:55Z, recheck the existing route and message delivery before one short follow-up. If a response arrives, confirm compensation, working arrangement, start expectations and interview steps. Do not send duplicate applications.",
+      "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": null
     },
