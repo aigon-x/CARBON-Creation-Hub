@@ -78,6 +78,19 @@ Disposition: **A — NO PROMOTION / ARCHITECTURAL ASSUMPTION NOT SHOWN VIOLATED.
 
 ### Program economics / no-spend gate
 The official program's non-refundable fee is a material cost before triage. Current state has no finding, compliant PoC, or fully deduped private packet that would justify paying it. No payment commitment or submission was made. Reopen only after a candidate survives exact deployed asset/source binding, current impact rules, audit and public-prior-art dedupe, plus a compliant local PoC. No live/public-testnet testing or asset movement occurred.
+## Recovered intervening 22:46 SAST receipt — supersession reconciliation
+
+During the current continuation, repository search surfaced and the full contents of these later-than-20:56-SAST/earlier-than-current-run artifacts were recovered:
+- Execution receipt `AMX/ROOT/INTAKE/BOUNTY_REAPER_EXECUTION_RECEIPT_20261015_224645_SAST.md`, blob `8a4ae3f7282f3e6206afa0fb0ae0633f6f41afa0`, RUN_ID `BR-20261015-224645-SAST-01`.
+- Pre-flight receipt `AMX/ROOT/INTAKE/BOUNTY_REAPER_PREFLIGHT_RECEIPT_20261015_2246_SAST.md`, blob `88f1727cbfeb4f77a2949d6ea7108366d4324756`.
+- Both receipts bind to the same current Registry 1.2 and exact mandate hashes; their queue claim is still `TRACKER_WRITE_BLOCKED` / `Q1 UNKNOWN, NOT ZERO`. They do not record a submission/report ID, acceptance, award or payment.
+
+### LayerZero pointer — older lead superseded
+The 22:46 receipt includes a read-only Ethereum Blockscout lookup showing the Executor proxy `0x173272739Bd7Aa6e4e214714048a9fE699453059` pointing at implementation `0x1Ed8E51E8AB2A00B2805aEcf2C6aC0BB6521eaE0`. This supersedes the earlier, unverified Etherscan-indexed pointer `0xfe9ab78ed4f9f3dbb168d9f5e5213d78605c9805` mentioned in the 20:56 receipt. It still does **not** establish deployed implementation/source-bytecode equivalence to pinned LayerZero commit `9c741e7f9790639537b1710a203bcdfd73b0b9ac`; the target remains unverified for submission eligibility. The 2026 MessageLib diff PDF hash recorded there is `c8addfe7a9b52e10344b5b737b354eb05edb5afe`; that PDF remains unread through available text-only routes. Full audit dedupe therefore remains open.
+
+### SP1 global-sum hypothesis — public guard/kill preserved
+The 22:46 receipt also records the separate current-release SP1 global-sum hypothesis kill: `crates/hypercube/src/septic_digest.rs` blob `64758f0f9b3e5dbed3afb120b173df88dac6d4be` checks equal x-coordinates before incomplete addition; `crates/prover/src/verify.rs` blob `aebbc97fecaa5d9aff6a0d46a477c2d26fd4c03b` maps failure to `InvalidPublicValues`. Public merged PR #2980 (merge `4ba928692b91952aaf2db2f72d233ae90ae8b554`, 2026-09-21) documents the guard. Disposition: A/KILLED; do not repackage the public fix. No local Rust test was executed because `cargo` and `rustc` are absent.
+
 ## 5. Consolidated parcel truth carried forward
 
 The parent receipt was directly fetched at blob `d4259e0787112391211ea8fe4985391a8d95c99e` and contains the following evidence-backed statuses:
