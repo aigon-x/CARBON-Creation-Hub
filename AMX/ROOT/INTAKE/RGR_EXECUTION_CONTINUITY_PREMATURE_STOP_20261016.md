@@ -94,3 +94,20 @@ The separate attempted US$99 message to \`zakaria@zakariabarjac.com\` received a
 - Hotsourced exact ATS route remains to be confirmed by the recruiter. Do not represent it as an ATS submission.
 - Corzly's higher-base role remains open for official form submission, but the TinyFish browser run did not start because the metered wallet balance is \`-1.051248 USD\`. No retry was attempted; free application/email routes remain in use.
 - No new buyer offer, contract, invoice, receivable or payment has yet been established. This is continued execution evidence, not a commercial win.
+
+
+## 8. Continued commercial execution — Heldertech BDR
+
+A sixth distinct employment application was sent in this flight after a zero-match mailbox check. This is recorded as an application, not as an offer or win.
+
+- **Role:** Heldertech Business Development Representative.
+- **Public listing:** https://za.linkedin.com/jobs/view/business-development-representative-at-heldertech-4450469439
+- **Advertised route:** \`erin@heldertech.co.za\`, with CV and cover letter.
+- **Sent:** \`2026-10-16T08:30:53Z\`.
+- **Outlook item:** \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkwAAAA==\`.
+- **Verified:** Sent Item read back to exact listed recipient; CV attachment flag true.
+- **Compensation signal:** public listing describes a basic salary plus once-off payment per signed business fibre link and 10% commission on generated gross profit; stated realistic OTE R15,500–R25,500/month, not guaranteed.
+- **Qualification truth:** the listing is indexed as about two months old. The message asks whether the vacancy remains open; currentness and recipient delivery remain unconfirmed. The application does not claim specialist fibre sales experience.
+- **Canonical record:** \`heldertech.co.za|business-development-representative|2026-10-16\`, committed in \`overdrive/opportunities.json\`.
+
+No recruiter reply, interview, offer, contract, invoice, receivable, or payment is evidenced. Current inbox searches found no reply from Heldertech or the other four recently applied-to employers. Continue with current paid-role discovery and follow the exact evidence chain; do not stop at this receipt.
