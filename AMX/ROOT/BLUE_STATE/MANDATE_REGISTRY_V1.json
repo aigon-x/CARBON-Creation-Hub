@@ -10,6 +10,91 @@
   "unregistered_role_rule": "HOLD_AND_ROUTE_TO_ROOT_BEFORE_EXECUTION",
   "entries": [
     {
+      "role_key": "ROOT-TGOV",
+      "mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
+      "status": "CURRENT",
+      "sha256": "d92852d15f66168990290aece801b8c8573d48037b88765a081a26d58e10b120",
+      "source_refs": [
+        "AMX/ROOT/INTAKE/INTAKE_INDEX.md",
+        "GitHub issue #6"
+      ]
+    },
+    {
+      "role_key": "MASTER-LIBRARIAN",
+      "mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
+      "status": "CURRENT",
+      "sha256": "f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8",
+      "source_refs": [
+        "FIRST BREATH — AMX Librarian Continuation",
+        "AMX/ROOT/INTAKE/INTAKE_INDEX.md"
+      ]
+    },
+    {
+      "role_key": "T-COD",
+      "mandate_id": "AMX-MANDATE-TCOD-V1",
+      "status": "CURRENT",
+      "sha256": "67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3",
+      "source_refs": [
+        "GitHub issues #11",
+        "#16",
+        "#17"
+      ]
+    },
+    {
+      "role_key": "T-MED",
+      "mandate_id": "AMX-MANDATE-TMED-V1",
+      "status": "CURRENT",
+      "sha256": "3204cb5d8dfcfbc1e904a4a23f0077959bb9371152a2ef32be48e7e858d148f1",
+      "source_refs": [
+        "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / LIBRARIAN_SYNC rows 94, 103-105, 126, 135, 141",
+        "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / OUTSTANDING rows 14, 15, 20, 23-25, 32, 43-44"
+      ]
+    },
+    {
+      "role_key": "FORX",
+      "mandate_id": "AMX-MANDATE-FORX-V1",
+      "status": "CURRENT",
+      "sha256": "a9570686dae130bd36d0995d9f58dbd0f7cde1597968dc16245c94a65f0f3109",
+      "source_refs": [
+        "FIRST BREATH — FORX Continuous Play Sweep",
+        "GitHub issues #12",
+        "#17",
+        "commit 8b3aea6d5f53859ed7a3cd4b44bb8afe988b8f21"
+      ]
+    },
+    {
+      "role_key": "FORKS-ROI",
+      "mandate_id": "AMX-MANDATE-FORKS-ROI-V1",
+      "status": "CURRENT",
+      "sha256": "a61aa5c535aa33be5639850590cdb911b583f8f02e6a23f4e5e6669850bf6ab9",
+      "source_refs": [
+        "Owner appointment and mandate — Resolution of Intent — 2026-10-16",
+        "ROOT INTAKE — MATRIX WAKE MEMO + RESOLUTION OF INTENT APPOINTMENT — 2026-10-16",
+        "GitHub issue #31 — owner-directed drift and current-rule reconciliation",
+        "AMX/ROOT/BLUE_STATE/FORKS_ROI_MANDATE_V1.md"
+      ]
+    },
+    {
+      "role_key": "ISCOPE",
+      "mandate_id": "AMX-MANDATE-ISCOPE-V1",
+      "status": "CURRENT",
+      "sha256": "6371943e42023ac27c45dbeb973eb33db73843f929c48b57e32c5ee84e461bc7",
+      "source_refs": [
+        "GitHub issue #4",
+        "FIRST BREATH — iSCOPE PRI Field Force"
+      ]
+    },
+    {
+      "role_key": "PRI",
+      "mandate_id": "AMX-MANDATE-PRI-V1",
+      "status": "CURRENT",
+      "sha256": "306a3ec9ee64b222e6e73a4e20cbccc07c3e33f7dc450509cf883e40c9fe17fd",
+      "source_refs": [
+        "GitHub issue #3",
+        "FIRST BREATH — iSCOPE PRI Field Force"
+      ]
+    },
+    {
       "role_key": "BANKER",
       "mandate_id": "AMX-MANDATE-BANKER-V1",
       "status": "CURRENT",
@@ -41,60 +126,6 @@
       ]
     },
     {
-      "role_key": "COMMISSIONING-INSPECTOR",
-      "mandate_id": "AMX-MANDATE-COMMISSIONING-INSPECTOR-V1",
-      "status": "DORMANT_CAPACITY_MERGED",
-      "sha256": "b7d1a8b6a6ea5726aba8b3043a5a60a031926acc155dc30a3ad37dc98cb4b593",
-      "source_refs": [
-        "CAPACITY-MERGED — Matrix Commissioning Inspector",
-        "BLUE STATE — Mandate Liveness & Objective Enforcement"
-      ]
-    },
-    {
-      "role_key": "FORKS-ROI",
-      "mandate_id": "AMX-MANDATE-FORKS-ROI-V1",
-      "status": "CURRENT",
-      "sha256": "a61aa5c535aa33be5639850590cdb911b583f8f02e6a23f4e5e6669850bf6ab9",
-      "source_refs": [
-        "Owner appointment and mandate — Resolution of Intent — 2026-10-16",
-        "ROOT INTAKE — MATRIX WAKE MEMO + RESOLUTION OF INTENT APPOINTMENT — 2026-10-16",
-        "GitHub issue #31 — owner-directed drift and current-rule reconciliation",
-        "AMX/ROOT/BLUE_STATE/FORKS_ROI_MANDATE_V1.md"
-      ]
-    },
-    {
-      "role_key": "FORX",
-      "mandate_id": "AMX-MANDATE-FORX-V1",
-      "status": "CURRENT",
-      "sha256": "a9570686dae130bd36d0995d9f58dbd0f7cde1597968dc16245c94a65f0f3109",
-      "source_refs": [
-        "FIRST BREATH — FORX Continuous Play Sweep",
-        "GitHub issues #12",
-        "#17",
-        "commit 8b3aea6d5f53859ed7a3cd4b44bb8afe988b8f21"
-      ]
-    },
-    {
-      "role_key": "ISCOPE",
-      "mandate_id": "AMX-MANDATE-ISCOPE-V1",
-      "status": "CURRENT",
-      "sha256": "6371943e42023ac27c45dbeb973eb33db73843f929c48b57e32c5ee84e461bc7",
-      "source_refs": [
-        "GitHub issue #4",
-        "FIRST BREATH — iSCOPE PRI Field Force"
-      ]
-    },
-    {
-      "role_key": "MASTER-LIBRARIAN",
-      "mandate_id": "AMX-MANDATE-MASTER-LIBRARIAN-V1",
-      "status": "CURRENT",
-      "sha256": "f127bec771d398c7c2c3a1e746734619568b5641c91d6f810514d08f7f76b4f8",
-      "source_refs": [
-        "FIRST BREATH — AMX Librarian Continuation",
-        "AMX/ROOT/INTAKE/INTAKE_INDEX.md"
-      ]
-    },
-    {
       "role_key": "MATRIX-CRITIC",
       "mandate_id": "AMX-MANDATE-MATRIX-CRITIC-V1",
       "status": "CURRENT_WHEN_INVOKED",
@@ -105,44 +136,13 @@
       ]
     },
     {
-      "role_key": "PRI",
-      "mandate_id": "AMX-MANDATE-PRI-V1",
-      "status": "CURRENT",
-      "sha256": "306a3ec9ee64b222e6e73a4e20cbccc07c3e33f7dc450509cf883e40c9fe17fd",
+      "role_key": "COMMISSIONING-INSPECTOR",
+      "mandate_id": "AMX-MANDATE-COMMISSIONING-INSPECTOR-V1",
+      "status": "DORMANT_CAPACITY_MERGED",
+      "sha256": "b7d1a8b6a6ea5726aba8b3043a5a60a031926acc155dc30a3ad37dc98cb4b593",
       "source_refs": [
-        "GitHub issue #3",
-        "FIRST BREATH — iSCOPE PRI Field Force"
-      ]
-    },
-    {
-      "role_key": "ROOT-TGOV",
-      "mandate_id": "AMX-MANDATE-ROOT-TGOV-V1",
-      "status": "CURRENT",
-      "sha256": "d92852d15f66168990290aece801b8c8573d48037b88765a081a26d58e10b120",
-      "source_refs": [
-        "AMX/ROOT/INTAKE/INTAKE_INDEX.md",
-        "GitHub issue #6"
-      ]
-    },
-    {
-      "role_key": "T-COD",
-      "mandate_id": "AMX-MANDATE-TCOD-V1",
-      "status": "CURRENT",
-      "sha256": "67a9fc18adc6323ea93f86bc70bb677b7e063b5f6f6a8218d1ec2713c4f0e9b3",
-      "source_refs": [
-        "GitHub issues #11",
-        "#16",
-        "#17"
-      ]
-    },
-    {
-      "role_key": "T-MED",
-      "mandate_id": "AMX-MANDATE-TMED-V1",
-      "status": "CURRENT",
-      "sha256": "3204cb5d8dfcfbc1e904a4a23f0077959bb9371152a2ef32be48e7e858d148f1",
-      "source_refs": [
-        "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / LIBRARIAN_SYNC rows 94, 103-105, 126, 135, 141",
-        "AMX MASTER INDEX & LIBRARIAN SYNC DASHBOARD — V1 / OUTSTANDING rows 14, 15, 20, 23-25, 32, 43-44"
+        "CAPACITY-MERGED — Matrix Commissioning Inspector",
+        "BLUE STATE — Mandate Liveness & Objective Enforcement"
       ]
     }
   ],
