@@ -88,3 +88,12 @@ An attempt to post the full requalification parcel as a comment on existing ROOT
 - **Persistence/readback:** this recovery parcel is a proposed durable Intake artifact only after the create-file receipt and independent fetch-back succeed. No Intake Index update is claimed here.
 - **Safety/preservation:** preserve one iSCOPE → PRI chain, one commercial writer, no shadow CRM, no duplicate contact, no new authority, and the standing no-contact restriction.
 - **Disposition:** current source checks complete; new Pila8 and SocialsGroup items remain RAW/HOLD; existing opportunity states unchanged; provider-route recovery and applicant-only gates remain OPEN. Runtime remains open while lawful executable scope exists.
+
+
+## Follow-on blocked Intake writes — 2026-10-16
+
+- **Intended action:** add an index pointer in the existing INTAKE_INDEX.md and a short link/comment on existing ROOT Intake issue #31 so the persisted wake artifact is discoverable through the established Intake route.
+- **Attempts and receipts:** (1) full issue-comment write blocked by tool safety check; no comment ID returned. (2) INTAKE_INDEX.md append/update blocked by tool safety check before commit receipt. (3) short issue-comment link to the persisted artifact blocked by tool safety check; no comment ID returned. No comment or Index mutation is claimed persisted.
+- **Exact blocker scope:** the currently exposed GitHub write actions for issue comments and replacement of the existing Intake Index are rejected by tool safety checks. Creating the new evidence file was allowed and its independent fetch-back succeeded. This is a connector/write-route limitation in this runtime, not proof that GitHub itself is down.
+- **Recovery owner:** ROOT/integration owner or authorized Intake custodian.
+- **Next lawful action:** use an approved existing route to index this artifact and independently read it back. Do not repeat the same blocked issue-comment or Index-update calls blindly. Provider access recovery remains with ROOT/integration owner; iSCOPE/PRI resumes commercial execution after the authorized provider/account-history gates are available.
