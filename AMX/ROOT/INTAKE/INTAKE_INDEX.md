@@ -1,5 +1,9 @@
 # OWNER DIRECTIVE — P0 / HIGHEST EXISTING PRIORITY — CLEAR ROOT INTAKE NOW
 
+## CURRENT-MATRIX RULES / STALE-RULE REVERSION — 2026-10-16
+**New governing Intake delta:** [CURRENT MATRIX RULES APPLY TO EVERY OPEN QUEUE ITEM](CURRENT_MATRIX_QUEUE_RULES_SUPERSESSION_20261016.md). Owner correction: open work does not retain superseded instructions merely because it entered under earlier rules. Apply current Blue State/mandates at the next safe action; preserve historical provenance; require item-level owner, intent, anchors/weights, receipt, dependency, next action and acceptance/readback. Current status remains **INTAKE NOT CLEARED** until live item census and item-level outcomes prove otherwise. This pointer does not promote policy into Blue State; ROOT/T-GOV owns governance integration.
+
+
 ## CURRENT LIBRARIAN FLIGHT — Q DRAIN + CONVERSION BLOCKER SYNC — 2026-10-14
 
 **Lifecycle:** PRESENT / EVIDENCE — appended correction; ROOT disposition and implementation acceptance remain open. This entry supersedes stale current-state projections without deleting their historical provenance.
