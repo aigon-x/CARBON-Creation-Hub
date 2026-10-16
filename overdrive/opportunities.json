@@ -280,11 +280,67 @@
       "remains_unproven": "Prior Corzly mail/application history, schedule confirmation specific to this role, any application submission, buyer response, acceptance, contract, invoice/receivable, or payment.",
       "scope": "ISCOPE_COMMERCIAL_DISCOVERY_SWEEP_20261015_CORZLY_AE",
       "upgrade_action": "Use the existing authorized Outlook/TinyFish route for account-history dedupe and application only if the route is available and the role-specific schedule is workable. Continue monitoring the three already-offered fixed-fee pilots; no second touch before their recorded due time."
+    },
+    {
+      "actual": "Direct Outlook Sent Items readback found six US$99 fixed-scope agent-workflow pilot messages dated 2026-10-15 16:24:42Z–16:36:53Z to TechEmulsion, HIP Agency, the voiceagencyplatform.com recipient, Hugais, AI Adoption Partners and AgenticFlow. Exact message IDs and recipients are persisted on six new records. Prior canonical ledger had none of these keys.",
+      "changed": "Recovered six already-sent offers into the existing overdrive/opportunities.json. Added six unique records at state=OFFERED with their original source IDs, precise scope, recipient, sender evidence, and the governed 2026-10-19T08:00:00Z review. No external message was sent during this reconciliation.",
+      "classification": "OUTLOOK_SENT_ITEMS_RECONCILED_INTO_CANONICAL_LEDGER; SIX_MISSING_OUTBOUND_RECORDS_RECOVERED",
+      "expected": "Every existing external commercial action has a canonical record; sent != responded != accepted != contracted != invoiced != paid. The single PRI writer and existing ledger remain the sole commercial truth.",
+      "observed_at": "2026-10-16T07:58:21Z",
+      "owner": "PRI — sole external commercial writer; iSCOPE discovery ownership preserved.",
+      "proof": [
+        "2026-10-15T16:36:53Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXigAAAA== | contact@techemulsion.com | Independent agent-workflow QA overflow, fixed US$99 pilot",
+        "2026-10-15T16:36:27Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiQAAAA== | info@hipagency.ai | One-workflow AI agent acceptance pilot — US$99 fixed",
+        "2026-10-15T16:36:11Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiAAAAA== | partners@voiceagencyplatform.com | Paid acceptance test for one voice-agent handoff",
+        "2026-10-15T16:24:46Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhwAAAA== | dionne@hugais.co.za | Paid micro-pilot: test one AI agent before handoff",
+        "2026-10-15T16:24:44Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhgAAAA== | darren@aiadoption.co.za | A fixed-scope reliability test for one AI workflow",
+        "2026-10-15T16:24:42Z | AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhQAAAA== | duane@agenticflow.co.za | White-label overflow: one agent workflow reliability pilot"
+      ],
+      "remains_unproven": "Buyer receipt/read, buyer response, acceptance, contract, invoice, payment or settlement. Buyer fit and current prospect status were not requalified from new buyer evidence in this update.",
+      "scope": "PRI_OUTLOOK_SENT_ITEM_MISSING_RECORD_RECOVERY_20261016",
+      "upgrade_action": "Wait until 2026-10-19T08:00:00Z for a no-response review. If a buyer responds earlier, qualify their stated scope and continue that record. Before follow-up, check delivery and contact eligibility. No duplicate outreach or separate pipeline."
+    },
+    {
+      "actual": "Fresh live read of the existing AMILLIMATRIX Stripe account returned 42 Checkout Sessions (limit=100, has_more=false); every returned session was expired and unpaid. PaymentIntents=0, Charges=0 and Invoices=0. Outlook search for 2026-10-16 returned zero messages; Close inbound Email/EmailThread activity search for 2026-10-15 through 2026-10-16 returned zero results. These provider scopes do not establish absence of responses or income through other mailboxes or rails.",
+      "changed": "Updated current provider evidence in the same canonical ledger. No Checkout Session, payment, invoice, buyer response or income was created or inferred.",
+      "classification": "LIVE_STRIPE_READBACK_NO_PAYMENT_EVIDENCED; OUTLOOK_CURRENT_WINDOW_NO_NEW_MESSAGE; CLOSE_INBOUND_WINDOW_EMPTY",
+      "expected": "Keep offer, session, buyer response, acceptance, invoice, payment and terminal settlement as separate states; do not infer revenue from stale/unpaid sessions.",
+      "observed_at": "2026-10-16T07:58:21Z",
+      "owner": "PRI for commercial progression; Banker retains terminal settlement truth.",
+      "proof": [
+        "Stripe account AMILLIMATRIX, live mode acct_1UE0UBHyzt7gyqmn",
+        "GET /v1/checkout/sessions?limit=100: 42 records; all 42 expired/unpaid; has_more=false",
+        "GET /v1/payment_intents?limit=100: 0 records; has_more=false",
+        "GET /v1/charges?limit=100: 0 records; has_more=false",
+        "GET /v1/invoices?limit=100: 0 records; has_more=false",
+        "Outlook: Sent Items verified six additional US$99 fixed-scope pilot messages dated 2026-10-15 16:24:42Z–16:36:53Z; no result for received>=2026-10-16.",
+        "Close activity_search: inbound Email/EmailThread from 2026-10-15T00:00:00Z through 2026-10-17T00:00:00Z returned 0."
+      ],
+      "remains_unproven": "Buyer receipt/open/reply, acceptance of any of the six pilots, invoice/receivable, successful payment or settlement, revenue through non-Stripe rails, and mailbox replies outside the connected Outlook/Close scope.",
+      "scope": "MONEY_IN_PROVIDER_READBACK_20261016",
+      "upgrade_action": "Preserve all nine offers as sent/waiting, with no repeat contact before 2026-10-19T08:00:00Z. On earlier buyer response, progress that existing item. At due time, verify delivery/contact eligibility before one follow-up. Banker must verify actual realized settlement before marking PAID."
+    },
+    {
+      "actual": "Attempted one non-authenticated public Upwork-listing read with the existing TinyFish automation service. The run was rejected before starting (no run ID/browser session) because the TinyFish wallet balance is -1.051248 USD; tool response marked the failure non-retryable until wallet funds are added. No login, application, proposal submission or buyer contact occurred.",
+      "changed": "Recorded exact route-specific failure and recovery without declaring the commercial runtime complete or halting other provider routes. Outlook, GitHub and Stripe were successfully used during this wake.",
+      "classification": "BLOCKED_ATTEMPT_IS_OPEN_EXECUTION_OBLIGATION; TINYFISH_PRESTART_WALLET_NEGATIVE",
+      "expected": "A blocked route keeps an owned next action and does not block unrelated lawful execution; do not retry the same metered run before resolving the wallet condition.",
+      "observed_at": "2026-10-16T07:58:21Z",
+      "owner": "PRI for the existing Upwork proposal; owner/integration route for TinyFish wallet and the previously offered Google sign-in/save handoff.",
+      "proof": [
+        "TinyFish run_web_automation response: status=failed; reason=wallet_out_of_funds; non_retryable=true; balance=-1.051248 USD",
+        "Target was the existing public Upwork listing; run was not started.",
+        "Existing proposal remains prepared/not submitted; no new Upwork account or application created.",
+        "Outlook mailbox, GitHub repository and live Stripe account readbacks succeeded in the same wake."
+      ],
+      "remains_unproven": "Current authenticated Upwork account/session, application-history deduplication, current listing acceptance and milestone funding; no buyer submission or revenue.",
+      "scope": "UPWORK_BROWSER_ROUTE_BLOCKED_ATTEMPT_RECOVERY_20261016",
+      "upgrade_action": "Continue other eligible commercial work using connected sources. For Upwork, resume with the existing Google sign-in/setup route when the profile is saved and the browser session is available; do not create a duplicate account. If TinyFish browser automation is needed, resolve its wallet condition before retrying that specific route."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-15T13:33:30Z",
-  "last_reconciled_reason": "Read-backed update to the three existing paid-pilot records after direct Outlook evidence showed 13-Oct checkout-link emails alongside separate Close draft status; preserved NO_FURTHER_CONTACT, sender-drift and no-payment truth. Existing keys/count unchanged. Added one Corzly Account Executive opportunity after current official-source verification and canonical-ledger dedupe; preserved interview-heavy route, conditional commission truth, and the existing-account-history hold. No external application or outreach was performed.",
+  "last_reconciled_at": "2026-10-16T07:58:21Z",
+  "last_reconciled_reason": "Reconciled six verified Outlook Sent Items offers that were absent from the canonical ledger; inserted six existing-send records as OFFERED with original Outlook message IDs and no duplicate outreach. Recorded fresh Stripe live readback (42 expired/unpaid Checkout Sessions; zero PaymentIntents, Charges or Invoices), current Outlook/Close no-inbound window, and the route-specific TinyFish pre-start wallet failure. Updated the existing Upwork record with the exact route failure and a continued next action. No new external message or application was submitted; lifecycle and settlement truth remain unchanged.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -347,9 +403,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-16T02:32:59-02:00",
+  "last_updated_at": "2026-10-16T09:58:21+02:00",
   "last_updated_by": "iSCOPE → PRI existing commercial field force",
-  "record_count": 91,
+  "record_count": 97,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -4568,7 +4624,7 @@
         "Recover the existing authorized Upwork account/session; no duplicate account and no off-platform contact.",
         "Bound hosting, API, setup and maintenance costs against the US$400 ceiling and clarify exactly one intake channel before any binding offer."
       ],
-      "current_route_status": "OFFICIAL_LISTING_DIRECT_FETCHED_2026-10-14; AUTHENTICATED_SUBMISSION_ROUTE_UNAVAILABLE",
+      "current_route_status": "OFFICIAL_LISTING_LAST_READ_2026-10-14; TINYFISH_PRESTART_WALLET_NEGATIVE; AUTHENTICATED_UPWORK_ROUTE_UNVERIFIED",
       "domain": "upwork.com",
       "evidence": [
         {
@@ -4615,12 +4671,20 @@
           "source": "UPWORK_OFFICIAL_LISTING_DIRECT_FETCH",
           "summary": "Direct fetch of the official listing in this wake confirms US$400 fixed-price; requested scope remains one-channel carpentry/joinery inquiry intake, AI summary/extraction with missing-information flags, Google Sheets reference/status, email notification, error handling, duplicate prevention, ten fictional tests, documentation and commercial reuse rights. Listing activity displayed 50+ proposals, 1 interview, 0 invites, and client last viewed yesterday; the listing shows client member since Oct 12, 2026. This direct primary-page snapshot supersedes a conflicting public search-index snapshot (20–50 proposals / 0 interviews); do not infer buyer quality or acceptance from activity indicators.",
           "url": "https://www.upwork.com/freelance-jobs/apply/Automation-for-Carpentry-Inquiries_~022109970451600320481/"
+        },
+        {
+          "kind": "TINYFISH_AUTOMATION_ATTEMPT_BLOCKED_BEFORE_START",
+          "observed_at": "2026-10-16T07:58:21Z",
+          "source": "TINYFISH_WEB_AUTOMATION",
+          "result": "FAILED_BEFORE_START",
+          "summary": "Attempted a non-authenticated read of this public listing. Run did not start because TinyFish wallet balance was -1.051248 USD; tool marked the failure non-retryable until funds are added. No browser session, login, proposal, or contact occurred. Other connected commercial sources were used successfully in parallel work.",
+          "route_scope": "TINYFISH_BROWSER_AUTOMATION_ONLY"
         }
       ],
       "execution_owner": "iSCOPE",
-      "execution_readiness": "HOLD_AUTHENTICATED_UPWORK_ROUTE",
+      "execution_readiness": "HOLD_AUTHENTICATED_UPWORK_ROUTE; CONTINUE_OTHER_EXECUTABLE_ITEMS",
       "last_action_at": "2026-10-14",
-      "next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
+      "next_action": "Do not retry the TinyFish browser run until its wallet condition is resolved. Continue the existing commercial work using available mailbox, repository and payment sources. For this proposal, resume the existing Google sign-in/setup route when the profile is saved and an authenticated session is available; then verify account/application history, live listing acceptance and milestone terms before submitting the prepared proposal once. Do not create a duplicate account or application.",
       "opportunity": "carpentry-inquiry-automation",
       "organization": "Upwork client — name not published in accessible listing",
       "payment": "US$400 fixed price through Upwork; milestone funding/escrow and net payout terms unverified.",
@@ -4647,7 +4711,8 @@
       "reward": "US$400 fixed price",
       "source_verified_at": "2026-10-14T16:55:15Z",
       "state": "DISCOVERED",
-      "title": "AI Automation for Carpentry Inquiries"
+      "title": "AI Automation for Carpentry Inquiries",
+      "last_reconciled_at": "2026-10-16T07:58:21Z"
     },
     "upwork.com|python-django-api-backend-fixes|022102430880684043532": {
       "buyer_fit": "Debugging FastAPI/Django/API/data-processing and regression testing maps directly to current evidenced backend work.",
@@ -5143,6 +5208,378 @@
       "title": "The Dragon Who Could Not Claim Me",
       "video_access_verified": true,
       "video_access_verified_at": "2026-09-30T16:52:12.432Z"
+    },
+    "techemulsion.com|agent-workflow-qa-overflow-pilot|2026-10-15": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXigAAAA=="
+        ],
+        "identity": {
+          "domain": "techemulsion.com",
+          "opportunity": "US$99 fixed-scope agent-workflow QA pilot",
+          "organization": "TechEmulsion"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-16T07:58:21Z"
+      },
+      "buyer_fit": "A fixed-scope workflow reliability/acceptance offer was sent based on the prior discovery sweep. Current buyer interest, receipt/open, and present-day qualification have not been established by a buyer response.",
+      "capital_direction": "PAYER_TO_WORK",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "Convert agreed behavior for one agent workflow into test cases; exercise supplied sample inputs; check retry/idempotency and human-approval boundaries; return an acceptance harness and evidence-backed findings. US$99 fixed fee; 48-hour turnaround begins after receipt of a redacted specification and sample inputs. No retainer or client production-environment access for the initial test.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXigAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "commercial_role": "PRI",
+      "constraints": [
+        "Offer sent; no buyer response or acceptance is evidenced.",
+        "The delivery window starts after the buyer provides a redacted workflow specification and sample inputs.",
+        "Initial test is bounded; no production deployment is represented.",
+        "Do not repeat contact before the governed follow-up time."
+      ],
+      "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "discovered_by": "PRI",
+      "domain": "techemulsion.com",
+      "due_at": "2026-10-19T08:00:00Z",
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-15T16:36:53Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXigAAAA==",
+          "subject": "Independent agent-workflow QA overflow, fixed US$99 pilot",
+          "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to contact@techemulsion.com. Offer: Convert agreed behavior for one agent workflow into test cases; exercise supplied sample inputs; check retry/idempotency and human-approval boundaries; return an acceptance harness and evidence-backed findings. US$99 fixed fee; 48-hour turnaround begins after receipt of a redacted specification and sample inputs. No retainer or client production-environment access for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-15T16:36:53Z",
+      "last_reconciled_at": "2026-10-16T07:58:21Z",
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity": "US$99 fixed-scope agent-workflow QA pilot",
+      "organization": "TechEmulsion",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "qualified_at": null,
+      "recipient": "contact@techemulsion.com",
+      "reward": "US$99 fixed fee; not accepted or paid",
+      "routing_reason": "Existing outbound offer is a bounded fixed-fee proof-of-work route. This write reconciles a verified existing send only; it sends no new message and does not promote the buyer to RESPONDED or ACCEPTED.",
+      "state": "OFFERED",
+      "thread_id": null,
+      "title": "Independent agent-workflow QA overflow — fixed US$99 pilot",
+      "upfront_cost": 0
+    },
+    "hipagency.ai|one-workflow-ai-agent-acceptance-pilot|2026-10-15": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiQAAAA=="
+        ],
+        "identity": {
+          "domain": "hipagency.ai",
+          "opportunity": "US$99 fixed-scope AI-agent acceptance pilot",
+          "organization": "HIP Agency"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-16T07:58:21Z"
+      },
+      "buyer_fit": "A fixed-scope workflow reliability/acceptance offer was sent based on the prior discovery sweep. Current buyer interest, receipt/open, and present-day qualification have not been established by a buyer response.",
+      "capital_direction": "PAYER_TO_WORK",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "For one defined workflow, return a runnable acceptance harness and findings covering expected outputs, missing inputs, failed-tool retries, duplicate actions and the human-handoff boundary. US$99 fixed fee; delivery within 48 hours after receipt of a redacted specification and sample inputs. No retainer or production access required for the initial test.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiQAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "commercial_role": "PRI",
+      "constraints": [
+        "Offer sent; no buyer response or acceptance is evidenced.",
+        "The delivery window starts after the buyer provides a redacted workflow specification and sample inputs.",
+        "Initial test is bounded; no production deployment is represented.",
+        "Do not repeat contact before the governed follow-up time."
+      ],
+      "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "discovered_by": "PRI",
+      "domain": "hipagency.ai",
+      "due_at": "2026-10-19T08:00:00Z",
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-15T16:36:27Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiQAAAA==",
+          "subject": "One-workflow AI agent acceptance pilot — US$99 fixed",
+          "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to info@hipagency.ai. Offer: For one defined workflow, return a runnable acceptance harness and findings covering expected outputs, missing inputs, failed-tool retries, duplicate actions and the human-handoff boundary. US$99 fixed fee; delivery within 48 hours after receipt of a redacted specification and sample inputs. No retainer or production access required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-15T16:36:27Z",
+      "last_reconciled_at": "2026-10-16T07:58:21Z",
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity": "US$99 fixed-scope AI-agent acceptance pilot",
+      "organization": "HIP Agency",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "qualified_at": null,
+      "recipient": "info@hipagency.ai",
+      "reward": "US$99 fixed fee; not accepted or paid",
+      "routing_reason": "Existing outbound offer is a bounded fixed-fee proof-of-work route. This write reconciles a verified existing send only; it sends no new message and does not promote the buyer to RESPONDED or ACCEPTED.",
+      "state": "OFFERED",
+      "thread_id": null,
+      "title": "One-workflow AI agent acceptance pilot — US$99 fixed",
+      "upfront_cost": 0
+    },
+    "voiceagencyplatform.com|voice-agent-handoff-acceptance-pilot|2026-10-15": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiAAAAA=="
+        ],
+        "identity": {
+          "domain": "voiceagencyplatform.com",
+          "opportunity": "US$99 fixed-scope voice-agent handoff acceptance pilot",
+          "organization": "Voice Agency Platform (recipient-domain label; legal entity not verified)"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-16T07:58:21Z"
+      },
+      "buyer_fit": "A fixed-scope workflow reliability/acceptance offer was sent based on the prior discovery sweep. Current buyer interest, receipt/open, and present-day qualification have not been established by a buyer response.",
+      "capital_direction": "PAYER_TO_WORK",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "Test one defined call workflow before rollout: agreed outcomes, tool-failure fallback, duplicate-booking prevention, escalation to a person and traceable results. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted workflow specification and sample inputs. No retainer or production credentials required for the initial test.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiAAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "commercial_role": "PRI",
+      "constraints": [
+        "Offer sent; no buyer response or acceptance is evidenced.",
+        "The delivery window starts after the buyer provides a redacted workflow specification and sample inputs.",
+        "Initial test is bounded; no production deployment is represented.",
+        "Do not repeat contact before the governed follow-up time."
+      ],
+      "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "discovered_by": "PRI",
+      "domain": "voiceagencyplatform.com",
+      "due_at": "2026-10-19T08:00:00Z",
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-15T16:36:11Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXiAAAAA==",
+          "subject": "Paid acceptance test for one voice-agent handoff",
+          "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to partners@voiceagencyplatform.com. Offer: Test one defined call workflow before rollout: agreed outcomes, tool-failure fallback, duplicate-booking prevention, escalation to a person and traceable results. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted workflow specification and sample inputs. No retainer or production credentials required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-15T16:36:11Z",
+      "last_reconciled_at": "2026-10-16T07:58:21Z",
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity": "US$99 fixed-scope voice-agent handoff acceptance pilot",
+      "organization": "Voice Agency Platform (recipient-domain label; legal entity not verified)",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "qualified_at": null,
+      "recipient": "partners@voiceagencyplatform.com",
+      "reward": "US$99 fixed fee; not accepted or paid",
+      "routing_reason": "Existing outbound offer is a bounded fixed-fee proof-of-work route. This write reconciles a verified existing send only; it sends no new message and does not promote the buyer to RESPONDED or ACCEPTED.",
+      "state": "OFFERED",
+      "thread_id": null,
+      "title": "Paid acceptance test for one voice-agent handoff",
+      "upfront_cost": 0
+    },
+    "hugais.co.za|agent-acceptance-micro-pilot|2026-10-15": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhwAAAA=="
+        ],
+        "identity": {
+          "domain": "hugais.co.za",
+          "opportunity": "US$99 fixed-scope AI-agent acceptance micro-pilot",
+          "organization": "Hugais"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-16T07:58:21Z"
+      },
+      "buyer_fit": "A fixed-scope workflow reliability/acceptance offer was sent based on the prior discovery sweep. Current buyer interest, receipt/open, and present-day qualification have not been established by a buyer response.",
+      "capital_direction": "PAYER_TO_WORK",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "Test one AI-agent workflow before client handoff using agreed test cases, unsupported-answer checks, tool failure/retry behavior, duplicate-action checks and the point where a human must take over. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted specification and sample inputs. No retainer or production credentials required for the initial test.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhwAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "commercial_role": "PRI",
+      "constraints": [
+        "Offer sent; no buyer response or acceptance is evidenced.",
+        "The delivery window starts after the buyer provides a redacted workflow specification and sample inputs.",
+        "Initial test is bounded; no production deployment is represented.",
+        "Do not repeat contact before the governed follow-up time."
+      ],
+      "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "discovered_by": "PRI",
+      "domain": "hugais.co.za",
+      "due_at": "2026-10-19T08:00:00Z",
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-15T16:24:46Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhwAAAA==",
+          "subject": "Paid micro-pilot: test one AI agent before handoff",
+          "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to dionne@hugais.co.za. Offer: Test one AI-agent workflow before client handoff using agreed test cases, unsupported-answer checks, tool failure/retry behavior, duplicate-action checks and the point where a human must take over. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted specification and sample inputs. No retainer or production credentials required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-15T16:24:46Z",
+      "last_reconciled_at": "2026-10-16T07:58:21Z",
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity": "US$99 fixed-scope AI-agent acceptance micro-pilot",
+      "organization": "Hugais",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "qualified_at": null,
+      "recipient": "dionne@hugais.co.za",
+      "reward": "US$99 fixed fee; not accepted or paid",
+      "routing_reason": "Existing outbound offer is a bounded fixed-fee proof-of-work route. This write reconciles a verified existing send only; it sends no new message and does not promote the buyer to RESPONDED or ACCEPTED.",
+      "state": "OFFERED",
+      "thread_id": null,
+      "title": "Paid micro-pilot: test one AI agent before handoff",
+      "upfront_cost": 0
+    },
+    "aiadoption.co.za|ai-workflow-reliability-test|2026-10-15": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhgAAAA=="
+        ],
+        "identity": {
+          "domain": "aiadoption.co.za",
+          "opportunity": "US$99 fixed-scope AI-workflow reliability pilot",
+          "organization": "AI Adoption Partners"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-16T07:58:21Z"
+      },
+      "buyer_fit": "A fixed-scope workflow reliability/acceptance offer was sent based on the prior discovery sweep. Current buyer interest, receipt/open, and present-day qualification have not been established by a buyer response.",
+      "capital_direction": "PAYER_TO_WORK",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "Independently test one defined AI workflow for expected outputs, missing information, failed-tool/retry behavior, duplicate actions and human-review boundaries. US$99 fixed fee; a runnable acceptance harness and concise evidence-backed findings within 48 hours after receipt of a redacted specification and sample inputs. No production credentials required for the initial test.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhgAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "commercial_role": "PRI",
+      "constraints": [
+        "Offer sent; no buyer response or acceptance is evidenced.",
+        "The delivery window starts after the buyer provides a redacted workflow specification and sample inputs.",
+        "Initial test is bounded; no production deployment is represented.",
+        "Do not repeat contact before the governed follow-up time."
+      ],
+      "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "discovered_by": "PRI",
+      "domain": "aiadoption.co.za",
+      "due_at": "2026-10-19T08:00:00Z",
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-15T16:24:44Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhgAAAA==",
+          "subject": "A fixed-scope reliability test for one AI workflow",
+          "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to darren@aiadoption.co.za. Offer: Independently test one defined AI workflow for expected outputs, missing information, failed-tool/retry behavior, duplicate actions and human-review boundaries. US$99 fixed fee; a runnable acceptance harness and concise evidence-backed findings within 48 hours after receipt of a redacted specification and sample inputs. No production credentials required for the initial test. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-15T16:24:44Z",
+      "last_reconciled_at": "2026-10-16T07:58:21Z",
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity": "US$99 fixed-scope AI-workflow reliability pilot",
+      "organization": "AI Adoption Partners",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "qualified_at": null,
+      "recipient": "darren@aiadoption.co.za",
+      "reward": "US$99 fixed fee; not accepted or paid",
+      "routing_reason": "Existing outbound offer is a bounded fixed-fee proof-of-work route. This write reconciles a verified existing send only; it sends no new message and does not promote the buyer to RESPONDED or ACCEPTED.",
+      "state": "OFFERED",
+      "thread_id": null,
+      "title": "A fixed-scope reliability test for one AI workflow",
+      "upfront_cost": 0
+    },
+    "agenticflow.co.za|white-label-agent-workflow-reliability-pilot|2026-10-15": {
+      "canonical_ingest": {
+        "evidence_source_ids": [
+          "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhQAAAA=="
+        ],
+        "identity": {
+          "domain": "agenticflow.co.za",
+          "opportunity": "US$99 fixed-scope white-label agent-workflow reliability pilot",
+          "organization": "AgenticFlow"
+        },
+        "kind": "MISSING_RECORD_RECOVERY",
+        "observed_at": "2026-10-16T07:58:21Z"
+      },
+      "buyer_fit": "A fixed-scope workflow reliability/acceptance offer was sent based on the prior discovery sweep. Current buyer interest, receipt/open, and present-day qualification have not been established by a buyer response.",
+      "capital_direction": "PAYER_TO_WORK",
+      "commercial_offer": {
+        "amount": 99,
+        "currency": "USD",
+        "scope": "Validate one defined agent workflow against agreed cases, including tool failure/retry behavior, duplicate-action prevention, human approval and traceable results. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted workflow specification and sample inputs. This is a bounded test deliverable, not a claim of production deployment.",
+        "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhQAAAA==",
+        "status": "OFFER_SENT_NOT_ACCEPTED",
+        "type": "FIXED_SCOPE"
+      },
+      "commercial_role": "PRI",
+      "constraints": [
+        "Offer sent; no buyer response or acceptance is evidenced.",
+        "The delivery window starts after the buyer provides a redacted workflow specification and sample inputs.",
+        "Initial test is bounded; no production deployment is represented.",
+        "Do not repeat contact before the governed follow-up time."
+      ],
+      "current_route_confidence": "HIGH_FOR_SENT_ITEM; BUYER_INTEREST_UNVERIFIED",
+      "current_route_status": "OUTBOUND_SEND_VERIFIED_IN_SENT_ITEMS; WAITING_FOR_BUYER_RESPONSE",
+      "discovered_by": "PRI",
+      "domain": "agenticflow.co.za",
+      "due_at": "2026-10-19T08:00:00Z",
+      "evidence": [
+        {
+          "kind": "OUTBOUND_SEND",
+          "observed_at": "2026-10-15T16:24:42Z",
+          "source": "OUTLOOK_SENT_ITEMS",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXhQAAAA==",
+          "subject": "White-label overflow: one agent workflow reliability pilot",
+          "summary": "Verified item in the existing Outlook Sent Items folder from usduplessis@outlook.com to duane@agenticflow.co.za. Offer: Validate one defined agent workflow against agreed cases, including tool failure/retry behavior, duplicate-action prevention, human approval and traceable results. US$99 fixed fee; runnable acceptance harness and findings within 48 hours after receipt of a redacted workflow specification and sample inputs. This is a bounded test deliverable, not a claim of production deployment. No buyer reply, acceptance, contract, invoice, or payment is inferred."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING",
+      "last_action_at": "2026-10-15T16:24:42Z",
+      "last_reconciled_at": "2026-10-16T07:58:21Z",
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity": "US$99 fixed-scope white-label agent-workflow reliability pilot",
+      "organization": "AgenticFlow",
+      "proof_of_work_route": "FIXED_SCOPE",
+      "qualified_at": null,
+      "recipient": "duane@agenticflow.co.za",
+      "reward": "US$99 fixed fee; not accepted or paid",
+      "routing_reason": "Existing outbound offer is a bounded fixed-fee proof-of-work route. This write reconciles a verified existing send only; it sends no new message and does not promote the buyer to RESPONDED or ACCEPTED.",
+      "state": "OFFERED",
+      "thread_id": null,
+      "title": "White-label overflow: one agent workflow reliability pilot",
+      "upfront_cost": 0
     }
   },
   "updated_at": "2026-10-15",
