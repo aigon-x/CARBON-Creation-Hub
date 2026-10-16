@@ -442,11 +442,25 @@
       "remains_unproven": "Recipient delivery/reading, media waiver, completed application, interview, offer, contract, invoice or payment.",
       "scope": "thesurgeapp.com|part-time-telesales-consultant|2026-10-16",
       "upgrade_action": "Wait for response on the media requirement; if mandatory, request a genuine applicant-provided photo/video rather than manufacture it. Continue other paid-work routes."
+    },
+    {
+      "actual": "Sent current Talent Advantage SDR application email to the public contact with CV attached; explicitly flagged the 60–90 second intro video requirement as pending. Exact Sent Item read back.",
+      "changed": "Added one SUBMITTED record with route/media condition; no response, complete application, offer, or income inferred.",
+      "classification": "APPLICATION_EMAIL_SENT; REQUIRED_INTRO_VIDEO_PENDING",
+      "observed_at": "2026-10-16T08:39:11Z",
+      "owner": "PRI",
+      "proof": [
+        "https://za.linkedin.com/jobs/view/sales-development-representative-at-talent-advantage-4471665103",
+        "Outlook sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXlQAAAA=="
+      ],
+      "remains_unproven": "Delivery/reading, video waiver/route, completed application, buyer response, offer, contract, invoice, receivable or payment.",
+      "scope": "talentadvantage.ca|sales-development-representative|2026-10-16",
+      "upgrade_action": "Await the recruiter’s routing response; if required, the applicant must record the genuine intro. Continue other roles where the existing evidence is enough to submit."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-16T08:35:56Z",
-  "last_reconciled_reason": "Recorded one The Surge application email after zero-match dedupe and exact Sent Item readback. The official listing's required photo/intro video was not available; the email explicitly asks if mandatory. Preserved state as incomplete/required-media hold, not full application acceptance. No response, job offer, contract, invoice, or payment inferred.",
+  "last_reconciled_at": "2026-10-16T08:39:11Z",
+  "last_reconciled_reason": "Added one Talent Advantage application email with CV attached after zero-match history check and exact Outlook Sent Item readback. Current listing requires an introduction video; the application email disclosed it was not attached and asked for the approved route. Preserved state as incomplete-media wait, not complete submission or income. No new account or duplicate pipeline created.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -509,9 +523,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-16T10:35:56+02:00",
+  "last_updated_at": "2026-10-16T10:39:11+02:00",
   "last_updated_by": "PRI",
-  "record_count": 107,
+  "record_count": 108,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -6246,6 +6260,61 @@
       "thread_id": null,
       "title": "Part-Time Telesales Consultant",
       "current_route_status": "PUBLIC_RECRUITMENT_EMAIL_USED_MEDIA_REQUIREMENT_UNRESOLVED",
+      "current_route_confidence": "MEDIUM"
+    },
+    "talentadvantage.ca|sales-development-representative|2026-10-16": {
+      "buyer_fit": "Strong fit to 10+ years of EMEA B2B sales, strategic-account development, route-to-market, negotiation and commercial execution. AI product-building gives adjacent technology fluency. Direct SaaS SDR quota and named outreach/CRM-tool proficiency are not evidenced; not claimed.",
+      "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
+      "constraints": [
+        "Current public posting states US$1,000–1,250/month base plus commission, depending on experience.",
+        "Listing requests a 60–90 second Loom/selfie introduction; the first email did not include video and explicitly asks for the preferred route. Application is incomplete pending recruiter direction and genuine applicant-provided video.",
+        "No reply, offer, contract, invoice, or payment is evidenced."
+      ],
+      "discovered_by": "iSCOPE",
+      "discovery_path": "CURRENT_REMOTE_ROLE -> B2B_SALES_FIT -> PUBLIC_APPLICATION_EMAIL",
+      "domain": "talentadvantage.ca",
+      "due_at": "2026-10-23T08:39:11Z",
+      "evidence": [
+        {
+          "kind": "CURRENT_ROLE_LISTING",
+          "observed_at": "2026-10-16T08:37:00Z",
+          "source": "WEB",
+          "url": "https://za.linkedin.com/jobs/view/sales-development-representative-at-talent-advantage-4471665103",
+          "summary": "Current South Africa remote SDR posting; base US$1,000–1,250/month plus uncapped commission, full-time; requires sending CV and a 60–90 second Loom/selfie video to info@talentadvantage.ca; video applications reviewed first."
+        },
+        {
+          "kind": "PRIOR_APPLICATION_HISTORY_DEDUPE",
+          "observed_at": "2026-10-16T08:38:00Z",
+          "source": "OUTLOOK",
+          "result": "ZERO_MATCHES",
+          "summary": "No prior email to info@talentadvantage.ca found before this application."
+        },
+        {
+          "kind": "APPLICATION_EMAIL_SENT_MEDIA_PENDING",
+          "observed_at": "2026-10-16T08:39:11Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXlQAAAA==",
+          "subject": "Application — Sales Development Representative",
+          "summary": "CV attached. The message transparently notes the required video was not attached and asks for the approved video submission route and whether CV can be routed for initial screening. Outlook Sent Item read back. Not represented as a complete application."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING_REQUIRED_INTRO_VIDEO",
+      "last_action_at": "2026-10-16T08:39:11Z",
+      "last_reconciled_at": "2026-10-16T08:39:11Z",
+      "next_action": "Await recruiter response on the required video route and initial-screening eligibility. If they require the video, the applicant must record a genuine 60–90 second introduction and provide it through the requested route; do not generate a surrogate applicant recording. Continue other live roles meanwhile.",
+      "opportunity": "Sales Development Representative",
+      "organization": "Talent Advantage",
+      "payment": "Advertised base US$1,000–1,250 per month plus commission; amounts are subject to eligibility, contract terms, and performance.",
+      "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL_INCOMPLETE_VIDEO",
+      "qualified_at": "2026-10-16T08:37:00Z",
+      "recipient": "info@talentadvantage.ca",
+      "reward": "US$1,000–1,250/month base plus uncapped commission (advertised)",
+      "state": "SUBMITTED",
+      "subject": "Application — Sales Development Representative",
+      "thread_id": null,
+      "title": "Sales Development Representative",
+      "current_route_status": "PUBLIC_ROLE_EMAIL_USED_VIDEO_REQUIREMENT_PENDING",
       "current_route_confidence": "MEDIUM"
     }
   },
