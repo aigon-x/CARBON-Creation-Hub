@@ -159,6 +159,18 @@
     {
       "due_at": "2026-10-19T08:00:00Z",
       "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "agenticflow.co.za|white-label-agent-workflow-reliability-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
       "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
       "opportunity_key": "ahitrecruitment.com|sourcing-overflow-pilot|2026-10-15",
       "priority": 8,
@@ -171,11 +183,71 @@
     {
       "due_at": "2026-10-19T08:00:00Z",
       "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "aiadoption.co.za|ai-workflow-reliability-test|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "hipagency.ai|one-workflow-ai-agent-acceptance-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "hugais.co.za|agent-acceptance-micro-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
       "next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
       "opportunity_key": "naomii.app|technology-sourcing-overflow-pilot|2026-10-15",
       "priority": 8,
       "routing_reason": "WAITING",
       "smallest_next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "techemulsion.com|agent-workflow-qa-overflow-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "voiceagencyplatform.com|voice-agent-handoff-acceptance-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
       "state": "OFFERED",
       "status": "WAITING",
       "thread_id": null
@@ -757,7 +829,7 @@
       "thread_id": "1a0f2eadceb4a96f"
     }
   ],
-  "generated_at": "2026-10-15T17:42:30.751581+00:00",
+  "generated_at": "2026-10-16T08:02:48.340900+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -942,11 +1014,11 @@
     {
       "due_at": null,
       "due_now": false,
-      "next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
+      "next_action": "Do not retry the TinyFish browser run until its wallet condition is resolved. Continue the existing commercial work using available mailbox, repository and payment sources. For this proposal, resume the existing Google sign-in/setup route when the profile is saved and an authenticated session is available; then verify account/application history, live listing acceptance and milestone terms before submitting the prepared proposal once. Do not create a duplicate account or application.",
       "opportunity_key": "upwork.com|carpentry-inquiry-automation|022109970451600320481",
       "priority": 8,
-      "routing_reason": "HOLD_AUTHENTICATED_UPWORK_ROUTE",
-      "smallest_next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
+      "routing_reason": "HOLD_AUTHENTICATED_UPWORK_ROUTE; CONTINUE_OTHER_EXECUTABLE_ITEMS",
+      "smallest_next_action": "Do not retry the TinyFish browser run until its wallet condition is resolved. Continue the existing commercial work using available mailbox, repository and payment sources. For this proposal, resume the existing Google sign-in/setup route when the profile is saved and an authenticated session is available; then verify account/application history, live listing acceptance and milestone terms before submitting the prepared proposal once. Do not create a duplicate account or application.",
       "state": "DISCOVERED",
       "status": "WAITING",
       "thread_id": null
@@ -1073,6 +1145,18 @@
       "status": "WAITING",
       "thread_id": "1a103d3f1631dffd"
     },
+    "agenticflow.co.za|white-label-agent-workflow-reliability-pilot|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "agenticflow.co.za|white-label-agent-workflow-reliability-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
     "ahitrecruitment.com|sourcing-overflow-pilot|2026-10-15": {
       "due_at": "2026-10-19T08:00:00Z",
       "due_now": false,
@@ -1081,6 +1165,18 @@
       "priority": 8,
       "routing_reason": "WAITING",
       "smallest_next_action": "WAIT for a substantive buyer reply. If there is no reply by 2026-10-19T08:00:00Z, recheck delivery and contact eligibility before one short follow-up. If the buyer replies, confirm the role brief and must-have criteria, then send exact scope and checkout details. Do not send a second touch before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "aiadoption.co.za|ai-workflow-reliability-test|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "aiadoption.co.za|ai-workflow-reliability-test|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
       "state": "OFFERED",
       "status": "WAITING",
       "thread_id": null
@@ -1360,6 +1456,30 @@
       "state": "HOLD_WRONG_ROUTE",
       "status": "WAITING",
       "thread_id": "1a0fedd72ae6fde3"
+    },
+    "hipagency.ai|one-workflow-ai-agent-acceptance-pilot|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "hipagency.ai|one-workflow-ai-agent-acceptance-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    "hugais.co.za|agent-acceptance-micro-pilot|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "hugais.co.za|agent-acceptance-micro-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "humansignal.com|content-creator-flexible-gig|remote": {
       "due_at": null,
@@ -1925,6 +2045,18 @@
       "status": "WAITING",
       "thread_id": "1a0f1a3a7ad58e63"
     },
+    "techemulsion.com|agent-workflow-qa-overflow-pilot|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "techemulsion.com|agent-workflow-qa-overflow-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
+    },
     "telusdigital.com|online-data-analyst|south-africa": {
       "due_at": "2026-10-03T15:55:00Z",
       "due_now": true,
@@ -1976,11 +2108,11 @@
     "upwork.com|carpentry-inquiry-automation|022109970451600320481": {
       "due_at": null,
       "due_now": false,
-      "next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
+      "next_action": "Do not retry the TinyFish browser run until its wallet condition is resolved. Continue the existing commercial work using available mailbox, repository and payment sources. For this proposal, resume the existing Google sign-in/setup route when the profile is saved and an authenticated session is available; then verify account/application history, live listing acceptance and milestone terms before submitting the prepared proposal once. Do not create a duplicate account or application.",
       "opportunity_key": "upwork.com|carpentry-inquiry-automation|022109970451600320481",
       "priority": 8,
-      "routing_reason": "HOLD_AUTHENTICATED_UPWORK_ROUTE",
-      "smallest_next_action": "Direct official listing rechecked in this wake; its displayed activity is 50+ proposals and 1 interview. Restore the existing authorized Upwork session/account and verify account history, current submit availability, milestone funding and buyer terms. Submit the already-prepared proposal once only if all gates pass. Do not use a new account or off-platform contact. No application, contract, delivery acceptance, invoice, or income is evidenced.",
+      "routing_reason": "HOLD_AUTHENTICATED_UPWORK_ROUTE; CONTINUE_OTHER_EXECUTABLE_ITEMS",
+      "smallest_next_action": "Do not retry the TinyFish browser run until its wallet condition is resolved. Continue the existing commercial work using available mailbox, repository and payment sources. For this proposal, resume the existing Google sign-in/setup route when the profile is saved and an authenticated session is available; then verify account/application history, live listing acceptance and milestone terms before submitting the prepared proposal once. Do not create a duplicate account or application.",
       "state": "DISCOVERED",
       "status": "WAITING",
       "thread_id": null
@@ -2032,6 +2164,18 @@
       "state": "SUBMITTED",
       "status": "WAITING",
       "thread_id": "1a100230dcc62423"
+    },
+    "voiceagencyplatform.com|voice-agent-handoff-acceptance-pilot|2026-10-15": {
+      "due_at": "2026-10-19T08:00:00Z",
+      "due_now": false,
+      "next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "opportunity_key": "voiceagencyplatform.com|voice-agent-handoff-acceptance-pilot|2026-10-15",
+      "priority": 8,
+      "routing_reason": "WAITING",
+      "smallest_next_action": "WAIT for a substantive buyer response. At 2026-10-19T08:00:00Z, recheck the delivery/contact route before one concise follow-up if no response. If a buyer replies earlier, confirm the workflow specification, sample inputs, scope and payment route, then progress only on their response. Do not repeat contact before due.",
+      "state": "OFFERED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "welodata.com|ai-service-general-application|south-africa": {
       "due_at": null,
