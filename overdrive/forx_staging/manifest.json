@@ -144,12 +144,12 @@
       ]
     }
   ],
-  "current_unique_source_keys": 947,
-  "gross_observation_versions": 951,
+  "current_unique_source_keys": 948,
+  "gross_observation_versions": 952,
   "current_normalized_missing_explicit_freshness": 0,
   "historical_exact_source_duplicate_versions_preserved": 1,
   "next_segment_sequence": 7,
-  "last_updated": "2026-10-14T20:39:33.875Z",
+  "last_updated": "2026-10-16T10:51:02.321Z",
   "concurrency_contract": {
     "immutable_base": true,
     "immutable_deltas": true,
