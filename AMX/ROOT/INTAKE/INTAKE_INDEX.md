@@ -2980,3 +2980,43 @@ Each office receipt below binds: **PRIMARY PURPOSE understood; current 65% attri
 - **Unresolved / next governed action:** ROOT/T-GOV disposition where required; verify real shared-intent invocation, session/ranking readback and state consequence per existing consumer; execute and baseline the existing behavioral benchmark; recover an authorized current provider-adapter inventory for the existing #29 assessment. Issues #18 and #29 remain OPEN.
 - **Evidence boundary:** the Owner's acceptance is not runtime acceptance, revenue evidence, model-provider migration approval, Merge, or Canon promotion.
 
+
+
+---
+
+## 2026-10-16 — RESOLUTION OF INTENT FLIGHT RECEIPT / CURRENT MATRIX CONVERGENCE
+
+**Owner appointment:** The Owner has appointed **Resolution of Intent (RoI)** as an active merged FORKS third-head role; no further probation. Existing Root Intake has the full owner correction, A/B rule, worker pause, and convergence requirements in its comment thread. The canonical registry snapshot checked during this flight still does not list RoI. Root/T-GOV integration (authority-map/registry update, root hash/version update, independent readback) remains an explicit queue item. This entry does not self-assert a new canonical registry state.
+
+**Partner tour — accepted segment / PASS.**
+- GitHub PR #45 is merged to main; merge commit `9de78e11c0593b335234d42e19b37b18c0529e94`.
+- Render `amx-evidence-house-backend` deployment `dep-db92miqvcj2c73bmbih0` is LIVE on that exact commit.
+- Public routes independently returned successfully: [CARBON Partner Guide](https://amx-evidence-house-backend.onrender.com/carbon/partner), [Website Concept & Build](https://amx-evidence-house-backend.onrender.com/carbon/services/website), [Quick Technical Review](https://amx-evidence-house-backend.onrender.com/carbon/services/quick-technical-review), plus `/api/health` status CONNECTED.
+- The prior 404 before deployment and the exact correction are preserved in the existing Alfie pilot record and Root Intake receipt.
+- Honest availability labels remain: Search external provider and Marketplace connector UNCONFIGURED; Marketplace presently “No listings yet” for external aggregation; Studios self-service catalogue not verified populated; personal MTXID referral link, external listing integrations, real-money marketplace settlement and paid website mockup→interactive demo/trial provisioning are NOT completed.
+- This closes public page/routing only. Alfie's personal recipient/channel remains unverified, so a published route is not a claim that it was personally delivered to him. The personal referral route remains OPEN and cannot invent his ID.
+
+**Automation pause — PASS at configuration level / continuation OPEN.**
+- Current Automation tool inventory: 25 records returned; 47 paused and 3 completed reported; 0 currently enabled in the returned inventory. The returned list includes FORX, Bounty Reaper, IDEAL Sales Team, Librarians, Banker Cash Watch and Operational Inbox Watch, all disabled.
+- The separate GitHub workflow `.github/workflows/overdrive-recovery.yml` previously had cron `*/5 * * * *`. Commit `7ef98db0acbbf105389332d3d0ad07a6567c422b` removed that cron and added a manual dispatch choice `run_worker` whose default is `paused`; the job runs only if an explicitly dispatched input is `run`. Current main blob readback: `da0353f7df640ee13b52f4d1cef6427ab16ed71d`; no cron line present. This workflow is paused, with a manual path retained for a governed future run.
+- This is a reversible temporary pause, not a working Plan-A/Plan-B scheduler. The connected task scheduler still does not establish hourly next-run liveness (`next_run_time=null` for old hourly entries; hourly edit previously returned `automation_schedule_not_available`). Plan A remains hourly, Plan B must be a defined reversible fallback, and a single governed supervisor/worker chain must be proven before reactivation.
+
+**Current rule supersession — active queue items do not inherit old rules.**
+- Apply current Blue State first. Latest established KPI is 65% attributable progress toward verified money-in or evidenced real blocker removal and 35% the existing mandate. These are performance weights, not time quota. Separate 60/20/20 applies only to sourcing effort.
+- Plan A / Plan B only; no undefined Plan C. A dependency mismatch is a live owned correction item, not an indefinite unknown terminal.
+- Every Librarian contributes item-level work to Root Intake within its mandate instead of waiting for Root to do mechanically executable work. Each item needs a durable receipt and independent readback.
+- Evidence truth remains: merged != deployed, scheduled != executing, memo delivered != read/understood, receipt != business outcome.
+
+**Identity / referral boundary — exact route found, not yet safe to mutate.**
+- The existing second-account repo `BullRulez/JAM3S_BOT` main source (`james_bot.py`, blob `c1a40657dd2e437edc5c9e0005ac2a0a629611b3`) uses Telegram local `ref_<user_id>` links, not a verified cross-ecosystem MTXID issuer.
+- Its `AGENTS.md` forbids direct production changes and requires the exact explicit approval phrase; `INFRASTRUCTURE_GAP_REPORT.md` is marked AUDIT ONLY / NO IMPLEMENTATION AUTHORIZED. Do not alter that frozen source as a shortcut or create a parallel identity ledger.
+- Existing Root Intake/RGR already owns the identity/referral question. Root must identify the authoritative issuer/route and authorize the correct build path; no personal token/credit is claimed meanwhile.
+
+**Dynamic flight — next item order (not closure):**
+1. Root/T-GOV integrates the appointed RoI role in the canonical registry/authority path with version/hash/readback.
+2. Build and acceptance-test the existing runtime's capability-aware cadence selector: explicit Plan A hourly, verified Plan B only while a named dependency is unmet, auto-return to A on recovered capability, continuity/idempotency preserved, and every switch recorded/read back.
+3. Reconcile active queue items against current Blue State and the current worker/scheduler inventory; retain true history but prohibit stale prompts from governing new execution.
+4. Continue existing issue #18 CARBON° convergence through its existing T-COD route; implement service-specific opaque referral only after the canonical identity owner is verified.
+5. Reactivate integrated outcome lanes only after gate acceptance and Root readback; do not restore three disconnected legacy worker slots.
+
+**Evidence/weight boundary:** the partner-route deployment removed an evidenced availability blocker, but verified money-in from this flight remains NONE. No financial conversion or completed overall queue drain is asserted. Root Intake, wider queue reconciliation, RoI canonical registration, hourly Plan A/Plan B runtime, and personal referral attribution remain OPEN.
