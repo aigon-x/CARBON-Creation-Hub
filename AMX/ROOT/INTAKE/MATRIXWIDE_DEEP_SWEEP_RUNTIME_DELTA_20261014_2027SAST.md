@@ -215,3 +215,16 @@ A new public-source search surfaced Ekurhuleni's `GEQ.CM&T.09.12 RE-ADVERT` (des
 Source: https://www.ekurhuleni.gov.za/business/quotes/geq-cmt-09-12-re-advert/
 
 Staging remains fail-closed on the previously recorded v8 count/sequence discrepancy. No service change, deployment, external contact, bid, contract or payment occurred in this update.
+
+
+## 17. New official procurement signals — 2026-10-16 (raw / not staged)
+
+Dedup check: exact references/URLs below were absent from current `overdrive/opportunities.json` blob `276085173b6e7a47de1a93ddb97a1761630a6bb3` (91 records) and the issue #31 comment history inspected this wake. A Tanzania keyword hit was the distinct FAO Zanzibar seaweed-chain notice 317171 in comment 6186986321, not the AI-extension RFP below.
+
+1. **FAO Tanzania — AI-powered digital extension platform for Ministry of Agriculture.** [Official notice](https://www.ungm.org/Public/Notice/317721), ref `FAOTZ/RFP/2026/009-1` / `2026/FRURT/FRURT/138628`; published 12 Oct; deadline 3 Nov 2026, 23:30 GMT+3 (=22:30 SAST). Design/deploy AI agricultural extension platform; Basic UNGM registration and portal-only submission. TOR, budget, eligible vendor model, agriculture/AI implementation credentials and local delivery requirements are not verified. **Disposition: RAW / qualification before any bid; general AI interest is not sufficient evidence.**
+
+2. **ILO Singapore — research on youth work amid digital transformation.** [Official notice](https://www.ungm.org/Public/Notice/317762), ref `rfx_12227_ROAP`; published 12 Oct; deadline 26 Oct 2026, 06:00 GMT+2 (=06:00 SAST). Individual-consultant mixed-methods assignment: desk review, survey of about 150–200 youth, approximately 10 interviews, analysis and final recommendations. TOR, eligibility, local access and relevant research/survey track record remain unverified. **Disposition: RAW / likely HOLD unless genuine research and fieldwork capability is evidenced.**
+
+3. **UNDP Armenia — executive AI learning pilot.** [Official notice](https://www.ungm.org/Public/Notice/317555), negotiation `UNDP-ARM-01058`; published 9 Oct; deadline 23 Oct 2026, 08:30 GMT-4 (=14:30 SAST). Design, deliver and evaluate an executive AI-learning pilot for senior Ministry of Labor and Welfare officials; submissions through the Quantum supplier system. Institutional-training references, eligibility, languages, budget and partner/consortium allowance are unknown. **Disposition: RAW / likely NO-FIT unless an eligible, evidenced delivery role is established.**
+
+These are distinct from existing FAO Tanzania/Zanzibar notice 317171, UNDP Moldova, SARS and other already logged routes. Current staging v8 remains fail-closed (947 declared unique / 951 gross, prior recomputation 948 / 952; next sequence 7 conflicts with delta-0008). No FORX candidate IDs, staging writes, registrations, supplier-profile changes, bids, contacts or revenue claimed. iSCOPE owns FIT/NO-FIT/HOLD; PRI alone writes externally.
