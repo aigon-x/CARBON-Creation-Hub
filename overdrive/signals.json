@@ -337,6 +337,18 @@
       "thread_id": null
     },
     {
+      "due_at": "2026-10-23T08:30:53Z",
+      "due_now": false,
+      "next_action": "Await recruiter response on whether the vacancy remains open. If none by 2026-10-23, recheck the role and mailbox before one short follow-up. If active, qualify target region, product training, pay structure, lead/client support, working arrangement and start date. No duplicate application.",
+      "opportunity_key": "heldertech.co.za|business-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "FOLLOWUP_NOT_DUE",
+      "smallest_next_action": "Await recruiter response on whether the vacancy remains open. If none by 2026-10-23, recheck the role and mailbox before one short follow-up. If active, qualify target region, product training, pay structure, lead/client support, working arrangement and start date. No duplicate application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
+    },
+    {
       "due_at": null,
       "due_now": false,
       "next_action": "Do not route to PRI as executable licensing work until a completed series exists or Addictive Dramas explicitly confirms an earlier-stage route. Current public terms require a finished series with all episodes delivered.",
@@ -925,7 +937,7 @@
       "thread_id": null
     }
   ],
-  "generated_at": "2026-10-16T08:27:06.905276+00:00",
+  "generated_at": "2026-10-16T08:33:17.735859+00:00",
   "iSCOPE": [
     {
       "due_at": "2026-10-04T09:00:00Z",
@@ -1576,6 +1588,18 @@
       "state": "HOLD_WRONG_ROUTE",
       "status": "WAITING",
       "thread_id": "1a0fedd72ae6fde3"
+    },
+    "heldertech.co.za|business-development-representative|2026-10-16": {
+      "due_at": "2026-10-23T08:30:53Z",
+      "due_now": false,
+      "next_action": "Await recruiter response on whether the vacancy remains open. If none by 2026-10-23, recheck the role and mailbox before one short follow-up. If active, qualify target region, product training, pay structure, lead/client support, working arrangement and start date. No duplicate application.",
+      "opportunity_key": "heldertech.co.za|business-development-representative|2026-10-16",
+      "priority": 8,
+      "routing_reason": "FOLLOWUP_NOT_DUE",
+      "smallest_next_action": "Await recruiter response on whether the vacancy remains open. If none by 2026-10-23, recheck the role and mailbox before one short follow-up. If active, qualify target region, product training, pay structure, lead/client support, working arrangement and start date. No duplicate application.",
+      "state": "SUBMITTED",
+      "status": "WAITING",
+      "thread_id": null
     },
     "hipagency.ai|one-workflow-ai-agent-acceptance-pilot|2026-10-15": {
       "due_at": "2026-10-19T08:00:00Z",
