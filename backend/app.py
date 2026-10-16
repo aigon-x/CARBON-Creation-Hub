@@ -403,6 +403,28 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         def house_index():
             return FileResponse(house_dir / "index.html")
 
+        @app.get("/carbon/partner", include_in_schema=False)
+        @app.get("/carbon/partner/", include_in_schema=False)
+        def carbon_partner_tour():
+            path = house_dir / "carbon-partner-tour.html"
+            if path.is_symlink() or not path.is_file():
+                raise HTTPException(status_code=404, detail="partner guide unavailable")
+            return FileResponse(path)
+
+        @app.get("/carbon/services/{service_slug}", include_in_schema=False)
+        def carbon_service_page(service_slug: str):
+            allowed = {
+                "website": "carbon-service-website.html",
+                "quick-technical-review": "carbon-service-quick-technical-review.html",
+            }
+            filename = allowed.get(service_slug)
+            if not filename:
+                raise HTTPException(status_code=404, detail="service not found")
+            path = house_dir / filename
+            if path.is_symlink() or not path.is_file():
+                raise HTTPException(status_code=404, detail="service unavailable")
+            return FileResponse(path)
+
     return app
 
 
