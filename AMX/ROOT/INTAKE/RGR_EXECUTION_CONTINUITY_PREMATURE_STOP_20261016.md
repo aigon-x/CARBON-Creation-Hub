@@ -130,3 +130,29 @@ No recruiter reply, media waiver, interview, offer, contract, invoice, receivabl
 
 ## 10. Updated run truth
 Across the current application sequence, exact Outlook Sent Items have been independently read back for six job applications plus one route-confirmation contact to Hotsourced. The seventh application route to The Surge remains incomplete on the explicitly flagged media requirement. The earlier Zakaria address produced an actual invalid-recipient bounce and is not retried. **No employer offer, buyer acceptance, contract, invoice, receivable or payment has been verified.** The run remains open for more lawful commercial work; this Intake update is not a stop condition.
+
+
+## 11. Continued commercial execution — media-gated applications
+
+Two more direct recruiter emails were sent after mailbox-history dedupe. The sent items were independently read back. Neither is represented as a fully completed application because the source posting requests applicant-originated media.
+
+### The Surge — Part-Time Telesales Consultant
+- Official listing: https://widget.bizcommunity.com/job/cape-town/marketing-media/part-time-telesales-consultant-076809a
+- Sent: \`2026-10-16T08:35:56Z\`, to \`recruitment@thesurgeapp.com\`.
+- Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQACLJpXlAAAAA==\`.
+- Advertised: remote, one day/week, R530/day starting, possible R950+/day after three months subject to performance, plus monthly bonuses.
+- The email says the required photo/intro video was not attached and asks whether it is mandatory before initial review. Canonical state: \`SUBMITTED / WAITING_REQUIRED_INTRO_MEDIA\`.
+
+### Talent Advantage — Sales Development Representative
+- Current listing: https://za.linkedin.com/jobs/view/sales-development-representative-at-talent-advantage-4471665103
+- Sent: \`2026-10-16T08:39:11Z\`, to \`info@talentadvantage.ca\`.
+- Outlook item: \`AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQACLJpXlQAAAA==\`.
+- Advertised: US$1,000–1,250/month base plus commission, subject to experience/contract and performance.
+- The email says the required 60–90 second Loom/selfie introduction was not attached and asks for the approved route and whether the CV can be screened first. Canonical state: \`SUBMITTED / WAITING_REQUIRED_INTRO_VIDEO\`.
+
+No synthetic photo/video was created and no one was represented as speaking in a recording on the applicant's behalf. If either recruiter insists on this hard requirement, the applicant must record/provide the media directly. These are route/media-pending emails, not completed applications, buyer offers, contracts or income.
+
+## 12. Updated current truth and continuation
+The eight role-related emails now have independently read-back sent items. Current searches show no substantive employer/recruiter replies; one unrelated invalid-recipient bounce from the earlier speculative message to \`zakaria@zakariabarjac.com\` remains explicitly classified as a bounce, not buyer rejection. No employer offer, contract, invoice, receivable or payment is verified.
+
+The existing commercial ledgers and claims/signal projections are carrying the states. Continue discovery and further direct-route applications; this Intake update is not a termination signal. The higher-paying Corzly form remains unsubmitted because the metered browser wallet is negative and the browser connector is disconnected; free listed-email routes continue in parallel. No wallet top-up or other spend was initiated.
