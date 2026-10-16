@@ -93,3 +93,27 @@ Owner authorized use of available owner-controlled personal information for legi
 - External submissions/report IDs/awards/payments: none evidenced this wake. Research triage is not a submission; no payment is claimed.
 - Required next action: continue at the next executable wake with current program/scope checks and the strongest genuinely distinct parcel. Keep Q1 unknown until the authoritative tracker or equivalent owner-authorized source is read. Resolve the tracker route and investigate the automation's `next_run_time=null` metadata without creating a duplicate worker or scheduler.
 - Terminal closure: **NOT CLOSED**. This receipt preserves an open execution obligation; it is not an excuse to stop further lawful Reaper work.
+
+
+---
+
+## Addendum — current supersession readback, 2026-10-16
+
+**Purpose:** Correct the present-tense automation/registry projection without rewriting the 07:21 SAST execution history above.
+
+### Current mandate preflight supersession
+- Registry now fetched at version 1.3, blob bcfd1f422bd25ba852666a538712828d594759e8, declared and recomputed root SHA-256 96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a.
+- BOUNTY-REAPER is still CURRENT with mandate ID AMX-MANDATE-BOUNTY-REAPER-V1 and the same registered mandate SHA-256 754d8fb9b6816da1bf0013940883106e0d3928b1637526ee82b38e1792c1dcd3.
+- The prior version 1.2 root in the execution pre-flight is preserved as the historical-at-run snapshot; it must not be used as today's registry root.
+
+### Current automation state — supersedes the prior enabled projection for present tense
+- Current task-scheduler lookup returned automation ID 6abf8e6d6a188191aee2b5d3fe24a9c9 with is_enabled=false, last_run_time 2026-10-16T07:39:24.104141Z, updated_at 2026-10-16T07:40:27.683206Z, and next_run_time=null.
+- The current inventory returned 25 task records, 47 paused and 3 completed, with zero enabled among the returned records. Other critical existing records (FORX Continuous Play Sweep, IDEAL SALES TEAM, LIBRARIANS, Banker Cash Watch, Operational Inbox Watch) also read disabled.
+- The persisted Bounty Reaper schedule remains legacy hourly recurrence. The present automation interface documents once/daily/weekly/monthly update schedules; a safe, supported hourly continuation was not established. No enable/cadence change was attempted. Do not create a replacement worker, duplicate schedule or tracker.
+- Therefore: **the statement in Section 3 is valid only as the earlier run's time-scoped readback; it is superseded for current state.** Current state = DISABLED / NO CONFIRMED NEXT RUN. Existing scheduler owner + ROOT/T-GOV must establish a supported reversible continuation and prove an attributable subsequent run with output/state readback.
+
+### Current queue disposition
+- Q1 remains UNKNOWN, NOT ZERO because the canonical Runs/Queue/Payouts tracker has not been read.
+- Existing static dispositions in Sections 5A–5D remain scoped to their named claims; no fresh code tests, eligible Q1, external report ID, award, receivable or payment are established by this addendum.
+- Next lawful Reaper action remains: use the authorized existing tracker if access becomes available; otherwise continue only a genuinely distinct, current-scope, public/static/local-fork parcel from existing receipts. Do not rescreen the explicitly killed native-drop, OpenZeppelin prior-art, SP1 JIT/out-of-scope, or already-fixed SP1 encoding claims without new contrary evidence.
+- This correction is state reconciliation only. It is not a Reaper execution, bounty submission, or scheduler-liveness acceptance.
