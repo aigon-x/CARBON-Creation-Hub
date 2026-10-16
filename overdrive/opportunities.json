@@ -414,11 +414,25 @@
       "remains_unproven": "Email delivery/reading, responses, ATS acceptance, interviews, job offers, compensation agreement, contracts, invoices, or payment.",
       "scope": "EMPLOYMENT_APPLICATIONS_20261016_0819Z_TO_0824Z",
       "upgrade_action": "Monitor reply/bounce state; qualify any response immediately. For Hotsourced, use direct LinkedIn application only after browser route is restored or recruiter gives a route. Continue other high-fit current paid roles rather than end after this receipt."
+    },
+    {
+      "actual": "Applied to publicly listed Heldertech Business Development Representative role via the exact email route given on the listing. Outlook Sent Item read back with CV attachment.",
+      "changed": "Added one SUBMITTED record with explicit vacancy-currentness UNKNOWN; no prior opportunity rewritten. No reply/offer/revenue inferred.",
+      "classification": "APPLICATION_SENT; VACANCY_CURRENTNESS_CONFIRMATION_PENDING",
+      "observed_at": "2026-10-16T08:30:53Z",
+      "owner": "PRI",
+      "proof": [
+        "https://za.linkedin.com/jobs/view/business-development-representative-at-heldertech-4450469439",
+        "Outlook sent item AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkwAAAA=="
+      ],
+      "remains_unproven": "Whether role remains open, recipient delivery/reading, interview/offer, actual base/commission terms, contract or income.",
+      "scope": "heldertech.co.za|business-development-representative|2026-10-16",
+      "upgrade_action": "Wait for vacancy confirmation. If open, progress immediately through the same route; otherwise close accurately and continue other current paid work."
     }
   ],
   "generated_at": "2026-10-03T22:13:20Z",
-  "last_reconciled_at": "2026-10-16T08:23:54Z",
-  "last_reconciled_reason": "Added four distinct payer-posted employment applications after current mailbox dedupe and direct Outlook Sent Item readback. Exact state is SUBMITTED/WAITING; Hotsourced is route-confirmation-pending because its published contact is a general recruiting inbox rather than confirmed requisition ATS. No buyer reply, offer, contract, invoice, or payment inferred.",
+  "last_reconciled_at": "2026-10-16T08:30:53Z",
+  "last_reconciled_reason": "Added one unique Heldertech BDR application after mailbox dedupe and Outlook Sent Item readback. Listing age means vacancy currentness remains UNKNOWN; the application email asks the recruiter to confirm it is still open. No buyer reply, offer, contract, invoice or payment inferred.",
   "last_run": {
     "candidates_inspected": 24,
     "cumulative_kpi": {
@@ -481,9 +495,9 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-16T10:23:54+02:00",
+  "last_updated_at": "2026-10-16T10:30:53+02:00",
   "last_updated_by": "PRI",
-  "record_count": 105,
+  "record_count": 106,
   "record_key": "normalized organization/domain + opportunity + title",
   "records": {
     "2cantalks.com|bdr-outbound-sa|2026-10-11": {
@@ -6108,6 +6122,61 @@
       "thread_id": null,
       "title": "Sales Development Representative — LegalTech",
       "current_route_status": "PUBLIC_GENERAL_RECRUITMENT_CONTACT_USED_ROUTE_CONFIRMATION_PENDING",
+      "current_route_confidence": "MEDIUM"
+    },
+    "heldertech.co.za|business-development-representative|2026-10-16": {
+      "buyer_fit": "Direct fit to 10+ years B2B sales, distribution, route-to-market and strategic account management; past work includes Vodacom data support and Mecer. Full-cycle pipeline ownership and negotiation are evidenced. Specialist fibre-link selling is not claimed.",
+      "capital_direction": "INBOUND / EMPLOYMENT / NO APPLICATION FEE",
+      "constraints": [
+        "Public listing is indexed as about two months old; vacancy still open is unconfirmed. Email explicitly asks recruiter to confirm availability.",
+        "Advertised realistic OTE R15,500–R25,500/month is variable and not guaranteed; offer terms remain unknown.",
+        "No recipient reply or application receipt beyond the Outlook Sent Item is established."
+      ],
+      "discovered_by": "iSCOPE",
+      "discovery_path": "PUBLIC_ROLE -> LOCAL_B2B_FIT -> LISTED_EMAIL_APPLICATION",
+      "domain": "heldertech.co.za",
+      "due_at": "2026-10-23T08:30:53Z",
+      "evidence": [
+        {
+          "kind": "PUBLIC_ROLE_LISTING",
+          "observed_at": "2026-10-16T08:25:00Z",
+          "source": "WEB",
+          "url": "https://za.linkedin.com/jobs/view/business-development-representative-at-heldertech-4450469439",
+          "summary": "Full-cycle BDR role in Cape Town, listed basic salary plus per signed business fibre link and 10% commission on gross profit; stated realistic OTE R15,500–R25,500/month; official listing asks CV and cover letter emailed to erin@heldertech.co.za."
+        },
+        {
+          "kind": "PRIOR_APPLICATION_HISTORY_DEDUPE",
+          "observed_at": "2026-10-16T08:30:00Z",
+          "source": "OUTLOOK",
+          "result": "ZERO_MATCHES",
+          "summary": "No prior message to erin@heldertech.co.za was found before this application."
+        },
+        {
+          "kind": "APPLICATION_SENT",
+          "observed_at": "2026-10-16T08:30:53Z",
+          "source": "OUTLOOK",
+          "source_id": "AQMkADAwATM0MDAAMS03NTM2LTYyNzgtMDACLTAwCgBGAAADR02W6I7woU2AiDvBGiB_dgcACcuKl8g3RkyfBaEy7toItQAAAgEJAAAACcuKl8g3RkyfBaEy7toItQACLJpXkwAAAA==",
+          "subject": "BDR Application — Ulrich du Plessis",
+          "summary": "CV attached; body notes transferable B2B/telecoms experience without claiming specialist fibre-link history, and asks whether vacancy remains open. Outlook Sent Item independently read back. No recruiter response found in the current search."
+        }
+      ],
+      "execution_owner": "PRI",
+      "execution_readiness": "WAITING_FOR_VACANCY_CONFIRMATION",
+      "last_action_at": "2026-10-16T08:30:53Z",
+      "last_reconciled_at": "2026-10-16T08:30:53Z",
+      "next_action": "Await recruiter response on whether the vacancy remains open. If none by 2026-10-23, recheck the role and mailbox before one short follow-up. If active, qualify target region, product training, pay structure, lead/client support, working arrangement and start date. No duplicate application.",
+      "opportunity": "Business Development Representative",
+      "organization": "Heldertech",
+      "payment": "Basic salary plus once-off per signed business fibre link and 10% commission on generated gross profit. Public stated realistic OTE R15,500–R25,500/month, not guaranteed.",
+      "proof_of_work_route": "EMPLOYMENT_APPLICATION_EMAIL",
+      "qualified_at": "2026-10-16T08:25:00Z",
+      "recipient": "erin@heldertech.co.za",
+      "reward": "Advertised realistic OTE R15,500–R25,500/month; actual base and variable terms to be confirmed.",
+      "state": "SUBMITTED",
+      "subject": "BDR Application — Ulrich du Plessis",
+      "thread_id": null,
+      "title": "Business Development Representative",
+      "current_route_status": "PUBLIC_LISTING_EMAIL_VERIFIED_VACANCY_STATUS_UNKNOWN",
       "current_route_confidence": "MEDIUM"
     }
   },
