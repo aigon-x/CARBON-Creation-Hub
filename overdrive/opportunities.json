@@ -347,7 +347,7 @@
     ],
     "t10": "OVERDRIVE runtime is now evidenced active/ticking, but fresh PRI Gmail actions occurred after the latest runtime tick and are not yet evidenced in its processed/receipt chain. Runtime activation is therefore proven for tick scope only; attributable commercial execution observability is REGRESSED until reconciled. No acceptance, contract, invoice, payment, or realized revenue is proven."
   },
-  "last_updated_at": "2026-10-15T13:33:30Z",
+  "last_updated_at": "2026-10-16T02:32:59-02:00",
   "last_updated_by": "iSCOPE → PRI existing commercial field force",
   "record_count": 91,
   "record_key": "normalized organization/domain + opportunity + title",
@@ -392,11 +392,18 @@
           "source": "OFFICIAL_PRIMARY_SOURCE",
           "summary": "The official South Africa BDR application page remains live and still requires CV upload followed by the scored voice assessment with Naledi in the same sitting.",
           "url": "https://apply.2cantalks.com/j/bdr-outbound-sa"
+        },
+        {
+          "kind": "CURRENT_OFFICIAL_APPLICATION_PAGE_REVERIFIED_20261016",
+          "observed_at": "2026-10-16T02:32:59-02:00",
+          "source": "OFFICIAL_PRIMARY_SOURCE",
+          "summary": "Re-fetched official application page and confirmed it remains live. It specifies CV upload followed by a scored conversation with Naledi in the same sitting; the page describes the call as about 10 minutes near the top and 15 minutes lower down. Human review is stated for the same week. No submission or assessment completion is inferred.",
+          "url": "https://apply.2cantalks.com/j/bdr-outbound-sa"
         }
       ],
       "execution_owner": "iSCOPE",
       "execution_readiness": "HOLD_ACCOUNT_HISTORY_DEDUPE",
-      "last_reconciled_at": "2026-10-13T12:37:28Z",
+      "last_reconciled_at": "2026-10-16T02:32:59-02:00",
       "next_action": "Before submitting, restore an authorized read path to the existing Gmail/account history and dedupe prior 2CT contact/application. If no prior submission exists, use the current official application route, upload the current CV as-is (sufficient-to-test; no polish cycle), and complete Naledi's scored voice assessment in the same sitting. If a prior application exists, resume that existing route and do not duplicate. Persist actual submission/assessment receipt and read back; do not claim either before evidence.",
       "opportunity": "bdr-outbound-sa",
       "organization": "2CT Sales Co.",
