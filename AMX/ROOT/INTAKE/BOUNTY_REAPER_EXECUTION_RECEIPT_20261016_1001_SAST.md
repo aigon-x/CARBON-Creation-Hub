@@ -85,6 +85,27 @@ Public issue #3004, `sp1-recursion-gnark-ffi fails to build: github.com/consensy
 
 Public reference: https://github.com/succinctlabs/sp1/issues/3004
 
+## Lombard BasculeV1 threshold/replay hypothesis — public audit prior-art kill
+
+Continuation after the receipt's first independent candidate screen; this section was added during the same open Bounty Reaper run.
+
+### Current program and target
+- Official current scope: https://immunefi.com/bug-bounty/lombard-finance/scope/ — last updated 15 October 2026, PoC required, KYC required, and **a non-refundable report submission fee is required for every report**.
+- In-scope mainnet asset: BasculeV1 `0xc750eCAC7250E0D18ecE2C7a5F130E3A765dc260` (Ethereum chain ID 1), directly bound by official `lombard-finance/evm-smart-contracts/mainnet.json`, blob `125c071bc6adef7055e55ff033437d37214091b7`.
+- Pinned source: `lombard-finance/evm-smart-contracts@7fe83e56f2265c0c281747c8dd3bb141d3022c46`; `contracts/bascule/Bascule.sol`, blob `e6fb296037bc3e6185786d07c38c40842f54a58b`.
+
+### Hypothesis originally screened
+`Bascule.validateWithdrawal()` allows an unreported withdrawal below `validateThreshold()` without setting `depositHistory[depositID]` to `WITHDRAWN`; if a bridge calls it as a gate and threshold is nonzero, a repeated below-threshold use of the same deposit ID may pass the Bascule check repeatedly. The source comments state threshold defaults to zero and requires privileged `VALIDATION_GUARDIAN_ROLE` to raise it; `validateWithdrawal()` itself is role-gated to `WITHDRAWAL_VALIDATOR_ROLE`.
+
+### Exact prior art — same issue already documented
+- Public report: Sherlock, Lombard June 2025 audit issue #337, **“Issue L-5: Validation threshold should never be set as non zero.”** Reference: https://github.com/sherlock-audit/2025-06-lombard-june-23rd/issues/337 and report mirror https://resources.cryptocompare.com/asset-management/20731/1758551907204.pdf.
+- The report describes the same two mechanics: a raised threshold allows below-threshold withdrawals without Bascule validation, and the original Bascule path fails to mark those deposits as withdrawn in `depositHistory`. It states that the issue was **acknowledged but not fixed at that time**.
+- Bascule's own `contracts/bascule/README.md`, blob `db1d6491f295484859a9db599a7cf44f10a7557f`, also explicitly warns that nonzero threshold depends on the bridge passing the correct withdrawal amount and that reporting zero can bypass validation. This is prior public documentation, not a novel finding.
+- A separate past Immunefi audit report #38102 also covers a different equality-boundary issue in BasculeV2 (`>=` versus `>`), which is not being conflated with this BasculeV1 replay hypothesis: https://reports.immunefi.com/lombard/38102-sc-insight-due-to-incorrect-design-in-basculev2-validatewithdrawal-valid-transactions-will-be.
+
+### Disposition
+**A — KILLED / PUBLIC PRIOR ART / NOT SUBMITTABLE.** Do not repackage the threshold-bypass/replay behavior. The exact live `validateThreshold()` value and every deployed integration gate were not independently read during this source-only screen, so no claim is made that the issue is currently exploitable. Regardless, the exact core behavior is pre-disclosed and the current program charges a non-refundable submission fee; no submission, fee, transaction, or funds movement was made.
+
 ## 6. Carried-forward queue and prior-art state
 
 - LayerZero `BR-20261003-024`: retain prior receipt state. Generic failed native-drop/non-execution economics are confirmed thematic prior art in Paladin's 2023 MessageLib audit Issue #03; the current source-only failed-drop and permanent-lock claims remain killed. The 2026 diff audit remains unread through current retrieval paths, so full audit dedupe is incomplete. Parent remains parked only for a materially distinct eligible path; do not submit the generic native-drop premise.
@@ -93,6 +114,7 @@ Public reference: https://github.com/succinctlabs/sp1/issues/3004
 - 1inch order announcement timestamp: prior receipt remains `A — NO PROMOTION`; exact latest-tag binding/eligible impact not established.
 - Enzyme Onyx zero-share-price redemption: prior receipt remains `A — PUBLIC QA PRIOR ART`; do not resubmit the acknowledged zero-share-value claim.
 - Symbiosis MetaRouter balance helper: prior receipt remains `B — SCOPE-GATED / NOT SUBMITTABLE`; no attack path to the currently listed MetaRouterGateway assets has been established.
+- Lombard BasculeV1 threshold/replay hypothesis: `A — KILLED / PUBLIC PRIOR ART`; the same nonzero-threshold below-threshold repeat-without-consuming condition was documented in Sherlock 2025 issue L-5 and acknowledged. No submission fee paid.
 
 ## 7. Run outcome and truth boundary
 
