@@ -5,6 +5,9 @@ import hashlib
 import hmac
 import json
 import os
+import urllib.error
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -55,6 +58,183 @@ class EvidencePayload(BaseModel):
     inspect_route: str | None = None
     visibility: str = "PRIVATE"
     tags: list[str] = Field(default_factory=list)
+
+
+
+CARBON_BUSINESS_SEARCH_HEALTH_URL = "https://carbon-search-intention-v1.onrender.com/api/search/health"
+CARBON_BUSINESS_MARKET_BOOTSTRAP_URL = "https://carbon-intent-marketplace-v1-preview.onrender.com/api/carbon/bootstrap"
+
+CARBON_BUSINESS_SERVICES: list[dict[str, Any]] = [
+    {
+        "id": "website-presence",
+        "name": "Website & Digital Presence",
+        "family": "Build and convert",
+        "readiness": "SCOPED / PILOT",
+        "summary": "Create or improve a business website, landing page, catalogue, enquiry path or customer-facing digital experience.",
+        "deliverable": "A scoped brief, page structure and visual direction; implementation and launch terms are agreed before work is promised.",
+        "current_limit": "Self-service payment, automated mockup acceptance and an instantly provisioned interactive trial are not yet verified for this service.",
+        "route": "/business/services/website-presence",
+        "product_url": "",
+        "action_label": "Request a scope by email",
+        "action_url": "mailto:amillimatrix@gmail.com?subject=CARBON%20Website%20%26%20Digital%20Presence%20Scope",
+    },
+    {
+        "id": "quick-technical-review",
+        "name": "Quick Technical Review",
+        "family": "Fixed-scope review",
+        "readiness": "AVAILABLE",
+        "summary": "A concise written review of one public repository URL or a non-sensitive code/config excerpt of up to 100 lines.",
+        "deliverable": "Key findings, up to three prioritized recommendations, and one concrete example fix where the supplied evidence supports it.",
+        "current_limit": "No live penetration testing, production access, secrets handling, implementation work or guarantee that a vulnerability exists. Follow-up material must exclude secrets and private customer data.",
+        "route": "/business/services/quick-technical-review",
+        "product_url": "https://amx-evidence-house.onrender.com/house/#micro-matrix-offer",
+        "action_label": "Buy the fixed-scope review — US$4.99",
+        "action_url": "https://buy.stripe.com/9B6eVd7hfeTCaYh62eaR200",
+    },
+    {
+        "id": "brand-communications",
+        "name": "Brand & Communications",
+        "family": "Look professional",
+        "readiness": "SCOPED / PILOT",
+        "summary": "Refine business positioning, brand presentation, typography, messaging, signage, menus, price lists and reusable assets.",
+        "deliverable": "A scoped set of brand or communication recommendations and agreed assets, using the customer's brand as the lead.",
+        "current_limit": "Availability, deliverables, rights, revisions and price must be confirmed for the specific engagement.",
+        "route": "/business/services/brand-communications",
+        "product_url": "",
+        "action_label": "Request a scope by email",
+        "action_url": "mailto:amillimatrix@gmail.com?subject=CARBON%20Brand%20%26%20Communications%20Scope",
+    },
+    {
+        "id": "social-campaigns",
+        "name": "Social Presence & Campaigns",
+        "family": "Get found",
+        "readiness": "SCOPED / PILOT",
+        "summary": "Improve social profiles and plan useful content, promotions, publishing support and performance reporting.",
+        "deliverable": "An agreed campaign or content package sized to the business goal and supplied assets.",
+        "current_limit": "Live account integrations, publishing permissions, recurring campaign operations and performance access are confirmed individually; none is implied by this listing.",
+        "route": "/business/services/social-campaigns",
+        "product_url": "",
+        "action_label": "Request a scope by email",
+        "action_url": "mailto:amillimatrix@gmail.com?subject=CARBON%20Social%20Presence%20%26%20Campaigns",
+    },
+    {
+        "id": "customer-sales-journey",
+        "name": "Customer & Sales Journey",
+        "family": "Sell and serve",
+        "readiness": "SCOPED / PILOT",
+        "summary": "Improve enquiries, bookings, ordering, digital menus, product catalogues, customer follow-up and after-sales journeys.",
+        "deliverable": "A mapped customer path and an agreed set of practical changes or digital assets.",
+        "current_limit": "Third-party messaging, commerce and payment integrations require individual route, permission and end-to-end checks before they can be promised.",
+        "route": "/business/services/customer-sales-journey",
+        "product_url": "",
+        "action_label": "Request a scope by email",
+        "action_url": "mailto:amillimatrix@gmail.com?subject=CARBON%20Customer%20%26%20Sales%20Journey",
+    },
+    {
+        "id": "workflow-automation",
+        "name": "Workflow Automation & Integration",
+        "family": "Run better",
+        "readiness": "SCOPED / PILOT",
+        "summary": "Identify repetitive work and scope forms, internal dashboards, APIs or supported platform integrations.",
+        "deliverable": "A scoped workflow design and a tested implementation where the needed access, runtime and provider capability are available.",
+        "current_limit": "No integration is treated as connected until credentials/permissions, successful execution, failure handling and durable readback are proven.",
+        "route": "/business/services/workflow-automation",
+        "product_url": "",
+        "action_label": "Request a scope by email",
+        "action_url": "mailto:amillimatrix@gmail.com?subject=CARBON%20Workflow%20Automation%20Scope",
+    },
+    {
+        "id": "stock-operations",
+        "name": "Stock & Operations Intelligence",
+        "family": "Run better",
+        "readiness": "SCOPED / PILOT",
+        "summary": "Review authorized stock, sales and customer-demand data for stock rotation, reorder prompts, wastage and operational friction.",
+        "deliverable": "Recommendations or a scoped operational workflow based on data the business is authorized to share.",
+        "current_limit": "No live POS, supplier, inventory or customer-data integration is implied. Data source, access, and rights must be checked first.",
+        "route": "/business/services/stock-operations",
+        "product_url": "",
+        "action_label": "Request a scope by email",
+        "action_url": "mailto:amillimatrix@gmail.com?subject=CARBON%20Stock%20%26%20Operations%20Scope",
+    },
+    {
+        "id": "apps-portals",
+        "name": "Apps, Portals & Customer Tools",
+        "family": "Build digital capability",
+        "readiness": "SCOPED / PILOT",
+        "summary": "Scope lightweight web apps, installable PWAs, customer portals and internal tools when they solve a clear business problem.",
+        "deliverable": "A defined user flow, implementation scope and release/hosting plan.",
+        "current_limit": "The automatic quote-to-payment-to-interactive-trial path is not yet verified for this service; hosting, persistence, access control and delivery conditions must be agreed.",
+        "route": "/business/services/apps-portals",
+        "product_url": "",
+        "action_label": "Request a scope by email",
+        "action_url": "mailto:amillimatrix@gmail.com?subject=CARBON%20App%20or%20Portal%20Scope",
+    },
+    {
+        "id": "intent-search",
+        "name": "CARBON° Search / INTELLAGENT",
+        "family": "Find the right next step",
+        "readiness": "SCOPED / PILOT",
+        "summary": "An intent-led Search interface designed to interpret a need, compare relevant evidence and route to a useful next action.",
+        "deliverable": "The current public Search interface is reachable; live external search coverage must be checked separately.",
+        "current_limit": "External search-provider integrations are not currently verified as connected.",
+        "route": "/business/services/intent-search",
+        "product_url": "https://carbon-search-intention-v1.onrender.com/search",
+        "action_label": "Open Search",
+        "action_url": "https://carbon-search-intention-v1.onrender.com/search",
+    },
+    {
+        "id": "marketplace",
+        "name": "CARBON° Marketplace",
+        "family": "Match a need with an offer",
+        "readiness": "SCOPED / PILOT",
+        "summary": "A live Marketplace interface for listing, discovery and intent-based matching where eligible listings and connected sources exist.",
+        "deliverable": "The current interface is reachable and shows an honest empty state; no external listings are promised.",
+        "current_limit": "External listing providers are not verified as connected, and the current Marketplace money adapter reports that no real money moves through it.",
+        "route": "/business/services/marketplace",
+        "product_url": "https://carbon-intent-marketplace-v1-preview.onrender.com/market",
+        "action_label": "Open Marketplace",
+        "action_url": "https://carbon-intent-marketplace-v1-preview.onrender.com/market",
+    },
+    {
+        "id": "studios",
+        "name": "CARBON Studios",
+        "family": "Create and fulfil",
+        "readiness": "SCOPED / PILOT",
+        "summary": "The creation and production layer for agreed brand assets, copy, listings, images and selected media deliverables.",
+        "deliverable": "A defined brief, preview/review step and a scoped deliverable where the required production route is available.",
+        "current_limit": "A populated, buyer-ready searchable Studios catalogue and a fully automated preview-to-trial workflow are not yet verified.",
+        "route": "/business/services/studios",
+        "product_url": "",
+        "action_label": "Discuss a scoped brief",
+        "action_url": "mailto:amillimatrix@gmail.com?subject=CARBON%20Studios%20Production%20Brief",
+    },
+]
+
+def _fetch_public_json(url: str, timeout: float = 2.0) -> dict[str, Any]:
+    """Read a fixed public health/bootstrap endpoint without propagating its failure."""
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "AMX-CARBON-Business-Readiness/1.0",
+            "Cache-Control": "no-cache",
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+            if not isinstance(payload, dict):
+                return {"reachable": False, "http_status": getattr(response, "status", 200), "data": {}, "failure": "INVALID_RESPONSE"}
+            return {
+                "reachable": 200 <= int(getattr(response, "status", 200)) < 300,
+                "http_status": int(getattr(response, "status", 200)),
+                "data": payload,
+                "failure": None,
+            }
+    except urllib.error.HTTPError as exc:
+        return {"reachable": False, "http_status": exc.code, "data": {}, "failure": "HTTP_ERROR"}
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError, UnicodeError):
+        return {"reachable": False, "http_status": None, "data": {}, "failure": "CONNECTION_OR_RESPONSE_ERROR"}
 
 
 def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> FastAPI:
@@ -378,6 +558,85 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
             },
         }
 
+    @app.get("/api/business/services")
+    def carbon_business_services() -> dict[str, Any]:
+        # The health checks are read-only and parallel so the service directory never
+        # depends on either product being up. A failed check is a defined recovery state.
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            search_future = pool.submit(_fetch_public_json, CARBON_BUSINESS_SEARCH_HEALTH_URL)
+            market_future = pool.submit(_fetch_public_json, CARBON_BUSINESS_MARKET_BOOTSTRAP_URL)
+            search_probe = search_future.result()
+            market_probe = market_future.result()
+
+        search_data = search_probe.get("data", {})
+        market_data = market_probe.get("data", {})
+        search_reachable = search_probe.get("reachable") is True and search_data.get("status") == "CONNECTED"
+        discovery = market_data.get("discovery") if isinstance(market_data.get("discovery"), dict) else {}
+        market_reachable = market_probe.get("reachable") is True and market_data.get("product") == "CARBON°"
+        listings = market_data.get("listings") if isinstance(market_data.get("listings"), list) else []
+        external_search = discovery.get("external_search_connected") is True
+        external_marketplace = discovery.get("external_marketplace_connected") is True
+        money_adapter = str(market_data.get("money_adapter") or "NOT_VERIFIED")
+        money_moved = market_data.get("money_moved") is True
+
+        if not search_reachable:
+            search_message = "The latest live check could not confirm the Search route. Check the route before promising availability."
+        elif str(search_data.get("external_provider") or "UNCONFIGURED").upper() == "UNCONFIGURED":
+            search_message = "The Search interface is reachable, but external search providers are not connected."
+        else:
+            search_message = "The Search interface is reachable. The current provider configuration still needs a live query and result-readback test."
+
+        if not market_reachable:
+            marketplace_message = "The latest live check could not confirm the Marketplace backend. Check the route before promising availability."
+        elif not external_search and not external_marketplace:
+            marketplace_message = f"The Marketplace interface is reachable with {len(listings)} current listing(s), but external search and listing sources are not connected."
+        else:
+            marketplace_message = f"The Marketplace interface is reachable with {len(listings)} current listing(s). Any connected source still requires result-level verification."
+
+        services = [dict(item) for item in CARBON_BUSINESS_SERVICES]
+        for service in services:
+            if service["id"] == "intent-search":
+                service["current_limit"] = search_message
+                service["runtime_state"] = "CONNECTED" if search_reachable else "CHECK_FAILED"
+            elif service["id"] == "marketplace":
+                service["current_limit"] = marketplace_message
+                service["runtime_state"] = "CONNECTED" if market_reachable else "CHECK_FAILED"
+                service["listing_count"] = len(listings)
+                service["real_money_moved_in_current_bootstrap"] = money_moved
+                service["money_adapter_state"] = (
+                    "NO_REAL_MONEY_MOVED"
+                    if money_adapter == "SANDBOX_NO_MONEY_MOVED" and not money_moved
+                    else "SEPARATE_VERIFICATION_REQUIRED"
+                )
+
+        return {
+            "checked_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+            "services": services,
+            "runtime": {
+                "search": {
+                    "state": "CONNECTED" if search_reachable else "CHECK_FAILED",
+                    "message": search_message,
+                },
+                "marketplace": {
+                    "state": "CONNECTED" if market_reachable else "CHECK_FAILED",
+                    "message": marketplace_message,
+                    "listing_count": len(listings),
+                    "external_search_connected": external_search,
+                    "external_marketplace_connected": external_marketplace,
+                    "money_moved": money_moved,
+                    "money_adapter_state": (
+                        "NO_REAL_MONEY_MOVED"
+                        if money_adapter == "SANDBOX_NO_MONEY_MOVED" and not money_moved
+                        else "SEPARATE_VERIFICATION_REQUIRED"
+                    ),
+                },
+            },
+            "personal_referral": {
+                "state": "NOT_CONNECTED",
+                "message": "Direct service links can be shared now. Personal referral attribution and referral-credit tracking are not active until the existing canonical identity/referral route is verified.",
+            },
+        }
+
     house_dir = root / "house/remediation"
     if house_dir.exists():
         @app.get("/house/assets/{asset}")
@@ -397,6 +656,24 @@ def create_app(repo_root: Path | None = None, db_path: Path | None = None) -> Fa
         def customer_proposal_page(portal_token: str):
             proposal_projection(portal_token)
             return FileResponse(house_dir / "proposal.html")
+
+        @app.get("/business")
+        @app.get("/business/")
+        def carbon_business_index():
+            path = house_dir / "business.html"
+            if path.is_symlink() or not path.is_file():
+                raise HTTPException(status_code=503, detail="CARBON Business directory unavailable")
+            return FileResponse(path)
+
+        @app.get("/business/services/{service_slug}")
+        def carbon_business_service(service_slug: str):
+            allowed_slugs = {item["id"] for item in CARBON_BUSINESS_SERVICES}
+            if service_slug not in allowed_slugs:
+                raise HTTPException(status_code=404, detail="Carbon service not found")
+            path = house_dir / "business.html"
+            if path.is_symlink() or not path.is_file():
+                raise HTTPException(status_code=503, detail="CARBON Business directory unavailable")
+            return FileResponse(path)
 
         @app.get("/house")
         @app.get("/house/")
