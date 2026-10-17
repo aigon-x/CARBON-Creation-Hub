@@ -121,3 +121,26 @@ Do not confuse production and takedown: Metricool not being required for creatio
 - **TikTok:** public fetch of `https://www.tiktok.com/@amillimatrix/video/7697285998706838805` returned a “Site Maintenance” error, not a verified removed/unpublished state. The TikTok item remains OPEN until native authenticated state is inspected.
 - **Tool/access gate:** no Google Flow/Drive history connector is exposed in this runtime. TinyFish balance readback is `-US$1.051248`, with no auto-reload; use of metered browser automation is not available without a top-up. Saved TinyFish profiles have no Google sign-in recorded, and Opera browser connection is unavailable. No sign-in was attempted, no credentials were requested, no money spent, and no post changed in this readback.
 - **Disposition:** external live CARBON page confirms **NO PLAYABLE EPISODE EMBEDDED ON THIS SURFACE**; internal review master confirmed; Flow-account history still unverified; YouTube posts still resolve publicly; TikTok post removal state unresolved. Takedown and production integration remain OPEN.
+---
+## ADDITIONAL ASSET SEARCH — DESCRIPT / OUTLOOK / LIVE SURFACE ACCESS — 2026-10-17
+This is an append-only update to existing CARBON Root records; it does not create a parallel inventory or infer unavailable sources are empty.
+
+### Descript readback
+- Project CARBON° Studios — Dragon Final Trailer (project_id=959a78e9-e615-4b3a-afbb-63a5ec1fb04f) contains CARBON_Dragon_Cinematic_Trailer_v3_720p.mp4; composition duration 39.018 seconds. Share for “Audio Architecture v4 — Reference” is private: https://share.descript.com/view/IrO1Gpw9hgr. Trailer/reference, not Flow output and not proof of a playable episode embedded in CARBON°.
+- Project T-MED — CARBON Search — Episode 1 (project_id=16e885e9-ecc0-4117-a48e-9c12a27d990e) contains “CARBON° Search — Verified Build Evidence (9:16)”, 38.819 seconds, with unlisted Descript publish https://share.descript.com/view/heazLwkAd0y. This is Search proof content, not Dragon content; do not cross-assign.
+- Exact-name Descript search for Dragon returned the Dragon trailer project and MP4; search for episode returned the CARBON Search project only. No Flow creation is identified by these results.
+
+### Flow-history inbox search
+Bounded Outlook queries for subject:Flow, subject:Veo, exact phrase “Google Flow”, and “generated video” returned no relevant messages. This is an inbox search only, not Google Flow/Drive account history. It does not prove the Google Flow libraries contain no clips.
+
+### Live deployment-access boundary
+The Vercel authenticated-fetch attempt returned HTTP 403 because this connection is not authorized for the deployment project/team; the public web fetch could not access the current deployed URL either. Actual live deployed playback remains UNVERIFIED. The GitHub main-branch source check alone is not proof of live deployment content.
+
+### Current state
+- EP01 IT CHOSE HER controlled review master: VERIFIED; 70 seconds; editorial camera motion over canonical still panels; held from public final catalogue pending motion/rights gates. Receipt: https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/overdrive/receipts/CARBON_DRAGON_EP01_REVIEW_V1_RECEIPT.json.
+- Dragon trailer/reference: VERIFIED private in Descript, 39.018 seconds.
+- CARBON Search composition: VERIFIED unlisted in Descript, 38.819 seconds; not Dragon.
+- Google Flow contents in both designated accounts: UNKNOWN, pending authenticated account-history route.
+- Public CARBON Dragon player: absent from checked main-branch source; live deployment state UNKNOWN because access is denied.
+- Search Shorts correction/takedown: OPEN / NOT EXECUTED. No authenticated native publishing session or working browser automation route in this execution. Existing Owner direction remains active.
+
