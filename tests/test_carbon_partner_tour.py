@@ -28,7 +28,14 @@ def test_public_partner_and_service_routes(tmp_path):
     client = partner_client(tmp_path)
     assert client.get("/carbon/partner").status_code == 200
     assert client.get("/carbon/partner/").status_code == 200
-    assert "Welcome, Alfie" in client.get("/carbon/partner").text
+    page = client.get("/carbon/partner").text
+    assert "Welcome, Alfie" not in page
+    assert "Hello, what should we call you?" in page
+    assert 'id="preferredName"' in page
+    assert 'data-contribution="suggestion"' in page
+    assert 'data-contribution="referral"' in page
+    assert "assigns each person’s role and permissions separately" in page
+    assert "AI Commercial Manager" in page
     assert "Website service" in client.get("/carbon/services/website").text
     assert "Quick Technical Review" in client.get("/carbon/services/quick-technical-review").text
     assert client.get("/carbon/services/not-a-service").status_code == 404
