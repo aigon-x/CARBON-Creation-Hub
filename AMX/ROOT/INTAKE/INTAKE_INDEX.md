@@ -3077,3 +3077,52 @@ Each office receipt below binds: **PRIMARY PURPOSE understood; current 65% attri
 - **Hard delivery failure:** an undeliverable notification for the Zakaria outreach is a delivery failure, not a rejection or buyer response. Do not resend to the failed address; only reopen if an independently verified official alternate endpoint is found.
 
 **Disposition:** Inbox items routed into existing production/Root records. VertIGo fee-free ask is ready as a draft; the “Quick question about AI” response is on HOLD until the original sender/thread is recovered. Queue remains OPEN / NOT CLEARED.
+
+
+---
+
+## 2026-10-18 — CURRENT-WAKE DEEP SYNC / EMAIL CONTINUITY + DRAIN-Q DELTA
+
+**Run:** AMX-DSI-20261018-EMAIL-Q-DRAIN-01  
+**Prior index blob at start of this update:** `1d24e636811b1f4535af45d06854c57b7a53a50f`  
+**Disposition:** **INTAKE NOT CLEARED — partial current-source reconciliation; Root execution still required.**  
+**Deep-sync receipt:** [MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/blob/main/AMX/ROOT/INTAKE/MATRIXWIDE_DEEP_SYNC_CURRENT_WAKE_20261018_EMAIL_CONTINUITY_AND_Q_DRAIN.md)  
+**Related Root record:** [Email continuity / accepted-decision repetition and missed routing action](https://app.notion.com/p/3fd8f8b56cd7811aa576ee011647cc2e?pvs=204)  
+**Root issue:** [#31 — ledger truth, capability-loss recovery, and model-to-Root throughput](https://github.com/amillimatrix-eng/CARBON-Creation-Hub/issues/31#issuecomment-6253053287)
+
+### Direct current-source readbacks
+- Canonical main-branch mandate registry: `AMX/ROOT/BLUE_STATE/MANDATE_REGISTRY_V1.json`, blob `bcfd1f422bd25ba852666a538712828d594759e8`; **version 1.3**, effective 2026-10-16; declared registry root `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`. Existing Root issue #31 evidence dated 2026-10-16 records independent recomputation of this registry root as MATCH.
+- Existing Category B queue-drain directive remains controlling: `AMX/ROOT/INTAKE/CATEGORY_B_LIBRARIAN_INTAKE_QUEUE_DRAIN_20261012.md`, blob `92da67943cfb38b5aa4014b338d98cbc1ada8921`. It requires real item-level dispositions/actions and independent readback; an issue-only census is not the complete Matrix queue.
+- The current connected GitHub issue query returned **14 open issues**: #50, #30, #18, #31, #32, #33, #29, #34, #4, #21, #3, #8, #2, #1. Their item-level summary, observed next action and completion boundaries are in the linked current-wake receipt. This is a bounded GitHub census only.
+- Current automation peek returned 25 records; only **Check DAOPEOPLE Reply** was enabled. The existing Librarians, FORX Continuous Play Sweep, IDEAL Sales Team, Operational Inbox Watch, Banker Cash Watch, Bounty Reaper and other listed records were disabled in that returned set. Prior Index snapshots reported zero enabled on 2026-10-16; the presently enabled DAOPEOPLE reminder is a later observed delta, not proof of Matrix-wide scheduler liveness.
+- The saved automation prompts still contain v1.2 / old-root snapshots. These are not allowed to override current v1.3 authority on a future wake. Do not silently rewrite mandates or reactivate recurring schedules; ROOT must authorize/reconcile the supported execution path.
+- Connected Outlook profile readback identifies its API mailbox as `usduplessis@outlook.com`. The migration plan discussed Gmail forwarding to `amillimatrix@outlook.com`; the actual forwarding destination was not independently read back. Consequently, delivery to the brand mailbox does not yet prove that the connected Outlook API can search/read the forwarded message.
+- Owner-reported forwarding setup is preserved as such, not upgraded to verified. Actual Gmail-originated message visibility through the native Outlook connector remains an acceptance gap.
+- The email-continuity decision is recorded in the linked Root page and routed in the existing Issue #31 thread. The parent-notification operation returned NOT_FOUND before dispatch; this is a failed attempt, not a successful Root wake. The GitHub #31 route comment is persisted; Root acknowledgement remains absent from the observed readback.
+
+### Accepted decision to propagate, without creating parallel machinery
+- Prefer native Outlook tools for email search, read, draft and reply where supported.
+- Reserve TinyFish credit for authenticated/dynamic browser tasks that the native connector cannot perform.
+- Keep Gmail active throughout migration; preserve existing threads and source-account identity.
+- Use the brand-facing AMX Outlook identity for new communication when possible, but first ensure the native connector can access that mailbox or deliberately choose a forwarding destination the connector actually reads.
+- No external email, mailbox-setting change, new worker, new queue, new scheduler, or recurrence reactivation was performed by this deep-sync pass.
+
+### Current queue disposition
+**DRAIN Q remains OPEN / NOT CLEARED.** The current-wake pass did not provide the complete source-derived Matrix inventory and did not execute or read back every open item. It did establish an updated current snapshot, preserve the actual execution blockers, and route the directive through existing Root surfaces. The remaining queue must be drained using the canonical Category B owner directive—not closed by reclassification or by this receipt.
+
+### Required next actions
+1. ROOT/T-GOV reconciles current Registry v1.3 against stale Index/issue/automation prompt references and records a governed current-state disposition while preserving old snapshots.
+2. MASTER/COFFEE/LIBRARIAN continue the existing source-derived drain over Notion, GitHub, current trackers and available runtimes; every applicable item needs disposition, owner, next action, blocker/recheck and acceptance/readback evidence.
+3. ROOT resolves the disabled recurring-executor state through an authorized immediate-run or supported cadence path. No silent recurring schedule changes. Continue any lawful independent work that does not depend on that recovery.
+4. Verify Gmail forwarding against the actual connected mailbox identity. Preferred destination/access decision: native connector access to `amillimatrix@outlook.com`, if supported; otherwise Owner must intentionally choose another monitored route. Do not claim the integration is live until an actual forwarded message is readable in the connector.
+5. Independently read back Root’s response and any resulting action receipts. Preserve **INTAKE NOT CLEARED** until the applicable inventory and executable items meet acceptance conditions.
+
+### Directive 23 close-out
+- **Expected outcomes:** source-derived queue items receive evidence-backed disposition or execution; current Registry v1.3 governs future action; native Outlook-first/TinyFish-sparing decision is propagated only into existing workflows; Gmail monitoring is proven through real readback.
+- **Owners:** ROOT/T-GOV for authority and disposition; MASTER/COFFEE/LIBRARIAN for census and queue drain; existing specialists for their assigned actions.
+- **Dependencies:** full applicable source access; a supported immediate execution mechanism for disabled runtimes; correct Outlook mailbox access/verified forwarding.
+- **Evidence:** current Registry v1.3; current Index prior blob; 14-open-issue query; 25 returned automation records; current Outlook profile identity; Root Notion record readback; Issue #31 comment; linked GitHub receipt.
+- **Persistence/readback:** this section is append-only. Fetch exact updated Index blob, receipt, and issue comment after write.
+- **Safety/preservation:** historical snapshots retained; no duplicate queue/worker, no silent schedule reactivation, no unverified completion, no credential collection.
+- **Disposition:** ROUTED / PARTIAL / **INTAKE NOT CLEARED**.
+- **Remaining work:** Root acknowledgement; complete source census and per-item drainage; authorized executor recovery; email forwarding readback; final independent deep-sync receipt.
