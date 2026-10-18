@@ -3126,3 +3126,38 @@ Each office receipt below binds: **PRIMARY PURPOSE understood; current 65% attri
 - **Safety/preservation:** historical snapshots retained; no duplicate queue/worker, no silent schedule reactivation, no unverified completion, no credential collection.
 - **Disposition:** ROUTED / PARTIAL / **INTAKE NOT CLEARED**.
 - **Remaining work:** Root acknowledgement; complete source census and per-item drainage; authorized executor recovery; email forwarding readback; final independent deep-sync receipt.
+
+
+---
+
+## 2026-10-18 — Overdrive Live-Source Readback / Existing Claim Queue Continuation
+
+**Capture time (UTC):** 2026-10-18T17:57:44.109Z  
+**Index blob before this append:** `2af14aab0de51d70d1e021418ceb75dd7e83d992`  
+**Disposition:** **INTAKE NOT CLEARED — claim ledger state read back; no fresh execution tick observed.**
+
+### Exact current-main readbacks
+- `overdrive/opportunities.json`, blob `eb27e6542b3d4835229b1dbb221266042d7c3826`: `record_count=108`; records-map keys = **108**; last_updated_at = `2026-10-16T10:39:11+02:00`; last_reconciled_at = `2026-10-16T08:39:11Z`. Embedded `last_run.run_at=2026-10-03T17:42:00Z` / `full_ledger_count=62` remains historical and must not be rewritten to match current map size.
+- `overdrive/claims.json`, blob `88b15824b892e38301829a95ee1ecf75e1221341`: generated `2026-10-16T08:40:31.783771Z`; 108 claims; **102 WAITING / 6 CLOSED; ready_count=0; external_ready_count=0; executable_order=[]**. Ten WAITING records have due_at values earlier than this current wake. Due timestamps alone do not authorize submission/contact.
+- `overdrive/state.json`, blob `d117c948e0046b7d2fcacb0e2cbae6762335ac22`: sequence 23; last_tick `2026-10-16T08:40:31.786740Z`; 23 historical queue entries; adapter_status at that tick = OPERATIONAL. This is **not** a fresh current tick: current automation inventory shows only one enabled item and the existing continuous work automations are disabled.
+- Canonical mandate registry remains version 1.3 / root `96c0beb3328ebefc16286d93a7baadc0ff4be0a17c1e6a8718b89de94f58df1a`.
+
+### Ten overdue WAITING claims — source-derived disposition
+These are not automatically closed or promoted. Preserve the ten items at their existing WAITING status and apply their exact next_action:
+- **Three authenticated-browser route holds** (due 2026-10-03): next action is to restore a current authenticated browser route; last cited Opera status is BROWSER_NOT_CONNECTED. Do not create duplicate accounts or applications.
+- **One existing Gmail thread readback gate** (due 2026-10-10): retrieve and reconcile the named thread before any external action; no duplicate send.
+- **One Inkwave response-monitoring item** (due 2026-10-04): check the existing application for response; provide controlled evidence only if asked, no duplicate application.
+- **Two OpenTrain existing-account recovery holds** (due 2026-10-03): wait for a secure existing-account recovery/direct-application route; no duplicate account.
+- **One Redrama response-monitoring item** (due 2026-10-04): inspect the existing thread when reachable; verify terms/rights/payment before any sample or package.
+- **One TELUS secure authentication gate** (due 2026-10-03): continue only through the existing official application and OTP/identity flow; never persist OTPs.
+- **One experience/eligibility hold** (due 2026-10-04): required technical experience is currently unevidenced; do not submit a misrepresentative application. Continue with suitable proof-of-work routes.
+
+### Current available email-route check
+Native Outlook connector profile readback is `usduplessis@outlook.com`. Search for Inkwave, Redrama, OpenTrain and CallForce returned no matches in this connected mailbox (TELUS search returned only older 2025 correspondence). This does not prove that those threads have no updates in the unconnected Gmail mailbox. Keep them **OPEN / ROUTE ACCESS UNVERIFIED**, not completed.
+
+### Recovery/disposition
+- The ten overdue claims have explicit route/identity/eligibility gates, so their WAITING state is not automatically wrong; however, they remain overdue and must carry current owner, recovery action and recheck condition.
+- No new claim-ledger state change, current-tick receipt, buyer response, submission, acceptance, invoice or payment was evidenced by this readback.
+- Root/Librarian must reconcile the due set from full source records and resolve the correct existing mailbox/browser access path. Do not fabricate state transitions or weaken gates to make ready_count nonzero.
+
+**Directive 23:** expected outcome = each overdue claim has a current evidence-backed owner/next action/recheck and any independently executable work advances; owner = existing MASTER/LIBRARIAN plus route-specific owner; dependencies = authenticated browser and Gmail thread access for gated items; evidence = exact three file blobs and connector search result; persistence = this append plus linked current-wake receipt; readback = required after this update; safety = no duplicate accounts/messages, no invented acceptance/payment, no OTP storage; disposition = OPEN / HOLD where stated / INTAKE NOT CLEARED; remaining = recover authorized route, inspect each affected thread, update only on attributable evidence, and prove a new tick/readback.
