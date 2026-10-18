@@ -84,3 +84,15 @@ This is a concrete route-alignment dependency, not proof that forwarding failed.
 **Recovery action:** prefer authorized native connector access to `amillimatrix@outlook.com` as the intended AMX operational identity, if account reconnection/switching is supported. Otherwise, Owner must choose whether the forwarding destination should be the connector-accessible `usduplessis@outlook.com` or whether a separate authorized connector should be connected to the AMX mailbox. Keep Gmail active; do not change forwarding or send tests without a deliberate safe step and readback.
 
 **Acceptance:** a real Gmail-originated/forwarded message is searchable and readable through the connected native Outlook tool, with correct sender/thread preserved. Until that readback exists, native email routing is only partially aligned.
+
+
+## Subsequent same-wake source reconciliation — Overdrive queue and current Index — 2026-10-18T17:58:01.048Z
+
+The current canonical `AMX/ROOT/INTAKE/INTAKE_INDEX.md` was appended at commit `a3c3680b50f69689833e223bb3046366a3ee4a78`, blob `095a2b5ce95c221e07bef6d5850c2555f4e52a0a`, and fetched back. Its new section reconciles the directly fetched current Overdrive source snapshots:
+- opportunities: blob `eb27e6542b3d4835229b1dbb221266042d7c3826`, 108 map keys / record_count 108;
+- claims: blob `88b15824b892e38301829a95ee1ecf75e1221341`, generated 2026-10-16, 108 claims, 102 WAITING / 6 CLOSED, ready=0, external-ready=0, executable_order empty; 10 past-due WAITING claims;
+- state: blob `d117c948e0046b7d2fcacb0e2cbae6762335ac22`, sequence 23, latest persisted tick 2026-10-16T08:40:31.786740Z. This is a historical snapshot, **not** a fresh current execution tick.
+
+The ten overdue WAITING claims were grouped according to their existing next_action text; no state transitions were fabricated. The Outlook connector searches for Inkwave, Redrama, OpenTrain and CallForce returned no matches in `usduplessis@outlook.com`. The Gmail source thread remains unobserved through this connector, so absence of these matches is not treated as evidence that no Gmail update exists.
+
+**Status remains INTAKE NOT CLEARED.** Current claim/ledger reconciliation is persisted, but no new Overdrive tick, accepted external action, full queue drain, or Root disposition is evidenced.
