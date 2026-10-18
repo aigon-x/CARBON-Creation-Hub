@@ -70,3 +70,17 @@ The current automation inventory is a source snapshot only. This execution did n
 - **Safety/preservation:** no new queue/worker/scheduler; no silent recurring schedule reactivation; retain historical snapshots and distinguish request from completion.
 - **Disposition:** **INTAKE NOT CLEARED — partial current-source reconciliation only**.
 - **Remaining work:** Root disposition, full queue execution, current-state/hash reconciliation, authorized runtime wake, Gmail-forwarding readback, final independent receipt.
+
+
+## Post-readback correction — native Outlook identity vs forwarding target — 2026-10-18T17:50:47.842Z
+
+A direct profile read from the connected Outlook email tool returned:
+- Connected API account: `usduplessis@outlook.com` (profile name: Ulrich Du Plessis).
+- The earlier migration plan discussed Gmail forwarding to `amillimatrix@outlook.com` as the brand-facing central inbox.
+- The actual Gmail forwarding destination setting itself was not read back by the email connector. Therefore, it is **not verified** that incoming Gmail copies will appear in the mailbox this connector can search/read.
+
+This is a concrete route-alignment dependency, not proof that forwarding failed. Do not represent “Outlook mobile shows both accounts” as equivalent to “the connected Outlook API can read both accounts.”
+
+**Recovery action:** prefer authorized native connector access to `amillimatrix@outlook.com` as the intended AMX operational identity, if account reconnection/switching is supported. Otherwise, Owner must choose whether the forwarding destination should be the connector-accessible `usduplessis@outlook.com` or whether a separate authorized connector should be connected to the AMX mailbox. Keep Gmail active; do not change forwarding or send tests without a deliberate safe step and readback.
+
+**Acceptance:** a real Gmail-originated/forwarded message is searchable and readable through the connected native Outlook tool, with correct sender/thread preserved. Until that readback exists, native email routing is only partially aligned.
