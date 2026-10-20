@@ -1,0 +1,100 @@
+import json
+import logging
+from typing import Dict, Any
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+class LedgerError(Exception):
+    """Custom exception for ledger errors."""
+    pass
+
+class OverdriveError(Exception):
+    """Custom exception for overdrive errors."""
+    pass
+
+def validate_record_count(record_count: int, distinct_keys: int) -> None:
+    """Validate the record count against distinct keys.
+
+    Args:
+        record_count (int): The count of records in the ledger.
+        distinct_keys (int): The number of distinct keys in the records.
+
+    Raises:
+        ValueError: If record_count or distinct_keys are negative or do not match.
+    """
+    if record_count < 0 or distinct_keys < 0:
+        raise ValueError("Record count and distinct keys must be non-negative.")
+    if record_count != distinct_keys:
+        logger.warning("Record count (%d) does not match distinct keys (%d).", record_count, distinct_keys)
+
+def process_opportunities(opportunities_blob: str) -> Dict[str, Any]:
+    """Process the opportunities ledger blob.
+
+    Args:
+        opportunities_blob (str): JSON string representing the opportunities ledger.
+
+    Returns:
+        Dict[str, Any]: Parsed opportunities data.
+
+    Raises:
+        LedgerError: If JSON decoding fails or validation fails.
+    """
+    try:
+        opportunities = json.loads(opportunities_blob)
+        record_count = opportunities.get("record_count", 0)
+        distinct_keys = opportunities.get("distinct_keys_in_records", 0)
+
+        validate_record_count(record_count, distinct_keys)
+
+        logger.info("Successfully processed opportunities ledger with %d records.", record_count)
+        return opportunities
+    except json.JSONDecodeError as e:
+        logger.error("Failed to decode JSON: %s", e)
+        raise LedgerError("Invalid opportunities ledger format.")
+    except ValueError as e:
+        logger.error("Validation error: %s", e)
+        raise LedgerError("Opportunities ledger validation failed.")
+
+def check_overdrive_state(overdrive_blob: str) -> None:
+    """Check the overdrive state for transitions.
+
+    Args:
+        overdrive_blob (str): JSON string representing the overdrive state.
+
+    Raises:
+        OverdriveError: If JSON decoding fails.
+    """
+    try:
+        overdrive_state = json.loads(overdrive_blob)
+        state_changed = overdrive_state.get("state_changed", False)
+
+        if not state_changed:
+            logger.warning("No state transition detected in overdrive state.")
+        else:
+            logger.info("State transition detected in overdrive state.")
+
+    except json.JSONDecodeError as e:
+        logger.error("Failed to decode overdrive state JSON: %s", e)
+        raise OverdriveError("Invalid overdrive state format.")
+
+def main(opportunities_blob: str, overdrive_blob: str) -> None:
+    """Main function to process opportunities and check overdrive state.
+
+    Args:
+        opportunities_blob (str): JSON string representing the opportunities ledger.
+        overdrive_blob (str): JSON string representing the overdrive state.
+    """
+    try:
+        opportunities = process_opportunities(opportunities_blob)
+        check_overdrive_state(overdrive_blob)
+        logger.info("Processing completed successfully.")
+    except (LedgerError, OverdriveError) as e:
+        logger.error("Error during processing: %s", e)
+
+# Example usage
+if __name__ == "__main__":
+    opportunities_blob = '{"record_count": 66, "distinct_keys_in_records": 83}'  # Example blob
+    overdrive_blob = '{"state_changed": false}'  # Example blob
+    main(opportunities_blob, overdrive_blob)
